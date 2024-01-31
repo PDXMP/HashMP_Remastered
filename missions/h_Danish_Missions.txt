@@ -734,289 +734,6 @@ h_dan_4 = {
 	}
 	has_country_shield = yes
 
-	dan_rival_england = {
-		icon = mission_invade_england
-		position = 1
-		required_missions = {}
-		provinces_to_highlight = {
-			OR = {
-				is_capital_of = GBR
-				is_capital_of = ENG
-			}
-		}
-		trigger = {
-			if = {
-				limit = { exists = GBR }
-				OR = {
-					AND = {
-						OR = {
-							is_rival = GBR
-							is_enemy = GBR
-						}
-						trade_embargoing = GBR
-					}
-					AND = {
-						alliance_with = GBR
-						GBR = {
-							has_opinion = {
-								who = ROOT
-								value = 100
-							}
-						}
-					}
-					total_development = GBR
-				}
-			}
-			else_if = {
-				limit = { exists = ENG }
-				OR = {
-					AND = {
-						OR = {
-							is_rival = ENG
-							is_enemy = ENG
-						}
-						trade_embargoing = ENG
-					}
-					AND = {
-						alliance_with = ENG
-						ENG = {
-							has_opinion = {
-								who = ROOT
-								value = 100
-							}
-						}
-					}
-					total_development = ENG
-				}
-			}
-			else = {
-				NOT = { exists = ENG }
-				NOT = { exists = GBR }
-			}
-		}
-		effect = {
-			add_country_modifier = {
-				name = dan_naval_preperations
-				duration = 10950
-			}
-		}
-	}
-
-	dan_trump_the_english_fleet = {
-		icon = mission_establish_high_seas_navy
-		position = 2
-		required_missions = { dan_rival_england }
-		provinces_to_highlight = {}
-		trigger = {
-			if = {
-				limit = { has_dlc = "Golden Century" }
-				has_flagship = yes
-			}
-			if = {
-				limit = {
-					exists = GBR
-				}
-				navy_size = GBR
-				OR = {
-					has_global_modifier_value = {
-						which = ship_durability
-						value = 0.15
-					}
-					num_of_heavy_ship = GBR
-				}
-			}
-			else_if = {
-				limit = {
-					exists = ENG
-				}
-				navy_size = ENG
-				OR = {
-					has_global_modifier_value = {
-						which = ship_durability
-						value = 0.15
-					}
-					num_of_heavy_ship = ENG
-				}
-			}
-			else = {
-				NOT = { exists = ENG }
-				NOT = { exists = GBR }
-				navy_size = 30
-				OR = {
-					has_global_modifier_value = {
-						which = ship_durability
-						value = 0.15
-					}
-					num_of_heavy_ship = 20
-				}
-			}
-			naval_forcelimit = 30
-		}
-		effect = {
-			add_navy_tradition = 20
-			scottish_marches_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			yorkshire_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-
-	dan_land_in_northumberland = {
-		icon = mission_northumberland_coast
-		position = 3
-		required_missions = { dan_trump_the_english_fleet }
-		provinces_to_highlight = {
-			OR = {
-				area = scottish_marches_area
-				area = yorkshire_area
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		trigger = {
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				OR = {
-					area = scottish_marches_area
-					area = yorkshire_area
-				}
-				value = 4
-			}
-		}
-		effect = {
-			east_midlands_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			west_midlands_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			wales_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			wessex_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			east_anglia_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			home_counties_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-		}
-	}
-
-	dan_conquer_england = {
-		icon = mission_danish_england
-		position = 4
-		required_missions = { dan_land_in_northumberland }
-		provinces_to_highlight = {
-			OR = {
-				area = yorkshire_area
-				area = scottish_marches_area
-				area = east_midlands_area
-				area = west_midlands_area
-				area = wales_area
-				area = wessex_area
-				area = east_anglia_area
-				area = home_counties_area
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		trigger = {
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				OR = {
-					area = yorkshire_area
-					area = scottish_marches_area
-					area = east_midlands_area
-					area = west_midlands_area
-					area = wales_area
-					area = wessex_area
-					area = east_anglia_area
-					area = home_counties_area
-				}
-				value = 20
-			}
-			owns_or_non_sovereign_subject_of = 236
-		}
-		effect = {
-			if = {
-				limit = {
-					owns = 236
-				}
-				country_event = {
-					id = flavor_dan.119
-				}
-			}
-			else_if = {
-				limit = {
-					owns_or_non_sovereign_subject_of = 236
-					NOT = { owns = 236 }
-				}
-				capital_scope = {
-					add_base_tax = 3
-					add_base_production = 3
-					add_base_manpower = 2
-				}
-			}
-			else = {
-				custom_tooltip = dan_conquer_england_tt
-			}
-			add_country_modifier = {
-				name = dan_king_of_denmark_and_england
-				duration = -1
-			}
-		}
-	}
-}
-
-h_dan_5 = {
-	slot = 5
-	generic = no
-	ai = yes
-	potential = {
-		OR = {
-			tag = DAN
-			AND = {
-				was_tag = DAN
-				tag = SCA
-			}
-		}
-		NOT = { map_setup = map_setup_random }
-	}
-	has_country_shield = yes
-
 	dan_colonial_ambitions = {
 		icon = mission_corsairs_of_the_north_sea
 		position = 1
@@ -1335,6 +1052,289 @@ h_dan_5 = {
 			add_power_projection = {
 				type = mission_rewards_power_projection
 				amount = 50
+			}
+		}
+	}
+}
+
+h_dan_5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = DAN
+			AND = {
+				was_tag = DAN
+				tag = SCA
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	dan_rival_england = {
+		icon = mission_invade_england
+		position = 1
+		required_missions = {}
+		provinces_to_highlight = {
+			OR = {
+				is_capital_of = GBR
+				is_capital_of = ENG
+			}
+		}
+		trigger = {
+			if = {
+				limit = { exists = GBR }
+				OR = {
+					AND = {
+						OR = {
+							is_rival = GBR
+							is_enemy = GBR
+						}
+						trade_embargoing = GBR
+					}
+					AND = {
+						alliance_with = GBR
+						GBR = {
+							has_opinion = {
+								who = ROOT
+								value = 100
+							}
+						}
+					}
+					total_development = GBR
+				}
+			}
+			else_if = {
+				limit = { exists = ENG }
+				OR = {
+					AND = {
+						OR = {
+							is_rival = ENG
+							is_enemy = ENG
+						}
+						trade_embargoing = ENG
+					}
+					AND = {
+						alliance_with = ENG
+						ENG = {
+							has_opinion = {
+								who = ROOT
+								value = 100
+							}
+						}
+					}
+					total_development = ENG
+				}
+			}
+			else = {
+				NOT = { exists = ENG }
+				NOT = { exists = GBR }
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = dan_naval_preperations
+				duration = 10950
+			}
+		}
+	}
+
+	dan_trump_the_english_fleet = {
+		icon = mission_establish_high_seas_navy
+		position = 2
+		required_missions = { dan_rival_england }
+		provinces_to_highlight = {}
+		trigger = {
+			if = {
+				limit = { has_dlc = "Golden Century" }
+				has_flagship = yes
+			}
+			if = {
+				limit = {
+					exists = GBR
+				}
+				navy_size = GBR
+				OR = {
+					has_global_modifier_value = {
+						which = ship_durability
+						value = 0.15
+					}
+					num_of_heavy_ship = GBR
+				}
+			}
+			else_if = {
+				limit = {
+					exists = ENG
+				}
+				navy_size = ENG
+				OR = {
+					has_global_modifier_value = {
+						which = ship_durability
+						value = 0.15
+					}
+					num_of_heavy_ship = ENG
+				}
+			}
+			else = {
+				NOT = { exists = ENG }
+				NOT = { exists = GBR }
+				navy_size = 30
+				OR = {
+					has_global_modifier_value = {
+						which = ship_durability
+						value = 0.15
+					}
+					num_of_heavy_ship = 20
+				}
+			}
+			naval_forcelimit = 30
+		}
+		effect = {
+			add_navy_tradition = 20
+			scottish_marches_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			yorkshire_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	dan_land_in_northumberland = {
+		icon = mission_northumberland_coast
+		position = 3
+		required_missions = { dan_trump_the_english_fleet }
+		provinces_to_highlight = {
+			OR = {
+				area = scottish_marches_area
+				area = yorkshire_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				OR = {
+					area = scottish_marches_area
+					area = yorkshire_area
+				}
+				value = 4
+			}
+		}
+		effect = {
+			east_midlands_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			west_midlands_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			wales_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			wessex_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			east_anglia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			home_counties_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+
+	dan_conquer_england = {
+		icon = mission_danish_england
+		position = 4
+		required_missions = { dan_land_in_northumberland }
+		provinces_to_highlight = {
+			OR = {
+				area = yorkshire_area
+				area = scottish_marches_area
+				area = east_midlands_area
+				area = west_midlands_area
+				area = wales_area
+				area = wessex_area
+				area = east_anglia_area
+				area = home_counties_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				OR = {
+					area = yorkshire_area
+					area = scottish_marches_area
+					area = east_midlands_area
+					area = west_midlands_area
+					area = wales_area
+					area = wessex_area
+					area = east_anglia_area
+					area = home_counties_area
+				}
+				value = 20
+			}
+			owns_or_non_sovereign_subject_of = 236
+		}
+		effect = {
+			if = {
+				limit = {
+					owns = 236
+				}
+				country_event = {
+					id = flavor_dan.119
+				}
+			}
+			else_if = {
+				limit = {
+					owns_or_non_sovereign_subject_of = 236
+					NOT = { owns = 236 }
+				}
+				capital_scope = {
+					add_base_tax = 3
+					add_base_production = 3
+					add_base_manpower = 2
+				}
+			}
+			else = {
+				custom_tooltip = dan_conquer_england_tt
+			}
+			add_country_modifier = {
+				name = dan_king_of_denmark_and_england
+				duration = -1
 			}
 		}
 	}
