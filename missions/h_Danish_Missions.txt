@@ -316,8 +316,8 @@ h_dan_2 = {
 				area = ostra_svealand_area
 				area = gotaland_area
 				area = norrland_area
-				area = bothnia_area
-				area = finland_area
+				#area = bothnia_area
+				#area = finland_area
 			}
 		}
 		trigger = {
@@ -337,14 +337,14 @@ h_dan_2 = {
 				owned_by = ROOT
 				type = all
 			}
-			bothnia_area = {
-				owned_by = ROOT
-				type = all
-			}
-			finland_area = {
-				owned_by = ROOT
-				type = all
-			}
+			# bothnia_area = {
+			# 	owned_by = ROOT
+			# 	type = all
+			# }
+			# finland_area = {
+			# 	owned_by = ROOT
+			# 	type = all
+			# }
 		}
 		effect = {
 			if = {
