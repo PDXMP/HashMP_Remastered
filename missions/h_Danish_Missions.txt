@@ -1,0 +1,94 @@
+h_dan_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = DAN
+			AND = {
+				was_tag = DAN
+				tag = SCA
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+
+}
+
+h_dan_2 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = DAN
+			AND = {
+				was_tag = DAN
+				tag = SCA
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	
+}
+
+h_dan_3 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = DAN
+			AND = {
+				was_tag = DAN
+				tag = SCA
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	
+}
+
+h_dan_4 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = DAN
+			AND = {
+				was_tag = DAN
+				tag = SCA
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	
+}
+
+h_dan_5 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = DAN
+			AND = {
+				was_tag = DAN
+				tag = SCA
+			}
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+
+	
+}
