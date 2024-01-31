@@ -55,7 +55,7 @@ h_dan_1 = {
 		icon = mission_humiliate_lubeck
 		position = 2
 		required_missions = {
-			dan_retake_gotland
+			#dan_retake_gotland
 			dan_the_baltic_force
 		}
 		provinces_to_highlight = {
@@ -96,8 +96,9 @@ h_dan_1 = {
 		icon = mission_the_sound_toll
 		position = 4
 		required_missions = { 
-			dan_livonian_order
-			dan_the_german_trade_cities
+			#dan_livonian_order
+			#dan_the_german_trade_cities
+			dan_eliminate_the_hanse
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -304,8 +305,10 @@ h_dan_2 = {
 		icon = mission_conquer_sweden
 		position = 4
 		required_missions = { 
-			dan_ratify_kalmar_succession
-			dan_handle_sweden
+			#dan_ratify_kalmar_succession
+			#dan_handle_sweden
+			dan_the_baltic_force
+			dan_retake_gotland
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -360,7 +363,10 @@ h_dan_2 = {
 	dan_livonian_order = {
 		icon = mission_livonian_knights
 		position = 3
-		required_missions = { dan_the_baltic_force }
+		required_missions = { 
+			#dan_the_baltic_force 
+			dan_integrate_sweden
+		}
 		provinces_to_highlight = {
 			OR = {
 				province_id = 35
@@ -510,7 +516,9 @@ h_dan_3 = {
 	dan_integrate_holstein = {
 		icon = mission_integrate_holstein
 		position = 2
-		required_missions = { dan_improve_norway_relations }
+		required_missions = { 
+			#dan_improve_norway_relations 
+		}
 		provinces_to_highlight = {
 			OR = {
 				province_id = 13
@@ -541,7 +549,10 @@ h_dan_3 = {
 	dan_integrate_norway = {
 		icon = mission_conquer_norway
 		position = 4
-		required_missions = { dan_ratify_kalmar_succession }
+		required_missions = { 
+			#dan_ratify_kalmar_succession 
+			dan_integrate_holstein
+		}
 		provinces_to_highlight = {
 			OR = {
 				area = northern_norway
