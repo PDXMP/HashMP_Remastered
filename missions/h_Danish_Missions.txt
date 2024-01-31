@@ -94,7 +94,7 @@ h_dan_1 = {
 	}
 	dan_the_sound_toll = {	#Dominate Northsea, Baltic and Lübeck trade
 		icon = mission_the_sound_toll
-		position = 4
+		position = 3
 		required_missions = { 
 			#dan_livonian_order
 			#dan_the_german_trade_cities
@@ -161,7 +161,7 @@ h_dan_1 = {
 	}
 	dan_university_of_coppenhagen = {
 		icon = mission_university_of_copenhagen
-		position = 6
+		position = 4
 		required_missions = {  }
 		provinces_to_highlight = {
 			province_id = 12
@@ -205,7 +205,7 @@ h_dan_1 = {
 	}
 	dan_an_educated_people = {
 		icon = mission_educated_people
-		position = 7
+		position = 5
 		required_missions = { dan_university_of_coppenhagen }
 		provinces_to_highlight = {
 			region = scandinavia_region
@@ -230,7 +230,7 @@ h_dan_1 = {
 }
 
 h_dan_2 = {
-	slot = 1
+	slot = 2
 	generic = no
 	ai = yes
 	potential = {
@@ -303,7 +303,7 @@ h_dan_2 = {
 	}
 	dan_integrate_sweden = {
 		icon = mission_conquer_sweden
-		position = 4
+		position = 2
 		required_missions = { 
 			#dan_ratify_kalmar_succession
 			#dan_handle_sweden
@@ -432,7 +432,7 @@ h_dan_2 = {
 	}
 	dan_establish_merc_contracts = {
 		icon = mission_landsknecht_soldier
-		position = 10
+		position = 4
 		required_missions = {  }
 		provinces_to_highlight = {
 			OR = {
@@ -478,7 +478,7 @@ h_dan_2 = {
 	}
 	dan_grand_merc_army = {
 		icon = mission_hessian_jaeger_corps
-		position = 11
+		position = 5
 		required_missions = { dan_establish_merc_contracts }
 		provinces_to_highlight = {
 		}
@@ -498,7 +498,7 @@ h_dan_2 = {
 }
 
 h_dan_3 = {
-	slot = 1
+	slot = 3
 	generic = no
 	ai = yes
 	potential = {
@@ -515,7 +515,7 @@ h_dan_3 = {
 
 	dan_integrate_holstein = {
 		icon = mission_integrate_holstein
-		position = 2
+		position = 1
 		required_missions = { 
 			#dan_improve_norway_relations 
 		}
@@ -548,7 +548,7 @@ h_dan_3 = {
 	}
 	dan_integrate_norway = {
 		icon = mission_conquer_norway
-		position = 4
+		position = 2
 		required_missions = { 
 			#dan_ratify_kalmar_succession 
 			dan_integrate_holstein
@@ -599,7 +599,7 @@ h_dan_3 = {
 	}
 	dan_unite_scandinavia = {
 		icon = mission_unite_scandinavia
-		position = 5
+		position = 3
 		required_missions = { 
 			dan_integrate_norway
 			dan_integrate_sweden
@@ -636,7 +636,7 @@ h_dan_3 = {
 	}
 	dan_handle_own_nobility = {
 		icon = mission_danish_kingdom
-		position = 6
+		position = 4
 		required_missions = {  }
 		provinces_to_highlight = {}
 		trigger = {
@@ -676,7 +676,7 @@ h_dan_3 = {
 
 	dan_an_absolute_monarchy = {
 		icon = mission_danish_absolutism
-		position = 7
+		position = 5
 		required_missions = { dan_handle_own_nobility }
 		provinces_to_highlight = {}
 		trigger = {
@@ -719,7 +719,7 @@ h_dan_3 = {
 }
 
 h_dan_4 = {
-	slot = 1
+	slot = 4
 	generic = no
 	ai = yes
 	potential = {
@@ -939,7 +939,7 @@ h_dan_4 = {
 
 	dan_conquer_england = {
 		icon = mission_danish_england
-		position = 5
+		position = 4
 		required_missions = { dan_land_in_northumberland }
 		provinces_to_highlight = {
 			OR = {
@@ -1002,7 +1002,7 @@ h_dan_4 = {
 }
 
 h_dan_5 = {
-	slot = 1
+	slot = 5
 	generic = no
 	ai = yes
 	potential = {
@@ -1019,7 +1019,7 @@ h_dan_5 = {
 
 	dan_colonial_ambitions = {
 		icon = mission_corsairs_of_the_north_sea
-		position = 6
+		position = 1
 		required_missions = {}
 		provinces_to_highlight = {}
 		trigger = {
@@ -1048,7 +1048,7 @@ h_dan_5 = {
 	}
 	dan_push_westwards = {
 		icon = mission_exploration
-		position = 7
+		position = 2
 		required_missions = { dan_colonial_ambitions }
 		provinces_to_highlight = {
 			if = {
@@ -1139,7 +1139,7 @@ h_dan_5 = {
 	}
 	dan_colonize_north_america = {
 		icon = mission_rb_the_thirteen_colonies
-		position = 10
+		position = 3
 		required_missions = { dan_push_westwards }
 		provinces_to_highlight = {
 			OR = {
@@ -1199,7 +1199,7 @@ h_dan_5 = {
 	}
 	dan_denmark_on_european_stage = {
 		icon = mission_among_the_great_powers
-		position = 8
+		position = 4
 		required_missions = {}
 		provinces_to_highlight = {
 			is_capital = yes
@@ -1257,7 +1257,7 @@ h_dan_5 = {
 
 	dan_a_danish_great_power = {
 		icon = mission_danish_flag
-		position = 9
+		position = 5
 		required_missions = { dan_denmark_on_european_stage }
 		provinces_to_highlight = {
 			if = {
