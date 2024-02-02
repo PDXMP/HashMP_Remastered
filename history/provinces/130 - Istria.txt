@@ -2,7 +2,8 @@
 
 #owner = VEN
 owner = DAL
-controller = VEN
+controller = DAL
+#controller = VEN
 culture = dalmatian
 religion = catholic
 capital = "Pula"
