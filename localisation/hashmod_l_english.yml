@@ -1,2 +1,5 @@
 ﻿l_english:
- 
+ h_tooltip_cn_ally:0 "You may not ally colonial nations."
+ h_tooltip_cn_declarewar:0 "Colonial nations may not declare war on countries that have their capital on a different continent."
+ h_tooltip_many_allies:0 "You may have a maximum of five alliances."
+ h_tooltip_from_many_allies:0 "The target already has five alliances."
