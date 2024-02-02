@@ -3,3 +3,5 @@
  h_tooltip_cn_declarewar:0 "Colonial nations may not declare war on countries that have their capital on a different continent."
  h_tooltip_many_allies:0 "You may have a maximum of five alliances."
  h_tooltip_from_many_allies:0 "The target already has five alliances."
+ h_emp_brapru_reform_the_state:0 "One of the following: -25% Idea Cost Until Ruler Death, +1 Stability, -25% Technology Cost Until Ruler Death"
+ h_emp_brapru_army_reforms_3:0 "One of the following: Discounted Lvl 3 Army Reformer, General 3/4/4/1, +1 Stability"
