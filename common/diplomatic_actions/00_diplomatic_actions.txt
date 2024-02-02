@@ -295,6 +295,68 @@ allianceaction = {
 	effect = {
 		change_asha_vahishta = { value = 2 }
 	}
+	condition = {
+		tooltip = h_tooltip_allyhorde
+		potential = {
+		}
+		allow = {
+			FROM = {
+				NOT = { 
+					AND = {
+						has_reform = steppe_horde
+						was_player = no
+					}
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = h_tooltip_hordeally
+		potential = {
+			ROOT = {
+				AND = {
+					has_reform = steppe_horde
+					was_player = no
+				}
+			}
+		}
+		allow = {
+			always = no
+		}
+	}
+	condition = {
+		tooltip = h_tooltip_cn_ally
+		potential = {
+			is_colonial_nation = no
+		}
+		allow = {
+			FROM = { is_colonial_nation = no }
+		}
+	}
+	condition = {
+		tooltip = h_tooltip_many_allies
+		potential = {
+		}
+		allow = {
+			ROOT = {
+				NOT = {
+					num_of_allies = 5
+				}
+			}
+		}
+	}
+	condition = {
+		tooltip = h_tooltip_from_many_allies
+		potential = {
+		}
+		allow = {
+			FROM = {
+				NOT = {
+					num_of_allies = 5
+				}
+			}
+		}
+	}
 }
 
 enforce_peace = {
