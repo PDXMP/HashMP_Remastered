@@ -181,6 +181,15 @@ declarewar = {
 			}
 		}
 	}
+	condition = {
+		tooltip = h_tooltip_cn_declarewar
+		potential = {
+			is_colonial_nation = yes
+		}
+		allow = {
+			FROM = { same_continent = ROOT }
+		}
+	}
 }
 
 allianceaction = {
