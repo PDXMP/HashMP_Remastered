@@ -252,7 +252,10 @@ emp_bra_pru_1 = {
 		}
 		effect = {
 			set_country_flag = konigsberg_university_flag
-			country_event = { id = flavor_brapru.11 }
+			country_event_with_insight = { 
+				id = flavor_brapru.11 
+				insight_tooltip = h_emp_brapru_konigsberg_development
+			}
 			if = { 
 				limit = { has_dlc = "Domination" }
 				custom_tooltip = pru_golden_era_20_unis_tt
@@ -296,7 +299,10 @@ emp_bra_pru_1 = {
 		}
 		effect = {
 			set_country_flag = renovate_berlin_flag
-			country_event = { id = flavor_brapru.20 }
+			country_event_with_insight = { 
+				id = flavor_brapru.20 
+				insight_tooltip= h_emp_brapru_renovate_berlin
+			}
 			
 			if = { 
 				limit = { has_dlc = "Domination" }
@@ -1263,72 +1269,7 @@ emp_bra_pru_3 = {
 			set_country_flag = pru_potsdam_flag
 			country_event_with_insight = { 
 				id = flavor_brapru.28 
-				insight_tooltip = INSIGHT_JUST_TOOLTIP
-				effect_tooltip = "
-					option = { #
-						name = flavor_brapru.28.a
-						ai_chance = {
-							factor = 75
-						}
-						add_years_of_income = -0.75
-						add_stability = -2
-						random_owned_province = {
-							limit = {
-								culture = owner
-								is_capital = no
-								has_owner_religion = yes
-							}
-							add_base_manpower = 1
-							add_base_tax = 1
-							add_base_production = 1
-							if = {
-								limit = {
-									owner = { religion = protestant }		
-								}
-								change_religion = reformed
-							}
-							if = {
-								limit = {
-									owner = { religion = reformed }
-								}
-								change_religion = protestant
-							}
-						}
-						capital_scope = {
-							add_base_manpower = 1
-							add_base_tax = 2
-							add_base_production = 2
-						}
-						custom_tooltip = flavor_brapru.28.a.tt
-						hidden_effect = {
-							every_known_country = {
-								limit = {
-									religion = catholic
-									capital_scope = { continent = europe }
-									NOT = { has_country_flag = revoked_the_edict_of_nantes }
-								}
-								add_opinion = {
-									who = ROOT
-									modifier = pru_edict_of_potsdam_opinion
-								}
-							}
-						}
-						random_country = {
-							limit = { has_country_flag = revoked_the_edict_of_nantes }
-							add_opinion = {
-								who = ROOT
-								modifier = pru_france_huguenots
-							}
-						}
-					}
-					option = { #
-						name = flavor_brapru.28.b
-						ai_chance = {
-							factor = 25
-						}
-						add_adm_power = 200
-					}
-				"
+				insight_tooltip = h_emp_brapru_edict_of_potsdam
 			}
 			add_country_modifier = {
 				name = "edict_of_potsdam_modifier"

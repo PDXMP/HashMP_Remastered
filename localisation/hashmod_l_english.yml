@@ -5,3 +5,6 @@
  h_tooltip_from_many_allies:0 "The target already has five alliances."
  h_emp_brapru_reform_the_state:0 "One of the following: -25% Idea Cost Until Ruler Death, +1 Stability, -25% Technology Cost Until Ruler Death"
  h_emp_brapru_army_reforms_3:0 "One of the following: Discounted Lvl 3 Army Reformer, General 3/4/4/1, +1 Stability"
+ h_emp_brapru_edict_of_potsdam:0 "- 2 Stability + .75 years of income and gain 1 of each type of dev in a random province and 2 tax 2 prod and 1 mp in the capital or 200 adm"
+ h_emp_brapru_renovate_berlin:0 "Lose .75 years of income, Berlin gets -20 tax, -10 build cost, -15 dev cost OR +1 Stability"
+ h_emp_brapru_konigsberg_development:0 "Lose .25 years income and gain: 2 inno, 100 adm, a university in Konigsberg along with the province getting -5 dev cost and 1 yearly instition growth OR -1 prestige"
