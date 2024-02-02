@@ -1,0 +1,2 @@
+--Military overrides
+--NDefines.NMilitary.
