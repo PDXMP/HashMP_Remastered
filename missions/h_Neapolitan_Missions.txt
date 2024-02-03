@@ -27,7 +27,25 @@ h_naples_1 = {
 		}
 		effect = {
 			set_country_flag = naples_renaissance_flag
-			country_event = { id = flavor_nap.3 }
+			country_event_with_option_insight = {
+				id = flavor_nap.3
+				option_1 = "
+				add_prestige = 10
+				add_reform_progress_small_effect = yes
+				add_country_modifier = {
+					name = nap_renaissance_culture
+					duration = 18250
+				}
+				"
+				option_2 = "
+				add_legitimacy = 10
+				add_reform_progress_small_effect = yes
+				add_country_modifier = {
+					name = nap_renaissance_glory
+					duration = 18250
+				"
+			}
+
 		}
 	}
 	h_nap_develop_the_mezzogiorno = {
@@ -70,17 +88,16 @@ h_naples_1 = {
 	h_nap_breadbasket_of_italy = {
 		icon = develop_the_po_valley
 		required_missions = { h_nap_develop_the_mezzogiorno h_nap_the_po_valley }
-		provinces_to_highlight = {
-			province_id = 113
-			NOT = { development = 20 }
-			province_id = 114
-			NOT = { development = 20 }
-			province_id = 106
-			NOT = { development = 20 }
-			province_id = 4730
-			NOT = { development = 20 }
-		}
 		position = 5
+		provinces_to_highlight = { 
+			OR = {
+				province_id = 113
+				province_id = 114
+				province_id = 4730
+				province_id = 106
+			}
+			NOT = { development = 20 }
+		 }
 		trigger = {
 			113 = {
 				owned_by = ROOT
