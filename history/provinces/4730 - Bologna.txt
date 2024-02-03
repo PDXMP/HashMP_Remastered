@@ -1,21 +1,18 @@
-#114 - Romagna
+# 4730 - Bologna
 
 owner = BLG
 controller = BLG
-add_core = BLG
-#owner = VEN			# Ravenna was seized by Venice in 1441
-#controller = VEN
 culture = romagnan 
 religion = catholic 
-hre = yes 
-base_tax = 4
-base_production = 5
-trade_goods = salt
-base_manpower = 2
-capital = "Ravenna"
+hre = yes
+base_tax = 5
+base_production = 4
+trade_goods = cloth
+base_manpower = 3
+capital = "Bologna"
 is_city = yes
-#add_core = VEN
-#add_core = PAP
+add_core = BLG
+
 
 
 discovered_by = western
@@ -23,11 +20,10 @@ discovered_by = eastern
 discovered_by = muslim
 discovered_by = ottoman
 
-1509.1.1 = { 
+1506.10.7 = { 
 	owner = PAP
 	controller = PAP
 	add_core = PAP
-	remove_core = VEN
 }
 1805.12.26 = {
 	owner = ITA
