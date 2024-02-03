@@ -252,9 +252,8 @@ emp_bra_pru_1 = {
 		}
 		effect = {
 			set_country_flag = konigsberg_university_flag
-			country_event_with_insight = { 
+			country_event = { 
 				id = flavor_brapru.11 
-				insight_tooltip = h_emp_brapru_konigsberg_development
 			}
 			if = { 
 				limit = { has_dlc = "Domination" }
@@ -301,7 +300,22 @@ emp_bra_pru_1 = {
 			set_country_flag = renovate_berlin_flag
 			country_event_with_insight = { 
 				id = flavor_brapru.20 
-				insight_tooltip= h_emp_brapru_renovate_berlin
+				insight_tooltip = INSIGHT_JUST_TOOLTIP
+				effect_tooltip="
+					if = {
+						limit = {
+							NOT = { has_country_flag = renovate_berlin_flag }
+						}
+						add_years_of_income = -0.75
+					}
+					set_country_flag = pru_berlin_renovations_flag
+					50 = {
+						add_province_modifier = {
+							name = pru_berlin_renovations
+							duration = -1
+						}
+					}
+				"
 			}
 			
 			if = { 
@@ -449,10 +463,32 @@ emp_bra_pru_1_b = {
 		}
 		effect = {
 			set_country_flag = brapru_army_reforms_3
-			country_event_with_insight = { 
+			country_event_with_option_insight = {
 				id = flavor_brapru.29 
-				insight_tooltip = h_emp_brapru_army_reforms_3
+				option_1 = "
+					define_advisor = {
+						type = army_reformer
+						culture = saxon
+						skill = 3
+						discount = yes
+					}
+				"
+				option_2 = "
+					define_general = {
+						shock = 3
+						fire = 4
+						manuever = 4
+						siege = 1
+					}
+				"
+				option_3 = "
+					add_stability_or_adm_power = yes
+				"
 			}
+			# country_event = { 
+			# 	id = flavor_brapru.29 
+			# }
+			custom_tooltip = EVENT_INSIGHT_OPT_1
 			if = {
 				limit = {
 					has_dlc = "Cradle of Civilization"
@@ -849,9 +885,24 @@ emp_bra_pru_2 = {
 		}
 		effect = {
 			set_country_flag = pru_legal_reforms_flag
-			country_event_with_insight = { 
+			country_event_with_option_insight = {
 				id = flavor_brapru.27 
-				insight_tooltip = h_emp_brapru_reform_the_state
+				option_1 = "
+					if = {
+						limit = {
+							NOT = { has_completed_all_reforms_trigger = yes }
+						}
+						add_reform_progress_small_effect = yes
+					}
+					add_stability = -1
+					add_country_modifier = {
+						name = pru_unified_legal_system
+						duration = -1
+					}
+				"
+				option_2 = "
+					add_adm_power = 200
+				"
 			}
 		}
 	}
@@ -1267,9 +1318,8 @@ emp_bra_pru_3 = {
 		}
 		effect = {
 			set_country_flag = pru_potsdam_flag
-			country_event_with_insight = { 
+			country_event = { 
 				id = flavor_brapru.28 
-				insight_tooltip = h_emp_brapru_edict_of_potsdam
 			}
 			add_country_modifier = {
 				name = "edict_of_potsdam_modifier"
