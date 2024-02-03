@@ -67,7 +67,11 @@ h_naples_1 = {
 			}
 		}
 		effect = {
-			EFFECT PLACEHOLDER
+			change_government_reform_progress = 50
+			add_country_modifier = {
+				name = "growing_economy"
+				duration = 9125 #25 years
+			}
 		}
 	}	
 	h_nap_italian_craftsmanship = {
@@ -82,12 +86,16 @@ h_naples_1 = {
 			}			
 			}
 		effect = {
-			EFFECT PLACEHOLDER
+			add_years_of_income = 1
+			add_country_modifier = {
+				name = sax_production_prospering
+				duration = 7300
+			}
 			}
 	}
 	h_nap_breadbasket_of_italy = {
 		icon = develop_the_po_valley
-		required_missions = { h_nap_develop_the_mezzogiorno h_nap_the_po_valley }
+		required_missions = { h_nap_italian_craftsmanship h_nap_the_po_valley }
 		position = 5
 		provinces_to_highlight = { 
 			OR = {
@@ -117,7 +125,8 @@ h_naples_1 = {
 				}
 			}
 		effect = {
-			EFFECT PLACEHOLDER
+			add_years_of_income = 1
+			add_stability = 1
 			}
 	}
 	h_nap_italian_manufacturing = {
@@ -132,7 +141,11 @@ h_naples_1 = {
 				}
 			}
 		effect = {
-			EFFECT PLACEHOLDER
+			add_country_modifier = {
+				name = "proto_industrialization"
+				duration = 9125
+				add_adm_power = 100
+			}
 			}
 
 		}
@@ -159,9 +172,26 @@ h_naples_2 = {
 			has_mil_advisor = yes
 		}
 		effect = {
-			EFFECT PLACEHOLDER
+			central_italy_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			lazio_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+				}	
+			}
+			add_country_modifier = {
+				name = "thriving_arms_industry"
+				duration = 9125 #25 years
 		}
 	}
+}
 	h_nap_the_papal_problem = {
 		icon = answer_the_roman_question
 		required_missions = { h_nap_the_neapolitan_army }
@@ -174,18 +204,25 @@ h_naples_2 = {
 		}
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 4
+				value = 6
 				area = lazio_area
 				area = central_italy_area
 			}
 		}
 		effect = {
-			EFFECT PLACEHOLDER
+			tuscany_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = "army_enthusiasm"
+				duration = 9125 #25 years
+				}
+			}
 		}
-		ai_weight = {
-			factor = 50
-		}
-	}
 	h_nap_state_of_the_presidi = {
 		icon = state_of_the_presidi
 		required_missions = { h_nap_the_papal_problem }
@@ -203,15 +240,19 @@ h_naples_2 = {
 			}
 		}
 		effect = {
-			central_italy_area = {
+			emilia_romagna_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
 			}
+			add_country_modifier = {
+				name = "expansionist_country"
+				duration = 9125 #25 years
 			}
 		}
+	}
 	h_nap_the_po_valley = {
 		icon = prosper_in_piedmont
 		required_missions = { h_nap_state_of_the_presidi }
@@ -226,7 +267,31 @@ h_naples_2 = {
 				}
 			}
 			effect = {
-				EFFECT PLACEHOLDER
+				po_valley_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				lombardy_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				liguria_area = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+				add_country_modifier = {
+					name = "hegemonic_ambition"
+					duration = 9125 #25 years
+					}
 				}
 			}
 	h_nap_italian_wars = {
@@ -244,9 +309,12 @@ h_naples_2 = {
 				}
 			}
 		effect = {
-			EFFECT PLACEHOLDER
+			add_country_modifier = {
+				name = "nap_italian_wars_modifier"
+				duration = 9125 #25 years
 			}
 		}
+}
 }
 h_naples_3 = {
 	slot = 3
@@ -281,7 +349,22 @@ h_naples_3 = {
 			owns = 2982
 		}
 		effect = {
-			EFFECT PLACEHOLDER
+			add_power_projection = {
+				type = mission_rewards_power_projection
+				amount = 10
+			}
+			capital_scope = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+				area = {
+					limit = { owned_by = ROOT }
+					add_province_modifier = {
+						name = "growth_of_capital"
+						duration = 9125 #25 years
+					}
+				}
+			}
 			}
 		ai_weight = {
 			factor = 50
@@ -321,10 +404,18 @@ h_naples_3 = {
 			}
 		}
 		effect = {
-			EFFECT PLACEHOLDER
-		}
-		ai_weight = {
-			factor = 500
+			sicily_area = {
+				limit = {
+					owned_by = NAP
+				}
+				add_base_manpower = 1
+				western_sicily_area = {
+				limit = {
+					owned_by = NAP
+				}
+				add_base_manpower = 1
+				}
+			}
 		}
 	}
 	h_nap_barbary_pirates = {
@@ -347,7 +438,10 @@ h_naples_3 = {
 			}
 		}
 		effect = {
-			EFFECT PLACEHOLDER
+			add_country_modifier = {
+				name = "nap_barbary_pirates"
+				duration = 25
+			}
 			}
 		}
 	h_nap_beyond_sahara = {
@@ -372,7 +466,18 @@ h_naples_3 = {
 			owns = 4567
 		}		
 		effect = {
-			EFFECT PLACEHOLDER
+			2474 = {
+				cede_province = NAP
+			}
+			2475 = {
+				cede_province = NAP
+			}
+			2474 = {
+				add_core = NAP
+			}
+			2475 = {
+				add_core = NAP
+			}
 		}
 	}
 }
@@ -400,6 +505,7 @@ h_naples_4 = {
 			num_of_galley = 20
 		}
 		effect = {
+			create_admiral = { tradition = 70 }
 			corsica_sardinia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -459,6 +565,10 @@ h_naples_4 = {
 					NOT = { is_permanent_claim = ROOT }
 				}
 				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = "kni_crusade_against_piracy"
+				duration = 25
 			}
 		}
 	}
@@ -541,7 +651,13 @@ h_naples_5 = {
 			}
 		}
 		effect = {
-			EFFECT PLACEHOLDER
+			add_country_modifier = {
+				name = "gen_eur_trade_node_mod"
+				duration = 7300
+			}
+			121 = {
+				add_center_of_trade_level = 1
+			}
 		}
 	}
 	h_nap_naples_merchant_marine = {
@@ -555,7 +671,10 @@ h_naples_5 = {
 			}
 		}
 		effect = {
-			EFFECT PLACEHOLDER
+			add_country_modifier = {
+				name = "gen_achieved_mare_nostrum"
+				duration = 7300
+			}
 		}
 	}
 }
