@@ -252,9 +252,8 @@ emp_bra_pru_1 = {
 		}
 		effect = {
 			set_country_flag = konigsberg_university_flag
-			country_event_with_insight = { 
+			country_event = { 
 				id = flavor_brapru.11 
-				insight_tooltip = h_emp_brapru_konigsberg_development
 			}
 			if = { 
 				limit = { has_dlc = "Domination" }
@@ -301,7 +300,22 @@ emp_bra_pru_1 = {
 			set_country_flag = renovate_berlin_flag
 			country_event_with_insight = { 
 				id = flavor_brapru.20 
-				insight_tooltip= h_emp_brapru_renovate_berlin
+				insight_tooltip = INSIGHT_JUST_TOOLTIP
+				effect_tooltip="
+					if = {
+						limit = {
+							NOT = { has_country_flag = renovate_berlin_flag }
+						}
+						add_years_of_income = -0.75
+					}
+					set_country_flag = pru_berlin_renovations_flag
+					50 = {
+						add_province_modifier = {
+							name = 'pru_berlin_renovations'
+							duration = -1
+						}
+					}
+				"
 			}
 			
 			if = { 
@@ -449,9 +463,8 @@ emp_bra_pru_1_b = {
 		}
 		effect = {
 			set_country_flag = brapru_army_reforms_3
-			country_event_with_insight = { 
+			country_event = { 
 				id = flavor_brapru.29 
-				insight_tooltip = h_emp_brapru_army_reforms_3
 			}
 			if = {
 				limit = {
@@ -849,9 +862,8 @@ emp_bra_pru_2 = {
 		}
 		effect = {
 			set_country_flag = pru_legal_reforms_flag
-			country_event_with_insight = { 
+			country_event = { 
 				id = flavor_brapru.27 
-				insight_tooltip = h_emp_brapru_reform_the_state
 			}
 		}
 	}
@@ -1267,9 +1279,8 @@ emp_bra_pru_3 = {
 		}
 		effect = {
 			set_country_flag = pru_potsdam_flag
-			country_event_with_insight = { 
+			country_event = { 
 				id = flavor_brapru.28 
-				insight_tooltip = h_emp_brapru_edict_of_potsdam
 			}
 			add_country_modifier = {
 				name = "edict_of_potsdam_modifier"
