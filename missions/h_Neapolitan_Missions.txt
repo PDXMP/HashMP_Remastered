@@ -251,8 +251,8 @@ h_naples_2 = {
 				add_permanent_claim = ROOT
 			}
 			add_country_modifier = {
-				name = "expansionist_country"
-				duration = 9125 #25 years
+				name = "nap_veteran_soldiers"
+				duration = 7300 #20 years
 			}
 		}
 	}

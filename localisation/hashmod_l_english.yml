@@ -49,4 +49,6 @@ h_nap_usurp_merchant_republics_desc:0 "The Northern Merchant Republics have long
 h_nap_naples_merchant_marine_title:0 "Merchant Mariner"
 h_nap_naples_merchant_marine_desc:0 "Our coffers are begining to grow bountiful from our great wealth. To ensure continued domination of European trade, we must wield a navy to be reckoned with. We cannot allow our enemies to threaten our trade investments."
 nap_center_of_production:0 "Center of Production"
-desc_nap_center_of_production:0 "Our investments in the region have lead to a bustling production district in this city."
+desc_nap_center_of_production:0 "Our investments in the region have lead to a bustling production district in this city
+nap_veteran_soldiers:0 "Veteran Soldiers"
+desc_nap_veteran_soldiers:0 "The Italian campaign has hardened our soldiers and brought promising new leadership through the ranks, best to make use of them while they're still around."
