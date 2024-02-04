@@ -31,7 +31,6 @@ h_naples_1 = {
 				id = flavor_nap.3
 				option_1 = "
 				add_prestige = 10
-				add_reform_progress_small_effect = yes
 				add_country_modifier = {
 					name = nap_renaissance_culture
 					duration = 18250
@@ -39,7 +38,6 @@ h_naples_1 = {
 				"
 				option_2 = "
 				add_legitimacy = 10
-				add_reform_progress_small_effect = yes
 				add_country_modifier = {
 					name = nap_renaissance_glory
 					duration = 18250
@@ -67,7 +65,12 @@ h_naples_1 = {
 			}
 		}
 		effect = {
-			change_government_reform_progress = 50
+			capital_scope = {
+				add_province_modifier = {
+					name = nap_center_of_production
+					duration = -1
+				}
+			}
 			add_country_modifier = {
 				name = "growing_economy"
 				duration = 9125 #25 years
@@ -144,8 +147,8 @@ h_naples_1 = {
 			add_country_modifier = {
 				name = "proto_industrialization"
 				duration = 9125
-				add_adm_power = 100
 			}
+			add_adm_power = 100
 			}
 
 		}
@@ -311,7 +314,7 @@ h_naples_2 = {
 		effect = {
 			add_country_modifier = {
 				name = "nap_italian_wars_modifier"
-				duration = 9125 #25 years
+				duration = -1
 			}
 		}
 }
@@ -344,6 +347,7 @@ h_naples_3 = {
 			western_sicily_area = {
 				type = all
 				owned_by = ROOT
+				is_core = ROOT
 			}
 			owns = 124
 			owns = 2982
@@ -382,22 +386,22 @@ h_naples_3 = {
 			}
 		}
 		trigger = {
-			western_sicily_area = {
-				type = all
-				owned_by = ROOT
-			}
-			owns = 124
-			2982 = {
+			125 = {
 				owned_by = ROOT
 				is_core = ROOT
 				has_building = coastal_defence
 			}
-			4737 = {
+			124 = {
 				owned_by = ROOT
 				is_core = ROOT
 				has_building = coastal_defence
 			}
 			4736 = {
+				owned_by = ROOT
+				is_core = ROOT
+				has_building = coastal_defence
+			}
+			2982 = {
 				owned_by = ROOT
 				is_core = ROOT
 				has_building = coastal_defence
@@ -440,43 +444,7 @@ h_naples_3 = {
 		effect = {
 			add_country_modifier = {
 				name = "nap_barbary_pirates"
-				duration = 25
-			}
-			}
-		}
-	h_nap_beyond_sahara = {
-		icon = mission_dansk_ostindia
-		required_missions = { h_nap_barbary_pirates }
-		provinces_to_highlight = {
-			OR = {
-				area = tripolitania_area
-				province_id = 2449
-				province_id = 4567
-				province_id = 2448
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		trigger = { 
-			tripolitania_area = {
-				type = all
-				owned_by = root
-			}
-			owns = 2449
-			owns = 2448
-			owns = 4567
-		}		
-		effect = {
-			2474 = {
-				cede_province = NAP
-			}
-			2475 = {
-				cede_province = NAP
-			}
-			2474 = {
-				add_core = NAP
-			}
-			2475 = {
-				add_core = NAP
+				duration = -1
 			}
 		}
 	}
@@ -502,10 +470,16 @@ h_naples_4 = {
 		trigger = {	
 			is_subject = no
 			navy_size_percentage = 0.9
-			num_of_galley = 20
+			num_of_galley = 10
 		}
 		effect = {
-			create_admiral = { tradition = 70 }
+			define_admiral = { 
+				shock = 2
+				fire = 2
+				manuever = 2
+				siege = 1
+				trait = ram_raider_personality
+		}
 			corsica_sardinia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -568,7 +542,7 @@ h_naples_4 = {
 			}
 			add_country_modifier = {
 				name = "kni_crusade_against_piracy"
-				duration = 25
+				duration = 3650
 			}
 		}
 	}

@@ -3,3 +3,7 @@
 # Add custom mod modifiers here
 ##################################################
 
+nap_center_of_production = {
+	great_project_upgrade_cost = -0.15
+	trade_goods_size_modifier = 0.1
+}

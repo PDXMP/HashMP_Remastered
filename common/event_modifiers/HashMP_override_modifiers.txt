@@ -3,3 +3,10 @@
 # Copy and paste vanilla modifiers to change here
 ##################################################
 
+nap_barbary_pirates = {
+	global_ship_trade_power = 0.1
+	galley_power = 0.1
+}
+kni_crusade_against_piracy = {
+	naval_morale = 0.1
+}
