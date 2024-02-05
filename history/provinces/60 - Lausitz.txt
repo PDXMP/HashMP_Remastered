@@ -1,9 +1,12 @@
 #60 - Lausitz
 
-owner = BOH
-controller = BOH
+owner = BRA
+controller = BRA
+add_core = BRA
+# owner = BOH
+# controller = BOH
 add_core = SOR
-add_core = BOH
+# add_core = BOH
 capital = "Bautzen"
 culture = sorbian
 religion = catholic
