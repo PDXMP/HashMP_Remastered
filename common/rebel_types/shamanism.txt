@@ -152,7 +152,7 @@ shamanism_rebels = {
 					is_reformation_center = no
 					NOT = { owner = { religion = shamanism } }
 				}
-				change_religion = shamanism
+				#change_religion = shamanism
 				add_province_modifier = {
 					name = "forced_conversion"
 					duration = 730
@@ -217,14 +217,14 @@ shamanism_rebels = {
 				duration = 3650
 			}
 		}
-		else_if = {
-			limit = {
-				dominant_religion = shamanism
-				NOT = { religion = shamanism }
-			}
-			change_religion = shamanism
-			force_converted = yes
-		}
+		# else_if = {
+		# 	limit = {
+		# 		dominant_religion = shamanism
+		# 		NOT = { religion = shamanism }
+		# 	}
+		# 	change_religion = shamanism
+		# 	force_converted = yes
+		# }
 		else = { add_stability = -1 } #Should probably never get here
 		if = {
 			limit = {

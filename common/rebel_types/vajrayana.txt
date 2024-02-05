@@ -152,7 +152,7 @@ vajrayana_rebels = {
 					is_reformation_center = no
 					NOT = { owner = { religion = vajrayana } }
 				}
-				change_religion = vajrayana
+				#change_religion = vajrayana
 				add_province_modifier = {
 					name = "forced_conversion"
 					duration = 730
@@ -221,14 +221,14 @@ vajrayana_rebels = {
 			}
 		}
 		
-		else_if = {
-			limit = {
-				NOT = { religion = vajrayana }
-				dominant_religion = vajrayana
-			}
-			change_religion = vajrayana
-			force_converted = yes
-		}
+		# else_if = {
+		# 	limit = {
+		# 		NOT = { religion = vajrayana }
+		# 		dominant_religion = vajrayana
+		# 	}
+		# 	change_religion = vajrayana
+		# 	force_converted = yes
+		# }
 		else_if = {
 			limit = {
 				NOT = { religion = vajrayana }

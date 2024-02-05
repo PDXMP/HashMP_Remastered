@@ -152,7 +152,7 @@ shinto_rebels = {
 					is_reformation_center = no
 					NOT = { owner = { religion = shinto } }
 				}
-				change_religion = shinto
+				#change_religion = shinto
 				add_province_modifier = {
 					name = "forced_conversion"
 					duration = 730
@@ -221,14 +221,14 @@ shinto_rebels = {
 			}
 		}
 		
-		else_if = {
-			limit = {
-				NOT = { religion = shinto }
-				dominant_religion = shinto
-			}
-			change_religion = shinto
-			force_converted = yes
-		}
+		# else_if = {
+		# 	limit = {
+		# 		NOT = { religion = shinto }
+		# 		dominant_religion = shinto
+		# 	}
+		# 	change_religion = shinto
+		# 	force_converted = yes
+		# }
 		else_if = {
 			limit = {
 				NOT = { religion = shinto }

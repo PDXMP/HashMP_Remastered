@@ -151,7 +151,7 @@ nahuatl_rebels = {
 					is_reformation_center = no
 					NOT = { owner = { religion = nahuatl } }
 				}
-				change_religion = nahuatl
+				#change_religion = nahuatl
 				add_province_modifier = {
 					name = "forced_conversion"
 					duration = 730
@@ -240,7 +240,7 @@ nahuatl_rebels = {
 		#		religion_group = nahuatl_group
 		#		NOT = { religion = nahuatl }
 		#	}
-		#	change_religion = nahuatl
+		#	#change_religion = nahuatl
 		#	force_converted = yes
 		#}
 		change_estate_land_share = {

@@ -151,7 +151,7 @@ confucianism_rebels = {
 					is_reformation_center = no
 					NOT = { owner = { religion = confucianism } }
 				}
-				change_religion = confucianism
+				#change_religion = confucianism
 				add_province_modifier = {
 					name = "forced_conversion"
 					duration = 730
@@ -220,14 +220,14 @@ confucianism_rebels = {
 			}
 		}
 		
-		else_if = {
-			limit = {
-				NOT = { religion = confucianism }
-				dominant_religion = confucianism
-			}
-			change_religion = confucianism
-			force_converted = yes
-		}
+		# else_if = {
+		# 	limit = {
+		# 		NOT = { religion = confucianism }
+		# 		dominant_religion = confucianism
+		# 	}
+		# 	change_religion = confucianism
+		# 	force_converted = yes
+		# }
 		else_if = {
 			limit = {
 				NOT = { religion = confucianism }

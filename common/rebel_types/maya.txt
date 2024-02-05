@@ -151,7 +151,7 @@ maya_rebels = {
 					is_reformation_center = no
 					NOT = { owner = { religion = mesoamerican_religion } }
 				}
-				change_religion = mesoamerican_religion
+				#change_religion = mesoamerican_religion
 				add_province_modifier = {
 					name = "forced_conversion"
 					duration = 730
@@ -240,7 +240,7 @@ maya_rebels = {
 		#		religion_group = pagan
 		#		NOT = { religion = mesoamerican_religion }
 		#	}
-		#	change_religion = mesoamerican_religion
+		#	#change_religion = mesoamerican_religion
 		#	force_converted = yes
 		#}
 		change_estate_land_share = {

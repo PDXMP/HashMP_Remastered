@@ -151,7 +151,7 @@ tengri_pagan_reformed_rebels = {
 					is_reformation_center = no
 					NOT = { owner = { religion = tengri_pagan_reformed } }
 				}
-				change_religion = tengri_pagan_reformed
+				#change_religion = tengri_pagan_reformed
 				add_province_modifier = {
 					name = "forced_conversion"
 					duration = 730
@@ -216,14 +216,14 @@ tengri_pagan_reformed_rebels = {
 				duration = 3650
 			}
 		}
-		else_if = {
-			limit = {
-				dominant_religion = tengri_pagan_reformed
-				NOT = { religion = tengri_pagan_reformed }
-			}
-			change_religion = tengri_pagan_reformed
-			force_converted = yes
-		}
+		# else_if = {
+		# 	limit = {
+		# 		dominant_religion = tengri_pagan_reformed
+		# 		NOT = { religion = tengri_pagan_reformed }
+		# 	}
+		# 	change_religion = tengri_pagan_reformed
+		# 	force_converted = yes
+		# }
 		else = { add_stability = -1 } #Should probably never get here
 		if = {
 			limit = {

@@ -152,7 +152,7 @@ animism_rebels = {
 					is_reformation_center = no
 					NOT = { owner = { religion = animism } }
 				}
-				change_religion = animism
+				#change_religion = animism
 				add_province_modifier = {
 					name = "forced_conversion"
 					duration = 730
@@ -217,17 +217,17 @@ animism_rebels = {
 				duration = 3650
 			}
 		}
-		else_if = {
-			limit = {
-				OR = {
-					religion_group = pagan
-					dominant_religion = animism
-				}
-				NOT = { religion = animism }
-			}
-			change_religion = animism
-			force_converted = yes
-		}
+		# else_if = {
+		# 	limit = {
+		# 		OR = {
+		# 			religion_group = pagan
+		# 			dominant_religion = animism
+		# 		}
+		# 		NOT = { religion = animism }
+		# 	}
+		# 	change_religion = animism
+		# 	force_converted = yes
+		# }
 		else = { add_stability = -1 } #Should probably never get here
 		if = {
 			limit = {

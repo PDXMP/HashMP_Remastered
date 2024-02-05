@@ -151,7 +151,7 @@ anglican_rebels = {
 					is_reformation_center = no
 					NOT = { owner = { religion = anglican } }
 				}
-				change_religion = anglican
+				#change_religion = anglican
 				add_province_modifier = {
 					name = "forced_conversion"
 					duration = 730
@@ -219,14 +219,14 @@ anglican_rebels = {
 				duration = 3650
 			}
 		}
-		else_if = {
-			limit = {
-				NOT = { religion = anglican }
-				dominant_religion = anglican
-			}
-			change_religion = anglican
-			force_converted = yes
-		}
+		# else_if = {
+		# 	limit = {
+		# 		NOT = { religion = anglican }
+		# 		dominant_religion = anglican
+		# 	}
+		# 	change_religion = anglican
+		# 	force_converted = yes
+		# }
 		else_if = {
 			limit = {
 				NOT = { religion = anglican }

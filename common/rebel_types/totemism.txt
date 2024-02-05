@@ -152,7 +152,7 @@ totemism_rebels = {
 					is_reformation_center = no
 					NOT = { owner = { religion = totemism } }
 				}
-				change_religion = totemism
+				#change_religion = totemism
 				add_province_modifier = {
 					name = "forced_conversion"
 					duration = 730
@@ -217,14 +217,14 @@ totemism_rebels = {
 				duration = 3650
 			}
 		}
-		else_if = {
-			limit = {
-				dominant_religion = totemism
-				NOT = { religion = totemism }
-			}
-			change_religion = totemism
-			force_converted = yes
-		}
+		# else_if = {
+		# 	limit = {
+		# 		dominant_religion = totemism
+		# 		NOT = { religion = totemism }
+		# 	}
+		# 	change_religion = totemism
+		# 	force_converted = yes
+		# }
 		else = { add_stability = -1 } #Should probably never get here
 		if = {
 			limit = {

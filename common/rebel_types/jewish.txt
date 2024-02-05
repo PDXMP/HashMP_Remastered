@@ -151,7 +151,7 @@ jewish_rebels = {
 					is_reformation_center = no
 					NOT = { owner = { religion = jewish } }
 				}
-				change_religion = jewish
+				#change_religion = jewish
 				add_province_modifier = {
 					name = "forced_conversion"
 					duration = 730
@@ -220,14 +220,14 @@ jewish_rebels = {
 			}
 		}
 		
-		else_if = {
-			limit = {
-				NOT = { religion = jewish }
-				dominant_religion = jewish
-			}
-			change_religion = jewish
-			force_converted = yes
-		}
+		# else_if = {
+		# 	limit = {
+		# 		NOT = { religion = jewish }
+		# 		dominant_religion = jewish
+		# 	}
+		# 	change_religion = jewish
+		# 	force_converted = yes
+		# }
 		else = { add_stability = -1 } #Should probably never get here
 		if = {
 			limit = {

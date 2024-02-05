@@ -152,7 +152,7 @@ buddhism_rebels = {
 					is_reformation_center = no
 					NOT = { owner = { religion = buddhism } }
 				}
-				change_religion = buddhism
+				#change_religion = buddhism
 				add_province_modifier = {
 					name = "forced_conversion"
 					duration = 730
@@ -220,14 +220,14 @@ buddhism_rebels = {
 				duration = 3650
 			}
 		}
-		else_if = {
-			limit = {
-				NOT = { religion = buddhism }
-				dominant_religion = buddhism
-			}
-			change_religion = buddhism
-			force_converted = yes
-		}
+		# else_if = {
+		# 	limit = {
+		# 		NOT = { religion = buddhism }
+		# 		dominant_religion = buddhism
+		# 	}
+		# 	change_religion = buddhism
+		# 	force_converted = yes
+		# }
 		else_if = {
 			limit = {
 				NOT = { religion = buddhism }

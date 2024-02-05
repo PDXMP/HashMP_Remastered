@@ -152,7 +152,7 @@ coptic_rebels = {
 					is_reformation_center = no
 					NOT = { owner = { religion = coptic } }
 				}
-				change_religion = coptic
+				#change_religion = coptic
 				add_province_modifier = {
 					name = "forced_conversion"
 					duration = 730
@@ -221,15 +221,15 @@ coptic_rebels = {
 			}
 		}
 		
-		else_if = {
-			limit = {
-				NOT = { religion = coptic }
-				dominant_religion = coptic
-				NOT = { tag = PAP }
-			}
-			change_religion = coptic
-			force_converted = yes
-		}
+		# else_if = {
+		# 	limit = {
+		# 		NOT = { religion = coptic }
+		# 		dominant_religion = coptic
+		# 		NOT = { tag = PAP }
+		# 	}
+		# 	change_religion = coptic
+		# 	force_converted = yes
+		# }
 		else_if = {
 			limit = {
 				NOT = { religion = coptic }

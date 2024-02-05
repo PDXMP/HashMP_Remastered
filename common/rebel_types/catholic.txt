@@ -153,7 +153,7 @@ catholic_rebels = {
 					is_reformation_center = no
 					NOT = { owner = { religion = catholic } }
 				}
-				change_religion = catholic
+				#change_religion = catholic
 				add_province_modifier = {
 					name = "forced_conversion"
 					duration = 730
@@ -239,15 +239,15 @@ catholic_rebels = {
 				influence = 15
 			}
 		}
-		if = {
-			limit = {
-				NOT = { religion = catholic }
-				dominant_religion = catholic
-				NOT = { tag = PAP }
-			}
-			change_religion = catholic
-			force_converted = yes
-		}
+		# if = {
+		# 	limit = {
+		# 		NOT = { religion = catholic }
+		# 		dominant_religion = catholic
+		# 		NOT = { tag = PAP }
+		# 	}
+		# 	change_religion = catholic
+		# 	force_converted = yes
+		# }
 		if = {
 			limit = {
 				NOT = { religion = catholic }

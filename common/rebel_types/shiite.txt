@@ -152,7 +152,7 @@ shiite_rebels = {
 					is_reformation_center = no
 					NOT = { owner = { religion = shiite } }
 				}
-				change_religion = shiite
+				#change_religion = shiite
 				add_province_modifier = {
 					name = "forced_conversion"
 					duration = 730
@@ -221,14 +221,14 @@ shiite_rebels = {
 			}
 		}
 		
-		else_if = {
-			limit = {
-				NOT = { religion = shiite }
-				dominant_religion = shiite
-			}
-			change_religion = shiite
-			force_converted = yes
-		}
+		# else_if = {
+		# 	limit = {
+		# 		NOT = { religion = shiite }
+		# 		dominant_religion = shiite
+		# 	}
+		# 	change_religion = shiite
+		# 	force_converted = yes
+		# }
 		else_if = {
 			limit = {
 				NOT = { religion = shiite }

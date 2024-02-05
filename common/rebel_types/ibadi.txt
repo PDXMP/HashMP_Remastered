@@ -152,7 +152,7 @@ ibadi_rebels = {
 					is_reformation_center = no
 					NOT = { owner = { religion = ibadi } }
 				}
-				change_religion = ibadi
+				#change_religion = ibadi
 				add_province_modifier = {
 					name = "forced_conversion"
 					duration = 730
@@ -221,14 +221,14 @@ ibadi_rebels = {
 			}
 		}
 		
-		else_if = {
-			limit = {
-				NOT = { religion = ibadi }
-				dominant_religion = ibadi
-			}
-			change_religion = ibadi
-			force_converted = yes
-		}
+		# else_if = {
+		# 	limit = {
+		# 		NOT = { religion = ibadi }
+		# 		dominant_religion = ibadi
+		# 	}
+		# 	change_religion = ibadi
+		# 	force_converted = yes
+		# }
 		else_if = {
 			limit = {
 				NOT = { religion = ibadi }

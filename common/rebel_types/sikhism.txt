@@ -152,7 +152,7 @@ sikhism_rebels = {
 					is_reformation_center = no
 					NOT = { owner = { religion = sikhism } }
 				}
-				change_religion = sikhism
+				#change_religion = sikhism
 				add_province_modifier = {
 					name = "forced_conversion"
 					duration = 730
@@ -221,14 +221,14 @@ sikhism_rebels = {
 			}
 		}
 		
-		else_if = {
-			limit = {
-				NOT = { religion = sikhism }
-				dominant_religion = sikhism
-			}
-			change_religion = sikhism
-			force_converted = yes
-		}
+		# else_if = {
+		# 	limit = {
+		# 		NOT = { religion = sikhism }
+		# 		dominant_religion = sikhism
+		# 	}
+		# 	change_religion = sikhism
+		# 	force_converted = yes
+		# }
 		else_if = {
 			limit = {
 				NOT = { religion = sikhism }

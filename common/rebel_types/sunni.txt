@@ -152,7 +152,7 @@ sunni_rebels = {
 					is_reformation_center = no
 					NOT = { owner = { religion = sunni } }
 				}
-				change_religion = sunni
+				#change_religion = sunni
 				add_province_modifier = {
 					name = "forced_conversion"
 					duration = 730
@@ -220,14 +220,14 @@ sunni_rebels = {
 				duration = 3650
 			}
 		}
-		else_if = {
-			limit = {
-				NOT = { religion = sunni }
-				dominant_religion = sunni
-			}
-			change_religion = sunni
-			force_converted = yes
-		}
+		# else_if = {
+		# 	limit = {
+		# 		NOT = { religion = sunni }
+		# 		dominant_religion = sunni
+		# 	}
+		# 	change_religion = sunni
+		# 	force_converted = yes
+		# }
 		else_if = {
 			limit = {
 				NOT = { religion = sunni }
