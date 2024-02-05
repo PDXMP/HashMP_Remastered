@@ -67,7 +67,7 @@ h_naples_1 = {
 		effect = {
 			capital_scope = {
 				add_province_modifier = {
-					name = nap_center_of_production
+					name = h_nap_center_of_production
 					duration = -1
 				}
 			}
@@ -251,7 +251,7 @@ h_naples_2 = {
 				add_permanent_claim = ROOT
 			}
 			add_country_modifier = {
-				name = "nap_veteran_soldiers"
+				name = "h_nap_veteran_soldiers"
 				duration = 7300 #20 years
 			}
 		}
