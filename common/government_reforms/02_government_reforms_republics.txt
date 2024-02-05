@@ -272,6 +272,7 @@ merchants_reform = {
 	nation_designer_cost = 40
 	legacy_equivalent = merchant_republic
 	potential = {
+		was_player = no
 		NOT = {
 			AND = {
 				tag = VEN
