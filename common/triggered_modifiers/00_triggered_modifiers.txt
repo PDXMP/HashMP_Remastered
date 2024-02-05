@@ -292,10 +292,11 @@ custodian_of_the_two_holy_mosques = {
 
 papal_subjugation = {
 	potential = {
-		normal_or_historical_nations = yes
-		has_discovered = 118	# Roma
-		religion = catholic
-		NOT = { tag = PAP }
+		always = no
+		# normal_or_historical_nations = yes
+		# has_discovered = 118	# Roma
+		# religion = catholic
+		# NOT = { tag = PAP }
 	}
 
 	trigger = {	
@@ -809,13 +810,15 @@ great_peasants_war_concessions_triggered_modifier = {
 
 pope_in_hre_triggered_modifier = {
 	potential = {
-		PAP = { is_part_of_hre = yes }
-		religion = catholic
+		# PAP = { is_part_of_hre = yes }
+		# religion = catholic
+		always = no
 	}
 	trigger = {
-		PAP = { is_part_of_hre = yes }
-		religion = catholic
-		NOT = { is_part_of_hre = yes }
+		# PAP = { is_part_of_hre = yes }
+		# religion = catholic
+		# NOT = { is_part_of_hre = yes }
+		always = no
 	}
 	prestige = -0.5
 }
