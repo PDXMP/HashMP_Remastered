@@ -708,9 +708,9 @@ danish_archkingdom = {
 		nobles_influence_modifier = -0.1
 		years_to_integrate_personal_union = -40
 	}
-	custom_attributes = {
-		personal_union_war_contribution = yes
-	}
+	# custom_attributes = {
+	# 	personal_union_war_contribution = yes
+	# }
 	ai = {
 		factor = 1
 	}
