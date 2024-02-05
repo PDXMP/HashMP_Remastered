@@ -1661,7 +1661,8 @@ burgundian_state_reform = {
 	icon = "burgundian_state"
 	allow_normal_conversion = yes
 	potential = {
-		primary_culture = burgundian
+		is_or_was_tag = { tag = BUR }
+		#primary_culture = burgundian
 	}
 	nation_designer_trigger = {
 		primary_culture = burgundian
