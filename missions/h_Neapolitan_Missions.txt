@@ -79,79 +79,89 @@ h_naples_1 = {
 	}	
 	h_nap_italian_craftsmanship = {
 		icon = reclaim_the_ducal_lands
-		required_missions = { h_nap_develop_the_mezzogiorno h_nap_state_of_the_presidi }
-		position = 4
+		required_missions = { 
+			h_nap_develop_the_mezzogiorno 
+			#h_nap_state_of_the_presidi 
+		}
+		position = 3
 		provinces_to_highlight = {  }
 		trigger = {
 			num_of_owned_provinces_with = {
 				has_building = workshop
 				value = 10
 			}			
-			}
+		}
 		effect = {
 			add_years_of_income = 1
 			add_country_modifier = {
 				name = sax_production_prospering
 				duration = 7300
 			}
-			}
+		}
 	}
 	h_nap_breadbasket_of_italy = {
 		icon = develop_the_po_valley
-		required_missions = { h_nap_italian_craftsmanship h_nap_the_po_valley }
-		position = 5
-		provinces_to_highlight = { 
-			OR = {
-				province_id = 113
-				province_id = 114
-				province_id = 4730
-				province_id = 106
-			}
-			NOT = { development = 20 }
-		 }
-		trigger = {
-			113 = {
-				owned_by = ROOT
-				development = 20
-				}
-			114 = {
-				owned_by = ROOT
-				development = 20
-				}
-			4730 = {
-				owned_by = ROOT
-				development = 20
-				}
-			106 = {
-				owned_by = ROOT
-				development = 20
-				}
-			}
-		effect = {
-			add_years_of_income = 1
-			add_stability = 1
-			}
-	}
-	h_nap_italian_manufacturing = {
-		icon = italian_riches
-		required_missions = { h_nap_breadbasket_of_italy }
-		position = 6
+		required_missions = { 
+			h_nap_italian_craftsmanship 
+			#h_nap_the_po_valley 
+		}
+		position = 4
+		provinces_to_highlight = {
+			owned_by = ROOT
+		}
 		trigger = {
 			num_of_owned_provinces_with = {
-				has_manufactory_trigger = yes
-				region = italy_region
 				value = 10
-				}
+				has_building = farm_estate
+				base_production = 5
 			}
-		effect = {
-			add_country_modifier = {
-				name = "proto_industrialization"
-				duration = 9125
-			}
-			add_adm_power = 100
-			}
-
+			# 113 = {
+			# 	owned_by = ROOT
+			# 	development = 20
+			# 	}
+			# 114 = {
+			# 	owned_by = ROOT
+			# 	development = 20
+			# 	}
+			# 4730 = {
+			# 	owned_by = ROOT
+			# 	development = 20
+			# 	}
+			# 106 = {
+			# 	owned_by = ROOT
+			# 	development = 20
+			# 	}
+			# }
 		}
+		effect = {
+			#add_years_of_income = 1
+			#add_stability = 1
+			add_stability_or_adm_power = yes
+			add_country_modifier = {
+				name = "h_nap_breadbasket_of_italy"
+				duration = 3650 #10 years
+			}
+		}
+	}
+	# h_nap_italian_manufacturing = {
+	# 	icon = italian_riches
+	# 	required_missions = { h_nap_breadbasket_of_italy }
+	# 	position = 6
+	# 	trigger = {
+	# 		num_of_owned_provinces_with = {
+	# 			has_manufactory_trigger = yes
+	# 			region = italy_region
+	# 			value = 10
+	# 			}
+	# 		}
+	# 	effect = {
+	# 		add_country_modifier = {
+	# 			name = "proto_industrialization"
+	# 			duration = 9125
+	# 		}
+	# 		add_adm_power = 100
+	# 	}
+	# }
 }
 h_naples_2 = {
 	slot = 2
