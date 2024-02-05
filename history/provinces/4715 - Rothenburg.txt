@@ -1,5 +1,8 @@
-owner = ROT
-controller = ROT
+owner = HES
+controller = HES
+add_core = HES
+# owner = ROT
+# controller = ROT
 capital = "Rothenburg ob der Tauber"
 is_city = yes
 culture = franconian
@@ -9,7 +12,7 @@ base_tax = 4
 base_production = 5
 base_manpower = 1
 trade_goods = grain
-add_core = ROT
+# add_core = ROT
 
 discovered_by = eastern
 discovered_by = western
