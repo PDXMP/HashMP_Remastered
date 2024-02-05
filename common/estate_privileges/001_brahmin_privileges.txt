@@ -194,6 +194,7 @@ estate_brahmins_brahmin_governance = {
 	loyalty = -0.05
 	is_valid = {
 		NOT = { religion_group = muslim }
+		always = no
 	}
 	can_select = {
 		can_select_monarch_power_privilege = {
