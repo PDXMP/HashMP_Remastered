@@ -67,7 +67,7 @@ h_naples_1 = {
 		effect = {
 			capital_scope = {
 				add_province_modifier = {
-					name = h_nap_center_of_production
+					name = nap_center_of_production
 					duration = -1
 				}
 			}
@@ -238,9 +238,9 @@ h_naples_2 = {
 				value = 3
 				area = tuscany_area
 			}
-			117 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+			# 117 = {
+			# 	country_or_non_sovereign_subject_holds = ROOT
+			# }
 		}
 		effect = {
 			emilia_romagna_area = {
@@ -252,7 +252,7 @@ h_naples_2 = {
 			}
 			add_country_modifier = {
 				name = "h_nap_veteran_soldiers"
-				duration = 7300 #20 years
+				duration = 3650 #10 years
 			}
 		}
 	}
