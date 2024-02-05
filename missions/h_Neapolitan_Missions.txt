@@ -413,12 +413,12 @@ h_naples_3 = {
 					owned_by = NAP
 				}
 				add_base_manpower = 1
-				western_sicily_area = {
+			}
+			western_sicily_area = {
 				limit = {
 					owned_by = NAP
 				}
 				add_base_manpower = 1
-				}
 			}
 		}
 	}
