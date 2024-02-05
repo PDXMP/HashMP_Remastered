@@ -431,6 +431,9 @@ pirate_republic_reform = {
 		may_perform_slave_raid_on_same_religion = yes
 		allowed_marine_fraction = 0.5
 	}
+	potential = {
+		was_player = no
+	}
 	trigger = {
 		OR = {
 			has_government_attribute = is_pirate_republic_reform
