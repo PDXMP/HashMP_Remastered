@@ -1673,7 +1673,8 @@ burgundian_state_reform = {
 		rival_change_cost = -1
 		rival_border_fort_maintenance = -1
 		diplomatic_upkeep = 2
-		years_to_integrate_personal_union = -5
+		years_to_integrate_personal_union = -40 #-5
+		fort_maintenance_modifier = -0.1
 	}
 	ai = {
 		factor = 1
