@@ -1,7 +1,10 @@
 #2981 - Montferrat
 
-owner = MFA
-controller = MFA
+owner = SAV
+controller = SAV
+add_core = SAV
+# owner = MFA
+# controller = MFA
 culture = piedmontese
 religion = catholic
 hre = yes
@@ -11,7 +14,7 @@ trade_goods = wine
 base_manpower = 2
 capital = Montferrat
 is_city = yes
-add_core = MFA
+# add_core = MFA
 
 
 
