@@ -9,3 +9,4 @@ NDefines.NMilitary.SUPERIORITY_WARGOAL_WARSCORE_THRESHOLD	= 20	-- Needed battle 
 NDefines.NMilitary.WARSCORE_MAX_FROM_BATTLES = 50					-- maximum amount to get from a battles .
 NDefines.NMilitary.SUPPLY_DEPOT_MIL_COST = 10
 NDefines.NMilitary.CAWA_STARTING_STRENGTH = 0.1
+NDefines.NMilitary.BACK_LINE_MORALE_DAMAGE_TAKEN_MODIFIER = 0.0
