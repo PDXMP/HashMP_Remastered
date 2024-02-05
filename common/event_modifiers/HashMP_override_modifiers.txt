@@ -20,3 +20,48 @@ gbr_isolation_policy = {
 	global_unrest = -3
 	global_prosperity_growth = 0.2
 }
+
+gbr_naval_dominance = {	#Permanent
+	reduced_liberty_desire_on_other_continent = 10
+	trade_steering = 0.1
+	global_ship_trade_power = 0.1
+	global_sailors_modifier = 0.1
+}
+
+gbr_new_world_dominance = {	#Permanent
+	global_tariffs = 0.1
+	trade_efficiency = 0.1
+}
+
+eng_rb_coal_produced_mod = {
+	trade_goods_size_modifier = 0.1
+}
+
+eng_strict_marines = {	#Permanent
+	discipline = 0.05
+	shock_damage_received = -0.15
+	fire_damage_received = -0.05
+	is_marine_modifier = yes
+}
+
+eng_empire_of_the_island = {	#Permanent
+	legitimacy = 1
+	republican_tradition = 0.3
+	horde_unity = 1
+	devotion = 1
+	meritocracy = 1
+}
+eng_the_man_of_war = {	#Permanent
+	has_man_of_war = yes
+	allowed_man_of_war_fraction = 0.2
+	sailors_recovery_speed = 0.05
+}
+eng_calvinist_path = {
+	monthly_fervor_increase = 1
+	land_morale = 0.05
+	global_unrest = -2
+	religion = yes
+}
+eng_caribbean_trade = {
+	global_tariffs = 0.15
+}

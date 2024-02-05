@@ -88,7 +88,7 @@ eng_row_slot_1 = {
 		}
 		
 		effect = {
-			add_adm_power = 75
+			add_adm_power = 50
 			add_permanent_claim_province = { province = 1978 }
 			add_permanent_claim_province = { province = 1979 }
 			add_permanent_claim_province = { province = 370 }
@@ -103,7 +103,7 @@ eng_row_slot_1 = {
 				}
 			}
 			else = {
-				add_dip_power = 75
+				add_dip_power = 50
 			}
 		}
 		ai_weight = {
@@ -509,7 +509,7 @@ eng_row_slot_1 = {
 				NOT = {
 					estate_influence = {
 						estate = all
-						influence = 50
+						influence = 60
 					}
 				}
 				estate_loyalty = {
@@ -1578,7 +1578,7 @@ gbr_row_3 = {
 			if = {
 				limit = { ai = no }
 				navy_size = 50
-				navy_size_percentage = 1
+				navy_size_percentage = 0.9
 				num_of_admirals = 1
 			}
 			else = {
@@ -1598,17 +1598,7 @@ gbr_row_3 = {
 				issue = act_of_exploration
 			}
 		
-			126 = { add_permanent_claim = ROOT }
-			163 = { add_permanent_claim = ROOT }
-			321 = { add_permanent_claim = ROOT }
-			4559 = { add_permanent_claim = ROOT }
-			corsica_sardinia_area = { 
-				limit = {
-					NOT = { is_core = EIC }
-					NOT = { is_permanent_claim = EIC }
-				}
-				add_permanent_claim = ROOT 
-			}
+
 		}
 		ai_weight = {
 			factor = 250
@@ -1626,7 +1616,7 @@ gbr_row_3 = {
 			num_of_special_units = { 
 				special_unit_category = man_of_war
 				type = heavy_ship 
-				value = 40
+				value = 30
 			}
 			is_bankrupt = no
 			is_in_deficit = no
@@ -1634,8 +1624,8 @@ gbr_row_3 = {
 				limit = { has_dlc = "Golden Century" }
 				has_flagship = yes
 			}
-			navy_size = 200
-			total_own_and_non_tributary_subject_development = 1500
+			navy_size = 150
+			total_own_and_non_tributary_subject_development = 1000
 		}	
 		effect = {
 			unlock_issue = {
@@ -1728,7 +1718,7 @@ gbr_row_3 = {
 						continent = north_america
 						continent = south_america
 					}
-					value = 200
+					value = 150
 				}
 			}
 			else = {
@@ -1748,7 +1738,6 @@ gbr_row_3 = {
 				name = gbr_new_world_dominance
 				duration = -1
 			}
-			custom_tooltip = gbr_dominiate_new_world_at
 		}
 		ai_weight = {
 			factor = 250
@@ -1817,44 +1806,6 @@ gbr_row_3 = {
 			}
 		}	
 		effect = {
-			if = {
-				limit = {
-					exists = EIC
-					EIC = {
-						is_subject_of = ROOT
-					}
-				}
-				deccan_region = {
-					limit = {
-						NOT = { is_core = EIC }
-						NOT = { is_permanent_claim = EIC }
-					}
-					add_permanent_claim = EIC
-				}
-				west_india_region = {
-					limit = {
-						NOT = { is_core = EIC }
-						NOT = { is_permanent_claim = EIC }
-					}
-					add_permanent_claim = EIC
-				}
-			}
-			else = {
-				deccan_region = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-				west_india_region = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-			}
 			504 = {
 				add_trade_modifier = {
 					who = ROOT
@@ -2476,25 +2427,12 @@ gbr_row_4 = {
 		}		
 		trigger = { 
 			not_in_mission_preview_mode = { key = GBR }
-			OR = {
 				custom_trigger_tooltip = {
 					tooltip = obj_humiliate_rival_tooltip
 					has_country_flag = humiliated_rival
 				}
-				NOT = {
-					any_known_country = {
-						OR = {
-							is_enemy = ROOT
-							is_rival = ROOT
-						}
-					}
-				}
 			}
-			if = {
-				limit = { has_dlc = "Art of War" }
-				num_of_war_reparations = 3
-			}
-		}
+
 		effect = {
 			add_power_projection = {
 				type = mission_rewards_power_projection
@@ -2532,88 +2470,6 @@ gbr_row_4 = {
 		}
 		ai_weight = {
 			factor = 250
-		}
-	}
-
-	gbr_the_mediterranean_isles = {
-		icon = mission_rb_mediterranean_authority
-		required_missions = { gbr_establish_royal_navy }
-		position = 5
-		provinces_to_highlight = {
-			OR = {
-				province_id = 126
-				province_id = 163
-				province_id = 321
-				province_id = 4559
-				area = corsica_sardinia_area
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		trigger = {
-			not_in_mission_preview_mode = { key = GBR }
-			owns_or_non_sovereign_subject_of = 126
-			owns_or_non_sovereign_subject_of = 163
-			owns_or_non_sovereign_subject_of = 321
-			owns_or_non_sovereign_subject_of = 4559
-			corsica_sardinia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-		}
-		effect = {
-			add_dip_power = 100
-			custom_tooltip = gbr_the_mediterranean_isles_tt
-			hidden_effect = {
-				baleares_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-				aegean_archipelago_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-				sicily_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-				add_permanent_claim_province = {
-					province = 163
-				}
-				add_permanent_claim_province = {
-					province = 142
-				}
-				add_permanent_claim_province = {
-					province = 4698
-				}
-			}
-			126 = {
-				center_of_trade = 1
-			}
-			163 = {
-				center_of_trade = 1
-			}
-			321 = {
-				center_of_trade = 1
-			}
-		}
-		
-		ai_weight = {
-			factor = 250
-			modifier = {
-				factor = 0
-				NOT = {
-					is_year = 1700
-				}
-			}
 		}
 	}
 
@@ -2692,79 +2548,34 @@ gbr_row_4 = {
 		}
 		effect = {
 			add_dip_power = 100
-			add_navy_tradition = 20
-			custom_tooltip = gbr_discover_india_at
-			hidden_effect = {
-				random_province = {
-					limit = {
-						has_port = yes
-						has_discovered = ROOT
-						OR = {
-							region = west_india_region
-							region = bengal_region
-							region = coromandel_region
-							region = deccan_region
-						}
-						NOT = { is_core = ROOT }
-					}
-					add_territorial_core = ROOT
+			add_navy_tradition = 10
+			lanka_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
 				}
-				random_province = {
-					limit = {
-						has_port = yes
-						has_discovered = ROOT
-						OR = {
-							region = west_india_region
-							region = bengal_region
-							region = coromandel_region
-							region = deccan_region
-						}
-						NOT = { is_core = ROOT }
-					}
-					add_territorial_core = ROOT
+				add_claim = ROOT
+			}
+			south_lanka_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
 				}
-				random_province = {
-					limit = {
-						has_port = yes
-						has_discovered = ROOT
-						OR = {
-							region = west_india_region
-							region = bengal_region
-							region = coromandel_region
-							region = deccan_region
-						}
-						NOT = { is_core = ROOT }
-					}
-					add_territorial_core = ROOT
+				add_claim = ROOT
+			}
+			east_bengal_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
 				}
-				random_province = {
-					limit = {
-						has_port = yes
-						has_discovered = ROOT
-						OR = {
-							region = west_india_region
-							region = bengal_region
-							region = coromandel_region
-							region = deccan_region
-						}
-						NOT = { is_core = ROOT }
-					}
-					add_territorial_core = ROOT
+				add_claim = ROOT
+			}
+			ahmedabad_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
 				}
-				random_province = {
-					limit = {
-						has_port = yes
-						has_discovered = ROOT
-						OR = {
-							region = west_india_region
-							region = bengal_region
-							region = coromandel_region
-							region = deccan_region
-						}
-						NOT = { is_core = ROOT }
-					}
-					add_territorial_core = ROOT
-				}
+				add_claim = ROOT
 			}
 		}
 		ai_weight = {
@@ -2800,32 +2611,7 @@ gbr_row_4 = {
 			unlock_issue = {
 				issue = the_spice_act
 			}
-			kutai_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_claim = ROOT }
-				}
-				add_claim = ROOT
-			}
-			brunei_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_claim = ROOT }
-				}
-				add_claim = ROOT
-			}
-			if = {
-				limit = {
-					tag = GBR
-				}
-				west_bengal_area = {
-					limit = {
-						NOT = { is_permanent_claim = ROOT }
-						NOT = { is_core = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-			}
+
 		}
 		ai_weight = {
 			factor = 250
@@ -2881,13 +2667,7 @@ gbr_row_4 = {
 						}
 					}
 				}
-				hindusthan_region = {
-					limit = {
-						NOT = { is_core = EIC }
-						NOT = { is_permanent_claim = EIC }
-					}
-					add_permanent_claim = EIC
-				}
+
 			}
 			else = {
 				for = {
@@ -2911,13 +2691,7 @@ gbr_row_4 = {
 						duration = 9125
 					}
 				}
-				hindusthan_region = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
+
 			}
 		}
 		ai_weight = {
@@ -3433,171 +3207,10 @@ gbr_row_5 = {
 	}
 	has_country_shield = yes
 
-	gbr_allies_on_the_mainland = {
-		icon = mission_diplomatic_relation
-		required_missions = {
-			gbr_ave_hundred_years_war
-			gbr_ave_the_royal_court
-		}
-		position = 2
-		provinces_to_highlight = {
-			has_discovered = yes
-			is_capital = yes
-			same_continent = ROOT
-			owner = {
-				is_free_or_tributary_trigger = yes
-				NOT = { alliance_with = ROOT }
-				NOT = { is_rival = ROOT }
-				NOT = { is_enemy = ROOT }
-				OR = {
-					tag = POR
-					total_development = 200
-				}
-			}
-		}		
-		trigger = {
-			not_in_mission_preview_mode = { key = GBR }
-			num_of_allies = 3
-			calc_true_if = {
-				all_ally = {
-					custom_trigger_tooltip = {
-						tooltip = gbr_allies_on_the_mainland_tt
-						capital_scope = {
-							same_continent = ROOT
-						}
-						has_opinion = {
-							who = ROOT
-							value = 150
-						}
-						OR = {
-							tag = POR
-							total_development = 200
-						}
-					}
-				}
-				amount = 3
-			}
-		}	
-		effect = {
-			add_prestige = 25
-			custom_tooltip = dan_denmark_on_european_stage_at
-			hidden_effect = {
-				every_ally = {
-					limit = {
-						capital_scope = { same_continent = ROOT }
-						OR = {
-							tag = POR
-							total_development = 200
-						}
-					}
-					ROOT = {
-						add_trust = {
-							who = PREV
-							value = 10
-							mutual = yes
-						}
-						add_favors = {
-							who = PREV
-							amount = 10
-						}
-					}
-				}
-			}
-
-		}
-		ai_weight = {
-			factor = 250
-		}
-	}
-
-	gbr_take_over_the_lowlands = {
-		icon = mission_hanseatic_city
-		required_missions = {
-			gbr_english_superiority
-			gbr_allies_on_the_mainland
-		}
-		position = 3
-		provinces_to_highlight = {
-			region = low_countries_region
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-			NOT = { owner = { alliance_with = ROOT } }
-		}		
-		trigger = { 
-			not_in_mission_preview_mode = { key = GBR }
-			OR = {
-				any_ally = {
-					custom_trigger_tooltip = {
-						tooltip = ave_conquer_lowlands_at
-						capital_scope = {
-							region = low_countries_region
-						}
-						OR = {
-							primary_culture = dutch
-							primary_culture = flemish
-							primary_culture = frisian
-							primary_culture = wallonian
-						}
-						num_of_owned_provinces_with = {
-							region = low_countries_region
-							value = 15
-						}
-					}
-				}
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					region = low_countries_region
-					value = 15
-				}
-			}
-		}	
-		effect = {
-			simple_dynamic_effect = {
-				first_custom_tooltip = gbr_take_over_the_lowlands_at
-				first_limit = "
-				any_ally = {
-					capital_scope = {
-						region = low_countries_region
-					}
-					OR = {
-						primary_culture = dutch
-						primary_culture = flemish
-						primary_culture = frisian
-						primary_culture = wallonian
-					}
-					num_of_owned_provinces_with = {
-						region = low_countries_region
-						value = 15
-					}
-				}"
-				first_effect = "
-				custom_tooltip = gbr_take_over_the_lowlands_ct
-				gbr_take_over_the_lowlands_effect_a = yes"
-				second_limit = "
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					region = low_countries_region
-					value = 15
-				}"
-				second_effect = "
-				add_accepted_culture = dutch
-				add_accepted_culture = flemish
-				add_country_modifier = {
-					name = gbr_accepted_lowlands
-					duration = -1
-					desc = gbr_accepted_lowlands_tt
-					hidden = yes
-				}
-				"
-			}
-		}
-		ai_weight = {
-			factor = 0
-		}
-	}
-
 	gbr_trade_dominance_in_europe = {
 		icon = mission_european_politics
 		required_missions = {
 			gbr_the_royal_charter
-			gbr_take_over_the_lowlands
 		}
 		position = 4
 		provinces_to_highlight = {
@@ -3625,7 +3238,7 @@ gbr_row_5 = {
 						}
 					"
 				}
-				amount = 6
+				amount = 4
 			}
 		}	
 		effect = {
@@ -3784,6 +3397,27 @@ gbr_row_5 = {
 			}
 		}	
 		effect = {
+			brunei_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+				}
+				add_claim = ROOT
+			}
+			banten_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+				}
+				add_claim = ROOT
+			}
+			johor_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_claim = ROOT }
+				}
+				add_claim = ROOT
+			}
 			add_country_modifier = {
 				name = "eng_australian_colony"
 				duration = 9125
@@ -3854,30 +3488,6 @@ gbr_row_5 = {
 			}
 		}
 		effect = {
-			if = {
-				limit = {
-					exists = EIC
-					EIC = {
-						is_subject_of = ROOT
-					}
-				}
-				bengal_region = {
-					limit = {
-						NOT = { is_core = EIC }
-						NOT = { is_permanent_claim = EIC }
-					}
-					add_permanent_claim = EIC
-				}
-			}
-			else = {
-				bengal_region = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-			}
 			add_country_modifier = {
 				name = "east_india_trade_rush"
 				duration = 9125
@@ -4559,31 +4169,15 @@ gbr_ave_row_3 = {
 		icon = mission_english_renaissance
 		required_missions = { gbr_a_house_divided }
 		position = 11
-		provinces_to_highlight = {
-			is_capital_of = ROOT
-			is_prosperous = no
-		}		
 		trigger = {
 			has_institution = renaissance
 			artist = 3
-			if = {
-				limit = {
-					has_dlc = "Mandate of Heaven"
-				}
-				capital_scope = {
-					is_prosperous = yes
-				}
-			}
-			prestige = 75
 		}
 		effect = {
 			country_event_with_insight = {
 				id = flavor_gbr.12
 				insight_tooltip = INSIGHT_JUST_TOOLTIP
 				effect_tooltip = "
-				add_prestige_or_monarch_power = {
-					amount = 25
-				}
 				capital_scope = {
 					add_province_triggered_modifier = eng_globe_theatre
 				}
@@ -4752,7 +4346,6 @@ gbr_ave_row_4 = {
 		}		
 		trigger = {
 			num_of_marines = 30
-			has_reform = royal_marines_reform
 		}
 		effect = {
 			add_country_modifier = {
@@ -4838,7 +4431,6 @@ gbr_ave_row_5 = {
 				army_professionalism = 0.4
 			}
 			army_tradition = 60
-			has_reform = royal_marines_reform
 		}	
 		effect = {
 			add_country_modifier = {
