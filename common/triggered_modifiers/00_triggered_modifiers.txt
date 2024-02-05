@@ -292,10 +292,11 @@ custodian_of_the_two_holy_mosques = {
 
 papal_subjugation = {
 	potential = {
-		normal_or_historical_nations = yes
-		has_discovered = 118	# Roma
-		religion = catholic
-		NOT = { tag = PAP }
+		always = no
+		# normal_or_historical_nations = yes
+		# has_discovered = 118	# Roma
+		# religion = catholic
+		# NOT = { tag = PAP }
 	}
 
 	trigger = {	
@@ -345,12 +346,12 @@ rapid_collapse_of_society = {
 submission_to_emperor = {
 	potential = {
 		# AI will avoid joining HRE when this modifier is potential:
-
-		has_global_flag = italians_leave_hre
-		NOT = { has_country_flag = reined_in_for_shadow_kingdom }
-		is_emperor = no
-		NOT = { is_year = 1550 }
-		culture_group = latin
+		always = no
+		# has_global_flag = italians_leave_hre
+		# NOT = { has_country_flag = reined_in_for_shadow_kingdom }
+		# is_emperor = no
+		# NOT = { is_year = 1550 }
+		# culture_group = latin
 	}
 
 	trigger = {
@@ -370,32 +371,34 @@ submission_to_emperor = {
 ######################################
 counter_revolution = {
 	potential = {
-		revolution_target_exists = yes
-		is_revolutionary = no
-		any_country = {
-			is_revolution_target = yes
-			OR = {
-				capital_scope = {
-					continent = ROOT
-				}
-				is_neighbor_of = ROOT
-			}
-		}
+		always = no
+		# revolution_target_exists = yes
+		# is_revolutionary = no
+		# any_country = {
+		# 	is_revolution_target = yes
+		# 	OR = {
+		# 		capital_scope = {
+		# 			continent = ROOT
+		# 		}
+		# 		is_neighbor_of = ROOT
+		# 	}
+		# }
 	}
 
 	trigger = {
-		revolution_target_exists = yes
-		is_revolutionary = no
-		is_free_or_tributary_trigger = yes
-		NOT = {
-			revolution_target = {
-				war_with = ROOT
-			}
-			revolution_target = {
-				truce_with = ROOT
-			} 
-		}
-		government = monarchy
+		always = no
+		# revolution_target_exists = yes
+		# is_revolutionary = no
+		# is_free_or_tributary_trigger = yes
+		# NOT = {
+		# 	revolution_target = {
+		# 		war_with = ROOT
+		# 	}
+		# 	revolution_target = {
+		# 		truce_with = ROOT
+		# 	} 
+		# }
+		# government = monarchy
 	}
 
 	prestige = -5
@@ -410,24 +413,26 @@ counter_revolution = {
 ######################################
 reaction = {
 	potential = {
-		revolution_target_exists = yes
-		is_revolutionary = no
-		any_country = {
-			is_revolution_target = yes
-			capital_scope = {
-				continent = ROOT
-			}
-		}
+		always = no
+		# revolution_target_exists = yes
+		# is_revolutionary = no
+		# any_country = {
+		# 	is_revolution_target = yes
+		# 	capital_scope = {
+		# 		continent = ROOT
+		# 	}
+		# }
 	}
 
 	trigger = {
-		revolution_target_exists = yes
-		is_revolutionary = no
-		is_free_or_tributary_trigger = yes
-		government = monarchy
-		revolution_target = {
-			war_with = ROOT
-		}  
+		always = no
+		# revolution_target_exists = yes
+		# is_revolutionary = no
+		# is_free_or_tributary_trigger = yes
+		# government = monarchy
+		# revolution_target = {
+		# 	war_with = ROOT
+		# }  
 
 	}
 
@@ -809,13 +814,15 @@ great_peasants_war_concessions_triggered_modifier = {
 
 pope_in_hre_triggered_modifier = {
 	potential = {
-		PAP = { is_part_of_hre = yes }
-		religion = catholic
+		# PAP = { is_part_of_hre = yes }
+		# religion = catholic
+		always = no
 	}
 	trigger = {
-		PAP = { is_part_of_hre = yes }
-		religion = catholic
-		NOT = { is_part_of_hre = yes }
+		# PAP = { is_part_of_hre = yes }
+		# religion = catholic
+		# NOT = { is_part_of_hre = yes }
+		always = no
 	}
 	prestige = -0.5
 }

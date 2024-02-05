@@ -10,3 +10,9 @@ nap_barbary_pirates = {
 kni_crusade_against_piracy = {
 	naval_morale = 0.1
 }
+grand_captain_boost = {
+	land_morale = 0.10
+}
+commandant_boost = {
+	discipline = 0.05
+}

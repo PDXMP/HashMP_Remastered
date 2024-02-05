@@ -1,3 +1,18 @@
+# Hash MP 1444 Start Navarra Vassal
+vassal = {
+	first = CAS
+	second = NAV
+	start_date = 1444.1.1
+	end_date = 1445.1.1
+}
+
+# Hash MP 1444 Start Iberian Union
+union = {
+	first = CAS
+	second = ARA
+	start_date = 1444.1.1
+	end_date = 1445.1.1
+}
 # Navarra under John II of Aragon
 union =  {
 	first = ARA

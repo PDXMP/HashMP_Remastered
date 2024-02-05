@@ -8,3 +8,5 @@ NDefines.NMilitary.DEFAULT_WARGOAL_BATTLESCORE_BONUS = 4		-- Battle score bonus 
 NDefines.NMilitary.SUPERIORITY_WARGOAL_WARSCORE_THRESHOLD	= 20	-- Needed battle score for getting ticking war score for war goal superiority
 NDefines.NMilitary.WARSCORE_MAX_FROM_BATTLES = 50					-- maximum amount to get from a battles .
 NDefines.NMilitary.SUPPLY_DEPOT_MIL_COST = 10
+NDefines.NMilitary.CAWA_STARTING_STRENGTH = 0.1
+NDefines.NMilitary.BACK_LINE_MORALE_DAMAGE_TAKEN_MODIFIER = 0.0
