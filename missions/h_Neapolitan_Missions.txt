@@ -67,7 +67,7 @@ h_naples_1 = {
 		effect = {
 			capital_scope = {
 				add_province_modifier = {
-					name = nap_center_of_production
+					name = h_nap_center_of_production
 					duration = -1
 				}
 			}
@@ -338,17 +338,17 @@ h_naples_3 = {
 		provinces_to_highlight = {
 			OR = {
 				area = western_sicily_area
-				# province_id = 124
-				# province_id = 2982
+				province_id = 124
+				province_id = 2982
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			# western_sicily_area = {
-			# 	type = all
-			# 	owned_by = ROOT
-			# 	is_core = ROOT
-			# }
+			western_sicily_area = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
 			owns = 124
 			owns = 2982
 		}
@@ -598,57 +598,57 @@ h_naples_4 = {
 	}
 }
 
-h_naples_5 = {
-	slot = 5
-	generic = no
-	ai = yes
-	potential = {
-		OR = {
-			tag = NAP
-			tag = TTS
-		}
-		NOT = { map_setup = map_setup_random }
-	}
-	has_country_shield = yes
+# h_naples_5 = {
+# 	slot = 5
+# 	generic = no
+# 	ai = yes
+# 	potential = {
+# 		OR = {
+# 			tag = NAP
+# 			tag = TTS
+# 		}
+# 		NOT = { map_setup = map_setup_random }
+# 	}
+# 	has_country_shield = yes
 	
-	h_nap_usurp_merchant_republics = {
-		icon = overshadow_venice
-		required_missions = {  }
-		trigger = {
-			OR = {
-			1308 = {		# Gulf of Venice
-				is_strongest_trade_power = ROOT
-			}
-			1298 = {		# Ligurian Sea
-				is_strongest_trade_power = ROOT
-			}
-			}
-		}
-		effect = {
-			add_country_modifier = {
-				name = "gen_eur_trade_node_mod"
-				duration = 7300
-			}
-			121 = {
-				add_center_of_trade_level = 1
-			}
-		}
-	}
-	h_nap_naples_merchant_marine = {
-		icon = indonesian_trade
-		required_missions = { h_nap_usurp_merchant_republics h_nap_med_islands }
-		position = 3
-		trigger = {
-			naval_forcelimit = 50
-			121 = {
-				province_has_center_of_trade_of_level = 3
-			}
-		}
-		effect = {
-			add_country_modifier = {
-				name = "gen_achieved_mare_nostrum"
-				duration = 7300
-			}
-		}
-	}
-}
+# 	h_nap_usurp_merchant_republics = {
+# 		icon = overshadow_venice
+# 		required_missions = {  }
+# 		trigger = {
+# 			OR = {
+# 			1308 = {		# Gulf of Venice
+# 				is_strongest_trade_power = ROOT
+# 			}
+# 			1298 = {		# Ligurian Sea
+# 				is_strongest_trade_power = ROOT
+# 			}
+# 			}
+# 		}
+# 		effect = {
+# 			add_country_modifier = {
+# 				name = "gen_eur_trade_node_mod"
+# 				duration = 7300
+# 			}
+# 			121 = {
+# 				add_center_of_trade_level = 1
+# 			}
+# 		}
+# 	}
+# 	h_nap_naples_merchant_marine = {
+# 		icon = indonesian_trade
+# 		required_missions = { h_nap_usurp_merchant_republics h_nap_med_islands }
+# 		position = 3
+# 		trigger = {
+# 			naval_forcelimit = 50
+# 			121 = {
+# 				province_has_center_of_trade_of_level = 3
+# 			}
+# 		}
+# 		effect = {
+# 			add_country_modifier = {
+# 				name = "gen_achieved_mare_nostrum"
+# 				duration = 7300
+# 			}
+# 		}
+# 	}
+# }
