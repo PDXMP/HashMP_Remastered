@@ -371,32 +371,34 @@ submission_to_emperor = {
 ######################################
 counter_revolution = {
 	potential = {
-		revolution_target_exists = yes
-		is_revolutionary = no
-		any_country = {
-			is_revolution_target = yes
-			OR = {
-				capital_scope = {
-					continent = ROOT
-				}
-				is_neighbor_of = ROOT
-			}
-		}
+		always = no
+		# revolution_target_exists = yes
+		# is_revolutionary = no
+		# any_country = {
+		# 	is_revolution_target = yes
+		# 	OR = {
+		# 		capital_scope = {
+		# 			continent = ROOT
+		# 		}
+		# 		is_neighbor_of = ROOT
+		# 	}
+		# }
 	}
 
 	trigger = {
-		revolution_target_exists = yes
-		is_revolutionary = no
-		is_free_or_tributary_trigger = yes
-		NOT = {
-			revolution_target = {
-				war_with = ROOT
-			}
-			revolution_target = {
-				truce_with = ROOT
-			} 
-		}
-		government = monarchy
+		always = no
+		# revolution_target_exists = yes
+		# is_revolutionary = no
+		# is_free_or_tributary_trigger = yes
+		# NOT = {
+		# 	revolution_target = {
+		# 		war_with = ROOT
+		# 	}
+		# 	revolution_target = {
+		# 		truce_with = ROOT
+		# 	} 
+		# }
+		# government = monarchy
 	}
 
 	prestige = -5
@@ -411,24 +413,26 @@ counter_revolution = {
 ######################################
 reaction = {
 	potential = {
-		revolution_target_exists = yes
-		is_revolutionary = no
-		any_country = {
-			is_revolution_target = yes
-			capital_scope = {
-				continent = ROOT
-			}
-		}
+		always = no
+		# revolution_target_exists = yes
+		# is_revolutionary = no
+		# any_country = {
+		# 	is_revolution_target = yes
+		# 	capital_scope = {
+		# 		continent = ROOT
+		# 	}
+		# }
 	}
 
 	trigger = {
-		revolution_target_exists = yes
-		is_revolutionary = no
-		is_free_or_tributary_trigger = yes
-		government = monarchy
-		revolution_target = {
-			war_with = ROOT
-		}  
+		always = no
+		# revolution_target_exists = yes
+		# is_revolutionary = no
+		# is_free_or_tributary_trigger = yes
+		# government = monarchy
+		# revolution_target = {
+		# 	war_with = ROOT
+		# }  
 
 	}
 
