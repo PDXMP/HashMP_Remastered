@@ -338,17 +338,17 @@ h_naples_3 = {
 		provinces_to_highlight = {
 			OR = {
 				area = western_sicily_area
-				province_id = 124
-				province_id = 2982
+				# province_id = 124
+				# province_id = 2982
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			western_sicily_area = {
-				type = all
-				owned_by = ROOT
-				is_core = ROOT
-			}
+			# western_sicily_area = {
+			# 	type = all
+			# 	owned_by = ROOT
+			# 	is_core = ROOT
+			# }
 			owns = 124
 			owns = 2982
 		}
