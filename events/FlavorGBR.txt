@@ -26,6 +26,7 @@ country_event = {
 			name = gbr_isolation_policy
 			duration = 9125
 		}
+		add_stability = 1 
 		ai_chance = {
 			factor = 1
 		}
