@@ -218,7 +218,7 @@ estate_rajput_rajput_regiments = {
 
 estate_rajput_military = {
 	icon = privilege_military_power
-	land_share = 10
+	land_share = 5 #10
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = -0.05

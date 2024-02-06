@@ -205,7 +205,7 @@ estate_church_land_rights = {
 
 estate_church_religious_state = {
 	icon = privilege_admin_power
-	land_share = 10
+	land_share = 5 #10
 	max_absolutism = -5
 	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
 	loyalty = -0.05

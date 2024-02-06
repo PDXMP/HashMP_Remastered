@@ -193,7 +193,7 @@ estate_ghulams_land_rights = {
 
 estate_ghulams_military = {
 	icon = privilege_military_power
-	land_share = 10
+	land_share = 5 #10
 	max_absolutism = -5
 	loyalty = -0.05
 	is_valid = {
