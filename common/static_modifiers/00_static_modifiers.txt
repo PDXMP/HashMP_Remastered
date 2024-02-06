@@ -605,9 +605,6 @@ base_values = {
 	max_flagships = 1
 	num_of_parliament_issues = 10
 	has_marines = yes
-	country_admin_power = 1
-	country_diplomatic_power = 1
-	country_military_power = 1
 	settle_cost = 100
 }
 
