@@ -3336,7 +3336,7 @@ professional_navy_reform = {
 		navy_tradition_decay = -0.01
 		max_flagships = 2
 		siege_blockade_progress = 2
-		naval_morale = 0.1
+		naval_morale = 0.05
 		global_ship_cost = -0.05
 		global_sailors_modifier = 0.1
 	}
