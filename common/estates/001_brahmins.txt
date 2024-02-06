@@ -148,7 +148,8 @@ estate_brahmins = {
 		estate_brahmins_monopoly_of_wool
 		estate_brahmins_statutory_rights
 		estate_brahmins_religious_diplomats
-		estate_brahmins_one_faith_one_culture
+		#estate_brahmins_one_faith_one_culture
+		estate_church_one_faith_one_culture
 		estate_brahmins_administrative_privileges
 		estate_brahmins_development_of_temples
 		estate_brahmins_expand_the_theology
