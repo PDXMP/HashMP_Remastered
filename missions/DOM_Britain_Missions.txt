@@ -1625,7 +1625,7 @@ gbr_row_3 = {
 				has_flagship = yes
 			}
 			navy_size = 150
-			total_own_and_non_tributary_subject_development = 1000
+			total_own_and_non_tributary_subject_development = 1500
 		}	
 		effect = {
 			unlock_issue = {
