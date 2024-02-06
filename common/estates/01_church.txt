@@ -427,6 +427,8 @@ estate_church = {
 		estate_church_fund_madrasas
 		estate_church_sponsor_waqf_payments
 		estate_church_muslim_integration
+		#HashMP
+		h_estate_church_unify_society
 	}
 
 	agendas = {

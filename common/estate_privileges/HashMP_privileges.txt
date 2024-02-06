@@ -1,0 +1,124 @@
+#All scopes are country scope
+#All parameters are optional
+
+# estate_privilege = {
+# 	is_valid = { triggers }						#Conditions for whether it is possible for the country to have this privilege (it will not display on the list if they are false, and will be revoked if it has already been granted)
+# 	can_select = { triggers } 					#Conditions for whether the country is allowed to select the privilege (with conditions for why not displayed)
+# 	on_granted = { effects } 					#Effects executed immediately upon the privilege being taken
+# 	can_revoke = { triggers } 					#Conditions for whether the country can revoke the privilege
+# 	on_revoked = { effects } 					#Effects executed upon the privilege being revoked by the country
+# 	on_invalid = { effects } 					#Effects executed upon the privilege being removed due to invalidity (is_valid becomes false or the estate is removed)
+# 	penalties = { modifiers } 					#Negative modifiers granted while the privilege is active (creates different tooltip to benefits)
+# 	conditional_modifier = { 					#Modifier that are applied if the specified conditions are true.
+# 		trigger = { triggers }
+# 		modifier = { modifiers }
+# 		is_bad = yes/no							#Specifies whether the modifier should be listed as positive or negative in the tooltips.
+# 	}
+#	loyalty_scaled_conditional_modifier = {		#Modifier that are applied if the specified conditions are true. At 100% Loyalty you gain 100% of the modifier.
+#		trigger = { triggers }
+#		modifier = { modifiers }
+#	}
+#	influence_scaled_conditional_modifier = {	#Modifier that are applied if the specified conditions are true. At 100% Influence you gain 100% of the modifier.
+#		trigger = { triggers }
+#		modifier = { modifiers }
+#	}
+# 	modifier_by_land_ownership = { modifiers } 	#Multiplies the modifier by the % of land owned by the estate.
+# 	mechanics = { mechanics } 					#Special mechanics the privilege enables
+# 	cooldown_years = int 						#Time limit before which the privilege cannot be revoked
+# 	on_cooldown_expires = { effects }			#Effect executed once the specified cooldown_years timer has run down
+#	ai_will_do									#If above ESTATE_PRIVILEGE_GRANT_THRESHOLD define, AI will try to apply. If below ESTATE_PRIVILEGE_REVOKE_THRESHOLD, AI will try to revoke.
+# }
+
+h_estate_church_unify_society = {
+	icon = privilege_one_faith_one_culture
+	max_absolutism = -5
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 1 } }
+	influence = 0.1
+	loyalty = 0.05
+	land_share = 0
+	is_valid = {
+	}
+	can_select = {
+	}
+	on_granted = {
+		custom_tooltip = estate_church_one_faith_one_culture_gtb
+	}
+	on_granted_province = {
+		if = {
+			limit = {
+				NOT = { culture_group = ROOT }
+				has_owner_accepted_culture = no
+			}
+			add_province_modifier = {
+				name = estate_church_false_culture
+				duration = -1
+			}
+		}
+		else_if = {
+			limit = {
+				has_province_modifier = estate_church_false_culture
+			}
+			remove_province_modifier = estate_church_false_culture
+		}
+	}
+	on_revoked = {
+		custom_tooltip = estate_church_one_faith_one_culture_rtb
+	}
+	on_revoked_province = {
+		if = {
+			limit = {
+				has_province_modifier = estate_church_false_culture
+			}
+			remove_province_modifier = estate_church_false_culture
+		}
+	}
+	on_invalid = {
+		custom_tooltip = estate_church_one_faith_one_culture_rtb
+	}
+	on_invalid_province = {
+		if = {
+			limit = {
+				has_province_modifier = estate_church_false_culture
+			}
+			remove_province_modifier = estate_church_false_culture
+		}
+	}
+	penalties = {
+		tolerance_heathen = -2
+		tolerance_heretic = -2
+	}
+	benefits = {
+		global_missionary_strength = 0.01
+	}
+
+	cooldown_years = 15
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0
+			NOT = { dominant_religion = ROOT }
+		}
+		modifier = {
+			factor = 0
+			NOT = { dominant_culture = ROOT }
+		}
+		modifier = {
+			factor = 0
+			NOT = { religion = confucianism }
+		}
+		modifier = {
+			factor = 0
+			NOT = { religion = confucianism }
+		}
+		modifier = {
+			factor = 100
+			NOT = { average_autonomy = 15 }
+			dominant_religion = ROOT
+			dominant_culture = ROOT
+		}
+		modifier = {
+			factor = 0.1
+			is_absolutism_active = yes
+		}
+	}
+}

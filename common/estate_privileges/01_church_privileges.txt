@@ -1809,7 +1809,7 @@ estate_church_one_faith_one_culture = {
 	}
 	on_granted = {
 		custom_tooltip = estate_church_one_faith_one_culture_gta
-		custom_tooltip = estate_church_one_faith_one_culture_gtb
+		#custom_tooltip = estate_church_one_faith_one_culture_gtb
 	}
 	on_granted_province = {
 		if = {
@@ -1845,26 +1845,26 @@ estate_church_one_faith_one_culture = {
 			}
 			remove_province_modifier = estate_church_united_faith_and_culture
 		}
-		if = {
-			limit = {
-				NOT = { culture_group = ROOT }
-				has_owner_accepted_culture = no
-			}
-			add_province_modifier = {
-				name = estate_church_false_culture
-				duration = -1
-			}
-		}
-		else_if = {
-			limit = {
-				has_province_modifier = estate_church_false_culture
-			}
-			remove_province_modifier = estate_church_false_culture
-		}
+		# if = {
+		# 	limit = {
+		# 		NOT = { culture_group = ROOT }
+		# 		has_owner_accepted_culture = no
+		# 	}
+		# 	add_province_modifier = {
+		# 		name = estate_church_false_culture
+		# 		duration = -1
+		# 	}
+		# }
+		# else_if = {
+		# 	limit = {
+		# 		has_province_modifier = estate_church_false_culture
+		# 	}
+		# 	remove_province_modifier = estate_church_false_culture
+		# }
 	}
 	on_revoked = {
 		custom_tooltip = estate_church_one_faith_one_culture_rta
-		custom_tooltip = estate_church_one_faith_one_culture_rtb
+		#custom_tooltip = estate_church_one_faith_one_culture_rtb
 	}
 	on_revoked_province = {
 		if = {
@@ -1873,16 +1873,16 @@ estate_church_one_faith_one_culture = {
 			}
 			remove_province_modifier = estate_church_united_faith_and_culture
 		}
-		if = {
-			limit = {
-				has_province_modifier = estate_church_false_culture
-			}
-			remove_province_modifier = estate_church_false_culture
-		}
+		# if = {
+		# 	limit = {
+		# 		has_province_modifier = estate_church_false_culture
+		# 	}
+		# 	remove_province_modifier = estate_church_false_culture
+		# }
 	}
 	on_invalid = {
 		custom_tooltip = estate_church_one_faith_one_culture_rta
-		custom_tooltip = estate_church_one_faith_one_culture_rtb
+		#custom_tooltip = estate_church_one_faith_one_culture_rtb
 	}
 	on_invalid_province = {
 		if = {
@@ -1891,19 +1891,19 @@ estate_church_one_faith_one_culture = {
 			}
 			remove_province_modifier = estate_church_united_faith_and_culture
 		}
-		if = {
-			limit = {
-				has_province_modifier = estate_church_false_culture
-			}
-			remove_province_modifier = estate_church_false_culture
-		}
+		# if = {
+		# 	limit = {
+		# 		has_province_modifier = estate_church_false_culture
+		# 	}
+		# 	remove_province_modifier = estate_church_false_culture
+		# }
 	}
 	penalties = {
-		tolerance_heathen = -2
-		tolerance_heretic = -2
+		#tolerance_heathen = -2
+		#tolerance_heretic = -2
 	}
 	benefits = {
-		global_missionary_strength = 0.01
+		#global_missionary_strength = 0.01
 	}
 	conditional_modifier = {
 		trigger = { has_government_attribute = free_religious_culture }
