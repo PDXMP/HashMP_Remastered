@@ -1437,8 +1437,8 @@ new_world_exploitation_modifier = {
 }
 
 gbr_colonial_investment = {
-	production_efficiency = 0.5
-	trade_efficiency = 0.5
+	#production_efficiency = 0.5
+	#trade_efficiency = 0.5
 }
 
 crown_colony_overlord = {

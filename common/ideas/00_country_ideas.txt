@@ -178,7 +178,7 @@ ENG_ideas = {
 
 GBR_ideas = {
 	start = {
-		naval_morale = 0.20
+		fire_damage = 0.05
 		heavy_ship_power = 0.15
 	}
 
