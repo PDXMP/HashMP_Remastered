@@ -10,3 +10,4 @@ NDefines.NMilitary.WARSCORE_MAX_FROM_BATTLES = 50					-- maximum amount to get f
 NDefines.NMilitary.SUPPLY_DEPOT_MIL_COST = 10
 NDefines.NMilitary.CAWA_STARTING_STRENGTH = 0.1
 NDefines.NMilitary.BACK_LINE_MORALE_DAMAGE_TAKEN_MODIFIER = 0.0
+NDefines.NMilitary.MERCENARY_COMPANY_BUILDING_TIME = 1
