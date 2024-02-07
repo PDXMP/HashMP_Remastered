@@ -87,6 +87,33 @@ capital = 4743	# Weimar
 	}
 }
 
+#HashMP
+1444.1.1 = {
+	monarch = {
+		name = "Wilhelm III"
+		dynasty = "von Wettin"
+		birth_date = 1425.4.30
+		dip = 3
+		adm = 1
+		mil = 3
+	}
+}
+
+1444.1.1 = {
+	heir = {
+		name = "Ernst"
+		monarch_name = "Ernst I"
+		dynasty = "von Wettin"
+		birth_date = 1441.3.24
+		death_date = 1486.8.26
+		claim = 95
+		adm = 2
+		dip = 1
+		mil = 1
+	}
+}
+#
+
 1445.9.10 = {
 	monarch = {
 		name = "Wilhelm III"
