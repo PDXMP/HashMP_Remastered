@@ -1,0 +1,1959 @@
+h_merc_inf_tech_2_half_a = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+
+    trigger = {
+        mil_tech = 2
+        NOT = { mil_tech = 5 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 10
+    max_size = 10
+    manpower_pool = 20
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_inf_tech_2_half_b = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+
+    trigger = {
+        mil_tech = 2
+        NOT = { mil_tech = 5 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 10
+    max_size = 10
+    manpower_pool = 20
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_inf_tech_2_full_a = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+
+    trigger = {
+        mil_tech = 2
+        NOT = { mil_tech = 5 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 20
+    max_size = 20
+    manpower_pool = 40
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_inf_tech_2_full_b = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+
+    trigger = {
+        mil_tech = 2
+        NOT = { mil_tech = 5 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 20
+    max_size = 20
+    manpower_pool = 40
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_inf_tech_5_half_a = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+
+    trigger = {
+        mil_tech = 5
+        NOT = { mil_tech = 6 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 11
+    max_size = 11
+    manpower_pool = 22
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_inf_tech_5_half_b = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+
+    trigger = {
+        mil_tech = 5
+        NOT = { mil_tech = 6 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 11
+    max_size = 11
+    manpower_pool = 22
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_inf_tech_5_full_a = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+
+    trigger = {
+        mil_tech = 5
+        NOT = { mil_tech = 6 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 22
+    max_size = 22
+    manpower_pool = 44
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_inf_tech_5_full_b = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+
+    trigger = {
+        mil_tech = 5
+        NOT = { mil_tech = 6 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 22
+    max_size = 22
+    manpower_pool = 44
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_inf_tech_6_half_a = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+
+    trigger = {
+        mil_tech = 6
+        NOT = { mil_tech = 9 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 12
+    max_size = 12
+    manpower_pool = 24
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_inf_tech_6_half_b = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+
+    trigger = {
+        mil_tech = 6
+        NOT = { mil_tech = 9 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 12
+    max_size = 12
+    manpower_pool = 24
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_inf_tech_6_full_a = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+
+    trigger = {
+        mil_tech = 6
+        NOT = { mil_tech = 9 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 24
+    max_size = 24
+    manpower_pool = 48
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_inf_tech_6_full_b = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+
+    trigger = {
+        mil_tech = 6
+        NOT = { mil_tech = 9 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 24
+    max_size = 24
+    manpower_pool = 48
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_inf_tech_9_half_a = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+
+    trigger = {
+        mil_tech = 9
+        NOT = { mil_tech = 11 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 12
+    max_size = 12
+    manpower_pool = 24
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_inf_tech_9_half_b = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+
+    trigger = {
+        mil_tech = 9
+        NOT = { mil_tech = 11 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 12
+    max_size = 12
+    manpower_pool = 24
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_inf_tech_9_full_a = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+
+    trigger = {
+        mil_tech = 9
+        NOT = { mil_tech = 11 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 25
+    max_size = 25
+    manpower_pool = 50
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_inf_tech_9_full_b = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+
+    trigger = {
+        mil_tech = 9
+        NOT = { mil_tech = 11 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 25
+    max_size = 25
+    manpower_pool = 50
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_inf_tech_11_half_a = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+
+    trigger = {
+        mil_tech = 11
+        NOT = { mil_tech = 14 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 13
+    max_size = 13
+    manpower_pool = 26
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_inf_tech_11_half_b = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+
+    trigger = {
+        mil_tech = 11
+        NOT = { mil_tech = 14 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 13
+    max_size = 13
+    manpower_pool = 26
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_inf_tech_11_full_a = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+
+    trigger = {
+        mil_tech = 11
+        NOT = { mil_tech = 14 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 27
+    max_size = 27
+    manpower_pool = 54
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_inf_tech_11_full_b = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+
+    trigger = {
+        mil_tech = 11
+        NOT = { mil_tech = 14 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 27
+    max_size = 27
+    manpower_pool = 54
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_inf_tech_14_half_a = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+
+    trigger = {
+        mil_tech = 14
+        NOT = { mil_tech = 16 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 14
+    max_size = 14
+    manpower_pool = 28
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_inf_tech_14_half_b = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+
+    trigger = {
+        mil_tech = 14
+        NOT = { mil_tech = 16 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 14
+    max_size = 14
+    manpower_pool = 28
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_inf_tech_14_full_a = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+
+    trigger = {
+        mil_tech = 14
+        NOT = { mil_tech = 16 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 29
+    max_size = 29
+    manpower_pool = 58
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_inf_tech_14_full_b = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+
+    trigger = {
+        mil_tech = 14
+        NOT = { mil_tech = 16 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 29
+    max_size = 29
+    manpower_pool = 58
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_inf_tech_16_half_a = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+
+    trigger = {
+        mil_tech = 16
+        NOT = { mil_tech = 18 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 15
+    max_size = 15
+    manpower_pool = 30
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_inf_tech_16_half_b = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+
+    trigger = {
+        mil_tech = 16
+        NOT = { mil_tech = 18 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 15
+    max_size = 15
+    manpower_pool = 30
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_inf_tech_16_full_a = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+
+    trigger = {
+        mil_tech = 16
+        NOT = { mil_tech = 18 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 30
+    max_size = 30
+    manpower_pool = 60
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_inf_tech_16_full_b = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+
+    trigger = {
+        mil_tech = 16
+        NOT = { mil_tech = 18 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 30
+    max_size = 30
+    manpower_pool = 60
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_inf_tech_18_half_a = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+
+    trigger = {
+        mil_tech = 18
+        NOT = { mil_tech = 20 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 16
+    max_size = 16
+    manpower_pool = 32
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_inf_tech_18_half_b = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+
+    trigger = {
+        mil_tech = 18
+        NOT = { mil_tech = 20 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 16
+    max_size = 16
+    manpower_pool = 32
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_inf_tech_18_full_a = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+
+    trigger = {
+        mil_tech = 18
+        NOT = { mil_tech = 20 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 32
+    max_size = 32
+    manpower_pool = 64
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_inf_tech_18_full_b = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+
+    trigger = {
+        mil_tech = 18
+        NOT = { mil_tech = 20 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 32
+    max_size = 32
+    manpower_pool = 64
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_inf_tech_20_half_a = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+
+    trigger = {
+        mil_tech = 20
+        NOT = { mil_tech = 22 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 17
+    max_size = 17
+    manpower_pool = 34
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_inf_tech_20_half_b = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+
+    trigger = {
+        mil_tech = 20
+        NOT = { mil_tech = 22 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 17
+    max_size = 17
+    manpower_pool = 34
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_inf_tech_20_full_a = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+
+    trigger = {
+        mil_tech = 20
+        NOT = { mil_tech = 22 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 34
+    max_size = 34
+    manpower_pool = 68
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_inf_tech_20_full_b = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+
+    trigger = {
+        mil_tech = 20
+        NOT = { mil_tech = 22 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 34
+    max_size = 34
+    manpower_pool = 68
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_inf_tech_22_half_a = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+
+    trigger = {
+        mil_tech = 22
+        NOT = { mil_tech = 24 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 18
+    max_size = 18
+    manpower_pool = 36
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_inf_tech_22_half_b = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+
+    trigger = {
+        mil_tech = 22
+        NOT = { mil_tech = 24 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 18
+    max_size = 18
+    manpower_pool = 36
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_inf_tech_22_full_a = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+
+    trigger = {
+        mil_tech = 22
+        NOT = { mil_tech = 24 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 36
+    max_size = 36
+    manpower_pool = 72
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_inf_tech_22_full_b = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+
+    trigger = {
+        mil_tech = 22
+        NOT = { mil_tech = 24 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 36
+    max_size = 36
+    manpower_pool = 72
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_inf_tech_24_half_a = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+
+    trigger = {
+        mil_tech = 24
+        NOT = { mil_tech = 26 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 19
+    max_size = 19
+    manpower_pool = 38
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_inf_tech_24_half_b = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+
+    trigger = {
+        mil_tech = 24
+        NOT = { mil_tech = 26 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 19
+    max_size = 19
+    manpower_pool = 38
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_inf_tech_24_full_a = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+
+    trigger = {
+        mil_tech = 24
+        NOT = { mil_tech = 26 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 38
+    max_size = 38
+    manpower_pool = 76
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_inf_tech_24_full_b = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+
+    trigger = {
+        mil_tech = 24
+        NOT = { mil_tech = 26 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 38
+    max_size = 38
+    manpower_pool = 76
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_inf_tech_26_half_a = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+
+    trigger = {
+        mil_tech = 26 
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 20
+    max_size = 20
+    manpower_pool = 40
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_inf_tech_26_half_b = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+
+    trigger = {
+        mil_tech = 26 
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 20
+    max_size = 20
+    manpower_pool = 40
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_inf_tech_26_full_a = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+
+    trigger = {
+        mil_tech = 26 
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 40
+    max_size = 40
+    manpower_pool = 80
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_inf_tech_26_full_b = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+
+    trigger = {
+        mil_tech = 26 
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 40
+    max_size = 40
+    manpower_pool = 80
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_inf_tech_2_half_a = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+    cavalry_weight = 1
+
+    trigger = {
+        mil_tech = 2
+        NOT = { mil_tech = 5 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 10
+    max_size = 10
+    manpower_pool = 20
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_cav_tech_2_half_b = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+    cavalry_weight = 1
+
+    trigger = {
+        mil_tech = 2
+        NOT = { mil_tech = 5 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 10
+    max_size = 10
+    manpower_pool = 20
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_cav_tech_2_full_a = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+    cavalry_weight = 1
+
+    trigger = {
+        mil_tech = 2
+        NOT = { mil_tech = 5 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 20
+    max_size = 20
+    manpower_pool = 40
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_cav_tech_2_full_b = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+    cavalry_weight = 1
+
+    trigger = {
+        mil_tech = 2
+        NOT = { mil_tech = 5 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 20
+    max_size = 20
+    manpower_pool = 40
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_cav_tech_5_half_a = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+    cavalry_weight = 1
+
+    trigger = {
+        mil_tech = 5
+        NOT = { mil_tech = 6 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 11
+    max_size = 11
+    manpower_pool = 22
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_cav_tech_5_half_b = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+    cavalry_weight = 1
+
+    trigger = {
+        mil_tech = 5
+        NOT = { mil_tech = 6 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 11
+    max_size = 11
+    manpower_pool = 22
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_cav_tech_5_full_a = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+    cavalry_weight = 1
+
+    trigger = {
+        mil_tech = 5
+        NOT = { mil_tech = 6 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 22
+    max_size = 22
+    manpower_pool = 44
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_cav_tech_5_full_b = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+    cavalry_weight = 1
+
+    trigger = {
+        mil_tech = 5
+        NOT = { mil_tech = 6 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 22
+    max_size = 22
+    manpower_pool = 44
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_cav_tech_6_half_a = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+    cavalry_weight = 1
+
+    trigger = {
+        mil_tech = 6
+        NOT = { mil_tech = 9 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 12
+    max_size = 12
+    manpower_pool = 24
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_cav_tech_6_half_b = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+    cavalry_weight = 1
+
+    trigger = {
+        mil_tech = 6
+        NOT = { mil_tech = 9 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 12
+    max_size = 12
+    manpower_pool = 24
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_cav_tech_6_full_a = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+    cavalry_weight = 1
+
+    trigger = {
+        mil_tech = 6
+        NOT = { mil_tech = 9 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 24
+    max_size = 24
+    manpower_pool = 48
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_cav_tech_6_full_b = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+    cavalry_weight = 1
+
+    trigger = {
+        mil_tech = 6
+        NOT = { mil_tech = 9 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 24
+    max_size = 24
+    manpower_pool = 48
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_cav_tech_9_half_a = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+    cavalry_weight = 1
+
+    trigger = {
+        mil_tech = 9
+        NOT = { mil_tech = 11 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 12
+    max_size = 12
+    manpower_pool = 24
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_cav_tech_9_half_b = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+    cavalry_weight = 1
+
+    trigger = {
+        mil_tech = 9
+        NOT = { mil_tech = 11 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 12
+    max_size = 12
+    manpower_pool = 24
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_cav_tech_9_full_a = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+    cavalry_weight = 1
+
+    trigger = {
+        mil_tech = 9
+        NOT = { mil_tech = 11 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 25
+    max_size = 25
+    manpower_pool = 50
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_cav_tech_9_full_b = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+    cavalry_weight = 1
+
+    trigger = {
+        mil_tech = 9
+        NOT = { mil_tech = 11 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 25
+    max_size = 25
+    manpower_pool = 50
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_cav_tech_11_half_a = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+    cavalry_weight = 1
+
+    trigger = {
+        mil_tech = 11
+        NOT = { mil_tech = 14 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 13
+    max_size = 13
+    manpower_pool = 26
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_cav_tech_11_half_b = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+    cavalry_weight = 1
+
+    trigger = {
+        mil_tech = 11
+        NOT = { mil_tech = 14 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 13
+    max_size = 13
+    manpower_pool = 26
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_cav_tech_11_full_a = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+    cavalry_weight = 1
+
+    trigger = {
+        mil_tech = 11
+        NOT = { mil_tech = 14 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 27
+    max_size = 27
+    manpower_pool = 54
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_cav_tech_11_full_b = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+    cavalry_weight = 1
+
+    trigger = {
+        mil_tech = 11
+        NOT = { mil_tech = 14 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 27
+    max_size = 27
+    manpower_pool = 54
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_cav_tech_14_half_a = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+    cavalry_weight = 1
+
+    trigger = {
+        mil_tech = 14
+        NOT = { mil_tech = 16 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 14
+    max_size = 14
+    manpower_pool = 28
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_cav_tech_14_half_b = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+    cavalry_weight = 1
+
+    trigger = {
+        mil_tech = 14
+        NOT = { mil_tech = 16 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 14
+    max_size = 14
+    manpower_pool = 28
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_cav_tech_14_full_a = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+    cavalry_weight = 1
+
+    trigger = {
+        mil_tech = 14
+        NOT = { mil_tech = 16 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 29
+    max_size = 29
+    manpower_pool = 58
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_cav_tech_14_full_b = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+    cavalry_weight = 1
+
+    trigger = {
+        mil_tech = 14
+        NOT = { mil_tech = 16 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 29
+    max_size = 29
+    manpower_pool = 58
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_cav_tech_16_half_a = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+    cavalry_weight = 1
+
+    trigger = {
+        mil_tech = 16
+        NOT = { mil_tech = 18 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 15
+    max_size = 15
+    manpower_pool = 30
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_cav_tech_16_half_b = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+    cavalry_weight = 1
+
+    trigger = {
+        mil_tech = 16
+        NOT = { mil_tech = 18 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 15
+    max_size = 15
+    manpower_pool = 30
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_cav_tech_16_full_a = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+    cavalry_weight = 1
+
+    trigger = {
+        mil_tech = 16
+        NOT = { mil_tech = 18 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 30
+    max_size = 30
+    manpower_pool = 60
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_cav_tech_16_full_b = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+    cavalry_weight = 1
+
+    trigger = {
+        mil_tech = 16
+        NOT = { mil_tech = 18 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 30
+    max_size = 30
+    manpower_pool = 60
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_cav_tech_18_half_a = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+    cavalry_weight = 1
+
+    trigger = {
+        mil_tech = 18
+        NOT = { mil_tech = 20 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 16
+    max_size = 16
+    manpower_pool = 32
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_cav_tech_18_half_b = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+    cavalry_weight = 1
+
+    trigger = {
+        mil_tech = 18
+        NOT = { mil_tech = 20 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 16
+    max_size = 16
+    manpower_pool = 32
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_cav_tech_18_full_a = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+    cavalry_weight = 1
+
+    trigger = {
+        mil_tech = 18
+        NOT = { mil_tech = 20 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 32
+    max_size = 32
+    manpower_pool = 64
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_cav_tech_18_full_b = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+    cavalry_weight = 1
+
+    trigger = {
+        mil_tech = 18
+        NOT = { mil_tech = 20 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 32
+    max_size = 32
+    manpower_pool = 64
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_cav_tech_20_half_a = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+    cavalry_weight = 1
+
+    trigger = {
+        mil_tech = 20
+        NOT = { mil_tech = 22 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 17
+    max_size = 17
+    manpower_pool = 34
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_cav_tech_20_half_b = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+    cavalry_weight = 1
+
+    trigger = {
+        mil_tech = 20
+        NOT = { mil_tech = 22 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 17
+    max_size = 17
+    manpower_pool = 34
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_cav_tech_20_full_a = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+    cavalry_weight = 1
+
+    trigger = {
+        mil_tech = 20
+        NOT = { mil_tech = 22 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 34
+    max_size = 34
+    manpower_pool = 68
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_cav_tech_20_full_b = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+    cavalry_weight = 1
+
+    trigger = {
+        mil_tech = 20
+        NOT = { mil_tech = 22 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 34
+    max_size = 34
+    manpower_pool = 68
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_cav_tech_22_half_a = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+    cavalry_weight = 1
+
+    trigger = {
+        mil_tech = 22
+        NOT = { mil_tech = 24 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 18
+    max_size = 18
+    manpower_pool = 36
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_cav_tech_22_half_b = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+    cavalry_weight = 1
+
+    trigger = {
+        mil_tech = 22
+        NOT = { mil_tech = 24 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 18
+    max_size = 18
+    manpower_pool = 36
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_cav_tech_22_full_a = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+    cavalry_weight = 1
+
+    trigger = {
+        mil_tech = 22
+        NOT = { mil_tech = 24 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 36
+    max_size = 36
+    manpower_pool = 72
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_cav_tech_22_full_b = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+    cavalry_weight = 1
+
+    trigger = {
+        mil_tech = 22
+        NOT = { mil_tech = 24 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 36
+    max_size = 36
+    manpower_pool = 72
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_cav_tech_24_half_a = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+    cavalry_weight = 1
+
+    trigger = {
+        mil_tech = 24
+        NOT = { mil_tech = 26 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 19
+    max_size = 19
+    manpower_pool = 38
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_cav_tech_24_half_b = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+    cavalry_weight = 1
+
+    trigger = {
+        mil_tech = 24
+        NOT = { mil_tech = 26 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 19
+    max_size = 19
+    manpower_pool = 38
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_cav_tech_24_full_a = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+    cavalry_weight = 1
+
+    trigger = {
+        mil_tech = 24
+        NOT = { mil_tech = 26 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 38
+    max_size = 38
+    manpower_pool = 76
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_cav_tech_24_full_b = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+    cavalry_weight = 1
+
+    trigger = {
+        mil_tech = 24
+        NOT = { mil_tech = 26 }
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 38
+    max_size = 38
+    manpower_pool = 76
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_cav_tech_26_half_a = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+    cavalry_weight = 1
+
+    trigger = {
+        mil_tech = 26 
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 20
+    max_size = 20
+    manpower_pool = 40
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_cav_tech_26_half_b = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+    cavalry_weight = 1
+
+    trigger = {
+        mil_tech = 26 
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 20
+    max_size = 20
+    manpower_pool = 40
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_cav_tech_26_full_a = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+    cavalry_weight = 1
+
+    trigger = {
+        mil_tech = 26 
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 40
+    max_size = 40
+    manpower_pool = 80
+    no_additional_manpower_from_max_size = yes
+}
+
+h_merc_cav_tech_26_full_b = {
+    mercenary_desc_key = NONE
+    regiments_per_development = 0.025
+    cost_modifier = 1
+    cavalry_weight = 1
+
+    trigger = {
+        mil_tech = 26 
+    }
+
+    modifier = {
+        #
+    }
+
+    min_size = 40
+    max_size = 40
+    manpower_pool = 80
+    no_additional_manpower_from_max_size = yes
+}
