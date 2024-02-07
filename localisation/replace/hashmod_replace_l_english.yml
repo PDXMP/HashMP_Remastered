@@ -2,3 +2,4 @@
  estate_burghers_indebted_to_burghers_effect_tooltip:0 "Take §Y5§! five-year loans at §Y2.5%§! interest. The privilege will be removed automatically when repaid."
  estate_church_one_faith_one_culture_gtb:0 "Every owned province, which is NOT in the §Y[Root.Culture.GetGroupName]§! culture group and has NOT an §Yaccepted culture§!, gains '§YHeretic Culture§!', giving the following effects:\nLocal Unrest: §R+4.00§!\nLocal Culture Conversion Cost: §G-10.0%§!"
  estate_church_one_faith_one_culture_gta:0 "Every owned province of the §Y[Root.Religion.GetName]§! faith, which is either in the §Y[Root.Culture.GetGroupName]§! culture group or has an §Yaccepted culture§!, gains '§YReligious Society§!', giving the following effects:\nLocal Tax Modifier: §G+10.0%§!\nLocal Production Efficiency: §G+10.0%§!\nLocal Manpower Modifier: §G+10.0%§!"
+ mechanic_temples_modifier_yes:1 "Temples and Cathedrals give the province §G+15.0%§! Local Tax Modifier and §G-2.00§! Local Unrest"

@@ -81,3 +81,8 @@ estate_church_false_culture = {
 	local_culture_conversion_cost = -0.1
 	picture = "global_unrest_opposite"
 }
+
+gov_expanded_temple_rights_mod = {
+	local_unrest = -2
+	local_tax_modifier = 0.15 #0.33
+}
