@@ -92,3 +92,9 @@ papal_sanction_for_church_taxes = {
 	build_cost = -0.05 #-0.1
 	religion = yes
 }
+
+papal_blessing = {
+	prestige = 1
+	land_morale = 0.05 #0.1
+	religion = yes
+}
