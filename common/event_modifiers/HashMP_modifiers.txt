@@ -15,3 +15,6 @@ h_nap_breadbasket_of_italy = {
 	development_cost_in_primary_culture = -0.05
 	development_cost = -0.05
 }
+h_bur_chateau_dolhain = {
+	local_attacker_dice_roll_bonus = -1
+}

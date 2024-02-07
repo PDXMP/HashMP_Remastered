@@ -18,7 +18,10 @@ discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
-
+add_permanent_province_modifier = {
+	name = h_bur_chateau_dolhain
+	duration = -1
+}
 
 1477.1.5 = { owner = FRA controller = FRA add_core = FRA remove_core = BUR } # Charles the Bold dies and Louis XII takes Artois
 1493.8.19 = { owner = HAB controller = HAB add_core = HAB } # Frederick III dies, Charles VII cedes Artois to Maximilian I von Habsburg
