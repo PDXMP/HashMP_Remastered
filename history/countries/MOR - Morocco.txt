@@ -50,7 +50,7 @@ change_estate_land_share = {
 	monarch = {
 		name = "Abdalhaqq II"
 		dynasty = "Marinid"
-		adm = 0
+		adm = 1 #0
 		dip = 2
 		mil = 1
 	}
