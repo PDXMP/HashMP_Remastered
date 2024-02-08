@@ -1027,7 +1027,7 @@ ottoman_government = {
 			has_eyalets = yes
 		}
 		government_abilities = {
-			ottoman_decadence_mechanic
+#			ottoman_decadence_mechanic
 		}
 	}
 	conditional = {
@@ -2234,7 +2234,7 @@ al_andalusia_government = {
 	conditional = {
 		allow = { has_dlc = "Cradle of Civilization" }
 		custom_attributes = {
-			allow_piety_switch_decision = yes	#Enables a decision which gives 1 stabhit, but turns your piety 180�
+			allow_piety_switch_decision = yes	#Enables a decision which gives 1 stabhit, but turns your piety 180 
 		}
 	}
 }
