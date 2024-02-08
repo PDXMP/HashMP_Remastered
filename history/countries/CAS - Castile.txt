@@ -89,7 +89,7 @@ change_estate_land_share = {
 		death_date = 1474.12.11
 		claim = 95
 		adm = 2
-		dip = 0
+		dip = 1 #0
 		mil = 1
 	}
 	clear_scripted_personalities = yes
