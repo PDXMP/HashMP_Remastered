@@ -243,18 +243,18 @@ country_event = {
 			DIP = 2
 			MIL = 2
 		}
-		HAB = {
-			tooltip = {
-				add_casus_belli = {
-					target = HUN
-					type = cb_restore_personal_union
-					months = 60
-				}
-			}
-			hidden_effect = {
-				country_event = { id = flavor_hun.10 days = 1 }
-			}
-		}
+		# HAB = {
+		# 	tooltip = {
+		# 		add_casus_belli = {
+		# 			target = HUN
+		# 			type = cb_restore_personal_union
+		# 			months = 60
+		# 		}
+		# 	}
+		# 	hidden_effect = {
+		# 		country_event = { id = flavor_hun.10 days = 1 }
+		# 	}
+		# }
 	}
 	option = {
 		name = flavor_hun.2.b
@@ -292,18 +292,18 @@ country_event = {
 		remove_historical_friend = HAB
 		HAB = { remove_historical_friend = HUN }
 		kill_ruler = yes
-		HAB = {
-			tooltip = {
-				add_casus_belli = {
-					target = HUN
-					type = cb_restore_personal_union
-					months = 60
-				}
-			}
-			hidden_effect = {
-				country_event = { id = flavor_hun.10 days = 1 }
-			}
-		}
+		# HAB = {
+		# 	tooltip = {
+		# 		add_casus_belli = {
+		# 			target = HUN
+		# 			type = cb_restore_personal_union
+		# 			months = 60
+		# 		}
+		# 	}
+		# 	hidden_effect = {
+		# 		country_event = { id = flavor_hun.10 days = 1 }
+		# 	}
+		# }
 	}
 }
 
@@ -386,18 +386,18 @@ country_event = {
 			}
 			hidden_effect = { add_heir_personality_ancestor = { key = just } }
 		}
-		HAB = {
-			tooltip = {
-				add_casus_belli = {
-					target = HUN
-					type = cb_restore_personal_union
-					months = 60
-				}
-			}
-			hidden_effect = {
-				country_event = { id = flavor_hun.10 days = 1 }
-			}
-		}
+		# HAB = {
+		# 	tooltip = {
+		# 		add_casus_belli = {
+		# 			target = HUN
+		# 			type = cb_restore_personal_union
+		# 			months = 60
+		# 		}
+		# 	}
+		# 	hidden_effect = {
+		# 		country_event = { id = flavor_hun.10 days = 1 }
+		# 	}
+		# }
 	}
 	option = { #Ruler dies, keep his heir
 		name = flavor_hun.201.b
@@ -456,18 +456,18 @@ country_event = {
 			hidden_effect = { add_heir_personality_ancestor = { key = just } }
 		}
 		kill_ruler = yes
-		HAB = {
-			tooltip = {
-				add_casus_belli = {
-					target = HUN
-					type = cb_restore_personal_union
-					months = 60
-				}
-			}
-			hidden_effect = {
-				country_event = { id = flavor_hun.10 days = 1 }
-			}
-		}
+		# HAB = {
+		# 	tooltip = {
+		# 		add_casus_belli = {
+		# 			target = HUN
+		# 			type = cb_restore_personal_union
+		# 			months = 60
+		# 		}
+		# 	}
+		# 	hidden_effect = {
+		# 		country_event = { id = flavor_hun.10 days = 1 }
+		# 	}
+		# }
 	}
 }
 
