@@ -363,42 +363,19 @@ h_hab_2 = {
 					duration = 3650
 				}
 			}
-			if = {
+			lombardy_area = {
 				limit = {
-					has_dlc = "Emperor"
+					NOT = { is_core = root }
+					NOT = { is_permanent_claim = root }
 				}
-				if = {
-					limit = {
-						exists = MLO
-						valid_for_personal_unions_trigger = yes
-						MLO = {
-							valid_for_personal_unions_trigger = yes
-							num_of_cities = 3 #no point in taking an OPM
-							owns = 104
-						}
-					}
-					add_casus_belli = {
-						type = cb_restore_personal_union
-						months = 300
-						target = MLO
-					}
+				add_permanent_claim = root
+			}
+			po_valley_area = {
+				limit = {
+					NOT = { is_core = root }
+					NOT = { is_permanent_claim = root }
 				}
-				else = {
-					lombardy_area = {
-						limit = {
-							NOT = { is_core = root }
-							NOT = { is_permanent_claim = root }
-						}
-						add_permanent_claim = root
-					}
-					po_valley_area = {
-						limit = {
-							NOT = { is_core = root }
-							NOT = { is_permanent_claim = root }
-						}
-						add_permanent_claim = root
-					}
-				}
+				add_permanent_claim = root
 			}
 		}
 	}
