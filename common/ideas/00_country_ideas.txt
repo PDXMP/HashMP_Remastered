@@ -16023,7 +16023,7 @@ LOT_ideas = {
 	}
 	
 	bonus = {
-		ae_impact = -0.1
+		num_accepted_cultures = 4
 	}
 	
 	trigger = {
@@ -16032,7 +16032,7 @@ LOT_ideas = {
 	free = yes		#will be added at load.
 	
 	lot_legacy_of_the_carolingians = {
-		prestige_decay = -0.01
+		core_creation = -0.2
 	}
 	lot_glory_of_charlemagne = {
 		land_morale = 0.15
@@ -16045,13 +16045,14 @@ LOT_ideas = {
 	}
 	lot_court_of_europe = {
 		prestige = 0.5
-		advisor_pool = 1
+		advisor_cost = 0.1
 	}
 	lot_land_of_abbeys = {
 		missionaries = 1
+		build_cost = 0.1
 	}
 	lot_european_empire = {
-		core_creation = -0.2
+		discipline = 0.05 
 	}
 }
 
