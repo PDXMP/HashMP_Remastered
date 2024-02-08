@@ -891,6 +891,7 @@ FRA_ideas = {
 	native_trading_principles = {
 		native_uprising_chance = -0.5
 		native_assimilation = 0.5
+		heavy_ship_power = 0.1
 	}
 	divine_right_to_rule = {
 		core_creation = -0.1
