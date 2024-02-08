@@ -1831,7 +1831,7 @@ HAB_ideas = {
 	}
 	
 	bonus = {
-		heir_chance = 0.50
+		discipline = 0.05
 	}
 	
 	trigger = {
@@ -1850,12 +1850,12 @@ HAB_ideas = {
 		diplomatic_annexation_cost = -0.15
 	}
 	military_border = {
-		global_garrison_growth = 0.15
+		manpower_recovery_speed = 0.15
 		fort_maintenance_modifier = -0.10
 	}
 	fugger_banks = {
 		inflation_reduction = 0.05
-		interest = -0.5
+		gold_depletion_chance_modifier = -0.1
 	}
 	habsburg_dominance = {
 		diplomatic_reputation = 2
@@ -1868,7 +1868,7 @@ HAB_ideas = {
 	}
 	hofkriegsrat = {
 		reinforce_speed = 0.3
-		discipline = 0.05
+		reinforce_cost_modifier = -0.10
 	}
 }
 
