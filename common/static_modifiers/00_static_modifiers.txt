@@ -722,6 +722,7 @@ inflation = {
 	trade_company_investment_cost = 0.01				#1% for each inflation step
 	state_maintenance_modifier = 0.01					#1% for each inflation step
 	monthly_russian_modernization = -0.01
+	merc_maintenance_modifier = 0.01
 }
 
 bankruptcy = {
