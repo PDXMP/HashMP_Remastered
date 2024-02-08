@@ -1953,7 +1953,7 @@ h_hab_5 = {
 		trigger = {
 			134 = {
 				owned_by = root
-				development = 50
+				development = 30 #50
 				num_of_buildings_in_province = 6
 			}
 			has_adm_advisor_3 = yes
