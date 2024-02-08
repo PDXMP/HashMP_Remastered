@@ -83,10 +83,10 @@ capital = 121 # Napoli
 1435.2.3 = {
 	monarch = { 
 		name = "Renato I"
-		dynasty = "de Valois"
-		dip = 2
-		mil = 2
-		adm = 2
+		dynasty = "de Valois-Anjou"
+		dip = 3 #2
+		mil = 3 #2
+		adm = 3 #2
 	}
 }
 
