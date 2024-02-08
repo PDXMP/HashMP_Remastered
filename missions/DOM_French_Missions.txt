@@ -3751,54 +3751,7 @@ french_missions_4_normal = {
 		}
 	}
 }	
-
-french_missions_4_branching = {
-	slot = 4
-	generic = no
-	ai = yes
 	
-	potential = {
-		tag = FRA
-		NOT = { map_setup = map_setup_random }
-		NOT = { has_country_flag = fra_chose_to_piss_off_pope_flag } 
-		NOT = { has_country_flag = fra_papal_lap_dop_flag }
-		has_dlc = "Domination"
-	}
-	has_country_shield = yes
-	
-	fra_branch_mission_4_3 = { 
-		icon = mission_unknown_mission
-		required_missions = { fra_ducal_lands_avignon }
-		position = 3 
-		trigger = { 
-			custom_trigger_tooltip = {
-				tooltip = selectable_mission_trigger_tt
-				always = no
-			}
-		}
-		effect = { 
-			custom_tooltip = fra_if_align_pope_protector_of_catholicism_about_defender_of_faith_tt
-			custom_tooltip = fra_if_defy_pope_crown_of_naples_tt
-		}
-	}
-	
-	fra_branch_mission_4_4 = { 
-		icon = mission_unknown_mission
-		required_missions = { fra_branch_mission_4_3 fra_branch_mission_5_3 }
-		position = 3 
-		trigger = { 
-			custom_trigger_tooltip = {
-				tooltip = selectable_mission_trigger_tt
-				always = no
-			}
-		}
-		effect = { 
-			custom_tooltip = fra_if_align_pope_restore_outremer_tt
-			custom_tooltip = fra_if_defy_pope_city_of_lights_tt
-		}
-	}
-}	
-
 french_missions_4_italian = {
 	slot = 4
 	generic = no
@@ -3807,9 +3760,9 @@ french_missions_4_italian = {
 	potential = {
 		tag = FRA
 		NOT = { map_setup = map_setup_random }
-		has_country_flag = fra_chose_to_piss_off_pope_flag
 		has_dlc = "Domination"
 	}
+	
 	has_country_shield = yes
 	
 	fra_crown_naples = { 
@@ -5078,41 +5031,9 @@ french_missions_5_normal = {
 					}
 				
 			}
-			swap_non_generic_missions = yes 
 		}
 	}
 }	
-
-french_missions_5_branching = {
-	slot = 5
-	generic = no
-	ai = yes
-	
-	potential = {
-		tag = FRA
-		NOT = { map_setup = map_setup_random }
-		NOT = { has_country_flag = fra_chose_to_piss_off_pope_flag } 
-		NOT = { has_country_flag = fra_papal_lap_dop_flag }
-		has_dlc = "Domination"
-	}
-	has_country_shield = yes
-	
-	fra_branch_mission_5_3 = { 
-		icon = mission_unknown_mission
-		required_missions = { fra_ducal_lands_avignon }
-		position = 3 
-		trigger = { 
-			custom_trigger_tooltip = {
-				tooltip = selectable_mission_trigger_tt
-				always = no
-			}
-		}
-		effect = { 
-			custom_tooltip = fra_if_align_pope_piglrimage_jerusalem_tt
-			custom_tooltip = fra_if_defy_pope_milanese_succession_tt
-		}
-	}
-}
 
 french_missions_5_italian = {
 	slot = 5
@@ -5122,7 +5043,6 @@ french_missions_5_italian = {
 	potential = {
 		tag = FRA
 		NOT = { map_setup = map_setup_random }
-		has_country_flag = fra_chose_to_piss_off_pope_flag
 		has_dlc = "Domination"
 	}
 	has_country_shield = yes
