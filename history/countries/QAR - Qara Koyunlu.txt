@@ -82,7 +82,7 @@ set_estate_privilege = estate_nobles_emirs_of_baghdad
 		claim = 95
 		adm = 2
 		dip = 1
-		mil = 0
+		mil = 1 #0
 	}
 }
 
