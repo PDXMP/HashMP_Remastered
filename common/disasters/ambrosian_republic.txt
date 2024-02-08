@@ -100,7 +100,7 @@ ambrosian_republic_disaster = {
 	
 	on_monthly = {
 		events = {
-			ambrosian_republic.2 # France and the Emperor react
+			#ambrosian_republic.2 # France and the Emperor react
 			ambrosian_republic.5 # Recruit Sforza
 			ambrosian_republic.6 # Sforza gets powerful
 			ambrosian_republic.7 # Sforza declares himself Duke
