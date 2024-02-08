@@ -18,3 +18,6 @@ h_nap_breadbasket_of_italy = {
 h_bur_chateau_dolhain = {
 	local_attacker_dice_roll_bonus = -1
 }
+h_bankrupt_interest = {
+	interest = 2
+}
