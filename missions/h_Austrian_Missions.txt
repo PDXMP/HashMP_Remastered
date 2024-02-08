@@ -868,7 +868,7 @@ h_hab_3 = {
 		icon = control_swabia
 		#position = 10
 		
-		required_missions = { emp_hab_union_bayern emp_hab_connect_further_austria }
+		required_missions = { emp_hab_connect_further_austria }
 		provinces_to_highlight = {
 			OR = {
 				area = upper_swabia_area
@@ -1190,6 +1190,92 @@ h_hab_4 = {
 	
 	has_country_shield = yes
 
+	emp_hab_balance_of_power = {
+		icon = balance_of_power
+		required_missions = {  }
+		#position = 8
+		provinces_to_highlight = {
+			is_capital = yes
+			if = {
+				limit = {
+					ROOT = {
+						total_development = 1000
+						NOT = {
+							any_country = {
+								root = { is_rival = prev }
+							}
+						}
+					}
+				}
+				is_capital = yes
+				owner = {
+					army_size = root
+				}
+			}
+			else = {
+				OR = {
+					AND = {
+						owned_by = root
+						root = { is_great_power = no }
+					}
+					AND = {
+						NOT = { owned_by = root }
+						owner = {
+							is_great_power = yes
+							NOT = { alliance_with = root }
+							NOT = { is_rival = root }
+						}
+						root = {
+							OR = {
+								NOT = {
+									any_rival_country = {
+										is_great_power = yes
+									}
+								}
+								NOT = {
+									any_ally = {
+										is_great_power = yes
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		trigger = {
+			if = {
+				limit = {
+					total_development = 1000
+					NOT = {
+						any_country = {
+							root = { is_rival = prev }
+						}
+					}
+				}
+				all_country = {
+					NOT = {
+						army_size = root
+					}
+				}
+			}
+			else = {
+				is_great_power = yes
+				any_rival_country = {
+					is_great_power = yes
+				}
+				any_ally = {
+					is_great_power = yes
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = hab_balance_of_power_mod
+				duration = 7300
+			}
+		}
+	}
 	emp_hab_connect_further_austria = {
 		icon = connect_further_austria
 
@@ -1262,7 +1348,7 @@ h_hab_4 = {
 	emp_hab_conquer_switzerland = {
 		icon = reorganize_the_confederacy
 		
-		position = 3
+		#position = 3
 
 		required_missions = { emp_hab_connect_further_austria }
 		provinces_to_highlight = {
@@ -1305,38 +1391,42 @@ h_hab_4 = {
 			}
 		}
 		effect = {
-			bourgogne_area = {
-				limit = {
-					NOT = { is_core = root }
-					NOT = { is_permanent_claim = root }
-				}
-				add_permanent_claim = root
+			add_country_modifier = {
+				name = hab_empire_in_the_west
+				duration = 7300
 			}
-			lorraine_area = {
-				limit = {
-					NOT = { is_core = root }
-					NOT = { is_permanent_claim = root }
-				}
-				add_permanent_claim = root
-			}
-			every_province = {
-				limit = {
-					region = france_region
-					NOT = { area = bourgogne_area }
-					NOT = { area = lorraine_area }
-					is_part_of_hre = yes
-					owner = {
-						OR = {
-							is_part_of_hre = no
-							AND = {
-								is_subject = yes
-								overlord = { is_part_of_hre = no }
-							}
-						}
-					}
-				}
-				add_permanent_claim = root
-			}
+			# bourgogne_area = {
+			# 	limit = {
+			# 		NOT = { is_core = root }
+			# 		NOT = { is_permanent_claim = root }
+			# 	}
+			# 	add_permanent_claim = root
+			# }
+			# lorraine_area = {
+			# 	limit = {
+			# 		NOT = { is_core = root }
+			# 		NOT = { is_permanent_claim = root }
+			# 	}
+			# 	add_permanent_claim = root
+			# }
+			# every_province = {
+			# 	limit = {
+			# 		region = france_region
+			# 		NOT = { area = bourgogne_area }
+			# 		NOT = { area = lorraine_area }
+			# 		is_part_of_hre = yes
+			# 		owner = {
+			# 			OR = {
+			# 				is_part_of_hre = no
+			# 				AND = {
+			# 					is_subject = yes
+			# 					overlord = { is_part_of_hre = no }
+			# 				}
+			# 			}
+			# 		}
+			# 	}
+			# 	add_permanent_claim = root
+			# }
 		}
 		ai_weight = {
 			factor = 500	#Historical conquest
@@ -1572,92 +1662,6 @@ h_hab_5 = {
 	
 	has_country_shield = yes
 
-	emp_hab_balance_of_power = {
-		icon = balance_of_power
-		required_missions = {  }
-		#position = 8
-		provinces_to_highlight = {
-			is_capital = yes
-			if = {
-				limit = {
-					ROOT = {
-						total_development = 1000
-						NOT = {
-							any_country = {
-								root = { is_rival = prev }
-							}
-						}
-					}
-				}
-				is_capital = yes
-				owner = {
-					army_size = root
-				}
-			}
-			else = {
-				OR = {
-					AND = {
-						owned_by = root
-						root = { is_great_power = no }
-					}
-					AND = {
-						NOT = { owned_by = root }
-						owner = {
-							is_great_power = yes
-							NOT = { alliance_with = root }
-							NOT = { is_rival = root }
-						}
-						root = {
-							OR = {
-								NOT = {
-									any_rival_country = {
-										is_great_power = yes
-									}
-								}
-								NOT = {
-									any_ally = {
-										is_great_power = yes
-									}
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-		trigger = {
-			if = {
-				limit = {
-					total_development = 1000
-					NOT = {
-						any_country = {
-							root = { is_rival = prev }
-						}
-					}
-				}
-				all_country = {
-					NOT = {
-						army_size = root
-					}
-				}
-			}
-			else = {
-				is_great_power = yes
-				any_rival_country = {
-					is_great_power = yes
-				}
-				any_ally = {
-					is_great_power = yes
-				}
-			}
-		}
-		effect = {
-			add_country_modifier = {
-				name = hab_balance_of_power_mod
-				duration = 7300
-			}
-		}
-	}
 	emp_hab_balanced_estates = {
 		icon = balance_the_estates
 		required_missions = {  }
@@ -1889,7 +1893,7 @@ h_hab_5 = {
 
 	emp_hab_develop_hungary_bohemia = {
 		icon = invest_in_the_provinces
-		#position = 6
+		position = 6
 		required_missions = { emp_hab_the_hungarian_question }
 		provinces_to_highlight = {
 			OR = {
