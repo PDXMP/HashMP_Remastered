@@ -305,73 +305,11 @@ french_missions_1 = {
 				type = all 
 				country_or_non_sovereign_subject_holds = ROOT 
 			}
-			if = {
-				limit = { ai = no }
-				OR = { 
-					is_emperor = yes 
-					NOT = { hre_size = 1 } 
-					emperor = { 
-						has_opinion_modifier = {
-							who = ROOT
-							modifier = scornfully_insulted
-						}
-					}
-					emperor = { 
-						has_opinion_modifier = {
-							who = ROOT
-							modifier = insulted
-						}
-					}
-				}
-				OR = { 
-					emperor = { is_rival = ROOT } 
-					military_strength = {
-						who = emperor
-						value = 2.0
-					}
-					power_projection = 80 
-				}
-			}
-			if = {
-				limit = { ai = yes }
-				grown_by_development = 150
-			}
-		}
-		effect = { 
-			country_event = { id = flavor_fra.102 } 
-			
-			custom_tooltip = fra_event_insight_102_tt
-		}
-	}
-}
 
-french_missions_1_blank_hre = {
-	slot = 1
-	generic = no
-	ai = yes
-	
-	potential = {
-		tag = FRA
-		NOT = { map_setup = map_setup_random }
-		NOT = { has_country_flag = fra_shed_the_blood_of_the_saxon_man_flag }
-		NOT = { has_country_flag = fra_fufujoni_flag }
-		has_dlc = "Domination"
-	}
-	has_country_shield = yes
-	
-	fra_branch_mission_1_5 = { 
-		icon = mission_unknown_mission
-		required_missions = { fra_border_empire }
-		position = 5
-		trigger = { 
-			custom_trigger_tooltip = {
-				tooltip = selectable_mission_trigger_tt
-				always = no
-			}
 		}
 		effect = { 
-			custom_tooltip = fra_if_choose_to_break_habsburg_ring_by_conquering_swaths_of_the_germanic_provinces_tt
-			custom_tooltip = fra_if_choose_to_claim_emperorship_and_gain_unique_bonuses_that_will_help_us_shape_empire_tt
+			add_mil_power = 100 
+			
 		}
 	}
 }
@@ -384,9 +322,7 @@ french_missions_1_kill_hre_path = {
 	potential = {
 		tag = FRA
 		NOT = { map_setup = map_setup_random }
-		has_country_flag =  fra_fufujoni_flag
-		NOT = { has_country_flag = fra_shed_the_blood_of_the_saxon_man_flag }
-		has_dlc = "Domination"
+		has_dlc = "Domination" 
 	}
 	has_country_shield = yes
 	
@@ -1469,53 +1405,6 @@ french_missions_2 = {
 			country_event = { id = flavor_fra.104 }
 		}
 	}
-}
-
-french_missions_2_blank_hre = {
-	slot = 2
-	generic = no
-	ai = yes
-	
-	potential = {
-		tag = FRA
-		NOT = { map_setup = map_setup_random }
-		NOT = { has_country_flag = fra_shed_the_blood_of_the_saxon_man_flag }
-		NOT = { has_country_flag = fra_fufujoni_flag }
-		has_dlc = "Domination"
-	}
-	has_country_shield = yes
-	
-	fra_branch_mission_2_5 = { 
-		icon = mission_unknown_mission
-		required_missions = { fra_border_empire }
-		position = 5
-		trigger = { 
-			custom_trigger_tooltip = {
-				tooltip = selectable_mission_trigger_tt
-				always = no
-			}
-		}
-		effect = { 
-			custom_tooltip = fra_if_choose_to_break_habsburg_ring_by_conquering_swaths_of_the_germanic_provinces_tt
-			custom_tooltip = fra_if_choose_to_claim_emperorship_and_gain_unique_bonuses_that_will_help_us_shape_empire_tt
-		}
-	}
-	
-	fra_branch_mission_2_6 = {
-		icon = mission_unknown_mission
-		required_missions = { fra_branch_mission_1_5 fra_branch_mission_2_5 fra_branch_mission_3_5 }
-		position = 6
-		trigger = { 
-			custom_trigger_tooltip = {
-				tooltip = selectable_mission_trigger_tt
-				always = no
-			}
-		}
-		effect = { 
-			custom_tooltip = fra_if_choose_declaratio_galica_tt
-			custom_tooltip = fra_if_choose_return_italy_to_hre_and_unique_mercenary_bonuses_tt
-		}
-	}
 }	
 
 french_missions_2_charlemagne_path = {
@@ -1586,9 +1475,7 @@ french_missions_2_kill_hre_path = {
 	potential = {
 		tag = FRA
 		NOT = { map_setup = map_setup_random }
-		NOT = { has_country_flag = fra_shed_the_blood_of_the_saxon_man_flag }
-		has_country_flag = fra_fufujoni_flag
-		has_dlc = "Domination"
+		has_dlc = "Domination" 
 	}
 	has_country_shield = yes
 	
@@ -2492,37 +2379,6 @@ french_missions_3 = {
 	}
 }
 
-french_missions_3_blank_hre = {
-	slot = 3
-	generic = no
-	ai = yes
-	
-	potential = {
-		tag = FRA
-		NOT = { map_setup = map_setup_random }
-		NOT = { has_country_flag = fra_shed_the_blood_of_the_saxon_man_flag }
-		NOT = { has_country_flag = fra_fufujoni_flag }
-		has_dlc = "Domination"
-	}
-	has_country_shield = yes
-	
-	fra_branch_mission_3_5 = { 
-		icon = mission_unknown_mission
-		required_missions = { fra_border_empire }
-		position = 5
-		trigger = { 
-			custom_trigger_tooltip = {
-				tooltip = selectable_mission_trigger_tt
-				always = no
-			}
-		}
-		effect = { 
-			custom_tooltip = fra_if_choose_dismantle_hre_tt
-			custom_tooltip = fra_if_choose_expand_the_versailles_as_the_center_of_military_operations_in_the_empire_and_solidify_our_dip_tt
-		}
-	}
-}
-
 french_missions_3_charlemagne_path = {
 	slot = 3
 	generic = no
@@ -2655,9 +2511,7 @@ french_missions_3_kill_hre_path = {
 	potential = {
 		tag = FRA
 		NOT = { map_setup = map_setup_random }
-		NOT = { has_country_flag = fra_shed_the_blood_of_the_saxon_man_flag }
-		has_country_flag = fra_fufujoni_flag
-		has_dlc = "Domination"
+		has_dlc = "Domination" 
 	}
 	has_country_shield = yes
 	
