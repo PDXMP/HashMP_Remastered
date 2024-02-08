@@ -156,3 +156,7 @@
  h_merc_cav_tech_26_half_b:0 "Small Cavalry Company"
  h_merc_cav_tech_26_full_a:0 "Large Cavalry Company"
  h_merc_cav_tech_26_full_b:0 "Large Cavalry Company"
+ h_tm_age_of_discovery:0 "Age of Discovery"
+ h_tm_age_of_reformation:0 "Age of Reformation"
+ h_tm_age_of_absolutism:0 "Age of Absolutism"
+ h_tm_age_of_revolutions:0 "Age of Revolutions"
