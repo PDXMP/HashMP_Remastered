@@ -1240,7 +1240,7 @@ estate_vaisyas_financial_demand = {
 		has_dlc = "Domination"
 	}
 	benefits = {
-		global_tax_modifier = 0.1
+		#global_tax_modifier = 0.1
 	}
 	
 	on_granted = {
