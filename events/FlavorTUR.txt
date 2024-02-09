@@ -735,7 +735,7 @@ country_event = {
 
 	option = {		# Assume the title of Khadim al-Haramayn.
 		name = "flavor_tur.EVTOPTA3371"
-		add_adm_power = 400
+		add_adm_power = 200
 		add_prestige = 25
 		add_legitimacy = 25
 		add_piety = 0.25
