@@ -64,10 +64,10 @@ country_decisions = {
 				adm_tech = 10 #20
 			}
 			religion_group = muslim
-			arabia_region = {
-				type = all
-				owned_by = ROOT
+			num_of_owned_provinces_with = {
+				value = 35
 				is_core = ROOT
+				region = arabia_region
 			}
 			# owns_core_province = 358			#Alexandria
 			# owns_core_province = 361			#Cairo
