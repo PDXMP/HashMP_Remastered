@@ -17926,7 +17926,7 @@ ARB_ideas = {
 
 EGY_ideas = {
 	start = {
-		manpower_recovery_speed = 0.25
+		manpower_recovery_speed = 0.20
 		administrative_efficiency = 0.05
 	}
 
@@ -17952,8 +17952,7 @@ EGY_ideas = {
 		burghers_loyalty_modifier = 0.1
 	}
 	nile_production = {
-		#production_efficiency = 0.10
-		global_trade_goods_size_modifier = 0.1
+		production_efficiency = 0.10
 	}
 	westernize_the_military = {
 		#max_general_fire = 1
