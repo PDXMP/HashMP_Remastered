@@ -17899,7 +17899,7 @@ ARB_ideas = {
 	ARB_arabian_pincers = {
 		#cav_to_inf_ratio = 0.25
 		cavalry_cost = -0.1
-		cavalry_power = 0.25
+		cavalry_power = 0.20 #0.25
 	}
 	ARB_pact_of_umar = {
 		dhimmi_loyalty_modifier = 0.1
