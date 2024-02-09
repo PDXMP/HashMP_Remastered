@@ -166,7 +166,7 @@ emp_ned_slot1_branch = {
 			1376 = {
 				add_trade_modifier = {
 					who = ROOT
-					duration = 5475
+					duration = -1
 					power = 50
 					key = DUTCH_DEJIMA
 				}
@@ -559,7 +559,7 @@ emp_ned_slot2_indies_branch = {
 			1357 = {
 				add_trade_modifier = {
 					who = root
-					duration = 7300
+					duration = -1
 					power = 50
 					key = DUTCH_EAST_INDIES_TRADE
 				}
@@ -567,7 +567,7 @@ emp_ned_slot2_indies_branch = {
 			1361 = {
 				add_trade_modifier = {
 					who = root
-					duration = 7300
+					duration = -1
 					power = 50
 					key = DUTCH_EAST_INDIES_TRADE
 				}
@@ -939,52 +939,7 @@ emp_ned_slot4_branch = { # Statists
 			}
 		}
 		effect = {
-			if = {
-				limit = {
-					exists = ENG
-					NOT = { exists = GBR }
-					ENG = { 
-						valid_for_personal_unions_trigger = yes
-					}
-					religion_group = christian
-					OR = {
-						AND = {
-							has_dlc = "Res Publica"
-							has_states_general_mechanic = yes
-							is_orangists_in_power = yes
-						}
-						government = monarchy
-					}
-				}
-				add_casus_belli = {
-					type = cb_restore_personal_union
-					months = 300
-					target = ENG
-				}
-			}
-			else_if = {
-				limit = {
-					exists = GBR
-					GBR = {
-						valid_for_personal_unions_trigger = yes
-					}
-					religion_group = christian
-					OR = {
-						AND = {
-							has_dlc = "Res Publica"
-							has_states_general_mechanic = yes
-							is_orangists_in_power = yes
-						}
-						government = monarchy
-					}
-				}
-				add_casus_belli = {
-					type = cb_restore_personal_union
-					months = 300
-					target = GBR
-				}
-			}
-			else = {
+
 				home_counties_area = {
 					limit = {
 						NOT = { is_permanent_claim = ROOT }
@@ -1006,7 +961,6 @@ emp_ned_slot4_branch = { # Statists
 					}
 					add_permanent_claim = ROOT
 				}
-			}
 			if = {
 				limit = {
 					OR = {
@@ -1032,7 +986,7 @@ emp_ned_slot4_branch = { # Statists
 		position = 5
 		
 		trigger = {
-			trade_income_percentage = 0.5
+			trade_income_percentage = 0.35
 		}
 		effect = {
 			add_country_modifier = {
@@ -1344,8 +1298,8 @@ emp_ned_slot5_branch = { # Orangists
 			1269 = {
 				add_trade_modifier = {
 					who = root
-					duration = 7300
-					power = 30
+					duration = -1
+					power = 50
 					key = DUTCH_CHANNEL_SUPREMACY
 				}
 			}
