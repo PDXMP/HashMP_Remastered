@@ -17,16 +17,19 @@ country_decisions = {
 			NOT = { exists = ARB }
 			NOT = { tag = HLR }
 			NOT = { tag = PAP }
-			is_colonial_nation = no
-			OR = {
-				is_former_colonial_nation = no
-				AND = {
-					is_former_colonial_nation = yes
-					ai = no
-				}
-			}
-			culture_group = turko_semitic #Arabic
-			NOT = { primary_culture = turkish }
+			# is_colonial_nation = no
+			# OR = {
+			# 	is_former_colonial_nation = no
+			# 	AND = {
+			# 		is_former_colonial_nation = yes
+			# 		ai = no
+			# 	}
+			# }
+			#culture_group = turko_semitic #Arabic
+			#NOT = { primary_culture = turkish }
+
+			#HashMP
+			tag = MAM
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -43,7 +46,7 @@ country_decisions = {
 				province_id = 394			#Qatif
 				province_id = 400			#Muscat
 				province_id = 403			#Nizwa
-				province_id = 410			#Baghdad
+				#province_id = 410			#Baghdad
 			}
 			OR = {
 				NOT = { owned_by = ROOT }
@@ -73,7 +76,7 @@ country_decisions = {
 			owns_core_province = 394			#Qatif
 			owns_core_province = 400			#Muscat
 			owns_core_province = 403			#Nizwa
-			owns_core_province = 410			#Baghdad
+			#owns_core_province = 410			#Baghdad
 		}
 		effect = {
 			on_change_tag_effect = yes
