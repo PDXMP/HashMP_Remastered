@@ -3,10 +3,7 @@ h_mam_1 = {
 	generic = no
 	ai = yes
 	potential = {
-		OR = {
-			tag = EGY
-			tag = MAM
-		}
+		is_or_was_tag = { tag = MAM }
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -511,10 +508,7 @@ h_mam_2 = {
 	generic = no
 	ai = yes
 	potential = {
-		OR = {
-			tag = EGY
-			tag = MAM
-		}
+		is_or_was_tag = { tag = MAM }
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -947,10 +941,7 @@ h_mam_3 = {
 	generic = no
 	ai = yes
 	potential = {
-		OR = {
-			tag = EGY
-			tag = MAM
-		}
+		is_or_was_tag = { tag = MAM }
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -1313,10 +1304,7 @@ h_mam_4 = {
 	generic = no
 	ai = yes
 	potential = {
-		OR = {
-			tag = EGY
-			tag = MAM
-		}
+		is_or_was_tag = { tag = MAM }
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
@@ -1881,10 +1869,7 @@ h_mam_5 = {
 	generic = no
 	ai = yes
 	potential = {
-		OR = {
-			tag = EGY
-			tag = MAM
-		}
+		is_or_was_tag = { tag = MAM }
 		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
