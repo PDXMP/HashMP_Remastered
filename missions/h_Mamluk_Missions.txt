@@ -1329,15 +1329,15 @@ h_mam_4 = {
 			}
 		}
 		trigger = {
-			if = {
-				limit = {
-					NOT = { is_year = 1446 }
-				}
-				custom_trigger_tooltip = { 
-					tooltip = mam_had_administration_syria_event_tt
-					has_country_flag = mam_had_administration_syria_event_flag
-				}
-			}
+			# if = {
+			# 	limit = {
+			# 		NOT = { is_year = 1446 }
+			# 	}
+			# 	custom_trigger_tooltip = { 
+			# 		tooltip = mam_had_administration_syria_event_tt
+			# 		has_country_flag = mam_had_administration_syria_event_flag
+			# 	}
+			# }
 			OR = {
 				if = {
 					limit = { 
