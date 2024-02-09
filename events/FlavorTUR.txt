@@ -3292,7 +3292,7 @@ country_event = {
 	
 	option = {	# Fallback
 		name = flavor_tur.210.d
-		add_adm_power = 100
+#		add_adm_power = 100
 		ai_chance = {
 			factor = 0
 		}
@@ -3849,7 +3849,7 @@ country_event = {
 	
 	option = {	# Fallback
 		name = flavor_tur.210.d
-		add_adm_power = 100
+#		add_adm_power = 100
 		ai_chance = {
 			factor = 0
 		}
@@ -4068,7 +4068,7 @@ country_event = {
 	
 	option = {	# Fallback
 		name = flavor_tur.210.d
-		add_adm_power = 150
+#		add_adm_power = 150
 		ai_chance = {
 			factor = 0
 		}
@@ -4513,7 +4513,7 @@ country_event = {
 	
 	option = {	# Fallback
 		name = flavor_tur.220.b
-		add_adm_power = 100
+#		add_adm_power = 100
 		ai_chance = {
 			factor = 0
 		}
@@ -4794,7 +4794,7 @@ country_event = {
 	
 	option = {	# Fallback
 		name = flavor_tur.210.d
-		add_adm_power = 100
+#		add_adm_power = 100
 		ai_chance = {
 			factor = 0
 		}
@@ -4926,7 +4926,7 @@ country_event = {
 	
 	option = {	# Fallback
 		name = flavor_tur.210.d
-		add_adm_power = 100
+#		add_adm_power = 100
 		ai_chance = {
 			factor = 0
 		}
@@ -5161,7 +5161,7 @@ country_event = {
 	
 	option = {	# Fallback
 		name = flavor_tur.210.d
-		add_adm_power = 100
+#		add_adm_power = 100
 		ai_chance = {
 			factor = 0
 		}
@@ -5361,7 +5361,7 @@ country_event = {
 	
 	option = {	# Fallback
 		name = flavor_tur.210.d
-		add_adm_power = 100
+#		add_adm_power = 100
 		ai_chance = {
 			factor = 0
 		}
@@ -5699,7 +5699,7 @@ country_event = {
 	
 	option = {	# Fallback
 		name = flavor_tur.210.d
-		add_adm_power = 100
+#		add_adm_power = 100
 		ai_chance = {
 			factor = 0
 		}
@@ -5798,7 +5798,7 @@ country_event = {
 	
 	option = {	# Fallback
 		name = flavor_tur.210.d
-		add_adm_power = 100
+#		add_adm_power = 100
 		set_country_flag = tur_keeps_persia_for_themselves
 		ai_chance = {
 			factor = 0
