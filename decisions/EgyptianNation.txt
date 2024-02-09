@@ -125,31 +125,33 @@ country_decisions = {
 			}
 			NOT = { has_country_flag = formed_mamluks }
 			was_never_end_game_tag_trigger = yes
-			NOT = { tag = MAM }
-			NOT = { tag = HLR }
-			NOT = { tag = PAP }
-			NOT = { tag = TUR }
-			NOT = { tag = ARB }
-			NOT = { tag = EGY }
-			OR = {
-				ai = no
-				NOT = { exists = MAM }
-			}
-			any_owned_province = {
-				OR = {
-					region = egypt_region
-					region = arabia_region
-					region = mashriq_region
-					region = maghreb_region
-					region = horn_of_africa_region
-				}
-			}
+			# NOT = { tag = MAM }
+			# NOT = { tag = HLR }
+			# NOT = { tag = PAP }
+			# NOT = { tag = TUR }
+			# NOT = { tag = ARB }
+			# NOT = { tag = EGY }
+			# OR = {
+			# 	ai = no
+			# 	NOT = { exists = MAM }
+			# }
+			# any_owned_province = {
+			# 	OR = {
+			# 		region = egypt_region
+			# 		region = arabia_region
+			# 		region = mashriq_region
+			# 		region = maghreb_region
+			# 		region = horn_of_africa_region
+			# 	}
+			# }
+			tag = TUN
 		}
 		provinces_to_highlight = {
-			province_id = 361 	# Cairo
-			361 = { 			# Cairo
-				is_state = yes
-			}
+			region = egypt_region
+			# province_id = 361 	# Cairo
+			# 361 = { 			# Cairo
+			# 	is_state = yes
+			# }
 			OR = {
 				NOT = { owned_by = ROOT }
 				NOT = { is_core = ROOT }
@@ -157,7 +159,12 @@ country_decisions = {
 		}
 		allow = {
 			NOT = { exists = MAM } #To Show why it might disappear
-			owns_core_province = 361
+			#owns_core_province = 361
+			num_of_owned_provinces_with = {
+				value = 20
+				region = egypt_region
+				is_core = ROOT
+			}
 		}
 		effect = {
 			361 = { # Cairo
