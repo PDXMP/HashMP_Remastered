@@ -6031,11 +6031,11 @@ country_event = {
 		set_country_flag = tur_decided_to_go_eyalet
 		add_war_exhaustion = -2
 		add_prestige = 20
-		MAM = {
-			country_event = {
-				id = flavor_tur.241
-			}
-		}
+#		MAM = {
+#			country_event = {
+#				id = flavor_tur.241
+#			}
+#		}
 		ai_chance = {
 			factor = 1
 		}
@@ -6046,11 +6046,11 @@ country_event = {
 		custom_tooltip = flavor_tur.240.b.tt
 		add_war_exhaustion = -2
 		add_prestige = 20
-		MAM = {
-			country_event = {
-				id = flavor_tur.241
-			}
-		}
+#		MAM = {
+#			country_event = {
+#				id = flavor_tur.241
+#			}
+#		}
 		add_country_modifier = {
 			name = tur_egyptian_annexation
 			duration = 7300
