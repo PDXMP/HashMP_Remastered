@@ -117,6 +117,8 @@ country_decisions = {
 			on_change_tag_effect = yes
 			restore_country_name = yes
 			swap_non_generic_missions = yes
+			add_government_reform = stadthalter_monarchy_reform 
+			change_government_reform_progress = 50
 			low_countries_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
