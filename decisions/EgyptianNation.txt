@@ -6,28 +6,31 @@ country_decisions = {
 			normal_or_historical_nations = yes
 			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_egypt_flag }
-			OR = {
-				ai = no
-				is_playing_custom_nation = no
-			}
-			OR = {
-				is_free_or_tributary_trigger = yes
-				ai = no
-			}
-			NOT = { tag = HLR }
-			NOT = { tag = PAP }
-			NOT = { tag = TUR }
-			NOT = { tag = ARB }
-			NOT = { exists = EGY }
-			NOT = { has_reform = celestial_empire }
-			primary_culture = al_misr_arabic
-			OR = {
-				ai = no
-				AND = {
-					ai = yes
-					num_of_cities = 3
-				}
-			}
+			# OR = {
+			# 	ai = no
+			# 	is_playing_custom_nation = no
+			# }
+			# OR = {
+			# 	is_free_or_tributary_trigger = yes
+			# 	ai = no
+			# }
+			# NOT = { tag = HLR }
+			# NOT = { tag = PAP }
+			# NOT = { tag = TUR }
+			# NOT = { tag = ARB }
+			# NOT = { exists = EGY }
+			# NOT = { has_reform = celestial_empire }
+			# primary_culture = al_misr_arabic
+			# OR = {
+			# 	ai = no
+			# 	AND = {
+			# 		ai = yes
+			# 		num_of_cities = 3
+			# 	}
+			# }
+
+			#HashMP
+			tag = MAM
 		}
 		provinces_to_highlight = {
 			OR = {

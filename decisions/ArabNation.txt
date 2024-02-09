@@ -6,17 +6,17 @@ country_decisions = {
 			normal_or_historical_nations = yes
 			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_arabia_flag }
-			OR = {
-				ai = no
-				is_playing_custom_nation = no
-			}
-			OR = {
-				is_free_or_tributary_trigger = yes
-				ai = no
-			}
-			NOT = { exists = ARB }
-			NOT = { tag = HLR }
-			NOT = { tag = PAP }
+			# OR = {
+			# 	ai = no
+			# 	is_playing_custom_nation = no
+			# }
+			# OR = {
+			# 	is_free_or_tributary_trigger = yes
+			# 	ai = no
+			# }
+			# NOT = { exists = ARB }
+			# NOT = { tag = HLR }
+			# NOT = { tag = PAP }
 			# is_colonial_nation = no
 			# OR = {
 			# 	is_former_colonial_nation = no
