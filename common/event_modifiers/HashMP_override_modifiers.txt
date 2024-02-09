@@ -98,3 +98,9 @@ papal_blessing = {
 	land_morale = 0.05 #0.1
 	religion = yes
 }
+
+tur_sabotaged_bureaucracy_modifier = {
+	global_spy_defence = -0.5
+	reduced_liberty_desire = -10
+	advisor_cost = 0.15
+}
