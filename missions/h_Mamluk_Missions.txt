@@ -1005,7 +1005,7 @@ h_mam_3 = {
 		effect = {
 			if = {
 				limit = { 
-					tag = MAM 
+					is_or_was_tag = { tag = MAM }
 					has_government_mechanic = mamluk_mechanic 
 				}
 				custom_tooltip = promote_culture_government_duration_doubled_tt
@@ -1028,7 +1028,7 @@ h_mam_3 = {
 			}
 			else_if = {
 				limit = { 
-					tag = MAM 
+					is_or_was_tag = { tag = MAM }
 					NOT = { has_government_mechanic = mamluk_mechanic }
 				}
 				add_prestige_or_monarch_power = { amount = 50 }
