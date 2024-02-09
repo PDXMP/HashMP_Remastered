@@ -4746,111 +4746,111 @@ tur_persian_conquest = {
 		}
 	}
 	
-	tur_the_silk_road = {
-		icon = mission_silk_road
-		required_missions = { tur_creation_of_persian_eyalet }
-		position = 10
-		provinces_to_highlight = {
-			area = tabarestan_area 
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		trigger = {
-			treasury = 1250 
-			tabarestan_area = { 
-				type = all 
-				country_or_non_sovereign_subject_holds = ROOT 
-			}
-			if = { 
-				limit = { has_dlc = "Dharma" } 
-				4341 = { province_has_center_of_trade_of_level = 3 } 
-			}
-			else = { 
-				4341 = { base_production = 12 } 
-			}
-			4341 = { has_trade_building_trigger = yes } 
-		}
-		effect = { 
-			add_mercantilism = 5
-			4341 = {
-				set_center_level_3_center_of_trade = yes
-				add_province_modifier = {
-					name = tur_silk_road_main_trade_post
-					duration = -1
-				}
-			}
-		}
-	}
+#	tur_the_silk_road = {
+#		icon = mission_silk_road
+#		required_missions = { tur_creation_of_persian_eyalet }
+#		position = 10
+#		provinces_to_highlight = {
+#			area = tabarestan_area 
+#			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+#		}
+#		trigger = {
+#			treasury = 1250 
+#			tabarestan_area = { 
+#				type = all 
+#				country_or_non_sovereign_subject_holds = ROOT 
+#			}
+#			if = { 
+#				limit = { has_dlc = "Dharma" } 
+#				4341 = { province_has_center_of_trade_of_level = 3 } 
+#			}
+#			else = { 
+#				4341 = { base_production = 12 } 
+#			}
+#			4341 = { has_trade_building_trigger = yes } 
+#		}
+#		effect = { 
+#			add_mercantilism = 5
+#			4341 = {
+#				set_center_level_3_center_of_trade = yes
+#				add_province_modifier = {
+#					name = tur_silk_road_main_trade_post
+#					duration = -1
+#				}
+#			}
+#		}
+#	}
 	
-	tur_imperial_fabrics = {
-		
-		icon = mission_finest_carpets
-		required_missions = { tur_the_silk_road }
-		position = 11
-		provinces_to_highlight = {
-		}
-		trigger = {
-			trading_bonus = {
-				trade_goods = cotton
-				value = yes
-			}
-			trading_bonus = {
-				trade_goods = cloth
-				value = yes
-			}
-			trading_bonus = {
-				trade_goods = silk
-				value = yes
-			}
-			trading_bonus = {
-				trade_goods = wool
-				value = yes
-			}
-			trading_bonus = {
-				trade_goods = dyes
-				value = yes
-			}
-			1320 = { 
-				trade_share = {
-					country = ROOT 
-					share = 80 
-				}
-			}
-			377 = { 
-				trade_share = {
-					country = ROOT 
-					share = 75 
-				}
-			}
-			358 = { 
-				trade_share = {
-					country = ROOT 
-					share = 75 
-				}
-			}
-			4341 = { 
-				trade_share = {
-					country = ROOT 
-					share = 75 
-				}
-			}
-		}
-		effect = {
-			country_event_with_insight = {
-				id = flavor_tur.252
-				insight_tooltip = INSIGHT_JUST_TOOLTIP
-				effect_tooltip = "
-				custom_tooltip = tur_25_goods_fabrics_tt
-				add_country_modifier = { 
-					name = tur_golden_silk_modifier
-					duration = -1 
-				}"
-			}
-		}
-
-		ai_weight = {
-			factor = 250
-		}
-	}
+#	tur_imperial_fabrics = {
+#		
+#		icon = mission_finest_carpets
+#		required_missions = { tur_the_silk_road }
+#		position = 11
+#		provinces_to_highlight = {
+#		}
+#		trigger = {
+#			trading_bonus = {
+#				trade_goods = cotton
+#				value = yes
+#			}
+#			trading_bonus = {
+#				trade_goods = cloth
+#				value = yes
+#			}
+#			trading_bonus = {
+#				trade_goods = silk
+#				value = yes
+#			}
+#			trading_bonus = {
+#				trade_goods = wool
+#				value = yes
+#			}
+#			trading_bonus = {
+#				trade_goods = dyes
+#				value = yes
+#			}
+#			1320 = { 
+#				trade_share = {
+#					country = ROOT 
+#					share = 80 
+#				}
+#			}
+#			377 = { 
+#				trade_share = {
+#					country = ROOT 
+#					share = 75 
+#				}
+#			}
+#			358 = { 
+#				trade_share = {
+#					country = ROOT 
+#					share = 75 
+#				}
+#			}
+#			4341 = { 
+#				trade_share = {
+#					country = ROOT 
+#					share = 75 
+#				}
+#			}
+#		}
+#		effect = {
+#			country_event_with_insight = {
+#				id = flavor_tur.252
+#				insight_tooltip = INSIGHT_JUST_TOOLTIP
+#				effect_tooltip = "
+#				custom_tooltip = tur_25_goods_fabrics_tt
+#				add_country_modifier = { 
+#					name = tur_golden_silk_modifier
+#					duration = -1 
+#				}"
+#			}
+#		}
+#
+#		ai_weight = {
+#			factor = 250
+#		}
+#	}
 	
 	tur_second_islamic_golden_age = {
 		icon = mission_islamic_golden_age
@@ -4957,36 +4957,36 @@ tur_persian_conquest = {
 			}
 		}
 		effect = {
-			if = {
-				limit = {
-					religion_group = muslim
-				}
-				country_event_with_insight = {
-					id = flavor_tur.255
-					insight_tooltip = INSIGHT_JUST_TOOLTIP
-					effect_tooltip = "
-					if = {
-						limit = { has_dlc = \"Mandate of Heaven\" }
-						custom_tooltip = tur_enable_second_golden_era_decision_tt
-						hidden_effect = {
-							set_country_flag = tur_enable_second_golden_era_decision
-						}
-					}
-					else = {
-						add_country_modifier = {
-							name = tur_second_islamic_golden_era_modifier
-							duration = 18250
-						}
-					}
-					custom_tooltip = flavor_tur.255.a.tt"
-				}
-			}
-			else = {
+#			if = {
+#				limit = {
+#					religion_group = muslim
+#				}
+#				country_event_with_insight = {
+#					id = flavor_tur.255
+#					insight_tooltip = INSIGHT_JUST_TOOLTIP
+#					effect_tooltip = "
+#					if = {
+#						limit = { has_dlc = \"Mandate of Heaven\" }
+#						custom_tooltip = tur_enable_second_golden_era_decision_tt
+#						hidden_effect = {
+#							set_country_flag = tur_enable_second_golden_era_decision
+#						}
+#					}
+#					else = {
+#						add_country_modifier = {
+#							name = tur_second_islamic_golden_era_modifier
+#							duration = 18250
+#						}
+#					}
+#					custom_tooltip = flavor_tur.255.a.tt"
+#				}
+#			}
+#			else = {
 				add_adm_power = 200
 				add_dip_power = 200
 				add_mil_power = 200
 				add_splendor = 800
-			}
+#			}
 		}
 
 		ai_weight = {
