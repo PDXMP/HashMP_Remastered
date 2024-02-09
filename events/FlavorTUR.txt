@@ -6025,21 +6025,21 @@ country_event = {
 	major = yes
 	is_triggered_only = yes
 
-	option = {
-		name = flavor_tur.240.a
-		custom_tooltip = flavor_tur.240.a.tt
-		set_country_flag = tur_decided_to_go_eyalet
-		add_war_exhaustion = -2
-		add_prestige = 20
-#		MAM = {
-#			country_event = {
-#				id = flavor_tur.241
-#			}
-#		}
-		ai_chance = {
-			factor = 1
-		}
-	}
+# 	option = {
+# 		name = flavor_tur.240.a
+# 		custom_tooltip = flavor_tur.240.a.tt
+# 		set_country_flag = tur_decided_to_go_eyalet
+# 		add_war_exhaustion = -2
+# 		add_prestige = 20
+# #		MAM = {
+# #			country_event = {
+# #				id = flavor_tur.241
+# #			}
+# #		}
+# 		ai_chance = {
+# 			factor = 1
+# 		}
+# 	}
 
 	option = {
 		name = flavor_tur.240.b
