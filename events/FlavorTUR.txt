@@ -4380,7 +4380,7 @@ country_event = {
 	
 	option = {	# Fallback
 		name = flavor_tur.218.c
-		add_adm_power = 100
+#		add_adm_power = 100
 		ai_chance = {
 			factor = 0
 		}
@@ -4625,7 +4625,7 @@ country_event = {
 		trigger = {
 			NOT = { TUN = { is_subject_of = ROOT } }
 		}
-		add_adm_power = 100
+#		add_adm_power = 100
 		
 		ai_chance = {
 			factor = 0
@@ -5031,7 +5031,7 @@ country_event = {
 		trigger = {
 			NOT = { MOR = { is_subject_of = ROOT } }
 		}
-		add_adm_power = 100
+#		add_adm_power = 100
 		
 		ai_chance = {
 			factor = 0
@@ -5265,7 +5265,7 @@ country_event = {
 		trigger = {
 			NOT = { ADA = { is_subject_of = ROOT } }
 		}
-		add_adm_power = 100
+#		add_adm_power = 100
 		
 		ai_chance = {
 			factor = 0
