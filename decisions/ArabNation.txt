@@ -32,22 +32,23 @@ country_decisions = {
 			tag = MAM
 		}
 		provinces_to_highlight = {
-			OR = {
-				province_id = 358			#Alexandria
-				province_id = 361			#Cairo
-				province_id = 377			#Aleppo
-				province_id = 379			#Jerusalem
-				province_id = 382			#Damascus
-				province_id = 384			#Medina
-				province_id = 385			#Mecca
-				province_id = 388			#Aden
-				province_id = 390			#Sanaa
-				province_id = 392			#Al-Arid
-				province_id = 394			#Qatif
-				province_id = 400			#Muscat
-				province_id = 403			#Nizwa
-				#province_id = 410			#Baghdad
-			}
+			region = arabia_region
+			# OR = {
+			# 	province_id = 358			#Alexandria
+			# 	province_id = 361			#Cairo
+			# 	province_id = 377			#Aleppo
+			# 	province_id = 379			#Jerusalem
+			# 	province_id = 382			#Damascus
+			# 	province_id = 384			#Medina
+			# 	province_id = 385			#Mecca
+			# 	province_id = 388			#Aden
+			# 	province_id = 390			#Sanaa
+			# 	province_id = 392			#Al-Arid
+			# 	province_id = 394			#Qatif
+			# 	province_id = 400			#Muscat
+			# 	province_id = 403			#Nizwa
+			# 	#province_id = 410			#Baghdad
+			# }
 			OR = {
 				NOT = { owned_by = ROOT }
 				NOT = { is_core = ROOT }
@@ -63,19 +64,24 @@ country_decisions = {
 				adm_tech = 10 #20
 			}
 			religion_group = muslim
-			owns_core_province = 358			#Alexandria
-			owns_core_province = 361			#Cairo
-			owns_core_province = 377			#Aleppo
-			owns_core_province = 379			#Jerusalem
-			owns_core_province = 382			#Damascus
-			owns_core_province = 384			#Medina
-			owns_core_province = 385			#Mecca
-			owns_core_province = 388			#Aden
-			owns_core_province = 390			#Sanaa
-			owns_core_province = 392			#Al-Arid
-			owns_core_province = 394			#Qatif
-			owns_core_province = 400			#Muscat
-			owns_core_province = 403			#Nizwa
+			arabia_region = {
+				type = all
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			# owns_core_province = 358			#Alexandria
+			# owns_core_province = 361			#Cairo
+			# owns_core_province = 377			#Aleppo
+			# owns_core_province = 379			#Jerusalem
+			# owns_core_province = 382			#Damascus
+			# owns_core_province = 384			#Medina
+			# owns_core_province = 385			#Mecca
+			# owns_core_province = 388			#Aden
+			# owns_core_province = 390			#Sanaa
+			# owns_core_province = 392			#Al-Arid
+			# owns_core_province = 394			#Qatif
+			# owns_core_province = 400			#Muscat
+			# owns_core_province = 403			#Nizwa
 			#owns_core_province = 410			#Baghdad
 		}
 		effect = {
