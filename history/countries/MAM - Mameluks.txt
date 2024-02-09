@@ -88,6 +88,24 @@ change_estate_land_share = {
 	set_estate_privilege = estate_nobles_enlist_the_mamluks
 }
 
+#HashMP, new Mamluk ruler inpsired by the historical 1453 succession
+#Made the ruler Egyptian instead of Circassian to buff early game Mamluk interactions
+1444.1.1 = {
+	monarch = {
+		name = "Uthman"
+		dynasty = "Burji"
+		birth_date = 1435.1.1
+		culture = al_misr_arabic
+		adm = 6
+		dip = 4
+		mil = 4
+		claim = 100
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = just_personality
+}
+#
+
 1453.2.13 = {
 	monarch = {
 		name = "Inâl"
