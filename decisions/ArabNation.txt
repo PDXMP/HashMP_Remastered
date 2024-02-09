@@ -69,6 +69,7 @@ country_decisions = {
 				is_core = ROOT
 				region = arabia_region
 			}
+			NOT = { exists = ARB }
 			# owns_core_province = 358			#Alexandria
 			# owns_core_province = 361			#Cairo
 			# owns_core_province = 377			#Aleppo
