@@ -6867,7 +6867,7 @@ egyptian_government_reform = {
 
 	modifiers = {
 		yearly_innovativeness = 0.1
-		yearly_government_power = 0.5
+		#yearly_government_power = 0.5
 		
 	}
 
