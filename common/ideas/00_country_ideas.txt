@@ -17946,10 +17946,9 @@ EGY_ideas = {
 	training_missions_in_egypt = {
 		#country_military_power = 1
 		discipline = 0.05
-		land_attrition = -0.1
 	}
 	legacy_of_the_karimis = {
-		trade_efficiency = 0.15 #0.1
+		trade_efficiency = 0.1
 		burghers_loyalty_modifier = 0.1
 	}
 	nile_production = {
@@ -17964,7 +17963,7 @@ EGY_ideas = {
 		sea_repair = yes
 	}
 	crossroads_between_europe_and_africa = {
-		global_trade_power = 0.1
+		global_own_trade_power = 0.1
 		trade_steering = 0.25
 	}
 }
