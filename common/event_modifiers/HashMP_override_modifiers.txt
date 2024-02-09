@@ -121,3 +121,20 @@ royal_hungary = {
 	manpower_recovery_speed = 0.10
 	army_tradition = 0.5
 }
+tur_sabotaged_bureaucracy_modifier = {
+	global_spy_defence = -0.5
+	reduced_liberty_desire = -10
+	advisor_cost = 0.15
+}
+
+tur_investment_into_infrastructure = {
+	trade_goods_size_modifier = 0.1
+#	local_development_cost = -0.1
+}
+
+tur_caucasian_conquest = {
+	local_autonomy = -0.05
+	local_monthly_devastation = -0.05
+#	local_development_cost = -0.1
+}
+
