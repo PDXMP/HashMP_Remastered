@@ -30,6 +30,75 @@ h_tm_age_of_discovery = {
 	mercenary_manpower = 0.15
 }
 
+hashmp_new_world_modifier = { 
+	potential = {
+		ai = no
+	}
+	trigger = {
+		ai = no
+		is_institution_enabled = new_world_i
+	}
+	
+	can_explore = yes
+	colonists = 1
+	range = 2.5
+	trade_range_modifier = 0.1
+	cb_on_primitives = yes
+	global_colonial_growth = 15
+	
+}
+
+hashmp_new_world_lowcost_modifier = { 
+	potential = { 
+		ai = no
+	}
+	trigger = {
+		ai = no
+		is_institution_enabled = new_world_i
+		NOT = {
+			OR = { 
+				has_idea_group = exploration_ideas
+				has_idea_group = expansion_ideas
+			}
+		}
+	}
+	
+	colony_cost_modifier = -0.25
+	
+}
+
+hashmp_new_world_trade_modifier = { 
+	potential = { 
+		ai = no
+	}
+	trigger = {
+		ai = no
+		is_institution_enabled = new_world_i
+		OR = {
+			1490 = { has_merchant = ROOT } #Gulf of St. Lawrence
+			1500 = { has_merchant = ROOT } #Chesapeake Bay
+			2526 = { has_merchant = ROOT } #Ohio
+			1507 = { has_merchant = ROOT } #Mississipi
+			1486 = { has_merchant = ROOT } #Hudson Bay
+			2499 = { has_merchant = ROOT } #Rio Grande
+			4637 = { has_merchant = ROOT } #California
+			1551 = { has_merchant = ROOT } #Mexico
+			1516 = { has_merchant = ROOT } #Caribbean
+			835 = { has_merchant = ROOT } #Panama
+			2935 = { has_merchant = ROOT } #Amazonas
+			809 = { has_merchant = ROOT } #Lima
+			800 = { has_merchant = ROOT } #Cuiaba
+			1531 = { has_merchant = ROOT } #Brazil
+			1536 = { has_merchant = ROOT } #Rio de la Plata
+			2836 = { has_merchant = ROOT } #Patagonia
+		}
+	}
+	
+	merchants = 1
+	global_trade_power = 0.05
+	
+}
+
 # h_tm_age_of_reformation = {
 # 	potential = {
 # 		current_age = age_of_reformation

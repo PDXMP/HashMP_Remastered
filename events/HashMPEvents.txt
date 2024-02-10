@@ -1,0 +1,40 @@
+# HashMP Colonial Events
+country_event = {
+	id = HashMPColonialEvents.1
+	title = "HashMP_Colonial_Events_EVTNAME1"
+	desc = "HashMP_Colonial_Events_EVTDESC1"
+	picture = COLONIZATION_eventPicture
+	
+	trigger = {
+		has_country_flag = hashmp_new_world_flag
+		any_province = 
+			{ 
+				is_colony = yes
+			}
+	}
+	
+	mean_time_to_happen = {
+		months = 1
+	}
+	
+	immediate = { 
+		hidden_effect = {
+			random_owned_province = {
+				limit = {
+					is_colony = yes 
+				}
+				save_event_target_as = give_colonists
+			}
+
+		}
+		clr_country_flag = hashmp_new_world_flag
+	}
+	
+	option = {
+		name = HashMPColonialEvents.1.a
+		event_target:give_colonists = {
+			add_colonysize = 1000
+		}
+		
+	}
+}
