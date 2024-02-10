@@ -41,6 +41,29 @@ change_estate_land_share = {
 	}
 }
 
+# HashMP
+1444.1.1 = {
+	monarch = {
+		name = "Jirí"
+		dynasty = "z Podebrad"
+		birth_date = 1420.4.23
+		adm = 5
+		dip = 4
+		mil = 3
+	}
+	queen = {
+		country_of_origin = BOH
+		name = "Joanna"
+		dynasty = "Rozmitál"
+		birth_date = 1430.1.1
+		death_date = 1475.11.12
+		female = yes
+		adm = 3
+		dip = 4
+		mil = 2
+	}
+}
+
 # Personal Union with Habsburg under Ladislaus Postumus 1453-1457
 
 1457.11.24 = {

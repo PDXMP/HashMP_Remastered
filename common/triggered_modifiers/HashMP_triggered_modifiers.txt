@@ -8,7 +8,6 @@ h_tm_merc_cap = {
 		always = yes
 	}
 	trigger = {
-		NOT = { has_idea_group = mercenary_ideas }
 		num_of_hired_mercenary_companies = 3
 		army_size_percentage = 1.3
 	}

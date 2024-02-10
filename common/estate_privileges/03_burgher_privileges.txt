@@ -2961,8 +2961,17 @@ estate_burghers_foreign_expeditions = {
 	loyalty = 0.05
 	influence = 0.1
 	is_valid = {
-		has_unlocked_estate_privilege = { 
-			estate_privilege = estate_burghers_foreign_expeditions 
+		is_or_was_tag = {
+			tag = MAM
+		}
+		# has_unlocked_estate_privilege = { 
+		# 	estate_privilege = estate_burghers_foreign_expeditions 
+		# }
+	}
+	can_select = {
+		OR = {
+			has_idea_group = exploration_ideas
+			has_institution = new_world_i
 		}
 	}
 	benefits = {

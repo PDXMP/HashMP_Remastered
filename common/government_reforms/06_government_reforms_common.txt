@@ -4513,7 +4513,7 @@ integrated_ottoman_officials = {
 			has_dlc = "Cradle of Civilization"
 		}
 		has_pashas = yes
-		custom_attributes = { reveal_ruler_skills_for_mamluks = yes }
+		#custom_attributes = { reveal_ruler_skills_for_mamluks = yes }
 	}
 
 	ai = {
