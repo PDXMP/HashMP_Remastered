@@ -147,3 +147,7 @@ ned_dutch_overseas_trade = {
 	trade_range_modifier = 0.25
 	range = 1.5 #0.2
 }
+spa_prepared_armada = {
+	naval_morale = 0.1
+}
+
