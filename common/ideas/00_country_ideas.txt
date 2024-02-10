@@ -818,7 +818,7 @@ CAS_ideas = {
 
 NED_ideas = {
 	start = {
-		global_sailors_modifier = 0.25
+		global_sailors_modifier = 0.50 #0.25
 		naval_forcelimit_modifier = 0.50
 	}
 	
@@ -835,14 +835,15 @@ NED_ideas = {
 	free = yes		#will be added at load.
 	
 	amsterdam_wisselbank = {
-		inflation_reduction = 0.1
+		inflation_reduction = 0.2 #0.1
 	}
 	dutch_trading_spirit = {
-		merchants = 1
-		trade_range_modifier = 0.10
+		merchants = 2 #1
+		trade_range_modifier = 0.25 #0.1
 	}
 	polders = {
 		development_cost = -0.1
+		global_own_trade_power = 0.1
 	}
 	instructie_voor_de_admiraliteiten = {
 		leader_naval_fire = 2
@@ -850,12 +851,14 @@ NED_ideas = {
 	}
 	embrace_humanism = {
 		tolerance_heretic = 3
+		republican_tradition = 0.1
 	}
 	army_sappers = {
-		siege_ability = 0.10
+		siege_ability = 0.15
 	}
 	platoon_fire = {
-		fire_damage = 0.1
+		fire_damage = 0.15 #0.1
+		fire_damage_received = -0.15
 	}
 }
 
@@ -16025,7 +16028,7 @@ LOT_ideas = {
 	}
 	
 	bonus = {
-		ae_impact = -0.1
+		discipline = 0.05 
 	}
 	
 	trigger = {
@@ -16047,13 +16050,15 @@ LOT_ideas = {
 	}
 	lot_court_of_europe = {
 		prestige = 0.5
-		advisor_pool = 1
+		num_accepted_cultures = 4
 	}
 	lot_land_of_abbeys = {
 		missionaries = 1
+		build_cost = -0.05
 	}
 	lot_european_empire = {
 		core_creation = -0.2
+		governing_capacity_modifier = 0.05
 	}
 }
 
