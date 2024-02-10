@@ -200,7 +200,7 @@ dom_cas_missions_1 = {
 
 			}
 		}
-	}
+	
 	
 	gc_spa_invade_england2 = {
 		icon = mission_invade_england
