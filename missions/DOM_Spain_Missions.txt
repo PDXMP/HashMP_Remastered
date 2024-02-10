@@ -1978,121 +1978,128 @@ dom_cas_missions_3 = {
 		}
 	}
 	
-	spa_spanish_road = {
-		icon = spa_spanish_road
-		required_missions = { gc_cas_spa_italian_ambition_22 gc_spa_austrian_union2 }
-		position = 5
-		provinces_to_highlight = { 
-			OR = {
-				province_id = 101
-				province_id = 205
-				province_id = 193
-				province_id = 94
-			}
-			OR = { 	
-				NOT = { country_or_non_sovereign_subject_holds = ROOT }
-				NOT = { controlled_by = ROOT }
-				owner = { NOT = { gives_military_access_to = ROOT } }
-			}
-		}
-		trigger = {
-			OR = { 
-				num_of_transport = 50 
-				AND = {
-					101 = { 
-						OR = { 	
-							country_or_non_sovereign_subject_holds = ROOT 
-							controlled_by = ROOT 
-							owner = { gives_military_access_to = ROOT }
-						}
-					}
-					205 = { 
-						OR = { 	
-							controlled_by = ROOT 
-							country_or_non_sovereign_subject_holds = ROOT 
-							owner = { gives_military_access_to = ROOT }
-						}
-					}
-					193 = { 
-						OR = { 	
-							controlled_by = ROOT 
-							country_or_non_sovereign_subject_holds = ROOT 
-							owner = { gives_military_access_to = ROOT }
-						}
-					}
-					94 = { 
-						OR = { 	
-							controlled_by = ROOT 
-							country_or_non_sovereign_subject_holds = ROOT 
-							owner = { gives_military_access_to = ROOT }
-						}
-					}
-				}
-			}
-		}
-		effect = {
-			low_countries_region = {
-				limit = { 
-					NOT = { is_core = ROOT } 
-					NOT = { owned_by = ROOT } 
-				}
-				add_permanent_claim = ROOT 
-			}
-			add_country_modifier = {
-				name = spa_long_range_logistics_modifier
-				duration = 7300
-			}
-		}
-	}
+	# spa_spanish_road = {
+	# 	icon = spa_spanish_road
+	# 	required_missions = { gc_cas_spa_italian_ambition_22 gc_spa_austrian_union2 }
+	# 	position = 5
+	# 	provinces_to_highlight = { 
+	# 		OR = {
+	# 			province_id = 101
+	# 			province_id = 205
+	# 			province_id = 193
+	# 			province_id = 94
+	# 		}
+	# 		OR = { 	
+	# 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+	# 			NOT = { controlled_by = ROOT }
+	# 			owner = { NOT = { gives_military_access_to = ROOT } }
+	# 		}
+	# 	}
+	# 	trigger = {
+	# 		OR = { 
+	# 			num_of_transport = 50 
+	# 			AND = {
+	# 				101 = { 
+	# 					OR = { 	
+	# 						country_or_non_sovereign_subject_holds = ROOT 
+	# 						controlled_by = ROOT 
+	# 						owner = { gives_military_access_to = ROOT }
+	# 					}
+	# 				}
+	# 				205 = { 
+	# 					OR = { 	
+	# 						controlled_by = ROOT 
+	# 						country_or_non_sovereign_subject_holds = ROOT 
+	# 						owner = { gives_military_access_to = ROOT }
+	# 					}
+	# 				}
+	# 				193 = { 
+	# 					OR = { 	
+	# 						controlled_by = ROOT 
+	# 						country_or_non_sovereign_subject_holds = ROOT 
+	# 						owner = { gives_military_access_to = ROOT }
+	# 					}
+	# 				}
+	# 				94 = { 
+	# 					OR = { 	
+	# 						controlled_by = ROOT 
+	# 						country_or_non_sovereign_subject_holds = ROOT 
+	# 						owner = { gives_military_access_to = ROOT }
+	# 					}
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	effect = {
+	# 		low_countries_region = {
+	# 			limit = { 
+	# 				NOT = { is_core = ROOT } 
+	# 				NOT = { owned_by = ROOT } 
+	# 			}
+	# 			add_permanent_claim = ROOT 
+	# 		}
+	# 		add_country_modifier = {
+	# 			name = spa_long_range_logistics_modifier
+	# 			duration = 7300
+	# 		}
+	# 	}
+	# }
 	
-	gc_spa_spanish_netherlands2 = {
-		icon = mission_spanish_netherlands
-		required_missions = { spa_spanish_road }
-		position = 6
+	# gc_spa_spanish_netherlands2 = {
+	# 	icon = mission_spanish_netherlands
+	# 	required_missions = { spa_spanish_road }
+	# 	position = 6
 
-		provinces_to_highlight = {
-			region = low_countries_region
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
+	# 	provinces_to_highlight = {
+	# 		region = low_countries_region
+	# 		NOT = { country_or_non_sovereign_subject_holds = ROOT }
+	# 	}
 
-		trigger = {
-			low_countries_region = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-				religion = ROOT
-			}
-		}
-		effect = {
-			add_country_modifier = {
-				name = spa_victory_netherlands_modifier
-				duration = -1 
-			}
-		}
-	}
+	# 	trigger = {
+	# 		low_countries_region = {
+	# 			type = all
+	# 			country_or_non_sovereign_subject_holds = ROOT
+	# 			religion = ROOT
+	# 		}
+	# 	}
+	# 	effect = {
+	# 		add_country_modifier = {
+	# 			name = spa_victory_netherlands_modifier
+	# 			duration = -1 
+	# 		}
+	# 	}
+	# }
 	
 	gc_spa_hre2 = {
 		icon = spa_universal_monarchy
-		required_missions = { gc_spa_invade_england2 gc_spa_spanish_netherlands2 spa_fecho_imperio spa_system_councils spa_reform_tercios }
+		position = 7
+		required_missions = { 
+			gc_spa_invade_england2 
+			#gc_spa_spanish_netherlands2 
+			spa_fecho_imperio 
+			spa_system_councils 
+			spa_reform_tercios 
+		}
 
 		trigger = {
-			OR = {
-				ROOT = {
-					is_emperor = yes
-					if = {
-						limit = {
-							has_dlc = "Emperor"
-						}
-						hre_reform_passed = emperor_erbkaisertum
-					}
-					else = {
-						hre_reform_passed = erbkaisertum
-					}
-				}
-				AND = {
-					NOT = { hre_size = 1 }
-					NOT = { exists = HLR }
-				}
-			}
+			# OR = {
+			# 	ROOT = {
+			# 		is_emperor = yes
+			# 		if = {
+			# 			limit = {
+			# 				has_dlc = "Emperor"
+			# 			}
+			# 			hre_reform_passed = emperor_erbkaisertum
+			# 		}
+			# 		else = {
+			# 			hre_reform_passed = erbkaisertum
+			# 		}
+			# 	}
+			# 	AND = {
+			# 		NOT = { hre_size = 1 }
+			# 		NOT = { exists = HLR }
+			# 	}
+			# }
 		}
 		effect = {
 			add_country_modifier = {
