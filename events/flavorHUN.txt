@@ -18,12 +18,9 @@ country_event = {
 
 	trigger = {
 		tag = HUN
-		has_regency = yes
 		has_consort_regency = no
 		is_lesser_in_union = no
-		#has_leader = "János Hunyadi"
 		is_year = 1445
-		NOT = { is_year = 1470 }
 		has_government_attribute = heir
 	}
 
@@ -69,7 +66,10 @@ country_event = {
 			birth_date = 1440.2.22
 		}
 		custom_tooltip = hun_ladislaus_postumus_warning_tooltip
-		hidden_effect = { set_country_flag = hun_ladislaus_postumus_heir }
+		hidden_effect = {
+			set_country_flag = hun_ladislaus_postumus_heir 
+			set_ruler_flag = hun_janos_hunyadi_ruler
+			}
 		every_country = {
 			limit = {
 				NOT = { tag = ROOT }
@@ -176,10 +176,9 @@ country_event = {
 	trigger = {
 		tag = HUN
 		is_year = 1450
-		NOT = { is_year = 1457 }
 		OR = {
-			heir_age = 15
-			has_heir = no
+			is_year = 1455
+			NOT =  { has_ruler_flag = hun_janos_hunyadi_ruler }
 		}
 		if = {
 			limit = {
@@ -187,13 +186,7 @@ country_event = {
 			}
 			NOT = { has_country_flag = hun_matyas_already_existed }
 		}
-		has_regency = no
 		is_subject = no
-		HAB = {
-			is_subject = no
-			government = monarchy
-			has_regency = no
-		}
 		has_government_attribute = heir
 		NOT = { has_country_flag = hun_has_had_matthias_corvinus_event }
 	}
