@@ -28,7 +28,7 @@ extra_cost = 8
 center_of_trade = 1
 add_core = DAL
 
-
+1444.1.1 = { add_core = VEN}
 1797.10.17 = {
 	owner = HAB
 	controller = HAB
