@@ -405,7 +405,7 @@ emp_burgundy_2 = {
 	}
 	emp_bur_secure_the_lowlands = {
 		icon = mission_spanish_netherlands
-		position = 4
+		position = 3
 		required_missions = { emp_bur_unite_the_realm }
 		provinces_to_highlight = {
 			region = low_countries_region
@@ -703,123 +703,6 @@ emp_burgundy_3 = {
 			factor = 500	#Natural conquest
 		}
 	}
-	
-	emp_bur_appease_the_estates = {
-		icon = appease_the_estates
-		required_missions = {  }
-		trigger = {
-			crown_land_share = 30
-			if = {
-				limit = {
-					has_estate = estate_nobles
-				}
-				estate_loyalty = {
-					estate = estate_nobles
-					loyalty = 60
-				}
-			}
-			if = {
-				limit = {
-					has_estate = estate_burghers
-				}
-				estate_loyalty = {
-					estate = estate_burghers
-					loyalty = 60
-				}
-			}
-			if = {
-				limit = {
-					has_estate = estate_church
-				}
-				estate_loyalty = {
-					estate = estate_church
-					loyalty = 60
-				}
-			}
-		}
-		effect = {
-			if = {
-				limit = {
-					NOT = { has_estate = estate_nobles }
-					NOT = { has_estate = estate_burghers }
-					NOT = { has_estate = estate_church }
-				}
-				add_stability_or_adm_power = yes
-			}
-			else = {
-				if = {
-					limit = {
-						NOT = { crown_land_share = 60 }
-					}
-					custom_tooltip = add_5_crown_land_share
-					hidden_effect = {
-						change_estate_land_share = {
-							estate = all
-							share = -5
-						}
-					}
-				}
-				if = {
-					limit = {
-						has_estate = estate_nobles
-					}
-					add_estate_loyalty_modifier = {
-						estate = estate_nobles
-						desc = VAL_BUR_APPEASED_ESTATES
-						loyalty = 10
-						duration = 7300
-					}
-				}
-				if = {
-					limit = {
-						has_estate = estate_church
-					}
-					add_estate_loyalty_modifier = {
-						estate = estate_church
-						desc = VAL_BUR_APPEASED_ESTATES
-						loyalty = 10
-						duration = 7300
-					}
-				}
-				if = {
-					limit = {
-						has_estate = estate_burghers
-					}
-					add_estate_loyalty_modifier = {
-						estate = estate_burghers
-						desc = VAL_BUR_APPEASED_ESTATES
-						loyalty = 10
-						duration = 7300
-					}
-				}
-			}
-		}
-	}
-	emp_bur_chivalry_is_not_dead = {
-		icon = chivalry_is_not_dead
-		position = 6
-		required_missions = { emp_bur_appease_the_estates }
-		trigger = {
-			prestige = 80
-			army_tradition = 80
-			has_regency = no
-		}
-		effect = {
-			country_event_with_insight = {
-				id = new_flavour_bur.5
-				insight_tooltip = INSIGHT_JUST_TOOLTIP
-				effect_tooltip = "
-				add_country_modifier = {
-					name = bur_prestigious_duchy_mod
-					duration = -1
-				}
-				add_permanent_power_projection = {
-					type = 25_permanent_power_projection
-					amount = 25
-				}"
-			}
-		}
-	}
 }
 
 emp_burgundy_4 = {
@@ -1034,7 +917,7 @@ emp_burgundy_4 = {
 	}
 	emp_bur_king_of_the_franks = {
 		icon = king_of_the_franks
-		position = 4
+		position = 2
 		required_missions = { emp_bur_league_of_public_weal }
 		provinces_to_highlight = {
 			OR = {
@@ -1126,7 +1009,122 @@ emp_burgundy_4 = {
 			}
 		}
 	}
-	
+	emp_bur_appease_the_estates = {
+		icon = appease_the_estates
+		required_missions = {  }
+		trigger = {
+			crown_land_share = 30
+			if = {
+				limit = {
+					has_estate = estate_nobles
+				}
+				estate_loyalty = {
+					estate = estate_nobles
+					loyalty = 60
+				}
+			}
+			if = {
+				limit = {
+					has_estate = estate_burghers
+				}
+				estate_loyalty = {
+					estate = estate_burghers
+					loyalty = 60
+				}
+			}
+			if = {
+				limit = {
+					has_estate = estate_church
+				}
+				estate_loyalty = {
+					estate = estate_church
+					loyalty = 60
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					NOT = { has_estate = estate_nobles }
+					NOT = { has_estate = estate_burghers }
+					NOT = { has_estate = estate_church }
+				}
+				add_stability_or_adm_power = yes
+			}
+			else = {
+				if = {
+					limit = {
+						NOT = { crown_land_share = 60 }
+					}
+					custom_tooltip = add_5_crown_land_share
+					hidden_effect = {
+						change_estate_land_share = {
+							estate = all
+							share = -5
+						}
+					}
+				}
+				if = {
+					limit = {
+						has_estate = estate_nobles
+					}
+					add_estate_loyalty_modifier = {
+						estate = estate_nobles
+						desc = VAL_BUR_APPEASED_ESTATES
+						loyalty = 10
+						duration = 7300
+					}
+				}
+				if = {
+					limit = {
+						has_estate = estate_church
+					}
+					add_estate_loyalty_modifier = {
+						estate = estate_church
+						desc = VAL_BUR_APPEASED_ESTATES
+						loyalty = 10
+						duration = 7300
+					}
+				}
+				if = {
+					limit = {
+						has_estate = estate_burghers
+					}
+					add_estate_loyalty_modifier = {
+						estate = estate_burghers
+						desc = VAL_BUR_APPEASED_ESTATES
+						loyalty = 10
+						duration = 7300
+					}
+				}
+			}
+		}
+	}
+	emp_bur_chivalry_is_not_dead = {
+		icon = chivalry_is_not_dead
+		#position = 6
+		required_missions = { emp_bur_appease_the_estates }
+		trigger = {
+			prestige = 80
+			army_tradition = 80
+			has_regency = no
+		}
+		effect = {
+			country_event_with_insight = {
+				id = new_flavour_bur.5
+				insight_tooltip = INSIGHT_JUST_TOOLTIP
+				effect_tooltip = "
+				add_country_modifier = {
+					name = bur_prestigious_duchy_mod
+					duration = -1
+				}
+				add_permanent_power_projection = {
+					type = 25_permanent_power_projection
+					amount = 25
+				}"
+			}
+		}
+	}
 }
 
 emp_lotharingia_4 = {
