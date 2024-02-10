@@ -668,13 +668,21 @@ emp_ned_slot3_branch = {
 		completed_by = 1580.1.1
 		
 		provinces_to_highlight = {
-			province_id = 1466
+			#province_id = 1466
+			region = guinea_region
 			has_discovered = ROOT
 		}
 		trigger = {
-			1466 = {
-				is_strongest_trade_power = ROOT
+			guinea_region = {
+				has_discovered = ROOT
 			}
+			# guinea_region = {
+			# 	has_discovered = ROOT
+			# 	has_port = yes
+			# }
+			# 1466 = {
+			# 	is_strongest_trade_power = ROOT
+			# }
 		}
 		effect = {
 			add_country_modifier = {
