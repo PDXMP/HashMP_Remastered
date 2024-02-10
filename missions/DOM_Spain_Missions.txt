@@ -189,44 +189,6 @@ dom_cas_missions_1 = {
 				name = "spa_prepared_armada"
 				duration = 7300
 			}
-			if = {
-				limit = {
-					exists = GBR
-					valid_for_personal_unions_trigger = yes
-					GBR = {
-						valid_for_personal_unions_trigger = yes
-						NOT = { religion = ROOT }
-					}
-				}
-				add_casus_belli = {
-					type = cb_restore_personal_union
-					months = 300
-					target = GBR
-				}
-			}
-			else_if = {
-				limit = {
-					exists = ENG
-					valid_for_personal_unions_trigger = yes
-					ENG = {
-						valid_for_personal_unions_trigger = yes
-						NOT = { religion = ROOT }
-					}
-				}
-				add_casus_belli = {
-					type = cb_restore_personal_union
-					months = 300
-					target = ENG
-				}
-			}
-			else = {
-				wessex_area = {
-					limit = {
-						NOT = { is_permanent_claim = ROOT }
-						NOT = { is_core = ROOT	}
-					}
-					add_permanent_claim = ROOT
-				}
 				home_counties_area = {
 					limit = {
 						NOT = { is_permanent_claim = ROOT }
@@ -234,35 +196,8 @@ dom_cas_missions_1 = {
 					}
 					add_permanent_claim = ROOT
 				}
-				east_anglia_area = {
-					limit = {
-						NOT = { is_permanent_claim = ROOT }
-						NOT = { is_core = ROOT	}
-					}
-					add_permanent_claim = ROOT
-				}
-				east_midlands_area = {
-					limit = {
-						NOT = { is_permanent_claim = ROOT }
-						NOT = { is_core = ROOT	}
-					}
-					add_permanent_claim = ROOT
-				}
-				west_midlands_area = {
-					limit = {
-						NOT = { is_permanent_claim = ROOT }
-						NOT = { is_core = ROOT	}
-					}
-					add_permanent_claim = ROOT
-				}
-				yorkshire_area = {
-					limit = {
-						NOT = { is_permanent_claim = ROOT }
-						NOT = { is_core = ROOT	}
-					}
-					add_permanent_claim = ROOT
-				}
-				custom_tooltip = cas_armada_info_tt
+	
+
 			}
 		}
 	}
@@ -1857,15 +1792,15 @@ dom_cas_missions_3 = {
 		trigger = {
 			valencia_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 			catalonia_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 			aragon_area = {
 				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+				owned_by = ROOT
 			}
 		}
 

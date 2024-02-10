@@ -138,3 +138,7 @@ tur_caucasian_conquest = {
 #	local_development_cost = -0.1
 }
 
+spa_prepared_armada = {
+	naval_morale = 0.1
+}
+
