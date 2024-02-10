@@ -155,3 +155,7 @@ spa_prepared_armada = {
 	naval_morale = 0.1
 }
 
+sav_northern_italian_empire = {
+	siege_ability = 0.15
+	land_morale = 0.05
+}
