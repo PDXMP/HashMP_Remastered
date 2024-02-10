@@ -1580,12 +1580,13 @@ BRA_ideas = {
 
 POR_ideas = {
 	start = {
-		movement_speed_in_fleet_modifier = 1
+		colonists = 1
 		infantry_power = 0.1
 	}
 	
 	bonus = {
-		global_tariffs = 0.20
+		global_tariffs = 0.10
+		discipline = 0.05
 	}
 	
 	trigger = {
@@ -1594,28 +1595,28 @@ POR_ideas = {
 	free = yes		#will be added at load.
 	
 	legacy_of_the_navigator = {
-		naval_morale = 0.1
-		range = 0.20
+		movement_speed_in_fleet_modifier = 1
+		range = 0.25
 	}
 	afonsine_ordinances = {
 		global_trade_goods_size_modifier = 0.1
 	}
 	case_de_india = {
 		global_trade_power = 0.1
+		naval_morale = 0.1
 	}
 	land_before_faith = {
 		global_colonial_growth = 15
 	}
 	the_bandeirantes = {
-		trade_efficiency = 0.15
+		trade_efficiency = 0.1
 	}
 	royal_absolutism = {
-		build_cost = -0.15
+		build_cost = -0.10
 		yearly_absolutism = 0.5
 	}
 	por_royal_military_academy = {
-		defensiveness = 0.1
-		artillery_fire = 1
+		artillery_fire = 0.5
 	}
 }
 
