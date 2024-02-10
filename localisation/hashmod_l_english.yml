@@ -163,3 +163,8 @@
  h_bankrupt_interest:0 "Financial Upheaval"
  desc_h_bankrupt_interest:0 "Our recent declaration of bankruptcy has damaged the integrity of our financial institutions."
  h_tm_merc_cap:0 "Insufficient Mercenary Capacity"
+h_venice_march:0 "Venice on the March"
+desc_h_venice_march:0 "Our successful conquests in Northern Italy have bolstered our army and commanders."
+h_ven_march_rome_title:0 "March on Rome"
+h_ven_march_rome_desc:0 "It is time once and for all to establish our rightful hegemony over the Italy. Capturing the historic capital of Rome will make our rule clear and unwavering."
+h_venice_domination:0 "Italian Domination"

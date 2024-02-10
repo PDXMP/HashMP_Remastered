@@ -137,4 +137,7 @@ tur_caucasian_conquest = {
 	local_monthly_devastation = -0.05
 #	local_development_cost = -0.1
 }
-
+ven_la_francocrazia = {
+	galley_power = 0.1
+	prestige_from_battles_in_fleet_modifier = 1
+}

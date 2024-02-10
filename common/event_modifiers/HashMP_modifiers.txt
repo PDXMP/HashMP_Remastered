@@ -21,3 +21,11 @@ h_bur_chateau_dolhain = {
 h_bankrupt_interest = {
 	interest = 2
 }
+h_venice_march = {
+	infantry_power = 0.1
+	mercenary_discipline = 0.05
+}
+h_venice_domination = {
+	infantry_cost = -0.05
+	mercenary_cost = -0.1
+}
