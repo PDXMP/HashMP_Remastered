@@ -818,7 +818,7 @@ CAS_ideas = {
 
 NED_ideas = {
 	start = {
-		global_sailors_modifier = 0.50
+		global_sailors_modifier = 0.50 #0.25
 		naval_forcelimit_modifier = 0.50
 	}
 	
@@ -835,10 +835,11 @@ NED_ideas = {
 	free = yes		#will be added at load.
 	
 	amsterdam_wisselbank = {
-		inflation_reduction = 0.2
+		inflation_reduction = 0.2 #0.1
 	}
 	dutch_trading_spirit = {
-		merchants = 2
+		merchants = 2 #1
+		trade_range_modifier = 0.25 #0.1
 	}
 	polders = {
 		development_cost = -0.1
@@ -856,7 +857,7 @@ NED_ideas = {
 		siege_ability = 0.15
 	}
 	platoon_fire = {
-		fire_damage = 0.15
+		fire_damage = 0.15 #0.1
 		fire_damage_received = -0.15
 	}
 }
