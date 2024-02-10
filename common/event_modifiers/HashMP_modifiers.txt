@@ -30,17 +30,16 @@ h_venice_domination = {
 	mercenary_cost = -0.1
 }
 h_sav_eager_troops = {
-	land_morale = 0.1
+	land_morale = 0.05
 	mil_advisor_cost = -0.1
 }
 h_sav_defender_italy = {
-	defensiveness = 0.15
-	hostile_attrition = 0.5
+	defensiveness = 0.2
 }
 h_sav_production_boost = {
 	development_cost = -0.1
-	production_efficiency = 0.1
 }
 h_sav_developed = {
 	adm_advisor_cost = -0.15
+	production_efficiency = 0.15
 }

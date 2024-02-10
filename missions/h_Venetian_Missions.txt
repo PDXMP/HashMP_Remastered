@@ -326,7 +326,7 @@ emp_ven_slot_3 = {
 		effect = {
 				add_country_modifier = {
 					name = "h_venice_march"
-					duration = 5475 #15 years
+					duration = 3650 #10 years
 				}
 
 
@@ -763,7 +763,7 @@ emp_ven_slot_5 = {
 		effect = {
 			add_country_modifier = {
 				name = "mediterranean_ambition"
-				duration = 3650
+				duration = 7300
 			}
 			delta_area = {
 				limit = {

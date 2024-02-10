@@ -159,3 +159,7 @@ sav_northern_italian_empire = {
 	siege_ability = 0.15
 	land_morale = 0.05
 }
+mediterranean_ambition = {
+	trade_efficiency = 0.1
+	number_of_cannons_modifier = 0.1
+}

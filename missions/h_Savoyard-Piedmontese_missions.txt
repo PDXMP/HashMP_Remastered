@@ -92,7 +92,7 @@ emp_sav_missions_economy = {
 		effect = {
 			add_country_modifier = {
 				name = h_sav_production_boost
-				duration = 5475 #15 years
+				duration = 3650 #10 years
 			}
 		}
 	}
@@ -470,7 +470,7 @@ emp_sav_missions_conquest = {
 		provinces_to_highlight = { }
 			
 		trigger = {
-			army_size_percentage = 1
+			army_size_percentage = 0.8
 			has_mil_advisor = yes
 		}
 		effect = {
@@ -635,7 +635,7 @@ emp_sav_conquer_lombardy = {
 		effect = {
 			add_country_modifier = {
 				name = sav_northern_italian_empire
-				duration = 10950
+				duration = 3650
 			}
 			lazio_area = {
 				limit = {
@@ -701,17 +701,8 @@ emp_sav_missions_security = {
 		icon = friends_in_high_places
 		required_missions = {  }
 		trigger = {
-			army_size = 10
-			any_ally = {
-				army_strength = {
-					who = root
-					value = 1.5
-				}
-				has_opinion = {
-					who = root
-					value = 150
-				}
-			}
+			army_size = 30
+			
 		}
 		effect = {
 			add_country_modifier = {
@@ -870,63 +861,11 @@ h_sav_5 = {
 	}
 	has_country_shield = yes
 
-	emp_sav_cover_your_bases = {
-		icon = all_bases_covered
-		required_missions = { emp_sav_have_a_friend }
-		position = 2
-		trigger = {
-			any_ally = {
-				if = {
-					limit = { ROOT = { NOT = { army_size = 60 } } }
-					army_size = ROOT
-					has_opinion = {
-						who = root
-						value = 120
-					}
-				}
-				else = {
-					army_size = 60
-					has_opinion = {
-						who = root
-						value = 120
-					}
-				}
-				custom_trigger_tooltip = {
-					tooltip = any_rival_allied_with_root_and_120_opinion
-					any_rival_country = {
-						alliance_with = root
-						has_opinion = {
-							who = root
-							value = 120
-						}
-					}
-				}
-			}
-			calc_true_if = {
-				desc = emp_sav_cover_your_bases_trigger_tooltip
-				amount = 5
-				all_country = {
-					OR = {
-						alliance_with = root
-						is_subject_of = root
-					}
-				}
-			}
-		}
-		effect = {
-			change_dip = 1
-			change_heir_dip = 1
-			add_country_modifier = {
-				name = sav_savoyard_diplomacy2
-				duration = 10950
-			}
-		}
-	}
 	
 	emp_sav_fortify_all = {
 		icon = alpine_fortifications
-		required_missions = { emp_sav_cover_your_bases }
-		position = 3
+		required_missions = { emp_sav_have_a_friend }
+		position = 2
 		provinces_to_highlight = {
 			OR = {
 				area = piedmont_area
