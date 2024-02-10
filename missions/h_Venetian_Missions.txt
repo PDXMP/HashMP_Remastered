@@ -161,7 +161,7 @@ emp_ven_slot_2 = {
 							tier = 1
 						}
 					}
-					add_treasury = -80
+					add_treasury = -800
 				}
 				else =  {
 					112 = {
