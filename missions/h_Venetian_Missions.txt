@@ -738,6 +738,9 @@ emp_ven_slot_5 = {
 					add_permanent_claim = ROOT
 				}
 			}
+			163 = {
+				add_center_of_trade_level = 1
+			}
 		}
 	}
 	
