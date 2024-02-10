@@ -644,10 +644,13 @@ emp_ned_slot3_branch = {
 			province_id = 45
 		}
 		trigger = {
-			45 = {
-				trade_share = {
-					country = ROOT
-					share = 33
+			OR = {
+				has_institution = new_world_i
+				45 = {
+					trade_share = {
+						country = ROOT
+						share = 33
+					}
 				}
 			}
 		}
