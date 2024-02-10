@@ -114,63 +114,33 @@ emp_hun_poland_branch = {
 			is_subject = no
 		}
 		effect = {
-			if = {
+			mazovia_area = {
 				limit = {
-					valid_for_personal_unions_trigger = yes
-					exists = PLC
-					PLC = {
-						valid_for_personal_unions_trigger = yes
-					}
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
 				}
-				add_casus_belli = {
-					type = cb_restore_personal_union
-					months = 300
-					target = PLC
-				}
+				add_permanent_claim = ROOT
 			}
-			else_if = {
+			central_poland_area = {
 				limit = {
-					valid_for_personal_unions_trigger = yes
-					exists = POL
-					POL = {
-						valid_for_personal_unions_trigger = yes
-					}
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
 				}
-				add_casus_belli = {
-					type = cb_restore_personal_union
-					months = 300
-					target = POL
-				}
+				add_permanent_claim = ROOT
 			}
-			else = {
-				mazovia_area = {
-					limit = {
-						NOT = { is_permanent_claim = ROOT }
-						NOT = { is_core = ROOT }
-					}
-					add_permanent_claim = ROOT
+			wielkopolska_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
 				}
-				central_poland_area = {
-					limit = {
-						NOT = { is_permanent_claim = ROOT }
-						NOT = { is_core = ROOT }
-					}
-					add_permanent_claim = ROOT
+				add_permanent_claim = ROOT
+			}
+			kuyavia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT }
+					NOT = { is_core = ROOT }
 				}
-				wielkopolska_area = {
-					limit = {
-						NOT = { is_permanent_claim = ROOT }
-						NOT = { is_core = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-				kuyavia_area = {
-					limit = {
-						NOT = { is_permanent_claim = ROOT }
-						NOT = { is_core = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
+				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -263,12 +233,6 @@ emp_hun_black_army_branch = {
 			}
 			army_size_percentage = 1
 			land_morale = 4
-			all_neighbor_country = {
-				OR = {
-					NOT = { land_morale = root }
-					is_subject_of = root
-				}
-			}
 		}
 		effect = {
 			add_army_tradition = 20
@@ -568,37 +532,21 @@ emp_hun_bohemia_austria_branch = {
 		}
 		effect = {
 			add_adm_power = 50
-			
-			if = {
+			bohemia_area = {
 				limit = {
-					exists = BOH
-					valid_for_personal_unions_trigger = yes
-					BOH = {
-						valid_for_personal_unions_trigger = yes
-					}
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
-				add_casus_belli = {
-					type = cb_restore_personal_union
-					months = 300
-					target = BOH
-				}
+				add_permanent_claim = ROOT
 			}
-			else = {
-				bohemia_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
+			erzgebirge_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
-				erzgebirge_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
+				add_permanent_claim = ROOT
 			}
+			
 		}
 	}
 	
@@ -708,36 +656,19 @@ emp_hun_bohemia_austria_branch_2 = {
 		}
 		effect = {
 			add_prestige = 25
-			
-			if = {
+			austria_proper_area = {
 				limit = {
-					exists = HAB
-					valid_for_personal_unions_trigger = yes
-					HAB = {
-						valid_for_personal_unions_trigger = yes
-					}
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
-				add_casus_belli = {
-					type = cb_restore_personal_union
-					months = 300
-					target = HAB
-				}
+				add_permanent_claim = ROOT
 			}
-			else = {
-				austria_proper_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
+			inner_austria_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
-				inner_austria_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
+				add_permanent_claim = ROOT
 			}
 		}
 	}
