@@ -121,3 +121,8 @@ royal_hungary = {
 	manpower_recovery_speed = 0.10
 	army_tradition = 0.5
 }
+
+bur_prestigious_duchy_mod = {
+	prestige_from_land = 0.5
+	prestige_decay = -0.01 #-0.02
+}
