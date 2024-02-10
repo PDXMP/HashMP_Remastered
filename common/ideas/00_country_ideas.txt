@@ -1585,8 +1585,7 @@ POR_ideas = {
 	}
 	
 	bonus = {
-		global_tariffs = 0.10
-		discipline = 0.05
+		naval_morale = 0.1
 	}
 	
 	trigger = {
@@ -1596,27 +1595,30 @@ POR_ideas = {
 	
 	legacy_of_the_navigator = {
 		movement_speed_in_fleet_modifier = 1
-		range = 0.25
+		range = 0.25 #0.2
 	}
 	afonsine_ordinances = {
 		global_trade_goods_size_modifier = 0.1
 	}
 	case_de_india = {
 		global_trade_power = 0.1
-		naval_morale = 0.1
 	}
 	land_before_faith = {
 		global_colonial_growth = 15
+		global_tariffs = 0.20
 	}
 	the_bandeirantes = {
-		trade_efficiency = 0.1
+		trade_efficiency = 0.15
 	}
 	royal_absolutism = {
-		build_cost = -0.10
+		build_cost = -0.10 #-0.15
 		yearly_absolutism = 0.5
 	}
 	por_royal_military_academy = {
-		artillery_fire = 0.5
+		#defensiveness = 0.1
+		#artillery_fire = 1
+		discipline = 0.05
+		artillery_power = 0.1
 	}
 }
 
