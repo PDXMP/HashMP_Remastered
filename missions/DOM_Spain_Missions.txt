@@ -2069,6 +2069,51 @@ dom_cas_missions_3 = {
 	# 		}
 	# 	}
 	# }
+
+	spa_fecho_imperio = {
+		icon = mission_imperial_spain
+		required_missions = { 
+			#gc_spa_austrian_union2 
+			spa_new_capital 
+		}
+		position = 6
+		trigger = {
+			total_development = 2000 
+			if = { 
+				limit = { 
+					OR = { 
+						has_dlc = "Rights of Man" 
+						has_dlc = "Emperor" 
+					}
+				}
+				NOT = { great_power_rank = 2 }
+			}
+			if = { 
+				limit = { has_dlc = "Mandate of Heaven" }
+				OR = { 
+					in_golden_age = yes 
+					has_had_golden_age = yes 
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = spa_universal_monarchy_modifier
+				duration = -1 
+			}
+			if = {
+				limit = { has_had_golden_age = yes } 
+				reset_golden_age = yes 
+			}
+			else_if = {
+				limit = { in_golden_age = yes } 
+				extend_golden_age = 360
+			}
+			else = { 
+				add_prestige_or_monarch_power = { amount = 100 }
+			}
+		}
+	}
 	
 	gc_spa_hre2 = {
 		icon = spa_universal_monarchy
@@ -2717,35 +2762,238 @@ dom_cas_missions_4 = {
 			}
 		}
 	}
-	
-	gc_cas_spa_reconquista_two2 = {
-		icon = mission_cannons_firing
+
+	spa_reinforce_royal_authority = {
+		icon = dreams_of_grandeur
 		required_missions = { spa_infantes_aragon }
 		position = 2
+		trigger = { 
+			OR = {
+				custom_trigger_tooltip = {
+					tooltip = spa_had_cas_civil_war_tt
+					has_country_flag = spa_cas_ended_civil_war_flag
+				}
+				is_year = 1480 
+				NOT = { 
+					estate_influence = {
+						estate = estate_nobles
+						influence = 40
+					}
+				}
+			}
+			OR = {
+				crown_land_share = 40
+				estate_loyalty = {
+					estate = estate_nobles 
+					loyalty = 60 
+				}
+			}
+		}	
+		effect = {
+			add_country_modifier = {
+				name = spa_royal_authority_restored_modifier
+				duration = 7300
+			}
+			if = { 
+				limit = { has_estate = estate_nobles } 
+				add_estate_loyalty_modifier = {
+					estate = estate_nobles
+					desc = estate_nobles_crown_authority_modifier
+					loyalty = 10
+					duration = 7300
+				}
+			}
+		}
+	}
+	
+	spa_law_and_order = {
+		icon = mission_war_for_the_crown
+		required_missions = { spa_reinforce_royal_authority }
+		position = 3
 		provinces_to_highlight = {
 			OR = {
-				area = beieras_area
-				area = alentejo_area
+				province_id = 215 
+				province_id = 223
 			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT  }
+			OR = {
+				num_of_times_expanded_infrastructure = 1 
+				num_of_times_improved = 3
+				has_courthouse_building_trigger = no
+			}
 		}
-
 		trigger = {
-			beieras_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT 
+			if = {
+				limit = { ai = no }
+				215 = {	
+					country_or_non_sovereign_subject_holds = ROOT 
+					OR = {
+						num_of_times_expanded_infrastructure = 1 
+						num_of_times_improved = 3
+						has_courthouse_building_trigger = yes
+					}
+				}
+				223 = {	
+					country_or_non_sovereign_subject_holds = ROOT 
+					OR = {
+						num_of_times_expanded_infrastructure = 1 
+						num_of_times_improved = 3
+						has_courthouse_building_trigger = yes
+					}
+				}
+				stability = 1
 			}
-			alentejo_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT 
+			else = {
+				215 = {	
+					country_or_non_sovereign_subject_holds = ROOT 
+					has_courthouse_building_trigger = yes
+				}
+				223 = {	
+					country_or_non_sovereign_subject_holds = ROOT 
+					has_courthouse_building_trigger = yes
+				}
+				stability = 0 
+			} 
+		}
+		effect = {
+			215 = { 
+				upgrade_building = { government = yes }
+				add_province_modifier = {
+					name = spa_valladolid_court_modifier 
+					duration = -1 
+				}
+			}
+			223 = {
+				upgrade_building = { government = yes }
+				add_province_modifier = {
+					name = spa_granada_court_modifier 
+					duration = -1 
+				}
 			}
 		}
-
+	}
+	
+	spa_economic_reforms = {
+		icon = mission_rb_monopolize_the_channel
+		required_missions = { }
+		position = 4
+		trigger = {
+			if = {
+				limit = { ai = no } 
+				OR = { 
+					treasurer = 3 
+					full_idea_group = economic_ideas 
+				}
+				OR = { 
+					trade_income_percentage = 0.5
+					full_idea_group = trade_ideas 
+					estate_loyalty = {
+						estate = estate_burghers 
+						loyalty = 60 
+					}
+				}
+				share_of_starting_income = 2
+			}
+			else = {
+				has_adm_advisor = yes
+				has_dip_advisor = yes 
+				estate_loyalty = {
+					estate = estate_burghers 
+					loyalty = 60 
+				}
+				share_of_starting_income = 1.5
+			}
+		}
 		effect = {
-			add_prestige_or_monarch_power = { amount = 25 }
-			add_stability_or_adm_power = yes 
-			227 = { add_base_production = 2 } 
-			231 = { add_base_production = 2 }
+			country_event = { id = flavor_spa.22 }
+		}
+	}
+	
+	spa_new_capital = {
+		icon = spa_new_capital
+		required_missions = { spa_economic_reforms }
+		position = 5
+		provinces_to_highlight = {
+			OR = {
+				province_id = 217
+				AND = {
+					owned_by = ROOT 
+					is_capital = yes
+				}
+			}
+		}
+		trigger = {
+			OR = { 
+				custom_trigger_tooltip = {
+					tooltip = spa_recent_change_tt
+					217 = { has_province_modifier = solo_madrid_es_corte } 
+				}
+				if = {
+					limit = { ai = no } 
+					capital_scope = { num_of_times_improved = 12 }
+				}
+				else = {
+					capital_scope = { num_of_times_improved = 4 }
+				}
+			}
+			if = { 
+				limit = { has_dlc = "Leviathan" ai = no  } 
+				capital_scope = { num_of_times_expanded_infrastructure = 1 }
+			}
+			capital_scope = { 
+				OR = {
+					has_building = state_house 
+					num_of_buildings_in_province = 5
+				}
+			}
+			if = { 
+				limit = { 
+					217 = { is_capital_of = ROOT } 
+					has_dlc = "Leviathan"
+					ai = no 
+				} 
+				217 = { 
+					has_great_project = {
+						type = el_escorial
+						tier = 1 
+					}
+				}
+			}
+		}
+		effect = { 
+			capital_scope = { 
+				change_trade_goods = paper
+			}
+			if = { 
+				limit = { 
+					217 = { is_capital_of = ROOT }
+				}
+				country_event = { id = flavor_spa.23 }
+			}
+			else = { 
+				capital_scope = {
+					add_base_tax = 2 
+					add_base_production = 2 
+					add_base_manpower = 2 
+				}
+			}
+		}
+	}
+	
+	spa_system_councils = {
+		icon = hispanic_monarchy
+		required_missions = { spa_new_capital }
+		position = 6
+		trigger = { 
+			reform_level = 3
+			OR = { 
+				full_idea_group = administrative_ideas 
+				adm = 6 
+				monthly_adm = 15 
+			}
+			crown_land_share = 50
+		}
+		effect = {
+			add_government_reform = system_of_councils_reform 
 		}
 	}
 	
@@ -2843,51 +3091,6 @@ dom_cas_missions_4 = {
 	# 		}
 	# 	}
 	# }
-	
-	spa_fecho_imperio = {
-		icon = mission_imperial_spain
-		required_missions = { 
-			#gc_spa_austrian_union2 
-			spa_new_capital 
-		}
-		position = 6
-		trigger = {
-			total_development = 2000 
-			if = { 
-				limit = { 
-					OR = { 
-						has_dlc = "Rights of Man" 
-						has_dlc = "Emperor" 
-					}
-				}
-				NOT = { great_power_rank = 2 }
-			}
-			if = { 
-				limit = { has_dlc = "Mandate of Heaven" }
-				OR = { 
-					in_golden_age = yes 
-					has_had_golden_age = yes 
-				}
-			}
-		}
-		effect = {
-			add_country_modifier = {
-				name = spa_universal_monarchy_modifier
-				duration = -1 
-			}
-			if = {
-				limit = { has_had_golden_age = yes } 
-				reset_golden_age = yes 
-			}
-			else_if = {
-				limit = { in_golden_age = yes } 
-				extend_golden_age = 360
-			}
-			else = { 
-				add_prestige_or_monarch_power = { amount = 100 }
-			}
-		}
-	}
 }
 
 dom_cas_missions_4_b = {
@@ -3467,239 +3670,6 @@ dom_cas_missions_5 = {
 	}
 	has_country_shield = yes
 	
-	spa_reinforce_royal_authority = {
-		icon = dreams_of_grandeur
-		required_missions = { spa_infantes_aragon }
-		position = 2
-		trigger = { 
-			OR = {
-				custom_trigger_tooltip = {
-					tooltip = spa_had_cas_civil_war_tt
-					has_country_flag = spa_cas_ended_civil_war_flag
-				}
-				is_year = 1480 
-				NOT = { 
-					estate_influence = {
-						estate = estate_nobles
-						influence = 40
-					}
-				}
-			}
-			OR = {
-				crown_land_share = 40
-				estate_loyalty = {
-					estate = estate_nobles 
-					loyalty = 60 
-				}
-			}
-		}	
-		effect = {
-			add_country_modifier = {
-				name = spa_royal_authority_restored_modifier
-				duration = 7300
-			}
-			if = { 
-				limit = { has_estate = estate_nobles } 
-				add_estate_loyalty_modifier = {
-					estate = estate_nobles
-					desc = estate_nobles_crown_authority_modifier
-					loyalty = 10
-					duration = 7300
-				}
-			}
-		}
-	}
-	
-	spa_law_and_order = {
-		icon = mission_war_for_the_crown
-		required_missions = { spa_reinforce_royal_authority }
-		position = 3
-		provinces_to_highlight = {
-			OR = {
-				province_id = 215 
-				province_id = 223
-			}
-			OR = {
-				num_of_times_expanded_infrastructure = 1 
-				num_of_times_improved = 3
-				has_courthouse_building_trigger = no
-			}
-		}
-		trigger = {
-			if = {
-				limit = { ai = no }
-				215 = {	
-					country_or_non_sovereign_subject_holds = ROOT 
-					OR = {
-						num_of_times_expanded_infrastructure = 1 
-						num_of_times_improved = 3
-						has_courthouse_building_trigger = yes
-					}
-				}
-				223 = {	
-					country_or_non_sovereign_subject_holds = ROOT 
-					OR = {
-						num_of_times_expanded_infrastructure = 1 
-						num_of_times_improved = 3
-						has_courthouse_building_trigger = yes
-					}
-				}
-				stability = 1
-			}
-			else = {
-				215 = {	
-					country_or_non_sovereign_subject_holds = ROOT 
-					has_courthouse_building_trigger = yes
-				}
-				223 = {	
-					country_or_non_sovereign_subject_holds = ROOT 
-					has_courthouse_building_trigger = yes
-				}
-				stability = 0 
-			} 
-		}
-		effect = {
-			215 = { 
-				upgrade_building = { government = yes }
-				add_province_modifier = {
-					name = spa_valladolid_court_modifier 
-					duration = -1 
-				}
-			}
-			223 = {
-				upgrade_building = { government = yes }
-				add_province_modifier = {
-					name = spa_granada_court_modifier 
-					duration = -1 
-				}
-			}
-		}
-	}
-	
-	spa_economic_reforms = {
-		icon = mission_rb_monopolize_the_channel
-		required_missions = { }
-		position = 4
-		trigger = {
-			if = {
-				limit = { ai = no } 
-				OR = { 
-					treasurer = 3 
-					full_idea_group = economic_ideas 
-				}
-				OR = { 
-					trade_income_percentage = 0.5
-					full_idea_group = trade_ideas 
-					estate_loyalty = {
-						estate = estate_burghers 
-						loyalty = 60 
-					}
-				}
-				share_of_starting_income = 2
-			}
-			else = {
-				has_adm_advisor = yes
-				has_dip_advisor = yes 
-				estate_loyalty = {
-					estate = estate_burghers 
-					loyalty = 60 
-				}
-				share_of_starting_income = 1.5
-			}
-		}
-		effect = {
-			country_event = { id = flavor_spa.22 }
-		}
-	}
-	
-	spa_new_capital = {
-		icon = spa_new_capital
-		required_missions = { spa_economic_reforms }
-		position = 5
-		provinces_to_highlight = {
-			OR = {
-				province_id = 217
-				AND = {
-					owned_by = ROOT 
-					is_capital = yes
-				}
-			}
-		}
-		trigger = {
-			OR = { 
-				custom_trigger_tooltip = {
-					tooltip = spa_recent_change_tt
-					217 = { has_province_modifier = solo_madrid_es_corte } 
-				}
-				if = {
-					limit = { ai = no } 
-					capital_scope = { num_of_times_improved = 12 }
-				}
-				else = {
-					capital_scope = { num_of_times_improved = 4 }
-				}
-			}
-			if = { 
-				limit = { has_dlc = "Leviathan" ai = no  } 
-				capital_scope = { num_of_times_expanded_infrastructure = 1 }
-			}
-			capital_scope = { 
-				OR = {
-					has_building = state_house 
-					num_of_buildings_in_province = 5
-				}
-			}
-			if = { 
-				limit = { 
-					217 = { is_capital_of = ROOT } 
-					has_dlc = "Leviathan"
-					ai = no 
-				} 
-				217 = { 
-					has_great_project = {
-						type = el_escorial
-						tier = 1 
-					}
-				}
-			}
-		}
-		effect = { 
-			capital_scope = { 
-				change_trade_goods = paper
-			}
-			if = { 
-				limit = { 
-					217 = { is_capital_of = ROOT }
-				}
-				country_event = { id = flavor_spa.23 }
-			}
-			else = { 
-				capital_scope = {
-					add_base_tax = 2 
-					add_base_production = 2 
-					add_base_manpower = 2 
-				}
-			}
-		}
-	}
-	
-	spa_system_councils = {
-		icon = hispanic_monarchy
-		required_missions = { spa_new_capital }
-		position = 6
-		trigger = { 
-			reform_level = 3
-			OR = { 
-				full_idea_group = administrative_ideas 
-				adm = 6 
-				monthly_adm = 15 
-			}
-			crown_land_share = 50
-		}
-		effect = {
-			add_government_reform = system_of_councils_reform 
-		}
-	}
 }
 
 dom_cas_missions_5_b = {
@@ -4065,6 +4035,37 @@ dom_cas_missions_5_c = {
 	}
 	has_country_shield = yes
 	
+	gc_cas_spa_reconquista_two2 = {
+		icon = mission_cannons_firing
+		required_missions = { spa_infantes_aragon }
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+				area = beieras_area
+				area = alentejo_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT  }
+		}
+
+		trigger = {
+			beieras_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+			alentejo_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
+		}
+
+		effect = {
+			add_prestige_or_monarch_power = { amount = 25 }
+			add_stability_or_adm_power = yes 
+			227 = { add_base_production = 2 } 
+			231 = { add_base_production = 2 }
+		}
+	}
+
 	gc_cas_spa_west_africa2 = {
 		icon = mission_west_african_ports
 		required_missions = {  }
