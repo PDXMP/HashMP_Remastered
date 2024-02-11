@@ -62,3 +62,238 @@ h_tm_age_of_discovery = {
 
 # 	merc_maintenance_modifier = 0.50
 # }
+
+###########################################
+# Misc Modifiers
+###########################################
+
+t_vassal_cav_ratio = {
+	potential = {
+		is_subject = yes
+		ai = yes
+	}
+	trigger = {
+		overlord = {
+			has_global_modifier_value = {
+				which = cav_to_inf_ratio
+				value = 1
+			}
+		}
+		OR = {
+			is_subject_of_type = client_march
+			is_subject_of_type = client_vassal
+			is_subject_of_type = vassal
+			is_subject_of_type = march
+		}
+	}
+	cav_to_inf_ratio = 0.5
+}
+
+###########################################
+# CN Limiters
+###########################################
+
+t_player_cn = {
+	potential = {
+		is_colonial_nation = yes
+	}
+	trigger = {
+		was_player = yes
+		NOT = { has_reform = h_reform_dominion }
+		NOT = { has_country_flag = became_dominion }
+	}
+	naval_forcelimit_modifier = -0.5
+	land_forcelimit_modifier = -0.25
+	possible_mercenaries = -1.0
+	development_cost = 0.6
+	manpower_recovery_speed = -0.33
+	sailors_recovery_speed = -0.33
+	global_sailors_modifier = -1.0
+}
+
+t_player_dominion = {
+	potential = {
+		is_colonial_nation = yes
+	}
+	trigger = {
+		was_player = yes
+		OR = {
+			has_reform = h_reform_dominion
+			has_country_flag = became_dominion
+		}
+	}
+	naval_forcelimit_modifier = -0.25
+	land_forcelimit_modifier = -0.25
+	possible_mercenaries = -0.5
+	development_cost = 0.3
+	manpower_recovery_speed = -0.33
+	sailors_recovery_speed = -0.33
+	global_sailors_modifier = -1.0
+}
+
+t_low_repubtrad = {
+	potential = {
+		is_colonial_nation = yes
+	}
+	trigger = {
+		NOT = {
+			republican_tradition = 40
+		}
+	}
+	all_power_cost = 0.25
+}
+
+t_cn_army_1 = {
+	potential = {
+		is_colonial_nation = yes
+	}
+	trigger = {
+		was_player = yes
+		army_size = 100
+	}
+	reinforce_cost_modifier = 0.2
+	reinforce_speed = -0.25
+	global_regiment_cost = 0.1
+}
+
+t_cn_army_2 = {
+	potential = {
+		is_colonial_nation = yes
+	}
+	trigger = {
+		was_player = yes
+		army_size = 200
+	}
+	reinforce_cost_modifier = 0.2
+	reinforce_speed = -0.25
+	global_regiment_cost = 0.1
+}
+
+t_cn_army_3 = {
+	potential = {
+		is_colonial_nation = yes
+	}
+	trigger = {
+		was_player = yes
+		army_size = 300
+	}
+	reinforce_cost_modifier = 0.2
+	reinforce_speed = -0.25
+	global_regiment_cost = 0.1
+}
+
+# t_cn_army_4 = {
+# 	potential = {
+# 		is_colonial_nation = yes
+# 	}
+# 	trigger = {
+# 		was_player = yes
+# 		army_size = 240
+# 	}
+# 	reinforce_cost_modifier = 0.1
+# 	reinforce_speed = -0.15
+# 	global_regiment_cost = 0.075
+# }
+
+# t_cn_army_5 = {
+# 	potential = {
+# 		is_colonial_nation = yes
+# 	}
+# 	trigger = {
+# 		was_player = yes
+# 		army_size = 300
+# 	}
+# 	reinforce_cost_modifier = 0.1
+# 	reinforce_speed = -0.15
+# 	global_regiment_cost = 0.075
+# }
+
+t_cn_navy_1 = {
+	potential = {
+		is_colonial_nation = yes
+	}
+	trigger = {
+		was_player = yes
+		OR = {
+			num_of_heavy_ship = 20
+			navy_size = 60
+		}
+	}
+	sailor_maintenance_modifer = 0.1
+	global_ship_recruit_speed = 0.2
+	global_ship_repair = -0.2
+	global_ship_cost = 0.2
+	naval_maintenance_modifier = 0.1
+}
+
+t_cn_navy_2 = {
+	potential = {
+		is_colonial_nation = yes
+	}
+	trigger = {
+		was_player = yes
+		OR = {
+			num_of_heavy_ship = 40
+			navy_size = 120
+		}
+	}
+	sailor_maintenance_modifer = 0.1
+	global_ship_recruit_speed = 0.2
+	global_ship_repair = -0.2
+	global_ship_cost = 0.2
+	naval_maintenance_modifier = 0.1
+}
+
+t_cn_navy_3 = {
+	potential = {
+		is_colonial_nation = yes
+	}
+	trigger = {
+		was_player = yes
+		OR = {
+			num_of_heavy_ship = 60
+			navy_size = 180
+		}
+	}
+	sailor_maintenance_modifer = 0.1
+	global_ship_recruit_speed = 0.2
+	global_ship_repair = -0.2
+	global_ship_cost = 0.2
+	naval_maintenance_modifier = 0.1
+}
+
+# t_cn_navy_4 = {
+# 	potential = {
+# 		is_colonial_nation = yes
+# 	}
+# 	trigger = {
+# 		was_player = yes
+# 		OR = {
+# 			num_of_heavy_ship = 60
+# 			navy_size = 160
+# 		}
+# 	}
+# 	sailor_maintenance_modifer = 0.1
+# 	global_ship_recruit_speed = 0.15
+# 	global_ship_repair = -0.15
+# 	global_ship_cost = 0.1
+# 	naval_maintenance_modifier = 0.1
+# }
+
+# t_cn_navy_5 = {
+# 	potential = {
+# 		is_colonial_nation = yes
+# 	}
+# 	trigger = {
+# 		was_player = yes
+# 		OR = {
+# 			num_of_heavy_ship = 75
+# 			navy_size = 200
+# 		}
+# 	}
+# 	sailor_maintenance_modifer = 0.1
+# 	global_ship_recruit_speed = 0.15
+# 	global_ship_repair = -0.15
+# 	global_ship_cost = 0.1
+# 	naval_maintenance_modifier = 0.1
+# }
