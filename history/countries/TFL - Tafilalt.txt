@@ -4,8 +4,8 @@ government_rank = 1
 primary_culture = moroccan
 religion = sunni
 technology_group = muslim
-capital = 346	# Tafilalt
-fixed_capital = 346 # Cannot move capital away from this province & no power cost to move to it
+capital = 2460	# Tafilalt
+fixed_capital = 2460 # Cannot move capital away from this province & no power cost to move to it
 religious_school = maliki_school
 
 1444.1.1 = {
