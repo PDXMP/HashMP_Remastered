@@ -13,7 +13,6 @@ mutapa_vassal_missions_slot = {
 			tag = GZI
 			tag = RZI
 			tag = ZIM
-			tag = RZW
 		}
 	}
 	has_country_shield = yes
@@ -170,7 +169,6 @@ mutapa_conquer_africa_missions_slot = {
 			tag = GZI
 			tag = RZI
 			tag = ZIM
-			tag = RZW
 		}
 	}
 	has_country_shield = yes
@@ -353,7 +351,6 @@ mutapa_restore_zimbabwe_missions_slot = {
 			tag = GZI
 			tag = RZI
 			tag = ZIM
-			tag = RZW
 		}
 	}
 	has_country_shield = yes
@@ -522,8 +519,16 @@ mutapa_restore_zimbabwe_missions_slot = {
 				}
 				set_government_rank = 3
 			}
-			country_event = {
+			country_event_with_option_insight = {
 				id = flavor_zim.2
+				option_1 = "change_tag = GZI
+				on_change_tag_effect = yes
+				add_country_modifier = {
+					name = centralization_modifier
+					duration = 7300
+				}
+				add_prestige = 25"
+				option_2 = "custom_tooltip = flavor_zim.2.b.tt"
 			}
 		}
 		ai_weight = {
@@ -558,8 +563,13 @@ mutapa_restore_zimbabwe_missions_slot = {
 			}
 		}
 		effect = {
-			country_event = {
+			country_event_with_option_insight = {
 				id = flavor_zim.5
+				option_1 = "custom_tooltip = flavor_zim.5.a.tt"
+				option_2 = "custom_tooltip = flavor_zim.5.b.tt"
+				option_3 = "custom_tooltip = zim_dominate_upstream_trade_ct"
+				option_4 = "add_mercantilism = 5
+				add_stability = -1"
 			}
 		}
 		ai_weight = {
@@ -583,7 +593,6 @@ mutapa_trade_missions_slot = {
 			tag = GZI
 			tag = RZI
 			tag = ZIM
-			tag = RZW
 		}
 	}
 	has_country_shield = yes
@@ -639,8 +648,9 @@ mutapa_trade_missions_slot = {
 			owns_or_non_sovereign_subject_of = 1186
 		}
 		effect = {
-			country_event = {
+			country_event_with_option_insight = {
 				id = flavor_zim.7
+				option_1 = "custom_tooltip = flavor_zim.7.a.tt"
 			}
 			1186 = {
 				if = {
@@ -684,8 +694,9 @@ mutapa_trade_missions_slot = {
 		}
 		effect = {
 			add_mercantilism = 5
-			country_event = {
+			country_event_with_option_insight = {
 				id = flavor_zim.8
+				option_1 = "custom_tooltip = flavor_zim.8.a.tt"
 			}
 			custom_tooltip = zim_build_navy_tt
 			hidden_effect = {
@@ -927,7 +938,6 @@ mutapa_modernize_missions_slot = {
 			tag = GZI
 			tag = RZI
 			tag = ZIM
-			tag = RZW
 		}
 	}
 	has_country_shield = yes

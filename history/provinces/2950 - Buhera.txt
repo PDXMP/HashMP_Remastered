@@ -1,8 +1,8 @@
 #2950 - Buhera
 
-owner = RZW
-controller = RZW
-add_core = RZW
+owner = RZI
+controller = RZI
+add_core = RZI
 culture = shona
 religion = shamanism
 capital = "Buhera"
