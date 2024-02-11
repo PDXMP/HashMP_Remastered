@@ -638,15 +638,24 @@ songhai_maghreb_slot = {
 			}
 		}
 		effect = {
-			country_event = {
+			country_event_with_option_insight = {
 				id = flavor_son.11
-			}
-		}
+				option_1 = "add_piety = 0.33
+					add_ruler_modifier = {
+					name = son_embrace_legalism
+					duration = 9125
+				}"
+				option_2 = "add_piety = -0.33
+				add_ruler_modifier = {
+					name = son_embrace_mysticism
+					duration = 9125
+				}"
+			} 
 		ai_weight = {
 			factor = 500	#Tall
 		}
 	}
-
+	}
 	#Get contact with Morocco
 	son_contact_with_morocco = {
 		icon = mission_control_the_barbary_coast
