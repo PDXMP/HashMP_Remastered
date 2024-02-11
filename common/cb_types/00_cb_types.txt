@@ -409,15 +409,32 @@ cb_conquest = {
 
 	prerequisites = {
     claim = FROM
-    OR = {
-        NOT = { same_continent = FROM }
-        FROM = {
-            any_owned_province = {
-                is_claim = ROOT
-                is_overseas = no
-            }
-        }
-    }
+    OR = { 
+		FROM = {
+			any_owned_province = {
+				is_claim = ROOT
+				OR = {
+					is_overseas = no
+					same_continent = ROOT	
+				}
+			}
+				 
+		}
+		FROM = {
+			is_neighbor_of = ROOT 
+			NOT = { same_continent = ROOT } 
+			any_owned_province = {
+				is_neighbor_of = ROOT 
+				is_claim = ROOT
+				is_overseas = yes
+				NOT = {
+					continent = north_america 
+					continent = south_america 
+					continent = oceania 
+				}
+			}
+		}
+	}
 }
 
 	war_goal = take_claim

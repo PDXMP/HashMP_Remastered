@@ -859,10 +859,21 @@ take_claim = {
 				is_claim = ROOT
 				is_core = ROOT
 			}
-			OR = {
-				is_overseas = no
-				ROOT = {
-					NOT = { same_continent = FROM }
+			OR = { 
+				OR = {
+					is_overseas = no
+					same_continent = ROOT
+				}
+				AND = { 
+					is_overseas = yes 
+					is_neighbor_of = ROOT 
+					NOT = { same_continent = ROOT }
+					NOT = {
+						continent = north_america 
+						continent = south_america 
+						continent = oceania 
+						
+					}
 				}
 			}
 		}
