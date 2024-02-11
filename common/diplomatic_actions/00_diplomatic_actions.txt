@@ -404,6 +404,8 @@ enforce_peace = {
 	}
 }
 
+
+
 royal_marriage = {
 	condition = {
 		tooltip = MARWAR
@@ -438,7 +440,7 @@ designate_march = {
 		allow = {
 			NOT = {
 				ROOT = {
-					march = 3
+					march = 2
 				}
 			}
 		}
@@ -451,7 +453,7 @@ designate_march = {
 		allow = {
 			ROOT = {
 				NOT = {
-					march = 6
+					march = 4
 				}
 			}
 		}
