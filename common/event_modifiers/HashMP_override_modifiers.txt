@@ -39,7 +39,7 @@ eng_rb_coal_produced_mod = {
 
 eng_strict_marines = {	#Permanent
 	discipline = 0.05
-	shock_damage_received = -0.15
+	shock_damage_received = -0.05
 	fire_damage_received = -0.05
 	is_marine_modifier = yes
 }
