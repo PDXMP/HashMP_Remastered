@@ -2033,7 +2033,6 @@ hussars_regiment = {
 
 marine_regiment = {
     regiment_disembark_speed = 2
-	shock_damage_received = 0.1
 }
 
 banner_regiment = {
