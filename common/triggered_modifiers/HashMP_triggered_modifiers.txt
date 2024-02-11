@@ -33,10 +33,16 @@ h_tm_age_of_discovery = {
 hashmp_new_world_modifier = { 
 	potential = {
 		ai = no
+		NOT = { 
+			is_colonial_nation = yes 
+		}
 	}
 	trigger = {
 		ai = no
 		is_institution_enabled = new_world_i
+		NOT = { 
+			is_colonial_nation = yes 
+		}
 	}
 	
 	can_explore = yes
@@ -51,6 +57,9 @@ hashmp_new_world_modifier = {
 hashmp_new_world_lowcost_modifier = { 
 	potential = { 
 		ai = no
+		NOT = { 
+			is_colonial_nation = yes 
+		}
 	}
 	trigger = {
 		ai = no
@@ -60,6 +69,7 @@ hashmp_new_world_lowcost_modifier = {
 				has_idea_group = exploration_ideas
 				has_idea_group = expansion_ideas
 			}
+			is_colonial_nation = yes
 		}
 	}
 	
@@ -70,9 +80,15 @@ hashmp_new_world_lowcost_modifier = {
 hashmp_new_world_trade_modifier = { 
 	potential = { 
 		ai = no
+		NOT = { 
+			is_colonial_nation = yes 
+		}
 	}
 	trigger = {
 		ai = no
+		NOT = { 
+			is_colonial_nation = yes 
+		}
 		is_institution_enabled = new_world_i
 		OR = {
 			1490 = { has_merchant = ROOT } #Gulf of St. Lawrence

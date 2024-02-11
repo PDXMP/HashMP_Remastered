@@ -306,6 +306,9 @@ country_event = {
 			every_country = {
 				limit = {
 					ai = no
+					NOT = { 
+						is_colonial_nation = yes 
+					}
 				}
 				country_event = { 
 					id = institution_events.302
@@ -449,10 +452,10 @@ country_event = {
 		name = institution_events.302.a
 		add_sailors = 250
 		define_conquistador = {
-			shock = 2
-			fire = 1
+			shock = 0
+			fire = 0
 			manuever = 6
-			siege = 
+			siege = 0
 		}
 		define_explorer = {
 			shock = 0
@@ -478,7 +481,17 @@ country_event = {
 			name = hashmp_new_world
 			duration = 5475 
 		}
+		if = {
+			limit = { 
+				NOT = {
+					OR = { 
+						has_idea_group = exploration_ideas
+						has_idea_group = expansion_ideas
+					}
+				}
+			}
 		set_country_flag = hashmp_new_world_flag
+		}
 		custom_tooltip = institution_events.302.a.tt
 	}
 }

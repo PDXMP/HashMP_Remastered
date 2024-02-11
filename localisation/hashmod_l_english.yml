@@ -175,5 +175,5 @@
  native_policy_trade_desc:0 "We will adopt a policy of trading with natives, which will increase the chance of merchants arriving to our colony to trade."
  native_policy_hostile_desc:0 "We will adopt a policy of hostility towards natives, which will increase our growth."
  HashMP_Colonial_Events_EVTNAME1:0 "Colony Established!"
- HashMP_Colonial_Events_EVTDESC1:0 "The colonial company of our explorer and navigator has rapidly moved to set up in our new colony, completing it at minimal expense to us."
+ HashMP_Colonial_Events_EVTDESC1:0 "The colonial company of our explorer and navigator has rapidly moved to set up in our new colony, completing it at minimal expense to us - As long as we don't already have colonies."
  HashMPColonialEvents.1.a:0 "Excellent!"
