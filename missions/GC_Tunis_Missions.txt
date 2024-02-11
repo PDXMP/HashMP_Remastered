@@ -316,7 +316,7 @@ gc_tunis_3 = {
 		
 		trigger = {
 			naval_forcelimit = 20
-			num_of_light_ship = 5
+			num_of_galley = 10
 		}
 		effect = {
 			sicily_area = {
