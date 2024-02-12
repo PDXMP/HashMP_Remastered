@@ -1100,38 +1100,38 @@ country_decisions = {
 				change_government = monarchy
 				add_government_reform = prussian_monarchy
 			}
-			else_if =  {
-				limit = {
-					is_revolutionary = no
-					NOT = { government = republic }
-					NOT = { government = theocracy }
-					NOT = { has_dlc = "Domination" }
-				}
-				change_government = monarchy
-				add_government_reform = prussian_monarchy_base
-			}
-			else_if = {
-				limit = {
-					government = republic
-					is_revolutionary = no
-				}
-				add_government_reform = prussian_republic_reform
-			}
-			else_if = {
-				limit = {
-					government = theocracy
-					is_revolutionary = no
-				}
-				add_government_reform = prussian_theocratic_reform
-			}
-			if = {
-				limit = {
-					has_reform = states_general_reform
-				}
-				remove_government_reform = states_general_reform
-			}
+			# else_if =  {
+			# 	limit = {
+			# 		is_revolutionary = no
+			# 		NOT = { government = republic }
+			# 		NOT = { government = theocracy }
+			# 		NOT = { has_dlc = "Domination" }
+			# 	}
+			# 	change_government = monarchy
+			# 	add_government_reform = prussian_monarchy_base
+			# }
+			# else_if = {
+			# 	limit = {
+			# 		government = republic
+			# 		is_revolutionary = no
+			# 	}
+			# 	add_government_reform = prussian_republic_reform
+			# }
+			# else_if = {
+			# 	limit = {
+			# 		government = theocracy
+			# 		is_revolutionary = no
+			# 	}
+			# 	add_government_reform = prussian_theocratic_reform
+			# }
+			# if = {
+			# 	limit = {
+			# 		has_reform = states_general_reform
+			# 	}
+			# 	remove_government_reform = states_general_reform
+			# }
 			add_prestige = 5
-			change_primary_culture = prussian
+			# change_primary_culture = prussian
 			PRU = {
 				random_owned_province = {
 					limit = { 
@@ -1156,9 +1156,9 @@ country_decisions = {
 				}
 				add_permanent_claim = PRU
 			}
-			capital_scope = {
-				change_culture = prussian
-			}
+			# capital_scope = {
+			# 	change_culture = prussian
+			# }
 			set_country_flag = formed_prussia_flag
 		}
 		ai_will_do = {
