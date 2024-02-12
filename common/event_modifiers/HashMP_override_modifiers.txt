@@ -137,6 +137,10 @@ tur_caucasian_conquest = {
 	local_monthly_devastation = -0.05
 #	local_development_cost = -0.1
 }
+ven_la_francocrazia = {
+	galley_power = 0.1
+	prestige_from_battles_in_fleet_modifier = 1
+}
 
 bur_prestigious_duchy_mod = {
 	prestige_from_land = 0.5
@@ -151,3 +155,15 @@ spa_prepared_armada = {
 	naval_morale = 0.1
 }
 
+sav_northern_italian_empire = {
+	land_morale = 0.1
+}
+
+mediterranean_ambition = {
+	trade_efficiency = 0.1
+	number_of_cannons_modifier = 0.1
+}
+
+sav_savoyard_army = {
+	army_tradition = 0.5
+}
