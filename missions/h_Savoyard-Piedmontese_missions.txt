@@ -650,7 +650,7 @@ emp_sav_conquer_lombardy = {
 		provinces_to_highlight = {
 			region = italy_region
 			NOT = {
-				owned_by = ROOT
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		trigger = {

@@ -99,7 +99,7 @@ h_naples_1 = {
 			}
 		}
 	}
-	h_nap_breadbasket_of_italy = {
+	h_nap_urbanization = {
 		icon = develop_the_po_valley
 		required_missions = { 
 			h_nap_italian_craftsmanship 
@@ -134,12 +134,23 @@ h_naples_1 = {
 			# }
 		}
 		effect = {
-			#add_years_of_income = 1
-			#add_stability = 1
-			add_stability_or_adm_power = yes
-			add_country_modifier = {
-				name = "h_nap_breadbasket_of_italy"
-				duration = 3650 #10 years
+			custom_tooltip = h_nap_urbanization_tooltip
+			tooltip = {
+				add_province_modifier = {
+					name = h_nap_urbanization
+					duration = 7300
+				}
+			}
+			hidden_effect = {
+				every_owned_province = {
+					limit = {
+						has_building = farm_estate
+					}
+					add_province_modifier = {
+						name = h_nap_urbanization
+						duration = 7300
+					}
+				}
 			}
 		}
 	}
@@ -181,8 +192,7 @@ h_naples_2 = {
 		required_missions = {  }
 		
 		trigger = {
-			army_size_percentage = 0.9
-			has_mil_advisor = yes
+			army_size_percentage = 0.8
 		}
 		effect = {
 			central_italy_area = {
@@ -230,12 +240,11 @@ h_naples_2 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			add_country_modifier = {
-				name = "army_enthusiasm"
-				duration = 9125 #25 years
-				}
+			add_prestige_or_monarch_power = {
+				amount = 25
 			}
 		}
+	}
 	h_nap_state_of_the_presidi = {
 		icon = state_of_the_presidi
 		required_missions = { h_nap_the_papal_problem }
@@ -245,7 +254,7 @@ h_naples_2 = {
 		}
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 3
+				value = 4
 				area = tuscany_area
 			}
 			# 117 = {
@@ -253,81 +262,75 @@ h_naples_2 = {
 			# }
 		}
 		effect = {
-			emilia_romagna_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
 			add_country_modifier = {
 				name = "h_nap_veteran_soldiers"
 				duration = 3650 #10 years
 			}
 		}
 	}
-	h_nap_the_po_valley = {
-		icon = prosper_in_piedmont
-		required_missions = { h_nap_state_of_the_presidi }
-		provinces_to_highlight = {
-			area = emilia_romagna_area
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-			}
-		trigger = {
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 4
-				area = emilia_romagna_area
-				}
-			}
-			effect = {
-				po_valley_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-				lombardy_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-				liguria_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-				add_country_modifier = {
-					name = "hegemonic_ambition"
-					duration = 9125 #25 years
-					}
-				}
-			}
+	# h_nap_the_po_valley = {
+	# 	icon = prosper_in_piedmont
+	# 	required_missions = { h_nap_state_of_the_presidi }
+	# 	provinces_to_highlight = {
+	# 		area = emilia_romagna_area
+	# 		NOT = { country_or_non_sovereign_subject_holds = ROOT }
+	# 		}
+	# 	trigger = {
+	# 		num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+	# 			value = 4
+	# 			area = emilia_romagna_area
+	# 			}
+	# 		}
+	# 		effect = {
+	# 			po_valley_area = {
+	# 				limit = {
+	# 					NOT = { is_core = ROOT }
+	# 					NOT = { is_permanent_claim = ROOT }
+	# 				}
+	# 				add_permanent_claim = ROOT
+	# 			}
+	# 			lombardy_area = {
+	# 				limit = {
+	# 					NOT = { is_core = ROOT }
+	# 					NOT = { is_permanent_claim = ROOT }
+	# 				}
+	# 				add_permanent_claim = ROOT
+	# 			}
+	# 			liguria_area = {
+	# 				limit = {
+	# 					NOT = { is_core = ROOT }
+	# 					NOT = { is_permanent_claim = ROOT }
+	# 				}
+	# 				add_permanent_claim = ROOT
+	# 			}
+	# 			add_country_modifier = {
+	# 				name = "hegemonic_ambition"
+	# 				duration = 9125 #25 years
+	# 				}
+	# 			}
+	# 		}
 	h_nap_italian_wars = {
 		icon = the_italian_league
-		required_missions = { h_nap_the_po_valley }
+		required_missions = { h_nap_state_of_the_presidi }
 		provinces_to_highlight = {
 			region = italy_region
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			NOT = { 
+				country_or_non_sovereign_subject_holds = ROOT 
 			}
+		}
 		trigger = {
-			is_subject = no
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 25
+				value = 40
 				region = italy_region
-				}
 			}
+		}
 		effect = {
 			add_country_modifier = {
 				name = "nap_italian_wars_modifier"
 				duration = -1
 			}
 		}
-}
+	}
 }
 h_naples_3 = {
 	slot = 3
@@ -348,25 +351,21 @@ h_naples_3 = {
 		provinces_to_highlight = {
 			OR = {
 				area = western_sicily_area
-				province_id = 124
-				province_id = 2982
+				area = sicily_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			western_sicily_area = {
-				type = all
-				owned_by = ROOT
+			num_of_owned_provinces_with = {
+				value = 5
+				OR = {
+					area = western_sicily_area
+					area = sicily_area
+				}
 				is_core = ROOT
 			}
-			owns = 124
-			owns = 2982
 		}
 		effect = {
-			add_power_projection = {
-				type = mission_rewards_power_projection
-				amount = 10
-			}
 			capital_scope = {
 				add_base_tax = 1
 				add_base_production = 1
@@ -390,28 +389,17 @@ h_naples_3 = {
 		provinces_to_highlight = {
 			OR = {
 				area = western_sicily_area
-				province_id = 4737
-				province_id = 2982
-				province_id = 4736
+				area = sicily_area
 			}
+			owned_by = ROOT
 		}
 		trigger = {
-			125 = {
-				owned_by = ROOT
-				is_core = ROOT
-				has_building = coastal_defence
-			}
-			124 = {
-				owned_by = ROOT
-				is_core = ROOT
-				has_building = coastal_defence
-			}
-			4736 = {
-				owned_by = ROOT
-				is_core = ROOT
-				has_building = coastal_defence
-			}
-			2982 = {
+			num_of_owned_provinces_with = {
+				value = 4
+				OR = {
+					area = western_sicily_area
+					area = sicily_area
+				}
 				owned_by = ROOT
 				is_core = ROOT
 				has_building = coastal_defence
@@ -567,24 +555,33 @@ h_naples_4 = {
 		icon = rein_in_the_nobles
 		required_missions = { }
 		trigger = {
-			NOT = { current_age = age_of_discovery }
-			NOT = { current_age = age_of_reformation }
-			crown_land_share = 70
-			NOT = {
-				estate_territory = {
-					estate = estate_nobles
-					territory = 10
+			crown_land_share = 40
+			if = {
+				limit = {
+					has_estate = estate_nobles
 				}
-			}
-			NOT = {
-				any_owned_province = {
-					is_state = yes
-					local_autonomy = 10
+				OR = {
+					NOT = {
+						estate_influence = { 
+							estate = estate_nobles 
+							influence = 60 
+						}
+					}
+					estate_loyalty = { 
+						estate = estate_nobles 
+						loyalty = 60
+					}
 				}
 			}
 		}
 		effect = {
-			add_revolutionary_zeal_or_absolutism = { amount = 15 }
+			custom_tooltip = add_5_crown_land_share
+			hidden_effect = {
+				change_estate_land_share = {
+					estate = all
+					share = -5
+				}
+			}
 		}
 	}
 	h_nap_neapolitan_governance = {

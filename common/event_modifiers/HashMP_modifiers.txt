@@ -8,12 +8,10 @@ h_nap_center_of_production = {
 	trade_goods_size_modifier = 0.1
 }
 h_nap_veteran_soldiers = {
-	infantry_power = 0.1
-	army_tradition = 0.5
+	land_morale = 0.1
 }
-h_nap_breadbasket_of_italy = {
-	development_cost_in_primary_culture = -0.05
-	development_cost = -0.05
+h_nap_urbanization = {
+	development_cost = -0.15
 }
 h_bur_chateau_dolhain = {
 	local_attacker_dice_roll_bonus = -1

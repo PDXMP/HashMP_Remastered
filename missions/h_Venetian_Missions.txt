@@ -363,21 +363,10 @@ emp_ven_slot_3 = {
 			}
 		}
 		effect = {
+			add_prestige_or_monarch_power = {
+				amount = 35
+			}
 			tirol_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT }
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-			tuscany_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT }
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-			central_italy_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT }
 					NOT = { is_core = ROOT	}
@@ -587,21 +576,16 @@ emp_ven_slot_4 = {
 		required_missions = { emp_ven_north_italian_rivals }
 	
 		provinces_to_highlight = {
-			OR = {
-			area = lazio_area
-			area = naples_area
-		}
+			region = italy_region
+			NOT = { 
+				country_or_non_sovereign_subject_holds = ROOT 
+			}
 		}
 		trigger = {
-			lazio_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 40
+				region = italy_region
 			}
-			naples_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-
 		}
 		effect = {
 			add_country_modifier = {
