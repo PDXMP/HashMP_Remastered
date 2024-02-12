@@ -91,8 +91,8 @@ emp_sav_missions_economy = {
 	}
 		effect = {
 			add_country_modifier = {
-				name = h_sav_production_boost
-				duration = 3650 #10 years
+				name = h_sav_infrastructure
+				duration = 5475 #15 years
 			}
 		}
 	}
@@ -369,8 +369,7 @@ emp_sav_missions_conquest_north = {
 			}
 		}
 		effect = {
-			add_prestige = 20
-			add_dip_power = 50
+			add_dip_power = 100
 			112 = {
 				add_trade_modifier = {
 					who = root
@@ -633,24 +632,13 @@ emp_sav_conquer_lombardy = {
 			}
 		}
 		effect = {
-			add_country_modifier = {
-				name = sav_northern_italian_empire
-				duration = 3650
+			add_prestige_or_monarch_power = {
+				amount = 35
 			}
-			lazio_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT }
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-			central_italy_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT }
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
+			# add_country_modifier = {
+			# 	name = sav_northern_italian_empire
+			# 	duration = 3650
+			# }
 		}
 		ai_weight = {
 			factor = 500
@@ -658,22 +646,18 @@ emp_sav_conquer_lombardy = {
 	}
 	h_sav_reign_italy = {
 		icon = mission_rule_italy
-		required_missions = { emp_sav_conquer_UPCI }
+		required_missions = { emp_sav_conquer_UPCI emp_sav_conquer_venetia}
 		provinces_to_highlight = {
-			OR = {
-				area = lazio_area
-				area = central_italy_area
+			region = italy_region
+			NOT = {
+				owned_by = ROOT
 			}
 		}
 		trigger = {
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 2
-				area = central_italy_area
-		}
 		num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-			value = 2
-			area = central_italy_area}
-			owns_core_province = 118
+			value = 40
+			region = italy_region
+		}
 	}
 	effect = {
 		add_country_modifier = {
