@@ -1,3 +1,4 @@
 --Military overrides
 --NDefines.NEconomy.
 NDefines.NEconomy.LAND_TECH_MERC_MAINTENANCE_IMPACT = 0.03
+NDefines.NEconomy.TRADE_PROPAGATE_DIVIDER = 0.08
