@@ -1445,8 +1445,9 @@ VEN_ideas = {
 		trade_efficiency = 0.2
 	}
 	state_inquisition = {
-		global_spy_defence = 0.3
-		yearly_corruption = -0.05
+		#global_spy_defence = 0.3
+		#yearly_corruption = -0.05
+		infantry_power = 0.1
 	}
 	conscription = {
 		global_sailors_modifier = 0.33
