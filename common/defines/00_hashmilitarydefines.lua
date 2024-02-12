@@ -18,3 +18,4 @@ NDefines.NMilitary.LOOTED_MAX = 10
 NDefines.NMilitary.LOOTED_RECOVERY = 0.05
 NDefines.NMilitary.INF_LOOT = 0.3
 NDefines.NMilitary.CAV_LOOT = 1
+NDefines.NMilitary.DELIBERATE_RETREAT_MORALE_PENALTY = 0
