@@ -1172,7 +1172,6 @@ country_decisions = {
 			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_germany_flag }
 			NOT = { exists = GER }
-			adm_tech = 20
 			OR = {
 				is_or_was_tag = { tag = BRA }
 				is_or_was_tag = { tag = HES }
