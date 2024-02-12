@@ -218,7 +218,7 @@ GBR_ideas = {
 	britanna_rules_the_waves = {
 		leader_naval_manuever = 1
 		blockade_efficiency = 0.33
-		allowed_marine_fraction = 0.50
+		allowed_marine_fraction = 0.1
 	}
 }
 
@@ -848,7 +848,7 @@ NED_ideas = {
 	}
 	instructie_voor_de_admiraliteiten = {
 		leader_naval_fire = 2
-		allowed_marine_fraction = 0.25
+		allowed_marine_fraction = 0.1
 	}
 	embrace_humanism = {
 		tolerance_heretic = 3

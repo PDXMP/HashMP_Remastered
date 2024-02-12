@@ -9,6 +9,12 @@ NDefines.NCountry.PS_REPLACE_RIVAL = 50
 NDefines.NCountry.DEBT_LIMIT_ADM = -999
 NDefines.NCountry.DEBT_LIMIT_MIL = -999
 NDefines.NCountry.PS_REDUCE_WAREXHAUSTION = 100
+NDefines.NCountry.PROVINCE_DISCOVERY_PRESTIGE = 0.1			-- Prestige change when first in tech group to discover first province in a region
+NDefines.NCountry.PROVINCE_DISCOVERY_YEARS_TECHNOLOGY = 30		-- Years until discoveries spread within technology group
+NDefines.NCountry.PROVINCE_DISCOVERY_YEARS_RELIGION = 60		-- Years until discoveries spread with religion 
+NDefines.NCountry.SCRIPTED_ADVISOR_DISCOUNT = 0.25
+NDefines.NCountry.RAZE_PROVINCE_DEVELOPMENT_DECREASE = 0.0
+NDefines.NCountry.PS_ASSAULT = 0
 --to consider
 --REVOLT_SIZE_DEVELOPMENT_MULTIPLIER = 0.3,		-- Multiplied with the province's development
 --REVOLT_SIZE_BASE = 5,

@@ -1,6 +1,7 @@
 --Military overrides
 --NDefines.NMilitary.
 NDefines.NMilitary.NOMAD_NON_PLAINS_SHOCK_PENALTY = -0.0
+NDefines.NMilitary.NOMAD_PLAINS_SHOCK_BONUS = 0.1
 NDefines.NMilitary.DEFAULT_WARGOAL_TICKINGWARSCORE_BONUS = 0.8		-- Amount of warscore per month since attacker/defender started getting the bonus for completing war goal
 NDefines.NMilitary.WARGOAL_MAX_BONUS = 40
 NDefines.NMilitary.DEFAULT_WARGOAL_WARSCORE_BONUS	= 6			-- Warscore bonus

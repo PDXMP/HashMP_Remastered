@@ -137,7 +137,6 @@ non_coastal = {
 }
 
 coastal_sea = {
-	local_naval_engagement_modifier = -0.20
 }
 
 tropical = {
@@ -584,6 +583,7 @@ base_values = {
 	tolerance_heretic = -2
 	global_missionary_strength = 0.02
 	global_manpower = 10.0
+	global_sailors = 500
 	advisor_pool = 3
 	colonist_placement_chance = 0.1
 	free_leader_pool = 1
@@ -607,6 +607,7 @@ base_values = {
 	has_marines = yes
 	settle_cost = 100
 	add_tribal_land_cost = 100
+	allowed_marine_fraction = 0.1
 }
 
 # AI 'cheats' that compensate for flaws in its long-term decision making, removing these may severely cripple the AI
@@ -1354,7 +1355,8 @@ high_army_professionalism = {
 	fire_damage = 0.1
 	shock_damage = 0.1
 	siege_ability = 0.2
-	drill_decay_modifier = -0.5
+	drill_decay_modifier = -0.25
+	drill_gain_modifier = 1.0
 	allowed_samurai_fraction = 0.1
 }
 
@@ -2031,7 +2033,6 @@ hussars_regiment = {
 
 marine_regiment = {
     regiment_disembark_speed = 2
-	shock_damage_received = 0.1
 }
 
 banner_regiment = {
