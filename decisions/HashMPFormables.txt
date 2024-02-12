@@ -25,7 +25,7 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
 			num_of_owned_provinces_with = {
-				value = 45
+				value = 35
 				region = italy_region
 				is_core = ROOT
 			}
