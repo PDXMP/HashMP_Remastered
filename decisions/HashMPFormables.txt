@@ -1031,17 +1031,7 @@ country_decisions = {
 			NOT = { exists = PRU }
 		}
 		provinces_to_highlight = {
-			OR = {
-				province_id = 41	# Königsberg
-				AND = {
-					province_id = 43	# Danzig
-					ROOT = { NOT = { owns_core_province = 2995 } }
-				}
-				AND = {
-					province_id = 2995
-					ROOT = { NOT = { owns_core_province = 2995 } }
-				}
-			}
+			region = north_german_region
 			OR = {
 				NOT = { owned_by = ROOT }
 				NOT = { is_core = ROOT }
@@ -1056,10 +1046,10 @@ country_decisions = {
 				religion = hussite
 				religion = anglican
 			}
-			owns_core_province = 41			# Königsberg
-			OR = {
-				owns_core_province = 43		# Danzig
-				owns_core_province = 2995	# Stolp
+			num_of_owned_provinces_with = {
+				region = north_german_region
+				value = 25
+				is_core = ROOT
 			}
 			is_at_war = no
 		}
