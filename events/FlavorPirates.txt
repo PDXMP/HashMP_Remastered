@@ -434,7 +434,7 @@ normal_or_historical_nations = yes
 #			}
 #			define_ruler = {
 #				name = "Murat" # Jan Janszoon
-				dynasty = "Reis"
+#				dynasty = "Reis"
 #				adm = 3
 #				dip = 3
 #				mil = 4
