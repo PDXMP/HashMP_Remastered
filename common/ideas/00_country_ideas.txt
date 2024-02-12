@@ -2410,7 +2410,7 @@ NAP_ideas = {
 	}
 	
 	bonus = {
-		global_manpower_modifier = 0.2
+		global_manpower_modifier = 0.1 #0.2
 	}
 	
 	trigger = {
