@@ -266,7 +266,9 @@ emp_ven_slot_3 = {
 		position = 1
 		
 		trigger = {
-			share_of_starting_income = 1.5
+			#share_of_starting_income = 1.5
+			army_size_percentage = 0.8
+			num_of_generals = 1
 		}
 		effect = {
 			add_mil_power = 50
