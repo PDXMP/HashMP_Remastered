@@ -40,6 +40,12 @@ country_decisions = {
 				}
 				add_government_reform = signoria_reform
 			}
+			if = {
+				limit = {
+					NOT = { government_rank = 2 }
+				}
+				set_government_rank = 2
+			}
 			italy_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -57,6 +63,9 @@ country_decisions = {
 			swap_non_generic_missions = yes
 			set_country_flag = formed_italy_flag
 		}
+		ai_will_do = {
+			factor = 1
+		}
 	}
 	netherlands_nation = {
 		major = yes
@@ -64,21 +73,8 @@ country_decisions = {
 			normal_or_historical_nations = yes
 			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_netherlands_flag }
-			OR = {
-				ai = no
-				is_playing_custom_nation = no
-			}
-			OR = {
-				NOT = { exists = NED }
-				ai = no
-			}
-			OR = {
-				is_free_or_tributary_trigger = yes
-				ai = no
-			}
-			NOT = { tag = PAP }
-			NOT = { tag = NED }
-			NOT = { tag = HLR }
+			is_free_or_tributary_trigger = yes
+			NOT = { exists = NED }
 			OR = {
 				tag = HES 
 				tag = BUR
@@ -119,7 +115,6 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
-			NOT = { exists = NED }
 			owns_core_province = 95 # Breda
 			owns_core_province = 98 # Utrecht
 			owns_core_province = 99 # Gelre
@@ -141,27 +136,6 @@ country_decisions = {
 			}
 		}
 	 	effect = {
-			if = {
-				limit = {
-					is_elector = no
-					is_emperor = no
-					OR = {
-						is_part_of_hre = yes
-						any_owned_province = {
-							is_part_of_hre = yes
-						}
-					}
-				}
-				set_in_empire = no
-				hidden_effect = {
-					every_owned_province = {
-						limit = {
-							is_part_of_hre = yes
-						}
-						set_in_empire = no
-					}
-				}
-			}
 	  		if = {
 	  			limit = {
 	  				tag = BUR
@@ -196,44 +170,13 @@ country_decisions = {
 			set_country_flag = formed_netherlands_flag
 			add_prestige = 25
 			if = {
-				limit = {
-					has_custom_ideas = no
-					NOT = { has_idea_group = NED_ideas }
-				}
+				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				NOT = { adm_tech = 9 }
-			}
-			modifier = {
-				factor = 0
-				tag = BUR
-				NOT = { is_year = 1500 }
-			}
-			modifier = {
-				factor = 0
-				NOT = { num_of_cities = 3 }
-			}
-			modifier = {
-				factor = 10
-				NOT = {
-					any_ally = {
-						OR = {
-							owns_or_non_sovereign_subject_of = 95
-							owns_or_non_sovereign_subject_of = 97
-							owns_or_non_sovereign_subject_of = 98
-							owns_or_non_sovereign_subject_of = 99
-							owns_or_non_sovereign_subject_of = 4383
-						}
-					}
-				}
-			}
 		}
-		ai_importance = 400
 	}
 	turkish_nation = {
 		major = yes
@@ -241,34 +184,7 @@ country_decisions = {
 			normal_or_historical_nations = yes
 			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_rum_flag }
-			# OR = {
-			# 	ai = no
-			# 	is_playing_custom_nation = no
-			# }
-			# OR = {
-			# 	is_free_or_tributary_trigger = yes
-			# 	ai = no
-			# }
-			#NOT = { tag = TUR }
 			NOT = { exists = RUM }
-			# NOT = { tag = HLR }
-			# NOT = { tag = PAP }
-			# NOT = { tag = BYZ }
-			# NOT = { tag = RUS }
-			# NOT = { tag = PRU }
-			# NOT = { tag = ENG }
-			# is_emperor_of_china = no
-			# primary_culture = turkish
-			# is_colonial_nation = no
-			# OR = {
-			# 	is_former_colonial_nation = no
-			# 	AND = {
-			# 		is_former_colonial_nation = yes
-			# 		ai = no
-			# 	}
-			# }
-
-			#HashMP
 			OR = {
 				tag = MAM
 				tag = QAR
@@ -276,16 +192,6 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 			region = anatolia_region
-			# OR = {
-			# 	province_id = 151		# Constantinople
-			# 	province_id = 316		# Iznik
-			# 	province_id = 323		# Konya
-			# 	province_id = 326		# Ankara
-			# 	province_id = 329		# Sivas
-			# 	province_id = 331		# Erzurum
-			# 	province_id = 2301		# Kayseri
-			# 	province_id = 4312		# Eskeshehir
-			# }
 			OR = {
 				NOT = { owned_by = ROOT }
 				NOT = { is_core = ROOT }
@@ -301,17 +207,6 @@ country_decisions = {
 				is_core = ROOT
 				region = anatolia_region
 			}
-			NOT = { exists = RUM }
-			#NOT = { exists = TUR }
-			#NOT = { exists = BYZ }
-			# owns_core_province = 151		# Constantinople
-			# owns_core_province = 316		# Iznik
-			# owns_core_province = 323		# Konya
-			# owns_core_province = 326		# Ankara
-			# owns_core_province = 329		# Sivas
-			# owns_core_province = 331		# Erzurum
-			# owns_core_province = 2301		# Kayseri
-			# owns_core_province = 4312		# Eskeshehir
 		}
 		effect = {
 			change_tag = RUM
@@ -371,7 +266,6 @@ country_decisions = {
 		ai_will_do = {
 			factor = 1
 		}
-		ai_importance = 400
 	}
 	egyptian_nation = {
 		major = yes
@@ -379,30 +273,6 @@ country_decisions = {
 			normal_or_historical_nations = yes
 			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_egypt_flag }
-			# OR = {
-			# 	ai = no
-			# 	is_playing_custom_nation = no
-			# }
-			# OR = {
-			# 	is_free_or_tributary_trigger = yes
-			# 	ai = no
-			# }
-			# NOT = { tag = HLR }
-			# NOT = { tag = PAP }
-			# NOT = { tag = TUR }
-			# NOT = { tag = ARB }
-			# NOT = { exists = EGY }
-			# NOT = { has_reform = celestial_empire }
-			# primary_culture = al_misr_arabic
-			# OR = {
-			# 	ai = no
-			# 	AND = {
-			# 		ai = yes
-			# 		num_of_cities = 3
-			# 	}
-			# }
-
-			#HashMP
 			tag = MAM
 		}
 		provinces_to_highlight = {
@@ -484,11 +354,9 @@ country_decisions = {
 			swap_non_generic_missions = yes
 		}
 		ai_will_do = {
-			factor = 0
+			factor = 1
 		}
 	}
-	
-	
 	adopt_mamluk_government = {
 		major = yes
 		potential = {
@@ -498,33 +366,10 @@ country_decisions = {
 			}
 			NOT = { has_country_flag = formed_mamluks }
 			was_never_end_game_tag_trigger = yes
-			# NOT = { tag = MAM }
-			# NOT = { tag = HLR }
-			# NOT = { tag = PAP }
-			# NOT = { tag = TUR }
-			# NOT = { tag = ARB }
-			# NOT = { tag = EGY }
-			# OR = {
-			# 	ai = no
-			# 	NOT = { exists = MAM }
-			# }
-			# any_owned_province = {
-			# 	OR = {
-			# 		region = egypt_region
-			# 		region = arabia_region
-			# 		region = mashriq_region
-			# 		region = maghreb_region
-			# 		region = horn_of_africa_region
-			# 	}
-			# }
 			tag = TUN
 		}
 		provinces_to_highlight = {
 			region = egypt_region
-			# province_id = 361 	# Cairo
-			# 361 = { 			# Cairo
-			# 	is_state = yes
-			# }
 			OR = {
 				NOT = { owned_by = ROOT }
 				NOT = { is_core = ROOT }
@@ -532,7 +377,6 @@ country_decisions = {
 		}
 		allow = {
 			NOT = { exists = MAM } #To Show why it might disappear
-			#owns_core_province = 361
 			num_of_owned_provinces_with = {
 				value = 20
 				region = egypt_region
@@ -590,10 +434,6 @@ country_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				adm_tech = 20
-			}
 		}
 	}
 	arab_nation = {
@@ -602,49 +442,10 @@ country_decisions = {
 			normal_or_historical_nations = yes
 			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_arabia_flag }
-			# OR = {
-			# 	ai = no
-			# 	is_playing_custom_nation = no
-			# }
-			# OR = {
-			# 	is_free_or_tributary_trigger = yes
-			# 	ai = no
-			# }
-			# NOT = { exists = ARB }
-			# NOT = { tag = HLR }
-			# NOT = { tag = PAP }
-			# is_colonial_nation = no
-			# OR = {
-			# 	is_former_colonial_nation = no
-			# 	AND = {
-			# 		is_former_colonial_nation = yes
-			# 		ai = no
-			# 	}
-			# }
-			#culture_group = turko_semitic #Arabic
-			#NOT = { primary_culture = turkish }
-
-			#HashMP
 			tag = MAM
 		}
 		provinces_to_highlight = {
 			region = arabia_region
-			# OR = {
-			# 	province_id = 358			#Alexandria
-			# 	province_id = 361			#Cairo
-			# 	province_id = 377			#Aleppo
-			# 	province_id = 379			#Jerusalem
-			# 	province_id = 382			#Damascus
-			# 	province_id = 384			#Medina
-			# 	province_id = 385			#Mecca
-			# 	province_id = 388			#Aden
-			# 	province_id = 390			#Sanaa
-			# 	province_id = 392			#Al-Arid
-			# 	province_id = 394			#Qatif
-			# 	province_id = 400			#Muscat
-			# 	province_id = 403			#Nizwa
-			# 	#province_id = 410			#Baghdad
-			# }
 			OR = {
 				NOT = { owned_by = ROOT }
 				NOT = { is_core = ROOT }
@@ -666,20 +467,6 @@ country_decisions = {
 				region = arabia_region
 			}
 			NOT = { exists = ARB }
-			# owns_core_province = 358			#Alexandria
-			# owns_core_province = 361			#Cairo
-			# owns_core_province = 377			#Aleppo
-			# owns_core_province = 379			#Jerusalem
-			# owns_core_province = 382			#Damascus
-			# owns_core_province = 384			#Medina
-			# owns_core_province = 385			#Mecca
-			# owns_core_province = 388			#Aden
-			# owns_core_province = 390			#Sanaa
-			# owns_core_province = 392			#Al-Arid
-			# owns_core_province = 394			#Qatif
-			# owns_core_province = 400			#Muscat
-			# owns_core_province = 403			#Nizwa
-			#owns_core_province = 410			#Baghdad
 		}
 		effect = {
 			on_change_tag_effect = yes
@@ -727,11 +514,6 @@ country_decisions = {
 		}
 		ai_will_do = {
 			factor = 1
-			modifier = {
-				factor = 0
-				not = { adm_tech = 19 }
-			}
 		}
-		ai_importance = 400
 	}
 }
