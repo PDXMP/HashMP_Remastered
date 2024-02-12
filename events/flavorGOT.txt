@@ -919,34 +919,34 @@ country_event = {
 		}
 	}
 	
-	option = {	#We TAKE the goods!
-		name = flavor_got.38.b
-		set_country_flag = got_pirate_missions
-		swap_non_generic_missions = yes
-		add_government_reform = pirate_republic_reform
-		update_sprite_pack = yes
-		if = {
-			limit = {
-				any_owned_province = {
-					has_port = yes
-				}
-			}
-			random_owned_province = {
-				limit = {
-					has_port = yes
-				}
-				galley = root
-				galley = root
-				galley = root
-				light_ship = root
-				light_ship = root
-				light_ship = root
-			}
-		}
-		ai_chance = {
-			factor = 9
-		}
-	}
+	# option = {	#We TAKE the goods!
+	# 	name = flavor_got.38.b
+	# 	set_country_flag = got_pirate_missions
+	# 	swap_non_generic_missions = yes
+	# 	add_government_reform = pirate_republic_reform
+	# 	update_sprite_pack = yes
+	# 	if = {
+	# 		limit = {
+	# 			any_owned_province = {
+	# 				has_port = yes
+	# 			}
+	# 		}
+	# 		random_owned_province = {
+	# 			limit = {
+	# 				has_port = yes
+	# 			}
+	# 			galley = root
+	# 			galley = root
+	# 			galley = root
+	# 			light_ship = root
+	# 			light_ship = root
+	# 			light_ship = root
+	# 		}
+	# 	}
+	# 	ai_chance = {
+	# 		factor = 9
+	# 	}
+	# }
 }
 
 #Move capital to the new world? (integrate subject)
