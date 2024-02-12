@@ -555,124 +555,124 @@ country_decisions = {
 	}
 	
 	
-	trade_propagation_convert_to_islam = {
-		potential = {
-			has_dlc = "Cradle of Civilization"
-			NOT = { religion_group = muslim }
-			capital_scope = {
-				religion_group = muslim
-				is_node_in_trade_company_region = yes
-			}
-		}
-		allow = {
-			if = {
-				limit = { OR = { government = monarchy government = tribal } }
-				legitimacy = 90
-			}
-			if = {
-				limit = { uses_devotion = yes }
-				NOT = { devotion = 80 }
-			}
-			has_regency = no
-			is_free_or_tributary_trigger = yes
-			custom_trigger_tooltip = {
-				tooltip = the_dominant_religion_is_a_form_of_islam_tooltip
-				OR = {
-					dominant_religion = sunni
-					dominant_religion = shiite
-					dominant_religion = ibadi
-				}
-			}
-		}
-		effect = {
-			if = {
-				limit = { capital_scope = { religion = sunni } }
-				change_religion = sunni
-			}
-			else_if = {
-				limit = { capital_scope = { religion = shiite } }
-				change_religion = shiite
-			}
-			else_if = {
-				limit = { capital_scope = { religion = ibadi } }
-				change_religion = ibadi
-			}
-			else = {
-				change_religion = capital
-			}
-			add_stability = 1
-			add_legitimacy = 10
-			clr_country_flag = sultan_titles_for_non_muslims
-			remove_country_modifier = islamic_titles
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				has_country_flag = sultan_titles_for_non_muslims
-				had_country_flag = { flag = sultan_titles_for_non_muslims days = 10950 } #After 30 years
-				NOT = { tag = ARK }
-			}
-			modifier = {
-				factor = 0
-				government = theocracy
-			}
-			modifier = {
-				factor = 0
-				OR = {
-					religion_group = jewish_group
-					religion_group = zoroastrian_group
-				}
-			}
-		}
-	}
+	# trade_propagation_convert_to_islam = {
+	# 	potential = {
+	# 		has_dlc = "Cradle of Civilization"
+	# 		NOT = { religion_group = muslim }
+	# 		capital_scope = {
+	# 			religion_group = muslim
+	# 			is_node_in_trade_company_region = yes
+	# 		}
+	# 	}
+	# 	allow = {
+	# 		if = {
+	# 			limit = { OR = { government = monarchy government = tribal } }
+	# 			legitimacy = 90
+	# 		}
+	# 		if = {
+	# 			limit = { uses_devotion = yes }
+	# 			NOT = { devotion = 80 }
+	# 		}
+	# 		has_regency = no
+	# 		is_free_or_tributary_trigger = yes
+	# 		custom_trigger_tooltip = {
+	# 			tooltip = the_dominant_religion_is_a_form_of_islam_tooltip
+	# 			OR = {
+	# 				dominant_religion = sunni
+	# 				dominant_religion = shiite
+	# 				dominant_religion = ibadi
+	# 			}
+	# 		}
+	# 	}
+	# 	effect = {
+	# 		if = {
+	# 			limit = { capital_scope = { religion = sunni } }
+	# 			change_religion = sunni
+	# 		}
+	# 		else_if = {
+	# 			limit = { capital_scope = { religion = shiite } }
+	# 			change_religion = shiite
+	# 		}
+	# 		else_if = {
+	# 			limit = { capital_scope = { religion = ibadi } }
+	# 			change_religion = ibadi
+	# 		}
+	# 		else = {
+	# 			change_religion = capital
+	# 		}
+	# 		add_stability = 1
+	# 		add_legitimacy = 10
+	# 		clr_country_flag = sultan_titles_for_non_muslims
+	# 		remove_country_modifier = islamic_titles
+	# 	}
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 		modifier = {
+	# 			factor = 0
+	# 			has_country_flag = sultan_titles_for_non_muslims
+	# 			had_country_flag = { flag = sultan_titles_for_non_muslims days = 10950 } #After 30 years
+	# 			NOT = { tag = ARK }
+	# 		}
+	# 		modifier = {
+	# 			factor = 0
+	# 			government = theocracy
+	# 		}
+	# 		modifier = {
+	# 			factor = 0
+	# 			OR = {
+	# 				religion_group = jewish_group
+	# 				religion_group = zoroastrian_group
+	# 			}
+	# 		}
+	# 	}
+	# }
 	
-	trade_propagation_convert_to_zoroastrianism = {
-		potential = {
-			has_dlc = "Cradle of Civilization"
-			NOT = { religion_group = zoroastrian_group }
-			capital_scope = {
-				religion_group = zoroastrian_group
-				is_node_in_trade_company_region = yes
-			}
-		}
-		allow = {
-			if = {
-				limit = { OR = { government = monarchy government = tribal } }
-				legitimacy = 90
-			}
-			if = {
-				limit = { uses_devotion = yes }
-				NOT = { devotion = 80 }
-			}
-			has_regency = no
-			is_free_or_tributary_trigger = yes
-			dominant_religion = zoroastrian
-		}
-		effect = {
-			change_religion = zoroastrian
-			add_stability = 1
-			add_legitimacy = 10
-			country_event = {
-				id = flavor_per.72
-			}
-		}
-		ai_will_do = {
-			factor = 1
-			modifier = {
-				factor = 0
-				government = theocracy
-			}
-			modifier = {
-				factor = 0
-				OR = {
-					religion_group = jewish_group
-					religion_group = muslim
-					religion_group = christian
-				}
-			}
-		}
-	}
+	# trade_propagation_convert_to_zoroastrianism = {
+	# 	potential = {
+	# 		has_dlc = "Cradle of Civilization"
+	# 		NOT = { religion_group = zoroastrian_group }
+	# 		capital_scope = {
+	# 			religion_group = zoroastrian_group
+	# 			is_node_in_trade_company_region = yes
+	# 		}
+	# 	}
+	# 	allow = {
+	# 		if = {
+	# 			limit = { OR = { government = monarchy government = tribal } }
+	# 			legitimacy = 90
+	# 		}
+	# 		if = {
+	# 			limit = { uses_devotion = yes }
+	# 			NOT = { devotion = 80 }
+	# 		}
+	# 		has_regency = no
+	# 		is_free_or_tributary_trigger = yes
+	# 		dominant_religion = zoroastrian
+	# 	}
+	# 	effect = {
+	# 		change_religion = zoroastrian
+	# 		add_stability = 1
+	# 		add_legitimacy = 10
+	# 		country_event = {
+	# 			id = flavor_per.72
+	# 		}
+	# 	}
+	# 	ai_will_do = {
+	# 		factor = 1
+	# 		modifier = {
+	# 			factor = 0
+	# 			government = theocracy
+	# 		}
+	# 		modifier = {
+	# 			factor = 0
+	# 			OR = {
+	# 				religion_group = jewish_group
+	# 				religion_group = muslim
+	# 				religion_group = christian
+	# 			}
+	# 		}
+	# 	}
+	# }
 	
 	regulate_the_monastaries = {
 		potential = {
