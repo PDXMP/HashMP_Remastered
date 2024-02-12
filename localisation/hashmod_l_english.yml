@@ -207,3 +207,4 @@
  h_nap_med_dom:0 "Mediterranean Domination"
  desc_h_nap_med_dom:0 "Our vast conquest of the Meditterranean has yielded us great benefits from shipbuilding contractors across the sea."
  h_nap_urbanization_tooltip:0 "Every owned province with a §YFarm Estate§! gains the following bonus:"
+ h_delay_great_men_event:0 "Perhaps it is best that we wait."
