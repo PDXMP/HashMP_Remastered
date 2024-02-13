@@ -1801,11 +1801,11 @@ wharf = {
 			type = production
 			value = 2
 		}
-		add_dev_from_building = {
-			building = manufactory 
-			type = production 
-			value = 1 
-		}
+		# add_dev_from_building = {
+		# 	building = manufactory 
+		# 	type = production 
+		# 	value = 1 
+		# }
 		
 	}
 	on_destroyed = {
@@ -1814,11 +1814,11 @@ wharf = {
 			type = production
 			value = 2
 		}
-		remove_dev_from_building = {
-			building = manufactory 
-			type = production 
-			value = 1
-		}
+		# remove_dev_from_building = {
+		# 	building = manufactory 
+		# 	type = production 
+		# 	value = 1
+		# }
 	}
 	on_obsolete = {
 	}
@@ -1865,11 +1865,11 @@ weapons = {
 			type = production
 			value = 2
 		}
-		add_dev_from_building = {
-			building = manufactory 
-			type = manpower 
-			value = 1 
-		}
+		# add_dev_from_building = {
+		# 	building = manufactory 
+		# 	type = manpower 
+		# 	value = 1 
+		# }
 	}
 	on_destroyed = {
 		remove_development_from_building = {
@@ -1877,11 +1877,11 @@ weapons = {
 			type = production
 			value = 2
 		}
-		remove_dev_from_building = {
-			building = manufactory 
-			type = manpower 
-			value = 1
-		}
+		# remove_dev_from_building = {
+		# 	building = manufactory 
+		# 	type = manpower 
+		# 	value = 1
+		# }
 	}
 	on_obsolete = {
 	}
@@ -1905,11 +1905,11 @@ textile = {
 			type = production
 			value = 2
 		}
-		add_dev_from_building = {
-			building = manufactory 
-			type = production 
-			value = 1 
-		}
+		# add_dev_from_building = {
+		# 	building = manufactory 
+		# 	type = production 
+		# 	value = 1 
+		# }
 	}
 	on_destroyed = {
 		remove_development_from_building = {
@@ -1917,11 +1917,11 @@ textile = {
 			type = production
 			value = 2
 		}
-		remove_dev_from_building = {
-			building = manufactory 
-			type = production 
-			value = 1
-		}
+		# remove_dev_from_building = {
+		# 	building = manufactory 
+		# 	type = production 
+		# 	value = 1
+		# }
 	}
 	on_obsolete = {
 	}
@@ -1947,11 +1947,11 @@ plantations = {
 			type = production
 			value = 2
 		}
-		add_dev_from_building = {
-			building = manufactory 
-			type = production 
-			value = 1 
-		}
+		# add_dev_from_building = {
+		# 	building = manufactory 
+		# 	type = production 
+		# 	value = 1 
+		# }
 	}
 	on_destroyed = {
 		remove_development_from_building = {
@@ -1959,11 +1959,11 @@ plantations = {
 			type = production
 			value = 2
 		}
-		remove_dev_from_building = {
-			building = manufactory 
-			type = production 
-			value = 1
-		}
+		# remove_dev_from_building = {
+		# 	building = manufactory 
+		# 	type = production 
+		# 	value = 1
+		# }
 	}
 	on_obsolete = {
 	}
@@ -1989,11 +1989,11 @@ tradecompany = {
 			type = production
 			value = 2
 		}
-		add_dev_from_building = {
-			building = manufactory 
-			type = production 
-			value = 1 
-		}
+		# add_dev_from_building = {
+		# 	building = manufactory 
+		# 	type = production 
+		# 	value = 1 
+		# }
 	}
 	on_destroyed = {
 		remove_development_from_building = {
@@ -2001,11 +2001,11 @@ tradecompany = {
 			type = production
 			value = 2
 		}
-		remove_dev_from_building = {
-			building = manufactory 
-			type = production 
-			value = 1
-		}
+		# remove_dev_from_building = {
+		# 	building = manufactory 
+		# 	type = production 
+		# 	value = 1
+		# }
 	}
 	on_obsolete = {
 	}
@@ -2028,11 +2028,11 @@ farm_estate = {
 			type = production
 			value = 2
 		}
-		add_dev_from_building = {
-			building = manufactory 
-			type = production 
-			value = 1
-		}
+		# add_dev_from_building = {
+		# 	building = manufactory 
+		# 	type = production 
+		# 	value = 1
+		# }
 		if = {
 			limit = {
 				FROM = {
@@ -2048,11 +2048,11 @@ farm_estate = {
 			type = production 
 			value = 2 
 		}
-		remove_dev_from_building = {
-			building = manufactory 
-			type = production 
-			value = 1
-		}
+		# remove_dev_from_building = {
+		# 	building = manufactory 
+		# 	type = production 
+		# 	value = 1
+		# }
 		if = {
 			limit = {
 				FROM = {
@@ -2085,11 +2085,11 @@ mills = {
 			type = production
 			value = 2
 		}
-		add_dev_from_building = {
-			building = manufactory 
-			type = production 
-			value = 1 
-		}
+		# add_dev_from_building = {
+		# 	building = manufactory 
+		# 	type = production 
+		# 	value = 1 
+		# }
 	}
 	on_destroyed = {
 		remove_development_from_building = {
@@ -2097,11 +2097,11 @@ mills = {
 			type = production
 			value = 2
 		}
-		remove_dev_from_building = {
-			building = manufactory 
-			type = production 
-			value = 1
-		}
+		# remove_dev_from_building = {
+		# 	building = manufactory 
+		# 	type = production 
+		# 	value = 1
+		# }
 	}
 	on_obsolete = {
 	}
@@ -2164,11 +2164,11 @@ ramparts = {
 	show_separate = yes # Means as a manufactory it will be shown according to the old way
 	
 	on_built = {
-		add_dev_from_building = {
-			building = manufactory 
-			type = manpower 
-			value = 1 
-		}
+		# add_dev_from_building = {
+		# 	building = manufactory 
+		# 	type = manpower 
+		# 	value = 1 
+		# }
 		if = {
 			limit = {
 				owner = {
@@ -2188,11 +2188,11 @@ ramparts = {
 			limit = { has_province_modifier = per_reinforced_defenses }
 			remove_province_modifier = per_reinforced_defenses
 		}
-		remove_dev_from_building = {
-			building = manufactory 
-			type = manpower 
-			value = 1
-		}
+		# remove_dev_from_building = {
+		# 	building = manufactory 
+		# 	type = manpower 
+		# 	value = 1
+		# }
 		if = {
 			limit = {
 				has_province_modifier = estate_nobles_development_of_castles_ramparts_mod
@@ -2243,11 +2243,11 @@ soldier_households = {
 			type = production
 			value = 2
 		}
-		add_dev_from_building = {
-			building = manufactory 
-			type = manpower 
-			value = 1 
-		}
+		# add_dev_from_building = {
+		# 	building = manufactory 
+		# 	type = manpower 
+		# 	value = 1 
+		# }
 		if = {
 			limit = {
 				FROM = {
@@ -2266,11 +2266,11 @@ soldier_households = {
 			type = production
 			value = 2
 		}
-		remove_dev_from_building = {
-			building = manufactory 
-			type = manpower 
-			value = 1
-		}
+		# remove_dev_from_building = {
+		# 	building = manufactory 
+		# 	type = manpower 
+		# 	value = 1
+		# }
 		if = {
 			limit = {
 				has_province_modifier = wei_suo_system_reform_soldier_households_modifier
@@ -2320,11 +2320,11 @@ impressment_offices = {
 			type = manpower
 			value = 2
 		}
-		add_dev_from_building = {
-			building = impressment_offices 
-			type = manpower 
-			value = 1 
-		}
+		# add_dev_from_building = {
+		# 	building = impressment_offices 
+		# 	type = manpower 
+		# 	value = 1 
+		# }
 	}
 	on_destroyed = {
 		remove_development_from_building = {
@@ -2332,11 +2332,11 @@ impressment_offices = {
 			type = manpower
 			value = 2
 		}
-		remove_dev_from_building = {
-			building = impressment_offices 
-			type = manpower 
-			value = 1 
-		}
+		# remove_dev_from_building = {
+		# 	building = impressment_offices 
+		# 	type = manpower 
+		# 	value = 1 
+		# }
 	}
 	on_obsolete = {
 	}
