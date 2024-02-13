@@ -1199,7 +1199,7 @@ h_defensive_trade = {
 	}
 	
 	hostile_fleet_attrition = 1
-	province_trade_power_modifier = 0.2
+	global_prov_trade_power_modifier = 0.2
 
 	effect = {}
 	removed_effect = {}
