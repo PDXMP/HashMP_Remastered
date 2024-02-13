@@ -1243,6 +1243,7 @@ h_defensive_maritime = {
 	
 	shock_damage_received = -0.1
 	allowed_marine_fraction = 0.1
+	global_sailors_modifier = -0.1
 
 	effect = {}
 	removed_effect = {}
