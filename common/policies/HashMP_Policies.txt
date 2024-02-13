@@ -2388,7 +2388,7 @@ h_influence_humanist = {
 }
 
 h_influence_infrastructure = {
-	monarch_power = DIP
+	monarch_power = ADM
 
 	potential = {
 		has_idea_group = influence_ideas
