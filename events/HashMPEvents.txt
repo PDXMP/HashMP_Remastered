@@ -111,7 +111,7 @@ country_event = {
 	id = HashMPEvents.3
 	title = "HashMPEvents_3_title"
 	desc = "HashMPEvents_3_desc"
-	picture = IMPERIAL_SEAL_eventPicture
+	picture = HRE_eventPicture
 
 	is_triggered_only = yes
 
@@ -132,6 +132,8 @@ country_event = {
 	#Marshal of the Empire
 	option = {
 		name = "HashMPEvents_3_a"
+		goto = capital
+		custom_tooltip = h_imperial_collapse_tooltip
 
 		define_general = {
 			shock = 3
@@ -140,15 +142,19 @@ country_event = {
 			siege = 1
 			trait = h_marshal_of_the_empire_personality
 		}
+
+		custom_tooltip = h_marshal_tooltip
 	}
 	#Admiral of the Empire
 	option = {
 		name = "HashMPEvents_3_b"
+		goto = capital
 		trigger = {
 			any_owned_province = {
 				has_port = yes
 			}
 		}
+		custom_tooltip = h_imperial_collapse_tooltip
 
 		define_admiral = {
 			shock = 3
@@ -157,10 +163,15 @@ country_event = {
 			siege = 0
 			trait = h_admiral_of_the_empire_personality
 		}
+
+		custom_tooltip = h_admiral_tooltip
 	}
 	#Imperial Advisors
 	option = {
 		name = "HashMPEvents_3_c"
+		goto = capital
+		custom_tooltip = h_imperial_collapse_tooltip
+
 		add_country_modifier = {
 			name = h_imperial_advisors
 			duration = 7300 #20 years
@@ -169,9 +180,12 @@ country_event = {
 	#Imperial Unity
 	option = {
 		name = "HashMPEvents_3_d"
+		goto = capital
 		trigger = {
 			is_emperor = yes
 		}
+		custom_tooltip = h_imperial_collapse_tooltip
+
 		add_country_modifier = {
 			name = h_imperial_unity
 			duration = 7300 #20 years
@@ -184,7 +198,7 @@ country_event = {
 	id = HashMPEvents.4
 	title = "HashMPEvents_4_title"
 	desc = "HashMPEvents_4_desc"
-	picture = IMPERIAL_SEAL_eventPicture
+	picture = ASSASSINATION_eventPicture
 
 	is_triggered_only = yes
 
@@ -202,16 +216,20 @@ country_event = {
 	id = HashMPEvents.5
 	title = "HashMPEvents_5_title"
 	desc = "HashMPEvents_5_desc"
-	picture = IMPERIAL_SEAL_eventPicture
+	picture = BATTLE_eventPicture
 
 	is_triggered_only = yes
 	major = yes
 
 	option = {
 		name = "HashMPEvents_5_a"
+		add_prestige_or_monarch_power = {
+			amount = 25
+		}
 		add_country_modifier = {
 			name = h_victory_over_the_empire
 			duration = 7300 #20 years
 		}
+		custom_tooltip = h_victory_over_the_empire_tooltip
 	}
 }
