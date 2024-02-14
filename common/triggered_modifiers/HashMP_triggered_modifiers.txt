@@ -104,6 +104,20 @@ h_tm_new_world_trade = {
 	global_trade_power = 0.05	
 }
 
+h_tm_hre_elector = {
+	potential = {
+		ai = no
+		is_elector = yes
+		is_emperor = no
+	}
+	trigger = {
+		always = yes
+	}
+
+	fabricate_claims_cost = -0.25
+	global_tax_income = 12
+}
+
 # h_tm_age_of_reformation = {
 # 	potential = {
 # 		current_age = age_of_reformation

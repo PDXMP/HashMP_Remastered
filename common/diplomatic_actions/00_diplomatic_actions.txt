@@ -366,6 +366,19 @@ allianceaction = {
 			}
 		}
 	}
+	condition = {
+		potential = {
+			ai = yes
+		}
+		allow = {
+			if = {
+				limit = {
+					FROM = { ai = yes }
+				}
+				is_year = 1445
+			}
+		}
+	}
 }
 
 enforce_peace = {
@@ -1178,6 +1191,18 @@ giftaction = {
 				FROM = { is_colonial_nation = no }
 				FROM = { is_subject_of = ROOT }
 			}
+		}
+	}
+}
+demand_unlawful_territory_action = {
+	condition = {
+		potential = {
+			ai = yes
+			is_emperor = yes
+		}
+		allow = {
+			FROM = { is_elector = no }
+			FROM = { was_player = no }
 		}
 	}
 }
