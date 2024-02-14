@@ -119,7 +119,6 @@ country_event = {
 		NOT = { has_country_flag = h_electors_of_the_empire_setup }
 		was_player = yes
 		is_elector = yes
-		is_emperor = no
 		is_year = 1444
 	}
 
@@ -164,6 +163,17 @@ country_event = {
 		name = "HashMPEvents_3_c"
 		add_country_modifier = {
 			name = h_imperial_advisors
+			duration = 7300 #20 years
+		}
+	}
+	#Imperial Unity
+	option = {
+		name = "HashMPEvents_3_d"
+		trigger = {
+			is_emperor = yes
+		}
+		add_country_modifier = {
+			name = h_imperial_unity
 			duration = 7300 #20 years
 		}
 	}
