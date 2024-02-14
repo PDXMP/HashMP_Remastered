@@ -140,32 +140,22 @@ coastal_sea = {
 }
 
 tropical = {
-	local_colonial_growth = -10
 	supply_limit_modifier = -0.3
 	local_hostile_attrition = 2
-
-	local_development_cost = 0.05
 
 	picture = "climate_tropical"
 }
 
 arctic = {
-	local_colonial_growth = -10
 	supply_limit_modifier = -0.4
 	local_hostile_attrition = 1
-
-	allowed_num_of_buildings = -1
-	local_development_cost = 0.5
 
 	picture = "climate_arctic"
 }
 
 arid = {
-	local_colonial_growth = -10
 	supply_limit_modifier = -0.2
 	local_hostile_attrition = 1
-
-	local_development_cost = 0.1
 
 	picture = "climate_arid"
 }
@@ -237,7 +227,7 @@ blockaded = {
 }
 
 no_adjacent_controlled = {
-	local_colonial_growth = -5
+	local_colonial_growth = 0
 }
 
 provincial_tax_income = {
@@ -1740,14 +1730,16 @@ invasion_nation = {
 
 native_policy_coexist = {
 	native_uprising_chance = -1.0
+	native_assimilation = 0.5
 }
 
 native_policy_trade = {
-	native_assimilation = 0.5
-	native_uprising_chance = -0.5
+	native_uprising_chance = -1.0
+	colonist_placement_chance = 0.05
 }
 
 native_policy_hostile = {
+	native_uprising_chance = -1.0
 	global_colonial_growth = 20
 }
 

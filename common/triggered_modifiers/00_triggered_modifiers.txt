@@ -25,7 +25,6 @@ east_indian_trade_route = {
 	trigger = {
 		has_discovered = 1460 # Cape of Good Hope
 		num_of_ports = 4
-		has_idea = quest_for_the_new_world
 		OR = {
 			1361 = { has_merchant = ROOT } #Straits of Johor
 			1343 = { has_merchant = ROOT } #Ganges Delta
@@ -33,7 +32,8 @@ east_indian_trade_route = {
 			1340 = { has_merchant = ROOT } #Comorin Cape
 		}
 	}
-
+	
+	merchants = 1
 	trade_efficiency = 0.05	
 }
 
