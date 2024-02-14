@@ -241,9 +241,9 @@ country_event = {
 		add_prestige_or_monarch_power = {
 			amount = 25
 		}
-		add_country_modifier = {
+		add_ruler_modifier = {
 			name = h_victory_over_the_empire
-			duration = 7300 #20 years
+			duration = -1 #Until ruler death
 		}
 		custom_tooltip = h_victory_over_the_empire_tooltip
 	}
