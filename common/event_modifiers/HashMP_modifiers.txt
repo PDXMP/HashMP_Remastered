@@ -44,3 +44,7 @@ h_nap_med_trade = {
 h_nap_med_dom = {
 	global_ship_cost = -0.10
 }
+h_imperial_advisors = {
+	advisor_cost = -0.10
+	advisor_pool = 1
+}

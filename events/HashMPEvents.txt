@@ -105,3 +105,66 @@ country_event = {
 		}
 	}
 }
+
+# Electors of the Empire
+country_event = {
+	id = HashMPEvents.3
+	title = "HashMPEvents_3_title"
+	desc = "HashMPEvents_3_desc"
+	picture = IMPERIAL_SEAL_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_country_flag = h_electors_of_the_empire_setup }
+		was_player = yes
+		is_elector = yes
+		is_emperor = no
+		is_year = 1444
+	}
+
+	immediate = {
+		hidden_effect = { set_country_flag = h_electors_of_the_empire_setup }
+		capital_scope = {
+			set_province_flag = h_imperial_city
+		}
+	}
+
+	#Marshal of the Empire
+	option = {
+		name = "HashMPEvents_3_a"
+
+		define_general = {
+			shock = 3
+			fire = 3
+			manuever = 2
+			siege = 1
+			trait = h_marshal_of_the_empire_personality
+		}
+	}
+	#Admiral of the Empire
+	option = {
+		name = "HashMPEvents_3_b"
+		trigger = {
+			any_owned_province = {
+				has_port = yes
+			}
+		}
+
+		define_admiral = {
+			shock = 3
+			fire = 3
+			manuever = 3
+			siege = 0
+			trait = h_admiral_of_the_empire_personality
+		}
+	}
+	#Imperial Advisors
+	option = {
+		name = "HashMPEvents_3_c"
+		add_country_modifier = {
+			name = h_imperial_advisors
+			duration = 7300 #20 years
+		}
+	}
+}
