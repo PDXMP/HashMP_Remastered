@@ -45,7 +45,7 @@ h_nap_med_dom = {
 	global_ship_cost = -0.10
 }
 h_imperial_advisors = {
-	advisor_cost = -0.10
+	advisor_cost = -0.20
 	advisor_pool = 1
 }
 h_imperial_collapse = {
