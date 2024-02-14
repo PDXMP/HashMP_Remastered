@@ -30,65 +30,55 @@ h_tm_age_of_discovery = {
 	mercenary_manpower = 0.15
 }
 
-hashmp_new_world_modifier = { 
+h_tm_new_world = { 
 	potential = {
 		ai = no
-		NOT = { 
-			is_colonial_nation = yes 
+		is_colonial_nation = no
+		any_owned_province = {
+			has_port = yes
 		}
 	}
 	trigger = {
-		ai = no
 		is_institution_enabled = new_world_i
-		NOT = { 
-			is_colonial_nation = yes 
-		}
 	}
-	
-	can_explore = yes
+
+	may_explore = yes
 	colonists = 1
 	range = 2.5
-	trade_range_modifier = 0.1
 	cb_on_primitives = yes
 	global_colonial_growth = 15
-	
 }
 
-hashmp_new_world_lowcost_modifier = { 
+h_tm_new_world_lowcost = { 
 	potential = { 
 		ai = no
-		NOT = { 
-			is_colonial_nation = yes 
+		is_colonial_nation = no
+		any_owned_province = {
+			has_port = yes
 		}
 	}
 	trigger = {
-		ai = no
 		is_institution_enabled = new_world_i
 		NOT = {
 			OR = { 
 				has_idea_group = exploration_ideas
 				has_idea_group = expansion_ideas
 			}
-			is_colonial_nation = yes
 		}
 	}
 	
-	colony_cost_modifier = -0.25
-	
+	colony_cost_modifier = -0.25	
 }
 
-hashmp_new_world_trade_modifier = { 
+h_tm_new_world_trade = { 
 	potential = { 
 		ai = no
-		NOT = { 
-			is_colonial_nation = yes 
+		is_colonial_nation = no
+		any_owned_province = {
+			has_port = yes
 		}
 	}
 	trigger = {
-		ai = no
-		NOT = { 
-			is_colonial_nation = yes 
-		}
 		is_institution_enabled = new_world_i
 		OR = {
 			1490 = { has_merchant = ROOT } #Gulf of St. Lawrence
@@ -111,8 +101,7 @@ hashmp_new_world_trade_modifier = {
 	}
 	
 	merchants = 1
-	global_trade_power = 0.05
-	
+	global_trade_power = 0.05	
 }
 
 # h_tm_age_of_reformation = {
