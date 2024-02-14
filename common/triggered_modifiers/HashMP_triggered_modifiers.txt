@@ -34,12 +34,12 @@ h_tm_new_world = {
 	potential = {
 		ai = no
 		is_colonial_nation = no
+	}
+	trigger = {
 		any_owned_province = {
 			has_port = yes
 		}
-	}
-	trigger = {
-		is_institution_enabled = new_world_i
+		is_year = 1492
 	}
 
 	may_explore = yes
@@ -53,12 +53,12 @@ h_tm_new_world_lowcost = {
 	potential = { 
 		ai = no
 		is_colonial_nation = no
+	}
+	trigger = {
 		any_owned_province = {
 			has_port = yes
 		}
-	}
-	trigger = {
-		is_institution_enabled = new_world_i
+		is_year = 1492
 		NOT = {
 			OR = { 
 				has_idea_group = exploration_ideas
@@ -74,12 +74,12 @@ h_tm_new_world_trade = {
 	potential = { 
 		ai = no
 		is_colonial_nation = no
+	}
+	trigger = {
 		any_owned_province = {
 			has_port = yes
 		}
-	}
-	trigger = {
-		is_institution_enabled = new_world_i
+		is_year = 1492
 		OR = {
 			1490 = { has_merchant = ROOT } #Gulf of St. Lawrence
 			1500 = { has_merchant = ROOT } #Chesapeake Bay
