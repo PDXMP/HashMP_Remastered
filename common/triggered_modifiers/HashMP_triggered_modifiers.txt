@@ -136,9 +136,46 @@ h_tm_hre_weakened_empire = {
 	}
 	trigger = {
 		is_emperor = yes
+		OR = {
+			205 = {
+				owner = {
+					is_part_of_hre = no
+				}
+			}
+			112 = {
+				owner = {
+					is_part_of_hre = no
+				}
+			}
+			121 = {
+				owner = {
+					is_part_of_hre = no
+				}
+			}
+			134 = {
+				owner = {
+					is_part_of_hre = no
+				}
+			}
+			1762 = {
+				owner = {
+					is_part_of_hre = no
+				}
+			}
+			50 = {
+				owner = {
+					is_part_of_hre = no
+				}
+			}
+			12 = {
+				owner = {
+					is_part_of_hre = no
+				}
+			}
+		}
 	}
 
-	imperial_authority = -0.05
+	imperial_authority = -0.1
 }
 
 # h_tm_age_of_reformation = {
