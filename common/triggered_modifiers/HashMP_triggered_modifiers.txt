@@ -119,6 +119,7 @@ h_tm_hre_elector = {
 
 h_tm_hre_suitable_emperor = {
 	potential = {
+		NOT = { has_global_flag = h_imperial_collapse }
 		is_or_was_tag = { tag = HAB }
 	}
 	trigger = {
@@ -126,6 +127,18 @@ h_tm_hre_suitable_emperor = {
 	}
 
 	imperial_authority = 0.05
+}
+
+h_tm_hre_weakened_empire = {
+	potential = {
+		has_global_flag = h_imperial_collapse
+		is_emperor = yes
+	}
+	trigger = {
+		is_emperor = yes
+	}
+
+	imperial_authority = -0.05
 }
 
 # h_tm_age_of_reformation = {
