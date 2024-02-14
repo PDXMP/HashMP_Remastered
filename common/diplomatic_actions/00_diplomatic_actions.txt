@@ -1181,3 +1181,15 @@ giftaction = {
 		}
 	}
 }
+demand_unlawful_territory_action = {
+	condition = {
+		potential = {
+			ai = yes
+			is_emperor = yes
+		}
+		allow = {
+			FROM = { is_elector = no }
+			FROM = { was_player = no }
+		}
+	}
+}
