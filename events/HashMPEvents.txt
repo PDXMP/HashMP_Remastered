@@ -117,7 +117,6 @@ country_event = {
 
 	trigger = {
 		NOT = { has_country_flag = h_electors_of_the_empire_setup }
-		was_player = yes
 		is_elector = yes
 		is_year = 1444
 	}
@@ -143,6 +142,10 @@ country_event = {
 			trait = h_marshal_of_the_empire_personality
 		}
 
+		ai_chance = {
+			factor = 0
+		}
+
 		custom_tooltip = h_marshal_tooltip
 	}
 	#Admiral of the Empire
@@ -164,6 +167,10 @@ country_event = {
 			trait = h_admiral_of_the_empire_personality
 		}
 
+		ai_chance = {
+			factor = 0
+		}
+
 		custom_tooltip = h_admiral_tooltip
 	}
 	#Imperial Advisors
@@ -175,6 +182,10 @@ country_event = {
 		add_country_modifier = {
 			name = h_imperial_advisors
 			duration = 7300 #20 years
+		}
+
+		ai_chance = {
+			factor = 1
 		}
 	}
 	#Imperial Unity
@@ -189,6 +200,10 @@ country_event = {
 		add_country_modifier = {
 			name = h_imperial_unity
 			duration = 7300 #20 years
+		}
+
+		ai_chance = {
+			factor = 1
 		}
 	}
 }
