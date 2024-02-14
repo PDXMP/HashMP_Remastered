@@ -21,9 +21,3 @@ h_bur_chateau_dolhain = {
 h_bankrupt_interest = {
 	interest = 2
 }
-
-hashmp_new_world = { 
-	movement_speed_in_fleet_modifier = 5
-	naval_attrition_in_fleet_modifier = -0.5
-	envoy_travel_time = -0.5
-}

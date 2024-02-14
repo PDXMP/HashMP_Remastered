@@ -1,22 +1,21 @@
-namespace = HashMP
+namespace = HashMPEvents
 
 # HashMP Colonial Events
 country_event = {
-	id = HashMP.1
-	title = "HashMP_Colonial_Events_EVTNAME1"
-	desc = "HashMP_Colonial_Events_EVTDESC1"
+	id = HashMPEvents.1
+	title = "HashMPEvents_1_title"
+	desc = "HashMPEvents_1_desc"
 	picture = COLONIZATION_eventPicture
 	
 	trigger = {
 		has_country_flag = hashmp_new_world_flag
-		any_province = 
-			{ 
-				is_colony = yes
-			}
+		any_owned_province = { 
+			is_colony = yes
+		}
 	}
 	
 	mean_time_to_happen = {
-		months = 1
+		days = 1
 	}
 	
 	immediate = { 
@@ -33,10 +32,76 @@ country_event = {
 	}
 	
 	option = {
-		name = HashMP.1.a
+		name = "HashMPEvents_1_a"
 		event_target:give_colonists = {
 			add_colonysize = 1000
 		}
-		
+	}
+}
+
+country_event = {
+	id = HashMPEvents.2
+	title = "HashMPEvents_2_title"
+	desc = "HashMPEvents_2_desc"
+	picture = EXPLORERS_eventPicture
+
+	fire_only_once = yes
+
+	trigger = {
+		ai = no
+		is_colonial_nation = no
+		is_year = 1492
+		NOT = { is_year = 1493 }
+		any_owned_province = {
+			has_port = yes
+		}
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	option = {
+		name = "HashMPEvents_2_a"
+		add_sailors = 250
+		define_conquistador = {
+			shock = 0
+			fire = 0
+			manuever = 6
+			siege = 0
+		}
+		define_explorer = {
+			shock = 0
+			fire = 0
+			manuever = 6
+			siege = 0
+			trait = h_explorer_personality
+		}
+		random_owned_province = {
+			limit = { has_port = yes }
+			ROOT = {
+				light_ship = PREV
+				light_ship = PREV
+				light_ship = PREV
+				transport = PREV
+				transport = PREV
+				transport = PREV
+				infantry = PREV
+				infantry = PREV
+				infantry = PREV 
+			}
+		}
+		if = {
+			limit = { 
+				NOT = {
+					OR = { 
+						has_idea_group = exploration_ideas
+						has_idea_group = expansion_ideas
+					}
+				}
+			}
+			custom_tooltip = "HashMPEvents_2_tooltip"
+			set_country_flag = hashmp_new_world_flag
+		}
 	}
 }

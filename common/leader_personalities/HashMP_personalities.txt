@@ -13,4 +13,5 @@ h_explorer_personality = {
 	}
 	movement_speed_in_fleet_modifier = 5
 	naval_attrition_in_fleet_modifier = -0.5
+	exploration_mission_range_in_fleet_modifier = 100
 }

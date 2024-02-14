@@ -303,18 +303,6 @@ country_event = {
 				}
 				country_event = { id = institution_events.301 }
 			}
-			every_country = {
-				limit = {
-					ai = no
-					NOT = { 
-						is_colonial_nation = yes 
-					}
-				}
-				country_event = { 
-					id = institution_events.302
-					days = 45					
-				}
-			}
 		}
 	}
 }
@@ -429,74 +417,6 @@ country_event = {
 		custom_tooltip = institution_events.3.a.tt
 	}
 }
-
-#Added event for mod.
-country_event = {
-	id = institution_events.302
-	title = institution_events.302.t
-	desc = institution_events.302.d
-	picture = EXPLORERS_eventPicture
-
-	is_triggered_only = yes
-	
-
-	trigger = {
-		always = yes			#
-	}
-
-	mean_time_to_happen = {
-		days = 1
-	}
-
-	option = {
-		name = institution_events.302.a
-		add_sailors = 250
-		define_conquistador = {
-			shock = 0
-			fire = 0
-			manuever = 6
-			siege = 0
-		}
-		define_explorer = {
-			shock = 0
-			fire = 0
-			manuever = 6
-			siege = 0
-		}
-		random_owned_province = {
-			limit = { has_port = yes }
-			ROOT = {
-				light_ship = PREV
-				light_ship = PREV
-				light_ship = PREV
-				transport = PREV
-				transport = PREV
-				transport = PREV
-				infantry = PREV
-				infantry = PREV
-				infantry = PREV 
-			}
-		}
-		add_country_modifier = {
-			name = hashmp_new_world
-			duration = 5475 
-		}
-		if = {
-			limit = { 
-				NOT = {
-					OR = { 
-						has_idea_group = exploration_ideas
-						has_idea_group = expansion_ideas
-					}
-				}
-			}
-		set_country_flag = hashmp_new_world_flag
-		}
-		custom_tooltip = institution_events.302.a.tt
-	}
-}
-
-
 
 #######################################
 # Printing Press
