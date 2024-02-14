@@ -6,6 +6,11 @@ religion = catholic
 primary_culture = swedish
 technology_group = western
 capital = 25	#Gotland
+add_historical_rival = TEU
+add_historical_rival = LIV
+add_historical_rival = RIG
+add_historical_rival = SWE
+add_historical_rival = DAN
 
 1439.9.24 = {
 #	government = monarchy
