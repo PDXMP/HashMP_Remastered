@@ -4325,8 +4325,14 @@ on_province_owner_change = {
 				}
 				country_event = {
 					id = HashMPEvents.4
-					days = 0
+					days = 7
 				}
+			}
+		}
+		owner = {
+			country_event = {
+				id = HashMPEvents.5
+				days = 7
 			}
 		}
 	}

@@ -53,3 +53,7 @@ h_imperial_collapse = {
 	manpower_recovery_speed = 0.2
 	manpower_against_imperial_enemies = 5000
 }
+h_victory_over_the_empire = {
+	prestige = 1
+	army_tradition = 0.25
+}

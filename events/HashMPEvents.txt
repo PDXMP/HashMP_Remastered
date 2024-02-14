@@ -187,3 +187,20 @@ country_event = {
 	}
 }
 
+# Victory over the Empire
+country_event = {
+	id = HashMPEvents.5
+	title = "HashMPEvents_5_title"
+	desc = "HashMPEvents_5_desc"
+	picture = IMPERIAL_SEAL_eventPicture
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		add_country_modifier = {
+			name = h_victory_over_the_empire
+			duration = 7300 #20 years
+		}
+	}
+}
