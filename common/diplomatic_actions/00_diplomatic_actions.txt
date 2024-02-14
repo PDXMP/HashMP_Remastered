@@ -366,6 +366,19 @@ allianceaction = {
 			}
 		}
 	}
+	condition = {
+		potential = {
+			ai = yes
+		}
+		allow = {
+			if = {
+				limit = {
+					FROM = { ai = yes }
+				}
+				is_year = 1445
+			}
+		}
+	}
 }
 
 enforce_peace = {
