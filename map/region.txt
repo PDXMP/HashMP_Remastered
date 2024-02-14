@@ -881,17 +881,14 @@ australia_region = {
 
 south_china_region = {
 	areas = {
+		guangxi_area
 		guangdong_area
-		west_guangdong_area
 		fujian_area
 		jiangxi_area
 		huguang_area
 		zhejiang_area
-		south_anhui_area
-		taiwan_area
-		south_jiangsu_area
-		hunan_area
-		guangxi_area
+		anhui_area
+		jiangsu_area
 		guilin_area
 		changsha_area
 		xianning_area
@@ -916,9 +913,6 @@ xinan_region = {
 	areas = {
 		sichuan_area
 		yun_gui_area
-		chuannan_area
-		yun_gui_borderland_area
-		chuanbei_area
 		dali_area
 		kunming_area
 		luzhou_area
@@ -934,16 +928,11 @@ north_china_region = {
 	
 	areas = {
 		hebei_area
-		south_hebei_area
 		shandong_area
 		henan_area
 		shanxi_area
 		gansu_area
 		shaanxi_area
-		north_henan_area
-		west_gansu_area
-		jiangsu_area
-		anhui_area
 		xia_area
 		yumen_area
 		chengde_area
@@ -956,6 +945,7 @@ north_china_region = {
 		lanzhou_area
 	}
 }
+
 
 brazil_region = {
 	
