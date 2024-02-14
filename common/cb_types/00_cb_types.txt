@@ -408,17 +408,8 @@ cb_humiliate = {
 cb_conquest = {
 
 	prerequisites = {
-    claim = FROM
-    OR = {
-        NOT = { same_continent = FROM }
-        FROM = {
-            any_owned_province = {
-                is_claim = ROOT
-                is_overseas = no
-            }
-        }
-    }
-}
+		claim = FROM
+	}
 
 	war_goal = take_claim
 }

@@ -859,12 +859,6 @@ take_claim = {
 				is_claim = ROOT
 				is_core = ROOT
 			}
-			OR = {
-				is_overseas = no
-				ROOT = {
-					NOT = { same_continent = FROM }
-				}
-			}
 		}
 		peace_options = {
 			po_demand_provinces
