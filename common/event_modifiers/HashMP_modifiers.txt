@@ -58,5 +58,5 @@ h_victory_over_the_empire = {
 	army_tradition = 0.25
 }
 h_imperial_unity = {
-	imperial_authority = 0.1
+	imperial_authority = 0.05
 }
