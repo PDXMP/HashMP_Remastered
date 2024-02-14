@@ -177,3 +177,6 @@
  HashMP_Colonial_Events_EVTNAME1:0 "Colony Established!"
  HashMP_Colonial_Events_EVTDESC1:0 "The colonial company of our explorer and navigator has rapidly moved to set up in our new colony, completing it at minimal expense to us - As long as we don't already have colonies."
  HashMPColonialEvents.1.a:0 "Excellent!"
+ h_explorer_personality:0 "Explorer"
+ desc_h_explorer_personality:0 ""
+ h_explorer_personality_die_desc:0 ""
