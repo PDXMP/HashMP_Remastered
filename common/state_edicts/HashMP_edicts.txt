@@ -21,3 +21,27 @@ h_edict_decrease_devastation = {
 	}
 	
 }
+
+h_edict_flat_institution = {
+	potential = {
+		always = yes		#we support "potential" if modders want to have lots and just show some.
+	}
+	
+	allow = {
+		always = yes
+	}
+	
+	years_to_notify = 3 #specifies how many years an edict needs to be active to show an alert
+
+	modifier = {
+		institution_growth = 15
+	}
+	
+	color = {  50 90 150  }
+	
+	
+	ai_will_do = {
+		factor = 0
+	}
+	
+}
