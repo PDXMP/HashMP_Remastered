@@ -208,6 +208,7 @@ country_event = {
 	major = yes
 
 	option = {
+		name = "HashMPEvents_5_a"
 		add_country_modifier = {
 			name = h_victory_over_the_empire
 			duration = 7300 #20 years
