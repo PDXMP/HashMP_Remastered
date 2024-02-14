@@ -15,3 +15,13 @@ h_explorer_personality = {
 	naval_attrition_in_fleet_modifier = -0.5
 	exploration_mission_range_in_fleet_modifier = 100
 }
+
+h_marshal_of_the_empire_personality = {
+	allow = {
+		always = no
+	}
+	land_morale = 0.1
+	siege_ability = 0.15
+	prestige_from_land = 1
+}
+}
