@@ -279,7 +279,7 @@ h_theocracy_gov_innovativeness = {
 }
 
 h_theocracy_gov_religious = {
-	monarch_power = ADM
+	monarch_power = MIL
 
 	potential = {
 		has_idea_group = theocracy_gov_ideas
@@ -290,15 +290,8 @@ h_theocracy_gov_religious = {
 		full_idea_group = religious_ideas
 	}
 	
-	papal_influence = 2
-	devotion = 0.25
-	monthly_fervor_increase = 0.25
-	church_power_modifier = 0.1
-	monthly_piety_accelerator = 0.001
-	yearly_karma_decay = 0.1
-	yearly_doom_reduction = 1
-	yearly_authority = 0.15
-	yearly_patriarch_authority = 0.005
+	drill_gain_modifier = 1
+	shock_damage = 0.075
 
 	effect = {}
 	removed_effect = {}
