@@ -108,10 +108,9 @@ h_tm_hre_elector = {
 	potential = {
 		ai = no
 		is_elector = yes
-		is_emperor = no
 	}
 	trigger = {
-		always = yes
+		is_elector = yes
 	}
 
 	fabricate_claims_cost = -0.25
