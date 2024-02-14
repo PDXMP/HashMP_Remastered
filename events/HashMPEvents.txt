@@ -126,7 +126,7 @@ country_event = {
 	immediate = {
 		hidden_effect = { set_country_flag = h_electors_of_the_empire_setup }
 		capital_scope = {
-			set_province_flag = h_imperial_city
+			set_province_flag = h_imperial_collapse_trigger
 		}
 	}
 
@@ -168,3 +168,22 @@ country_event = {
 		}
 	}
 }
+
+# Imperial Collapse
+country_event = {
+	id = HashMPEvents.4
+	title = "HashMPEvents_4_title"
+	desc = "HashMPEvents_4_desc"
+	picture = IMPERIAL_SEAL_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "HashMPEvents_4_a"
+		add_country_modifier = {
+			name = h_imperial_collapse
+			duration = 7300 #20 years
+		}
+	}
+}
+

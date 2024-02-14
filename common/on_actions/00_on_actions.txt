@@ -4292,6 +4292,44 @@ on_province_owner_change = {
 	}
 	on_province_owner_change_government_effect = yes
 
+	#HashMP: The Imperial Collapse
+	if = {
+		limit = {
+			NOT = { has_global_flag = h_imperial_collapse }
+			current_age = age_of_discovery
+			has_province_flag = h_imperial_collapse_trigger
+			owner = {
+				is_part_of_hre = no
+				NOT = { is_or_was_tag = { tag = SAV } }
+				NOT = { is_or_was_tag = { tag = VEN } }
+				NOT = { is_or_was_tag = { tag = NAP } }
+				NOT = { is_or_was_tag = { tag = HAB } }
+				NOT = { is_or_was_tag = { tag = BRA } }
+				NOT = { is_or_was_tag = { tag = HES } }
+				NOT = { is_or_was_tag = { tag = DAN } }
+			}
+		}
+		set_global_flag = h_imperial_collapse
+		europe = { 
+			if = {
+				limit = {
+					has_province_flag = h_imperial_collapse_trigger
+				}
+				clr_province_flag = h_imperial_collapse_trigger
+			}
+		}
+		every_elector = { 
+			if = {
+				limit = {
+					ai = no
+				}
+				country_event = {
+					id = HashMPEvents.4
+					days = 0
+				}
+			}
+		}
+	}
 	if = {
 		limit = {
 			owned_by = SRU
