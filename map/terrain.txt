@@ -48,7 +48,7 @@ categories =  {
 		defence = 1
 		movement_cost = 1.25
 		supply_limit = 2		
-		local_development_cost = 0.5
+		local_development_cost = 0.4 #0.5
 		nation_designer_cost_multiplier = 0.75		
 		
 		terrain_override = {		
@@ -131,6 +131,9 @@ categories =  {
 			4831 4832 # Mandala
 
 			2774 2775 2794 2796 #South Somalia
+
+			#foffychina
+			5794 5811 5818 5819 5821 5820 5840 5850 5851 5847 5846 5854 5853 5832 5856 5831 5892 5833 5804 5882 5857 5883 5803 5834 5889 5891 5890 5829 5830 5861 5826 5860 5828 5855 5874 5859 5795 5844 5888 5793 5928 5933 5934 668 5936 5945 5943 5942 5845 5872 5953 5952 5957
 		}		
 	}
 	
@@ -143,7 +146,7 @@ categories =  {
 		movement_cost = 1.25
 		defence = 1
 		supply_limit = 4
-		local_development_cost = 0.2
+		local_development_cost = 0.15 #0.2
 		nation_designer_cost_multiplier = 0.9
 		
 		terrain_override = { 
@@ -170,7 +173,7 @@ categories =  {
 		movement_cost = 1.40
 		defence = 1
 		local_defensiveness = 0.1
-		local_development_cost = 0.25
+		local_development_cost = 0.20 #0.25
 		nation_designer_cost_multiplier = 0.85
 		supply_limit = 5
 		
@@ -197,7 +200,7 @@ categories =  {
 			140 1828
 			123 1934 116 119 1848
 			
-			669 670 681 686 1824 1829 1833 1840
+			669 670 681 1824 1829 1833 1840
 			2146 2147 2152 2153 2158 2171 2173 2174 
 			652 657 658 2697 2698 2701 
 			
@@ -228,6 +231,9 @@ categories =  {
 			4840 # Mandala
 			
 			4856
+			#foffychina
+			5847 5790 5849 5848 5805 5791 5792 5852 5813 5807 5841 5887 5827 5814
+			5923 5924 5925 5946 5927 5870 5843 5817 5935 5939 5946 5956 5926
 		}
 	}
 
@@ -240,7 +246,7 @@ categories =  {
 
 		movement_cost = 1.10
 		defence = 1
-		local_development_cost = 0.15
+		local_development_cost = 0.10 #0.15
 		nation_designer_cost_multiplier = 0.9
 		supply_limit = 6
 		
@@ -310,7 +316,7 @@ categories =  {
 		movement_cost = 1.5
 		defence = 2
 		local_defensiveness = 0.25
-		local_development_cost = 0.35
+		local_development_cost = 0.3 #0.35
 		nation_designer_cost_multiplier = 0.75
 		supply_limit = 4
 		
@@ -343,7 +349,7 @@ categories =  {
 			
 			2327 380 383
 
-			680 689 693 694 697 702 2136 2169 2177 2178 2179 2180 2181 
+			689 693 694 697 702 2136 2169 2177 2178 2179 2180 2181 
 			716 718 719 1066 2117 2189 2190 739 2125 2127 
 			565 676 677 2074 2128 2129 2130
 			
@@ -367,6 +373,10 @@ categories =  {
 			4653 4655 4656 4680 4679
 			# 1.30
 			4750 4754
+
+			#foffychina 680 5867 5870 5843 5817
+			5864 5884 5825 5873 5799 5801 5796 5871 5866 5815 5869 5822 5862 5879 5802
+			5929 5932 5948 5949 5950 5951 686
 		}
 	}
 
@@ -438,6 +448,8 @@ categories =  {
 			4795 # Mandala
 			
 			4858 4857 2735 1090
+			#foffychina
+			5880 5823 5905 5899 5920 5904
 		}
 	}
 
@@ -449,7 +461,7 @@ categories =  {
 
 		movement_cost = 1.5
 		defence = 1
-		local_development_cost = 0.35
+		local_development_cost = 0.25 #0.35
 		nation_designer_cost_multiplier = 0.8
 		supply_limit = 5
 		
@@ -480,6 +492,8 @@ categories =  {
 			4804 4799 2709 4817 # Mandala
 			
 			1085 4869 2730
+			#foffychina
+			5897 5930 5938
 		}
 	}	
 	
@@ -491,7 +505,7 @@ categories =  {
 
 		movement_cost = 1.3
 		defence = 1
-		local_development_cost = 0.25
+		local_development_cost = 0.20 #0.25
 		nation_designer_cost_multiplier = 0.85
 		supply_limit = 5
 
@@ -524,7 +538,7 @@ categories =  {
 
 		movement_cost = 1.05
 		supply_limit = 4
-		local_development_cost = 0.50
+		local_development_cost = 0.4 #0.5
 		nation_designer_cost_multiplier = 0.8
 		
 		terrain_override = {
@@ -538,10 +552,12 @@ categories =  {
 			350 355 1115 2244 2271 2272 2767 2773
 			1176
 			1231
-			715 2119 2120 710 711 712 2121 2123 2191 2192 706 707 708 698 701 709 720 2193 2747 
+			715 2119 2120 710 711 712 2121 2123 2191 2192 706 707 701 709 720 2193 2747 
 			860 2618
 			
 			1093
+			#foffychina 698 708
+			5918 5931 5955
 		}
 	}
 	
@@ -552,7 +568,7 @@ categories =  {
 		sound_type = desert
 
 		movement_cost = 1.0
-		local_development_cost = 0.35
+		local_development_cost = 0.30 #0.35
 		nation_designer_cost_multiplier = 0.9		
 		supply_limit = 4
 
@@ -652,6 +668,8 @@ categories =  {
 			4628 4630 # new provinces Mesoamerica 1.28
 			
 			2736 4863 4861 4855 1094 2733
+			#foffychina
+			708 5877 698 5797 5954
 		}
 	}
 
@@ -703,6 +721,8 @@ categories =  {
 			4422 4436 4464 #Central India
 			4561 4566 4553 # new provinces 1.28
 			4669 4701 4699 4780 # 1.30 Greece and Bulgaria
+			#foffychina
+			5878 5820 5812 5886 5839 5868 5816 5876 5885 680 5858 4771 5867 5937 5940 5922 5947 5893 5863 5838 5941
 		}
 	}
 
@@ -791,7 +811,8 @@ categories =  {
 			
 			# 1.29
 			4664 4665 4674 4666 4667 4673 4675 4672 4671 4668 4683
-			
+			#foffychina
+			5902 5913 
 		}	
 	}	
 }

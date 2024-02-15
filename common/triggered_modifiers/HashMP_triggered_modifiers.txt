@@ -108,14 +108,74 @@ h_tm_hre_elector = {
 	potential = {
 		ai = no
 		is_elector = yes
-		is_emperor = no
 	}
 	trigger = {
-		always = yes
+		is_elector = yes
 	}
 
 	fabricate_claims_cost = -0.25
 	global_tax_income = 12
+}
+
+h_tm_hre_suitable_emperor = {
+	potential = {
+		NOT = { has_global_flag = h_imperial_collapse }
+		is_or_was_tag = { tag = HAB }
+	}
+	trigger = {
+		is_emperor = yes
+	}
+
+	imperial_authority = 0.05
+}
+
+h_tm_hre_weakened_empire = {
+	potential = {
+		has_global_flag = h_imperial_collapse
+		is_emperor = yes
+	}
+	trigger = {
+		is_emperor = yes
+		OR = {
+			205 = {
+				owner = {
+					is_part_of_hre = no
+				}
+			}
+			112 = {
+				owner = {
+					is_part_of_hre = no
+				}
+			}
+			121 = {
+				owner = {
+					is_part_of_hre = no
+				}
+			}
+			134 = {
+				owner = {
+					is_part_of_hre = no
+				}
+			}
+			1762 = {
+				owner = {
+					is_part_of_hre = no
+				}
+			}
+			50 = {
+				owner = {
+					is_part_of_hre = no
+				}
+			}
+			12 = {
+				owner = {
+					is_part_of_hre = no
+				}
+			}
+		}
+	}
+
+	imperial_authority = -0.1
 }
 
 # h_tm_age_of_reformation = {

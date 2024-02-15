@@ -399,7 +399,7 @@ emp_bra_pru_1_b = {
 		trigger = {
 			has_global_modifier_value = {
 				which = discipline
-				value = 0.15
+				value = 0.1 #0.15
 				extra_shortcut = yes
 			}
 			OR = {

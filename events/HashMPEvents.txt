@@ -45,9 +45,8 @@ country_event = {
 	desc = "HashMPEvents_2_desc"
 	picture = EXPLORERS_eventPicture
 
-	fire_only_once = yes
-
 	trigger = {
+		NOT = { has_country_flag = h_colonial_expedition }
 		ai = no
 		is_colonial_nation = no
 		is_year = 1492
@@ -59,6 +58,10 @@ country_event = {
 
 	mean_time_to_happen = {
 		days = 1
+	}
+
+	immediate = {
+		set_country_flag = h_colonial_expedition
 	}
 
 	option = {
@@ -103,5 +106,148 @@ country_event = {
 			custom_tooltip = "HashMPEvents_2_tooltip"
 			set_country_flag = hashmp_new_world_flag
 		}
+	}
+}
+
+# Electors of the Empire
+country_event = {
+	id = HashMPEvents.3
+	title = "HashMPEvents_3_title"
+	desc = "HashMPEvents_3_desc"
+	picture = HRE_eventPicture
+
+	is_triggered_only = yes
+
+	trigger = {
+		NOT = { has_country_flag = h_electors_of_the_empire_setup }
+		is_elector = yes
+		is_year = 1444
+	}
+
+	immediate = {
+		hidden_effect = { set_country_flag = h_electors_of_the_empire_setup }
+		capital_scope = {
+			set_province_flag = h_imperial_collapse_trigger
+		}
+	}
+
+	#Marshal of the Empire
+	option = {
+		name = "HashMPEvents_3_a"
+		goto = capital
+		custom_tooltip = h_imperial_collapse_tooltip
+
+		define_general = {
+			shock = 3
+			fire = 3
+			manuever = 2
+			siege = 1
+			trait = h_marshal_of_the_empire_personality
+		}
+
+		ai_chance = {
+			factor = 0
+		}
+
+		custom_tooltip = h_marshal_tooltip
+	}
+	#Admiral of the Empire
+	option = {
+		name = "HashMPEvents_3_b"
+		goto = capital
+		trigger = {
+			any_owned_province = {
+				has_port = yes
+			}
+		}
+		custom_tooltip = h_imperial_collapse_tooltip
+
+		define_admiral = {
+			shock = 3
+			fire = 3
+			manuever = 3
+			siege = 0
+			trait = h_admiral_of_the_empire_personality
+		}
+
+		ai_chance = {
+			factor = 0
+		}
+
+		custom_tooltip = h_admiral_tooltip
+	}
+	#Imperial Advisors
+	option = {
+		name = "HashMPEvents_3_c"
+		goto = capital
+		custom_tooltip = h_imperial_collapse_tooltip
+
+		add_country_modifier = {
+			name = h_imperial_advisors
+			duration = 7300 #20 years
+		}
+
+		ai_chance = {
+			factor = 1
+		}
+	}
+	#Imperial Unity
+	option = {
+		name = "HashMPEvents_3_d"
+		goto = capital
+		trigger = {
+			is_emperor = yes
+		}
+		custom_tooltip = h_imperial_collapse_tooltip
+
+		add_country_modifier = {
+			name = h_imperial_unity
+			duration = 7300 #20 years
+		}
+
+		ai_chance = {
+			factor = 1
+		}
+	}
+}
+
+# Imperial Collapse
+country_event = {
+	id = HashMPEvents.4
+	title = "HashMPEvents_4_title"
+	desc = "HashMPEvents_4_desc"
+	picture = ASSASSINATION_eventPicture
+
+	is_triggered_only = yes
+
+	option = {
+		name = "HashMPEvents_4_a"
+		add_country_modifier = {
+			name = h_imperial_collapse
+			duration = 7300 #20 years
+		}
+	}
+}
+
+# Victory over the Empire
+country_event = {
+	id = HashMPEvents.5
+	title = "HashMPEvents_5_title"
+	desc = "HashMPEvents_5_desc"
+	picture = BATTLE_eventPicture
+
+	is_triggered_only = yes
+	major = yes
+
+	option = {
+		name = "HashMPEvents_5_a"
+		add_prestige_or_monarch_power = {
+			amount = 25
+		}
+		add_ruler_modifier = {
+			name = h_victory_over_the_empire
+			duration = -1 #Until ruler death
+		}
+		custom_tooltip = h_victory_over_the_empire_tooltip
 	}
 }
