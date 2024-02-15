@@ -20,7 +20,7 @@ h_marshal_of_the_empire_personality = {
 	allow = {
 		always = no
 	}
-	land_morale = 0.1
+	land_morale = 0.05
 	siege_ability = 0.15
 	prestige_from_land = 1
 }
@@ -29,7 +29,7 @@ h_admiral_of_the_empire_personality = {
 	allow = {
 		always = no
 	}
-	morale_in_fleet_modifier = 0.1
+	morale_in_fleet_modifier = 0.05
 	barrage_cost_in_fleet_modifier = -0.5
 	prestige_from_battles_in_fleet_modifier = 1
 }
