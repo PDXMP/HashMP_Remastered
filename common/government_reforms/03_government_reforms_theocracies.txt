@@ -773,9 +773,9 @@ fifth_monarchists_reform = {
 		}
 	}
 	removed_effect = {
-		country_event = {
-			id = flavor_gbr.120
-		}
+		# country_event = {
+		# 	id = flavor_gbr.120
+		# }
 	}
 }
 
