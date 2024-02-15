@@ -1814,7 +1814,8 @@ fortification_expert = {
 	}
 	
 	# Bonus
-	defensiveness = 0.2
+	defensiveness = 0.1 #0.2
+	siege_ability = 0.1
 
 	skill_scaled_modifier = {
 		trigger = {
