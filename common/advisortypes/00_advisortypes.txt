@@ -1505,7 +1505,7 @@ army_reformer = {
 	}
 	
 	# Bonus
-	land_morale = 0.10
+	land_morale = 0.075 #0.10
 
 	skill_scaled_modifier = {
 		trigger = {
