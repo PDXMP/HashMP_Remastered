@@ -1632,7 +1632,7 @@ commandant = {
 	}
 	
 	# Bonus
-	discipline = 0.05
+	discipline = 0.03 #0.05
 
 	skill_scaled_modifier = {
 		trigger = {
