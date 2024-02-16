@@ -2200,7 +2200,7 @@ h_danish_missions_prologue_3 = {
 			custom_tooltip = h_defeat_modifier_change_tooltip
 			custom_tooltip = h_danish_missions_space_tooltip
 			country_event = {
-				id = hashmp.112
+				id = HashMP_Scandinavia.7
 			}
 		}
 	}
@@ -2237,7 +2237,7 @@ h_danish_missions_prologue_3 = {
 			custom_tooltip = h_defeat_modifier_change_tooltip
 			custom_tooltip = h_danish_missions_space_tooltip
 			country_event = {
-				id = hashmp.111
+				id = HashMP_Scandinavia.6
 			}
 			6004 = {
 				add_province_modifier = {

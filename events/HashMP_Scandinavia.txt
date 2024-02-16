@@ -4,15 +4,15 @@ namespace = HashMP_Scandinavia
 
 #Coronation of a Swedish King
 country_event = {
-	id = hashmp.100
-	title = hashmp.100.title
-	desc = hashmp.100.desc
+	id = HashMP_Scandinavia.1
+	title = HashMP_Scandinavia.1.title
+	desc = HashMP_Scandinavia.1.desc
 	picture = BIG_BOOK_eventPicture
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = hashmp.100.a
+		name = HashMP_Scandinavia.1.a
 		define_ruler = {
 			name = "Johan I"
 			dynasty = "Vasa"
@@ -44,7 +44,8 @@ country_event = {
 	}
 	
 	option = {
-		name = hashmp.100.b
+		name = HashMP_Scandinavia.1.b
+		
 		define_ruler = {
 			name = "Gustav I"
 			dynasty = "Vasa"
@@ -78,15 +79,15 @@ country_event = {
 
 ##Military Reforms for Sweden
 country_event = {
-	id = hashmp.101
-	title = hashmp.101.title
-	desc = hashmp.101.desc
+	id = HashMP_Scandinavia.2
+	title = HashMP_Scandinavia.2.title
+	desc = HashMP_Scandinavia.2.desc
 	picture = BIG_BOOK_eventPicture
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = hashmp.101.a
+		name = HashMP_Scandinavia.2.a
 		add_country_modifier = {
 			name = h_swedish_reform_infantry_core
 			duration = -1
@@ -94,7 +95,7 @@ country_event = {
 	}
 	
 	option = {
-		name = hashmp.101.b
+		name = HashMP_Scandinavia.2.b
 		add_country_modifier = {
 			name = h_swedish_reform_leadership
 			duration = -1
@@ -104,15 +105,15 @@ country_event = {
 
 ##Ga-Pa
 country_event = {
-	id = hashmp.102
-	title = hashmp.102.title
-	desc = hashmp.102.desc
+	id = HashMP_Scandinavia.3
+	title = HashMP_Scandinavia.3.title
+	desc = HashMP_Scandinavia.3.desc
 	picture = BIG_BOOK_eventPicture
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = hashmp.102.a
+		name = HashMP_Scandinavia.3.a
 		add_country_modifier = {
 			name = h_swedish_ga_pa_doctrine
 			duration = -1
@@ -120,7 +121,7 @@ country_event = {
 	}
 	
 	option = {
-		name = hashmp.102.b
+		name = HashMP_Scandinavia.3.b
 		add_army_tradition = 25
 		add_mil_power = 100
 	}
@@ -128,15 +129,15 @@ country_event = {
 
 ##Alexander of the North
 country_event = {
-	id = hashmp.103
-	title = hashmp.103.title
-	desc = hashmp.103.desc
+	id = HashMP_Scandinavia.4
+	title = HashMP_Scandinavia.4.title
+	desc = HashMP_Scandinavia.4.desc
 	picture = BIG_BOOK_eventPicture
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = hashmp.103.a
+		name = HashMP_Scandinavia.4.a
 		add_ruler_modifier = {
 			name = h_swedish_alexander_of_the_north
 			duration = -1
@@ -146,15 +147,15 @@ country_event = {
 
 ##Aftermath of the Kalmar War
 country_event = {
-	id = hashmp.110
-	title = hashmp.110.title
-	desc = hashmp.110.desc
+	id = HashMP_Scandinavia.5
+	title = HashMP_Scandinavia.5.title
+	desc = HashMP_Scandinavia.5.desc
 	picture = CIVIL_WAR_eventPicture
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = hashmp.110.a
+		name = HashMP_Scandinavia.5.a
 		##Vow to restore the union
 		add_prestige = 10
 		add_treasury = 100
@@ -185,7 +186,7 @@ country_event = {
 	}
 	
 	option = {
-		name = hashmp.110.b
+		name = HashMP_Scandinavia.5.b
 		##Forget the union
 
 		add_prestige = -5
@@ -206,15 +207,15 @@ country_event = {
 
 ##Succession of Denmark
 country_event = {
-	id = hashmp.111
-	title = hashmp.111.title
-	desc = hashmp.111.desc
+	id = HashMP_Scandinavia.6
+	title = HashMP_Scandinavia.6.title
+	desc = HashMP_Scandinavia.6.desc
 	picture = DEATH_OF_HEIR_eventPicture
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = hashmp.111.a
+		name = HashMP_Scandinavia.6.a
 		##Christian
 		hidden_effect = {
 			set_country_flag = h_danes_king_christian
@@ -236,7 +237,7 @@ country_event = {
 	}
 	
 	option = {
-		name = hashmp.111.b
+		name = HashMP_Scandinavia.6.b
 		##Charles
 		hidden_effect = {
 			set_country_flag = h_danes_king_charles
@@ -258,7 +259,7 @@ country_event = {
 	}
 
 	option = {
-		name = hashmp.111.c
+		name = HashMP_Scandinavia.6.c
 		##Dorothea
 		hidden_effect = {
 			set_country_flag = h_danes_queen_dorothea
@@ -285,15 +286,15 @@ country_event = {
 
 ##New Councilmen
 country_event = {
-	id = hashmp.112
-	title = hashmp.112.title
-	desc = hashmp.112.desc
+	id = HashMP_Scandinavia.7
+	title = HashMP_Scandinavia.7.title
+	desc = HashMP_Scandinavia.7.desc
 	picture = ADVISOR_eventPicture
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = hashmp.112.a
+		name = HashMP_Scandinavia.7.a
 		add_adm_power = -50
 
 		define_advisor = {
@@ -306,7 +307,7 @@ country_event = {
 	}
 	
 	option = {
-		name = hashmp.112.b
+		name = HashMP_Scandinavia.7.b
 		add_dip_power = -50
 
 		define_advisor = {
@@ -319,7 +320,7 @@ country_event = {
 	}
 
 	option = {
-		name = hashmp.112.c
+		name = HashMP_Scandinavia.7.c
 		add_mil_power = -50
 
 		define_advisor = {

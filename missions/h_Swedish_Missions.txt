@@ -289,7 +289,7 @@ h_swedish_missions_2 = {
 		effect = {
 			add_mil_power = -100
 			country_event = {
-				id = hashmp.101
+				id = HashMP_Scandinavia.2
 			}
 			define_advisor = {
 				type = army_reformer
@@ -353,7 +353,7 @@ h_swedish_missions_2 = {
 				duration = -1
 			}
 			country_event = {
-				id = hashmp.102
+				id = HashMP_Scandinavia.3
 			}
 		}
 	}
@@ -413,7 +413,7 @@ h_swedish_missions_2 = {
 		effect = {
 			add_army_tradition = 10
 			country_event = {
-				id = hashmp.103
+				id = HashMP_Scandinavia.4
 			}
 		}
 	}
