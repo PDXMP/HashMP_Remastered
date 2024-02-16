@@ -187,3 +187,18 @@ estate_burghers_mountain_expansion_mountains = {
 estate_burghers_mountain_expansion_hills = {
 	local_development_cost = -0.10 #-0.125
 }
+
+swedish_military_reforms = {
+	drill_gain_modifier = 0.20
+	drill_decay_modifier = -0.10
+}
+
+swedish_mercenary_core = {
+	mercenary_discipline = 0.025
+	mercenary_manpower = 0.20
+}
+
+swedish_naval_reforms = {
+	global_ship_cost = -0.10
+	naval_morale = 0.10
+}
