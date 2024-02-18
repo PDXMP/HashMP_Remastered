@@ -115,6 +115,15 @@ monarchy = {
 				pronoiar_monarchy_reform #custom nation
 				#Egypt 
 				egyptian_government_reform
+				#foffychina
+				h_reform_warlord_1
+				h_reform_prefecture
+				h_reform_citystate
+				h_reform_native_empire
+				h_reform_warlord_2
+				h_reform_warlord_3
+				h_reform_warlord_4
+				h_reform_sinicized_horde
 			}
 		}
 		hereditary_vs_nobility = {
