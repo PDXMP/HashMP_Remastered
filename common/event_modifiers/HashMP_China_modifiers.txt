@@ -12,6 +12,8 @@ h_commandery_province = {
 	local_core_creation = 0.5
 	local_state_maintenance_modifier = -0.5
 	allowed_num_of_buildings = 1
+	province_trade_power_value = 2.5
+	picture = "ico_commandery"
 }
 
 h_warlord_startmod = {
