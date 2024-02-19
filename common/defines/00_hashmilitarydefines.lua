@@ -20,8 +20,8 @@ NDefines.NMilitary.INF_LOOT = 0.3
 NDefines.NMilitary.CAV_LOOT = 1
 NDefines.NMilitary.DELIBERATE_RETREAT_MORALE_PENALTY = 0
 NDefines.NMilitary.GALLEY_BONUS_INLAND_SEA = 1.0
-NDefines.NMilitary.GALLEY_BONUS_COASTAL_SEA = 0.5
-NDefines.NMilitary.UNLOAD_COST_ENEMY = 36
+NDefines.NMilitary.GALLEY_BONUS_COASTAL_SEA = 0.0
+NDefines.NMilitary.UNLOAD_COST_ENEMY = 30
 NDefines.NMilitary.HEAVY_SHIP_SAILORS_COST = 200					-- 1 = 1 men in cost.
 NDefines.NMilitary.LIGHT_SHIP_SAILORS_COST = 50					-- 1 = 1 men in cost.
 NDefines.NMilitary.GALLEY_SHIP_SAILORS_COST = 50					-- 1 = 1 men in cost.
