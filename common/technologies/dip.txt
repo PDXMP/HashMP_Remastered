@@ -156,6 +156,8 @@ technology = { #Carracks & Caravel
 	
 	enable = carrack
 	enable = caravel
+	enable = flute
+	enable = war_galley
 	may_study_technology = yes
 	
 }
@@ -172,8 +174,6 @@ technology = { #The Flute
 	trade_efficiency		= 	0.02
 	trade_range				=	20
 	global_colonial_growth  = 	10
-	enable = flute
-	enable = war_galley
 }
 
 technology = { #Wharf
@@ -237,7 +237,6 @@ technology = { #The Galleass
 	num_accepted_cultures = 1
 
 	
-	enable = galleass
 }
  
 technology = { #The Galleon
@@ -256,6 +255,7 @@ technology = { #The Galleon
 	
 	enable = galleon
 	enable = early_frigate
+	enable = galleass
 	may_sabotage_recruitment = yes
 
 }
@@ -307,7 +307,6 @@ technology = { #Line of Battle
 		global_trade = 0.3
 	}
 	
-	enable = galiot
 	naval_morale			=	0.5
 	may_sow_discontent = yes
 	
@@ -332,7 +331,7 @@ technology = { #The War Galleon
 	
 	drydock = yes 
 	
-	
+	enable = galiot
 	enable = wargalleon
 	enable = frigate
 }
@@ -366,7 +365,6 @@ technology = { #The Chebeck
 		manufactories = 0.15
 	}
 
-	enable = chebeck
 	may_sabotage_reputation = yes
 
 }
@@ -392,6 +390,7 @@ technology = { #Limes
 	reduced_naval_attrition = yes
 	enable = twodecker
 	enable = trabakul
+	enable = chebeck
 	naval_engagement_width = 5
 }
 
@@ -433,7 +432,6 @@ technology = { #The Archipelago Frigate
 	
 	trade_efficiency 		= 	0.02
 	trade_range				=	20
-	enable = archipelago_frigate
 	may_corrupt_officials = yes
 
 }
@@ -454,6 +452,7 @@ technology = { #The Threedeckers
 	naval_morale			=	0.5
 	naval_maintenance		= 	0.1
 	
+	enable = archipelago_frigate
 	enable = threedecker
 }
 
