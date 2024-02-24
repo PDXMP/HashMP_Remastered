@@ -853,7 +853,7 @@ economic_ideas = {
 
 	bureaucracy = { 
 		merchants = 1
-		global_foreign_trade_power = 0.1
+		global_prov_trade_power_modifier = 0.1
 	}
 	smithian_economics = { 
 		#Mechanic: +1/-1 Dev from Manufactories		#Note for modders; the two mechanics introduced in 1.35   
