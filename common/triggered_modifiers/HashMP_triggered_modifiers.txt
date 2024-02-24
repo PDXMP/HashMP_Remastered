@@ -29,7 +29,6 @@ h_tm_new_world = {
 		is_year = 1492
 	}
 
-	may_explore = yes
 	colonists = 1
 	range = 3.0
 	colonist_placement_chance = 0.05
