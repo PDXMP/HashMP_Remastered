@@ -17,19 +17,6 @@ h_tm_merc_cap = {
 	mercenary_manpower = -0.5
 }
 
-h_tm_age_of_discovery = {
-	potential = {
-		current_age = age_of_discovery
-	}
-	trigger = {
-		current_age = age_of_discovery
-	}
-
-	#merc_maintenance_modifier = 0.20
-	mercenary_cost = -0.15
-	mercenary_manpower = 0.15
-}
-
 h_tm_new_world = { 
 	potential = {
 		ai = no
