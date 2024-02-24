@@ -2158,7 +2158,7 @@ expand_administation_modifier = {
 # At 100% over capacity, this modifier will be fully used
 over_governing_capacity_modifier = {
 	state_maintenance_modifier = 1.0
-	corruption = 0.75
+	yearly_corruption  = 0.75
 	improve_relation_modifier = -0.5
 	advisor_cost = 1.0
 	monthly_militarized_society = -1
