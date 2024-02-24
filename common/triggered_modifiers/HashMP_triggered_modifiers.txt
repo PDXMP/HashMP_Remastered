@@ -31,7 +31,8 @@ h_tm_new_world = {
 
 	may_explore = yes
 	colonists = 1
-	range = 2.5
+	range = 3.0
+	colonist_placement_chance = 0.05
 	cb_on_primitives = yes
 	cb_on_overseas = yes
 	idea_claim_colonies = yes
