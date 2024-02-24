@@ -25,18 +25,18 @@ NDefines.NMilitary.UNLOAD_COST_ENEMY = 30
 NDefines.NMilitary.HEAVY_SHIP_SAILORS_COST = 200					-- 1 = 1 men in cost.
 NDefines.NMilitary.LIGHT_SHIP_SAILORS_COST = 50					-- 1 = 1 men in cost.
 NDefines.NMilitary.GALLEY_SHIP_SAILORS_COST = 50					-- 1 = 1 men in cost.
-NDefines.NMilitary.TRANSPORT_SHIP_SAILORS_COST = 50
-NDefines.NMilitary.HEAVY_SHIP_TIME = 730 							-- _MDEF_HEAVY_SHIP_TIME = 10,
-NDefines.NMilitary.LIGHT_SHIP_TIME = 365 							-- _MDEF_LIGHT_SHIP_TIME = 10,
-NDefines.NMilitary.GALLEY_TIME = 365 								-- _MDEF_GALLEY_TIME = 10,
-NDefines.NMilitary.TRANSPORT_TIME = 365 							-- _MDEF_TRANSPORT_TIME = 10,
-NDefines.NMilitary.FLAGSHIP_REQUIRED_NAVY_SIZE_IN_SAILORS = 1500	-- The number of sailors employed in the navy required to unlock the flagship
-NDefines.NMilitary.FLAGSHIP_COST_DUCATS = 100						-- The cost in ducats of a flagship
-NDefines.NMilitary.FLAGSHIP_COST_SAILORS = 300					-- The cost in sailors of a flagship
-NDefines.NMilitary.FLAGSHIP_BUILDTIME = 730						-- Building time in days of a flagship
+NDefines.NMilitary.TRANSPORT_SHIP_SAILORS_COST = 25
+NDefines.NMilitary.HEAVY_SHIP_TIME = 365 							-- _MDEF_HEAVY_SHIP_TIME = 10,
+NDefines.NMilitary.LIGHT_SHIP_TIME = 182 							-- _MDEF_LIGHT_SHIP_TIME = 10,
+NDefines.NMilitary.GALLEY_TIME = 182 								-- _MDEF_GALLEY_TIME = 10,
+NDefines.NMilitary.TRANSPORT_TIME = 182 							-- _MDEF_TRANSPORT_TIME = 10,
+NDefines.NMilitary.FLAGSHIP_REQUIRED_NAVY_SIZE_IN_SAILORS = 1000	-- The number of sailors employed in the navy required to unlock the flagship
+NDefines.NMilitary.FLAGSHIP_COST_DUCATS = 75						-- The cost in ducats of a flagship
+NDefines.NMilitary.FLAGSHIP_COST_SAILORS = 200					-- The cost in sailors of a flagship
+NDefines.NMilitary.FLAGSHIP_BUILDTIME = 365						-- Building time in days of a flagship
 NDefines.NMilitary.FLAGSHIP_MAX_MODIFICATION = 3					-- Maximum number of modifications on a flagship
 NDefines.NMilitary.FLAGSHIP_MORALE_HIT_ON_DESTRUCTION = 1.0		-- Morale hit when the flagship is destroyed
-NDefines.NMilitary.HEAVY_SHIP_COST = 50 							-- _MDEF_HEAVY_SHIP_COST = 10,
+NDefines.NMilitary.HEAVY_SHIP_COST = 35 							-- _MDEF_HEAVY_SHIP_COST = 10,
 NDefines.NMilitary.LIGHT_SHIP_COST = 20 							-- _MDEF_LIGHT_SHIP_COST = 10,
 NDefines.NMilitary.GALLEY_COST = 10								-- _MDEF_GALLEY_COST = 10,
-NDefines.NMilitary.TRANSPORT_COST = 12							-- _MDEF_TRANSPORT_COST = 10,
+NDefines.NMilitary.TRANSPORT_COST = 5							-- _MDEF_TRANSPORT_COST = 10,
