@@ -33,6 +33,8 @@ h_tm_new_world = {
 	colonists = 1
 	range = 2.5
 	cb_on_primitives = yes
+	cb_on_overseas = yes
+	idea_claim_colonies = yes
 	global_colonial_growth = 15
 }
 
