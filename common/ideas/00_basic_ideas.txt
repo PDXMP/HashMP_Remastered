@@ -194,10 +194,10 @@ theocracy_gov_ideas = {
 		always = yes
 	}
 	servants_of_god = {
-		drill_gain_modifier = 1
+		drill_gain_modifier = 1.5
 	}
 	by_the_grace_of_god = {
-		drill_decay_modifier = -0.25
+		drill_decay_modifier = -0.5
 	}
 	conviction_of_sin = {
 		war_exhaustion = -0.05
@@ -206,19 +206,18 @@ theocracy_gov_ideas = {
 		special_unit_forcelimit = 0.20
 		special_unit_cost_modifier = -0.10
 	}
-	# friends_in_high_places = {
-		
-	# }
+
 	flesh_is_weak = {
 		leader_cost = -0.1
 	}
 	alpha_and_omega = {
 		land_maintenance_modifier = -0.1
 	}
-	seasoned_veterans = {
-		allow_mercenary_drill = yes
-		#There isnt a modifier to prevent AP loss from mercs. It's abit more hardcoded.
-	}
+	
+	friends_in_high_places = {
+		land_attrition = -0.15
+	 }
+	
 	ai_will_do = {
 		factor = 3.75
 		modifier = {
