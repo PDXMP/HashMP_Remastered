@@ -482,3 +482,6 @@ desc_h_court_infrastructure:0 "Prosperity? Medicine? Cultural advancements? No, 
  HashMPEvents_5_a:0 "I came, I saw, I conquered."
  h_victory_over_the_empire_tooltip:0 "The Electors have been thrown into a power struggle to secure what remains of the Empire."
  h_tm_hre_weakened_empire:0 "A Collapsing Empire"
+ t_over_army_cap_early:0 "Over Army Capacity: Mild" 
+ t_over_army_cap_mid:0 "Over Army Capacity: Severe"
+ t_over_army_cap_late:0 "Over Army Capacity: Catastrophic"

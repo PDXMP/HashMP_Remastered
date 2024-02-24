@@ -434,3 +434,60 @@ t_cn_navy_3 = {
 # 	global_ship_cost = 0.1
 # 	naval_maintenance_modifier = 0.1
 # }
+
+## Triggered modifiers for over land and naval FL 
+
+t_over_army_cap_early = {
+	potential = {
+		was_player = yes
+	}
+	trigger = {
+		army_size_percentage = 1.5
+	
+	NOT = {
+		army_size_percentage = 2.00
+		}
+}
+	war_exhaustion = 0.01
+	discipline = -0.01
+	land_morale = -0.025
+	defensiveness = -0.05
+	reinforce_speed = -0.05
+	reinforce_cost_modifier = 0.05
+}
+
+t_over_army_cap_mid = {
+	potential = {
+		was_player = yes
+	}
+	trigger = {
+		army_size_percentage = 2.0
+	
+	NOT = {
+		army_size_percentage = 2.5
+		
+		}
+}
+	discipline = -0.025
+	land_morale = -0.05
+	war_exhaustion = 0.02
+	defensiveness = -0.1
+	reinforce_speed = -0.1
+	reinforce_cost_modifier = 0.1
+}
+
+t_over_army_cap_late = {
+	potential = {
+		was_player = yes
+	}
+	trigger = {
+		army_size_percentage = 2.5
+	
+}
+	discipline = -0.05
+	land_morale = -0.1
+	war_exhaustion = 0.03
+	reinforce_speed = -0.2
+	reinforce_cost_modifier = 0.2
+	defensiveness = -0.15
+}
