@@ -1594,6 +1594,15 @@ brazil = {
 	color = { 
 		11 71 204 
 	}
+	outgoing = {
+		name = "panama"
+		path = { 
+			751 2934 828
+		}
+		control = { 
+			0.0
+		}
+	}
 	outgoing = { 
 		name = "ivory_coast"
 		path = { 
