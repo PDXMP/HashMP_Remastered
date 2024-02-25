@@ -1462,7 +1462,7 @@ administrative_ideas = {
 	category = ADM
 
 	bonus = {
-		development_cost_modifier = -0.05
+		development_cost = -0.1
 	}
 
 	adaptability = {
@@ -1484,6 +1484,7 @@ administrative_ideas = {
 	}
 	stable_government = {
 		land_forcelimit = 10
+		naval_forcelimit = 10
 	}
 	civil_servants = {
 		global_prov_trade_power_modifier = 0.2
