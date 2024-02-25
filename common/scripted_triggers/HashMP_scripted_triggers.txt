@@ -18,3 +18,12 @@
 # Usage:
 # my_test_trigger = { ARG1=foo ARG2=bar CONTEXT=FROM }
 
+h_is_india_tag_trigger = {
+	OR = {
+		is_or_was_tag = { tag = BAH }
+		is_or_was_tag = { tag = VIJ }
+		is_or_was_tag = { tag = MER }
+		is_or_was_tag = { tag = SRH }
+		is_or_was_tag = { tag = BNG }
+	}
+}
