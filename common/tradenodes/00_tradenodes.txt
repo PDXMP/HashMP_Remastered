@@ -404,6 +404,15 @@ philippines={
 	color={
 		93 180 194 
 	}
+	outgoing = {
+		name = "nippon"
+		path = { 
+			1436 1437
+		}
+		control = { 
+			0.0
+		}
+	}
 	outgoing={
 		name="the_moluccas"
 		path={
