@@ -188,6 +188,15 @@ mississippi_river = {
 	color = { 
 		30 110 124 
 	}
+	outgoing = {
+		name = "chesapeake_bay"
+		path = { 
+			2540 952
+		}
+		control = { 
+			0.0
+		}
+	}
 	outgoing = { 
 		name = "carribean_trade"
 		path = { 
