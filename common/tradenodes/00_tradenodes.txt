@@ -159,6 +159,15 @@ mississippi_river={
 	color={
 		30 110 124 
 	}
+	outgoing = {
+		name = "st_lawrence"
+		path = { 
+			944 994
+		}
+		control = { 
+			0.0
+		}
+	}
 	outgoing={
 		name="chesapeake_bay"
 		path={
