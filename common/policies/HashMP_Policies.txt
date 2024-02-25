@@ -508,8 +508,8 @@ h_theocracy_gov_court = {
 		full_idea_group = court_ideas
 	}
 	
-	merc_maintenance_modifier = -0.15
-	mercenary_manpower = 1
+	monthly_splendor = 3
+	prestige_decay = -0.01
 
 	effect = {}
 	removed_effect = {}
