@@ -2068,6 +2068,15 @@ st_lawrence = {
 	color = { 
 		193 192 14 
 	}
+	outgoing = {
+		name = "baltic_sea"
+		path = { 
+			1493 371 23
+		}
+		control = { 
+			0.0
+		}
+	}
 	outgoing = { 
 		name = "north_sea"
 		path = { 
