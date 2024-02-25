@@ -86,10 +86,10 @@ age_of_discovery = {
 		# }
 		
 		obj_many_vassals = {
-			allow = {
-				NOT = { religion_group = christian }
-			}
-			vassal = 5
+			# allow = {
+			# 	NOT = { religion_group = christian }
+			# }
+			num_of_subjects = 3
 		}		
 	
 		obj_two_continents = {
