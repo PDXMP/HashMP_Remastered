@@ -273,7 +273,7 @@ age_of_reformation = {
 		}
 		
 		obj_colonial_empire = {
-			colony = 5
+			colony = 1
 		}
 		
 		obj_force_converted = {
