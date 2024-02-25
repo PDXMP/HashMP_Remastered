@@ -163,9 +163,10 @@ colonial_branch_2 = {
 			}
 			capital_scope = {
 				has_manufactory_trigger = yes
+				num_of_times_expanded_infrastructure = 1
 			}
 			development_in_provinces = {
-				value = 75
+				value = 65
 				area = capital
 			}
 		}
@@ -173,13 +174,6 @@ colonial_branch_2 = {
 			add_country_modifier = {
 				name = h_colony_expand_infrastructure_modifier
 				duration = 3650
-			}
-			
-			capital_scope = {
-				add_permanent_province_modifier = {
-					name = h_colony_infrastructure_center_modifier
-					duration = -1
-				}
 			}
 		}
 	}
@@ -199,9 +193,13 @@ colonial_branch_2 = {
 			num_of_owned_provinces_with = {
 				value = 5
 				has_manufactory_trigger = yes
-			}		
+				num_of_times_expanded_infrastructure = 1
+			}
+			capital_scope = {
+				num_of_times_expanded_infrastructure = 2
+			}	
 			development_in_provinces = {
-				value = 100
+				value = 80
 				area = capital
 			}
 		}
@@ -497,10 +495,6 @@ colonial_branch_5 = {
 					duration = 9125
 				}
 			}
-			add_country_modifier = {
-				name = h_colony_fortify_country
-				duration = 9125
-			}
 		}
 	}
 	##Mission End
@@ -577,7 +571,7 @@ colonial_branch_5 = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = h_colonial_industry
+				name = h_colony_industry
 				duration = 9125
 			}				
 			add_treasury = 500

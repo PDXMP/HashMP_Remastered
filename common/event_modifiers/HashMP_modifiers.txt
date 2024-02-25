@@ -79,11 +79,6 @@ h_colony_expand_infrastructure_modifier = {
 	build_time = -0.2
 }
 
-h_colony_infrastructure_center_modifier = {
-	local_development_cost = -0.1
-	trade_goods_size = 1
-}
-
 h_colony_colonial_militia = {
 	global_manpower = 5
 	land_forcelimit = 5
@@ -140,12 +135,8 @@ h_colony_fortify = {
 	local_defensiveness = 0.1
 }
 
-h_colony_fortify_country = {
-	rival_border_fort_maintenance = -0.25
-}
-
 h_colony_culture = {
-	same_culture_advisor_cost = -0.25
+	advisor_cost = -0.05
 }
 
 h_colony_religion = {
