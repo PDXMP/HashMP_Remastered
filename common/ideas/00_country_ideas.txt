@@ -4223,7 +4223,8 @@ KON_ideas = {
 	}
 
 	bonus = {
-		improve_relation_modifier = 0.3
+		#improve_relation_modifier = 0.3
+		heavy_ship_power = 0.1
 	}
 
 	trigger = {	
@@ -4236,27 +4237,30 @@ KON_ideas = {
 	free = yes		#will be added at load.
 	
 	kongolese_tax_exchange = {
-		global_tax_modifier = 0.1
+		global_tax_modifier = 0.2 #0.1
 	}
 	election_of_manikongos = {
 		heir_chance = 0.5
+		monarch_diplomatic_power = 1
 	}
 	imported_european_weaponry = {
 		mil_tech_cost_modifier  = -0.1
+		infantry_power = 0.1 #0.05
 	}
 	diplomacy_with_european_monarchs = {
-		diplomatic_reputation = 1
+		#diplomatic_reputation = 1
+		colonists = 1
 		envoy_travel_time = -0.25
 	}
 	triangle_trade = {
-		global_prov_trade_power_modifier = 0.1
-		infantry_power = 0.05
+		global_prov_trade_power_modifier = 0.2 #0.1
 	}
 	foreign_demand_for_slaves = {
 		production_efficiency = 0.10
 	}
 	defend_against_the_colonists = {
 		discipline = 0.05
+		fire_damage = 0.10
 	}
 }
 
