@@ -1882,7 +1882,7 @@ poland_sca_slot_3_a = {
 	
 	pol_breadbasket_europe = {
 		icon = mission_pol_breadbasket_europe
-		required_missions = { pol_support_mercantile_class pol_deal_mazovia }
+		required_missions = { pol_support_mercantile_class }
 		position = 4
 		provinces_to_highlight = { 
 			country_or_non_sovereign_subject_holds = ROOT  
@@ -2468,102 +2468,6 @@ poland_sca_slot_4_plc_1 = {
 	}
 	has_country_shield = yes
 
-	plc_lifetime_of_war = {
-		icon = mission_plc_lifetime_of_war 
-		position = 2 
-		required_missions = { pol_varna_aftermath } 
-		trigger = {
-			if = {
-				limit = { has_dlc = "Cradle of Civilization" }
-				army_professionalism = 1 
-			}
-			else = { army_tradition = 95 } 
-			army_size = 150 
-			if = { 
-				limit = { 
-					has_estate = estate_cossacks 
-					has_dlc = "Lions of the North"
-				} 
-				OR = { 
-					num_of_hussars = 8 
-					AND = { 
-						estate_loyalty = { 
-							estate = estate_cossacks 
-							loyalty = 60 
-						}
-						num_of_estate_privileges = {
-							estate = estate_cossacks
-							value = 5 
-						}
-					}
-					has_global_modifier_value = {
-						which = infantry_power 
-						value = 0.35 
-					}
-					has_global_modifier_value = {
-						which = discipline  
-						value = 0.25
-					}
-				}
-			}
-			else_if = { 
-				limit = { 
-					has_estate = estate_cossacks
-				} 
-				OR = { 
-					num_of_cavalry = 65 
-					AND = { 
-						estate_loyalty = { 
-							estate = estate_cossacks 
-							loyalty = 60 
-						}
-						num_of_estate_privileges = {
-							estate = estate_cossacks
-							value = 5 
-						}
-					}
-					has_global_modifier_value = {
-						which = infantry_power 
-						value = 0.35 
-					}
-					has_global_modifier_value = {
-						which = discipline  
-						value = 0.25
-					}
-				}
-			}
-			else_if = { 
-				limit = { has_dlc = "Lions of the North" }
-				OR = { 
-					num_of_hussars = 8 
-					has_global_modifier_value = {
-						which = infantry_power 
-						value = 0.35 
-					}
-					has_global_modifier_value = {
-						which = discipline  
-						value = 0.25
-					}
-				}
-			}
-			else = {
-				OR = { 
-					num_of_cavalry = 65
-					has_global_modifier_value = {
-						which = infantry_power 
-						value = 0.35 
-					}
-					has_global_modifier_value = {
-						which = discipline  
-						value = 0.25
-					}
-				}
-			}
-		}
-		effect = { 
-			country_event = { id = flavor_pol.27 }
-		}
-	}
 }
 
 poland_sca_slot_4_b = { 
@@ -3229,6 +3133,103 @@ poland_sca_slot_5_branching_lit_hre = {
 		NOT = { has_country_flag = pol_denied_pu_flag }
 	}
 	has_country_shield = yes
+	
+	plc_lifetime_of_war = {
+		icon = mission_plc_lifetime_of_war 
+		position = 1 
+		required_missions = { } 
+		trigger = {
+			if = {
+				limit = { has_dlc = "Cradle of Civilization" }
+				army_professionalism = 1 
+			}
+			else = { army_tradition = 95 } 
+			army_size = 150 
+			if = { 
+				limit = { 
+					has_estate = estate_cossacks 
+					has_dlc = "Lions of the North"
+				} 
+				OR = { 
+					num_of_hussars = 8 
+					AND = { 
+						estate_loyalty = { 
+							estate = estate_cossacks 
+							loyalty = 60 
+						}
+						num_of_estate_privileges = {
+							estate = estate_cossacks
+							value = 5 
+						}
+					}
+					has_global_modifier_value = {
+						which = infantry_power 
+						value = 0.35 
+					}
+					has_global_modifier_value = {
+						which = discipline  
+						value = 0.25
+					}
+				}
+			}
+			else_if = { 
+				limit = { 
+					has_estate = estate_cossacks
+				} 
+				OR = { 
+					num_of_cavalry = 65 
+					AND = { 
+						estate_loyalty = { 
+							estate = estate_cossacks 
+							loyalty = 60 
+						}
+						num_of_estate_privileges = {
+							estate = estate_cossacks
+							value = 5 
+						}
+					}
+					has_global_modifier_value = {
+						which = infantry_power 
+						value = 0.35 
+					}
+					has_global_modifier_value = {
+						which = discipline  
+						value = 0.25
+					}
+				}
+			}
+			else_if = { 
+				limit = { has_dlc = "Lions of the North" }
+				OR = { 
+					num_of_hussars = 8 
+					has_global_modifier_value = {
+						which = infantry_power 
+						value = 0.35 
+					}
+					has_global_modifier_value = {
+						which = discipline  
+						value = 0.25
+					}
+				}
+			}
+			else = {
+				OR = { 
+					num_of_cavalry = 65
+					has_global_modifier_value = {
+						which = infantry_power 
+						value = 0.35 
+					}
+					has_global_modifier_value = {
+						which = discipline  
+						value = 0.25
+					}
+				}
+			}
+		}
+		effect = { 
+			country_event = { id = flavor_pol.27 }
+		}
+	}
 	
 	pol_branching_mission_dv_de = {
 		icon = mission_unknown_mission 
