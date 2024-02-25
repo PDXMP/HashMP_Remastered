@@ -489,6 +489,15 @@ lima = {
 	color = { 
 		124 124 130 
 	}
+	outgoing = {
+		name = "laplata"
+		path = { 
+			802 794
+		}
+		control = { 
+			0.0
+		}
+	}
 	outgoing = { 
 		name = "panama"
 		path = { 
@@ -1551,15 +1560,6 @@ laplata = {
 		name = "polynesia_node"
 		path = { 
 			1539 1987 
-		}
-		control = { 
-			0.0
-		}
-	}
-	outgoing = {
-		name = "lima"
-		path = { 
-			794 802
 		}
 		control = { 
 			0.0
