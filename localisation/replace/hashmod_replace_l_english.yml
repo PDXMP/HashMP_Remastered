@@ -80,6 +80,12 @@
  PROV_ADJ1836:0 "Nanyangian"
  PROV_ADJ2115:0 "Chifengian"
  PROV_ADJ2369:1 "Upper Ishimian"
+ venice:0 "Northern Italy"
+ genua:0 "Southern Italy"
+ wien:0 "Southern Germany"
+ rheinland:0 "Central Germany"
+ english_channel:0 "Francia"
+ north_sea:0 "Britain"
  
  
  
