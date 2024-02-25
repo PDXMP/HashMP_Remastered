@@ -159,22 +159,22 @@ mississippi_river={
 	color={
 		30 110 124 
 	}
-	outgoing = {
-		name = "mexico"
-		path = { 
-			1508 2644
+	outgoing={
+		name="mexico"
+		path={
+			1508 2644 
 		}
-		control = { 
-			0.0
+		control={
+			1342.000000 1312.000000 
 		}
 	}
-	outgoing = {
-		name = "st_lawrence"
-		path = { 
-			944 994
+	outgoing={
+		name="st_lawrence"
+		path={
+			944 994 
 		}
-		control = { 
-			0.0
+		control={
+			1493.000000 1596.000000 
 		}
 	}
 	outgoing={
@@ -1718,13 +1718,13 @@ carribean_trade={
 	color={
 		47 204 93 
 	}
-	outgoing = {
-		name = "north_sea"
-		path = { 
-			481 1564
+	outgoing={
+		name="north_sea"
+		path={
+			481 1564 
 		}
-		control = { 
-			0.0
+		control={
+			1658.000000 1227.000000 1779.000000 1340.000000 2309.000000 1517.000000 2597.000000 1516.000000 2694.000000 1547.000000 
 		}
 	}
 	outgoing={
@@ -1781,13 +1781,13 @@ chesapeake_bay={
 	color={
 		193 26 14 
 	}
-	outgoing = {
-		name = "english_channel"
-		path = { 
-			1573 1289
+	outgoing={
+		name="english_channel"
+		path={
+			1573 1289 
 		}
-		control = { 
-			0.0
+		control={
+			1916.000000 1435.000000 2433.000000 1471.000000 2755.000000 1509.000000 
 		}
 	}
 	outgoing={
