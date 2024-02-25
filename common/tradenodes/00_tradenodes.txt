@@ -470,7 +470,7 @@ polynesia_node={
 	outgoing = {
 		name = "philippines"
 		path = { 
-			1993 1996
+			1675 1994 1435
 		}
 		control = { 
 			0.0
