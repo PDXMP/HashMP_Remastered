@@ -1546,55 +1546,6 @@ country_decisions = {
 			factor = 1
 		}
 	}
-	#Hindu Cavalry India Formable
-	h_bharat_nation = {
-		major = yes
-		potential = {
-			normal_or_historical_nations = yes
-			NOT = { has_country_flag = formed_india_flag }
-			was_never_end_game_tag_trigger = yes
-			h_is_india_tag_trigger = yes
-			religion_group = dharmic
-		}
-		provinces_to_highlight = {
-			india_superregion = {
-				NOT = { owned_by = ROOT }
-				NOT = { is_core = ROOT }
-			}
-		}
-		allow = {
-			NOT = { exists = BHA }
-			is_free_or_tributary_trigger = yes
-			is_nomad = no
-			is_at_war = no
-			num_of_owned_provinces_with = {
-				superregion = india_superregion
-				value = 200
-			}
-		}
-		effect = {
-			change_tag = BHA
-			on_change_tag_effect = yes
-			swap_non_generic_missions = yes
-			remove_non_electors_emperors_from_empire_effect = yes
-			set_government_rank = 3
-			india_superregion = {
-				limit = {
-					NOT = { owned_by = ROOT }
-				}
-				add_permanent_claim = BHA
-			}
-			add_prestige = 25
-			set_country_flag = formed_india_flag
-			if = {
-				limit = { has_custom_ideas = no }
-				country_event = { id = ideagroups.1 } #Swap Ideas
-			}
-		}
-		ai_will_do = {
-			factor = 1
-		}
-	}
 	#Muslim Infantry India Formable
 	deccan_nation = {
 		major = yes
@@ -1688,6 +1639,104 @@ country_decisions = {
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
 			set_country_flag = formed_india_flag
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Hindu Cavalry India Formable
+	h_bharat_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_india_flag }
+			was_never_end_game_tag_trigger = yes
+			h_is_india_tag_trigger = yes
+			religion_group = dharmic
+		}
+		provinces_to_highlight = {
+			india_superregion = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			NOT = { exists = BHA }
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			is_at_war = no
+			num_of_owned_provinces_with = {
+				superregion = india_superregion
+				value = 200
+			}
+		}
+		effect = {
+			change_tag = BHA
+			on_change_tag_effect = yes
+			swap_non_generic_missions = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			set_government_rank = 3
+			india_superregion = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = BHA
+			}
+			add_prestige = 25
+			set_country_flag = formed_india_flag
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+	#Hindu Infantry India Formable
+	maratha_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_india_flag }
+			was_never_end_game_tag_trigger = yes
+			h_is_india_tag_trigger = yes
+			religion_group = dharmic
+		}
+		provinces_to_highlight = {
+			india_superregion = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			NOT = { exists = MAR }
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			is_at_war = no
+			num_of_owned_provinces_with = {
+				superregion = india_superregion
+				value = 200
+			}
+		}
+		effect = {
+			change_tag = MAR
+			on_change_tag_effect = yes
+			swap_non_generic_missions = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			set_government_rank = 3
+			india_superregion = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = BHA
+			}
+			add_prestige = 25
+			set_country_flag = formed_india_flag
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
 		}
 		ai_will_do = {
 			factor = 1
