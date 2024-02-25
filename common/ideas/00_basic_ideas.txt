@@ -948,15 +948,14 @@ exploration_ideas = {
 		colonist_placement_chance = 0.03
 	}
 	free_colonies = {
-		global_tariffs = 0.1
-		envoy_travel_time = -0.33
+		colonists = 1
 	}
 	global_empire = {
 		naval_forcelimit_modifier = 0.33
 	}
 	overseas_exploration = {
-		expel_minorities_cost = -0.33
-		treasure_fleet_income = 0.25
+		global_tariffs = 0.1
+		envoy_travel_time = -0.33
 	}
 
 	ai_will_do = {
