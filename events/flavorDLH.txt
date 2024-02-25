@@ -167,10 +167,10 @@ country_event = {
 	option = {
 		name = "flavor_dlh.EVTOPTA3"
 		add_stability = -1
-		every_owned_province = {
-			limit = { is_core = DLH }
-			add_unrest = 5
-		}
+#		every_owned_province = {
+#			limit = { is_core = DLH }
+#			add_unrest = 5
+#		}
 		add_inflation = 2
 		clr_country_flag = dlh_lodi_flag
 	}
@@ -203,7 +203,7 @@ country_event = {
 	}
 	
 	mean_time_to_happen = {
-		months = 3
+		months = 1
 	}
 	
 	option = {
@@ -215,21 +215,21 @@ country_event = {
 		SRH = { country_event = { id = flavor_dlh.6 } }
 		add_prestige = 10
 	}
-	option = {
-		name = "flavor_dlh.5.b" #We have lost control over Sirhind and the Punjab.
-		ai_chance = {
-			factor = 0
-		}
-		custom_tooltip = flavor_dlh.5.b.tt
-		SRH = { country_event = { id = flavor_dlh.7 } }
-		add_opinion = {
-			 who = SRH
-			 modifier = opinion_lodi_released 
-		}
-		tooltip = {
-			free_vassal = SRH
-		}
-	}
+#	option = {
+#		name = "flavor_dlh.5.b" #We have lost control over Sirhind and the Punjab.
+#		ai_chance = {
+#			factor = 0
+#		}
+#		custom_tooltip = flavor_dlh.5.b.tt
+#		SRH = { country_event = { id = flavor_dlh.7 } }
+#		add_opinion = {
+#			 who = SRH
+#			 modifier = opinion_lodi_released 
+#		}
+#		tooltip = {
+#			free_vassal = SRH
+#		}
+#	}
 }
 
 # The Rise of Bahlul Lodi
