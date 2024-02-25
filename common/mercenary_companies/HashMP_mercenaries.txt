@@ -1957,3 +1957,19 @@ h_merc_cav_tech_26_full_b = {
     manpower_pool = 40
     no_additional_manpower_from_max_size = yes
 }
+
+h_merc_colonial_militia = {
+    regiments_per_development = 0.1
+    max_size = 10
+    trigger = {
+        is_colonial_nation = yes
+        is_allowed_to_recruit_mercenaries = yes
+    }
+    cost_modifier = 0.5
+    modifier = {
+        reinforce_speed = -0.25
+        recover_army_morale_speed = -0.1
+    }
+    no_additional_manpower_from_max_size = yes
+    manpower_pool = 10
+}
