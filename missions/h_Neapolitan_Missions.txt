@@ -228,8 +228,10 @@ h_naples_2 = {
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 6
-				area = lazio_area
-				area = central_italy_area
+				OR = {
+					area = lazio_area
+					area = central_italy_area
+				}
 			}
 		}
 		effect = {
