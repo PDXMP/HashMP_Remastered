@@ -256,7 +256,7 @@ ethiopia_policy_with_the_cushitic_people = {
 		required_missions = {  }
 		position = 1
 		trigger = {
-			army_size_percentage = 1
+			army_size_percentage = 0.8 #1
 			num_of_generals = 1
 		}
 		effect = {
