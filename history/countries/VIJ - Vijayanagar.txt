@@ -142,7 +142,7 @@ change_rajputs_or_marathas_or_nobles_land_share_effect = {
 	monarch = {
 		name = "Devaraya II"
 		dynasty = "Sangama"
-		ADM = 3
+		ADM = 4
 		DIP = 3
 		MIL = 4
 	}
@@ -151,17 +151,17 @@ change_rajputs_or_marathas_or_nobles_land_share_effect = {
 	add_ruler_personality = tolerant_personality
 	#add_ruler_personality = righteous_personality
 	add_heir_personality = naive_personality
-	heir = {
-		name = "Mallikarjuna"
-		monarch_name = "Mallikarjuna"
-		dynasty = "Sangama"
-		birth_date = 1424.1.1
-		death_date = 1465.1.1
-		claim = 95
-		ADM = 2
-		DIP = 2
-		MIL = 1
-	}
+#	heir = {
+#		name = "Mallikarjuna"
+#		monarch_name = "Mallikarjuna"
+#		dynasty = "Sangama"
+#		birth_date = 1424.1.1
+#		death_date = 1465.1.1
+#		claim = 95
+#		ADM = 2
+#		DIP = 2
+#		MIL = 1
+#	}
 }
 
 1447.1.1 = {
