@@ -781,7 +781,7 @@ country_decisions = {
 		}
 	}
 	
-	h_form_newengland = {
+	h_form_vermont = {
 		major = yes
 		potential = {
 			NOT = { has_country_flag = became_dominion }
@@ -799,12 +799,12 @@ country_decisions = {
 				is_core = ROOT
 			}
 			colonial_parent = {
-				has_country_flag = h_neg_enabled
+				has_country_flag = h_vrm_enabled
 			}
-			NOT = { exists = NEG }
+			NOT = { exists = VRM }
 		}
 		effect  = {
-			change_tag = NEG
+			change_tag = VRM
 			remove_non_electors_emperors_from_empire_effect = yes
 			add_government_reform = h_reform_dominion
 			if = {
@@ -1247,7 +1247,7 @@ country_decisions = {
 			any_subject_country = {
 				has_country_flag = h_easternamerica_dominion_request
 			}
-			NOT = { has_country_flag = h_neg_enabled }
+			NOT = { has_country_flag = h_vrm_enabled }
 		}
 		allow = {
 			any_subject_country = {
@@ -1255,7 +1255,7 @@ country_decisions = {
 			}
 		}
 		effect  = {
-			set_country_flag = h_neg_enabled
+			set_country_flag = h_vrm_enabled
 			any_subject_country = {
 				clr_country_flag = h_easternamerica_dominion_request
 			}
