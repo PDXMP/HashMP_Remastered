@@ -14555,6 +14555,7 @@ DLH_ideas = {
 	
 	trigger = {
 		tag = DLH
+		tag = SRH
 	}
 	free = yes
 	
