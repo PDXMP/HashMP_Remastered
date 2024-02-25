@@ -25,9 +25,9 @@ change_estate_land_share = {
 	monarch = {
 		name = "Mar-Arkana"
 		dynasty = "Sonni"
-		adm = 2
-		dip = 0
-		mil = 2
+		adm = 3 #2
+		dip = 1 #0
+		mil = 3 #2
 	}
 	add_piety = 0.25
 }
@@ -43,6 +43,21 @@ change_estate_land_share = {
 		adm = 3
 		dip = 3
 		mil = 1
+	}
+}
+
+#HashMP
+1444.1.1 = {
+	heir = {
+		name = "Sulaymân"
+		monarch_name = "Sulaymân"
+		dynasty = "Sonni"
+		birth_date = 1420.1.1
+		death_Date = 1464.1.1
+		claim = 95
+		adm = 3 #1
+		dip = 3 #1
+		mil = 5
 	}
 }
 
