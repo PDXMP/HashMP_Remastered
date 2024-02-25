@@ -1564,6 +1564,7 @@ country_decisions = {
 		}
 		allow = {
 			NOT = { exists = DEC }
+			adm_tech = 10
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
@@ -1613,6 +1614,7 @@ country_decisions = {
 		}
 		allow = {
 			NOT = { exists = HIN }
+			adm_tech = 10
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
@@ -1662,6 +1664,7 @@ country_decisions = {
 		}
 		allow = {
 			NOT = { exists = BHA }
+			adm_tech = 10
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
@@ -1711,6 +1714,7 @@ country_decisions = {
 		}
 		allow = {
 			NOT = { exists = MAR }
+			adm_tech = 10
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
