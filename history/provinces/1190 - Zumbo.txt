@@ -1,8 +1,8 @@
 #1190 - Zumbo
 
-owner = RZW
-controller = RZW
-add_core = RZW
+owner = RZI
+controller = RZI
+add_core = RZI
 culture = shona
 religion = shamanism
 is_city = yes
