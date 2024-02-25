@@ -1973,6 +1973,15 @@ carribean_trade = {
 		47 204 93 
 	}
 	outgoing = {
+		name = "english_channel"
+		path = { 
+			1574 1568 1272 1271 
+		}
+		control = { 
+			0.0
+		}
+	}
+	outgoing = {
 		name = "tunis"
 		path = { 
 			491 366 346
