@@ -938,3 +938,5 @@ desc_h_court_infrastructure:0 "Prosperity? Medicine? Cultural advancements? No, 
  HashMPCN_1_a:0 "Expands the State Administration."
  HashMPCN_1_b:0 "Introduces Statewide Education."
  HashMPCN_1_c:0 "Founds a Cadet Academy."
+ h_reform_dominion:0 "Dominion"
+ h_reform_dominion_desc:0 "A semi-independent government empowered to uphold the constitution of a former colony."
