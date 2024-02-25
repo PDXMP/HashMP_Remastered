@@ -4267,8 +4267,9 @@ KON_ideas = {
 
 MAL_ideas = {
 	start = {
-		land_attrition = -0.10
-		tolerance_heathen = 2
+		#land_attrition = -0.10
+		colonists = 1
+		tolerance_heathen = 3 #2
 	}
 	
 	bonus = {
@@ -4293,7 +4294,7 @@ MAL_ideas = {
 		discipline = 0.05
 	}
 	lost_fleet_of_abubukari_ii = {
-		navy_tradition = 0.5
+		navy_tradition = 1 #0.5
 	}
 	seek_new_markets_for_salt = {
 		merchants = 1
