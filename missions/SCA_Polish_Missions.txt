@@ -14,7 +14,7 @@ poland_sca_slot_1 = {
 		}
 	}
 	has_country_shield = yes
-	
+	#test, moving to right place
 	pol_leverage_magnates = {
 		icon = mission_noble_council
 		required_missions = { } 
