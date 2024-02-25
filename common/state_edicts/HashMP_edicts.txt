@@ -34,7 +34,7 @@ h_edict_flat_institution = {
 	years_to_notify = 3 #specifies how many years an edict needs to be active to show an alert
 
 	modifier = {
-		institution_growth = 10
+		institution_growth = 8
 	}
 	
 	color = {  50 90 150  }
