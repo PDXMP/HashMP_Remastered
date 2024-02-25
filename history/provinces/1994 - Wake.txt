@@ -13,6 +13,12 @@ native_ferocity = 1
 native_hostileness = 1
 discovered_by = polynesian_tech
 
+#HashMP
+add_permanent_province_modifier = {
+	name = h_atoll
+	duration = -1
+}
+
 1568.10.20 = {
 	discovered_by = SPA	# Álvaro de Mendaña de Neyra
 }

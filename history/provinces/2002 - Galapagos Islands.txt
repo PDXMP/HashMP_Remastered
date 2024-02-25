@@ -12,6 +12,11 @@ native_hostileness = 0
 culture = cara
 religion = animism
 
+#HashMP
+add_permanent_province_modifier = {
+	name = h_atoll
+	duration = -1
+}
 
 discovered_by = INC
 
