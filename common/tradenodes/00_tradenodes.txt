@@ -1662,6 +1662,15 @@ ivory_coast = {
 	color = { 
 		198 111 131 
 	}
+	outgoing = {
+		name = "north_sea"
+		path = { 
+			1597 1584 1567
+		}
+		control = { 
+			0.0
+		}
+	}
 	outgoing = { 
 		name = "bordeaux"
 		path = { 
