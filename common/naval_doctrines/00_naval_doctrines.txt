@@ -59,11 +59,11 @@ ship_boarding = {
 wooden_wall = {
 	can_select = {
 		is_primitive = no
-		NOT = { has_country_flag = unlock_norwegian_naval_doctrine } 
-		OR = {
-			culture_group = british
-			primary_culture = anglois
-		}
+		# NOT = { has_country_flag = unlock_norwegian_naval_doctrine } 
+		# OR = {
+		# 	culture_group = british
+		# 	primary_culture = anglois
+		# }
 	}
 
 	cost = 0.1
