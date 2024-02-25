@@ -213,6 +213,8 @@ t_player_cn = {
 	manpower_recovery_speed = -0.33
 	sailors_recovery_speed = -0.33
 	global_sailors_modifier = -0.5
+	mercenary_manpower = -0.5
+	mercenary_cost = 0.5
 }
 
 t_player_dominion = {
@@ -232,6 +234,8 @@ t_player_dominion = {
 	manpower_recovery_speed = -0.33
 	sailors_recovery_speed = -0.33
 	global_sailors_modifier = -0.5
+	mercenary_manpower = -0.5
+	mercenary_cost = 0.5
 }
 
 t_low_repubtrad = {
