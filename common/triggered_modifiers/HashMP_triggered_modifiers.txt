@@ -13,9 +13,8 @@ h_tm_merc_cap = {
 	}
 
 	merc_maintenance_modifier = 1
-	mercenary_cost = 1
-	mercenary_discipline = -0.1
-	mercenary_manpower = -1
+	mercenary_discipline = -0.15
+	mercenary_manpower = -0.5
 }
 
 h_tm_new_world = { 
@@ -168,6 +167,39 @@ h_tm_hre_weakened_empire = {
 	imperial_authority = -0.1
 }
 
+# h_tm_age_of_reformation = {
+# 	potential = {
+# 		current_age = age_of_reformation
+# 	}
+# 	trigger = {
+# 		current_age = age_of_reformation
+# 	}
+
+# 	merc_maintenance_modifier = 0.30
+# }
+
+# h_tm_age_of_absolutism = {
+# 	potential = {
+# 		current_age = age_of_absolutism
+# 	}
+# 	trigger = {
+# 		current_age = age_of_absolutism
+# 	}
+
+# 	merc_maintenance_modifier = 0.40
+# }
+
+# h_tm_age_of_revolutions = {
+# 	potential = {
+# 		current_age = age_of_revolutions
+# 	}
+# 	trigger = {
+# 		current_age = age_of_revolutions
+# 	}
+
+# 	merc_maintenance_modifier = 0.50
+# }
+
 ###########################################
 # Misc Modifiers
 ###########################################
@@ -209,12 +241,11 @@ t_player_cn = {
 	}
 	naval_forcelimit_modifier = -0.5
 	land_forcelimit_modifier = -0.25
+	possible_mercenaries = -1.0
 	development_cost = 0.6
 	manpower_recovery_speed = -0.33
 	sailors_recovery_speed = -0.33
 	global_sailors_modifier = -0.5
-	mercenary_manpower = -0.5
-	mercenary_cost = 0.5
 }
 
 t_player_dominion = {
@@ -230,12 +261,11 @@ t_player_dominion = {
 	}
 	naval_forcelimit_modifier = -0.25
 	land_forcelimit_modifier = -0.25
+	possible_mercenaries = -0.5
 	development_cost = 0.3
 	manpower_recovery_speed = -0.33
 	sailors_recovery_speed = -0.33
 	global_sailors_modifier = -0.5
-	mercenary_manpower = -0.5
-	mercenary_cost = 0.5
 }
 
 t_low_repubtrad = {
@@ -406,56 +436,94 @@ t_cn_navy_3 = {
 # }
 
 ## Triggered modifiers for over land and naval FL 
-# Early = warning, should have low impactful
+
 t_over_army_cap_early = {
 	potential = {
 		was_player = yes
 	}
 	trigger = {
 		army_size_percentage = 1.5
-		NOT = {
-			army_size_percentage = 2.0
+	
+	NOT = {
+		army_size_percentage = 2.00
 		}
-	}
-	morale_damage_received = 0.05
-	manpower_recovery_speed = -0.1
-	war_exhaustion = 0.02
-	reinforce_speed = -0.2
-	reinforce_cost_modifier = 0.2
-	global_regiment_recruit_speed = 0.2
+}
+	war_exhaustion = 0.01
+	discipline = -0.01
+	land_morale = -0.025
+	defensiveness = -0.05
+	reinforce_speed = -0.05
+	reinforce_cost_modifier = 0.05
 }
 
-# Player was warned, take them out back and start shooting the fuck
 t_over_army_cap_mid = {
 	potential = {
 		was_player = yes
 	}
 	trigger = {
 		army_size_percentage = 2.0
-		NOT = {
-			army_size_percentage = 2.5
+	
+	NOT = {
+		army_size_percentage = 2.5
+		
 		}
-	}
-	morale_damage_received = 0.15
-	manpower_recovery_speed = -0.25
-	war_exhaustion = 0.05
-	reinforce_speed = -0.5
-	reinforce_cost_modifier = 0.5
-	global_regiment_recruit_speed = 0.5
+}
+	discipline = -0.025
+	land_morale = -0.05
+	war_exhaustion = 0.02
+	defensiveness = -0.1
+	reinforce_speed = -0.1
+	reinforce_cost_modifier = 0.1
 }
 
-# I think he's dead
 t_over_army_cap_late = {
 	potential = {
 		was_player = yes
 	}
 	trigger = {
 		army_size_percentage = 2.5
+	
+}
+	discipline = -0.05
+	land_morale = -0.1
+	war_exhaustion = 0.03
+	reinforce_speed = -0.2
+	reinforce_cost_modifier = 0.2
+	defensiveness = -0.15
+}
+
+
+###########################################
+# 'Former Human' AI buff - Meant to have AI nations who's players' quit pose a challenge, reducing variation from players who roach to the bitter end VS those who don't. Independent former-player tags will pose a challenge no matter what.
+###########################################
+
+hashinshin_former_human = { 
+	potential = {
+		was_player = yes
+		is_subject = no
+		ai = yes
 	}
-	morale_damage_received = 0.25
-	manpower_recovery_speed = -0.5
-	war_exhaustion = 0.1
-	reinforce_speed = -1
-	reinforce_cost_modifier = 1
-	global_regiment_recruit_speed = 1
+	trigger = {
+		was_player = yes
+		is_subject = no
+		ai = yes
+	}
+
+	all_power_cost = -0.05
+	global_manpower_modifier = 0.2
+	manpower_recovery_speed = 0.2
+	land_forcelimit_modifier = 0.2
+	naval_forcelimit_modifier = 0.2
+	production_efficiency = 0.15
+	global_regiment_cost = -0.1
+	global_ship_cost = -0.1
+	inflation_reduction = 0.15
+	global_unrest = -3
+	war_exhaustion = -0.05
+	advisor_pool = 1
+	free_leader_pool = 1
+	interest = -1.5
+	yearly_corruption = -0.5
+	global_autonomy = -0.1
+	missionary_maintenance_cost = -0.3
 }
