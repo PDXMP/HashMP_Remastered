@@ -933,3 +933,8 @@ desc_h_court_infrastructure:0 "Prosperity? Medicine? Cultural advancements? No, 
  h_colonial_cavalry_shock_28DESCR:0 ""
  h_colonial_cavalry_fire_28:0 "Colonial Dragoons"
  h_colonial_cavalry_fire_28DESCR:0 ""
+ HashMPCN_1_title:0 "Colonial Edict of [GetYear]"
+ HashMPCN_1_desc:0 "The expansion of our economy and colonial infrastructure is now complete. With the authority invested in [Root.Monarch.GetTitle] [Root.Monarch.GetName] by decree of the crown, [Root.Monarch.GetSheHe] hereby announces and enacts the Edict of [Root.Capital.GetCapitalName] which..."
+ HashMPCN_1_a:0 "Expands the State Administration."
+ HashMPCN_1_b:0 "Introduces Statewide Education."
+ HashMPCN_1_c:0 "Founds a Cadet Academy."

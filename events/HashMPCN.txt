@@ -1,0 +1,75 @@
+namespace = HashMPCN
+
+country_event = {
+	id = HashMPCN.1
+	title = HashMPCN_1_title
+	desc = HashMPCN_1_desc
+	picture = BIG_BOOK_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = HashMPCN_1_a
+		add_adm_power = 25
+		add_country_modifier = {
+			name = h_colony_event_adm
+			duration = -1
+		}
+		define_advisor = {
+			type = treasurer
+			skill = 1
+			discount = yes
+		}
+	}
+	
+	option = {
+		name = HashMPCN_1_b
+		add_dip_power = 25
+		add_country_modifier = {
+			name = h_colony_event_dip
+			duration = -1
+		}
+		define_advisor = {
+			type = statesman
+			skill = 1
+			discount = yes
+		}
+	}
+	
+	option = {
+		name = HashMPCN_1_c
+		add_mil_power = 25
+		add_country_modifier = {
+			name = h_colony_event_mil
+			duration = -1
+		}
+		define_advisor = {
+			type = grand_captain
+			skill = 1
+			discount = yes
+		}
+	}
+}
+
+# Hidden event to enforce colonial units onto new colonies
+country_event = {
+	id = HashMPCN_2
+	title = HashMPCN_2_title
+	desc = HashMPCN_2_desc
+	picture = BIG_BOOK_eventPicture
+	hidden = yes
+
+	trigger = {
+		is_colonial_nation = yes
+		NOT = { unit_type = h_colonial }
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	option = {
+		name = HashMPCN_2_a
+		change_unit_type = h_colonial
+	}
+}
