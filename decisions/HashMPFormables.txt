@@ -1557,7 +1557,8 @@ country_decisions = {
 			religion_group = muslim
 		}
 		provinces_to_highlight = {
-			india_superregion = {
+			superregion = india_superregion
+			OR = {
 				NOT = { owned_by = ROOT }
 				NOT = { is_core = ROOT }
 			}
@@ -1607,7 +1608,8 @@ country_decisions = {
 			religion_group = muslim
 		}
 		provinces_to_highlight = {
-			india_superregion = {
+			superregion = india_superregion
+			OR = {
 				NOT = { owned_by = ROOT }
 				NOT = { is_core = ROOT }
 			}
@@ -1657,7 +1659,8 @@ country_decisions = {
 			religion_group = dharmic
 		}
 		provinces_to_highlight = {
-			india_superregion = {
+			superregion = india_superregion
+			OR = {
 				NOT = { owned_by = ROOT }
 				NOT = { is_core = ROOT }
 			}
@@ -1707,7 +1710,8 @@ country_decisions = {
 			religion_group = dharmic
 		}
 		provinces_to_highlight = {
-			india_superregion = {
+			superregion = india_superregion
+			OR = {
 				NOT = { owned_by = ROOT }
 				NOT = { is_core = ROOT }
 			}
