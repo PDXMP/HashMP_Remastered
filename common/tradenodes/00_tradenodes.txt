@@ -1578,7 +1578,7 @@ pest={
 krakow={
 	location=262
 	color={
-		147 29 238 
+		240 128 128 
 	}
 	inland=yes
 	outgoing={
@@ -1878,7 +1878,7 @@ st_lawrence={
 north_sea={
 	location=1284
 	color={
-		117 165 188 
+		178 34 34
 	}
 	outgoing={
 		name="english_channel"
