@@ -1972,6 +1972,15 @@ carribean_trade = {
 	color = { 
 		47 204 93 
 	}
+	outgoing = {
+		name = "tunis"
+		path = { 
+			491 366 346
+		}
+		control = { 
+			0.0
+		}
+	}
 	outgoing = { 
 		name = "chesapeake_bay"
 		path = { 
