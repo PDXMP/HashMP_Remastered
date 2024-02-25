@@ -1457,6 +1457,8 @@ self_governing_colony_overlord = {
 crown_colony_subject = {
 	global_autonomy = -0.1
 	global_colonial_growth = 10
+	#HashMP
+	capped_by_forcelimit = yes
 }
 
 private_enterprise_subject = {
@@ -1464,12 +1466,16 @@ private_enterprise_subject = {
 	global_trade_goods_size_modifier = 0.2
 	naval_tradition_from_trade = 0.1
 	ship_power_propagation = 0.1
+	#HashMP
+	capped_by_forcelimit = yes
 }
 
 self_governing_colony_subject = {
 	colonists = 1
 	development_cost = -0.15
 	liberty_desire = 25
+	#HashMP
+	capped_by_forcelimit = yes
 }
 
 march_subject = {
