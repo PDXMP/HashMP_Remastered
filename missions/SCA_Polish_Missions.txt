@@ -3148,79 +3148,13 @@ poland_sca_slot_5_branching_hre_west = {
 		required_missions = { pol_varna_aftermath } 
 		position = 2 
 		trigger = {
-			not_in_mission_preview_mode = { key = POL }
-			if = {
-				limit = { is_emperor = yes } 
-				is_emperor = yes 
-				imperial_influence = 45
-			}
-			else_if = {
-				limit = { hre_size = 1 }
-				emperor = {
-					OR = {
-						alliance_with = ROOT 
-						has_opinion = {
-							who = ROOT 
-							value = 160 
-						}
-					}
-					OR = {
-						marriage_with = ROOT 
-						trust = {
-							who = ROOT 
-							value = 60 
-						}
-						owes_favors = { who = ROOT value = 15 }
-					}
-				}
-			}
-			else = {
-				OR = {
-					government_rank = 3 
-					total_development = 1000
-				}
-				prestige = 70
+			neumark_area = {
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
 			}
 		}
 		effect = {
-			if = {
-				limit = { 
-					is_emperor = no 
-					hre_size = 1 
-				}
-				emperor = {
-					country_event = { id = flavor_pol.33 } 
-				}
-			}
-			else_if = { 
-				limit = { hre_size = 1 }
-				add_imperial_influence = 10 add_prestige = 25 
-			}
-			else = { 
-				north_german_region = {
-					limit = { 
-						NOT = { country_or_non_sovereign_subject_holds = ROOT }
-						NOT = { is_core = ROOT }
-					}
-					add_permanent_claim = ROOT 
-				}
-				south_german_region = {
-					limit = { 
-						NOT = { country_or_non_sovereign_subject_holds = ROOT }
-						NOT = { is_core = ROOT }
-					}
-					add_permanent_claim = ROOT 
-				}
-			} 
-			custom_tooltip = pol_claim_lithuanian_lands
-			hidden_effect = { 
-				LIT = { 
-					every_owned_province = { 
-						limit = { owned_by = LIT } 
-						add_permanent_claim = POL 
-					}
-				}
-			}
+			
 		}				
 	}
 	
