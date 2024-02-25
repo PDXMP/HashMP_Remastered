@@ -80,7 +80,16 @@
  PROV_ADJ1836:0 "Nanyangian"
  PROV_ADJ2115:0 "Chifengian"
  PROV_ADJ2369:1 "Upper Ishimian"
- 
- 
- 
+ pol_delegate_emperor_title:0 "Secure Neumark"
+ pol_delegate_emperor_desc:0 "The Holy Roman Empire is a troublesome political entity, but also a prestigious one, and it harbors opportunities to further promote our country above our peers if we can secure a good relationship with the Emperor."
+ pol_place_sun_title:1 "[Root.GetPreviewColorPOL]Our Place in the Sun[Root.GetPreviewColorPOL_end]"
+ pol_place_sun_desc:0 "Our bid to join the Empire has been quite succesful, and we have even been able to become an Imperial Elector. Now the time has come to raise the stakes even higher,and bid for the title of Holy Roman Emperor."
+ pol_proclaim_new_empire_title:1 "[Root.GetPreviewColorPOL]Proclaim a New Empire[Root.GetPreviewColorPOL_end]"
+ pol_proclaim_new_empire_desc:0 "We have seized the opportunity to become the head of the Holy Roman Empire, opening a new era in it. Now we have to leave the mark of our new government on this old polity."
+ pol_develop_ukraine_title:0 "Develop Ruthenia"
+ pol_develop_ukraine_desc:0 "The lands of Ruthenia, on both sides of the mighty Dnieper, are fertile and promising. However, it has become depopulated through centuries of war and raiding, leaving Ruthenia as but a shadow of what it could be under sound administration. We must invest our efforts into taming that land once more."
+ pol_tend_east_title:1 "[Root.GetPreviewColorPOL]Tend to the East[Root.GetPreviewColorPOL_end]"
+ pol_tend_east_desc:0 "We have shared common political leadership with the Grand Duchy of Lithuania since Queen Jadwiga married Grand Duke Jogaila, breeding the Jagiello dynasty. There have been tensions between the Polish and Lithuanians nobility, but a closer relationship has also been developing between the two countries, ties that we would be wise to continue fostering."
+ pol_imperial_commonwealth_title:1 "[Root.GetPreviewColorPOL]Imperial Commonwealth[Root.GetPreviewColorPOL_end]"
+ pol_imperial_commonwealth_desc:0 "The Polish-Lithuanian Commonwealth has resulted in a great success, elevating us to the status of Empire, as recognized by other European courts."
  

@@ -2389,7 +2389,7 @@ poland_sca_slot_5_branching_lit_east = {
 	}
 	
 	pol_imperial_commonwealth = {
-		icon = mission_pol_imperial_commonwealth 
+		icon = mission_pol_place_sun 
 		required_missions = { pol_tend_east } 
 		position = 4 
 		trigger = {
@@ -3144,7 +3144,7 @@ poland_sca_slot_5_branching_hre_west = {
 	}
 	
 	pol_delegate_emperor = {
-		icon = mission_pol_delegate_emperor 
+		icon = mission_conquer_5_states
 		required_missions = { pol_varna_aftermath } 
 		position = 2 
 		trigger = {
@@ -3225,7 +3225,7 @@ poland_sca_slot_5_branching_hre_west = {
 	}
 	
 	pol_place_sun = {
-		icon = mission_pol_place_sun 
+		icon = the_balance_of_power  
 		required_missions = { pol_delegate_emperor } 
 		position = 3
 		trigger = {
