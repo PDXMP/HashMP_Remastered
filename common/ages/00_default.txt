@@ -498,7 +498,7 @@ age_of_absolutism = {
 		}
 		
 		obj_emperor_of_china = {
-			#has_reform = h_reform_warlord_4
+			has_reform = h_reform_warlord_4
 		}
 		
 		obj_cultures_accepted = {

@@ -92,4 +92,6 @@
  ab_denmark_reduced_lib_desire:0 "Danish Navy"
  obj_colonial_empire:0 "Create a Colonial Empire"
  obj_colonial_empire_desc:0 "Have a subject colonial nation."
+ obj_emperor_of_china:0 "Emperor of China"
+ obj_emperor_of_china_desc:0 "Be the emperor of China by having the Chinese Empire government reform."
  
