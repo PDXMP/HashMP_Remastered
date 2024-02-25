@@ -228,6 +228,7 @@ age_of_discovery = {
 			modifier = {
 				mercenary_discipline = 0.05
 				merc_maintenance_modifier = -0.25
+				mercenary_manpower = 0.5
 			}
 			ai_will_do = {
 				factor = 100
