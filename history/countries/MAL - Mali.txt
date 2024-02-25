@@ -70,9 +70,9 @@ change_estate_land_share = {
 	monarch = {
 		name = "Musa III"
 		dynasty = "Keita"
-		adm = 1
-		dip = 0
-		mil = 0
+		adm = 3 #1
+		dip = 2 #0
+		mil = 2 #0
 	}
 }
 
@@ -84,9 +84,9 @@ change_estate_land_share = {
 		birth_date = 1430.1.1
 		death_date = 1481.9.1
 		claim = 95
-		adm = 1
-		dip = 1
-		mil = 1
+		adm = 4 #1
+		dip = 4 #1
+		mil = 3 #1
 	}
 }
 
