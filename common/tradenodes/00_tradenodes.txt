@@ -1763,6 +1763,15 @@ chesapeake_bay={
 	color={
 		193 26 14 
 	}
+	outgoing = {
+		name = "english_channel"
+		path = { 
+			1573 1289
+		}
+		control = { 
+			0.0
+		}
+	}
 	outgoing={
 		name="st_lawrence"
 		path={
