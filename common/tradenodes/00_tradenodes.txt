@@ -1549,6 +1549,15 @@ laplata = {
 	color = { 
 		56 95 78 
 	}
+	outgoing = {
+		name = "lima"
+		path = { 
+			794 802
+		}
+		control = { 
+			0.0
+		}
+	}
 	outgoing = { 
 		name = "brazil"
 		path = { 
