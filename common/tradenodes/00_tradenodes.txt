@@ -1709,6 +1709,15 @@ carribean_trade={
 	color={
 		47 204 93 
 	}
+	outgoing = {
+		name = "north_sea"
+		path = { 
+			481 1564
+		}
+		control = { 
+			0.0
+		}
+	}
 	outgoing={
 		name="english_channel"
 		path={
