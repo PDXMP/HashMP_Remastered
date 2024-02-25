@@ -1565,8 +1565,8 @@ self_governing_colony_government = {
 		locked_government_type = yes
 		enables_plutocratic_idea_group = yes
 		enables_aristocratic_idea_group = no
-		enables_estate_nobles = yes
-		enables_estate_burghers = yes
+		#enables_estate_nobles = yes
+		#enables_estate_burghers = yes
 	}
 	effect = {
 		hidden_effect = {
