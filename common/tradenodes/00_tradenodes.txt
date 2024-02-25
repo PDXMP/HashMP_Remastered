@@ -2043,7 +2043,16 @@ chesapeake_bay = {
 	outgoing = { 
 		name = "north_sea"
 		path = { 
-			1570 1572 1582 1568 1564 1563 
+			1570 1573 1582 1568 1564 1563 
+		}
+		control = { 
+			0.0
+		}
+	}
+	outgoing = {
+		name = "bordeaux"
+		path = { 
+			1570 1572 1563
 		}
 		control = { 
 			0.0
