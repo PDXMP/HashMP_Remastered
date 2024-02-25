@@ -5,4 +5,4 @@ technology_group = chinese
 religion = confucianism
 primary_culture = chimin #ganyu
 capital = 5805 #Chaozhou
-fixed_capital = 
+fixed_capital = 5805

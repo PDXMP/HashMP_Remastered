@@ -610,3 +610,6 @@ h_swedish_industry = {
 h_swedish_naval_supremacy = {
 	naval_morale = 0.10
 }
+h_atoll = {
+	province_trade_power_value = 15
+}

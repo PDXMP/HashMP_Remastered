@@ -5,4 +5,4 @@ technology_group = chinese
 religion = confucianism
 primary_culture = sichuanese #ganyu
 capital = 4212 #Jiazhou
-fixed_capital = 
+fixed_capital = 4212

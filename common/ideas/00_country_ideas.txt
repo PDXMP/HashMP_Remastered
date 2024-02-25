@@ -4223,7 +4223,8 @@ KON_ideas = {
 	}
 
 	bonus = {
-		improve_relation_modifier = 0.3
+		#improve_relation_modifier = 0.3
+		heavy_ship_power = 0.1
 	}
 
 	trigger = {	
@@ -4236,35 +4237,39 @@ KON_ideas = {
 	free = yes		#will be added at load.
 	
 	kongolese_tax_exchange = {
-		global_tax_modifier = 0.1
+		global_tax_modifier = 0.2 #0.1
 	}
 	election_of_manikongos = {
 		heir_chance = 0.5
+		monarch_diplomatic_power = 1
 	}
 	imported_european_weaponry = {
 		mil_tech_cost_modifier  = -0.1
+		infantry_power = 0.1 #0.05
 	}
 	diplomacy_with_european_monarchs = {
-		diplomatic_reputation = 1
+		#diplomatic_reputation = 1
+		colonists = 1
 		envoy_travel_time = -0.25
 	}
 	triangle_trade = {
-		global_prov_trade_power_modifier = 0.1
-		infantry_power = 0.05
+		global_prov_trade_power_modifier = 0.2 #0.1
 	}
 	foreign_demand_for_slaves = {
 		production_efficiency = 0.10
 	}
 	defend_against_the_colonists = {
 		discipline = 0.05
+		fire_damage = 0.10
 	}
 }
 
 
 MAL_ideas = {
 	start = {
-		land_attrition = -0.10
-		tolerance_heathen = 2
+		#land_attrition = -0.10
+		colonists = 1
+		tolerance_heathen = 3 #2
 	}
 	
 	bonus = {
@@ -4289,7 +4294,7 @@ MAL_ideas = {
 		discipline = 0.05
 	}
 	lost_fleet_of_abubukari_ii = {
-		navy_tradition = 0.5
+		navy_tradition = 1 #0.5
 	}
 	seek_new_markets_for_salt = {
 		merchants = 1
@@ -5749,12 +5754,15 @@ mossi_ideas = {
 
 fulani_jihad_ideas = {
 	start = {
-		recover_army_morale_speed = 0.10
-		cavalry_cost = -0.10
+		#recover_army_morale_speed = 0.10
+		#cavalry_cost = -0.10
+		manpower_in_true_faith_provinces = 0.2
+		global_regiment_cost = -0.1
 	}
 	
 	bonus = {
-		army_tradition_from_battle = 0.5
+		#army_tradition_from_battle = 0.5
+		discipline = 0.05
 	}
 	
 	trigger = {
@@ -5767,27 +5775,32 @@ fulani_jihad_ideas = {
 	free = yes		#will be added at load.
 	
 	wandering_scholars = {
-		missionaries = 1
+		#missionaries = 1
+		advisor_cost = -0.15
 	}
 	
 	unrighteous_kings = { 
 		defensiveness = 0.15
+		army_tradition_from_battle = 0.5
 	}
 	
 	fulani_jihads = {
-		global_missionary_strength = 0.01
+		global_missionary_strength = 0.02 #0.01
+		missionaries = 1
 	}
 	
 	imams_and_emirs = { 
 		land_morale = 0.1
+		recover_army_morale_speed = 0.10
 	}
 	
 	islamic_scholarship = {
-		tolerance_own = 2
+		#tolerance_own = 2
+		technology_cost = -0.05
 	}
 	
 	community_of_the_faithful = {
-		num_accepted_cultures = 1
+		num_accepted_cultures = 2 #1
 	}
 
 	caliph_in_africa = {
