@@ -9,6 +9,7 @@ decline_of_mali = {
 		is_free_or_tributary_trigger = yes
 		normal_or_historical_nations = yes
 		tag = MAL
+		always = no
 	}
 	
 	can_start = {
