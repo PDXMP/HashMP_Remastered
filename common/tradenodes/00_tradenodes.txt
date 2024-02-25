@@ -1592,15 +1592,6 @@ brazil = {
 	color = { 
 		11 71 204 
 	}
-	outgoing = {
-		name = "panama"
-		path = { 
-			751 2934 828
-		}
-		control = { 
-			0.0
-		}
-	}
 	outgoing = { 
 		name = "ivory_coast"
 		path = { 
@@ -1959,6 +1950,15 @@ panama = {
 	location = 835
 	color = { 
 		204 29 135 
+	}
+	outgoing = {
+		name = "brazil"
+		path = { 
+			2934 751
+		}
+		control = { 
+			0.0
+		}
 	}
 	outgoing = { 
 		name = "carribean_trade"
