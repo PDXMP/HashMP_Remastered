@@ -56,7 +56,7 @@ age_of_discovery = {
 					controlled_by = owner
 					is_core = ROOT
 				}
-				amount = 5
+				amount = 3
 			}
 		}
 		obj_30_development_city = {
@@ -78,18 +78,18 @@ age_of_discovery = {
 	 		}
 		}
 		
-		obj_two_unions = {
-			allow = {
-				religion_group = christian
-			}
-			personal_union  = 2
-		}
+		# obj_two_unions = {
+		# 	allow = {
+		# 		religion_group = christian
+		# 	}
+		# 	personal_union  = 2
+		# }
 		
 		obj_many_vassals = {
-			allow = {
-				NOT = { religion_group = christian }
-			}
-			vassal = 5
+			# allow = {
+			# 	NOT = { religion_group = christian }
+			# }
+			num_of_subjects = 3
 		}		
 	
 		obj_two_continents = {
@@ -147,6 +147,7 @@ age_of_discovery = {
 
 		ab_cavalry_armies = {
 			modifier = {
+				cavalry_cost = -0.1
 				cav_to_inf_ratio = 0.2
 			}
 			ai_will_do = {
@@ -205,9 +206,7 @@ age_of_discovery = {
 				tag = DAN
 			}
 			modifier = {
-				reduced_liberty_desire = 30
-				diplomatic_annexation_cost = -0.25
-				diplomatic_reputation = 2
+				naval_morale = 0.1
 			}
 			ai_will_do = {
 				factor = 100
@@ -229,6 +228,7 @@ age_of_discovery = {
 			modifier = {
 				mercenary_discipline = 0.05
 				merc_maintenance_modifier = -0.25
+				mercenary_manpower = 0.5
 			}
 			ai_will_do = {
 				factor = 100
@@ -273,7 +273,7 @@ age_of_reformation = {
 		}
 		
 		obj_colonial_empire = {
-			colony = 5
+			colony = 1
 		}
 		
 		obj_force_converted = {
@@ -472,9 +472,9 @@ age_of_absolutism = {
 		increase_autonomy_command = -2
 		debase_currency = -1
 		execute_rebel_acceptance_command = -10
-		automatic_seat_in_parliament = -2
-		manual_seat_in_parliament = -2
-		war_exhaustion = -1
+		#automatic_seat_in_parliament = -2
+		manual_seat_in_parliament = -1 #-2
+		#war_exhaustion = -1
 	}
 		
 	objectives = {
@@ -498,7 +498,7 @@ age_of_absolutism = {
 		}
 		
 		obj_emperor_of_china = {
-			#has_reform = h_reform_warlord_4
+			has_reform = h_reform_warlord_4
 		}
 		
 		obj_cultures_accepted = {
@@ -600,7 +600,9 @@ age_of_absolutism = {
 				tag = NED
 			}
 			modifier = {
-				trade_steering = 0.33
+				#trade_steering = 0.33
+				navy_tradition = 1
+				number_of_cannons_modifier = 0.1
 			}
 			ai_will_do = {
 				factor = 100
@@ -614,7 +616,7 @@ age_of_absolutism = {
 				}
 			}
 			modifier = {
-				manpower_recovery_speed = 0.35
+				manpower_recovery_speed = 0.25 #0.35
 			}
 			ai_will_do = {
 				factor = 100
@@ -665,9 +667,9 @@ age_of_revolutions = {
 		increase_autonomy_command = -2
 		debase_currency = -1
 		execute_rebel_acceptance_command = -10
-		automatic_seat_in_parliament = -2
-		manual_seat_in_parliament = -2
-		war_exhaustion = -1
+		#automatic_seat_in_parliament = -2
+		manual_seat_in_parliament = -1 #-2
+		#war_exhaustion = -1
 	}	
 	
 	objectives = {
@@ -690,7 +692,7 @@ age_of_revolutions = {
 		obj_disc_army = {
 			has_global_modifier_value = {
 				which = discipline
-				value = 0.25
+				value = 0.15 #0.25
 				extra_shortcut = yes
 			}
 		}
@@ -712,6 +714,7 @@ age_of_revolutions = {
 		ab_allow_anti_revolutionary_zeal = {
 			modifier = {
 				liberty_desire_from_subject_development = -0.33
+				reduced_liberty_desire_on_same_continent = 25
 			}
 			ai_will_do = {
 				factor = 15
@@ -780,19 +783,21 @@ age_of_revolutions = {
 		}
 		ab_same_contine_lib_desire = {
 			modifier = {
-				reduced_liberty_desire_on_same_continent = 25
+				#reduced_liberty_desire_on_same_continent = 25
+				land_attrition = -0.1
+				supply_limit_modifier = 0.5
 			}
 			ai_will_do = {
 				factor = 15
-				modifier = {
-					factor = 0
-					NOT = {
-						any_subject_country = {
-							liberty_desire = 30
-							same_continent = ROOT
-						}
-					}
-				}
+				# modifier = {
+				# 	factor = 0
+				# 	NOT = {
+				# 		any_subject_country = {
+				# 			liberty_desire = 30
+				# 			same_continent = ROOT
+				# 		}
+				# 	}
+				# }
 			}
 		}
 		ab_pru_military = {
@@ -803,7 +808,7 @@ age_of_revolutions = {
 				}
 			}
 			modifier = {
-				fire_damage_received = -0.2
+				fire_damage_received = -0.1 #-0.2
 			}
 			ai_will_do = {
 				factor = 100

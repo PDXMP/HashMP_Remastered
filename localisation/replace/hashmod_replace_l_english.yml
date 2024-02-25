@@ -100,3 +100,13 @@
  pol_imperial_commonwealth_title:0 "Imperial Commonwealth"
  pol_imperial_commonwealth_desc:0 "We have completely consolidated Lithuania's legal domains, securing our eastern borders and giving lucrative access to the Eastern European plain. None will question the Commonwealth's power in the courts of Europe or anywhere else!"
  hashinshin_former_human:0 "Former Human Nation"
+ obj_5_centers_of_trade_desc:1 "Own, control and core at least three provinces with level 2 or higher centers of trade."
+ obj_many_vassals_desc:0 "Have at least three subjects at the same time."
+ ab_denmark_reduced_lib_desire:0 "Danish Navy"
+ obj_colonial_empire:0 "Create a Colonial Empire"
+ obj_colonial_empire_desc:0 "Have a subject colonial nation."
+ obj_emperor_of_china:0 "Emperor of China"
+ obj_emperor_of_china_desc:0 "Be the emperor of China by having the Chinese Empire government reform."
+ obj_disc_army_desc:0 "Have at least 115% discipline in your armies."
+ ab_same_contine_lib_desire:0 "Supply Depots"
+ 

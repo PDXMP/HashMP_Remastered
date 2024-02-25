@@ -2213,9 +2213,9 @@ expanded_infrastructure = {
 	#local_build_time = -0.05
 	#province_trade_power_modifier = 0.05
 	#trade_goods_size_modifier = 0.05
-	local_governing_cost_increase = 10 #15
-	local_governing_cost = 0.05 #0.1
-	local_great_project_upgrade_cost = -0.05
+	local_governing_cost_increase = 5 #15
+	local_governing_cost = 0.2 #0.1
+	#local_great_project_upgrade_cost = -0.05
 }
 
 centralize_state = {
