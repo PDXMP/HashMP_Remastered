@@ -60,3 +60,6 @@ h_victory_over_the_empire = {
 h_imperial_unity = {
 	imperial_authority = 0.1
 }
+h_atoll = {
+	province_trade_power_value = 15
+}

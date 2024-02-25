@@ -485,3 +485,4 @@ desc_h_court_infrastructure:0 "Prosperity? Medicine? Cultural advancements? No, 
  t_over_army_cap_early:0 "Over Army Capacity: Mild" 
  t_over_army_cap_mid:0 "Over Army Capacity: Severe"
  t_over_army_cap_late:0 "Over Army Capacity: Catastrophic"
+ h_atoll:0 "Atoll"
