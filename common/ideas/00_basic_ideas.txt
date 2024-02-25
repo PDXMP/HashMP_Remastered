@@ -1834,7 +1834,7 @@ infrastructure_ideas = {
 	
 
 	bonus = {
-		development_cost = -0.1
+		development_cost_modifier = -0.1
 	}
 
 	state_efficiency = {
