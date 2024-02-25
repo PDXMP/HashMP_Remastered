@@ -26,7 +26,7 @@ change_estate_land_share = {
 		name = "Mar-Arkana"
 		dynasty = "Sonni"
 		adm = 3 #2
-		dip = 1 #0
+		dip = 3 #0
 		mil = 3 #2
 	}
 	add_piety = 0.25
