@@ -808,7 +808,7 @@ age_of_revolutions = {
 				}
 			}
 			modifier = {
-				fire_damage_received = -0.2
+				fire_damage_received = -0.1 #-0.2
 			}
 			ai_will_do = {
 				factor = 100
