@@ -211,6 +211,15 @@ mexico = {
 	color = { 
 		0 176 0 
 	}
+	outgoing = {
+		name = "mississippi_river"
+		path = { 
+			1509 1508
+		}
+		control = { 
+			0.0
+		}
+	}
 	outgoing = { 
 		name = "carribean_trade"
 		path = { 
@@ -1903,7 +1912,7 @@ panama = {
 		}
 	}
 	outgoing = { 
-		name = "panama"
+		name = "polynesia_node"
 		path = { 
 			835 1548 1547 1702 1708 1711 1741 1740 1736
 		}
