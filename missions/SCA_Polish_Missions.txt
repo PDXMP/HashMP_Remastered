@@ -1159,430 +1159,68 @@ poland_sca_slot_3_a = {
 		position = 1 
 		trigger = {
 			OR = {
-				custom_trigger_tooltip = { 
-					tooltip = pol_had_kasimir_election_event_tt
-					OR = { 
-						has_country_flag = pol_chose_pu_flag
-						has_country_flag = pol_denied_pu_flag
-					}
-				}
+				tag = POL 
 				tag = PLC 
-				current_age = age_of_reformation
 			}
-			num_of_allies = 2 
 			army_size_percentage = 0.9 
-			BOH = { 
-				OR = { 
-					alliance_with = ROOT 
-					is_rival = ROOT 
-					is_subject_of = ROOT 
-					has_opinion_modifier = {
-						who = ROOT
-						modifier = insulted
-					}
-					has_opinion_modifier = {
-						who = ROOT
-						modifier = scornfully_insulted
-					}
-					exists = no 
-				}
-			}
-			HUN = { 
-				OR = { 
-					alliance_with = ROOT 
-					is_rival = ROOT 
-					is_subject_of = ROOT 
-					has_opinion_modifier = {
-						who = ROOT
-						modifier = insulted
-					}
-					has_opinion_modifier = {
-						who = ROOT
-						modifier = scornfully_insulted
-					}
-					exists = no 
-				}
-			}
 		}
 		effect = {
-			if = {
-				limit = {
-					NOT = { has_country_flag = pol_denied_pu_flag }
-					NOT = { has_country_flag = pol_chose_pu_flag }
+
+			moravia_area = { 
+				limit = { 
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT }  
 				}
-				custom_tooltip = pol_before_event_goes_tt
+				add_permanent_claim = ROOT 
 			}
-			if = {
-				limit = { has_country_flag = pol_denied_pu_flag }
-				tooltip = {
-					if = {
-						limit = { 
-							has_country_flag = pol_denied_pu_flag
-							HUN = { 
-								NOT = { 
-									OR = {
-										alliance_with = ROOT 
-										is_subject_of = ROOT
-									}
-								}
-							}
-						}
-						slovakia_area = { 
-							limit = { 
-								NOT = { is_core = ROOT } 
-								NOT = { is_permanent_claim = ROOT } 
-							}
-							add_permanent_claim = ROOT 
-						}
-						alfold_area = { 
-							limit = { 
-								NOT = { is_core = ROOT } 
-								NOT = { is_permanent_claim = ROOT } 
-							}
-							add_permanent_claim = ROOT 
-						}
-						transdanubia_area = { 
-							limit = { 
-								NOT = { is_core = ROOT } 
-								NOT = { is_permanent_claim = ROOT } 
-							}
-							add_permanent_claim = ROOT 
-						}
-						if = {
-							limit = {
-								BOH = { 
-									NOT = { 
-										OR = {
-											alliance_with = ROOT 
-											is_subject_of = ROOT
-										}
-									}
-									valid_for_personal_unions_trigger = yes 
-								}
-							}
-							add_casus_belli = {
-								type = cb_restore_personal_union
-								months = 300
-								target = BOH
-							}
-						}
-						else = {
-							moravia_area = { 
-								limit = { 
-									NOT = { is_core = ROOT } 
-									NOT = { is_permanent_claim = ROOT }  
-								}
-								add_permanent_claim = ROOT 
-							}
-							bohemia_area = { 
-								limit = { 
-									NOT = { is_core = ROOT } 
-									NOT = { is_permanent_claim = ROOT } 
-								}
-								add_permanent_claim = ROOT 
-							}
-							silesia_area = { 
-								limit = { 
-									NOT = { is_core = ROOT } 
-									NOT = { is_permanent_claim = ROOT } 
-								}
-								add_permanent_claim = ROOT 
-							}
-						}
-					}
+			bohemia_area = { 
+				limit = { 
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
 				}
+				add_permanent_claim = ROOT 
 			}
-			if = {
-				limit = { has_country_flag = pol_chose_pu_flag }
-				tooltip = {
-					if = {
-						limit = { 
-							has_country_flag = pol_chose_pu_flag
-							BOH = { 
-								NOT = { 
-									OR = {
-										alliance_with = ROOT 
-										is_subject_of = ROOT
-									}
-								}
-							}
-						}
-						moravia_area = { 
-							limit = { 
-								NOT = { is_core = ROOT } 
-								NOT = { is_permanent_claim = ROOT }  
-							}
-							add_permanent_claim = ROOT 
-						}
-						bohemia_area = { 
-							limit = { 
-								NOT = { is_core = ROOT } 
-								NOT = { is_permanent_claim = ROOT } 
-							}
-							add_permanent_claim = ROOT 
-						}
-						silesia_area = { 
-							limit = { 
-								NOT = { is_core = ROOT } 
-								NOT = { is_permanent_claim = ROOT } 
-							}
-							add_permanent_claim = ROOT 
-						}
-						if = {
-							limit = {
-								HUN = { 
-									NOT = { 
-										OR = {
-											alliance_with = ROOT 
-											is_subject_of = ROOT
-										}
-									}
-									valid_for_personal_unions_trigger = yes 
-								}
-							}
-							add_casus_belli = {
-								type = cb_restore_personal_union
-								months = 300
-								target = HUN
-							}
-						}
-						else = {
-							slovakia_area = { 
-								limit = { 
-									NOT = { is_core = ROOT } 
-									NOT = { is_permanent_claim = ROOT } 
-								}
-								add_permanent_claim = ROOT 
-							}
-							alfold_area = { 
-								limit = { 
-									NOT = { is_core = ROOT } 
-									NOT = { is_permanent_claim = ROOT } 
-								}
-								add_permanent_claim = ROOT 
-							}
-							transdanubia_area = { 
-								limit = { 
-									NOT = { is_core = ROOT } 
-									NOT = { is_permanent_claim = ROOT } 
-								}
-								add_permanent_claim = ROOT 
-							}
-						}
-					}
+			silesia_area = { 
+				limit = { 
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
 				}
+				add_permanent_claim = ROOT 
 			}
-			#
-			if = {
-				limit = {
-					HUN = {
-						OR = { 
-							alliance_with = ROOT
-							is_subject_of = ROOT 
-						}
-					}
+			slovakia_area = { 
+				limit = { 
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
 				}
-				custom_tooltip = hun_friendship_yes_tt
+				add_permanent_claim = ROOT 
 			}
-			else = {
-				custom_tooltip = hun_friendship_no_tt
+			neumark_area = { 
+				limit = { 
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
+				}
+				add_permanent_claim = ROOT 
 			}
-			tooltip = { 
-				add_favors = {
-					who = HUN 
-					amount = 10 
+			volhynia_area = { 
+				limit = { 
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
 				}
-				HUN = { add_historical_friend = ROOT }
-				add_historical_friend = HUN 
+				add_permanent_claim = ROOT 
 			}
-			if = {
-				limit = {
-					BOH = {
-						OR = { 
-							alliance_with = ROOT
-							is_subject_of = ROOT 
-						}
-					}
+			podolia_volhynia_area = { 
+				limit = { 
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
 				}
-				custom_tooltip = boh_friendship_yes_tt
+				add_permanent_claim = ROOT 
 			}
-			else = {
-				custom_tooltip = boh_friendship_no_tt
-			}
-			tooltip = { 
-				add_favors = { 
-					who = BOH 
-					amount = 10 
+			west_dniepr_area = { 
+				limit = { 
+					NOT = { is_core = ROOT } 
+					NOT = { is_permanent_claim = ROOT } 
 				}
-				BOH = { add_historical_friend = ROOT }
-				add_historical_friend = BOH 
-			}
-			custom_tooltip = pol_impact_future_missions_tt 
-			hidden_effect = { 
-				swap_non_generic_missions = yes 
-				if = { 
-					limit = { 
-						BOH = {
-							OR = {
-								is_subject_of = ROOT
-								alliance_with = ROOT
-							}
-						}
-					}
-					add_favors = { 
-						who = BOH 
-						amount = 10 
-					}
-					BOH = { add_historical_friend = ROOT }
-					add_historical_friend = BOH 
-				}
-				else_if = {
-					limit = {
-						valid_for_personal_unions_trigger = yes 
-						BOH = { 
-							valid_for_personal_unions_trigger = yes 
-						}
-						has_country_flag = pol_denied_pu_flag
-					}
-					add_casus_belli = {
-						type = cb_restore_personal_union
-						months = 300
-						target = BOH
-					}
-				}
-				else = {
-					moravia_area = { 
-						limit = { 
-							NOT = { is_core = ROOT } 
-							NOT = { is_permanent_claim = ROOT }  
-						}
-						add_permanent_claim = ROOT 
-					}
-					bohemia_area = { 
-						limit = { 
-							NOT = { is_core = ROOT } 
-							NOT = { is_permanent_claim = ROOT } 
-						}
-						add_permanent_claim = ROOT 
-					}
-					silesia_area = { 
-						limit = { 
-							NOT = { is_core = ROOT } 
-							NOT = { is_permanent_claim = ROOT } 
-						}
-						add_permanent_claim = ROOT 
-					}
-				}
-				if = { 
-					limit = { alliance_with = HUN } 
-					add_favors = { 
-						who = HUN 
-						amount = 10 
-					}
-					HUN = { add_historical_friend = ROOT }
-					add_historical_friend = HUN 
-				}
-				else_if = {
-					limit = {
-						valid_for_personal_unions_trigger = yes 
-						HUN = { 
-							valid_for_personal_unions_trigger = yes 
-						}
-						has_country_flag = pol_chose_pu_flag 
-					}
-					add_casus_belli = {
-						type = cb_restore_personal_union
-						months = 300
-						target = HUN
-					} 
-				}
-				else = {
-					slovakia_area = { 
-						limit = { 
-							NOT = { is_core = ROOT } 
-							NOT = { is_permanent_claim = ROOT } 
-						}
-						add_permanent_claim = ROOT 
-					}
-					alfold_area = { 
-						limit = { 
-							NOT = { is_core = ROOT } 
-							NOT = { is_permanent_claim = ROOT } 
-						}
-						add_permanent_claim = ROOT 
-					}
-					transdanubia_area = { 
-						limit = { 
-							NOT = { is_core = ROOT } 
-							NOT = { is_permanent_claim = ROOT } 
-						}
-						add_permanent_claim = ROOT 
-					}					
-				}
-				if = {
-					limit = {
-						has_country_flag = pol_chose_pu_flag 
-						NOT = {
-							OR = {
-								BOH = { is_subject_of = ROOT }
-								alliance_with = BOH
-							}
-						}
-					}
-					moravia_area = { 
-						limit = { 
-							NOT = { is_core = ROOT } 
-							NOT = { is_permanent_claim = ROOT }  
-						}
-						add_permanent_claim = ROOT 
-					}
-					bohemia_area = { 
-						limit = { 
-							NOT = { is_core = ROOT } 
-							NOT = { is_permanent_claim = ROOT } 
-						}
-						add_permanent_claim = ROOT 
-					}
-					silesia_area = { 
-						limit = { 
-							NOT = { is_core = ROOT } 
-							NOT = { is_permanent_claim = ROOT } 
-						}
-						add_permanent_claim = ROOT 
-					}
-				}
-				if = {
-					limit = {
-						has_country_flag = pol_denied_pu_flag 
-						NOT = {
-							OR = {
-								HUN = { is_subject_of = ROOT }
-								alliance_with = HUN
-							}
-						}
-					}
-					slovakia_area = { 
-						limit = { 
-							NOT = { is_core = ROOT } 
-							NOT = { is_permanent_claim = ROOT } 
-						}
-						add_permanent_claim = ROOT 
-					}
-					alfold_area = { 
-						limit = { 
-							NOT = { is_core = ROOT } 
-							NOT = { is_permanent_claim = ROOT } 
-						}
-						add_permanent_claim = ROOT 
-					}
-					transdanubia_area = { 
-						limit = { 
-							NOT = { is_core = ROOT } 
-							NOT = { is_permanent_claim = ROOT } 
-						}
-						add_permanent_claim = ROOT 
-					}
-				}
+				add_permanent_claim = ROOT 
 			}
 		}
 	}		
