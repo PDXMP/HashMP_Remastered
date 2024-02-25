@@ -206,9 +206,7 @@ age_of_discovery = {
 				tag = DAN
 			}
 			modifier = {
-				reduced_liberty_desire = 30
-				diplomatic_annexation_cost = -0.25
-				diplomatic_reputation = 2
+				naval_morale = 0.1
 			}
 			ai_will_do = {
 				factor = 100
