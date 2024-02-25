@@ -11,13 +11,14 @@ unlock_cult = cwezi_cult
 unit_type = sub_saharan
 capital = 1185	# Butua
 
+#HashMP
 1444.1.1 = {
 	monarch = {
-		name = "Dlembeu"
-		dynasty = "Torwa"
+		name = "Colambu"
+		dynasty = "Butuan"
 		adm = 3
 		dip = 2
-		mil = 2
+		mil = 3
 	}
 }
 
