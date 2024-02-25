@@ -89,4 +89,5 @@
  COASTAL_SEA_DESC:0 ""
  obj_5_centers_of_trade_desc:1 "Own, control and core at least three provinces with level 2 or higher centers of trade."
  obj_many_vassals_desc:0 "Have at least three subjects at the same time."
+ ab_denmark_reduced_lib_desire:0 "Danish Navy"
  
