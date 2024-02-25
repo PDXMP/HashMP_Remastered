@@ -585,7 +585,7 @@ mali_conquest_slot = {
 		trigger = {
 			is_monarch_leader = yes
 			legitimacy_equivalent = 90
-			army_size_percentage = 1
+			army_size_percentage = 0.8 #1
 		}
 		effect = {
 			jolof_area = {
