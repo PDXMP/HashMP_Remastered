@@ -1,0 +1,12 @@
+#East India Man
+type = transport
+
+hull_size = 36
+base_cannons = 7
+blockade = 3
+
+sail_speed = 9
+
+sailors = 80
+
+sprite_level = 5
