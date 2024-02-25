@@ -912,7 +912,7 @@ kongo_conquest_missions_slot = {
 		required_missions = {  }
 		position = 1
 		trigger = {
-			army_size_percentage = 1
+			army_size_percentage = 0.8 #1
 			has_mil_advisor = yes
 			if = {
 				limit = { has_estate = estate_nobles }
