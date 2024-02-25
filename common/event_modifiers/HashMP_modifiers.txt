@@ -160,3 +160,13 @@ h_colony_event_dip = {
 h_colony_event_mil = {
 	army_tradition = 0.5
 }
+
+h_marshal_of_the_empire = {
+	land_morale = 0.05
+	siege_ability = 0.1
+}
+
+h_admiral_of_the_empire = {
+	naval_morale = 0.05
+	global_naval_barrage_cost = -0.5
+}

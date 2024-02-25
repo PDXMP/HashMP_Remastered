@@ -78,7 +78,6 @@ country_event = {
 			fire = 0
 			manuever = 6
 			siege = 0
-			trait = h_explorer_personality
 		}
 		random_owned_province = {
 			limit = { has_port = yes }
@@ -142,14 +141,16 @@ country_event = {
 			fire = 3
 			manuever = 2
 			siege = 1
-			trait = h_marshal_of_the_empire_personality
+		}
+
+		add_country_modifier = {
+			name = h_marshal_of_the_empire
+			duration = 7300 #20 years
 		}
 
 		ai_chance = {
 			factor = 0
 		}
-
-		custom_tooltip = h_marshal_tooltip
 	}
 	#Admiral of the Empire
 	option = {
@@ -167,14 +168,16 @@ country_event = {
 			fire = 3
 			manuever = 3
 			siege = 0
-			trait = h_admiral_of_the_empire_personality
+		}
+
+		add_country_modifier = {
+			name = h_admiral_of_the_empire
+			duration = 7300 #20 years
 		}
 
 		ai_chance = {
 			factor = 0
 		}
-
-		custom_tooltip = h_admiral_tooltip
 	}
 	#Imperial Advisors
 	option = {
