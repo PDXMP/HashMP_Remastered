@@ -2069,6 +2069,15 @@ st_lawrence = {
 		193 192 14 
 	}
 	outgoing = {
+		name = "lubeck"
+		path = { 
+			1493 371 1281
+		}
+		control = { 
+			0.0
+		}
+	}
+	outgoing = {
 		name = "baltic_sea"
 		path = { 
 			1493 371 23
