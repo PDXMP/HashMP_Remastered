@@ -692,7 +692,7 @@ age_of_revolutions = {
 		obj_disc_army = {
 			has_global_modifier_value = {
 				which = discipline
-				value = 0.25
+				value = 0.15 #0.25
 				extra_shortcut = yes
 			}
 		}
