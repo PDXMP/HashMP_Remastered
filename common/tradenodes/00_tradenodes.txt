@@ -1824,6 +1824,15 @@ krakow = {
 	color = { 
 		147 29 238 
 	}
+	outgoing = {
+		name = "rheinland"
+		path = { 
+			264 61
+		}
+		control = { 
+			0.0
+		}
+	}
 	outgoing = { 
 		name = "wien"
 		path = { 
