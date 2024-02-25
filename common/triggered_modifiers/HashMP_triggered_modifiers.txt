@@ -13,8 +13,9 @@ h_tm_merc_cap = {
 	}
 
 	merc_maintenance_modifier = 1
-	mercenary_discipline = -0.15
-	mercenary_manpower = -0.5
+	mercenary_cost = 1
+	mercenary_discipline = -0.1
+	mercenary_manpower = -1
 }
 
 h_tm_new_world = { 
@@ -166,39 +167,6 @@ h_tm_hre_weakened_empire = {
 
 	imperial_authority = -0.1
 }
-
-# h_tm_age_of_reformation = {
-# 	potential = {
-# 		current_age = age_of_reformation
-# 	}
-# 	trigger = {
-# 		current_age = age_of_reformation
-# 	}
-
-# 	merc_maintenance_modifier = 0.30
-# }
-
-# h_tm_age_of_absolutism = {
-# 	potential = {
-# 		current_age = age_of_absolutism
-# 	}
-# 	trigger = {
-# 		current_age = age_of_absolutism
-# 	}
-
-# 	merc_maintenance_modifier = 0.40
-# }
-
-# h_tm_age_of_revolutions = {
-# 	potential = {
-# 		current_age = age_of_revolutions
-# 	}
-# 	trigger = {
-# 		current_age = age_of_revolutions
-# 	}
-
-# 	merc_maintenance_modifier = 0.50
-# }
 
 ###########################################
 # Misc Modifiers
