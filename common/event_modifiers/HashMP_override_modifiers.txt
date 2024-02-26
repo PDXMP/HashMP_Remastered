@@ -198,3 +198,7 @@ pol_breadbasket_europe_modifier = {
 	trade_goods_size_modifier  = 0.1
 	local_tax_modifier = 0.2
 }
+pol_growing_prosperity_modifier = {
+	local_prosperity_growth = 1 
+	local_development_cost = -0.05
+}

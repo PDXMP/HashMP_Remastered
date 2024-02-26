@@ -634,9 +634,7 @@ poland_sca_slot_2_a = {
 				area = silesia_area 
 				area = moravia_area
 				area = bohemia_area
-				area = alfold_area
 				area = slovakia_area
-				area = transdanubia_area
 			}
 			OR = {
 				NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -711,37 +709,7 @@ poland_sca_slot_2_a = {
 				}
 				type = all 
 			}
-			alfold_area = {
-				OR = {
-					country_or_non_sovereign_subject_holds = ROOT 
-					custom_trigger_tooltip = {
-						tooltip = owned_by_ally_or_ally_subject_tt
-						owner = {
-							OR = {
-								overlord = { alliance_with = ROOT }
-								alliance_with = ROOT
-							}
-						}
-					}
-				}
-				type = all 
-			}
 			slovakia_area = {
-				OR = {
-					country_or_non_sovereign_subject_holds = ROOT 
-					custom_trigger_tooltip = {
-						tooltip = owned_by_ally_or_ally_subject_tt
-						owner = {
-							OR = {
-								overlord = { alliance_with = ROOT }
-								alliance_with = ROOT
-							}
-						}
-					}
-				}
-				type = all 
-			}
-			transdanubia_area = {
 				OR = {
 					country_or_non_sovereign_subject_holds = ROOT 
 					custom_trigger_tooltip = {
@@ -758,7 +726,7 @@ poland_sca_slot_2_a = {
 			}
 			stability = 2
 			grown_by_development = 350
-			crown_land_share = 50
+			crown_land_share = 30
 			legitimacy_equivalent = 90
 		}
 		effect = { 
@@ -779,7 +747,7 @@ poland_sca_slot_2_a = {
 					add_building = town_hall
 				}
 			}
-			153 = { 
+			154 = { 
 				if = {
 					limit = { 
 						owner = { 
@@ -796,24 +764,8 @@ poland_sca_slot_2_a = {
 					add_building = town_hall
 				}
 			}
-			if = { 
-				limit = { has_reform = representation_of_the_crown_reform }
-				add_ruler_modifier = {
-					name = pol_stable_internal_affairs_modifier
-					duration = -1 
-				}
-			}
-			else = {
-				custom_tooltip = pol_if_vassal_contracts_tt
-				tooltip = {
-					add_ruler_modifier = {
-						name = pol_stable_internal_affairs_modifier
-						duration = -1 
-					}
-				}
-			}
 			change_ruler_stat = {
-				type = dip
+				type = adm
 				amount = 2
 			}
 		}
@@ -869,15 +821,7 @@ poland_sca_slot_2_plc_1 = {
 					}
 				}
 			}
-			if = {	
-				limit = { has_dlc = "Mandate of Heaven" }
-				OR = { 
-					in_golden_age = yes 
-					has_had_golden_age = yes 
-					monthly_income = 300 
-				}
-			}
-			else = { monthly_income = 250 } 
+	
 		}
 		effect = {
 			add_country_modifier = {
