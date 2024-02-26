@@ -805,7 +805,7 @@ h_offensive_religious = {
 		full_idea_group = religious_ideas
 	}
 	
-	morale_damage = 0.075
+	morale_damage = 0.15
 
 	effect = {}
 	removed_effect = {}
@@ -1257,7 +1257,7 @@ h_defensive_influence = {
 		full_idea_group = influence_ideas
 	}
 	
-	morale_damage_received = -0.075
+	morale_damage_received = -0.15
 
 	effect = {}
 	removed_effect = {}
