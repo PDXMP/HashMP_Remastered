@@ -202,3 +202,10 @@ pol_growing_prosperity_modifier = {
 	local_prosperity_growth = 1 
 	local_development_cost = -0.05
 }
+counter_reformation = {
+	global_heretic_missionary_strength = 0.03
+	papal_influence = 0.5
+	missionaries = 1
+	tolerance_heretic = -2
+	religion = yes
+}
