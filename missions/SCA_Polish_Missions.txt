@@ -771,19 +771,11 @@ poland_sca_slot_2_c = {
 			if = { 
 				limit = { has_dlc = "Leviathan" } 
 				262 = { 
-					OR = { 
 						num_of_times_improved = 10 
-						has_great_project = {
-							type = krakow_cloth_hall
-							tier = 2 
-						}
-						has_great_project = {
-							type = krakow_cloth_hall
-							tier = 3 
-						}
+		
 					}
 				}
-			}
+			
 			else = { 
 				262 = { num_of_times_improved = 10 } 
 			}
@@ -817,8 +809,8 @@ poland_sca_slot_2_c = {
 			}
 		}
 	}
-}
-	
+
+}	
 
 poland_sca_slot_2_plc_2 = { 
 	slot = 2
@@ -1228,22 +1220,7 @@ poland_sca_slot_3_plc_1 = {
 					province_has_center_of_trade_of_level = 3 
 					has_manufactory_trigger = yes 
 				}
-				value = 40 
-			}
-			OR = { 
-				has_global_modifier_value = {
-					which = global_trade_goods_size_modifier 
-					value = 0.40
-				}
-				num_of_trading_bonuses = 7 
-				AND = { 
-					full_idea_group = economic_ideas 
-					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-						has_manufactory_trigger = yes 
-						development = 35 
-						value = 6 
-					}
-				}
+				value = 45
 			}
 		}
 		effect = {
@@ -1262,53 +1239,14 @@ poland_sca_slot_3_plc_1 = {
 				}
 			}
 			custom_tooltip = pol_upgrade_wool_to_cloth_tt
-			custom_tooltip = pol_1_merc_per_trading_bonus_tt
+			add_mercantilism = 10 
 			hidden_effect = {
 				
 				every_owned_province = { 
 					limit = { trade_goods = wool } 
 					change_trade_goods = cloth 
 				}
-				if = { 
-					limit = { num_of_trading_bonuses = 10 } 
-					add_mercantilism = 10 
-				}
-				else_if = { 
-					limit = { num_of_trading_bonuses = 9 } 
-					add_mercantilism = 9 
-				}
-				else_if = { 
-					limit = { num_of_trading_bonuses = 8 } 
-					add_mercantilism = 8 
-				}
-				else_if = { 
-					limit = { num_of_trading_bonuses = 7 } 
-					add_mercantilism = 7 
-				}
-				else_if = { 
-					limit = { num_of_trading_bonuses = 6 } 
-					add_mercantilism = 6 
-				}
-				else_if = { 
-					limit = { num_of_trading_bonuses = 5 } 
-					add_mercantilism = 5 
-				}
-				else_if = { 
-					limit = { num_of_trading_bonuses = 4 } 
-					add_mercantilism = 4 
-				}
-				else_if = { 
-					limit = { num_of_trading_bonuses = 3 } 
-					add_mercantilism = 3 
-				}
-				else_if = { 
-					limit = { num_of_trading_bonuses = 2 } 
-					add_mercantilism = 2 
-				}
-				else_if = { 
-					limit = { num_of_trading_bonuses = 1 } 
-					add_mercantilism = 1 
-				}
+		
 			}
 		}
 	}
@@ -1317,58 +1255,18 @@ poland_sca_slot_3_plc_1 = {
 		icon = mission_plc_dominate_european_markets 
 		required_missions = { plc_invest_eastern_poland plc_governance_act plc_seats_power plc_edict_education }
 		position = 8
-		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = pol_highest_eu_income_tt
-				NOT = {
-					any_country = { 
-						capital_scope = { continent = europe } 
-						monthly_income = ROOT
-					}
-				}
-			}
-			if = { 
-				limit = { has_dlc = "Emperor" } 
-				is_hegemon = yes  
-			}
-			else = { 
-				OR = { 
-					num_of_provinces_in_states = 120 
-					total_development = 2000
-				}
-			}
-			if = { 
-				limit = { has_dlc = "Mandate of Heaven" }
-				OR = { 
-					has_had_golden_age = yes 
-					in_golden_age = yes 
-				}
+		trigger = { 
+			OR = { 
+				num_of_provinces_in_states = 120 
+				total_development = 2000
 			}
 		}
 		
 		effect = {
-			if = { 
-				limit = { has_dlc = "Mandate of Heaven" }
-				custom_tooltip = pol_if_used_ge_rest_else_30_years_extension_tt 
-				if = {
-					limit = { has_had_golden_age = yes } 
-					reset_golden_age = yes 
-				}
-				else_if = {
-					limit = { in_golden_age = yes } 
-					extend_golden_age = 600
-				}
-			}
-			else = {
-				add_country_modifier = {
-					name = pol_golden_era_modifier
-					duration = 10950 
-				}
-			}
 			custom_tooltip = pol_every_province_with_40_dev_tt
 			hidden_effect = { 
 				every_owned_province = {
-					limit = { development = 40 } 
+					limit = { development = 30 } 
 					add_province_modifier = { 
 						name = pol_enable_2nd_manufactory_modifier
 						duration = -1 

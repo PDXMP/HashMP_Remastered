@@ -93,3 +93,4 @@
  pol_imperial_commonwealth_title:0 "Imperial Commonwealth"
  pol_imperial_commonwealth_desc:0 "We have completely consolidated Lithuania's legal domains, securing our eastern borders and giving lucrative access to the Eastern European plain. None will question the Commonwealth's power in the courts of Europe or anywhere else!"
  pol_breadbasket_europe_modifier:0 "Surplus Grain"
+ pol_every_province_with_40_dev_tt:0 "Every owned province with at least 30 development will be able to host a second Manufactory."
