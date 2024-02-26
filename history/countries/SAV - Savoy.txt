@@ -5,7 +5,7 @@ primary_culture = piedmontese
 religion = catholic
 elector = yes
 technology_group = western
-capital = 205 # Chambery
+capital = 103 #205 # Chambery
 add_army_professionalism = 0.05
 add_accepted_culture = occitain
 
