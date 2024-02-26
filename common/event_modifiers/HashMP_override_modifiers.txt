@@ -209,3 +209,7 @@ counter_reformation = {
 	tolerance_heretic = -2
 	religion = yes
 }
+pol_winter_preparations_modifier = {
+	land_attrition = -0.2
+	galley_power = 0.1
+}
