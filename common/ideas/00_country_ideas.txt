@@ -178,8 +178,8 @@ ENG_ideas = {
 
 GBR_ideas = {
 	start = {
-		fire_damage = 0.05
-		heavy_ship_power = 0.15
+		fire_damage = 0.15
+		heavy_ship_power = 0.1
 	}
 
 	bonus = {
@@ -196,8 +196,7 @@ GBR_ideas = {
 		governing_capacity_modifier = 0.1
 	}
 	city_upon_a_hill = {
-		global_colonial_growth = 20
-		global_tariffs = 0.15
+		colonists = 1
 	}
 	the_british_parliament = {
 		global_unrest = -1
@@ -216,7 +215,7 @@ GBR_ideas = {
 		global_trade_goods_size_modifier = 0.2
 	}
 	britanna_rules_the_waves = {
-		leader_naval_manuever = 1
+		sailor_maintenance_modifer = -0.1
 		blockade_efficiency = 0.33
 		allowed_marine_fraction = 0.1
 	}
@@ -906,7 +905,7 @@ FRA_ideas = {
 	}
 	vauban_fortifications = {
 		defensiveness = 0.15
-		garrison_damage = 0.5
+		fort_maintenance_modifier = -0.1
 	}
 }
 
@@ -3204,6 +3203,7 @@ SAV_ideas = {
 	
 	repel_the_french = {
 		defensiveness = 0.2
+		garrison_damage = 0.1
 	}
 	the_shroud_of_turin = {
 		papal_influence = 1
