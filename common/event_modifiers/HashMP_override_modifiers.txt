@@ -193,3 +193,8 @@ pol_prosperity_in_ukraine_modifier = {
 	local_development_cost = -0.1
 	local_build_cost = -0.1
 }
+
+pol_breadbasket_europe_modifier = {
+	trade_goods_size_modifier  = 0.1
+	local_tax_modifier = 0.2
+}
