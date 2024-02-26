@@ -213,3 +213,19 @@ pol_winter_preparations_modifier = {
 	land_attrition = -0.2
 	galley_power = 0.1
 }
+pol_poland_rise_modifier = {
+	years_of_nationalism = -5
+	monthly_splendor = 3
+	prestige = 1 
+	legitimacy = 1
+	republican_tradition = 0.3
+	horde_unity = 1
+	devotion = 1
+	meritocracy = 1 
+	all_power_cost = -0.05
+	artillery_levels_available_vs_fort = 2 
+	governing_capacity_modifier = 0.2 
+	land_morale = 0.10
+	core_creation = -0.2
+	amount_of_hussars = 30
+}

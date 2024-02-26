@@ -439,29 +439,6 @@ poland_sca_slot_1_plc_2 = {
 	}
 	has_country_shield = yes
 	
-	plc_cross_wild_field = {
-		icon = mission_plc_cross_wild_field  
-		required_missions = { pol_moldavia pol_wallachia }
-		position = 10
-		provinces_to_highlight = { 
-			region = balkan_region 
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		trigger = { 
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				region = balkan_region 
-				value = 10 
-			}		
-		}
-		effect = { 
-			set_country_flag = enable_unite_balkans_cb_flag
-			custom_tooltip = enable_unite_balkans_cb_tt
-			add_country_modifier = {
-				name = pol_uniting_the_fractures_modifier
-				duration = 5475 
-			}
-		}
-	}
 }	
 
 poland_sca_slot_2_a = { 
@@ -1437,139 +1414,38 @@ poland_sca_slot_3_plc_1 = {
 		}
 	}
 	
-	plc_purple_phoenix = {
-		icon = mission_plc_purple_phoenix
-		required_missions = { plc_break_the_rus plc_cross_wild_field }
-		position = 11
-		provinces_to_highlight = { 
-			area = thrace_area 
-			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
-		}
-		trigger = { 
-			thrace_area = { 
-				type = all 
-				country_or_non_sovereign_subject_holds = ROOT 
-			}
-			OR = { 
-				is_defender_of_faith = yes 
-				custom_trigger_tooltip = {
-					tooltip = pol_disseminated_tolerance_tt
-					has_country_modifier = pol_guarantee_religious_rights_modifier
-				}
-			}
-			BYZ = { 
-				OR = {
-					exists = no 
-					is_subject_of = ROOT 
-				}		
-			}
-		}
-		effect = { 
-			country_event = { id = flavor_pol.30 } 
-		}
-	}
-	
 	plc_proclaim_polish_hegemony = {
 		icon = mission_plc_proclaim_polish_hegemony
-		required_missions = { plc_purple_phoenix plc_prevent_deluge }
+		required_missions = {  }
 		position = 13
 		provinces_to_highlight = { 
-			continent = europe 
-			is_capital = yes 
-			owner = { 
-				OR = { 
-					monthly_income = ROOT 
-					navy_size = ROOT 
-					army_size = ROOT 
-				}
-				is_subject = no 
-				NOT = { tag = ROOT }
-			}
+			
 		}
 		trigger = { 
-			if = { 
-				limit = { has_dlc = "Emperor" }
-				is_hegemon = yes 
-			}
-			else = {
-				OR = { 
-					navy_size = 500 
-					army_size = 1000 
-					monthly_income = 1000 
-				}
+			OR = { 
+				navy_size = 300 
+				army_size = 800 
 			}
 			total_development = 2000 
 			mission_completed = plc_lifetime_of_war 
+			mission_completed = plc_break_the_rus
+			mission_completed = plc_duchy_pomerania
+			mission_completed = plc_prevent_deluge
+			mission_completed = plc_dominate_european_markets
+			mission_completed = pol_proclaim_new_empire
+			mission_completed = pol_imperial_commonwealth
+			mission_completed = plc_cultural_flowering
 		}
 		effect = { 
-			custom_tooltip = pol_economic_hegemony_tt
-			tooltip = {
-				add_country_modifier = { 
-					name = pol_efficienct_development_modifier
-					duration = 9125 
-				}
+			add_power_projection = {
+				type = mission_rewards_power_projection
+				amount = 50
 			}
-			custom_tooltip = pol_naval_hegemony_tt
-			tooltip = { 
-				add_country_modifier = { 
-					name = pol_global_maritime_empire_modifier
-					duration = -1 
-				}
-			}
-			custom_tooltip = pol_alternatively_mil_hegemony_tt
+			add_prestige = 200 
 			tooltip = { 
 				add_country_modifier = { 
 					name = pol_poland_rise_modifier
 					duration = -1 
-				}
-			}
-			hidden_effect = {
-				if = { 
-					limit = { has_dlc = "Emperor" }
-					if = { 
-						limit = { is_hegemon_of_type = economic_hegemon }
-						add_country_modifier = { 
-							name = pol_efficienct_development_modifier
-							duration = 9125 
-						}
-						set_country_flag = enable_upgrading_centers_of_trade_dev
-						set_country_flag = enable_supplemental_development_flag
-					}
-					else_if = {
-						limit = { is_hegemon_of_type = naval_hegemon }
-						add_country_modifier = { 
-							name = pol_global_maritime_empire_modifier
-							duration = -1 
-						}
-					}
-					else = {
-						add_country_modifier = { 
-							name = pol_poland_rise_modifier
-							duration = -1 
-						}
-					}
-				}
-				else_if = {
-					limit = { monthly_income = 1000 }
-					add_country_modifier = { 
-						name = pol_efficienct_development_modifier
-						duration = 9125 
-					}
-					set_country_flag = enable_upgrading_centers_of_trade_dev
-					set_country_flag = enable_supplemental_development_flag
-				}
-				else_if = {
-					limit = { navy_size = 500 }
-					add_country_modifier = { 
-						name = pol_global_maritime_empire_modifier
-						duration = -1 
-					}
-				}
-				else = { 
-					add_country_modifier = { 
-						name = pol_poland_rise_modifier
-						duration = -1 
-					}
 				}
 			}
 		}
@@ -2245,102 +2121,21 @@ poland_sca_slot_4_plc_3 = {
 			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
 		}
 		trigger = { 
-			OR = {
 				num_of_owned_provinces_with = {
 					region = scandinavia_region 
 					value = 20 
 				}
-				1 = { 
-					owner = {
-						OR = {
-							alliance_with = ROOT 
-							is_subject_of = ROOT 
-						}
-						OR = {
-							trust = {
-								who = ROOT 
-								value = 100 
-							}
-							has_opinion = {
-								who = ROOT 
-								value = 190 
-							}
-						}
-					}
-				}
-			}
+
+			
 		}
 		effect = {
-			custom_tooltip = pol_via_alliance_or_subjugation_2_tt
-			tooltip = { 
-				1 = {
-					owner = { 
-						custom_tooltip = pol_production_of_metal_25_tt
-					}
-				}
-				add_country_modifier = { 
-					name = pol_swedish_metal_imports_modifier
-					duration = 7300
-				}
-			}
-			custom_tooltip = pol_alternatively_tt
+			add_adm_power = 75
+			add_dip_power = 75
+			add_mil_power = 75
 			tooltip = {
 				add_ruler_modifier = {
 					name = pol_victory_polish_crown_modifier
 					duration = -1 
-				}
-			}
-			hidden_effect = {
-				if = {
-					limit = { 
-						1 = { 
-							owner = {
-								OR = {
-									alliance_with = ROOT 
-									is_subject_of = ROOT 
-								}
-								OR = { 
-									trust = {
-										who = ROOT 
-										value = 100 
-									}
-									has_opinion = {
-										who = ROOT 
-										value = 190 
-									}
-								}
-							}
-						}
-					}
-					1 = {
-						owner = {
-							add_historical_friend = ROOT 
-							every_owned_province = {
-								limit = { 
-									OR = {
-										trade_goods = iron 
-										trade_goods = gold 
-										trade_goods = copper 
-									}
-								}
-								add_province_modifier = {
-									name = pol_increased_production_of_metals_modifier
-									duration = 7300
-									hidden = yes 
-								}
-							}
-						}
-					}
-					add_country_modifier = { 
-						name = pol_swedish_metal_imports_modifier
-						duration = 7300
-					}
-				}
-				else = {
-					add_ruler_modifier = {
-						name = pol_victory_polish_crown_modifier
-						duration = -1 
-					}
 				}
 			}					
 		} 
@@ -2975,31 +2770,7 @@ poland_sca_slot_5_plc_3 = {
 			}
 		}
 		effect = { 
-			custom_tooltip = pol_if_chose_hre_path
-			custom_tooltip = generic_more_mercs_available_tt
-			custom_tooltip = pol_alternatively_tt
-			tooltip = {
 				vorpommern_area = {
-					change_culture = ROOT 
-					add_province_modifier = {
-						name = pol_wave_of_migration_modifier 
-						duration = 5475 
-					}
-					add_base_manpower = 1 
-				}
-				hinter_pommern_area = {
-					change_culture = ROOT 
-					add_province_modifier = {
-						name = pol_wave_of_migration_modifier
-						duration = 5475 
-					}
-					add_base_manpower = 1 
-				}
-			}
-			hidden_effect = {
-				if = { 
-					limit = { has_country_flag = pol_chose_pu_flag }
-					vorpommern_area = {
 						change_culture = ROOT 
 						add_province_modifier = {
 							name = pol_wave_of_migration_modifier
@@ -3016,21 +2787,8 @@ poland_sca_slot_5_plc_3 = {
 						add_base_manpower = 1 
 					}
 				}
-				else = {
-					hidden_effect = {
-						add_country_modifier = {
-							name = pol_cheap_ap_mercs_modifier
-							duration = 7300 
-							hidden = yes
-						}
-					}
-					add_country_modifier = {
-						name = "mercenaries_to_the_standard"
-						duration = 3650
-						hidden = yes
-					}
-				}
+
 			}
 		}
-	}
-}
+	
+
