@@ -209,7 +209,7 @@ theocracy_gov_ideas = {
 	}
 
 	flesh_is_weak = {
-		leader_cost = -0.1
+		recover_army_morale_speed = 0.1
 	}
 	alpha_and_omega = {
 		land_maintenance_modifier = -0.1
