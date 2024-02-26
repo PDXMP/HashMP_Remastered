@@ -1472,13 +1472,10 @@ poland_sca_slot_3_a = {
 				has_trade_building_trigger = yes 
 				value = 5 
 			}
-			OR = { 
-				mercantilism = 25 
 				estate_loyalty = { 
 					estate = estate_burghers 
 					loyalty = 60 
 				}
-			}
 			OR = {
 				num_of_centers_of_trade = 6
 				262 = {
@@ -1490,31 +1487,8 @@ poland_sca_slot_3_a = {
 			}
 		}
 		effect = { 
-			custom_tooltip = pol_if_mercantilism_reward_tt
-			custom_tooltip = pol_alternatively_tt
-			tooltip = { set_estate_privilege = estate_burghers_polish_merchant_seal }
-			hidden_effect = { 
-				if = { 
-					limit = { 
-						has_dlc = "Rights of Man"
-						mercantilism = 25 
-						NOT = { num_of_ruler_traits = { amount = 3 } }
-					} 
-					add_ruler_personality = entrepreneur_personality
-					set_country_flag = enable_special_trader_flag
-				}
-				else_if = { 
-					limit = { mercantilism = 25 } 
-					change_ruler_stat = {
-						type = dip
-						amount = 1
-					}
-					set_country_flag = enable_special_trader_flag
-				}
-				else = { 
-					set_estate_privilege = estate_burghers_polish_merchant_seal 
-				}
-			}
+			set_estate_privilege = estate_burghers_polish_merchant_seal 
+			add_mercantilism = 5 
 		}
 	}
 	
