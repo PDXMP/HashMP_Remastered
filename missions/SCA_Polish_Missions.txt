@@ -312,9 +312,8 @@ poland_sca_slot_1_plc_1 = {
 		position = 7
 		trigger = {
 			has_final_tier_reforms_trigger = yes
-			has_institution = enlightenment
 			OR = {
-				absolutism = 100
+				absolutism = 80
 				republican_tradition = 90 
 			}
 		}
