@@ -21,15 +21,15 @@ aristocracy_ideas = {
 		always = yes
 	}
 	
-	noble_knights = {
-		cavalry_power = 0.15
-	}
 	local_nobility = {
 		army_tradition_from_battle = 0.50
 	}
 	serfdom = {
 		cavalry_cost = -0.15
 		global_regiment_recruit_speed = -0.1
+	}
+	noble_knights = {
+		cavalry_power = 0.15
 	}
 	international_nobility = {
 		warscore_from_battles_modifier = 0.1
