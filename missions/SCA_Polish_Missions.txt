@@ -2000,9 +2000,8 @@ poland_sca_slot_4_b = {
 				PAP = {	
 					has_opinion = { 
 						who = ROOT 
-						value = 165
+						value = 100
 					}
-					alliance_with = ROOT 
 				}
 				is_papal_controller = yes 
 				NOT = { religion = catholic } 
@@ -2023,7 +2022,7 @@ poland_sca_slot_4_b = {
 						}
 					}
 				}
-				religious_unity = 0.9 
+				religious_unity = 0.85 
 			}
 		}
 		effect = {
