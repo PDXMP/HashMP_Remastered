@@ -2084,16 +2084,15 @@ geobukseon_ship = {
 man_of_war_ship = {
 	#engagement_cost = -1
 	#naval_maintenance_modifier = 0.5
-	naval_morale_damage = 0.15
+	naval_morale_damage = 0.05
 }
 
 galleon_ship = {
-	hull_size_modifier = 0.1
-	heavy_ship_power = 0.1
+	hull_size_modifier = 0.05
 }
 
 galleass_ship = {
-	galley_power = 0.2
+	galley_power = 0.1
 }
 
 caravel_ship = {
