@@ -1651,21 +1651,21 @@ POL_ideas = {
 		war_exhaustion = -0.02
 	}
 	peichota_wybraniecka = {
-		global_manpower_modifier = 0.25
+		global_manpower_modifier = 0.2
 		infantry_power = 0.1
 	}
 	winged_hussars = {
-		cavalry_power = 0.3
+		cavalry_power = 0.2
 		can_recruit_hussars = yes
 	}
 	wojsko_komputoe = {
-		global_regiment_cost = -0.10
+		global_regiment_cost = -0.05
 	}
 	foreign_section = {
 		discipline = 0.05
 	}
 	focus_on_field_defences = {
-		land_morale = 0.15
+		land_morale = 0.1
 	}
 }
 
@@ -1752,7 +1752,7 @@ LIT2_ideas = {
 
 PLC_ideas = {
 	start = {
-		nobles_loyalty_modifier = 0.1
+		global_regiment_cost = -0.1
 		num_accepted_cultures = 2 
 	}
 	
@@ -1770,24 +1770,26 @@ PLC_ideas = {
 		global_trade_goods_size_modifier = 0.10
 	}
 	pol_jagiellonian_university = {
-		idea_cost = -0.10
+		technology_cost = -0.05
 	}
 	plc_the_obrona_potoczna = { #Same for all of them
-		drill_gain_modifier = 0.25
-		army_tradition = 1
+		army_tradition_decay = -0.01
 	}
 	winged_hussars = { 
-		cavalry_power = 0.3
+		cavalry_power = 0.2
 		can_recruit_hussars = yes
 	}
 	plc_refine_our_golden_liberty = { #Same for all of them
 		country_admin_power = 1 
+		nobles_loyalty_modifier = 0.1
 	}
 	pol_royal_guards = {
-		infantry_power = 0.15
+		global_manpower_modifier = 0.2
+		infantry_power = 0.1
 	}
 	plc_tempered_by_neighbors = { #Same for all of them
 		discipline = 0.05
+		land_morale = 0.1
 	}
 }
 
