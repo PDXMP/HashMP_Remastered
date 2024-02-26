@@ -1788,56 +1788,35 @@ country_event = {
 	
 	fire_only_once = yes
 	major = yes
+	is_triggered_only = yes
 	
 	trigger = {
 		tag = POL
-		is_subject = no
-		has_regency = yes
-		NOT = { has_reform = celestial_empire }
-		LIT = {
-			exists = yes
-			is_subject = no
-			NOT = { junior_union_with = POL }
-			dynasty = "Jagiellon"
-		}
-		NOT = { is_year = 1450 }
+		is_year = 1444 
+		NOT = { has_global_flag = plc_union_outcome_flag }
+		
 	}
 	
 	immediate = {
 		set_global_flag = plc_union_outcome_flag
 	}
 	
-	mean_time_to_happen = {
-		months = 12
-		modifier = {
-			factor = 0.1
-			is_year = 1447
-		}
-		modifier = {
-			factor = 0.01
-			is_year = 1448
-		}
-		modifier = {
-			factor = 0.001
-			is_year = 1449
-		}
-	}
 	
-	option = {
-		name = flavor_pol.18.a #We must retain the Jagiellon Dynasty
-		ai_chance = { 
-			factor = 75 
-		}
-		LIT = { 
-			country_event = { id = flavor_lit.16 }
-		}
-		if = {
-			limit = { has_dlc = "Lions of the North" }
-			custom_tooltip = pol_impact_future_missions_tt 
-			set_country_flag = pol_chose_pu_flag
-		}
-		custom_tooltip = pol_potential_cb_on_hungary_tt
-	}
+	#option = {
+	#	name = flavor_pol.18.a #We must retain the Jagiellon Dynasty
+	#	ai_chance = { 
+	#		factor = 75 
+	#	}
+	#	LIT = { 
+	#		country_event = { id = flavor_lit.16 }
+	#	}
+	#	if = {
+	#		limit = { has_dlc = "Lions of the North" }
+	#		custom_tooltip = pol_impact_future_missions_tt 
+	#		set_country_flag = pol_chose_pu_flag
+	#	}
+	#	custom_tooltip = pol_potential_cb_on_hungary_tt
+	#}
 	
 	option = {
 		name = flavor_pol.18.b #Appoint a Local Noble.
@@ -1845,12 +1824,9 @@ country_event = {
 			factor = 25
 		}
 		define_ruler = {
-			change_dip = 3
-			change_adm = 3
-			change_mil = 3
-			max_random_adm = 5
-			max_random_dip = 5
-			max_random_mil = 5
+			adm = 5
+			dip = 5
+			mil = 6
 			claim = 100
 			culture = polish
 		}
@@ -1860,19 +1836,10 @@ country_event = {
 			}
 			change_statists_vs_orangists = 1
 		}
-		LIT = {
-			add_opinion = {
-				who = ROOT
-				modifier = lit_denied_birthright
-			}
-			set_country_flag = lit_decline_pu_flag
-		}
 		if = {
 			limit = { has_dlc = "Emperor" }
-			custom_tooltip = pol_impact_future_missions_tt 
 			set_country_flag = pol_denied_pu_flag
 		}
-		custom_tooltip = pol_potential_cb_on_bohemia_tt
 	}
 }
 
