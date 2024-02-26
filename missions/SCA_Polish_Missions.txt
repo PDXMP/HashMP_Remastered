@@ -3154,7 +3154,28 @@ poland_sca_slot_5_branching_hre_west = {
 			}
 		}
 		effect = {
-			
+			add_mil_power = 100
+			mittelmark_area = {
+				limit = {
+					NOT = { is_core = ROOT	}
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			lusatia_area = {
+				limit = {
+					NOT = { is_core = ROOT	}
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
+			south_saxony_area = {
+				limit = {
+					NOT = { is_core = ROOT	}
+					NOT = { owned_by = ROOT } 
+				}
+				add_permanent_claim = ROOT
+			}
 		}				
 	}
 	
@@ -3163,78 +3184,28 @@ poland_sca_slot_5_branching_hre_west = {
 		required_missions = { pol_delegate_emperor } 
 		position = 3
 		trigger = {
-			not_in_mission_preview_mode = { key = POL }
-			OR = {
-				is_elector = yes 
-				is_emperor = yes 
-				AND = {
-					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-						region = north_german_region 
-						value = 25
-					}
-					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-						region = south_german_region 
-						value = 25
-					}
-				}
+			mittelmark_area = {
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
 			}
-			OR = {
-				custom_trigger_tooltip = {
-					tooltip = 6_dip_rep_tt
-					has_global_modifier_value = {
-						which = diplomatic_reputation 
-						value = 6 
-					}
-				}
-				power_projection = 70
+			lusatia_area = {
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
 			}
-			legitimacy_equivalent = 95 
-			OR = {
-				is_emperor = yes 
-				emperor = {
-					NOT = { army_size = ROOT }
-					NOT = { total_development = ROOT }
-				}
-				NOT = { hre_size = 1 }
+			south_saxony_area = {
+				type = all 
+				country_or_non_sovereign_subject_holds = ROOT 
 			}
 		}
 		effect = { 
-			if = {
-				limit = { is_emperor = yes } 
-				add_country_modifier = {
-					name = pol_polish_empire_modifier
-					duration = -1 
-				}
-				every_elector = {
-					add_opinion = {
-						who = ROOT 
-						modifier = pol_polish_influence_modifier
+			north_german_region = {
+					limit = { 
+						NOT = { owned_by = ROOT } 
+						NOT = { is_core = ROOT } 
 					}
+					add_permanent_claim = ROOT 
 				}
-			}
-			else_if = {
-				limit = { hre_size = 1 }
-				add_country_modifier = {
-					name = pol_bid_emperorship_modifier
-					duration = 5475 
-				}
-				every_elector = {
-					add_opinion = {
-						who = ROOT 
-						modifier = pol_polish_influence_modifier
-					}
-				}
-			}
-			else = {
-				change_ruler_stat = {
-					type = dip
-					amount = 2
-				}
-				change_ruler_stat = {
-					type = mil
-					amount = 1
-				}
-			}
+			add_mil_power = 100
 		}
 	}
 	
