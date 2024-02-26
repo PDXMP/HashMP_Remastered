@@ -569,7 +569,7 @@ offensive_ideas = {
 	category = MIL
 
 	bonus = {
-		morale_damage = 0.05
+		morale_damage = 0.1
 	}
 
 	engineer_corps = {
@@ -1212,7 +1212,7 @@ quality_ideas = {
 	category = MIL
 
 	bonus = {
-		morale_damage_received = -0.05
+		morale_damage_received = -0.1
 	}
 
 	naval_drill = {
