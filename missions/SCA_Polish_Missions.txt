@@ -3242,50 +3242,21 @@ poland_sca_slot_5_branching_hre_west = {
 		icon = king_of_poland 
 		required_missions = { pol_place_sun } 
 		position = 4 
+		provinces_to_highlight = {
+			region = north_german_region
+		}
+		
 		trigger = {
-			not_in_mission_preview_mode = { key = POL }
-			if = {
-				limit = { hre_size = 1 }
-				is_emperor = yes 
-			}
-			else = { stability = 3 }
-			OR = { 
-				total_development = 1500 
-				custom_trigger_tooltip = {
-					tooltip = pol_4_400_dev_tt
-					calc_true_if = {
-						all_subject_country = {
-							total_development = 400 
-						}
-						amount = 4 
-					}
-				}
-			}
-			if = { 
-				limit = { 
-					has_dlc = "Emperor" 
-					hre_size = 1 
-				}
-				hre_reform_passed = emperor_erbkaisertum
-			}
-			else_if = { 
-				limit = { hre_size = 1 }
-				hre_reform_passed = erbkaisertum 
+			num_of_owned_provinces_with = {
+				value = 30 
+				is_core = root
+				region = north_german_region
 			}
 		}
+		
 		effect = {
-			if = {
-				limit = { hre_size = 1 }
-				add_country_modifier = {
-					name = pol_imperial_polish_decrees_modifier
-					duration = 9125 
-				}
-			}
-			else = {
-
-			}
 			change_ruler_stat = {
-				type = adm
+				type = mil
 				amount = 2
 			}
 		}
