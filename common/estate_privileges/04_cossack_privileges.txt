@@ -471,7 +471,7 @@ estate_cossacks_recruit_cossack_generals = {
 	}
 	benefits = {
 		army_tradition = 0.5
-		leader_land_shock = 1
+		#leader_land_shock = 1
 	}
 	conditional_modifier = {
 		trigger = { has_government_mechanic = russian_modernization_mechanic }
