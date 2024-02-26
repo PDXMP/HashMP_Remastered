@@ -1426,7 +1426,7 @@ poland_sca_slot_3_plc_1 = {
 				navy_size = 300 
 				army_size = 800 
 			}
-			total_development = 2000 
+			total_development = 2500 
 			mission_completed = plc_lifetime_of_war 
 			mission_completed = plc_break_the_rus
 			mission_completed = plc_duchy_pomerania
