@@ -2168,7 +2168,7 @@ poland_sca_slot_5_branching_hre_west = {
 		trigger = {
 			if = {
 				limit = { has_dlc = "Cradle of Civilization" }
-				army_professionalism = 1 
+				army_professionalism = 0.75 
 			}
 			else = { army_tradition = 95 } 
 			army_size = 150 
