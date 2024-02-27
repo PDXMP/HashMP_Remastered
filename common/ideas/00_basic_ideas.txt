@@ -1618,8 +1618,13 @@ influence_ideas = {
 		dip_advisor_cost = -0.2
 		dip_tech_cost_modifier = -0.1
 	}
-	integrated_elites = {
-		diplomatic_annexation_cost = -0.25
+	diplomatic_influence = {
+		reduced_liberty_desire = 10
+		diplomatic_reputation = 2
+	}
+	marcher_lords = {
+		can_transfer_vassal_wargoal = yes
+		unjustified_demands = -0.25
 	}
 	tribute_system = {
 		vassal_income = 0.25
@@ -1628,13 +1633,8 @@ influence_ideas = {
 	postal_service = {
 		development_cost = -0.05
 	}
-	marcher_lords = {
-		can_fabricate_for_vassals = yes
-		unjustified_demands = -0.25
-	}
-	diplomatic_influence = {
-		reduced_liberty_desire = 10
-		diplomatic_reputation = 2
+	integrated_elites = {
+		diplomatic_annexation_cost = -0.25
 	}
 
 	ai_will_do = {
