@@ -28,20 +28,20 @@ free_oarsmen = {
 	button_gfx = 2
 }
 
-merchant_navy = {
-	can_select = {
-		is_primitive = no
-	}
+# merchant_navy = {
+# 	can_select = {
+# 		is_primitive = no
+# 	}
 
-	cost = 0.1
-	country_modifier = {
-		global_ship_trade_power = 0.33
-	}
-	effect = {}
-	removed_effect = {}
+# 	cost = 0.1
+# 	country_modifier = {
+# 		global_ship_trade_power = 0.33
+# 	}
+# 	effect = {}
+# 	removed_effect = {}
 	
-	button_gfx = 3
-}
+# 	button_gfx = 3
+# }
 
 ship_boarding = {
 	can_select = {
@@ -59,11 +59,11 @@ ship_boarding = {
 wooden_wall = {
 	can_select = {
 		is_primitive = no
-		NOT = { has_country_flag = unlock_norwegian_naval_doctrine } 
-		OR = {
-			culture_group = british
-			primary_culture = anglois
-		}
+		# NOT = { has_country_flag = unlock_norwegian_naval_doctrine } 
+		# OR = {
+		# 	culture_group = british
+		# 	primary_culture = anglois
+		# }
 	}
 
 	cost = 0.1

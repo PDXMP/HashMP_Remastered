@@ -1456,27 +1456,30 @@ self_governing_colony_overlord = {
 }
 
 crown_colony_subject = {
-	global_autonomy = -0.1
-	global_colonial_growth = 10
+	colonists = 1
+	#global_colonial_growth = 10
+	#global_autonomy = -0.1
 	#HashMP
 	capped_by_forcelimit = yes
 }
 
 private_enterprise_subject = {
-	global_ship_trade_power = 0.2
-	global_trade_goods_size_modifier = 0.2
-	naval_tradition_from_trade = 0.1
-	ship_power_propagation = 0.1
+	#global_ship_trade_power = 0.2
+	#global_trade_goods_size_modifier = 0.2
+	#naval_tradition_from_trade = 0.1
+	#ship_power_propagation = 0.1
 	#HashMP
 	capped_by_forcelimit = yes
+	development_cost = -0.1
 }
 
 self_governing_colony_subject = {
-	colonists = 1
-	development_cost = -0.15
-	liberty_desire = 25
+	#colonists = 1
+	#development_cost = -0.15
+	#liberty_desire = 25
 	#HashMP
 	capped_by_forcelimit = yes
+	global_trade_goods_size_modifier = 0.20
 }
 
 march_subject = {
@@ -2081,16 +2084,15 @@ geobukseon_ship = {
 man_of_war_ship = {
 	#engagement_cost = -1
 	#naval_maintenance_modifier = 0.5
-	naval_morale_damage = 0.15
+	naval_morale_damage = 0.05
 }
 
 galleon_ship = {
-	hull_size_modifier = 0.1
-	heavy_ship_power = 0.1
+	hull_size_modifier = 0.05
 }
 
 galleass_ship = {
-	galley_power = 0.2
+	galley_power = 0.1
 }
 
 caravel_ship = {
@@ -2210,9 +2212,9 @@ expanded_infrastructure = {
 	#local_build_time = -0.05
 	#province_trade_power_modifier = 0.05
 	#trade_goods_size_modifier = 0.05
-	local_governing_cost_increase = 10 #15
-	local_governing_cost = 0.05 #0.1
-	local_great_project_upgrade_cost = -0.05
+	local_governing_cost_increase = 5 #15
+	local_governing_cost = 0.2 #0.1
+	#local_great_project_upgrade_cost = -0.05
 }
 
 centralize_state = {
