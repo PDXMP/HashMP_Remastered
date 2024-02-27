@@ -497,7 +497,7 @@ h_theocracy_gov_influence = {
 }
 
 h_theocracy_gov_court = {
-	monarch_power = DIP
+	monarch_power = MIL
 
 	potential = {
 		has_idea_group = theocracy_gov_ideas
@@ -507,9 +507,9 @@ h_theocracy_gov_court = {
 		full_idea_group = theocracy_gov_ideas
 		full_idea_group = court_ideas
 	}
-	
-	monthly_splendor = 3
-	prestige_decay = -0.01
+
+	discipline = 0.02
+	infantry_cost = -0.1
 
 	effect = {}
 	removed_effect = {}
