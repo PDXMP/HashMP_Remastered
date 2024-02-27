@@ -2284,8 +2284,8 @@ h_influence_religious = {
 		full_idea_group = religious_ideas
 	}
 	
-	missionaries = 2
-	prestige_per_development_from_conversion = 0.5
+	prestige_per_development_from_conversion = 1
+	prestige_decay = -0.01
 
 	effect = {}
 	removed_effect = {}
