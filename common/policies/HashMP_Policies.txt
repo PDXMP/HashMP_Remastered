@@ -1575,8 +1575,8 @@ h_quantity_religious = {
 		full_idea_group = quantity_ideas
 		full_idea_group = religious_ideas
 	}
-	
-	global_manpower_modifier = 0.25
+
+	manpower_recovery_speed = 0.25
 
 	effect = {}
 	removed_effect = {}
@@ -1767,7 +1767,7 @@ h_quantity_influence = {
 		full_idea_group = influence_ideas
 	}
 	
-	manpower_recovery_speed = 0.25
+	global_manpower_modifier = 0.25
 
 	effect = {}
 	removed_effect = {}
