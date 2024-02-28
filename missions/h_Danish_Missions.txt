@@ -132,13 +132,13 @@ h_dan_1 = {
 		}
 		provinces_to_highlight = {
 			OR = {
-				province_id = 47
+				province_id = 44
 				province_id = 1874
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			1858 = { country_or_non_sovereign_subject_holds = ROOT }
+			1874 = { country_or_non_sovereign_subject_holds = ROOT }
 			44 = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		effect = {
