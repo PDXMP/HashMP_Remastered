@@ -124,6 +124,7 @@ country_decisions = {
 	#Purely cosmetic decision for the fun of it
 	dan_proclaim_archking_title_decision = {
 		potential = {
+			NOT = { is_elector = yes }
 			has_reform = danish_archkingdom
 			NOT = { has_ruler_flag = has_proclaimed_archking_title }
 			NOT = { government_rank = 3 }	#There is no "Arch-Emperor"
