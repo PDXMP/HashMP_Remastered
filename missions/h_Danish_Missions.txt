@@ -1498,7 +1498,6 @@ h_dan_4 = {
 		}
 		effect = {
 			add_navy_tradition = 10
-			add_sailors = 1000
 			define_admiral = {
 				shock = 3
 				fire = 3
