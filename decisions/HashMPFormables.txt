@@ -817,6 +817,18 @@ country_decisions = {
 				}
 			}
 		effect = {
+			change_primary_culture = ruthenian
+			add_accepted_culture = lithuanian
+			add_country_modifier = { 
+				name = "lithuanian_partnership"
+				duration = -1
+			}
+			if = { 
+				limit = { 
+					dominant_religion = orthodox 
+				}
+			change_religion = orthodox
+			}
 			280 = {
 				move_capital_effect = yes
 			}
@@ -868,8 +880,10 @@ country_decisions = {
 			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_russia_flag }
 			NOT = { exists = RUS }
-			tag = MOS
-			tag = UKR 
+			OR = { 
+				tag = MOS
+				tag = UKR 
+			}
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -939,9 +953,19 @@ country_decisions = {
 			}
 			change_tag = RUS
 			on_change_tag_effect = yes
-			restore_country_name = yes
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
+			if = { 
+				limit = {
+					OR = { 
+						tag = UKR
+						primary_culture = ruthenian 
+					}
+				}
+				override_country_name = RuthenianRUS
+				set_country_flag = is_RuthenianRUS_flag
+			}
+			else = { restore_country_name = yes }
 			if = {
 				limit = { is_revolutionary = no }
 				if = {

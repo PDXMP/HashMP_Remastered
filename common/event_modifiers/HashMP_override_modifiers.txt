@@ -194,3 +194,6 @@ lit_stable_rule_modifier = {
 	global_autonomy = -0.05
 	global_prosperity_growth = 1
 }
+lithuanian_partnership = {	#Breaks when Lithuanian is demoted.
+	num_accepted_cultures = 1
+}

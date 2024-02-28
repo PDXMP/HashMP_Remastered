@@ -2432,6 +2432,13 @@ on_culture_demoted_effect = {
 	}
 	if = {
 		limit = {
+			has_country_modifier = lithuanian_partnership
+			NOT = { accepted_culture = lithuanian }
+		}
+		remove_country_modifier = lithuanian_partnership
+	}
+	if = {
+		limit = {
 			has_country_modifier = gbr_accepted_lowlands
 			OR = {
 				NOT = { accepted_culture = dutch }
