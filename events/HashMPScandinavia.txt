@@ -148,14 +148,14 @@ country_event = {
 ##Aftermath of the Kalmar War
 country_event = {
 	id = HashMPScandinavia.5
-	title = HashMPScandinavia.5.title
-	desc = HashMPScandinavia.5.desc
+	title = HashMPScandinavia_5_title
+	desc = HashMPScandinavia_5_desc
 	picture = CIVIL_WAR_eventPicture
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = HashMPScandinavia.5.a
+		name = HashMPScandinavia_5_a
 		##Vow to restore the union
 		add_prestige = 10
 		add_treasury = 100
@@ -169,26 +169,14 @@ country_event = {
 			add_core = ROOT
 		}
 
-		25 = {
-			add_permanent_claim = ROOT
-		}
-
 		subarctic_islands_area = {
 			add_permanent_claim = ROOT
-		}
-
-		custom_tooltip = h_danes_kalmar_event_tooltip
-
-		hidden_effect = {
-			set_country_flag = h_restore_the_union
-			set_country_flag = h_kalmar_union_event_choice_concluded
 		}
 	}
 	
 	option = {
-		name = HashMPScandinavia.5.b
+		name = HashMPScandinavia_5_b
 		##Forget the union
-
 		add_prestige = -5
 		add_stability_or_adm_power = yes
 		add_manpower = 3
@@ -197,25 +185,20 @@ country_event = {
 		subarctic_islands_area = {
 			add_permanent_claim = ROOT
 		}
-
-		hidden_effect = {
-			set_country_flag = h_forget_the_union
-			set_country_flag = h_kalmar_union_event_choice_concluded
-		}
 	}
 }
 
 ##Succession of Denmark
 country_event = {
 	id = HashMPScandinavia.6
-	title = HashMPScandinavia.6.title
-	desc = HashMPScandinavia.6.desc
+	title = HashMPScandinavia_6_title
+	desc = HashMPScandinavia_6_desc
 	picture = DEATH_OF_HEIR_eventPicture
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = HashMPScandinavia.6.a
+		name = HashMPScandinavia_6_a
 		##Christian
 		hidden_effect = {
 			set_country_flag = h_danes_king_christian
@@ -237,7 +220,7 @@ country_event = {
 	}
 	
 	option = {
-		name = HashMPScandinavia.6.b
+		name = HashMPScandinavia_6_b
 		##Charles
 		hidden_effect = {
 			set_country_flag = h_danes_king_charles
@@ -259,7 +242,7 @@ country_event = {
 	}
 
 	option = {
-		name = HashMPScandinavia.6.c
+		name = HashMPScandinavia_6_c
 		##Dorothea
 		hidden_effect = {
 			set_country_flag = h_danes_queen_dorothea
@@ -280,55 +263,6 @@ country_event = {
 			claim = 60
 			female = yes
 			fixed = yes
-		}
-	}
-}
-
-##New Councilmen
-country_event = {
-	id = HashMPScandinavia.7
-	title = HashMPScandinavia.7.title
-	desc = HashMPScandinavia.7.desc
-	picture = ADVISOR_eventPicture
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = HashMPScandinavia.7.a
-		add_adm_power = -50
-
-		define_advisor = {
-			type = theologian
-			skill = 1
-			discount = yes
-			culture = ROOT
-			religion = ROOT
-		}
-	}
-	
-	option = {
-		name = HashMPScandinavia.7.b
-		add_dip_power = -50
-
-		define_advisor = {
-			type = trader
-			skill = 1
-			discount = yes
-			culture = ROOT
-			religion = ROOT
-		}
-	}
-
-	option = {
-		name = HashMPScandinavia.7.c
-		add_mil_power = -50
-
-		define_advisor = {
-			type = grand_captain
-			skill = 1
-			discount = yes
-			culture = ROOT
-			religion = ROOT
 		}
 	}
 }

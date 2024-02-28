@@ -202,3 +202,7 @@ swedish_naval_reforms = {
 	global_ship_cost = -0.10
 	naval_morale = 0.10
 }
+
+dan_sca_balticum_dominance_mod = {
+	own_coast_naval_combat_bonus = 1
+}
