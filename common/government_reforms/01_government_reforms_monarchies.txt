@@ -695,7 +695,13 @@ danish_archkingdom = {
 	icon = "danish_archkingdom"
 	allow_normal_conversion = yes
 	potential = {
-		is_or_was_tag = { tag = DAN }
+		OR = {
+			tag = DAN
+			AND = {
+				tag = SCA
+				was_tag = DAN
+			}
+		}
 	}
 	trigger = {
 		OR = {
