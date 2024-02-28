@@ -103,8 +103,9 @@ h_danish_danevirke_restored = {
 }
 
 h_danish_straits = {
-	local_garrison_size = 0.25
+	local_garrison_size = 0.10
 	defensiveness = 0.10
+	garrison_damage = 0.10
 }
 
 ##Sweden
