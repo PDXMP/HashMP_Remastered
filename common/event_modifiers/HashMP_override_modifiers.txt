@@ -187,3 +187,10 @@ estate_burghers_mountain_expansion_mountains = {
 estate_burghers_mountain_expansion_hills = {
 	local_development_cost = -0.10 #-0.125
 }
+lit_stable_rule_modifier = {
+	stability_cost_modifier = -0.1
+	global_unrest = -2
+	global_tax_modifier = 0.1
+	global_autonomy = -0.05
+	global_prosperity_growth = 1
+}

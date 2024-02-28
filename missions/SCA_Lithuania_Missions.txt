@@ -249,6 +249,7 @@ lit_dlc_2 = {
 			}
 		}
 		effect = {
+			add_manpower = 5
 			if = {
 				limit = { has_dlc = "Mandate of Heaven" }
 				add_ruler_modifier = {
