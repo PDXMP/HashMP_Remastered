@@ -869,6 +869,7 @@ country_decisions = {
 			NOT = { has_country_flag = formed_russia_flag }
 			NOT = { exists = RUS }
 			tag = MOS
+			tag = UKR 
 		}
 		provinces_to_highlight = {
 			OR = {
