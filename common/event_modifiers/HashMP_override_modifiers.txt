@@ -206,3 +206,8 @@ swedish_naval_reforms = {
 dan_sca_balticum_dominance_mod = {
 	own_coast_naval_combat_bonus = 1
 }
+
+dan_new_world_expansion = {
+	global_colonial_growth = 20
+	colonists = 1
+}
