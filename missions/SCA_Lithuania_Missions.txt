@@ -774,20 +774,8 @@ lit_dlc_4 = {
 		required_missions = { lit_harness_steppes lit_build_manufactories sca_mission_lit_polish_union }
 		position = 5
 		trigger = {
-			power_projection = 80 
-			prestige = 90 
-			if = {
-				limit = {
-					OR = { 
-						has_dlc = "Emperor"
-						has_dlc = "Rights of Man"
-					}
-				}
-				custom_trigger_tooltip = {
-					tooltip = lit_better_than_2_gp_tt 
-					NOT = { great_power_rank = 3 } 
-				}
-			}
+			power_projection = 60
+			prestige = 70 
 			else = { total_development = 800 } 
 		}
 		effect = { 
@@ -799,12 +787,6 @@ lit_dlc_4 = {
 				name = lit_golden_age_lit_modifier
 				duration = 9125
 			}
-			if = { 
-				limit = { has_dlc = "Emperor" }
-				custom_tooltip = lit_halve_hegemony_reqs_tt
-				set_country_flag = halve_hegemony_requirements
-			}
-			else = { add_adm_power = 100 add_dip_power = 100 add_mil_power = 100 }
 		}
 	}
 }
@@ -1090,7 +1072,7 @@ lit_dlc_5 = {
 	
 	sca_lit_conquer_novgorod = {
 		icon = mission_conquer_novgorod
-		required_missions = { sca_mission_lit_polish_union  }
+		required_missions = { }
 		position = 5
 		provinces_to_highlight = {
 			area = novgorod_area
@@ -1099,50 +1081,12 @@ lit_dlc_5 = {
 			}
 		}
 		trigger = {
-			OR = {
 				novgorod_area = {
 					type = all
 					country_or_non_sovereign_subject_holds = ROOT	
 				}
-				NOV = {
-					OR = {
-						alliance_with = ROOT
-						is_subject_of = ROOT
-					}
-					total_development = 150
-				}
-			}
 		}
 		effect = {
-			if = {
-				limit = {
-					exists = RUS
-					valid_for_personal_unions_trigger = yes
-					RUS = {
-						valid_for_personal_unions_trigger = yes
-					}
-				}
-				add_casus_belli = {
-					type = cb_restore_personal_union
-					months = 300
-					target = RUS
-				}
-			}
-			else_if = {
-				limit = {
-					exists = MOS
-					valid_for_personal_unions_trigger = yes
-					MOS = {
-						valid_for_personal_unions_trigger = yes
-					}
-				}
-				add_casus_belli = {
-					type = cb_restore_personal_union
-					months = 300
-					target = MOS
-				}
-			}
-			else = {
 				moscow_area = {
 					limit = {
 						NOT = { is_permanent_claim = ROOT }
@@ -1180,7 +1124,7 @@ lit_dlc_5 = {
 				}
 			}
 		}
-	}
+	
 	
 	sca_lit_conquer_muscovy = {
 		icon = mission_defeat_muscovy
@@ -1222,6 +1166,8 @@ lit_dlc_5 = {
 		}
 		effect = {
 			add_mil_power = 100
+			add_adm_power = 100
+			add_dip_power = 100
 			if = {
 				limit = {
 					RUS = {
