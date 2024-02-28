@@ -2339,7 +2339,7 @@ country_decisions = {
 					}
 				}
 				override_country_name = LPC
-				set_country_flag = is_LPC_flag
+				#set_country_flag = is_LPC_flag
 			}
 			else = { restore_country_name = yes }
 			inherit = POL
@@ -2512,7 +2512,7 @@ country_decisions = {
 					}
 				}
 				override_country_name = LPC
-				set_country_flag = is_LPC_flag
+				#set_country_flag = is_LPC_flag
 			}
 			else = { restore_country_name = yes }
 			set_country_flag = pol_chose_pu_flag
