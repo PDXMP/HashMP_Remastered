@@ -197,3 +197,9 @@ lit_stable_rule_modifier = {
 lithuanian_partnership = {	#Breaks when Lithuanian is demoted.
 	num_accepted_cultures = 1
 }
+ukrainian_leadership = { 
+	num_accepted_cultures = 1
+	tolerance_heretic = 3
+	cossacks_privilege_slots = 1
+	can_recruit_hussars = yes
+}

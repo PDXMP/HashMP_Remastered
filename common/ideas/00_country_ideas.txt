@@ -17808,7 +17808,7 @@ FU2_ideas = {
 UKR_ideas = {
 	start = {
 		manpower_recovery_speed = 0.2
-		morale_damage_received = -0.1
+		land_morale = 0.1
 	}
 
 	bonus = {
@@ -17833,14 +17833,16 @@ UKR_ideas = {
 		promote_culture_cost = -0.25
 	}
 	zaporizhian_cossacs = {
-		cavalry_power = 0.15
+		cavalry_power = 0.25
 		cossacks_privilege_slots = 1
+		can_recruit_hussars = yes
 	}
 	east_and_west = {
 		global_trade_power = 0.1
+		global_trade_goods_size_modifier = 0.1
 	}
 	legacy_of_ancient_rus = {
-		stability_cost_modifier = -0.1
+		development_cost = -0.1
 	}
 	reuniting_rus = {
 		core_creation = -0.1
@@ -17848,6 +17850,7 @@ UKR_ideas = {
 	}
 	birth_of_russian_orthodoxy = {
 		tolerance_own = 2
+		tolerance_heretic = 3
 		yearly_patriarch_authority = 0.005
 	}
 }
