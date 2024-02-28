@@ -791,25 +791,12 @@ country_decisions = {
 			NOT = { exists = UKR }
 			tag = LIT
 		}
-		provinces_to_highlight = {
-			OR = {	
-				AND = {
-					ROOT = { DIP = 5 }
-					OR = {
-						province_id = 280		#Kiev -center
-					province_id = 283		#Zaporozhie -eastern/southern center of rebellions
-					}
-				}
-				AND = {
-					ROOT = { NOT = { DIP = 5 } }
+		provinces_to_highlight = {	
 					OR = {
 						province_id = 280		#Kiev -center
 						province_id = 283		#Zaporozhie -eastern/southern center of rebellions
-						province_id = 261		#Ruthenia/Lvov -western
-						province_id = 279		#Volhynia -western
 					}
-				}
-			}
+
 			OR = {
 				NOT = { owned_by = ROOT }
 				NOT = { is_core = ROOT }
@@ -820,29 +807,15 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
-			
-			OR = {
 				#owns everything
 				AND = {
-					owns_core_province = 261		#Ruthenia/Lvov -western
-					owns_core_province = 279		#Volhynia -western
 					owns_core_province = 283		#Zaporozhie -eastern/southern center of rebellions
 					owns_core_province = 280		#Kiev -center
 					280 = { 						#Kiev -center
 						is_state = yes
 					}
-				}
-				#or owns only core-core stuff but has god like ruler
-				AND = {				
-					owns_core_province = 283		#Zaporozhie -eastern/southern center of rebellions
-					owns_core_province = 280		#Kiev -center
-					280 = { 						#Kiev -center
-						is_state = yes
-					}
-					dip = 5
 				}
 			}
-		}
 		effect = {
 			280 = {
 				move_capital_effect = yes
