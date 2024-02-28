@@ -113,10 +113,10 @@ religious_school = shafii_school
 	monarch = {
 		name = "Ibrahim"
 		dynasty = "Srivijaya"
-		adm = 1
-		dip = 2
-		mil = 1
-		religion = hinduism
+		adm = 3
+		dip = 3
+		mil = 4
+		religion = sunni
 	}
 }
 
