@@ -828,31 +828,6 @@ lit_dlc_5 = {
 		required_missions = { }
 		position = 1 
 		trigger = {
-			OR = {
-				custom_trigger_tooltip = {
-					tooltip = lit_declined_pu
-					has_country_flag = lit_decline_pu_flag
-				}
-				AND = { 
-					custom_trigger_tooltip = {
-						tooltip = lit_accepted_pu
-						has_country_flag = lit_accepted_pu
-					}
-					POL = { 
-						has_opinion = {
-							who = ROOT 
-							value = 150 
-						}
-					}
-					is_lesser_in_union = yes
-				} 
-				AND = {
-					owns_core_province = 4538
-					owns_core_province = 281
-				}
-				war_with = POL 
-				POL = { exists = no } 
-			}
 			army_size_percentage = 0.9
 		}
 		effect = {
@@ -866,184 +841,15 @@ lit_dlc_5 = {
 					target = LIV
 				} 
 			}
-			else = { 
-				custom_tooltip = lit_claim_livonian_lands_tt
-			}
-			custom_tooltip = lit_take_pu_lesser
-			tooltip = { 
-				complete_mission = lit_march_west 
-				add_country_modifier = {
-					name = lit_part_of_the_polish_domain_modifier
-					duration = 5475
-				}
-			}
-			custom_tooltip = pol_alternatively_tt
-			tooltip = {
-				if = { 
-					limit = {
-						valid_for_personal_unions_trigger = yes 
-						POL = { valid_for_personal_unions_trigger = yes }
-					}
-					add_casus_belli = {
-						type = cb_restore_personal_union
-						months = 300
-						target = POL
-					} 
-				}
-				else = {
-					poland_region = {
-						limit = { 
-							NOT = { owned_by = ROOT }
-							NOT = { is_core = ROOT }
-						}
-						add_permanent_claim = ROOT 
-					}
-					add_prestige = 10 
-				}
-				remove_historical_friend = POL 
-				POL = { remove_historical_friend = ROOT }
-			}
-			hidden_effect = {
-				if = {
-					limit = { is_subject_of = POL }
-					complete_mission = lit_march_west 
-					add_country_modifier = {
-						name = lit_part_of_the_polish_domain_modifier
-						duration = 5475
-					}
-				}	
-				else_if = { 
-					limit = {
-						valid_for_personal_unions_trigger = yes 
-						POL = { valid_for_personal_unions_trigger = yes }
-					}
-					add_casus_belli = {
-						type = cb_restore_personal_union
-						months = 300
-						target = POL
-					} 
-					remove_historical_friend = POL 
-					POL = { remove_historical_friend = ROOT }
-				}
-				else = {
-					poland_region = {
-						limit = { 
-							NOT = { owned_by = ROOT }
-							NOT = { is_core = ROOT }
-						}
-						add_permanent_claim = ROOT 
-					}
-					add_prestige = 10 
-					remove_historical_friend = POL 
-					POL = { remove_historical_friend = ROOT }
-				}
-				livonia_area = {
-					limit = { 
-						NOT = { owned_by = ROOT }
-						NOT = { is_core = ROOT }
-					}
-					add_permanent_claim = ROOT 
-				}
-				estonia_ingria_area = {
-					limit = { 
-						NOT = { owned_by = ROOT }
-						NOT = { is_core = ROOT }
-					}
-					add_permanent_claim = ROOT 
-				}
-				curonia_area = {
-					limit = { 
-						NOT = { owned_by = ROOT }
-						NOT = { is_core = ROOT }
-					}
-					add_permanent_claim = ROOT 
-				}
-			}
-			clr_country_flag = lit_decline_pu_flag
-			clr_country_flag = lit_accepted_pu
-		}
-	}
+			
 	
-	lit_march_west = {
-		icon = mission_lit_march_west
-		required_missions = { lit_settle_polish_inheritance }
-		position = 2 
-		trigger = {
-			OR = {
-				POL = { 
-					is_subject_of = ROOT 
-					grown_by_development = 100 
-				}
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					region = poland_region 
-					value = 12 
-				}
-			}
-		}
-		effect = {
-			custom_tooltip = lit_poland_subject_tt
-			tooltip = { 
-				POL = { add_liberty_desire = -20 } 
-			}
-			custom_tooltip = pol_alternatively_tt
-			tooltip = {
-				change_ruler_stat = {
-					type = adm
-					amount = 1
-				}
-				change_ruler_stat = {
-					type = dip
-					amount = 1
-				}
-				change_ruler_stat = {
-					type = mil
-					amount = 1
-				}
-				poland_region = {
-					limit = { country_or_non_sovereign_subject_holds = ROOT } 
-					add_local_autonomy = -10 
-				}
-			}
-			hidden_effect = { 
-				if = {
-					limit = { 
-						POL = { is_subject_of = ROOT }
-					}
-					POL = { 
-						add_liberty_desire = -20
-						add_country_modifier = {
-							name = lit_increased_dev_modifier
-							duration = 1825
-							hidden = yes 
-						}
-					}
-				}
-				else = {
-					change_ruler_stat = {
-						type = adm
-						amount = 1
-					}
-					change_ruler_stat = {
-						type = dip
-						amount = 1
-					}
-					change_ruler_stat = {
-						type = mil
-						amount = 1
-					}
-					poland_region = {
-						limit = { country_or_non_sovereign_subject_holds = ROOT } 
-						add_local_autonomy = -10 
-					}
-				}
-			}
 		}
 	}
 	
 	sca_lit_defeat_the_livonian_order = {
 		icon = mission_livonian_knights
-		required_missions = { lit_march_west }
-		position = 3
+		required_missions = { lit_settle_polish_inheritance }
+		position = 2
 		provinces_to_highlight = {
 			OR = {
 				area = livonia_area
@@ -1116,9 +922,86 @@ lit_dlc_5 = {
 		}
 	}
 	
+	lit_march_west = {
+		icon = mission_lit_march_west
+		required_missions = { sca_lit_defeat_the_livonian_order }
+		position = 3
+		trigger = {
+			OR = {
+				POL = { 
+					is_subject_of = ROOT 
+					grown_by_development = 100 
+				}
+				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+					region = poland_region 
+					value = 12 
+				}
+			}
+		}
+		effect = {
+			custom_tooltip = lit_poland_subject_tt
+			tooltip = { 
+				POL = { add_liberty_desire = -20 } 
+			}
+			custom_tooltip = pol_alternatively_tt
+			tooltip = {
+				change_ruler_stat = {
+					type = adm
+					amount = 1
+				}
+				change_ruler_stat = {
+					type = dip
+					amount = 1
+				}
+				change_ruler_stat = {
+					type = mil
+					amount = 1
+				}
+				poland_region = {
+					limit = { country_or_non_sovereign_subject_holds = ROOT } 
+					add_local_autonomy = -10 
+				}
+			}
+			hidden_effect = { 
+				if = {
+					limit = { 
+						POL = { is_subject_of = ROOT }
+					}
+					POL = { 
+						add_liberty_desire = -20
+						add_country_modifier = {
+							name = lit_increased_dev_modifier
+							duration = 1825
+							hidden = yes 
+						}
+					}
+				}
+				else = {
+					change_ruler_stat = {
+						type = adm
+						amount = 1
+					}
+					change_ruler_stat = {
+						type = dip
+						amount = 1
+					}
+					change_ruler_stat = {
+						type = mil
+						amount = 1
+					}
+					poland_region = {
+						limit = { country_or_non_sovereign_subject_holds = ROOT } 
+						add_local_autonomy = -10 
+					}
+				}
+			}
+		}
+	}
+	
+	
 	sca_mission_lit_polish_union = {
 		icon = mission_sca_mission_lit_polish_union
-		required_missions = { sca_lit_defeat_the_livonian_order }
+		required_missions = { lit_march_west }
 		position = 4
 		provinces_to_highlight = {
 			OR = {
