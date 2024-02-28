@@ -1385,7 +1385,7 @@ country_decisions = {
 			normal_or_historical_nations = yes
 			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_france_flag }
-			NOT = { tag = FRA }
+			NOT = { exists = FRA }
 			tag = BUR
 		}
 		provinces_to_highlight = {
@@ -1418,7 +1418,6 @@ country_decisions = {
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
 			is_nomad = no			
-			NOT = { exists = FRA }
 			owns_core_province = 184	# Orl�annais
 			owns_core_province = 186	# Champagne
 			owns_core_province = 183	# �le-de-France
@@ -1555,6 +1554,7 @@ country_decisions = {
 			NOT = { has_country_flag = formed_india_flag }
 			h_is_india_tag_trigger = yes
 			religion_group = muslim
+			NOT = { exists = DEC }
 		}
 		provinces_to_highlight = {
 			superregion = india_superregion
@@ -1564,7 +1564,6 @@ country_decisions = {
 			}
 		}
 		allow = {
-			NOT = { exists = DEC }
 			adm_tech = 10
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
@@ -1606,6 +1605,7 @@ country_decisions = {
 			NOT = { has_country_flag = formed_india_flag }
 			h_is_india_tag_trigger = yes
 			religion_group = muslim
+			NOT = { exists = HIN }
 		}
 		provinces_to_highlight = {
 			superregion = india_superregion
@@ -1615,7 +1615,6 @@ country_decisions = {
 			}
 		}
 		allow = {
-			NOT = { exists = HIN }
 			adm_tech = 10
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
@@ -1657,6 +1656,7 @@ country_decisions = {
 			was_never_end_game_tag_trigger = yes
 			h_is_india_tag_trigger = yes
 			religion_group = dharmic
+			NOT = { exists = BHA }
 		}
 		provinces_to_highlight = {
 			superregion = india_superregion
@@ -1666,7 +1666,6 @@ country_decisions = {
 			}
 		}
 		allow = {
-			NOT = { exists = BHA }
 			adm_tech = 10
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
@@ -1708,6 +1707,7 @@ country_decisions = {
 			was_never_end_game_tag_trigger = yes
 			h_is_india_tag_trigger = yes
 			religion_group = dharmic
+			NOT = { exists = MAR }
 		}
 		provinces_to_highlight = {
 			superregion = india_superregion
@@ -1717,7 +1717,6 @@ country_decisions = {
 			}
 		}
 		allow = {
-			NOT = { exists = MAR }
 			adm_tech = 10
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
@@ -1757,6 +1756,7 @@ country_decisions = {
 			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_punjab_flag }
 			NOT = { tag = PUN }
+			NOT = { exists = PUN }
 			tag = SRH
 		}
 		provinces_to_highlight = {
@@ -1771,7 +1771,6 @@ country_decisions = {
 			}
 		}
 		allow = {
-			NOT = { exists = PUN }
 			adm_tech = 10
 			is_at_war = no
 			religion = sikhism
@@ -1808,6 +1807,7 @@ country_decisions = {
 			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_rajputana_flag }
 			tag = MER
+			NOT = { exists = RJP }
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -1832,7 +1832,6 @@ country_decisions = {
 			}
 		}
 		allow = {
-			NOT = { exists = RJP }
 			adm_tech = 10
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
@@ -1898,6 +1897,7 @@ country_decisions = {
 			normal_or_historical_nations = yes
 			NOT = { has_country_flag = formed_zimbabwe_flag }
 			tag = RZI
+			NOT = { exists = GZI }
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -1911,7 +1911,6 @@ country_decisions = {
 			}
 		}
 		allow = {
-			NOT = { exists = GZI }
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
@@ -1973,6 +1972,7 @@ country_decisions = {
 				tag = MOR
 				tag = TUN
 			}
+			NOT = { exists = SOK }
 		}
 		provinces_to_highlight = {
 			region = sahel_region
@@ -1986,7 +1986,6 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
-			NOT = { exists = SOK }
 			num_of_owned_provinces_with = {
 				OR = {
 					region = sahel_region
@@ -2057,6 +2056,7 @@ country_decisions = {
 			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_kitara_flag }
 			tag = KON
+			NOT = { exists = KIT }
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -2076,7 +2076,6 @@ country_decisions = {
 			}
 		}
 		allow = {
-			NOT = { exists = KIT }
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
