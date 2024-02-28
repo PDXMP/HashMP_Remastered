@@ -66,21 +66,6 @@ union = {
 	end_date = 1437.12.9
 }
 
-# Habsburg-Bohemia, during Albrecht II
-union = {
-	first = HAB
-	second = BOH
-	start_date = 1437.12.9
-	end_date = 1439.10.27
-}
-
-# Habsburg-Hungary, during Albrecht II
-union = {
-	first = HAB
-	second = HUN
-	start_date = 1437.12.9
-	end_date = 1439.10.27
-}
 
 # Habsburg-Hungary, during Ladislaus
 union = {
@@ -96,14 +81,6 @@ union = {
 	second = BOH
 	start_date = 1453.10.28
 	end_date = 1457.11.24
-}
-
-# Poland-Hungary
-union = {
-	first = POL
-	second = HUN
-	start_date = 1439.10.27
-	end_date = 1444.11.11
 }
 
 # Bohemia-Hungary
