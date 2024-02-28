@@ -73,7 +73,6 @@ on_yearly_pulse = {
 		if = {
 			limit = {
 				is_year = 1449
-				has_ruler_flag = h_christopher_iii
 			}
 			country_event = {
 				id = HashMPScandinavia.6

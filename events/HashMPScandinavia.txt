@@ -198,13 +198,16 @@ country_event = {
 	is_triggered_only = yes
 	fire_only_once = yes
 
-	trigger = {
-		has_ruler_flag = h_christopher_iii
-	}
-
 	option = {
 		name = HashMPScandinavia_6_a
-		exile_consort_as = h_dorothea
+		hidden_effect = {
+			if = {
+				limit = {
+					has_consort_flag = h_dorothea_consort
+				}
+				exile_consort_as = h_dorothea
+			}
+		}
 		define_ruler = {
 			name = "Christian I"
 			dynasty = "von Oldenburg"
@@ -216,7 +219,12 @@ country_event = {
 			age = 33
 			claim = 80
 		}
-		set_consort = h_dorothea
+		if = {
+			limit = {
+				has_consort_flag = h_dorothea_consort
+			}
+			set_consort = h_dorothea
+		}
 	}
 
 	option = {
