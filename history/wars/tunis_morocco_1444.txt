@@ -1,0 +1,13 @@
+name="Tunisian-Morocco Peace"
+war_goal = {
+	type = take_capital_imperial
+	casus_belli = cb_imperial
+}
+1443.1.1 = {
+	add_attacker = TUN
+	add_defender = MOR
+}
+1444.11.1 = {
+	rem_attacker = TUN
+	rem_defender = MOR
+}

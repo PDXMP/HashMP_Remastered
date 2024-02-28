@@ -1,13 +1,13 @@
-name="Polish-Lithuanian War"
+name = "SWE-LIT"
 war_goal = {
 	type = take_capital_imperial
 	casus_belli = cb_imperial
 }
 1443.1.1 = {
-	add_attacker = POL
+	add_attacker = SWE
 	add_defender = LIT
 }
-1444.11.1 = {
-	rem_attacker = POL
+1444.8.1 = {
+	rem_attacker = SWE
 	rem_defender = LIT
 }

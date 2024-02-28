@@ -1,0 +1,13 @@
+name="Napoli-Savoyard Peace"
+war_goal = {
+	type = take_capital_imperial
+	casus_belli = cb_imperial
+}
+1443.1.1 = {
+	add_attacker = NAP
+	add_defender = SAV
+}
+1444.11.1 = {
+	rem_attacker = NAP
+	rem_defender = SAV
+}
