@@ -1609,14 +1609,17 @@ h_dan_4 = {
 			northern_norway = {
 				is_core = ROOT
 				owned_by = ROOT
+				type = all
 			}
 			western_norway = {
 				is_core = ROOT
 				owned_by = ROOT
+				type = all
 			}
 			eastern_norway = {
 				is_core = ROOT
 				owned_by = ROOT
+				type = all
 			}
 		}
 		effect = {
