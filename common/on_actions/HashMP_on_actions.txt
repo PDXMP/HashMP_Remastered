@@ -59,3 +59,25 @@ on_province_owner_change = {
 		}
 	}
 }
+
+on_yearly_pulse = {
+	DAN = {
+		if = {
+			limit = {
+				is_year = 1445
+			}
+			country_event = {
+				id = HashMPScandinavia.7
+			}
+		}
+		if = {
+			limit = {
+				is_year = 1449
+				has_ruler_flag = h_christopher_iii
+			}
+			country_event = {
+				id = HashMPScandinavia.6
+			}
+		}
+	}
+}

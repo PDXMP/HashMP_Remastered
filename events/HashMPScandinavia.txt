@@ -196,73 +196,71 @@ country_event = {
 	picture = DEATH_OF_HEIR_eventPicture
 	
 	is_triggered_only = yes
-	
+	fire_only_once = yes
+
+	trigger = {
+		has_ruler_flag = h_christopher_iii
+	}
+
 	option = {
 		name = HashMPScandinavia_6_a
-		##Christian
-		hidden_effect = {
-			set_country_flag = h_danes_king_christian
-			set_country_flag = h_danish_succession_concluded
-		}
-
+		exile_consort_as = h_dorothea
 		define_ruler = {
 			name = "Christian I"
 			dynasty = "von Oldenburg"
 			religion = ROOT
 			culture = hannoverian
-			adm = 5
-			dip = 3
-			mil = 3
-			age = 24
+			adm = 4
+			dip = 4
+			mil = 4
+			age = 33
 			claim = 80
-			fixed = yes
 		}
+		set_consort = h_dorothea
 	}
-	
+
 	option = {
 		name = HashMPScandinavia_6_b
-		##Charles
-		hidden_effect = {
-			set_country_flag = h_danes_king_charles
-			set_country_flag = h_danish_succession_concluded
+		trigger = {
+			has_consort_flag = h_dorothea_consort
 		}
-
-		define_ruler = {
-			name = "Charles I"
-			dynasty = "Bonde"
-			religion = ROOT
-			culture = swedish
-			adm = 2
-			dip = 2
-			mil = 6
-			age = 42
-			claim = 40
-			fixed = yes
-		}
-	}
-
-	option = {
-		name = HashMPScandinavia_6_c
-		##Dorothea
-		hidden_effect = {
-			set_country_flag = h_danes_queen_dorothea
-			set_country_flag = h_danish_succession_concluded
-		}
-
-		remove_consort = yes
-
 		define_ruler = {
 			name = "Dorothea I"
 			dynasty = "von Hohenzollern"
 			religion = ROOT
 			culture = saxon
 			adm = 5
-			dip = 6
-			mil = 1
-			age = 20
+			dip = 5
+			mil = 2
 			claim = 60
+			age = 19
 			female = yes
-			fixed = yes
 		}
+	}
+}
+
+country_event = {
+	id = HashMPScandinavia.7
+	title = HashMPScandinavia_7_title
+	desc = HashMPScandinavia_7_desc
+	picture = wihgfx_FEMALE_RULER_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = HashMPScandinavia_7_a
+		define_consort = {
+			country_of_origin = BRA
+			culture = saxon
+			name = "Dorothea"
+			dynasty = "von Hohenzollern"
+			birth_date = 1430.1.1
+			female = yes
+			adm = 5
+			dip = 5
+			mil = 2
+		}
+		set_consort_flag = h_dorothea_consort
 	}
 }
