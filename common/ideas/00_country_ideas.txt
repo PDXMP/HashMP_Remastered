@@ -518,7 +518,6 @@ KRL_ideas = {
 ICE_ideas = {
 	start = {
 		may_explore = yes
-		hostile_attrition = 1
 	}
 	
 	bonus = {
