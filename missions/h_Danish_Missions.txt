@@ -344,7 +344,7 @@ h_dan_1 = {
 	}
 
 	h_dan_british_isles = {
-		icon = defeat_the_english
+		icon = mission_northumberland_coast
 		required_missions = {
 			h_dan_iceland
 		}
@@ -1012,7 +1012,7 @@ h_dan_2 = {
 	}
 
 	h_dan_north_sea_empire = {
-		icon = mission_rb_empire
+		icon = mission_danish_england
 		required_missions = {
 			h_dan_england h_dan_scotland_2
 		}
@@ -1057,7 +1057,7 @@ h_dan_3 = {
 	has_country_shield = yes
 
 	h_dan_the_defeat = {
-		icon = mission_danish_kingdom
+		icon = mission_danish_flag
 		required_missions = { }
 		position = 1
 		provinces_to_highlight = { }
@@ -1104,7 +1104,7 @@ h_dan_3 = {
 	}
 
 	h_dan_retake_skane = {
-		icon = generality_lands
+		icon = mission_conquer_skaneland
 		required_missions = {
 			dan_retake_gotland
 		}
