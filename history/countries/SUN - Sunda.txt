@@ -8,6 +8,7 @@ capital = 2687	# Pakuan
 1424.1.1 = {
 	monarch = {
 		name = "Mangkubumi Suradipati"
+		birth_date = 1424.1.1
 		dynasty = "Sunda"
 		ADM = 4
 		DIP = 3
