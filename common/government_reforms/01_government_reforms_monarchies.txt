@@ -693,17 +693,31 @@ kalmar_union = {
 
 danish_archkingdom = {
 	icon = "danish_archkingdom"
-	allow_normal_conversion = no
+	allow_normal_conversion = yes
 	potential = {
+		is_or_was_tag = { tag = DAN }
+	}
+	trigger = {
 		OR = {
-			has_reform = danish_archkingdom
-			have_had_reform = danish_archkingdom
+			any_subject_country = {
+				is_subject_of_type = personal_union
+				capital_scope = { region = scandinavia_region }
+			}
+			num_of_owned_provinces_with = {
+				value = 40
+				region = scandinavia_region
+			}
+			OR = {
+				has_reform = danish_archkingdom
+				have_had_reform = danish_archkingdom
+			}
 		}
 	}
 	valid_for_nation_designer = no
 	modifiers = {
-		diplomatic_upkeep = 2
-		advisor_pool = 1
+		diplomatic_upkeep = 1 #2
+		#advisor_pool = 1
+		land_forcelimit_modifier = 0.1
 		max_absolutism = 10
 		nobles_influence_modifier = -0.1
 		years_to_integrate_personal_union = -40
