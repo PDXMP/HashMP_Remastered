@@ -1070,11 +1070,6 @@ h_dan_3 = {
 			skaneland_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
-				NOT = {
-					nationalism = 5
-					local_autonomy = 30
-					devastation = 1
-				}
 			}
 		}
 		effect = {
