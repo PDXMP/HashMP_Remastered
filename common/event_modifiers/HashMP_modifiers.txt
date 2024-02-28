@@ -104,7 +104,7 @@ h_danish_danevirke_restored = {
 
 h_danish_straits = {
 	local_defensiveness = 0.10
-	hostile_disembark_speed = 0.10
+	hostile_disembark_speed = 0.25
 }
 
 ##Sweden
