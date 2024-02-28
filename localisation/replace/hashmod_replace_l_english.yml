@@ -109,6 +109,6 @@
  obj_emperor_of_china_desc:0 "Be the emperor of China by having the Chinese Empire government reform."
  obj_disc_army_desc:0 "Have at least 115% discipline in your armies."
  ab_same_contine_lib_desire:0 "Supply Depots"
- dan_the_sound_toll_tt:0 "The provinces §Y[12.GetName]§!, §Y[4142.GetName]§! and §Y[1775.GetName]§! gain the triggered province modifier '§YSound Toll Protection§!', which is active as long the province has any kind of naval defense building and any kind of market building, giving the following effects:\nLocal Trade Power: §G+3.00§!\nHostile Fleet Attrition: §G+3.00§!\nPossible Number of Buildings: §G+2§!\nCost to Promote Mercantilism: §G-5.0%§!
+ dan_the_sound_toll_tt:0 "The provinces §Y[12.GetName]§!, §Y[4142.GetName]§! and §Y[1775.GetName]§! gain the triggered province modifier '§YSound Toll Protection§!', which is active as long the province has any kind of naval defense building and any kind of market building, giving the following effects:\nLocal Trade Power: §G+3.00§!\nHostile Fleet Attrition: §G+3.00§!\nPossible Number of Buildings: §G+2§!\nCost to Promote Mercantilism: §G-5.0%§!"
  dan_sca_livonian_conquest_title:0 "Window to the East"
  
