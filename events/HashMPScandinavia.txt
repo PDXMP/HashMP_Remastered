@@ -219,12 +219,7 @@ country_event = {
 			age = 33
 			claim = 80
 		}
-		if = {
-			limit = {
-				has_consort_flag = h_dorothea_consort
-			}
-			set_consort = h_dorothea
-		}
+		set_consort = h_dorothea
 	}
 
 	option = {
