@@ -115,8 +115,6 @@ h_dan_1 = {
 				name = dan_humiliated_the_hanse
 				duration = 10950
 			}
-			custom_tooltip = dan_eliminate_the_hanse_at
-			hidden_effect = { set_country_flag = dan_enable_trade_conflict_war_decision }
 			44 = {
 				add_permanent_claim = ROOT
 			}
@@ -135,61 +133,13 @@ h_dan_1 = {
 		provinces_to_highlight = {
 			OR = {
 				province_id = 47
-				province_id = 1858
-				province_id = 45
-				province_id = 44
 				province_id = 1874
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-			NOT = { controller = { OR = { tag = ROOT alliance_with = ROOT is_subject_of = ROOT } } }
 		}
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = dan_the_german_trade_cities_tt
-				calc_true_if = {
-					47 = {
-						OR = {
-							country_or_non_sovereign_subject_holds = ROOT
-							AND = { is_blockaded = yes owner = { war_with = ROOT } }
-							controlled_by = ROOT
-							owner = { has_country_flag = dan_submitted_to_danish_trade_dominance }
-						}
-					}
-					1858 = {
-						OR = {
-							country_or_non_sovereign_subject_holds = ROOT
-							AND = { is_blockaded = yes owner = { war_with = ROOT } }
-							controlled_by = ROOT
-							owner = { has_country_flag = dan_submitted_to_danish_trade_dominance }
-						}
-					}
-					45 = {
-						OR = {
-							country_or_non_sovereign_subject_holds = ROOT
-							AND = { is_blockaded = yes owner = { war_with = ROOT } }
-							controlled_by = ROOT
-							owner = { has_country_flag = dan_submitted_to_danish_trade_dominance }
-						}
-					}
-					44 = {
-						OR = {
-							country_or_non_sovereign_subject_holds = ROOT
-							AND = { is_blockaded = yes owner = { war_with = ROOT } }
-							controlled_by = ROOT
-							owner = { has_country_flag = dan_submitted_to_danish_trade_dominance }
-						}
-					}
-					1874 = {
-						OR = {
-							country_or_non_sovereign_subject_holds = ROOT
-							AND = { is_blockaded = yes owner = { war_with = ROOT } }
-							controlled_by = ROOT
-							owner = { has_country_flag = dan_submitted_to_danish_trade_dominance }
-						}
-					}
-					amount = 3
-				}
-			}
+			1858 = { country_or_non_sovereign_subject_holds = ROOT }
+			44 = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		effect = {
 			add_prestige = 20
