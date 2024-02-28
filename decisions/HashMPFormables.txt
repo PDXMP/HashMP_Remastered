@@ -951,15 +951,15 @@ country_decisions = {
 					complete_mission = tr_subjugate_novgorod
 				}
 			}
-			if = { 
-				limit = { 
-					tag = UKR 
-				}
-				add_country_modifier = { 
-					name = "ukrainian_leadership"
-					duration = -1
-				}
-			}
+			#if = { 
+			#	limit = { 
+			#		tag = UKR 
+			#	}
+			#	add_country_modifier = { 
+			#		name = "ukrainian_leadership"
+			#		duration = -1
+			#	}
+			#}
 			change_tag = RUS
 			on_change_tag_effect = yes
 			swap_non_generic_missions = yes
