@@ -50,13 +50,13 @@ h_dan_1 = {
 			12 = {
 				add_province_modifier = {
 					name = h_danish_straits
-					duration = 18250 #50 years
+					duration = -1
 				}
 			}
 			14 = {
 				add_province_modifier = {
 					name = h_danish_straits
-					duration = 18250 #50 years
+					duration = -1
 				}
 			}
 		}
