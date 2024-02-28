@@ -1000,7 +1000,6 @@ SIA = "countries/Siam.txt"
 # Leviathan Maori tags
 #AOT = "countries/Aotearoa.txt"
 #MAA = "countries/Mataatua.txt"
-#TAN = "countries/Tainui.txt"
 #TAK = "countries/Takitimu.txt"
 #TNK = "countries/Taranaki.txt"
 #TEA = "countries/TeArawa.txt"
