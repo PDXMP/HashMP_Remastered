@@ -109,4 +109,7 @@
  obj_emperor_of_china_desc:0 "Be the emperor of China by having the Chinese Empire government reform."
  obj_disc_army_desc:0 "Have at least 115% discipline in your armies."
  ab_same_contine_lib_desire:0 "Supply Depots"
- 
+ mnd_mlc_champa_title:0 "Destroy Sunda"
+ mnd_mlc_champa_desc:0 "The state of Sunda, formerly a vassal of Majapahit just like us, is becoming a dominant power of the region. It is our destiny to unite these islands - Not theirs."
+ mnd_mlc_ming_title:0 "Sever Chinese Ties"
+ mnd_mlc_ming_desc:0 "The Ming dynasty, formerly one of our greatest supporters and allies, has completely collapsed, replaced with a horde of feuding warlords. We're on our own, and should prepare accordingly."
