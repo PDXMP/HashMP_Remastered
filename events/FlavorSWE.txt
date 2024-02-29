@@ -3507,7 +3507,7 @@ country_event = {
 		# }
 		add_country_modifier = {
 			name = h_swedish_vasa_flagship
-			duration = -1
+			duration = 9125
 		}
 	}
 	

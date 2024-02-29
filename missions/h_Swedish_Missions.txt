@@ -879,14 +879,7 @@ h_swe_3 = {
 		position = 5
 		provinces_to_highlight = {}
 		trigger = {
-			treasury = 100
-			dip_tech = 15
-			if = {
-				limit = {
-					has_dlc = "Golden Century"
-				}
-				has_spare_flagship_capacity = yes
-			}
+			has_flagship = yes
 		}
 		effect = {
 			add_navy_tradition = 25
@@ -1343,9 +1336,9 @@ h_swe_4 = {
 		}
 		effect = {
 			define_admiral = {
-				shock = 4
-				fire = 4
-				manuever = 4
+				shock = 5
+				fire = 5
+				manuever = 5
 			}
 		}
 	}
