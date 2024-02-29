@@ -1757,7 +1757,10 @@ country_decisions = {
 			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_punjab_flag }
 			NOT = { tag = PUN }
-			tag = SRH
+			OR ={
+				tag = SRH
+				tag = DLH
+			}
 		}
 		provinces_to_highlight = {
 			OR = {
