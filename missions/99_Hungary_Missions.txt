@@ -119,11 +119,26 @@ hun_north_group = {
 					}
 					add_permanent_claim = ROOT
 				}
+				
 			}
 			else = {
 				add_dip_power = 100
 			}
 			wallachia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+						croatia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			bosnia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -169,68 +184,6 @@ hun_north_group = {
 				}
 				add_permanent_claim = ROOT
 			}
-		}
-		ai_weight = {
-			factor = 500
-		}
-	}
-	
-	hun_vassal_states_three = {
-		icon = mission_eastern_european_city
-		required_missions = { hun_vassal_states }
-		position = 3
-		
-		provinces_to_highlight = {
-			OR = {
-				area = serbia_area
-				area = rascia_area
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-			ROOT = {
-				NOT = {
-					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-						value = 8
-						OR = {
-							area = serbia_area
-							area = rascia_area
-						}
-					}
-				}
-			}
-		}
-		
-		trigger = {
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 8
-				OR = {
-					area = serbia_area
-					area = rascia_area
-				}
-			}
-			is_subject = no
-		}
-		
-		effect = {
-			add_dip_power = 100
-			serbia_area = {
-				add_province_modifier = {
-					name = "hun_moldavia_mod"
-					duration = 10950
-				}
-			}
-			rascia_area = {
-				add_province_modifier = {
-					name = "hun_moldavia_mod"
-					duration = 10950
-				}
-			}
-			croatia_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
 			east_adriatic_coast_area = {
 				limit = {
 					NOT = { is_core = ROOT }
@@ -238,18 +191,69 @@ hun_north_group = {
 				}
 				add_permanent_claim = ROOT
 			}
+		}
+		ai_weight = {
+			factor = 500
+		}
+	}
+	hun_vassal_states_four = {
+		icon = mission_cannons_firing
+		required_missions = { hun_vassal_states }
+		position = 3
+		
+		provinces_to_highlight = {
+			OR = {
+				area = bosnia_area
+				area = croatia_area
+				area = east_adriatic_coast_area
+				province_id = 4754
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		
+		trigger = {
 			bosnia_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			croatia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			east_adriatic_coast_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			owns_or_non_sovereign_subject_of = 4754
+			is_subject = no
+		}
+		
+		effect = {
+			add_dip_power = 100
+			bosnia_area = {
+				add_province_modifier = {
+					name = "hun_moldavia_mod"
+					duration = 10950
 				}
-				add_permanent_claim = ROOT
+			}
+			croatia_area = {
+				add_province_modifier = {
+					name = "hun_moldavia_mod"
+					duration = 10950
+				}
+			}
+			east_adriatic_coast_area = {
+				add_province_modifier = {
+					name = "hun_moldavia_mod"
+					duration = 10950
+				}
 			}
 		}
 		ai_weight = {
 			factor = 500
 		}
 	}
+	
 }
 
 hun_south_group = {
@@ -320,53 +324,50 @@ hun_south_group = {
 		}
 	}
 
-	hun_vassal_states_four = {
-		icon = mission_cannons_firing
-		required_missions = { hun_vassal_states_three }
-		position = 4
+	hun_vassal_states_three = {
+		icon = mission_eastern_european_city
+		required_missions = { hun_vassal_states }
+		position = 3
 		
 		provinces_to_highlight = {
 			OR = {
-				area = bosnia_area
-				area = croatia_area
-				area = east_adriatic_coast_area
-				province_id = 4754
+				area = serbia_area
+				area = rascia_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			ROOT = {
+				NOT = {
+					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+						value = 8
+						OR = {
+							area = serbia_area
+							area = rascia_area
+						}
+					}
+				}
+			}
 		}
 		
 		trigger = {
-			bosnia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 8
+				OR = {
+					area = serbia_area
+					area = rascia_area
+				}
 			}
-			croatia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			east_adriatic_coast_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			owns_or_non_sovereign_subject_of = 4754
 			is_subject = no
 		}
 		
 		effect = {
 			add_dip_power = 100
-			bosnia_area = {
+			serbia_area = {
 				add_province_modifier = {
 					name = "hun_moldavia_mod"
 					duration = 10950
 				}
 			}
-			croatia_area = {
-				add_province_modifier = {
-					name = "hun_moldavia_mod"
-					duration = 10950
-				}
-			}
-			east_adriatic_coast_area = {
+			rascia_area = {
 				add_province_modifier = {
 					name = "hun_moldavia_mod"
 					duration = 10950
