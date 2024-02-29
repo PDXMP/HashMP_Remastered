@@ -250,7 +250,7 @@ country_event = {
 			limit = {
 				NOT = { ADM = 5 }
 			}
-			change_adm = 2
+			change_adm = 1
 			else = {
 				if = {
 					limit = {
@@ -338,7 +338,7 @@ country_event = {
 			limit = {
 				NOT = { MIL = 5 }
 			}
-			change_mil = 2
+			change_mil = 1
 			else = {
 				if = {
 					limit = { NOT = { MIL = 6 } }
@@ -718,7 +718,7 @@ country_event = {
 			limit = {
 				NOT = { DIP = 5 }
 			}
-			change_dip = 2
+			change_dip = 1
 			else = {
 				if = {
 					limit = { NOT = { DIP = 6 } }
@@ -907,7 +907,7 @@ country_event = {
 			limit = {
 				NOT = { MIL = 5 }
 			}
-			change_mil = 2
+			change_mil = 1
 			else = {
 				if = {
 					limit = { NOT = { MIL = 6 } }
@@ -1092,7 +1092,7 @@ country_event = {
 			limit = {
 				NOT = { DIP = 5 }
 			}
-			change_dip = 2
+			change_dip = 1
 			else = {
 				if = {
 					limit = {
@@ -1133,7 +1133,7 @@ country_event = {
 			limit = {
 				NOT = { ADM = 5 }
 			}
-			change_adm = 2
+			change_adm = 1
 			else = {
 				if = {
 					limit = { NOT = { ADM = 6 } }
@@ -1268,7 +1268,7 @@ country_event = {
 			limit = {
 				NOT = { ADM = 5 }
 			}
-			change_adm = 2
+			change_adm = 1
 			else = {
 				if = {
 					limit = { NOT = { ADM = 6 } }
@@ -1373,7 +1373,7 @@ country_event = {
 			limit = {
 				NOT = { DIP = 5 }
 			}
-			change_dip = 2
+			change_dip = 1
 			else = {
 				if = {
 					limit = {
@@ -1414,7 +1414,7 @@ country_event = {
 			limit = {
 				NOT = { DIP = 5 }
 			}
-			change_dip = 2
+			change_dip = 1
 			else = {
 				if = {
 					limit = {
@@ -1554,7 +1554,7 @@ country_event = {
 			limit = {
 				NOT = { ADM = 5 }
 			}
-			change_adm = 2
+			change_adm = 1
 			else = {
 				if = {
 					limit = {
@@ -1572,7 +1572,7 @@ country_event = {
 			limit = {
 				NOT = { DIP = 5 }
 			}
-			change_dip = 2
+			change_dip = 1
 			else = {
 				if = {
 					limit = {
@@ -1708,7 +1708,7 @@ country_event = {
 			limit = {
 				NOT = { DIP = 5 }
 			}
-			change_dip = 2
+			change_dip = 1
 			else = {
 				if = {
 					limit = {
@@ -1961,7 +1961,7 @@ country_event = {
 			limit = {
 				NOT = { ADM = 5 }
 			}
-			change_adm = 2
+			change_adm = 1
 			else = {
 				if = {
 					limit = {
@@ -2054,7 +2054,7 @@ country_event = {
 			limit = {
 				NOT = { ADM = 5 }
 			}
-			change_adm = 2
+			change_adm = 1
 			else = {
 				if = {
 					limit = {
@@ -2156,9 +2156,9 @@ country_event = {
 		name = "hindu_events.48.a"
 		define_heir = {
 			dynasty = "Suryavansha"
-			change_adm = 4
-			change_dip = 4
-			change_mil = 4
+			change_adm = 2
+			change_dip = 2
+			change_mil = 2
 			claim = 20
 		}
 		add_prestige = 10
