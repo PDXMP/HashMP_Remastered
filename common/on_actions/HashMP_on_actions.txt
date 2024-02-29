@@ -3,6 +3,7 @@
 on_startup = {
 	events = {
 		HashMPEvents.3 # Electors setup
+		flavor_pol.18 #Polish election event at game start 1444 for Noble
 	}
 }
 
