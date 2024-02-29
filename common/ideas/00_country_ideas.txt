@@ -2006,7 +2006,7 @@ ERANSHAHR_ideas = {
 MUG_ideas = {
 	start = {
 		core_creation = -0.25
-		cavalry_power = 0.20
+		cavalry_power = 0.25
 	}
 	
 	bonus = {
@@ -2035,9 +2035,11 @@ MUG_ideas = {
 	}
 	mughal_architecture = {
 		prestige = 1
+		build_cost = -0.1
 		great_project_upgrade_time = -0.1
 	}
 	fatawa_e_alamgiri = {
+		land_morale = 0.15
 		stability_cost_modifier = -0.10
 	}
 }
