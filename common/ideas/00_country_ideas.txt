@@ -14551,7 +14551,8 @@ DLH_ideas = {
 	}
 	
 	bonus = {
-		num_accepted_cultures = 1
+#		num_accepted_cultures = 1
+		land_morale = 0.10
 	}
 	
 	trigger = {
