@@ -3471,6 +3471,7 @@ estate_nobles_highland_fortifications = {
 	influence = 0.05
 	is_valid = {
 		OR = {
+			tag = AFG
 			has_mission = geo_fortify_caucasia
 			has_unlocked_estate_privilege = {
 				estate_privilege = estate_nobles_highland_fortifications

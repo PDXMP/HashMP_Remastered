@@ -4806,7 +4806,8 @@ GEO_ideas = {
 AFG_ideas = {
 	start = {
 		army_tradition = 0.5
-		global_own_trade_power = 0.1
+		cavalry_power = 0.2
+
 	}
 	
 	bonus = {
@@ -4818,20 +4819,21 @@ AFG_ideas = {
 	}
 	free = yes
 	
+	tureh = {
+		global_manpower_modifier = 0.25
+	}
 	pashtunwali = {
 		war_exhaustion_cost = -0.10
+		land_attrition = -0.10
 	}
 	shadows_of_the_hindu_kush = {
 		defensiveness = 0.25
-	}
-	tureh = {
-		global_manpower_modifier = 0.2
 	}
 	afghan_diaspora = {
 		diplomatic_reputation = 1
 	}
 	durrani_imperialism = {
-		cavalry_power = 0.15
+		global_own_trade_power = 0.1
 	}
 	institutionalized_loya_jirga = {
 		legitimacy = 1
