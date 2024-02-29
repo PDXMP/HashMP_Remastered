@@ -21,23 +21,7 @@ country_decisions = {
 				is_free_or_tributary_trigger = yes
 				ai = no
 			}
-			NOT = { exists = BYZ }
-			NOT = { exists = GRE }
-			NOT = { tag = HLR }
-			NOT = { tag = ROM }
-			NOT = { tag = TUR }
-			OR = {
-				culture_group = byzantine
-				not = { primary_culture = goths }
-				AND = {
-					has_idea = MFA_byzantine_claimants
-					dynasty = "Palaiologos"
-				}
-			}
-			OR = {
-				religion = orthodox
-				has_idea = MFA_byzantine_claimants
-			}
+			tag = HUN
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -49,11 +33,7 @@ country_decisions = {
 				province_id = 146	# Athens
 				province_id = 145	# Morea
 				province_id = 1773	# Achea
-				province_id = 316	# Bithynia
-				province_id = 317	# Bursa
-				province_id = 318	# Smyrna
 				province_id = 1853	# Kozani
-				province_id = 2296	# Biga
 			}
 			NOT = { owned_by = ROOT }
 		}
@@ -65,15 +45,12 @@ country_decisions = {
 			owns = 146	# Athens
 			owns = 145	# Morea
 			owns = 1773	# Achea
-			owns = 316	# Bithynia
-			owns = 317	# Bursa
-			owns = 318	# Smyrna
 			owns = 1853	# Kozani
-			owns = 2296	# Biga
 			owns = 151  # Constantinople
 			151 = {		# Constantinople
 				is_state = yes
 			}
+			NOT = { exists = BYZ }
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
