@@ -2690,7 +2690,8 @@ VIJ_ideas = {
 		diplomats = 1
 	}
 	army_for_city_of_victory = {
-		discipline = 0.05
+#		discipline = 0.05
+		land_forcelimit_modifier = 0.10
 	}
 }
 
