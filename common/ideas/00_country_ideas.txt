@@ -3422,12 +3422,13 @@ MAR_ideas = {
 	
 	tradition_of_military_service = {
 		cavalry_power = 0.15
+		discipline = 0.05
 	}
 	forts_of_maharashtra = {
 		defensiveness = 0.20
 	}
 	peasant_soldiers = {
-		infantry_cost = -0.2
+		cavalry_cost = -0.2
 	}
 	office_of_the_peshwa = {
 		core_creation = -0.15
