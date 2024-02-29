@@ -16780,8 +16780,8 @@ SUN_ideas = {
 	sunda_galuh = {
 		global_unrest = -1
 	}
-	defensive_moats = {
-		land_morale = 0.20
+	bi_yearly_harvest = {
+		global_trade_goods_size_modifier = 0.10
 	}
 	wooden_architecture = {
 		build_cost = -0.1
@@ -16793,8 +16793,8 @@ SUN_ideas = {
 	seren_taun = {
 		global_tax_modifier = 0.1
 	}
-	bi_yearly_harvest = {
-		global_trade_goods_size_modifier = 0.10
+	defensive_moats = {
+		land_morale = 0.1
 	}
 }
 
@@ -16840,7 +16840,6 @@ MLC_ideas = {
 	}
 	bonus = {
 		merchants = 1
-		naval_morale = 0.05
 	}
 	trigger = {
 		tag = MLC
@@ -16855,7 +16854,7 @@ MLC_ideas = {
 		technology_cost = -0.05
 	}
 	mlc_maritime_laws = {
-		ship_durability = 0.05
+		global_ship_cost = -0.1
 	}
 	mlc_new_hegemony = {
 		production_efficiency = 0.15
@@ -16867,8 +16866,8 @@ MLC_ideas = {
 		trade_efficiency = 0.15
 	}
 	mlc_daulat = {
-		discipline = 0.05
-		infantry_power = 0.1
+		infantry_power = 0.15
+		leader_land_shock = 1 
 	}
 }
 
