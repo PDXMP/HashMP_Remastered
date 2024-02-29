@@ -382,7 +382,7 @@ mnd_mlc_2 = {
 			
 		}
 		trigger = {
-			always = yes 
+			prestige = 50 			
 		}
 		effect = {
 			add_dip_power = 50 

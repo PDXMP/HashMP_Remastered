@@ -114,8 +114,8 @@ religious_school = shafii_school
 		name = "Ibrahim"
 		dynasty = "Srivijaya"
 		adm = 3
-		dip = 3
-		mil = 4
+		dip = 4
+		mil = 3
 		religion = sunni
 	}
 }
