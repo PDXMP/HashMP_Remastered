@@ -1,5 +1,5 @@
 government = monarchy
-add_government_reform = danish_archkingdom #kalmar_union
+add_government_reform = feudalism_reform #danish_archkingdom #kalmar_union
 primary_culture = danish
 religion = catholic
 elector = yes

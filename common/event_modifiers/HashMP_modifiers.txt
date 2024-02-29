@@ -60,6 +60,85 @@ h_victory_over_the_empire = {
 h_imperial_unity = {
 	imperial_authority = 0.1
 }
+
+##Denmark
+h_danish_hudson_trading_company = {
+	merchants = 1
+	global_trade_goods_size_modifier = 0.05
+}
+
+h_danish_north_sea_empire = {
+	monarch_diplomatic_power = 1
+	governing_capacity_modifier = 0.10
+	naval_morale = 0.05
+	land_morale = 0.05
+}
+
+h_danish_englished_defeated = {
+	culture_conversion_cost = -0.33
+}
+
+h_danish_danelaw = {
+	prestige = 0.5
+}
+
+h_danish_reclaimed_york = {
+	local_manpower_modifier = 0.50
+	local_production_efficiency = 0.25
+	local_development_cost = -0.10
+}
+
+h_danish_highlanders = {
+	shock_damage = 0.15
+}
+
+h_danish_north_sea_ambitions = {
+	naval_morale = 0.10
+	transport_cost = -0.25
+	sailors_recovery_speed = 0.25
+}
+
+h_danish_danevirke_restored = {
+	local_defender_dice_roll_bonus = 1
+}
+
+h_danish_straits = {
+	local_defensiveness = 0.10
+	hostile_disembark_speed = 0.25
+}
+
+##Sweden
+h_swedish_visby = {
+	naval_forcelimit = 5
+	local_ship_repair = 0.25
+	province_trade_power_modifier = 0.25
+}
+
+h_swedish_neva_conquered = {
+	local_missionary_strength = 0.02
+	local_missionary_maintenance_cost = -0.50
+	local_culture_conversion_cost = -0.33
+}
+
+h_swedish_hakkapeliitta = {
+	cavalry_power = 0.1
+}
+
+h_swedish_vasa_flagship = {
+	naval_maintenance_modifier = -0.15
+	naval_morale = 0.05
+}
+
+h_swedish_dalaskogen_investment = {
+	local_great_project_upgrade_cost = -0.25
+	local_great_project_upgrade_time = -0.25
+}
+
+h_swedish_child_king = {
+	all_estate_loyalty_equilibrium = -0.05
+	all_estate_influence_modifier = 0.1
+}
+
 h_atoll = {
 	province_trade_power_value = 15
 }

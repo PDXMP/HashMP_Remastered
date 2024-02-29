@@ -1,0 +1,124 @@
+namespace = HashMPScandinavia
+
+##Aftermath of the Kalmar War
+country_event = {
+	id = HashMPDenmark.1
+	title = HashMPDenmark_1_title
+	desc = HashMPDenmark_1_desc
+	picture = CIVIL_WAR_eventPicture
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = HashMPDenmark_1_a
+		##Vow to restore the union
+		add_prestige = 10
+		add_treasury = 100
+
+		add_casus_belli = {
+			target = NOR
+			type = cb_restore_personal_union
+		}
+
+		skaneland_area = {
+			add_core = ROOT
+		}
+
+		subarctic_islands_area = {
+			add_permanent_claim = ROOT
+		}
+	}
+	
+	option = {
+		name = HashMPDenmark_1_b
+		##Forget the union
+		add_prestige = -5
+		add_stability_or_adm_power = yes
+		add_manpower = 3
+		add_sailors = 500
+
+		subarctic_islands_area = {
+			add_permanent_claim = ROOT
+		}
+	}
+}
+
+##Succession of Denmark
+country_event = {
+	id = HashMPDenmark.2
+	title = HashMPDenmark_2_title
+	desc = HashMPDenmark_2_desc
+	picture = DEATH_OF_HEIR_eventPicture
+	
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = HashMPDenmark_2_a
+		hidden_effect = {
+			if = {
+				limit = {
+					has_consort_flag = h_dorothea_consort
+				}
+				exile_consort_as = h_dorothea
+			}
+		}
+		define_ruler = {
+			name = "Christian I"
+			dynasty = "von Oldenburg"
+			religion = ROOT
+			culture = hannoverian
+			adm = 4
+			dip = 4
+			mil = 4
+			age = 33
+			claim = 80
+		}
+		set_consort = h_dorothea
+	}
+
+	option = {
+		name = HashMPDenmark_2_b
+		trigger = {
+			has_consort_flag = h_dorothea_consort
+		}
+		define_ruler = {
+			name = "Dorothea I"
+			dynasty = "von Hohenzollern"
+			religion = ROOT
+			culture = saxon
+			adm = 5
+			dip = 5
+			mil = 2
+			claim = 60
+			age = 19
+			female = yes
+		}
+	}
+}
+
+country_event = {
+	id = HashMPDenmark.3
+	title = HashMPDenmark_3_title
+	desc = HashMPDenmark_3_desc
+	picture = wihgfx_FEMALE_RULER_eventPicture
+
+	is_triggered_only = yes
+	fire_only_once = yes
+
+	option = {
+		name = HashMPDenmark_3_a
+		define_consort = {
+			country_of_origin = BRA
+			culture = saxon
+			name = "Dorothea"
+			dynasty = "von Hohenzollern"
+			birth_date = 1430.1.1
+			female = yes
+			adm = 5
+			dip = 5
+			mil = 2
+		}
+		set_consort_flag = h_dorothea_consort
+	}
+}

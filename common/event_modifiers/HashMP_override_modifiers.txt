@@ -187,3 +187,25 @@ estate_burghers_mountain_expansion_mountains = {
 estate_burghers_mountain_expansion_hills = {
 	local_development_cost = -0.10 #-0.125
 }
+
+swedish_military_reforms = {
+	infantry_cost = -0.1
+}
+
+swedish_naval_reforms = {
+	global_ship_cost = -0.10
+	naval_morale = 0.10
+}
+
+the_great_agricultural_reform = {
+	production_efficiency = 0.1 #0.05
+}
+
+dan_sca_balticum_dominance_mod = {
+	own_coast_naval_combat_bonus = 1
+}
+
+dan_new_world_expansion = {
+	global_colonial_growth = 20
+	colonists = 1
+}
