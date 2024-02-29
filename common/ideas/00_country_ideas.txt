@@ -14786,7 +14786,8 @@ BNG_ideas = {
 	}
 	
 	bonus = {
-		backrow_artillery_damage = 0.15
+#		backrow_artillery_damage = 0.15
+		artillery_cost = -0.10
 	}
 	
 	trigger = {
@@ -14798,10 +14799,11 @@ BNG_ideas = {
 		trade_efficiency = 0.1
 	}
 	bng_habshi_generals = {
-		army_tradition = 0.5
+#		army_tradition = 0.5
+		army_tradition_decay = -0.01
 	}
 	bng_clearing_the_delta = {
-		development_cost = -0.1
+		development_cost = -0.05
 	}
 	bng_attract_sufis = {
 		idea_cost = -0.1
@@ -14813,7 +14815,8 @@ BNG_ideas = {
 		global_tax_modifier = 0.1
 	}
 	bng_bengali_industrialization = {
-		global_trade_goods_size_modifier = 0.1
+#		global_trade_goods_size_modifier = 0.1
+		production_efficiency = 0.1
 	}
 }
 
