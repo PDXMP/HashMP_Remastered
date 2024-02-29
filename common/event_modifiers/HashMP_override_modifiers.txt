@@ -209,3 +209,45 @@ dan_new_world_expansion = {
 	global_colonial_growth = 20
 	colonists = 1
 }
+
+pol_prosperity_in_ukraine_modifier = {
+	local_prosperity_growth = 0.5 
+	local_development_cost = -0.1
+	local_build_cost = -0.1
+}
+
+pol_breadbasket_europe_modifier = {
+	trade_goods_size_modifier  = 0.1
+	local_tax_modifier = 0.2
+}
+pol_growing_prosperity_modifier = {
+	local_prosperity_growth = 1 
+	local_development_cost = -0.05
+}
+counter_reformation = {
+	global_heretic_missionary_strength = 0.03
+	papal_influence = 0.5
+	missionaries = 1
+	tolerance_heretic = -2
+	religion = yes
+}
+pol_winter_preparations_modifier = {
+	land_attrition = -0.2
+	galley_power = 0.1
+}
+pol_poland_rise_modifier = {
+	years_of_nationalism = -5
+	monthly_splendor = 3
+	prestige = 1 
+	legitimacy = 1
+	republican_tradition = 0.3
+	horde_unity = 1
+	devotion = 1
+	meritocracy = 1 
+	all_power_cost = -0.05
+	artillery_levels_available_vs_fort = 2 
+	governing_capacity_modifier = 0.2 
+	land_morale = 0.10
+	core_creation = -0.2
+	amount_of_hussars = 30
+}
