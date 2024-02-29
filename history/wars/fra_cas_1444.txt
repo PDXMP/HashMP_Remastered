@@ -1,0 +1,20 @@
+name = "Iberian War"
+war_goal = {
+	type = take_capital_imperial
+	casus_belli = cb_imperial
+}
+1443.1.1 = {
+	add_attacker = FRA
+	add_defender = CAS
+	add_defender = ARA 
+	add_defender = NAV 
+	rem_defender = POR 
+	
+}
+1444.8.1 = {
+	rem_attacker = FRA
+	rem_defender = CAS
+	rem_defender = ARA 
+	rem_defender = NAV
+	rem_defender = POR
+}

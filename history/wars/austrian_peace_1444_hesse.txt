@@ -1,0 +1,14 @@
+name = "Austrian Peace - Hesse"
+war_goal = {
+	type = take_capital_imperial
+	casus_belli = cb_imperial
+}
+1443.10.1 = {
+	add_attacker = HAB
+	add_defender = HES
+	
+}
+1444.10.2 = {
+	rem_attacker = HAB
+	rem_defender = HES
+}

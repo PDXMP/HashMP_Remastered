@@ -1,0 +1,13 @@
+name = "BRA-HES"
+war_goal = {
+	type = take_capital_imperial
+	casus_belli = cb_imperial
+}
+1443.1.1 = {
+	add_attacker = BRA
+	add_defender = HES
+}
+1444.8.1 = {
+	rem_attacker = BRA
+	rem_defender = HES
+}

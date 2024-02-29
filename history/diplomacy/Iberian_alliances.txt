@@ -69,6 +69,13 @@ alliance = {
 	end_date = 1499.1.1
 }	
 
+alliance = {
+	first = CAS
+	second = POR
+	start_date = 1440.3.31
+	end_date = 1821.1.1
+}
+
 # Aragon and Venice (League of Venice)
 alliance = {
 	first = ARA
