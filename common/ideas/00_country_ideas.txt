@@ -699,7 +699,9 @@ RUS_ideas = {
 
 	trigger = {
 		tag = RUS
+		NOT = { has_country_flag = is_RuthenianRUS_flag } 
 	}
+	
 	free = yes		#will be added at load.
 
 	land_of_the_rus = {
@@ -715,6 +717,58 @@ RUS_ideas = {
 	}
 	life_long_conscription  = {
 		land_forcelimit_modifier = 0.33
+	}
+	abolish_the_mestnichestvo = {
+		yearly_corruption = -0.1
+		nobles_influence_modifier = -0.1
+	}
+	table_of_ranks = {
+		advisor_cost = -0.10
+		army_tradition = 0.25
+	}	
+	curriculum_of_the_cadet_corps = {
+		land_morale = 0.05
+		fire_damage_received = -0.1
+	}
+}
+
+RUSRUT_ideas = {
+	start = {
+		core_creation = -0.15
+		global_manpower_modifier = 0.33
+	}
+
+	bonus = {
+		cossacks_privilege_slots = 1
+		legitimacy = 1
+		devotion = 1
+		republican_tradition = 0.3
+		meritocracy = 1
+		horde_unity = 1
+	}
+	
+	trigger = {
+		tag = RUS 
+		has_country_flag = is_RuthenianRUS_flag
+	}
+	
+	free = yes	
+	
+	land_of_the_rusthenians = {
+		num_accepted_cultures = 1
+		tolerance_heretic = 3
+	}
+	siberian_frontier = {
+		may_establish_frontier = yes
+		auto_explore_adjacent_to_colony = yes
+	}
+	russian_artillery_yard = {
+		artillery_cost = -0.1
+		artillery_power = 0.1
+	}
+	great_rus_army  = {
+		land_forcelimit_modifier = 0.33
+		can_recruit_hussars = yes
 	}
 	abolish_the_mestnichestvo = {
 		yearly_corruption = -0.1
@@ -17811,8 +17865,8 @@ FU2_ideas = {
 
 UKR_ideas = {
 	start = {
-		manpower_recovery_speed = 0.2
-		morale_damage_received = -0.1
+		manpower_recovery_speed = 0.15
+		land_morale = 0.1
 	}
 
 	bonus = {
@@ -17833,25 +17887,27 @@ UKR_ideas = {
 		prestige = 1
 	}
 	international_influences = {
-		num_accepted_cultures = 2
+		num_accepted_cultures = 1
 		promote_culture_cost = -0.25
 	}
 	zaporizhian_cossacs = {
-		cavalry_power = 0.15
+		cavalry_power = 0.1
 		cossacks_privilege_slots = 1
+		can_recruit_hussars = yes
 	}
 	east_and_west = {
 		global_trade_power = 0.1
+		global_trade_goods_size_modifier = 0.05
 	}
 	legacy_of_ancient_rus = {
-		stability_cost_modifier = -0.1
+		development_cost = -0.1
 	}
 	reuniting_rus = {
-		core_creation = -0.1
-		years_of_nationalism = -5
+		years_of_nationalism = -10
 	}
 	birth_of_russian_orthodoxy = {
 		tolerance_own = 2
+		tolerance_heretic = 3
 		yearly_patriarch_authority = 0.005
 	}
 }

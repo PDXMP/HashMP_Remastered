@@ -2497,7 +2497,7 @@ tsardom = {
 			culture_group = east_slavic
 			culture_group = slavic
 		}
-		NOT = { primary_culture = ruthenian }
+		#NOT = { primary_culture = ruthenian }
 		NOT = { primary_culture = byelorussian }
 		OR = {
 			AND = {
@@ -2524,7 +2524,7 @@ tsardom = {
 			culture_group = east_slavic
 			culture_group = slavic
 		}
-		NOT = { primary_culture = ruthenian }
+		#NOT = { primary_culture = ruthenian }
 		NOT = { primary_culture = byelorussian }
 		religion = orthodox
 	}
