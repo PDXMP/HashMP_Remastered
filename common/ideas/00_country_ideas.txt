@@ -16876,7 +16876,6 @@ MSA_ideas = {
 		land_morale = 0.1
 	}
 	bonus = {
-		ship_durability = 0.05
 		artillery_power = 0.2
 	}
 	trigger = {
