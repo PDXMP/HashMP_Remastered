@@ -1571,7 +1571,7 @@ country_decisions = {
 			is_at_war = no
 			num_of_owned_provinces_with = {
 				superregion = india_superregion
-				value = 200
+				value = 120
 			}
 		}
 		effect = {
@@ -1724,7 +1724,7 @@ country_decisions = {
 			is_at_war = no
 			num_of_owned_provinces_with = {
 				superregion = india_superregion
-				value = 200
+				value = 120
 			}
 		}
 		effect = {
