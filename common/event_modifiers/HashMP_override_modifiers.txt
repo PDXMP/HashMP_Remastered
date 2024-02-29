@@ -189,18 +189,16 @@ estate_burghers_mountain_expansion_hills = {
 }
 
 swedish_military_reforms = {
-	drill_gain_modifier = 0.20
-	drill_decay_modifier = -0.10
-}
-
-swedish_mercenary_core = {
-	mercenary_discipline = 0.025
-	mercenary_manpower = 0.20
+	infantry_cost = -0.1
 }
 
 swedish_naval_reforms = {
 	global_ship_cost = -0.10
 	naval_morale = 0.10
+}
+
+the_great_agricultural_reform = {
+	production_efficiency = 0.1 #0.05
 }
 
 dan_sca_balticum_dominance_mod = {

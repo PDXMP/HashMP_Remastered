@@ -1013,7 +1013,7 @@ h_dan_3 = {
 		}
 		effect = {
 			country_event = {
-				id = HashMPScandinavia.5
+				id = HashMPDenmark.1
 			}
 		}
 	}
@@ -1570,8 +1570,8 @@ h_dan_4 = {
 				unlock_estate_privilege = {
 					estate_privilege = estate_burghers_mountain_expansion
 				}
-				add_navy_tradition = 25
 			}
+			add_navy_tradition = 25
 			else = {
 				add_dip_power = 100
 				hidden_effect = {

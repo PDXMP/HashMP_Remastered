@@ -448,28 +448,29 @@ country_event = {
 
 
 	fire_only_once = yes
+	is_triggered_only = yes
 
 
-	trigger = {
-		OR = {
-			tag = SWE
-			AND = {
-				was_tag = SWE
-				NOT = { exists = SWE }
-				tag = SCA
-			}		
-		}
-		is_free_or_tributary_trigger = yes
-		OR = {
-			iron = 1
-			copper = 1
-		}
-		is_year = 1600
-	}
+	# trigger = {
+	# 	OR = {
+	# 		tag = SWE
+	# 		AND = {
+	# 			was_tag = SWE
+	# 			NOT = { exists = SWE }
+	# 			tag = SCA
+	# 		}		
+	# 	}
+	# 	is_free_or_tributary_trigger = yes
+	# 	OR = {
+	# 		iron = 1
+	# 		copper = 1
+	# 	}
+	# 	is_year = 1600
+	# }
 
-	mean_time_to_happen = {
-		months = 240
-	}
+	# mean_time_to_happen = {
+	# 	months = 240
+	# }
 
 
 	option = {		# Encourage Walloon immigration
@@ -520,8 +521,7 @@ country_event = {
 	}
 
 	mean_time_to_happen = {
-		months = 64
-		
+		months = 64	
 	}
 
 
@@ -776,7 +776,8 @@ country_event = {
 	}
 }
 
-# The Absolutism
+# The Absolutism 
+# HashMP: Disabled due to mission changes
 country_event = {
 	id = flavor_swe.3232
 	title = "flavor_swe.EVTNAME3232"
@@ -784,25 +785,25 @@ country_event = {
 	picture = COURT_eventPicture
 
 	fire_only_once = yes
+	is_triggered_only = yes
 
+	# trigger = {
+	# 	OR = {
+	# 		tag = SWE
+	# 		AND = {
+	# 			was_tag = SWE
+	# 			NOT = { exists = SWE }
+	# 			tag = SCA
+	# 		}		
+	# 	}
+	# 	is_year = 1600
+	# 	is_free_or_tributary_trigger = yes
+	# 	government = monarchy
+	# }
 
-	trigger = {
-		OR = {
-			tag = SWE
-			AND = {
-				was_tag = SWE
-				NOT = { exists = SWE }
-				tag = SCA
-			}		
-		}
-		is_year = 1600
-		is_free_or_tributary_trigger = yes
-		government = monarchy
-	}
-
-	mean_time_to_happen = {
-		months = 200
-	}
+	# mean_time_to_happen = {
+	# 	months = 200
+	# }
 
 
 	option = {		# The King shall rule supreme
@@ -1593,22 +1594,23 @@ country_event = {
 
 
 	fire_only_once = yes
+	is_triggered_only = yes
 
-	trigger = {
-		OR = {
-			tag = SWE
-			AND = {
-				was_tag = SWE
-				NOT = { exists = SWE }
-				tag = SCA
-			}		
-		}
-		is_year = 1700
-	}
+	# trigger = {
+	# 	OR = {
+	# 		tag = SWE
+	# 		AND = {
+	# 			was_tag = SWE
+	# 			NOT = { exists = SWE }
+	# 			tag = SCA
+	# 		}		
+	# 	}
+	# 	is_year = 1700
+	# }
 
-	mean_time_to_happen = {
-		months = 400
-	}
+	# mean_time_to_happen = {
+	# 	months = 400
+	# }
 
 
 	option = {		# Initiate the reform
@@ -1617,7 +1619,7 @@ country_event = {
 			name = the_great_agricultural_reform
 			duration = -1
 		}
-		change_government_reform_progress = -50
+		#change_government_reform_progress = -50
 		random_owned_province = {
 			limit = { 
 				region = scandinavia_region 
@@ -1647,11 +1649,11 @@ country_event = {
 			add_base_production = 1 
 		} 
 	}
-	option = {		# Carry on as before
-		name = "flavor_swe.EVTOPTB3264"
-		ai_chance = { factor = 10 }
-		add_stability_or_adm_power = yes
-	}
+	# option = {		# Carry on as before
+	# 	name = "flavor_swe.EVTOPTB3264"
+	# 	ai_chance = { factor = 10 }
+	# 	add_stability_or_adm_power = yes
+	# }
 }
 
 
@@ -3379,36 +3381,36 @@ country_event = {
 	picture = FALUN_COPPER_MINE_eventPicture
 	is_triggered_only = yes
 
-	option = {	#Invest into the Copper mine itself
-		name = flavor_swe.112.a
-		trigger = {
-			has_dlc = "Leviathan"
-			8 = {
-				NOT = {
-					has_great_project = {
-						type = falun_copper_mine
-						tier = 2
-					}
-				}
-				NOT = {
-					has_great_project = {
-						type = falun_copper_mine
-						tier = 3
-					}
-				}
-			}
-		}
-		8 = {
-			set_great_project_tier_2 = {
-				type = falun_copper_mine
-			}
-		}
-		add_treasury = -1500
+	# option = {	#Invest into the Copper mine itself
+	# 	name = flavor_swe.112.a
+	# 	trigger = {
+	# 		has_dlc = "Leviathan"
+	# 		8 = {
+	# 			NOT = {
+	# 				has_great_project = {
+	# 					type = falun_copper_mine
+	# 					tier = 2
+	# 				}
+	# 			}
+	# 			NOT = {
+	# 				has_great_project = {
+	# 					type = falun_copper_mine
+	# 					tier = 3
+	# 				}
+	# 			}
+	# 		}
+	# 	}
+	# 	8 = {
+	# 		set_great_project_tier_2 = {
+	# 			type = falun_copper_mine
+	# 		}
+	# 	}
+	# 	add_treasury = -1500
 
-		ai_chance = {
-			factor = 100
-		}
-	}
+	# 	ai_chance = {
+	# 		factor = 100
+	# 	}
+	# }
 
 	option = {	#Expand into the infrastructure around the Mine
 		name = flavor_swe.112.b
@@ -3434,10 +3436,10 @@ country_event = {
 				add_base_production = 2
 			}
 			else = {
-			add_building = counting_house
+				add_building = counting_house
 			}
 		}
-		add_treasury = -750
+		add_treasury = -400
 		
 		ai_chance = {
 			factor = 50
@@ -3460,67 +3462,72 @@ country_event = {
 country_event = {
 	id = flavor_swe.113
 	title = flavor_swe.113.t
-	desc = {
-		desc = flavor_swe.113.desc.a
-		trigger = {
-			NOT = { has_country_flag = lost_first_vasa_ship }
-		}
-	}
-	desc = {
-		desc = flavor_swe.113.desc.b
-		trigger = {
-			has_country_flag = lost_first_vasa_ship
-		}
-	}
+	desc = flavor_swe.113.desc.a
+	# desc = {
+	# 	desc = flavor_swe.113.desc.a
+	# 	trigger = {
+	# 		NOT = { has_country_flag = lost_first_vasa_ship }
+	# 	}
+	# }
+	# desc = {
+	# 	desc = flavor_swe.113.desc.b
+	# 	trigger = {
+	# 		has_country_flag = lost_first_vasa_ship
+	# 	}
+	# }
 	picture = SHIP_SAILING_eventPicture
 	is_triggered_only = yes
-	goto = vasa_ii_province
-	immediate = { 
-		hidden_effect = { 
-			set_country_flag = sca_swe_unsinkable_vasa 
-			random_owned_province = {
-				limit = {
-					has_port = yes
-				}
-				save_event_target_as = vasa_ii_province
-			}
-		} 
-	}
+	# goto = vasa_ii_province
+	# immediate = { 
+	# 	hidden_effect = { 
+	# 		set_country_flag = sca_swe_unsinkable_vasa 
+	# 		random_owned_province = {
+	# 			limit = {
+	# 				has_port = yes
+	# 			}
+	# 			save_event_target_as = vasa_ii_province
+	# 		}
+	# 	} 
+	# }
 	
 	option = {	#This will make a fine flagship!
 		name = flavor_swe.113.a
-		trigger = {
-			NOT = { has_country_flag = lost_first_vasa_ship }
-		}
-		add_navy_tradition = 20
-		event_target:vasa_ii_province = {
-			create_flagship = {
-				name = "Vasa"
-				type = heavy_ship
-			}
-		}
-		create_admiral = {
-			tradition = 100
+		# trigger = {
+		# 	NOT = { has_country_flag = lost_first_vasa_ship }
+		# }
+		# add_navy_tradition = 20
+		# event_target:vasa_ii_province = {
+		# 	create_flagship = {
+		# 		name = "Vasa"
+		# 		type = heavy_ship
+		# 	}
+		# }
+		# create_admiral = {
+		# 	tradition = 100
+		# }
+		add_country_modifier = {
+			name = h_swedish_vasa_flagship
+			duration = -1
 		}
 	}
 	
-	option = {	#And this time it will NOT sink!
-		name = flavor_swe.113.b
-		trigger = {
-			has_country_flag = lost_first_vasa_ship
-		}
-		add_navy_tradition = 20
-		add_prestige = 10
-		event_target:vasa_ii_province = {
-			create_flagship = {
-				name = "Vasa II, the Unsinkable"
-				type = heavy_ship
-			}
-		}
-		create_admiral = {
-			tradition = 100
-		}
-	}
+	# option = {	#And this time it will NOT sink!
+	# 	name = flavor_swe.113.b
+	# 	trigger = {
+	# 		has_country_flag = lost_first_vasa_ship
+	# 	}
+	# 	add_navy_tradition = 20
+	# 	add_prestige = 10
+	# 	event_target:vasa_ii_province = {
+	# 		create_flagship = {
+	# 			name = "Vasa II, the Unsinkable"
+	# 			type = heavy_ship
+	# 		}
+	# 	}
+	# 	create_admiral = {
+	# 		tradition = 100
+	# 	}
+	# }
 }
 
 # Monopolization of Copper

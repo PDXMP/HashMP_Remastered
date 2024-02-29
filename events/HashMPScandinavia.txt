@@ -1,161 +1,16 @@
 namespace = HashMPScandinavia
 
-#Swedish Missions Event
-
-#Coronation of a Swedish King
-country_event = {
-	id = HashMPScandinavia.1
-	title = HashMPScandinavia.1.title
-	desc = HashMPScandinavia.1.desc
-	picture = BIG_BOOK_eventPicture
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = HashMPScandinavia.1.a
-		define_ruler = {
-			name = "Johan I"
-			dynasty = "Vasa"
-			adm = 5
-			dip = 5
-			mil = 2
-			fixed = yes
-			age = 20
-			claim = 80
-		}
-		
-		custom_tooltip = h_swedish_missions_event_tooltip_1
-		
-		hidden_effect = {
-			set_country_flag = johanking
-			add_ruler_personality = industrious_personality
-			define_consort = {
-				name = "Birgitta"
-				dynasty = "Sture"
-				culture = ROOT
-				religion = ROOT
-				age = 19
-				adm = 2
-				dip = 2
-				mil = 2
-				female = yes
-			}
-		}
-	}
-	
-	option = {
-		name = HashMPScandinavia.1.b
-		
-		define_ruler = {
-			name = "Gustav I"
-			dynasty = "Vasa"
-			adm = 3
-			dip = 2
-			mil = 6
-			fixed = yes
-			age = 20
-			claim = 80
-		}
-		
-		custom_tooltip = h_swedish_missions_event_tooltip_1
-		
-		hidden_effect = {
-			set_country_flag = gustavking
-			add_ruler_personality = strict_personality
-			define_consort = {
-				name = "Birgitta"
-				dynasty = "Sture"
-				culture = ROOT
-				religion = ROOT
-				age = 19
-				adm = 2
-				dip = 2
-				mil = 2
-				female = yes
-			}
-		}
-	}
-}
-
-##Military Reforms for Sweden
-country_event = {
-	id = HashMPScandinavia.2
-	title = HashMPScandinavia.2.title
-	desc = HashMPScandinavia.2.desc
-	picture = BIG_BOOK_eventPicture
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = HashMPScandinavia.2.a
-		add_country_modifier = {
-			name = h_swedish_reform_infantry_core
-			duration = -1
-		}
-	}
-	
-	option = {
-		name = HashMPScandinavia.2.b
-		add_country_modifier = {
-			name = h_swedish_reform_leadership
-			duration = -1
-		}
-	}
-}
-
-##Ga-Pa
-country_event = {
-	id = HashMPScandinavia.3
-	title = HashMPScandinavia.3.title
-	desc = HashMPScandinavia.3.desc
-	picture = BIG_BOOK_eventPicture
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = HashMPScandinavia.3.a
-		add_country_modifier = {
-			name = h_swedish_ga_pa_doctrine
-			duration = -1
-		}
-	}
-	
-	option = {
-		name = HashMPScandinavia.3.b
-		add_army_tradition = 25
-		add_mil_power = 100
-	}
-}
-
-##Alexander of the North
-country_event = {
-	id = HashMPScandinavia.4
-	title = HashMPScandinavia.4.title
-	desc = HashMPScandinavia.4.desc
-	picture = BIG_BOOK_eventPicture
-	
-	is_triggered_only = yes
-	
-	option = {
-		name = HashMPScandinavia.4.a
-		add_ruler_modifier = {
-			name = h_swedish_alexander_of_the_north
-			duration = -1
-		}
-	}
-}
-
 ##Aftermath of the Kalmar War
 country_event = {
-	id = HashMPScandinavia.5
-	title = HashMPScandinavia_5_title
-	desc = HashMPScandinavia_5_desc
+	id = HashMPDenmark.1
+	title = HashMPDenmark_1_title
+	desc = HashMPDenmark_1_desc
 	picture = CIVIL_WAR_eventPicture
 	
 	is_triggered_only = yes
 	
 	option = {
-		name = HashMPScandinavia_5_a
+		name = HashMPDenmark_1_a
 		##Vow to restore the union
 		add_prestige = 10
 		add_treasury = 100
@@ -175,7 +30,7 @@ country_event = {
 	}
 	
 	option = {
-		name = HashMPScandinavia_5_b
+		name = HashMPDenmark_1_b
 		##Forget the union
 		add_prestige = -5
 		add_stability_or_adm_power = yes
@@ -190,16 +45,16 @@ country_event = {
 
 ##Succession of Denmark
 country_event = {
-	id = HashMPScandinavia.6
-	title = HashMPScandinavia_6_title
-	desc = HashMPScandinavia_6_desc
+	id = HashMPDenmark.2
+	title = HashMPDenmark_2_title
+	desc = HashMPDenmark_2_desc
 	picture = DEATH_OF_HEIR_eventPicture
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
-		name = HashMPScandinavia_6_a
+		name = HashMPDenmark_2_a
 		hidden_effect = {
 			if = {
 				limit = {
@@ -223,7 +78,7 @@ country_event = {
 	}
 
 	option = {
-		name = HashMPScandinavia_6_b
+		name = HashMPDenmark_2_b
 		trigger = {
 			has_consort_flag = h_dorothea_consort
 		}
@@ -243,16 +98,16 @@ country_event = {
 }
 
 country_event = {
-	id = HashMPScandinavia.7
-	title = HashMPScandinavia_7_title
-	desc = HashMPScandinavia_7_desc
+	id = HashMPDenmark.3
+	title = HashMPDenmark_3_title
+	desc = HashMPDenmark_3_desc
 	picture = wihgfx_FEMALE_RULER_eventPicture
 
 	is_triggered_only = yes
 	fire_only_once = yes
 
 	option = {
-		name = HashMPScandinavia_7_a
+		name = HashMPDenmark_3_a
 		define_consort = {
 			country_of_origin = BRA
 			culture = saxon
