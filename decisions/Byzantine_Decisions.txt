@@ -486,7 +486,7 @@ country_decisions = {
 				loyalty = -20
 			}
 			prestige = -25
-			random_owned_province = {
+			every_owned_province = {
 				limit = { 
 					religion = catholic
 					OR {
