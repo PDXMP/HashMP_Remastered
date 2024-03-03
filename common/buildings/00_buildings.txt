@@ -2296,9 +2296,9 @@ impressment_offices = {
 		tropical_wood
 	}
 
-	build_trigger = {
-		has_port = yes
-	}
+	# build_trigger = {
+	# 	has_port = yes
+	# }
 
 	modifier = {
 		local_sailors = 250
