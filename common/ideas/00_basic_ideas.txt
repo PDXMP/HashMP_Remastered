@@ -793,7 +793,7 @@ trade_ideas = {
 		mercantilism_cost = -0.25
 	}
 	merchant_adventures = {
-		light_ship_cost = -0.15
+		light_ship_cost = -0.1
 		ship_trade_power_modifier = 0.2
 	}
 	overseas_merchants = {
