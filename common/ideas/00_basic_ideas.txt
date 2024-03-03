@@ -25,7 +25,7 @@ aristocracy_ideas = {
 		army_tradition_from_battle = 0.50
 	}
 	serfdom = {
-		cavalry_cost = -0.15
+		cavalry_cost = -0.1
 		global_regiment_recruit_speed = -0.1
 	}
 	noble_knights = {
@@ -583,7 +583,7 @@ offensive_ideas = {
 		reinforce_cost_modifier = -0.25
 	}
 	superior_firepower = {
-		artillery_cost = -0.15
+		artillery_cost = -0.1
 	}
 	napoleonic_warfare = {
 		leader_siege = 1
@@ -1219,7 +1219,7 @@ quality_ideas = {
 		prestige_from_land = 1
 	}
 	escort_ships = {
-		infantry_cost = -0.15
+		infantry_cost = -0.10
 	}
 	private_to_marshal = {
 		infantry_power = 0.1
