@@ -21,12 +21,12 @@ aristocracy_ideas = {
 		always = yes
 	}
 	
-	local_nobility = {
-		army_tradition_from_battle = 0.50
-	}
 	serfdom = {
 		cavalry_cost = -0.1
 		global_regiment_recruit_speed = -0.1
+	}
+	local_nobility = {
+		army_tradition_from_battle = 0.50
 	}
 	noble_knights = {
 		cavalry_power = 0.15
