@@ -646,7 +646,7 @@ h_plutocracy_humanist = {
 }
 
 h_plutocracy_infrastructure = {
-	monarch_power = DIP
+	monarch_power = ADM
 
 	potential = {
 		has_idea_group = plutocracy_ideas
@@ -657,7 +657,8 @@ h_plutocracy_infrastructure = {
 		full_idea_group = infrastructure_ideas
 	}
 	
-	global_prov_trade_power_modifier = 0.25
+	development_cost_modifier = -0.05
+	build_time = -0.1
 
 	effect = {}
 	removed_effect = {}
