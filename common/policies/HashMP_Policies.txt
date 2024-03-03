@@ -826,8 +826,8 @@ h_offensive_economic = {
 		full_idea_group = economic_ideas
 	}
 	
-	artillery_cost = -0.15
-	siege_ability = 0.15
+	artillery_cost = -0.1
+	siege_ability = 0.2
 
 	effect = {}
 	removed_effect = {}
