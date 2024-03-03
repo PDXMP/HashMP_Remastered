@@ -1449,7 +1449,7 @@ h_quality_trade = {
 		full_idea_group = trade_ideas
 	}
 	
-	land_morale = 0.075
+	infantry_cost = -0.2
 
 	effect = {}
 	removed_effect = {}
