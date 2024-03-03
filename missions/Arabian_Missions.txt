@@ -113,6 +113,8 @@ ara_conquest = {
 	
 }
 
+## HashMP Hormuz Missions here, included in Arabia file. 
+
 h_orm_missions = {
 
 	slot = 1
