@@ -8732,7 +8732,7 @@ ORL_ideas = {
 ORM_ideas = {
 	start = {
 		merchants = 1
-		global_foreign_trade_power = 0.1
+		land_morale = 0.1
 	}
 
 	bonus = {
@@ -8749,6 +8749,7 @@ ORM_ideas = {
 	}
 	orm_protecting_the_islands = {
 		defensiveness = 0.2
+		cavalry_power = 0.1
 	}
 	orm_moqarrariya = {
 		stability_cost_modifier = -0.1
@@ -17958,7 +17959,8 @@ ARM1_ideas = {
 
 ARB_ideas = {
 	start = {
-		tolerance_own = 2
+		#tolerance_own = 2
+		global_ship_cost = -0.1
 		discipline = 0.05
 	}
 
@@ -17982,7 +17984,8 @@ ARB_ideas = {
 		global_tax_modifier = 0.2
 	}
 	ARB_engage_in_indian_ocean_trade = {
-		trade_steering = 0.25 #0.2	
+		trade_steering = 0.25 #0.2
+		global_sailors_modifier = 0.25
 	}
 	ARB_conversion = {
 		global_missionary_strength = 0.03
