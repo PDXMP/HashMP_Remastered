@@ -315,9 +315,9 @@ barracks = {
 shipyard = {
 	cost = 100
 	time = 12
-	build_trigger = {
-		has_port = yes
-	}
+	# build_trigger = {
+	# 	has_port = yes
+	# }
 	modifier = {
 		naval_forcelimit = 2
 		allowed_num_of_buildings = 1
@@ -1088,9 +1088,9 @@ grand_shipyard = {
 
 	make_obsolete = shipyard
 
-	build_trigger = {
-		has_port = yes
-	}
+	# build_trigger = {
+	# 	has_port = yes
+	# }
 	modifier = {
 		naval_forcelimit = 4
 		allowed_num_of_buildings = 1
