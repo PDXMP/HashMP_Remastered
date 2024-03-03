@@ -1491,7 +1491,7 @@ h_quality_maritime = {
 		full_idea_group = maritime_ideas
 	}
 	
-	ship_durability = 0.1
+	ship_durability = 0.075
 
 	effect = {}
 	removed_effect = {}
