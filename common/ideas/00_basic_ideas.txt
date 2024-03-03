@@ -305,9 +305,9 @@ innovativeness_ideas = {
 		technology_cost = -0.1
 	}
 	dynamic_court = {
-		advisor_pool = 1
+		advisor_pool = 2
 		may_recruit_female_generals = yes
-		female_advisor_chance = 0.1
+		female_advisor_chance = 0.25
 	}
 	patron_of_art = {
 		prestige_decay = -0.01
