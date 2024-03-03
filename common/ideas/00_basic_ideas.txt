@@ -680,24 +680,24 @@ defensive_ideas = {
 		defensiveness = 0.33
 		fort_maintenance_modifier = -0.1
 	}
+	military_drill = {
+		shock_damage_received = -0.1
+	}
+	improved_manuever = {
+		war_exhaustion_cost = -0.33
+	}
+	regimental_system = {
+		manpower_recovery_speed = 0.15
+	}
+	supply_trains = {
+		reinforce_speed = 0.25
+	}
 	battlefield_commisions = {
 		fire_damage_received = -0.1
 	}
 	improved_foraging = {
 		garrison_size = 0.33
 		garrison_damage = 0.15
-	}
-	improved_manuever = {
-		war_exhaustion_cost = -0.33
-	}
-	supply_trains = {
-		reinforce_speed = 0.25
-	}
-	military_drill = {
-		shock_damage_received = -0.1
-	}
-	regimental_system = {
-		manpower_recovery_speed = 0.15
 	}
 
 	#until_the_last_man = {
