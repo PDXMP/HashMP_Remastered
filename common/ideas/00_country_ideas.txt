@@ -8677,7 +8677,7 @@ ORL_ideas = {
 ORM_ideas = {
 	start = {
 		merchants = 1
-		global_foreign_trade_power = 0.1
+		land_morale = 0.1
 	}
 
 	bonus = {
@@ -8694,6 +8694,7 @@ ORM_ideas = {
 	}
 	orm_protecting_the_islands = {
 		defensiveness = 0.2
+		cavalry_power = 0.1
 	}
 	orm_moqarrariya = {
 		stability_cost_modifier = -0.1
