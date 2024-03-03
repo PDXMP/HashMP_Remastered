@@ -151,7 +151,7 @@ ENG_ideas = {
 	
 	royal_navy = {
 		navy_tradition = 0.25
-		heavy_ship_power = 0.10
+		global_ship_cost = -0.1
 	}
 	eltham_ordinance = {
 		production_efficiency = 0.1
@@ -178,8 +178,8 @@ ENG_ideas = {
 
 GBR_ideas = {
 	start = {
-		fire_damage = 0.15
-		heavy_ship_power = 0.1
+		fire_damage = 0.2
+		naval_forcelimit_modifier = 0.2
 	}
 
 	bonus = {
@@ -386,8 +386,7 @@ DAN_ideas = {
 		discipline = 0.05
 	}
 	dan_naval_heroes = {
-		leader_naval_shock = 1
-		naval_morale = 0.1 #0.15
+		global_sailors_modifier = 0.33
 	}
 	dan_colonial_ventures = {
 		global_colonial_growth = 15
@@ -815,7 +814,6 @@ SPA_ideas = {
 		reform_progress_growth = 0.1
 	}
 	spanish_armada = {
-		heavy_ship_power = 0.1
 		naval_forcelimit_modifier = 0.25
 	}
 	spa_casa_de_contracion = {
@@ -835,7 +833,7 @@ SPA_ideas = {
 CAS_ideas = {
 	start = {
 		land_morale = 0.15
-		naval_forcelimit_modifier = 0.25
+		naval_forcelimit_modifier = 0.2
 	}
 	bonus = {
 		global_colonial_growth = 25
@@ -950,7 +948,7 @@ FRA_ideas = {
 	native_trading_principles = {
 		native_uprising_chance = -0.5
 		native_assimilation = 0.5
-		heavy_ship_power = 0.1
+		global_sailors_modifier = 0.2
 	}
 	divine_right_to_rule = {
 		core_creation = -0.1
@@ -1490,8 +1488,7 @@ VEN_ideas = {
 	free = yes		#will be added at load.
 	
 	venetian_arsenal = {
-		naval_forcelimit_modifier = 0.25
-		ship_durability = 0.05
+		naval_forcelimit_modifier = 0.33
 	}
 	printing_industry = {
 		diplomats = 1
@@ -1645,7 +1642,7 @@ POR_ideas = {
 	}
 	
 	bonus = {
-		naval_morale = 0.1
+		global_trade_goods_size_modifier = 0.1
 	}
 	
 	trigger = {
@@ -2364,7 +2361,7 @@ JAP_ideas = {
 		global_institution_spread = 0.1
 	}
 	jap_maritime_legacy = {
-		ship_durability = 0.1
+		naval_forcelimit_modifier = 0.2
 	}
 	jap_land_of_the_rising_sun = {
 		prestige = 1
@@ -15324,7 +15321,7 @@ TUN_ideas = {
 		global_sailors_modifier = 0.25
 	}
 	tun_board_of_captains = {
-		leader_naval_fire = 1
+		naval_maintenance_modifier = -0.1
 	}
 	tun_export_monopolies = {
 		global_own_trade_power = 0.2
