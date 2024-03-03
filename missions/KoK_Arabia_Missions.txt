@@ -1695,119 +1695,119 @@ KoK_ARB_hedjaz_najd_bedouin_5 = {
 	}
 }
 
-KoK_ARB_hedjaz_najd_bedouin_arb_1 = {
-	slot = 1
-	generic = no
-	ai = yes
-	potential_on_load = {
-		has_dlc = "King of Kings"
-	}
-	potential = {
-		ARB_hedjaz_najd_bedouin_potential = yes	
-		has_dlc = "King of Kings"
-		NOT = { map_setup = map_setup_random }
-	}
-	has_country_shield = yes
-
-	ARB_across_the_strait = {
-		icon = mission_reclaim_andalucia
-		required_missions = { ARB_maghreb }
-		position = 10
-		provinces_to_highlight = {
-			region = iberia_region
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		trigger = {
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				region = iberia_region
-				value = 20
-			}
-			223 = { country_or_non_sovereign_subject_holds = ROOT } #granada
-			225 = { country_or_non_sovereign_subject_holds = ROOT } #cordoba
-		}
-		effect = {
-			create_general = { tradition = 80 }
-			
-			custom_tooltip = " "
-			
-			if = {
-				limit = {
-					has_dlc = "Leviathan"
-				}
-				custom_tooltip = ARB_upgrade_alhambra
-				custom_tooltip = " "
-			}
-			else = {
-				223 = {
-					add_province_modifier = {
-						name = ARB_alhambra_diplo_annex_cost
-						duration = -1
-					}
-				}
-			}
-			
-			225 = {
-				add_province_modifier = {
-					name = ARB_rekindling_the_flames
-					duration = 10950
-				}
-			}
-			
-			give_claims = { area = languedoc_area }
-			give_claims = { area = guyenne_area }
-			give_claims = { area = pyrenees_area }
-		}
-	}
-	
-	ARB_tours = {
-		icon = mission_the_french_menace
-		required_missions = { ARB_across_the_strait }
-		position = 11
-		provinces_to_highlight = {
-			region = france_region
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		trigger = {
-			OR = {
-				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-					region = france_region
-					value = 10
-				}
-				custom_trigger_tooltip = {
-					tooltip = ARB_has_won_war_against_a_powerful_country_in_france
-					france_region = {
-						owner = {
-							total_development = 400
-							ROOT = {
-								has_won_war_against = {
-									who = PREV
-									max_years_since = 15
-								}
-							}
-						}
-					}
-				}
-			}
-		}
-		effect = {
-			country_event_with_effect_insight = {
-				id = flavor_ARB.7
-				effect = "
-					add_permanent_power_projection = {
-						type = arb_permanent_power_projection
-						amount = 5
-					}
-					custom_tooltip = \" \"
-					add_country_modifier = {
-						name = ARB_highway_of_the_martyrs
-						duration = -1
-					}
-					custom_tooltip = ARB_cb_on_france_and_iberia
-				"
-			}
-		}
-	}
-}
+#KoK_ARB_hedjaz_najd_bedouin_arb_1 = {
+#slot = 1
+#generic = no
+#ai = yes
+#potential_on_load = {
+#	has_dlc = "King of Kings"
+#}
+#potential = {
+#	ARB_hedjaz_najd_bedouin_potential = yes	
+#	has_dlc = "King of Kings"
+#	NOT = { map_setup = map_setup_random }
+#}
+#has_country_shield = yes
+#
+#ARB_across_the_strait = {
+#	icon = mission_reclaim_andalucia
+#	required_missions = { ARB_maghreb }
+#	position = 10
+#	provinces_to_highlight = {
+#		region = iberia_region
+#		NOT = { country_or_non_sovereign_subject_holds = ROOT }
+#	}
+#	trigger = {
+#		num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+#			region = iberia_region
+#			value = 20
+#		}
+#		223 = { country_or_non_sovereign_subject_holds = ROOT } #granada
+#		225 = { country_or_non_sovereign_subject_holds = ROOT } #cordoba
+#	}
+#	effect = {
+#		create_general = { tradition = 80 }
+#		
+#		custom_tooltip = " "
+#		
+#		if = {
+#			limit = {
+#				has_dlc = "Leviathan"
+#			}
+#			custom_tooltip = ARB_upgrade_alhambra
+#			custom_tooltip = " "
+#		}
+#		else = {
+#			223 = {
+#				add_province_modifier = {
+#					name = ARB_alhambra_diplo_annex_cost
+#					duration = -1
+#				}
+#			}
+#		}
+#		
+#		225 = {
+#			add_province_modifier = {
+#				name = ARB_rekindling_the_flames
+#				duration = 10950
+#			}
+#		}
+#		
+#		give_claims = { area = languedoc_area }
+#		give_claims = { area = guyenne_area }
+#		give_claims = { area = pyrenees_area }
+#	}
+#}
+#
+#ARB_tours = {
+#	icon = mission_the_french_menace
+#	required_missions = { ARB_across_the_strait }
+#	position = 11
+#	provinces_to_highlight = {
+#		region = france_region
+#		NOT = { country_or_non_sovereign_subject_holds = ROOT }
+#	}
+#	trigger = {
+#		OR = {
+#			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+#				region = france_region
+#				value = 10
+#			}
+#			custom_trigger_tooltip = {
+#				tooltip = ARB_has_won_war_against_a_powerful_country_in_france
+#				france_region = {
+#					owner = {
+#						total_development = 400
+#						ROOT = {
+#							has_won_war_against = {
+#								who = PREV
+#								max_years_since = 15
+#							}
+#						}
+#					}
+#				}
+#			}
+#		}
+#	}
+#	effect = {
+#		country_event_with_effect_insight = {
+#			id = flavor_ARB.7
+#			effect = "
+#				add_permanent_power_projection = {
+#					type = arb_permanent_power_projection
+#					amount = 5
+#				}
+#				custom_tooltip = \" \"
+#				add_country_modifier = {
+#					name = ARB_highway_of_the_martyrs
+#					duration = -1
+#				}
+#				custom_tooltip = ARB_cb_on_france_and_iberia
+#			"
+#		}
+#	}
+#}
+#}
 
 KoK_ARB_hedjaz_najd_bedouin_arb_2 = {
 	slot = 2
@@ -1859,42 +1859,42 @@ KoK_ARB_hedjaz_najd_bedouin_arb_2 = {
 		}
 	}
 	
-	ARB_sicily = {
-		icon = arb_sicily
-		required_missions = { ARB_maghreb }
-		position = 11
-		provinces_to_highlight = {
-			OR = {
-				area = sicily_area
-				area = western_sicily_area
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		trigger = {
-			sicily_area = {
-				country_or_non_sovereign_subject_holds = ROOT
-				type = all
-			}
-			western_sicily_area = {
-				country_or_non_sovereign_subject_holds = ROOT
-				type = all
-			}
-		}
-		effect = {
-			custom_tooltip = ARB_religious_cb_against_italians
-			
-			custom_tooltip = " "
-		
-			add_power_projection_mission = { amount = 20 }
-			
-			custom_tooltip = " "
-			
-			add_country_modifier = {
-				name = ARB_reconquest_of_sicily
-				duration = 10950
-			}
-		}
-	}
+#ARB_sicily = {
+#	icon = arb_sicily
+#	required_missions = { ARB_maghreb }
+#	position = 11
+#	provinces_to_highlight = {
+#		OR = {
+#			area = sicily_area
+#			area = western_sicily_area
+#		}
+#		NOT = { country_or_non_sovereign_subject_holds = ROOT }
+#	}
+#	trigger = {
+#		sicily_area = {
+#			country_or_non_sovereign_subject_holds = ROOT
+#			type = all
+#		}
+#		western_sicily_area = {
+#			country_or_non_sovereign_subject_holds = ROOT
+#			type = all
+#		}
+#	}
+#	effect = {
+#		custom_tooltip = ARB_religious_cb_against_italians
+#		
+#		custom_tooltip = " "
+#	
+#		add_power_projection_mission = { amount = 20 }
+#		
+#		custom_tooltip = " "
+#		
+#		add_country_modifier = {
+#			name = ARB_reconquest_of_sicily
+#			duration = 10950
+#		}
+#	}
+#}
 }
 
 KoK_ARB_hedjaz_najd_bedouin_arb_3 = {
@@ -1997,48 +1997,48 @@ KoK_ARB_hedjaz_najd_bedouin_arb_3 = {
 		}
 	}
 	
-	ARB_rightly_guided = {
-		icon = mission_fatimid_caliphate
-		required_missions = { ARB_beyond_solomons ARB_zanzibari_trade ARB_ottomans ARB_sicily ARB_tours }
-		position = 12
-		provinces_to_highlight = {
-			owned_by = ROOT
-			NOT = { religion_group = muslim }
-		}
-		trigger = {
-			army_size = 500
-			monthly_income = 500
-			num_of_owned_provinces_with = {
-				religion_group = muslim
-				value = 500
-			}
-			if = {
-				limit = {
-					has_dlc = "Star and Crescent"
-				}
-				custom_trigger_tooltip = {
-					tooltip = ARB_islam_has_been_united
-					has_global_flag = unified_islam_global
-				}
-			}
-			
-			if = {
-				limit = {
-					has_dlc = "Mandate of Heaven"
-				}
-				OR = {
-					in_golden_age = yes
-					has_had_golden_age = yes
-				}
-			}
-		}
-		effect = {
-			country_event_with_effect_insight = {
-				id = flavor_ARB.6
-				effect = "ARB_flavor_event_6_effect = yes"
-			}
-		}
-	}
+#ARB_rightly_guided = {
+#	icon = mission_fatimid_caliphate
+#	required_missions = { ARB_beyond_solomons ARB_zanzibari_trade ARB_ottomans ARB_sicily ARB_tours }
+#	position = 12
+#	provinces_to_highlight = {
+#		owned_by = ROOT
+#		NOT = { religion_group = muslim }
+#	}
+#	trigger = {
+#		army_size = 500
+#		monthly_income = 500
+#		num_of_owned_provinces_with = {
+#			religion_group = muslim
+#			value = 500
+#		}
+#		if = {
+#			limit = {
+#				has_dlc = "Star and Crescent"
+#			}
+#			custom_trigger_tooltip = {
+#				tooltip = ARB_islam_has_been_united
+#				has_global_flag = unified_islam_global
+#			}
+#		}
+#		
+#		if = {
+#			limit = {
+#				has_dlc = "Mandate of Heaven"
+#			}
+#			OR = {
+#				in_golden_age = yes
+#				has_had_golden_age = yes
+#			}
+#		}
+#	}
+#	effect = {
+#		country_event_with_effect_insight = {
+#			id = flavor_ARB.6
+#			effect = "ARB_flavor_event_6_effect = yes"
+#		}
+#	}
+#}
 }
 
 KoK_ARB_hedjaz_najd_bedouin_arb_4 = {
