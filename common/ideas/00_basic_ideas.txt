@@ -96,7 +96,7 @@ plutocracy_ideas = {
 	}
 	bill_of_rights = {
 		mil_tech_cost_modifier = -0.1
-		mil_advisor_cost = -0.20
+		mil_advisor_cost = -0.1
 	}
 	abolished_serfdom = {
 		leader_land_fire = 1
@@ -291,7 +291,7 @@ innovativeness_ideas = {
 	category = ADM
 
 	bonus = {
-		advisor_cost = -0.15
+		advisor_cost = -0.10
 	}
 
 	print_culture = {
@@ -1470,7 +1470,7 @@ administrative_ideas = {
 		ae_impact = -0.2
 	}
 	administrative_council = {
-		adm_advisor_cost = -0.2
+		adm_advisor_cost = -0.1
 		adm_tech_cost_modifier = -0.1
 	}
 	local_rule = {
@@ -1615,7 +1615,7 @@ influence_ideas = {
 		ae_impact = -0.1
 	}
 	additional_loyalist_recruitment = {
-		dip_advisor_cost = -0.2
+		dip_advisor_cost = -0.1
 		dip_tech_cost_modifier = -0.1
 	}
 	diplomatic_influence = {
