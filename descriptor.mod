@@ -4,3 +4,4 @@ tags={
 }
 name="HashMP_Remastered"
 supported_version="1.36.2"
+path="mod/HashMP_Remastered"
