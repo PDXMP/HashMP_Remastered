@@ -1,7 +1,7 @@
 #2393 - Terengganu
 
-owner = KEL
-controller = KEL
+#owner = KEL
+#controller = KEL
 culture = malayan
 religion = sunni
 capital = "Terengganu"
@@ -11,9 +11,12 @@ base_tax = 2
 base_production = 2
 base_manpower = 1
 is_city = yes
-add_core = KEL
+#add_core = KEL
 
-
+#HashMP
+owner = MLC
+controller = MLC
+add_core = MLC
 
 discovered_by = chinese
 discovered_by = indian
