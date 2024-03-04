@@ -29,26 +29,26 @@ country_event = {
 	
 	option = { 
 		name = "flavor_tim.0.a" #
-		custom_tooltip = flavor_tim.0.a.tt
+		# custom_tooltip = flavor_tim.0.a.tt
 		
-		hidden_effect = {
-			every_country = {
-				limit = {
-					NOT = { tag = ROOT }
-					OR = {
-						is_neighbor_of = ROOT
-						dynasty = Timurid
-						any_owned_province = {
-							is_core = TIM
-						}
-						any_neighbor_country = {
-							dynasty = Timurid
-						}
-					}
-				}
-				country_event = { id = flavor_tim.4 }
-			}
-		}
+		# hidden_effect = {
+		# 	every_country = {
+		# 		limit = {
+		# 			NOT = { tag = ROOT }
+		# 			OR = {
+		# 				is_neighbor_of = ROOT
+		# 				dynasty = Timurid
+		# 				any_owned_province = {
+		# 					is_core = TIM
+		# 				}
+		# 				any_neighbor_country = {
+		# 					dynasty = Timurid
+		# 				}
+		# 			}
+		# 		}
+		# 		country_event = { id = flavor_tim.4 }
+		# 	}
+		# }
 	}
 }
 
@@ -76,24 +76,24 @@ country_event = {
 	option = { 
 		name = "flavor_tim.1.a" # My time has come!
 		custom_tooltip = flavor_tim.1.a.tt
-		hidden_effect = {
-			every_country = {
-				limit = {
-					NOT = { tag = ROOT }
-					OR = {
-						is_neighbor_of = ROOT
-						dynasty = Timurid
-						any_owned_province = {
-							is_core = TIM
-						}
-						any_neighbor_country = {
-							dynasty = Timurid
-						}
-					}
-				}
-				country_event = { id = flavor_tim.2 }
-			}
-		}
+		# hidden_effect = {
+		# 	every_country = {
+		# 		limit = {
+		# 			NOT = { tag = ROOT }
+		# 			OR = {
+		# 				is_neighbor_of = ROOT
+		# 				dynasty = Timurid
+		# 				any_owned_province = {
+		# 					is_core = TIM
+		# 				}
+		# 				any_neighbor_country = {
+		# 					dynasty = Timurid
+		# 				}
+		# 			}
+		# 		}
+		# 		country_event = { id = flavor_tim.2 }
+		# 	}
+		# }
 	}
 }
 
