@@ -1,5 +1,6 @@
 dark_age_of_cambodia = {
 	potential = {
+		always = no
 		has_dlc = "Leviathan"
 		NOT = { has_country_flag = had_dark_age }
 		uses_doom = no
