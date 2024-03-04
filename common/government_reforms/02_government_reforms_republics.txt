@@ -1441,7 +1441,7 @@ crown_colony_government = {
 		#recover_army_morale_speed = 0.02
 		global_autonomy = -0.05
 		embracement_cost = -0.1
-		#governing_capacity = 100
+		governing_capacity = 100
 		#max_absolutism = 40
 	}
 	effect = {
@@ -1500,6 +1500,7 @@ private_enterprise_colony_government = {
 		embracement_cost = -0.1
 		#merchants = 1
 		production_efficiency = 0.05
+		governing_capacity = 100
 		#max_absolutism = 40
 	}
 
@@ -1557,6 +1558,7 @@ self_governing_colony_government = {
 		build_cost = -0.1
 		#development_cost = -0.1
 		embracement_cost = -0.1
+		governing_capacity = 100
 		#state_maintenance_modifier = -0.25
 		#max_absolutism = 40
 	}
