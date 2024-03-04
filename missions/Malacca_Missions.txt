@@ -11,41 +11,44 @@ mnd_mlc_1 = {
 		icon = mission_kowtow
 		required_missions = { }
 		provinces_to_highlight = {
-			OR = {
-				AND = {
-					province_id = 598
-					NOT = { country_or_non_sovereign_subject_holds = ROOT }
-				}
-				AND = {
-					owner = {
-						tag = PAH
-						NOT = { is_subject_of = ROOT }
-					}
-				}
-			}
+			# OR = {
+			# 	AND = {
+			# 		province_id = 598
+			# 		NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			# 	}
+			# 	AND = {
+			# 		owner = {
+			# 			tag = PAH
+			# 			NOT = { is_subject_of = ROOT }
+			# 		}
+			# 	}
+			# }
 		}
 		trigger = {
-			598 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			OR = {
-				PAH = { is_subject_of = ROOT }
-				NOT = { exists = PAH }
-			}
+			# 598 = {
+			# 	country_or_non_sovereign_subject_holds = ROOT
+			# }
+			# OR = {
+			# 	PAH = { is_subject_of = ROOT }
+			# 	NOT = { exists = PAH }
+			# }
+
+			num_of_generals = 1
+			has_mil_advisor = yes
 		}
 		effect = {
-			if = {
-				limit = {
-					PAH = { is_subject_of = ROOT }
-				}
-				PAH = {
-					add_liberty_desire = -50
-					change_religion = ROOT
-					define_ruler = {
-						dynasty = ROOT
-					}
-				}
-			}
+			# if = {
+			# 	limit = {
+			# 		PAH = { is_subject_of = ROOT }
+			# 	}
+			# 	PAH = {
+			# 		add_liberty_desire = -50
+			# 		change_religion = ROOT
+			# 		define_ruler = {
+			# 			dynasty = ROOT
+			# 		}
+			# 	}
+			# }
 			if = {
 				limit = {
 					exists = KEL
@@ -85,42 +88,49 @@ mnd_mlc_1 = {
 					months = 120
 				}
 			}
-			if = {
+			north_malaya_area = {
 				limit = {
-					OR = {
-						NOT = { exists = KEL }
-						KEL = {
-							is_free_or_tributary_trigger = no
-						}
-					}
-					OR = {
-						NOT = { exists = PAT }
-						PAT = {
-							is_free_or_tributary_trigger = no
-						}
-					}
-					OR = {
-						NOT = { exists = KED }
-						KED = {
-							is_free_or_tributary_trigger = no
-						}
-					}
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
-				malaya_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-				north_malaya_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
+				add_permanent_claim = ROOT
 			}
+			# if = {
+			# 	limit = {
+			# 		OR = {
+			# 			NOT = { exists = KEL }
+			# 			KEL = {
+			# 				is_free_or_tributary_trigger = no
+			# 			}
+			# 		}
+			# 		OR = {
+			# 			NOT = { exists = PAT }
+			# 			PAT = {
+			# 				is_free_or_tributary_trigger = no
+			# 			}
+			# 		}
+			# 		OR = {
+			# 			NOT = { exists = KED }
+			# 			KED = {
+			# 				is_free_or_tributary_trigger = no
+			# 			}
+			# 		}
+			# 	}
+			# 	malaya_area = {
+			# 		limit = {
+			# 			NOT = { is_core = ROOT }
+			# 			NOT = { is_permanent_claim = ROOT }
+			# 		}
+			# 		add_permanent_claim = ROOT
+			# 	}
+			# 	north_malaya_area = {
+			# 		limit = {
+			# 			NOT = { is_core = ROOT }
+			# 			NOT = { is_permanent_claim = ROOT }
+			# 		}
+			# 		add_permanent_claim = ROOT
+			# 	}
+			# }
 		}
 	}
 	mnd_mlc_peninsula = {
