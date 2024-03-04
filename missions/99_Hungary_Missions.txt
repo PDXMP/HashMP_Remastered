@@ -101,29 +101,36 @@ hun_north_group = {
 		}
 		
 		effect = {
-			if = {
-				limit = {
-					OR = {
-						NOT = { alliance_with = POL }
-						NOT = {
-							moldavia_area = {
-								type = all
-								country_or_non_sovereign_subject_holds = POL
-							}
-						}
-					}
-				}
-				moldavia_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
+			# if = {
+			# 	limit = {
+			# 		OR = {
+			# 			NOT = { alliance_with = POL }
+			# 			NOT = {
+			# 				moldavia_area = {
+			# 					type = all
+			# 					country_or_non_sovereign_subject_holds = POL
+			# 				}
+			# 			}
+			# 		}
+			# 	}
+			# 	moldavia_area = {
+			# 		limit = {
+			# 			NOT = { is_core = ROOT }
+			# 			NOT = { is_permanent_claim = ROOT }
+			# 		}
+			# 		add_permanent_claim = ROOT
+			# 	}
 				
-			}
-			else = {
-				add_dip_power = 100
+			# }
+			# else = {
+			# 	add_dip_power = 100
+			# }
+			moldavia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
 			}
 			wallachia_area = {
 				limit = {
@@ -132,7 +139,7 @@ hun_north_group = {
 				}
 				add_permanent_claim = ROOT
 			}
-						croatia_area = {
+			croatia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
