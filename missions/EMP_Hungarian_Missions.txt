@@ -449,13 +449,14 @@ emp_hun_bohemia_austria_branch = {
 		required_missions = {  }
 		position = 4
 		trigger = {
-			custom_trigger_tooltip = {
-				OR = {
-					has_country_flag = hun_has_had_matthias_corvinus_event
-					is_year = 1457
-				}
-				tooltip = emp_hun_hungarian_succession_tooltip
-			}
+			# custom_trigger_tooltip = {
+			# 	OR = {
+			# 		has_country_flag = hun_has_had_matthias_corvinus_event
+			# 		is_year = 1457
+			# 	}
+			# 	tooltip = emp_hun_hungarian_succession_tooltip
+			# }
+			is_year = 1457
 			is_subject = no
 			has_regency = no
 			if = {
