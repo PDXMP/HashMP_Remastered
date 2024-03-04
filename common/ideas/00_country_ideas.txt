@@ -14552,11 +14552,11 @@ DEC_ideas = {
 DLH_ideas = {
 	start = {
 		cavalry_power = 0.15
-		diplomatic_reputation = 1
+		global_missionary_strength = 0.02
+		#diplomatic_reputation = 1
 	}
 	
 	bonus = {
-#		num_accepted_cultures = 1
 		land_morale = 0.10
 	}
 	
@@ -14573,6 +14573,7 @@ DLH_ideas = {
 	}
 	dlh_suppress_rebellion = {
 		global_unrest = -1
+		num_accepted_cultures = 1
 	}
 	dlh_expansionism = {
 		core_creation = -0.1
