@@ -3471,6 +3471,7 @@ estate_nobles_highland_fortifications = {
 	influence = 0.05
 	is_valid = {
 		OR = {
+			tag = AFG
 			has_mission = geo_fortify_caucasia
 			has_unlocked_estate_privilege = {
 				estate_privilege = estate_nobles_highland_fortifications
@@ -3478,15 +3479,16 @@ estate_nobles_highland_fortifications = {
 		}
 	}
 	can_select = {
-		custom_trigger_tooltip = {
-			tooltip = has_unlocked_estate_nobles_highland_fortifications_tt
-			has_unlocked_estate_privilege = {
-				estate_privilege = estate_nobles_highland_fortifications
-			}	
-		}
+		tag = AFG
+#		custom_trigger_tooltip = {
+#			tooltip = has_unlocked_estate_nobles_highland_fortifications_tt
+#			has_unlocked_estate_privilege = {
+#				estate_privilege = estate_nobles_highland_fortifications
+#			}	
+#		}
 		any_owned_province = {
 			has_terrain = mountain
-			has_fort_building_trigger = yes
+#			has_fort_building_trigger = yes
 		}
 	}
 	on_granted = {
@@ -3496,7 +3498,7 @@ estate_nobles_highland_fortifications = {
 		if = {
 			limit = {
 				has_terrain = mountain
-				has_fort_building_trigger = yes
+#				has_fort_building_trigger = yes
 			}
 			add_province_modifier = {
 				name = geo_privilege_mountains

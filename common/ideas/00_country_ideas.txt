@@ -2062,7 +2062,7 @@ ERANSHAHR_ideas = {
 MUG_ideas = {
 	start = {
 		core_creation = -0.25
-		cavalry_power = 0.20
+		cavalry_power = 0.25
 	}
 	
 	bonus = {
@@ -2091,9 +2091,11 @@ MUG_ideas = {
 	}
 	mughal_architecture = {
 		prestige = 1
+		build_cost = -0.1
 		great_project_upgrade_time = -0.1
 	}
 	fatawa_e_alamgiri = {
+		land_morale = 0.15
 		stability_cost_modifier = -0.10
 	}
 }
@@ -2747,7 +2749,8 @@ VIJ_ideas = {
 		diplomats = 1
 	}
 	army_for_city_of_victory = {
-		discipline = 0.05
+#		discipline = 0.05
+		land_forcelimit_modifier = 0.10
 	}
 }
 
@@ -3458,11 +3461,11 @@ SAX_ideas = {
 MAR_ideas = {
 	start = {
 		manpower_recovery_speed = 0.15
-		global_manpower_modifier = 0.10
+		global_manpower_modifier = 0.25
 	}
 	
 	bonus = {
-		stability_cost_modifier = -0.1
+		land_forcelimit_modifier = 0.25
 	}
 	
 	trigger = {
@@ -3478,19 +3481,22 @@ MAR_ideas = {
 	free = yes
 	
 	tradition_of_military_service = {
-		cavalry_power = 0.15
+		discipline = 0.05
 	}
 	forts_of_maharashtra = {
 		defensiveness = 0.20
 	}
 	peasant_soldiers = {
-		infantry_cost = -0.2
+		infantry_cost = -0.1
+		infantry_power = 0.15
 	}
 	office_of_the_peshwa = {
 		core_creation = -0.15
+		governing_capacity_modifier = 0.1
 	}
 	encourage_ties_with_brahmin_financial_families = {
 		reform_progress_growth = 0.15
+		stability_cost_modifier = -0.1
 	}
 	reform_the_bureaucracy = {
 		global_trade_goods_size_modifier = 0.1
@@ -4862,7 +4868,8 @@ GEO_ideas = {
 AFG_ideas = {
 	start = {
 		army_tradition = 0.5
-		global_own_trade_power = 0.1
+		cavalry_power = 0.2
+
 	}
 	
 	bonus = {
@@ -4874,20 +4881,21 @@ AFG_ideas = {
 	}
 	free = yes
 	
+	tureh = {
+		global_manpower_modifier = 0.25
+	}
 	pashtunwali = {
 		war_exhaustion_cost = -0.10
+		land_attrition = -0.10
 	}
 	shadows_of_the_hindu_kush = {
 		defensiveness = 0.25
-	}
-	tureh = {
-		global_manpower_modifier = 0.2
 	}
 	afghan_diaspora = {
 		diplomatic_reputation = 1
 	}
 	durrani_imperialism = {
-		cavalry_power = 0.15
+		global_own_trade_power = 0.1
 	}
 	institutionalized_loya_jirga = {
 		legitimacy = 1
@@ -7141,12 +7149,12 @@ KHI_ideas = {
 
 BAH_ideas = {
 	start = {
-		cavalry_power = 0.1
+		cavalry_power = 0.15 #0.1
 		army_tradition = 0.5
 	}
 
 	bonus = {
-		stability_cost_modifier = -0.1
+		land_morale = 0.1
 	}
 	
 	trigger = {
@@ -7164,12 +7172,13 @@ BAH_ideas = {
 	}
 	dakani_language = {
 		num_accepted_cultures = 1
+		diplomatic_reputation = 1
 	}
 	karimis = {
 		trade_efficiency = 0.1
 	}
 	takht_e_firoza = {
-		diplomatic_reputation = 1
+		stability_cost_modifier = -0.1
 	}
 	bahmani_primogeniture = {
 		legitimacy = 1
@@ -14567,11 +14576,11 @@ KLE_ideas = {
 DEC_ideas = {
 	start = {
 		administrative_efficiency = 0.05
-		land_morale = 0.1
+		land_morale = 0.15
 	}
 
 	bonus = {
-		infantry_power = 0.1
+		infantry_power = 0.10
 	}
 	
 	trigger = {
@@ -14584,18 +14593,19 @@ DEC_ideas = {
 	}
 	dec_diwan_funding = {
 		free_adm_policy = 1
+		global_tax_modifier = 0.1
 	}
 	dec_foreign_trade_privileges = {
-		global_trade_power = 0.1
+		trade_efficiency = 0.15
 	}
 	dec_empower_paigah = {
-		land_forcelimit_modifier = 0.2
+		land_forcelimit_modifier = 0.25
 	}
 	dec_modernize_the_sarf_e_khas = {
 		discipline = 0.05
 	}
 	dec_jewels_of_the_nizams = {
-		diplomatic_reputation = 1
+		technology_cost = -0.1
 	}
 	dec_encourage_industries = {
 		global_trade_goods_size_modifier = 0.1
@@ -14605,15 +14615,19 @@ DEC_ideas = {
 DLH_ideas = {
 	start = {
 		cavalry_power = 0.15
-		diplomatic_reputation = 1
+		global_missionary_strength = 0.02
+		#diplomatic_reputation = 1
 	}
 	
 	bonus = {
-		num_accepted_cultures = 1
+		land_morale = 0.10
 	}
 	
 	trigger = {
-		tag = DLH
+		OR = {
+			tag = DLH
+			tag = SRH
+		}
 	}
 	free = yes
 	
@@ -14622,6 +14636,7 @@ DLH_ideas = {
 	}
 	dlh_suppress_rebellion = {
 		global_unrest = -1
+		num_accepted_cultures = 1
 	}
 	dlh_expansionism = {
 		core_creation = -0.1
@@ -14646,11 +14661,11 @@ DLH_ideas = {
 
 BHA_ideas = {
 	start = {
-		stability_cost_modifier = -0.1
-		state_maintenance_modifier = -0.15
+		global_manpower_modifier = 0.33
+		state_maintenance_modifier = -0.25
 	}
 	bonus = {
-		years_of_nationalism = -5
+		discipline = 0.05
 	}
 	
 	trigger = {
@@ -14659,16 +14674,19 @@ BHA_ideas = {
 	free = yes
 
 	bha_modernized_war_elephants = {
-		cavalry_power = 0.15
+		cavalry_power = 0.2
+		cavalry_cost = -0.1
 	}
 	bha_united_india = {
 		num_accepted_cultures = 2
+		years_of_nationalism = -5
 	}
 	bha_sanskrit_golden_age = {
 		technology_cost = -0.05
+		development_cost = -0.1
 	}
 	bha_indian_army = {
-		discipline = 0.05
+		land_forcelimit_modifier = 0.25
 	}
 	bha_ganga = {
 		tolerance_own = 2
@@ -14684,10 +14702,10 @@ BHA_ideas = {
 HIN_ideas = {
 	start = {
 		governing_capacity_modifier = 0.1
-		global_manpower_modifier = 0.2
+		land_forcelimit_modifier = 0.33
 	}
 	bonus = {
-		discipline = 0.05
+		global_trade_goods_size_modifier = 0.1
 	}
 	trigger = {
 		tag = HIN
@@ -14695,13 +14713,14 @@ HIN_ideas = {
 	free = yes
 	
 	hin_sepahi = {
-		infantry_power = 0.15
+		discipline = 0.05
 	}
 	hin_persianate_court = {
 		advisor_cost = -0.1
 	}
 	hin_indian_empire = {
-		years_of_nationalism = -5
+		cavalry_power = 0.2
+		cavalry_cost = -0.1
 	}
 	hin_peacock_throne = {
 		legitimacy = 1
@@ -14711,10 +14730,11 @@ HIN_ideas = {
 		horde_unity = 1
 	}
 	hin_gunpowder_empire = {
-		fire_damage = 0.1
+		fire_damage = 0.2
 	}
 	hin_sufism = {
 		global_missionary_strength = 0.02
+		missionaries = 1
 	}
 	hin_industrialization = {
 		development_cost = -0.1
@@ -14756,11 +14776,12 @@ RJP_ideas = {
 		artillery_cost = -0.15
 	}
 	rjp_monumental_architecture = {
-		legitimacy = 1
-		devotion = 1
-		republican_tradition = 0.3
-		meritocracy = 1
-		horde_unity = 1
+		# legitimacy = 1
+		# devotion = 1
+		# republican_tradition = 0.3
+		# meritocracy = 1
+		# horde_unity = 1
+		development_cost = -0.1
 	}
 }
 
@@ -14804,10 +14825,10 @@ NAG_ideas = {
 MER_ideas = {
 	start = {	
 		infantry_power = 0.1
-		infantry_cost = -0.2
+		infantry_cost = -0.1 #-0.2
 	}
 	bonus = {
-		war_exhaustion = -0.03		
+		war_exhaustion = -0.03
 	}
 	trigger = {
 		tag = MER
@@ -14824,7 +14845,7 @@ MER_ideas = {
 		defensiveness = 0.15
 	}
 	mer_city_of_lakes = {
-		development_cost = -0.1
+		development_cost = -0.05 #-0.1
 	}
 	mer_recall_purbias = {
 		global_manpower_modifier = 0.15
@@ -14844,7 +14865,8 @@ BNG_ideas = {
 	}
 	
 	bonus = {
-		backrow_artillery_damage = 0.15
+		backrow_artillery_damage = 0.10 #0.15
+		#artillery_cost = -0.10
 	}
 	
 	trigger = {
@@ -14856,10 +14878,11 @@ BNG_ideas = {
 		trade_efficiency = 0.1
 	}
 	bng_habshi_generals = {
-		army_tradition = 0.5
+#		army_tradition = 0.5
+		army_tradition_decay = -0.01
 	}
 	bng_clearing_the_delta = {
-		development_cost = -0.1
+		development_cost = -0.05
 	}
 	bng_attract_sufis = {
 		idea_cost = -0.1
@@ -14871,7 +14894,8 @@ BNG_ideas = {
 		global_tax_modifier = 0.1
 	}
 	bng_bengali_industrialization = {
-		global_trade_goods_size_modifier = 0.1
+#		global_trade_goods_size_modifier = 0.1
+		production_efficiency = 0.1
 	}
 }
 
