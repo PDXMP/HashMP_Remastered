@@ -17,13 +17,13 @@ country_event = {
 	#fire_only_once = yes
 	is_triggered_only = yes
 
-	# trigger = {
-	# 	tag = HUN
-	# 	has_consort_regency = no
-	# 	is_lesser_in_union = no
-	# 	is_year = 1445
-	# 	has_government_attribute = heir
-	# }
+	trigger = {
+		tag = HUN
+		# has_consort_regency = no
+		# is_lesser_in_union = no
+		# is_year = 1445
+		# has_government_attribute = heir
+	}
 
 	# mean_time_to_happen = {
 	# 	months = 6
