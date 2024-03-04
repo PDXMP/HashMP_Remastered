@@ -3403,11 +3403,11 @@ SAX_ideas = {
 MAR_ideas = {
 	start = {
 		manpower_recovery_speed = 0.15
-		global_manpower_modifier = 0.10
+		global_manpower_modifier = 0.25
 	}
 	
 	bonus = {
-		stability_cost_modifier = -0.1
+		land_forcelimit_modifier = 0.25
 	}
 	
 	trigger = {
@@ -3423,20 +3423,22 @@ MAR_ideas = {
 	free = yes
 	
 	tradition_of_military_service = {
-		cavalry_power = 0.15
 		discipline = 0.05
 	}
 	forts_of_maharashtra = {
 		defensiveness = 0.20
 	}
 	peasant_soldiers = {
-		cavalry_cost = -0.2
+		infantry_cost = -0.1
+		infantry_power = 0.15
 	}
 	office_of_the_peshwa = {
 		core_creation = -0.15
+		governing_capacity_modifier = 0.1
 	}
 	encourage_ties_with_brahmin_financial_families = {
 		reform_progress_growth = 0.15
+		stability_cost_modifier = -0.1
 	}
 	reform_the_bureaucracy = {
 		global_trade_goods_size_modifier = 0.1
