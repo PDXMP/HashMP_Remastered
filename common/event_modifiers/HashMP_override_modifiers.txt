@@ -170,3 +170,9 @@ hun_black_army = {
 hun_hungary_poland = {
 	can_recruit_hussars = yes
 }
+
+hun_hungarian_austria = {
+	legitimacy = 0.5
+	diplomatic_annexation_cost = -0.1
+	manpower_recovery_speed = 0.15
+}
