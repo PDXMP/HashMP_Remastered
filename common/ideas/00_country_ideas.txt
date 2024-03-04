@@ -14718,11 +14718,12 @@ RJP_ideas = {
 		artillery_cost = -0.15
 	}
 	rjp_monumental_architecture = {
-		legitimacy = 1
-		devotion = 1
-		republican_tradition = 0.3
-		meritocracy = 1
-		horde_unity = 1
+		# legitimacy = 1
+		# devotion = 1
+		# republican_tradition = 0.3
+		# meritocracy = 1
+		# horde_unity = 1
+		development_cost = -0.1
 	}
 }
 
