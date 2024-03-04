@@ -166,3 +166,7 @@ hun_black_army = {
 	nobles_influence_modifier = -0.1
 	nobles_loyalty_modifier = -0.1
 }
+
+hun_hungary_poland = {
+	can_recruit_hussars = yes
+}
