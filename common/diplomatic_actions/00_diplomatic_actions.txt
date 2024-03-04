@@ -1090,6 +1090,14 @@ invite_to_trade_league = {
 tributary_state_action = {
 	condition = {
 		potential = {
+			always = yes
+		}
+		allow = {
+			always = no
+		}
+	}
+	condition = {
+		potential = {
 			ai = yes
 		}
 		allow = {
@@ -1111,6 +1119,14 @@ tributary_state_action = {
 	}
 }
 ask_for_tributary_state_action = {
+	condition = {
+		potential = {
+			always = yes
+		}
+		allow = {
+			always = no
+		}
+	}
 	condition = {
 		potential = {
 			ai = yes
