@@ -479,18 +479,18 @@ country_decisions = {
 			}
 		}
 		effect = {
-			remove_estate_privilege = estate_church_union_of_the_churches
+			#remove_estate_privilege = estate_church_union_of_the_churches
 			change_tag = BYZ
 			change_religion = orthodox
 			add_estate_loyalty = {
 				estate = estate_church
 				loyalty = -20
 			}
-			prestige = -25
+			add_prestige = -25
 			every_owned_province = {
 				limit = { 
 					religion = catholic
-					OR {
+					OR = {
 						has_building = temple
 						has_building = cathedral
 					}
