@@ -3595,6 +3595,52 @@ estate_nobles_emirs_of_baghdad = {
 	}
 }
 
+#Byzantium
+estate_nobles_deteriorating_army = {
+	icon = estate_nobles_deteriorating_army
+	loyalty = -0.05
+	influence = 0.1
+	max_absolutism = -10
+	conditional_modifier = { trigger = { has_absolutism_reduction_for_estate_privileges = yes } modifier = { max_absolutism = 2 } }
+	is_valid = {
+		OR = {
+			tag = BYZ
+			has_estate_privilege = estate_nobles_deteriorating_army
+		}
+		NOT = { has_country_flag = estate_nobles_deteriorating_army_removed }
+	}
+	can_revoke = {
+		custom_trigger_tooltip = {
+			tooltip = BYZ_revokable_via_decision
+			always = no
+		}
+	}
+	on_granted = {
+	}
+	on_revoked = {
+		set_country_flag = estate_nobles_deteriorating_army_removed
+	}
+	benefits = {
+		
+	}
+	penalties = {
+		assault_fort_ability = -0.75
+		reinforce_speed = -0.1
+		army_tradition_decay = 0.01
+	}
+	conditional_modifier = {
+		trigger = {
+			has_dlc = "King of Kings"
+		}
+		is_bad = yes
+		modifier = {
+			land_morale = -0.15 #this is counteracted by the +10.0% from the mission tree and events
+		}
+	}
+	ai_will_do = {
+		factor = 0
+	}
+}
 
 #Persia
 estate_nobles_defensive_policy = {
