@@ -27,39 +27,7 @@ hagia_sophia = {
 
 	#can we build it?
 	build_trigger = {
-		custom_trigger_tooltip = {
-			tooltip = hagia_sophia_tt
-			OR = {
-				AND = {
-					OR = {
-						religion = orthodox
-						religion = coptic
-						religion = catholic
-						religion_group = muslim
-					}
-					has_owner_religion = yes
-				}
-				AND = {
-					owner = {
-						OR = {
-							secondary_religion = orthodox
-							secondary_religion = coptic
-							secondary_religion = catholic
-							secondary_religion = sunni
-							secondary_religion = shiite
-							secondary_religion = ibadi
-						}
-					}
-					OR = {
-						religion = orthodox
-						religion = coptic
-						religion = catholic
-						religion_group = muslim
-						has_owner_religion = yes
-					}
-				}
-			}
-		}
+
 	}
 
 	#what to do when it's built
@@ -191,7 +159,7 @@ hagia_sophia = {
 	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -222,7 +190,7 @@ hagia_sophia = {
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -262,7 +230,7 @@ hagia_sophia = {
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -433,7 +401,7 @@ stonehenge = {
 	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -463,7 +431,7 @@ stonehenge = {
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -494,7 +462,7 @@ stonehenge = {
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -660,7 +628,7 @@ tower_of_london = {
 	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -711,7 +679,7 @@ tower_of_london = {
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -764,7 +732,7 @@ tower_of_london = {
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -905,7 +873,7 @@ buddha_statues = {
 	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -935,7 +903,7 @@ buddha_statues = {
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -966,7 +934,7 @@ buddha_statues = {
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -1141,7 +1109,7 @@ parthenon = {
 	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -1171,7 +1139,7 @@ parthenon = {
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -1202,7 +1170,7 @@ parthenon = {
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -1326,7 +1294,7 @@ forbidden_city = {
 	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -1356,7 +1324,7 @@ forbidden_city = {
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -1387,7 +1355,7 @@ forbidden_city = {
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -1504,7 +1472,7 @@ angkor_wat = {
 	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -1540,7 +1508,7 @@ angkor_wat = {
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -1570,7 +1538,7 @@ angkor_wat = {
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -1731,7 +1699,7 @@ petra = {
 	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -1761,7 +1729,7 @@ petra = {
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -1792,7 +1760,7 @@ petra = {
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -1916,7 +1884,7 @@ cologne_cathedral = {
 	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -1948,7 +1916,7 @@ cologne_cathedral = {
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -1986,7 +1954,7 @@ cologne_cathedral = {
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -2125,7 +2093,7 @@ kremlin = {
 	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -2155,7 +2123,7 @@ kremlin = {
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -2185,7 +2153,7 @@ kremlin = {
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -2306,7 +2274,7 @@ machu_picchu = {
 	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -2341,7 +2309,7 @@ machu_picchu = {
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -2371,7 +2339,7 @@ machu_picchu = {
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -2497,7 +2465,7 @@ chichen_itza = {
 	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -2533,7 +2501,7 @@ chichen_itza = {
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -2569,7 +2537,7 @@ chichen_itza = {
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -2689,7 +2657,7 @@ himeji_castle = {
 	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -2719,7 +2687,7 @@ himeji_castle = {
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -2751,7 +2719,7 @@ himeji_castle = {
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -2873,7 +2841,7 @@ moai = {
 	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -2904,7 +2872,7 @@ moai = {
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -2941,7 +2909,7 @@ moai = {
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -3065,7 +3033,7 @@ stpeters_cathedral = {
 	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -3095,7 +3063,7 @@ stpeters_cathedral = {
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -3132,7 +3100,7 @@ stpeters_cathedral = {
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -3394,7 +3362,7 @@ mount_fuji = {
 	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -3424,7 +3392,7 @@ mount_fuji = {
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -3456,7 +3424,7 @@ mount_fuji = {
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -3580,7 +3548,7 @@ tenochtitlan = {
 	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -3611,7 +3579,7 @@ tenochtitlan = {
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -3643,7 +3611,7 @@ tenochtitlan = {
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -3768,7 +3736,7 @@ notre_dame_cathedral = {
 	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -3800,7 +3768,7 @@ notre_dame_cathedral = {
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -3832,7 +3800,7 @@ notre_dame_cathedral = {
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -3951,7 +3919,7 @@ shwedagon_pagoda = {
 	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -3981,7 +3949,7 @@ shwedagon_pagoda = {
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -4013,7 +3981,7 @@ shwedagon_pagoda = {
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -4155,7 +4123,7 @@ the_great_wall_of_china = {
 	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -4185,7 +4153,7 @@ the_great_wall_of_china = {
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -4217,7 +4185,7 @@ the_great_wall_of_china = {
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -4335,7 +4303,7 @@ ambras_castle = {
 	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -4372,7 +4340,7 @@ ambras_castle = {
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -4410,7 +4378,7 @@ ambras_castle = {
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -4540,7 +4508,7 @@ mesa_verde = {
 	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -4570,7 +4538,7 @@ mesa_verde = {
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -4601,7 +4569,7 @@ mesa_verde = {
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -4724,7 +4692,7 @@ taj_mahal = {
 	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -4755,7 +4723,7 @@ taj_mahal = {
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -4787,7 +4755,7 @@ taj_mahal = {
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -4903,7 +4871,7 @@ alhambra = {
 	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -4933,7 +4901,7 @@ alhambra = {
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -4964,7 +4932,7 @@ alhambra = {
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -5093,7 +5061,7 @@ the_grand_palace = {
 	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -5123,7 +5091,7 @@ the_grand_palace = {
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -5154,7 +5122,7 @@ the_grand_palace = {
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -5272,7 +5240,7 @@ bagan_temples = {
 	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -5303,7 +5271,7 @@ bagan_temples = {
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -5335,7 +5303,7 @@ bagan_temples = {
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -5453,7 +5421,7 @@ ait_benhaddou = {
 	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -5483,7 +5451,7 @@ ait_benhaddou = {
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -5514,7 +5482,7 @@ ait_benhaddou = {
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -5638,7 +5606,7 @@ registan_square = {
 	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -5669,7 +5637,7 @@ registan_square = {
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -5700,7 +5668,7 @@ registan_square = {
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -5823,7 +5791,7 @@ golden_temple = {
 	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -5853,7 +5821,7 @@ golden_temple = {
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -5884,7 +5852,7 @@ golden_temple = {
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -6002,7 +5970,7 @@ jokhang_temple = {
 	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -6033,7 +6001,7 @@ jokhang_temple = {
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -6065,7 +6033,7 @@ jokhang_temple = {
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -6201,7 +6169,7 @@ borobudur_temple = {
 	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -6231,7 +6199,7 @@ borobudur_temple = {
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -6262,7 +6230,7 @@ borobudur_temple = {
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -6395,7 +6363,7 @@ temple_of_confucius = {
 	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -6431,7 +6399,7 @@ temple_of_confucius = {
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -6468,7 +6436,7 @@ temple_of_confucius = {
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -6591,7 +6559,7 @@ murud_janjira = {
 	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -6621,7 +6589,7 @@ murud_janjira = {
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -6652,7 +6620,7 @@ murud_janjira = {
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -6776,7 +6744,7 @@ pura_besakih = {
 	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -6806,7 +6774,7 @@ pura_besakih = {
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -6837,7 +6805,7 @@ pura_besakih = {
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -6955,7 +6923,7 @@ kanbawzathadi_palace = {
 	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -6985,7 +6953,7 @@ kanbawzathadi_palace = {
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -7016,7 +6984,7 @@ kanbawzathadi_palace = {
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -7169,7 +7137,7 @@ pyramid_of_cheops = {
 	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -7200,7 +7168,7 @@ pyramid_of_cheops = {
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -7231,7 +7199,7 @@ pyramid_of_cheops = {
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -7346,7 +7314,7 @@ khami_ruins = {
 	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -7376,7 +7344,7 @@ khami_ruins = {
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -7407,7 +7375,7 @@ khami_ruins = {
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -7530,7 +7498,7 @@ prambanan_temple = {
 	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -7560,7 +7528,7 @@ prambanan_temple = {
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -7590,7 +7558,7 @@ prambanan_temple = {
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -7704,7 +7672,7 @@ inukshuk = {
 	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -7733,7 +7701,7 @@ inukshuk = {
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -7763,7 +7731,7 @@ inukshuk = {
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -7886,7 +7854,7 @@ fire_temple_of_ateshgah = {
 	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -7916,7 +7884,7 @@ fire_temple_of_ateshgah = {
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -7947,7 +7915,7 @@ fire_temple_of_ateshgah = {
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -8071,7 +8039,7 @@ kiev_pechersk_lavra = {
 	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -8100,7 +8068,7 @@ kiev_pechersk_lavra = {
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -8130,7 +8098,7 @@ kiev_pechersk_lavra = {
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -8254,7 +8222,7 @@ kiev_pechersk_lavra = {
 	# tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		# upgrade_time = {
-		# 	months = 120
+		# 	months = 60
 		# }
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -8289,7 +8257,7 @@ kiev_pechersk_lavra = {
 	#tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		# upgrade_time = {
-		# 	months = 240
+		# 	months = 90
 		# }
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -8324,7 +8292,7 @@ kiev_pechersk_lavra = {
 	# tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		# upgrade_time = {
-		# 	months = 480
+		# 	months = 120
 		# }
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -8448,7 +8416,7 @@ belem_tower = {
 	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -8479,7 +8447,7 @@ belem_tower = {
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -8511,7 +8479,7 @@ belem_tower = {
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -8633,7 +8601,7 @@ sankin_kotai_palaces = {
 	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -8663,7 +8631,7 @@ sankin_kotai_palaces = {
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -8694,7 +8662,7 @@ sankin_kotai_palaces = {
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -8813,7 +8781,7 @@ mausoleum_at_halicarnassus = {
 	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -8843,7 +8811,7 @@ mausoleum_at_halicarnassus = {
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -8874,7 +8842,7 @@ mausoleum_at_halicarnassus = {
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -8998,7 +8966,7 @@ heddal_stave_church = {
 	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -9028,7 +8996,7 @@ heddal_stave_church = {
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -9060,7 +9028,7 @@ heddal_stave_church = {
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -9188,7 +9156,7 @@ versailles = {
 	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -9220,7 +9188,7 @@ versailles = {
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -9253,7 +9221,7 @@ versailles = {
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -9411,7 +9379,7 @@ el_escorial = {
 	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -9442,7 +9410,7 @@ el_escorial = {
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -9474,7 +9442,7 @@ el_escorial = {
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -9593,7 +9561,7 @@ potosi = {
 	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -9644,7 +9612,7 @@ potosi = {
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -9696,7 +9664,7 @@ potosi = {
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -9857,7 +9825,7 @@ kaaba = {
 	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -9911,7 +9879,7 @@ kaaba = {
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -9967,7 +9935,7 @@ kaaba = {
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -10141,7 +10109,7 @@ holy_city_jerusalem = {
 	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -10175,7 +10143,7 @@ holy_city_jerusalem = {
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -10209,7 +10177,7 @@ holy_city_jerusalem = {
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -10337,7 +10305,7 @@ great_mosque_djenne = {
 	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -10367,7 +10335,7 @@ great_mosque_djenne = {
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -10398,7 +10366,7 @@ great_mosque_djenne = {
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -10516,7 +10484,7 @@ imperial_city_hue = {
 	tier_1 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -10547,7 +10515,7 @@ imperial_city_hue = {
 	tier_2 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -10580,7 +10548,7 @@ imperial_city_hue = {
 	tier_3 = {
 		#time to upgrade to this level (0 for tier 0)
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 
 		#cost to upgrade to this level (0 for tier 0)
@@ -10668,7 +10636,7 @@ baiturrahman_grand_mosque = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -10688,7 +10656,7 @@ baiturrahman_grand_mosque = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -10709,7 +10677,7 @@ baiturrahman_grand_mosque = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -10776,7 +10744,7 @@ bam_citadel = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -10795,7 +10763,7 @@ bam_citadel = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -10815,7 +10783,7 @@ bam_citadel = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -10896,7 +10864,7 @@ bara_katra = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -10917,7 +10885,7 @@ bara_katra = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -10938,7 +10906,7 @@ bara_katra = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -11057,7 +11025,7 @@ bran_castle = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -11077,7 +11045,7 @@ bran_castle = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -11097,7 +11065,7 @@ bran_castle = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -11163,7 +11131,7 @@ brandenburg_gate = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -11185,7 +11153,7 @@ brandenburg_gate = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -11208,7 +11176,7 @@ brandenburg_gate = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -11283,7 +11251,7 @@ buda_castle = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -11301,7 +11269,7 @@ buda_castle = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -11320,7 +11288,7 @@ buda_castle = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -11395,7 +11363,7 @@ cahokia = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -11414,7 +11382,7 @@ cahokia = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -11434,7 +11402,7 @@ cahokia = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -11500,7 +11468,7 @@ cartagena_de_indias = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -11520,7 +11488,7 @@ cartagena_de_indias = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -11543,7 +11511,7 @@ cartagena_de_indias = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -11612,7 +11580,7 @@ chan_chan_citadel = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -11633,7 +11601,7 @@ chan_chan_citadel = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -11656,7 +11624,7 @@ chan_chan_citadel = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -11725,7 +11693,7 @@ doges_palace = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -11744,7 +11712,7 @@ doges_palace = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -11764,7 +11732,7 @@ doges_palace = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -11839,7 +11807,7 @@ duomo_milano = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -11863,7 +11831,7 @@ duomo_milano = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -11887,7 +11855,7 @@ duomo_milano = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -11978,7 +11946,7 @@ dutch_polders = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -11999,7 +11967,7 @@ dutch_polders = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -12020,7 +11988,7 @@ dutch_polders = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -12108,7 +12076,7 @@ ellora_caves = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -12129,7 +12097,7 @@ ellora_caves = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -12150,7 +12118,7 @@ ellora_caves = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -12238,7 +12206,7 @@ erdene_zuu = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -12259,7 +12227,7 @@ erdene_zuu = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -12281,7 +12249,7 @@ erdene_zuu = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -12358,7 +12326,7 @@ etchimiadzin_cathedral = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -12379,7 +12347,7 @@ etchimiadzin_cathedral = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -12400,7 +12368,7 @@ etchimiadzin_cathedral = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -12467,7 +12435,7 @@ fuerte_del_morro = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -12487,7 +12455,7 @@ fuerte_del_morro = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -12508,7 +12476,7 @@ fuerte_del_morro = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -12584,7 +12552,7 @@ gomateshwara_statue = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -12608,7 +12576,7 @@ gomateshwara_statue = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -12632,7 +12600,7 @@ gomateshwara_statue = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -12711,7 +12679,7 @@ chola_temples = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -12730,7 +12698,7 @@ chola_temples = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -12750,7 +12718,7 @@ chola_temples = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -12879,7 +12847,7 @@ gyeongbok_palace = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -12899,7 +12867,7 @@ gyeongbok_palace = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -12921,7 +12889,7 @@ gyeongbok_palace = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -13010,7 +12978,7 @@ hampi = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -13031,7 +12999,7 @@ hampi = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -13052,7 +13020,7 @@ hampi = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -13128,7 +13096,7 @@ prague = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -13148,7 +13116,7 @@ prague = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -13171,7 +13139,7 @@ prague = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -13249,7 +13217,7 @@ holy_city_kairouan = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -13268,7 +13236,7 @@ holy_city_kairouan = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -13288,7 +13256,7 @@ holy_city_kairouan = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -13374,7 +13342,7 @@ imam_hussein_al-abbas = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -13394,7 +13362,7 @@ imam_hussein_al-abbas = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -13414,7 +13382,7 @@ imam_hussein_al-abbas = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -13489,7 +13457,7 @@ kashi_vishwanath = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -13508,7 +13476,7 @@ kashi_vishwanath = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -13528,7 +13496,7 @@ kashi_vishwanath = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -13603,7 +13571,7 @@ khajuraho = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -13622,7 +13590,7 @@ khajuraho = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -13642,7 +13610,7 @@ khajuraho = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -13717,7 +13685,7 @@ kilwa_city = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -13736,7 +13704,7 @@ kilwa_city = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -13756,7 +13724,7 @@ kilwa_city = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -13822,7 +13790,7 @@ krakow_cloth_hall = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -13841,7 +13809,7 @@ krakow_cloth_hall = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -13861,7 +13829,7 @@ krakow_cloth_hall = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -13936,7 +13904,7 @@ maidan-e_naqsh-e_jahan = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -13956,7 +13924,7 @@ maidan-e_naqsh-e_jahan = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -13976,7 +13944,7 @@ maidan-e_naqsh-e_jahan = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -14042,7 +14010,7 @@ malbork_castle = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -14065,7 +14033,7 @@ malbork_castle = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -14088,7 +14056,7 @@ malbork_castle = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -14157,7 +14125,7 @@ malta_forts = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -14177,7 +14145,7 @@ malta_forts = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -14198,7 +14166,7 @@ malta_forts = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -14265,7 +14233,7 @@ mehrangarh_fort = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -14285,7 +14253,7 @@ mehrangarh_fort = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -14306,7 +14274,7 @@ mehrangarh_fort = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -14374,7 +14342,7 @@ nan_madoll = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -14392,7 +14360,7 @@ nan_madoll = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -14411,7 +14379,7 @@ nan_madoll = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -14483,7 +14451,7 @@ porcelain_tower_nanjing = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -14503,7 +14471,7 @@ porcelain_tower_nanjing = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -14524,7 +14492,7 @@ porcelain_tower_nanjing = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -14609,7 +14577,7 @@ qhapaq_nam = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -14631,7 +14599,7 @@ qhapaq_nam = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -14653,7 +14621,7 @@ qhapaq_nam = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -14730,7 +14698,7 @@ rila_monasteries = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -14750,7 +14718,7 @@ rila_monasteries = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -14770,7 +14738,7 @@ rila_monasteries = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -14845,7 +14813,7 @@ churches_lalibela = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -14864,7 +14832,7 @@ churches_lalibela = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -14884,7 +14852,7 @@ churches_lalibela = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -14950,7 +14918,7 @@ royal_palace_caserta = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -14969,7 +14937,7 @@ royal_palace_caserta = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -14989,7 +14957,7 @@ royal_palace_caserta = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -15064,7 +15032,7 @@ san_antonio_missions = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -15085,7 +15053,7 @@ san_antonio_missions = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -15107,7 +15075,7 @@ san_antonio_missions = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -15176,7 +15144,7 @@ sankore_madrasah = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -15195,7 +15163,7 @@ sankore_madrasah = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -15215,7 +15183,7 @@ sankore_madrasah = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -15290,7 +15258,7 @@ santa_maria_del_fiore = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -15309,7 +15277,7 @@ santa_maria_del_fiore = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -15329,7 +15297,7 @@ santa_maria_del_fiore = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -15404,7 +15372,7 @@ spiral_minaret_samarra = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -15424,7 +15392,7 @@ spiral_minaret_samarra = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -15444,7 +15412,7 @@ spiral_minaret_samarra = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -15519,7 +15487,7 @@ sultan_ahmed_mosque = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -15539,7 +15507,7 @@ sultan_ahmed_mosque = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -15559,7 +15527,7 @@ sultan_ahmed_mosque = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -15634,7 +15602,7 @@ sun_temple_konarak = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -15653,7 +15621,7 @@ sun_temple_konarak = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -15673,7 +15641,7 @@ sun_temple_konarak = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -15742,7 +15710,7 @@ swayambhunath = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -15762,7 +15730,7 @@ swayambhunath = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -15784,7 +15752,7 @@ swayambhunath = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -15898,7 +15866,7 @@ white_house = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -15918,7 +15886,7 @@ white_house = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -15938,7 +15906,7 @@ white_house = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -16010,7 +15978,7 @@ tikal = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -16030,7 +15998,7 @@ tikal = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -16050,7 +16018,7 @@ tikal = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -16125,7 +16093,7 @@ tiwanaku = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -16144,7 +16112,7 @@ tiwanaku = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -16164,7 +16132,7 @@ tiwanaku = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -16230,7 +16198,7 @@ tortuga_island = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -16251,7 +16219,7 @@ tortuga_island = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -16273,7 +16241,7 @@ tortuga_island = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -16363,7 +16331,7 @@ ulm_minster_great_project = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -16382,7 +16350,7 @@ ulm_minster_great_project = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -16403,7 +16371,7 @@ ulm_minster_great_project = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -16479,7 +16447,7 @@ walls_benin = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -16499,7 +16467,7 @@ walls_benin = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -16520,7 +16488,7 @@ walls_benin = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -16605,7 +16573,7 @@ winter_palace = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -16625,7 +16593,7 @@ winter_palace = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -16646,7 +16614,7 @@ winter_palace = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -16713,7 +16681,7 @@ zacatecas_mine_city = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -16739,7 +16707,7 @@ zacatecas_mine_city = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -16766,7 +16734,7 @@ zacatecas_mine_city = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -16839,7 +16807,7 @@ falun_copper_mine = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -16859,7 +16827,7 @@ falun_copper_mine = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -16880,7 +16848,7 @@ falun_copper_mine = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -16947,7 +16915,7 @@ kronborg = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -16969,7 +16937,7 @@ kronborg = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -16992,7 +16960,7 @@ kronborg = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -17061,7 +17029,7 @@ visby_city = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -17081,7 +17049,7 @@ visby_city = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -17102,7 +17070,7 @@ visby_city = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -17169,7 +17137,7 @@ trakai_castle = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -17190,7 +17158,7 @@ trakai_castle = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -17209,7 +17177,7 @@ trakai_castle = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -17274,7 +17242,7 @@ salvador_da_bahia = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -17294,7 +17262,7 @@ salvador_da_bahia = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -17317,7 +17285,7 @@ salvador_da_bahia = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -17392,7 +17360,7 @@ mbanza_kongo = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -17411,7 +17379,7 @@ mbanza_kongo = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -17431,7 +17399,7 @@ mbanza_kongo = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -17507,7 +17475,7 @@ harar_jugol = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -17526,7 +17494,7 @@ harar_jugol = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -17546,7 +17514,7 @@ harar_jugol = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -17613,7 +17581,7 @@ dujiangyan = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -17631,7 +17599,7 @@ dujiangyan = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -17652,7 +17620,7 @@ dujiangyan = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -17728,7 +17696,7 @@ palace_of_the_popes = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -17760,7 +17728,7 @@ palace_of_the_popes = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -17800,7 +17768,7 @@ palace_of_the_popes = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -17960,7 +17928,7 @@ edinburgh_castle = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -17977,7 +17945,7 @@ edinburgh_castle = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -18000,7 +17968,7 @@ edinburgh_castle = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -18070,7 +18038,7 @@ aljaferia_palace = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -18100,7 +18068,7 @@ aljaferia_palace = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -18134,7 +18102,7 @@ aljaferia_palace = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -18220,7 +18188,7 @@ divrigi_hospital_mosque = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -18240,7 +18208,7 @@ divrigi_hospital_mosque = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -18265,7 +18233,7 @@ divrigi_hospital_mosque = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -18343,7 +18311,7 @@ st_basil_cathedral = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -18363,7 +18331,7 @@ st_basil_cathedral = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -18387,7 +18355,7 @@ st_basil_cathedral = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -18465,7 +18433,7 @@ grand_canal_1 = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -18482,7 +18450,7 @@ grand_canal_1 = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -18503,7 +18471,7 @@ grand_canal_1 = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -18575,7 +18543,7 @@ grand_canal_2 = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -18592,7 +18560,7 @@ grand_canal_2 = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -18613,7 +18581,7 @@ grand_canal_2 = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -18685,7 +18653,7 @@ grand_canal_3 = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -18702,7 +18670,7 @@ grand_canal_3 = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -18723,7 +18691,7 @@ grand_canal_3 = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -18795,7 +18763,7 @@ grand_canal_4 = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -18812,7 +18780,7 @@ grand_canal_4 = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -18833,7 +18801,7 @@ grand_canal_4 = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -18911,7 +18879,7 @@ imperial_city_kyoto = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -18932,7 +18900,7 @@ imperial_city_kyoto = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -18957,7 +18925,7 @@ imperial_city_kyoto = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -19032,7 +19000,7 @@ kazan_kremlin = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -19053,7 +19021,7 @@ kazan_kremlin = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -19077,7 +19045,7 @@ kazan_kremlin = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -19144,7 +19112,7 @@ narikala_fortress = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -19165,7 +19133,7 @@ narikala_fortress = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -19189,7 +19157,7 @@ narikala_fortress = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -19263,7 +19231,7 @@ golestan_palace = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -19284,7 +19252,7 @@ golestan_palace = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -19309,7 +19277,7 @@ golestan_palace = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -19371,7 +19339,7 @@ itchan_kala = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -19392,7 +19360,7 @@ itchan_kala = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -19417,7 +19385,7 @@ itchan_kala = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -19486,7 +19454,7 @@ shah_rukn_e_alam_tomb = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -19507,7 +19475,7 @@ shah_rukn_e_alam_tomb = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -19531,7 +19499,7 @@ shah_rukn_e_alam_tomb = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -19598,7 +19566,7 @@ nizwa_fort = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -19620,7 +19588,7 @@ nizwa_fort = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -19645,7 +19613,7 @@ nizwa_fort = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -19707,7 +19675,7 @@ city_of_sanaa = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -19751,7 +19719,7 @@ city_of_sanaa = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -19798,7 +19766,7 @@ city_of_sanaa = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
@@ -19884,7 +19852,7 @@ al_azhar_university = {
 
 	tier_1 = {
 		upgrade_time = {
-			months = 120
+			months = 60
 		}
 		cost_to_upgrade = {
 			factor = 1000
@@ -19923,7 +19891,7 @@ al_azhar_university = {
 
 	tier_2 = {
 		upgrade_time = {
-			months = 240
+			months = 90
 		}
 		cost_to_upgrade = {
 			factor = 2500
@@ -19966,7 +19934,7 @@ al_azhar_university = {
 
 	tier_3 = {
 		upgrade_time = {
-			months = 480
+			months = 120
 		}
 		cost_to_upgrade = {
 			factor = 5000
