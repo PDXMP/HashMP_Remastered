@@ -14806,8 +14806,8 @@ BNG_ideas = {
 	}
 	
 	bonus = {
-#		backrow_artillery_damage = 0.15
-		artillery_cost = -0.10
+		backrow_artillery_damage = 0.10 #0.15
+		#artillery_cost = -0.10
 	}
 	
 	trigger = {
