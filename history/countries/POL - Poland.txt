@@ -13,11 +13,12 @@ add_truce_with = HUN
 	set_estate_privilege = estate_nobles_golden_liberty
 }
 
+#HashMP
 1444.11.11 = {
 	monarch = {
-		adm = 1
-		mil = 1
-		dip = 1
+		adm = 5 #0
+		mil = 6 #0
+		dip = 5 #0
 		regent = yes
 	}
 }
