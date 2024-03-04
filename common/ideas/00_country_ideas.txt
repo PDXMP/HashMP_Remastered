@@ -2309,8 +2309,8 @@ HUN_ideas = {
 	}
 	free = yes
 	
-	hun_renaissanse_knowledge = {
-		global_unrest = -1
+	reformed_coinage = {
+		global_tax_modifier = 0.1
 	}
 	bulwark_of_christianity = {
 		global_manpower_modifier = 0.2
@@ -2318,8 +2318,9 @@ HUN_ideas = {
 	found_the_black_army = {
 		discipline = 0.05
 	}
-	reformed_coinage = {
-		global_tax_modifier = 0.1
+	hun_renaissanse_knowledge = {
+		#global_unrest = -1
+		development_cost = -0.1
 	}
 	curtailed_peasantry = {
 		production_efficiency = 0.1

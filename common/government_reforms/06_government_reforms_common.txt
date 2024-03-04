@@ -3207,13 +3207,15 @@ expanded_black_army_reform = {
 	allow_normal_conversion = yes
 	potential = {
 		has_dlc = "Domination"
-		primary_culture = hungarian
+		#primary_culture = hungarian
+		is_or_was_tag = { tag = HUN }
 	}
 	modifiers = {
-		mercenary_manpower = 1
+		#mercenary_manpower = 1
 		war_taxes_cost_modifier = -0.5
-		army_tradition_from_battle = 1
-		allow_mercenary_drill = yes
+		army_tradition_from_battle = 0.5 #1
+		#allow_mercenary_drill = yes
+		land_forcelimit_modifier = 0.05
 	}
 	trigger = {
 		if = {
@@ -3224,9 +3226,9 @@ expanded_black_army_reform = {
 			}
 		}
 	}
-	custom_attributes = {
-		mercs_do_not_cost_army_professionalism = yes
-	}
+	# custom_attributes = {
+	# 	mercs_do_not_cost_army_professionalism = yes
+	# }
 	ai = {
 		factor = 1000
 	}

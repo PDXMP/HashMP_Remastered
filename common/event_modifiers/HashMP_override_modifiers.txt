@@ -265,3 +265,28 @@ rmi_rus_rising_russian_power = {
 	global_unrest = -2
 	reform_progress_growth = 0.25
 }
+hun_supreme_black_army = {
+	drill_gain_modifier = 1
+	manpower_recovery_speed = 0.1
+	core_creation = -0.1
+}
+
+hun_black_army = {
+	land_forcelimit_modifier = 0.1
+	army_tradition = 0.25
+	discipline = 0.025
+	reinforce_cost_modifier = 0.25
+	land_maintenance_modifier = 0.1
+	nobles_influence_modifier = -0.1
+	nobles_loyalty_modifier = -0.1
+}
+
+hun_hungary_poland = {
+	can_recruit_hussars = yes
+}
+
+hun_hungarian_austria = {
+	legitimacy = 0.5
+	diplomatic_annexation_cost = -0.1
+	manpower_recovery_speed = 0.15
+}
