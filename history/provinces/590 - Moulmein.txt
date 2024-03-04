@@ -1,7 +1,7 @@
 #590 - Moulmein
 
-owner = PEG
-controller = PEG
+#owner = PEG
+#controller = PEG
 culture = mon
 religion = buddhism
 capital = "Martaban"
@@ -11,7 +11,7 @@ base_tax = 3
 base_production = 3
 base_manpower = 2
 is_city = yes
-add_core = PEG
+#add_core = PEG
 
 
 
@@ -19,6 +19,11 @@ discovered_by = chinese
 discovered_by = indian
 discovered_by = muslim
 discovered_by = ottoman
+
+#HashMP
+owner = TAU
+controller = TAU
+add_core = TAU
 
 1500.1.1 = { discovered_by = POR }
 
