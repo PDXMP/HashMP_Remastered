@@ -32,9 +32,9 @@ change_estate_land_share = {
 
 1444.11.10 = {
 	monarch = {
-		adm = 1 #0
-		mil = 1 #0
-		dip = 1 #0
+		adm = 4 #0
+		mil = 5 #0
+		dip = 5 #0
 		regent = yes
 	}
 }
