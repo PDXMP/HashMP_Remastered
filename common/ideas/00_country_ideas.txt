@@ -141,7 +141,7 @@ ENG_ideas = {
 	}
 
 	bonus = {
-		naval_morale = 0.1
+		artillery_power = 0.1
 	}
 	
 	trigger = {
@@ -1642,7 +1642,7 @@ POR_ideas = {
 	}
 	
 	bonus = {
-		global_trade_goods_size_modifier = 0.1
+		global_sailors_modifier = 0.25
 	}
 	
 	trigger = {
