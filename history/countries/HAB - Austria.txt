@@ -54,9 +54,9 @@ add_accepted_culture = slovene
 		name = "Friedrich III"
 		dynasty = "von Habsburg"
 		birth_date = 1415.9.21
-		adm = 2
+		adm = 3 #2
 		dip = 5
-		mil = 1
+		mil = 2 #1
 	}
 	
 	clear_scripted_personalities = yes

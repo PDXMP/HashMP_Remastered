@@ -1911,13 +1911,14 @@ HAB_ideas = {
 	imperial_ambitions = {
 		#imperial_authority = 0.1
 		diplomatic_annexation_cost = -0.15
+		diplomatic_upkeep = 1
 	}
 	military_border = {
 		manpower_recovery_speed = 0.15
 		fort_maintenance_modifier = -0.10
 	}
 	fugger_banks = {
-		inflation_reduction = 0.05
+		inflation_reduction = 0.1 #0.05
 		gold_depletion_chance_modifier = -0.1
 	}
 	habsburg_dominance = {
@@ -1927,7 +1928,8 @@ HAB_ideas = {
 		global_missionary_strength = 0.02
 	}
 	austrian_court = {
-		diplomatic_upkeep = 1
+		dip_advisor_cost = -0.1
+		advisor_pool = 1
 	}
 	hofkriegsrat = {
 		reinforce_speed = 0.3
@@ -2309,8 +2311,8 @@ HUN_ideas = {
 	}
 	free = yes
 	
-	hun_renaissanse_knowledge = {
-		global_unrest = -1
+	reformed_coinage = {
+		global_tax_modifier = 0.1
 	}
 	bulwark_of_christianity = {
 		global_manpower_modifier = 0.2
@@ -2318,8 +2320,9 @@ HUN_ideas = {
 	found_the_black_army = {
 		discipline = 0.05
 	}
-	reformed_coinage = {
-		global_tax_modifier = 0.1
+	hun_renaissanse_knowledge = {
+		#global_unrest = -1
+		development_cost = -0.1
 	}
 	curtailed_peasantry = {
 		production_efficiency = 0.1
@@ -8732,7 +8735,7 @@ ORL_ideas = {
 ORM_ideas = {
 	start = {
 		merchants = 1
-		global_foreign_trade_power = 0.1
+		land_morale = 0.1
 	}
 
 	bonus = {
@@ -8749,6 +8752,7 @@ ORM_ideas = {
 	}
 	orm_protecting_the_islands = {
 		defensiveness = 0.2
+		cavalry_power = 0.1
 	}
 	orm_moqarrariya = {
 		stability_cost_modifier = -0.1
@@ -17958,7 +17962,8 @@ ARM1_ideas = {
 
 ARB_ideas = {
 	start = {
-		tolerance_own = 2
+		#tolerance_own = 2
+		global_ship_cost = -0.1
 		discipline = 0.05
 	}
 
@@ -17982,7 +17987,8 @@ ARB_ideas = {
 		global_tax_modifier = 0.2
 	}
 	ARB_engage_in_indian_ocean_trade = {
-		trade_steering = 0.25 #0.2	
+		trade_steering = 0.25 #0.2
+		global_sailors_modifier = 0.25
 	}
 	ARB_conversion = {
 		global_missionary_strength = 0.03
