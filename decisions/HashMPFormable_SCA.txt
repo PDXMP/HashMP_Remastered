@@ -1,0 +1,88 @@
+country_decisions = {
+	scandinavian_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			was_never_end_game_tag_trigger = yes
+			NOT = { has_country_flag = formed_scandinavia_flag }
+			NOT = { tag = SCA }
+			OR = {
+				tag = SWE
+				tag = DAN
+			}
+		}
+		provinces_to_highlight = {
+			region = scandinavia_region
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			if = {
+				limit = {
+					has_dlc = "Lions of the North"
+				}
+				OR = {
+					adm_tech = 20
+					custom_trigger_tooltip = {
+						tooltip = scandinavian_nation_tt
+						has_country_flag = can_form_scandinavia_earlier
+					}
+				}
+			}
+			else = {
+				adm_tech = 20
+			}
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			is_at_war = no
+			num_of_owned_provinces_with = {
+				region = scandinavia_region
+				value = 40
+				is_core = ROOT
+			}
+		}
+		effect = {
+			change_tag = SCA
+			on_change_tag_effect = yes
+			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = { NOT = { government_rank = 2 } }
+				set_government_rank = 2
+			}
+			swap_non_generic_missions = yes
+			scandinavia_region = {
+				limit = {
+					NOT = { owned_by = ROOT }
+				}
+				add_permanent_claim = SCA
+			}	
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 10
+			set_country_flag = formed_scandinavia_flag
+			if = {
+				limit = {
+					has_custom_ideas = no
+					NOT = { has_idea_group = SCA_ideas }
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			if = {
+				limit = {
+					has_reform = danish_archkingdom
+				}
+				override_country_name = KLU
+				set_country_flag = is_KLU_flag
+				set_country_flag = has_overriden_color_flag
+				change_country_color = { color = { 255 212 42 } }
+			}
+		}
+		ai_will_do = {
+			factor = 1
+		}
+	}
+}
