@@ -255,30 +255,31 @@ sun_2 = {
 			owned_by = MAJ
 		}
 		trigger = {
-			OR = {
-				NOT = { exists = MAJ }
-				MAJ = { 
-					is_subject_of = ROOT
-				}
-				if = {
-					limit = {
-						has_dlc = "Leviathan"
-					}
-					custom_trigger_tooltip = {
-						tooltip = sun_majapahit_relations_tt
-						AND = {
-							MAJ = {
-								is_free_or_tributary_trigger = yes
-								has_disaster = fall_of_majapahit
-							}
-							has_guaranteed = MAJ
-						}
-					}
-				}
-				else = {
-					has_guaranteed = MAJ
-				}
-			}
+			army_size_percentage = 0.8
+			# OR = {
+			# 	NOT = { exists = MAJ }
+			# 	MAJ = { 
+			# 		is_subject_of = ROOT
+			# 	}
+			# 	if = {
+			# 		limit = {
+			# 			has_dlc = "Leviathan"
+			# 		}
+			# 		custom_trigger_tooltip = {
+			# 			tooltip = sun_majapahit_relations_tt
+			# 			AND = {
+			# 				MAJ = {
+			# 					is_free_or_tributary_trigger = yes
+			# 					has_disaster = fall_of_majapahit
+			# 				}
+			# 				has_guaranteed = MAJ
+			# 			}
+			# 		}
+			# 	}
+			# 	else = {
+			# 		has_guaranteed = MAJ
+			# 	}
+			# }
 		}
 		effect = {
 			if = {
