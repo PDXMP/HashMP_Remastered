@@ -2062,11 +2062,11 @@ ERANSHAHR_ideas = {
 MUG_ideas = {
 	start = {
 		core_creation = -0.25
-		cavalry_power = 0.25
+		cavalry_power = 0.20
 	}
 	
 	bonus = {
-		technology_cost = -0.05
+		artillery_power = 0.1
 	}
 	
 	trigger = {
@@ -2079,6 +2079,7 @@ MUG_ideas = {
 	}
 	control_of_the_ulema = {
 		global_unrest = -1
+		stability_cost_modifier = -0.10
 	}
 	mughal_ibadat_khana = {
 		idea_cost = -0.1
@@ -2095,8 +2096,7 @@ MUG_ideas = {
 		great_project_upgrade_time = -0.1
 	}
 	fatawa_e_alamgiri = {
-		land_morale = 0.15
-		stability_cost_modifier = -0.10
+		land_morale = 0.10
 	}
 }
 
