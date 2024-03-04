@@ -296,3 +296,12 @@ hab_victory_over_ottomans = {
 	army_tradition = 0.5
 	manpower_in_true_faith_provinces = 0.1
 }
+
+hab_viennese_ballrooms = {
+	prestige = 0.5
+	nobles_loyalty_modifier = 0.05
+	local_tax_modifier = 0.25
+	local_manpower_modifier = 0.25
+	local_production_efficiency = 0.25
+	local_defender_dice_roll_bonus = 1
+}
