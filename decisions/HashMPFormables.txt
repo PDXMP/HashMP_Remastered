@@ -791,25 +791,12 @@ country_decisions = {
 			NOT = { exists = UKR }
 			tag = LIT
 		}
-		provinces_to_highlight = {
-			OR = {	
-				AND = {
-					ROOT = { DIP = 5 }
-					OR = {
-						province_id = 280		#Kiev -center
-					province_id = 283		#Zaporozhie -eastern/southern center of rebellions
-					}
-				}
-				AND = {
-					ROOT = { NOT = { DIP = 5 } }
+		provinces_to_highlight = {	
 					OR = {
 						province_id = 280		#Kiev -center
 						province_id = 283		#Zaporozhie -eastern/southern center of rebellions
-						province_id = 261		#Ruthenia/Lvov -western
-						province_id = 279		#Volhynia -western
 					}
-				}
-			}
+
 			OR = {
 				NOT = { owned_by = ROOT }
 				NOT = { is_core = ROOT }
@@ -820,30 +807,28 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
-			
-			OR = {
 				#owns everything
 				AND = {
-					owns_core_province = 261		#Ruthenia/Lvov -western
-					owns_core_province = 279		#Volhynia -western
 					owns_core_province = 283		#Zaporozhie -eastern/southern center of rebellions
 					owns_core_province = 280		#Kiev -center
 					280 = { 						#Kiev -center
 						is_state = yes
 					}
-				}
-				#or owns only core-core stuff but has god like ruler
-				AND = {				
-					owns_core_province = 283		#Zaporozhie -eastern/southern center of rebellions
-					owns_core_province = 280		#Kiev -center
-					280 = { 						#Kiev -center
-						is_state = yes
-					}
-					dip = 5
 				}
 			}
-		}
 		effect = {
+			change_primary_culture = ruthenian
+			add_accepted_culture = lithuanian
+			add_country_modifier = { 
+				name = "lithuanian_partnership"
+				duration = -1
+			}
+			if = { 
+				limit = { 
+					dominant_religion = orthodox 
+				}
+			change_religion = orthodox
+			}
 			280 = {
 				move_capital_effect = yes
 			}
@@ -895,7 +880,10 @@ country_decisions = {
 			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_russia_flag }
 			NOT = { exists = RUS }
-			tag = MOS
+			OR = { 
+				tag = MOS
+				tag = UKR 
+			}
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -963,11 +951,30 @@ country_decisions = {
 					complete_mission = tr_subjugate_novgorod
 				}
 			}
+			#if = { 
+			#	limit = { 
+			#		tag = UKR 
+			#	}
+			#	add_country_modifier = { 
+			#		name = "ukrainian_leadership"
+			#		duration = -1
+			#	}
+			#}
 			change_tag = RUS
 			on_change_tag_effect = yes
-			restore_country_name = yes
 			swap_non_generic_missions = yes
 			remove_non_electors_emperors_from_empire_effect = yes
+			if = { 
+				limit = {
+					OR = { 
+						tag = UKR
+						primary_culture = ruthenian 
+					}
+				}
+				override_country_name = RuthenianRUS
+				set_country_flag = is_RuthenianRUS_flag
+			}
+			else = { restore_country_name = yes }
 			if = {
 				limit = { is_revolutionary = no }
 				if = {
