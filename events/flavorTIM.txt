@@ -16,19 +16,27 @@ country_event = {
 	picture = OVEREXTENSION_eventPicture
 	
 	fire_only_once = yes
+	is_triggered_only = yes
 	
 	trigger = {
 		tag = TIM
+		is_year = 1444
 		exists = QOM
 		has_ruler = "Shah Rukh"
 	}
 
-	mean_time_to_happen = {
-		months = 1
-	}
+	# mean_time_to_happen = {
+	# 	months = 1
+	# }
 	
 	option = { 
 		name = "flavor_tim.0.a" #
+		every_core_province = {
+			limit = {
+				NOT = { owned_by = ROOT }
+			}
+			remove_core = ROOT
+		}
 		# custom_tooltip = flavor_tim.0.a.tt
 		
 		# hidden_effect = {

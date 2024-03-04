@@ -5,6 +5,7 @@ on_startup = {
 		HashMPEvents.3 # Electors setup
 		flavor_pol.18 #Polish election event at game start 1444 for Noble
 		flavor_hun.1 #Hungarian diet of 1445 now 1444 
+		flavor_tim.0 #Removes Timurid cores on land they don't own
 	}
 }
 
