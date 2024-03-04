@@ -3543,7 +3543,8 @@ TAU_ideas = {
 		land_attrition = -0.10
 	}
 	bayingyi = {
-		infantry_cost = -0.2
+		#infantry_cost = -0.2
+		infantry_power = 0.1
 	}
 }
 
