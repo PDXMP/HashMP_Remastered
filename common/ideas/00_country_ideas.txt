@@ -2062,11 +2062,11 @@ ERANSHAHR_ideas = {
 MUG_ideas = {
 	start = {
 		core_creation = -0.25
-		cavalry_power = 0.20
+		artillery_cost = -0.15
 	}
 	
 	bonus = {
-		artillery_power = 0.1
+		fire_damage = 0.2
 	}
 	
 	trigger = {
@@ -2074,8 +2074,8 @@ MUG_ideas = {
 	}
 	free = yes
 	#Before you change any of the ideas here, make sure ERANA_ideas are adjusted too, or else they will have empty ideas.
-	mansabdari_system = {
-		discipline = 0.05
+	fatawa_e_alamgiri = {
+		global_manpower_modifier = 0.33
 	}
 	control_of_the_ulema = {
 		global_unrest = -1
@@ -2093,10 +2093,9 @@ MUG_ideas = {
 	mughal_architecture = {
 		prestige = 1
 		build_cost = -0.1
-		great_project_upgrade_time = -0.1
 	}
-	fatawa_e_alamgiri = {
-		land_morale = 0.10
+	mansabdari_system = {
+		discipline = 0.05
 	}
 }
 
