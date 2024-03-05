@@ -2202,6 +2202,8 @@ chichen_itza = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+			local_manpower_modifier = 0.5
+			local_development_cost = -0.2
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -2210,8 +2212,7 @@ chichen_itza = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			manpower_recovery_speed = 0.1
-			global_regiment_recruit_speed = -0.1
+			
 		}
 
 		#what effects happen when this tier is achieved
@@ -2238,6 +2239,8 @@ chichen_itza = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+			local_manpower_modifier = 1.0
+			local_development_cost = -0.3
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -2246,8 +2249,7 @@ chichen_itza = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			manpower_recovery_speed = 0.15
-			global_regiment_recruit_speed = -0.3
+			
 		}
 
 		#what effects happen when this tier is achieved
@@ -2274,6 +2276,8 @@ chichen_itza = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+			local_manpower_modifier = 2.5
+			local_development_cost = -0.5
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -2282,9 +2286,7 @@ chichen_itza = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			manpower_recovery_speed = 0.2
-			global_regiment_recruit_speed = -0.5
-			infantry_cost = -0.10
+			
 		}
 
 		#what effects happen when this tier is achieved
