@@ -16321,12 +16321,14 @@ mbanza_kongo = {
 			factor = 250
 		}
 		province_modifiers = {
+			local_development_cost = -0.1
+			trade_goods_size_modifier = 0.1
+			province_trade_power_modifier = 0.25
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-			institution_spread_from_true_faith = 0.2
-			reform_progress_growth = 0.1
+
 		}
 		on_upgraded = {
 		}
@@ -16340,13 +16342,15 @@ mbanza_kongo = {
 			factor = 500
 		}
 		province_modifiers = {
+			local_development_cost = -0.15
+			trade_goods_size_modifier = 0.2
+			province_trade_power_modifier = 0.5
+			institution_growth = 6
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-			institution_spread_from_true_faith = 0.33
-			reform_progress_growth = 0.15
-			legitimacy = 0.5
+
 		}
 		on_upgraded = {
 		}
@@ -16360,14 +16364,16 @@ mbanza_kongo = {
 			factor = 1000
 		}
 		province_modifiers = {
+
 		}
 		area_modifier = {
+			local_development_cost = -0.15
+			trade_goods_size_modifier = 0.2
+			province_trade_power_modifier = 1.0
+			institution_growth = 6
 		}
 		country_modifiers = {
-			institution_spread_from_true_faith = 0.5
-			reform_progress_growth = 0.2
-			legitimacy = 1
-			allow_free_estate_privilege_revocation = yes
+
 		}
 		on_upgraded = {
 		}
