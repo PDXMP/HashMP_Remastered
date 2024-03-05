@@ -11089,6 +11089,7 @@ duomo_milano = {
 		}
 		province_modifiers = {
 			local_tax_modifier = 0.5
+			local_development_cost = -0.1
 		}
 		area_modifier = {
 			local_religious_conversion_resistance = 0.33
@@ -11112,7 +11113,7 @@ duomo_milano = {
 		}
 		area_modifier = {
 			allowed_num_of_buildings = 1
-			local_development_cost = -0.025
+			local_development_cost = -0.15
 			local_religious_conversion_resistance = 0.66
 		}
 		country_modifiers = {
@@ -11133,7 +11134,7 @@ duomo_milano = {
 			local_tax_modifier = 1.0
 		}
 		area_modifier = {
-			local_development_cost = -0.05
+			local_development_cost = -0.25
 			local_religious_conversion_resistance = 1
 			allowed_num_of_buildings = 2
 			allowed_num_of_manufactories = 2
