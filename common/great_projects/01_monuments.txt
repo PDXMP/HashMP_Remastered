@@ -14189,12 +14189,13 @@ sankore_madrasah = {
 			factor = 250
 		}
 		province_modifiers = {
+			local_development_cost = -0.1
+			institution_growth = 6
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-			global_institution_spread = 0.15
-			church_loyalty_modifier = 0.05
+
 		}
 		on_upgraded = {
 		}
@@ -14208,13 +14209,14 @@ sankore_madrasah = {
 			factor = 500
 		}
 		province_modifiers = {
+			local_development_cost = -0.15
+			institution_growth = 12
 		}
 		area_modifier = {
+			local_institution_spread = 0.1
 		}
 		country_modifiers = {
-			global_institution_spread = 0.3
-			technology_cost = -0.05
-			church_loyalty_modifier = 0.1
+
 		}
 		on_upgraded = {
 		}
@@ -14228,13 +14230,14 @@ sankore_madrasah = {
 			factor = 1000
 		}
 		province_modifiers = {
+			local_development_cost = -0.2
+			institution_growth = 18
 		}
 		area_modifier = {
+			local_institution_spread = 0.25
 		}
 		country_modifiers = {
-			global_institution_spread = 0.5
-			technology_cost = -0.1
-			church_loyalty_modifier = 0.15
+			embracement_cost = -0.1
 		}
 		on_upgraded = {
 		}
