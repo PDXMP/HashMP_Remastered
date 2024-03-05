@@ -8236,8 +8236,7 @@ mausoleum_at_halicarnassus = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			prestige = 0.25
-			monthly_splendor = 0.5			
+			prestige = 0.25		
 		}
 
 		#what effects happen when this tier is achieved
@@ -8267,7 +8266,6 @@ mausoleum_at_halicarnassus = {
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
 			prestige = 0.5
-			monthly_splendor = 1
 			monarch_lifespan = 0.05
 		}
 
@@ -8297,9 +8295,8 @@ mausoleum_at_halicarnassus = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			prestige = 1
-			monthly_splendor = 1.5
-			monarch_lifespan = 0.1
+			prestige = 0.5
+			monarch_lifespan = 0.25
 		}
 
 		#what effects happen when this tier is achieved
