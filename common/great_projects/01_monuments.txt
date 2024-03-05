@@ -3927,7 +3927,6 @@ ambras_castle = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			prestige = 0.1
 			drill_gain_modifier = 0.1
 		}
 
@@ -3965,8 +3964,7 @@ ambras_castle = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			prestige = 0.25
-			drill_gain_modifier = 0.3
+			drill_gain_modifier = 0.2
 		}
 
 		#what effects happen when this tier is achieved
@@ -4003,8 +4001,7 @@ ambras_castle = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			prestige = 0.5
-			drill_gain_modifier = 0.5
+			drill_gain_modifier = 0.25
 		}
 
 		#what effects happen when this tier is achieved
