@@ -13799,13 +13799,12 @@ rila_monasteries = {
 			factor = 250
 		}
 		province_modifiers = {
+			local_tax_modifier = 0.3
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-			stability_cost_modifier = -0.1
-			religious_unity = 0.1
-			church_loyalty_modifier = 0.05
+
 		}
 		on_upgraded = {
 		}
@@ -13819,13 +13818,13 @@ rila_monasteries = {
 			factor = 500
 		}
 		province_modifiers = {
+			local_tax_modifier = 0.5
+			province_trade_power_modifier = 0.15
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-			stability_cost_modifier = -0.2
-			religious_unity = 0.1
-			church_loyalty_modifier = 0.1
+
 		}
 		on_upgraded = {
 		}
@@ -13841,11 +13840,11 @@ rila_monasteries = {
 		province_modifiers = {
 		}
 		area_modifier = {
+			local_tax_modifier = 0.5
+			province_trade_power_modifier = 0.15
 		}
 		country_modifiers = {
-			stability_cost_modifier = -0.3
-			religious_unity = 0.25
-			church_loyalty_modifier = 0.15
+			church_loyalty_modifier = 0.05
 		}
 		on_upgraded = {
 		}
