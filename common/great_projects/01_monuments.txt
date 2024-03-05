@@ -14910,6 +14910,7 @@ white_house = {
 			local_state_maintenance_modifier = -0.5
 			allowed_num_of_buildings = 1
 			allowed_num_of_manufactories = 1
+			local_governing_cost_increase = -15
 		}
 		area_modifier = {
 			trade_goods_size_modifier = 0.15
