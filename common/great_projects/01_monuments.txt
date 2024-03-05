@@ -16236,13 +16236,12 @@ salvador_da_bahia = {
 			factor = 250
 		}
 		province_modifiers = {
-			province_trade_power_value = 10
+			local_development_cost = -0.1
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-			global_trade_power = 0.1
-			global_colonial_growth = 10
+			
 		}
 		on_upgraded = {
 		}
@@ -16256,16 +16255,15 @@ salvador_da_bahia = {
 			factor = 500
 		}
 		province_modifiers = {
-			province_trade_power_value = 15
+			local_development_cost = -0.25
 		}
 		area_modifier = {
 		}
 		region_modifier = {
-			trade_goods_size = 0.25
+			trade_goods_size = 0.2
 		}
 		country_modifiers = {
-			global_trade_power = 0.15
-			global_colonial_growth = 15
+			
 		}
 		on_upgraded = {
 		}
@@ -16279,16 +16277,15 @@ salvador_da_bahia = {
 			factor = 1000
 		}
 		province_modifiers = {
-			province_trade_power_value = 25
 		}
 		area_modifier = {
 		}
 		region_modifier = {
-			trade_goods_size = 0.5
+			local_development_cost = -0.3
+			trade_goods_size = 0.6
 		}
 		country_modifiers = {
-			global_trade_power = 0.2
-			global_colonial_growth = 20
+
 		}
 		on_upgraded = {
 		}
