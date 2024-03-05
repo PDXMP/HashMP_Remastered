@@ -16447,12 +16447,12 @@ harar_jugol = {
 			factor = 250
 		}
 		province_modifiers = {
-			institution_growth = 3
+			institution_growth = 6
 		}
 		area_modifier = {
 		}
 		country_modifiers = {			
-			prestige_per_development_from_conversion = 0.1
+
 		}
 		on_upgraded = {
 		}
@@ -16468,11 +16468,10 @@ harar_jugol = {
 		province_modifiers = {
 		}
 		area_modifier = {
-			institution_growth = 3
+			institution_growth = 12
 		}
 		country_modifiers = {
-			stability_cost_modifier = -0.1
-			prestige_per_development_from_conversion = 0.2
+
 		}
 		on_upgraded = {
 		}
@@ -16488,11 +16487,10 @@ harar_jugol = {
 		province_modifiers = {
 		}
 		area_modifier = {
-			institution_growth = 6
+			institution_growth = 18
 		}
 		country_modifiers = {
-			stability_cost_modifier = -0.25
-			prestige_per_development_from_conversion = 0.3
+			embracement_cost = -0.1
 		}
 		on_upgraded = {
 			custom_tooltip = mechanic_allow_piety_switch_decision_yes
