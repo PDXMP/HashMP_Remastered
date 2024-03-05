@@ -12771,12 +12771,15 @@ kilwa_city = {
 			factor = 250
 		}
 		province_modifiers = {
+			local_development_cost = -0.05
+			local_ship_cost = -0.05
+			local_ship_repair = 0.25
+			local_sailors_modifier = 0.5
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-			prestige = 0.25
-			global_ship_trade_power = 0.1
+
 		}
 		on_upgraded = {
 		}
@@ -12790,13 +12793,15 @@ kilwa_city = {
 			factor = 500
 		}
 		province_modifiers = {
+			local_development_cost = -0.15
+			local_ship_cost = -0.075
+			local_ship_repair = 0.35
+			local_sailors_modifier = 0.75
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-			prestige = 0.5
-			global_ship_trade_power = 0.2
-			placed_merchant_power = 2
+
 		}
 		on_upgraded = {
 		}
@@ -12810,13 +12815,16 @@ kilwa_city = {
 			factor = 1000
 		}
 		province_modifiers = {
+			ship_recruit_speed = -0.15
+			local_ship_cost = -0.1
+			local_ship_repair = 0.5
 		}
 		area_modifier = {
+			local_development_cost = -0.15
+			local_sailors_modifier = 1.0
 		}
 		country_modifiers = {
-			prestige = 1
-			global_ship_trade_power = 0.3
-			placed_merchant_power = 4
+			naval_forcelimit = 10
 		}
 		on_upgraded = {
 		}
