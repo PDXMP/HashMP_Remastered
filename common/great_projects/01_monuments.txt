@@ -10805,8 +10805,8 @@ chan_chan_citadel = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			diplomatic_upkeep = 1
-			yearly_authority = 0.1
+			#diplomatic_upkeep = 1
+			#yearly_authority = 0.1
 		}
 		on_upgraded = {
 		}
@@ -10828,8 +10828,8 @@ chan_chan_citadel = {
 			local_defensiveness = 0.15
 		}
 		country_modifiers = {
-			diplomatic_upkeep = 1
-			yearly_authority = 0.2
+			#diplomatic_upkeep = 1
+			#yearly_authority = 0.2
 		}
 		on_upgraded = {
 		}
@@ -10847,12 +10847,13 @@ chan_chan_citadel = {
 			local_defensiveness = 0.5
 		}
 		area_modifier = {
+			local_manpower_modifier = 0.25
 			local_defensiveness = 0.25
-			local_development_cost = -0.1
+			local_development_cost = -0.2
 		}
 		country_modifiers = {
-			diplomatic_upkeep = 2
-			yearly_authority = 0.3
+			#diplomatic_upkeep = 2
+			#yearly_authority = 0.3
 		}
 		on_upgraded = {
 		}
