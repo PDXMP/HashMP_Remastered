@@ -116,7 +116,7 @@ h_aristocracy_humanist = {
 		full_idea_group = humanist_ideas
 	}
 	
-	cavalry_power = 0.15
+	cavalry_power = 0.1
 
 	effect = {}
 	removed_effect = {}
@@ -1535,7 +1535,7 @@ h_quality_court = {
 		full_idea_group = court_ideas
 	}
 	
-	cavalry_power = 0.15
+	cavalry_power = 0.1
 
 	effect = {}
 	removed_effect = {}
