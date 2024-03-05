@@ -7174,7 +7174,7 @@ inukshuk = {
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
 			num_accepted_cultures = 1
-			same_culture_advisor_cost = -0.15
+			same_culture_advisor_cost = -0.05
 		}
 
 		#what effects happen when this tier is achieved
@@ -7204,7 +7204,7 @@ inukshuk = {
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
 			num_accepted_cultures = 2
-			same_culture_advisor_cost = -0.2
+			same_culture_advisor_cost = -0.075
 			promote_culture_cost = -0.15
 		}
 
@@ -10642,12 +10642,13 @@ cahokia = {
 			factor = 250
 		}
 		province_modifiers = {
-			local_monthly_devastation = -0.25
+			local_development_cost = -0.1
+			local_manpower_modifier = 0.5
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-			tribal_development_growth = 0.01			
+						
 		}
 		on_upgraded = {
 		}
@@ -10661,13 +10662,13 @@ cahokia = {
 			factor = 500
 		}
 		province_modifiers = {
-			local_monthly_devastation = -0.5
+			local_manpower_modifier = 1.0
 		}
 		area_modifier = {
+			local_development_cost = -0.15
 		}
 		country_modifiers = {
-			tribal_development_growth = 0.02
-			global_manpower_modifier = 0.1
+			
 		}
 		on_upgraded = {
 		}
@@ -10683,11 +10684,11 @@ cahokia = {
 		province_modifiers = {
 		}
 		area_modifier = {
-			local_monthly_devastation = -1
+			local_development_cost = -0.25
+			local_manpower_modifier = 1.5
 		}
 		country_modifiers = {
-			tribal_development_growth = 0.03
-			global_manpower_modifier = 0.2
+			
 		}
 		on_upgraded = {
 		}
