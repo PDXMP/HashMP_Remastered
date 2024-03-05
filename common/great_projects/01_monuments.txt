@@ -8451,6 +8451,7 @@ heddal_stave_church = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+			local_development_cost = -0.1
 			local_unrest = -1
 		}
 
@@ -8481,6 +8482,7 @@ heddal_stave_church = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+			local_development_cost = -0.2
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -8490,9 +8492,6 @@ heddal_stave_church = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			stability_cost_modifier = -0.05
-			missionary_maintenance_cost = -0.1
-			missionaries = 1
 		}
 
 		#what effects happen when this tier is achieved
@@ -8513,16 +8512,17 @@ heddal_stave_church = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+		 
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
+			local_development_cost = -0.2
 			local_unrest = -2
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			stability_cost_modifier = -0.1
 			missionary_maintenance_cost = -0.2
 			missionaries = 1
 		}
