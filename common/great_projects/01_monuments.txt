@@ -972,6 +972,11 @@ parthenon = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+			local_development_cost = -0.1
+			local_build_cost = -0.1
+			local_build_time = -0.1
+			allowed_num_of_buildings = 1 
+			allowed_num_of_manufactories = 1 
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -981,7 +986,7 @@ parthenon = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			advisor_cost = -0.10
+			#advisor_cost = -0.10
 		}
 
 		#what effects happen when this tier is achieved
@@ -1002,6 +1007,11 @@ parthenon = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+			local_development_cost = -0.2
+			local_build_cost = -0.2
+			local_build_time = -0.2
+			allowed_num_of_buildings = 1 
+			allowed_num_of_manufactories = 1 
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -1011,8 +1021,8 @@ parthenon = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			advisor_cost = -0.1
-			advisor_pool = 1
+			#advisor_cost = -0.1
+			#advisor_pool = 1
 		}
 
 		#what effects happen when this tier is achieved
@@ -1037,14 +1047,17 @@ parthenon = {
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
+			local_development_cost = -0.25
+			local_build_cost = -0.3
+			local_build_time = -0.3
+			allowed_num_of_buildings = 1 
+			allowed_num_of_manufactories = 1
 			local_unrest = -3
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			advisor_cost = -0.2
-			advisor_pool = 1
-			yearly_corruption = -0.1
+			global_unrest = -1
 		}
 
 		#what effects happen when this tier is achieved
