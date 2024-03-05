@@ -14347,12 +14347,12 @@ santa_maria_del_fiore = {
 			factor = 500
 		}
 		province_modifiers = {
+			local_development_cost = -0.25
+			local_tax_modifier = 0.1
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-			monthly_splendor = 0.5
-			prestige_decay = -0.005
 		}
 		on_upgraded = {
 		}
@@ -14366,13 +14366,13 @@ santa_maria_del_fiore = {
 			factor = 750
 		}
 		province_modifiers = {
+			local_development_cost = -0.5
+			local_tax_modifier = 0.2
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-			advisor_cost = -0.1
-			monthly_splendor = 1
-			prestige_decay = -0.01
+			advisor_cost = -0.025
 		}
 		on_upgraded = {
 		}
@@ -14386,13 +14386,13 @@ santa_maria_del_fiore = {
 			factor = 1000
 		}
 		province_modifiers = {
+			local_development_cost = -0.5
+			local_tax_modifier = 0.25
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-			advisor_cost = -0.2
-			monthly_splendor = 2
-			prestige_decay = -0.01
+			advisor_cost = -0.075
 		}
 		on_upgraded = {
 		}
