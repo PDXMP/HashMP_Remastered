@@ -11018,12 +11018,15 @@ doges_palace = {
 			factor = 500
 		}
 		province_modifiers = {
+			local_ship_cost = -0.05
+			local_ship_repair = 0.25
+			local_sailors_modifier = 0.5
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-			reform_progress_growth = 0.1
-			republican_tradition = 0.1 
+			reform_progress_growth = 0.05
+			republican_tradition = 0.05 
 		}
 		on_upgraded = {
 		}
@@ -11037,13 +11040,15 @@ doges_palace = {
 			factor = 750
 		}
 		province_modifiers = {
+			local_ship_cost = -0.075
+			local_ship_repair = 0.35
+			local_sailors_modifier = 0.75
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-			reform_progress_growth = 0.2
-			republican_tradition = 0.25 
-			prestige = 0.5
+			reform_progress_growth = 0.1
+			republican_tradition = 0.1 
 		}
 		on_upgraded = {
 		}
@@ -11057,13 +11062,15 @@ doges_palace = {
 			factor = 1000
 		}
 		province_modifiers = {
+			local_ship_cost = -0.1
+			local_ship_repair = 0.5
+			local_sailors_modifier = 1.0
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-			reform_progress_growth = 0.3
-			republican_tradition = 0.5 
-			prestige = 1
+			reform_progress_growth = 0.2
+			republican_tradition = 0.2 
 		}
 		on_upgraded = {
 		}
