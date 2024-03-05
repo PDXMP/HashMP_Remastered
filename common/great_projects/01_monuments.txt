@@ -15567,13 +15567,13 @@ winter_palace = {
 			factor = 250
 		}
 		province_modifiers = {
-			institution_growth = 3
+			local_development_cost = -0.1
+			institution_growth = 6
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-			yearly_absolutism = 0.25
-			reform_progress_growth = 0.1
+
 		}
 		on_upgraded = {
 		}
@@ -15587,14 +15587,14 @@ winter_palace = {
 			factor = 500
 		}
 		province_modifiers = {
-			institution_growth = 6
+			local_development_cost = -0.15
+			institution_growth = 12
 		}
 		area_modifier = {
 			local_institution_spread = 0.1
 		}
 		country_modifiers = {
-			yearly_absolutism = 0.5
-			reform_progress_growth = 0.15
+
 		}
 		on_upgraded = {
 		}
@@ -15608,14 +15608,14 @@ winter_palace = {
 			factor = 1000
 		}
 		province_modifiers = {
-			institution_growth = 12
+			local_development_cost = -0.2
+			institution_growth = 18
 		}
 		area_modifier = {
 			local_institution_spread = 0.25
 		}
 		country_modifiers = {
-			yearly_absolutism = 0.5
-			reform_progress_growth = 0.2
+			embracement_cost = -0.1
 		}
 		on_upgraded = {
 		}
