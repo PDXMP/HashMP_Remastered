@@ -3371,7 +3371,7 @@ notre_dame_cathedral = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
-			local_tax_modifier = 0.4
+			local_tax_modifier = 0.2
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -3401,7 +3401,7 @@ notre_dame_cathedral = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
-			local_tax_modifier = 0.6
+			local_tax_modifier = 0.4
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -3431,7 +3431,7 @@ notre_dame_cathedral = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
-			local_tax_modifier = 0.8
+			local_tax_modifier = 0.6
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
