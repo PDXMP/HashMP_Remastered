@@ -8662,6 +8662,7 @@ versailles = {
 			local_development_cost = -1.0
 			local_build_cost = -0.5
 			local_build_time = -0.5
+			local_tax_modifier = 0.5
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -8671,9 +8672,6 @@ versailles = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			global_tax_modifier = 0.1
-			improve_relation_modifier = 0.1
-			vassal_income = 0.2
 			nobles_loyalty_modifier = 0.05
 			nobles_influence_modifier = -0.05
 		}
