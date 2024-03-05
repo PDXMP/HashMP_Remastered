@@ -10365,13 +10365,15 @@ bran_castle = {
 			factor = 250
 		}
 		province_modifiers = {
+			local_development_cost = -0.35
+			local_fort_maintenance_modifier = -0.1
 			local_defensiveness = 0.15
+			local_defender_dice_roll_bonus = 1 
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-			rival_border_fort_maintenance = -0.15
-			global_garrison_growth = 0.1
+
 		}
 		on_upgraded = {
 		}
@@ -10385,13 +10387,17 @@ bran_castle = {
 			factor = 500
 		}
 		province_modifiers = {
+			local_development_cost = -0.4
+			local_fort_maintenance_modifier = -0.25
+			local_defensiveness = 0.25
+			local_defender_dice_roll_bonus = 1 
+			local_garrison_size = 0.25
 		}
 		area_modifier = {
 			local_defensiveness = 0.15
 		}
 		country_modifiers = {
-			rival_border_fort_maintenance = -0.2
-			global_garrison_growth = 0.2
+
 		}
 		on_upgraded = {
 		}
@@ -10405,13 +10411,18 @@ bran_castle = {
 			factor = 1000
 		}
 		province_modifiers = {
+			local_development_cost = -0.1
+			local_fort_maintenance_modifier = -0.5
+			local_defensiveness = 0.4
+			local_garrison_size = 0.4
 		}
 		area_modifier = {
+			local_defender_dice_roll_bonus = 1 
+			local_development_cost = -0.3
 			local_defensiveness = 0.25
 		}
 		country_modifiers = {
-			rival_border_fort_maintenance = -0.3
-			global_garrison_growth = 0.3
+
 		}
 		on_upgraded = {
 		}
