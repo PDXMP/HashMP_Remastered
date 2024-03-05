@@ -14009,8 +14009,10 @@ royal_palace_caserta = {
 			factor = 0
 		}
 		province_modifiers = {
+
 		}
 		area_modifier = {
+			
 		}
 		country_modifiers = {
 		}
@@ -14026,12 +14028,13 @@ royal_palace_caserta = {
 			factor = 500
 		}
 		province_modifiers = {
+			local_defender_dice_roll_bonus = 1
+			local_tax_modifier = 0.4
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-			prestige = 0.25
-			reform_progress_growth = 0.05
+			
 		}
 		on_upgraded = {
 		}
@@ -14045,13 +14048,14 @@ royal_palace_caserta = {
 			factor = 750
 		}
 		province_modifiers = {
+			local_defender_dice_roll_bonus = 1
+			local_tax_modifier = 0.6
 		}
 		area_modifier = {
+		
 		}
 		country_modifiers = {
-			prestige = 0.5
-			reform_progress_growth = 0.1
-			governing_capacity = 50
+
 		}
 		on_upgraded = {
 		}
@@ -14065,13 +14069,13 @@ royal_palace_caserta = {
 			factor = 1000
 		}
 		province_modifiers = {
+			local_defender_dice_roll_bonus = 1
 		}
 		area_modifier = {
+			local_tax_modifier = 1.0
 		}
 		country_modifiers = {
-			prestige = 1
-			reform_progress_growth = 0.15
-			governing_capacity = 100
+			prestige = 0.5
 		}
 		on_upgraded = {
 		}
