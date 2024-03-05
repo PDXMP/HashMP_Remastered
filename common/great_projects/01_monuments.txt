@@ -11014,7 +11014,7 @@ doges_palace = {
 			factor = 1000
 		}
 		province_modifiers = {
-			ship_recruit_speed = -0.5
+			ship_recruit_speed = -0.15
 			local_ship_cost = -0.15
 			local_ship_repair = 0.5
 			local_sailors_modifier = 1.0
