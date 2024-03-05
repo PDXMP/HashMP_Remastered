@@ -15894,11 +15894,12 @@ kronborg = {
 		}
 		province_modifiers = {
 			local_defensiveness = 0.15
+			local_ship_repair = 0.1
+			local_fort_maintenance_modifier = -0.1
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-			naval_tradition_from_trade = 0.25
 		}
 		on_upgraded = {
 			owner = {
@@ -15916,12 +15917,13 @@ kronborg = {
 		}
 		province_modifiers = {
 			local_defensiveness = 0.25
-			local_own_coast_naval_combat_bonus = 1
+			local_ship_repair = 0.25
+			local_fort_maintenance_modifier = -0.25
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-			naval_tradition_from_trade = 0.5
+
 		}
 		on_upgraded = {
 			owner = {
@@ -15939,12 +15941,14 @@ kronborg = {
 		}
 		province_modifiers = {
 			local_defensiveness = 0.33
-			local_own_coast_naval_combat_bonus = 2
+			local_own_coast_naval_combat_bonus = 1
+			local_ship_repair = 0.5
+			local_fort_maintenance_modifier = -0.5
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-			naval_tradition_from_trade = 1
+			global_own_trade_power = 0.1
 		}
 		on_upgraded = {
 			owner = {
