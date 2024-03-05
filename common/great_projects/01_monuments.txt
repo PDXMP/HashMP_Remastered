@@ -14987,7 +14987,7 @@ tikal = {
 			local_unrest = -1
 		}
 		country_modifiers = {
-			stability_cost_modifier = -0.1
+
 		}
 		on_upgraded = {
 		}
@@ -15007,7 +15007,6 @@ tikal = {
 			local_unrest = -2
 		}
 		country_modifiers = {
-			stability_cost_modifier = -0.2
 		}
 		on_upgraded = {
 		}
@@ -15026,7 +15025,6 @@ tikal = {
 			local_development_cost = -0.3
 		}
 		country_modifiers = {
-			stability_cost_modifier = -0.3
 			global_unrest = -2
 		}
 		on_upgraded = {
