@@ -16001,13 +16001,16 @@ visby_city = {
 			factor = 500
 		}
 		province_modifiers = {
+			local_production_efficiency = 0.5
+			local_sailors_modifier = 0.5
 			ship_recruit_speed = -0.25
-			hostile_disembark_speed = 0.5
+			local_fort_maintenance_modifier = -0.25
+			local_development_cost = -0.1
 		}
 		area_modifier = {
 		}
 		country_modifiers = {		
-			privateer_efficiency = 0.2	
+
 		}
 		on_upgraded = {
 		}
@@ -16021,14 +16024,18 @@ visby_city = {
 			factor = 750
 		}
 		province_modifiers = {
+			local_production_efficiency = 0.75
+			local_sailors_modifier = 1.0
 			ship_recruit_speed = -0.33
 			hostile_disembark_speed = 1
+			local_fort_maintenance_modifier = -0.5
+			local_development_cost = -0.15
+			local_ship_repair = 0.25
 		}
 		area_modifier = {
 		}
 		country_modifiers = {		
-			privateer_efficiency = 0.33
-			global_own_trade_power = 0.15
+			
 		}
 		on_upgraded = {
 		}
@@ -16042,14 +16049,18 @@ visby_city = {
 			factor = 1000
 		}
 		province_modifiers = {
+			local_production_efficiency = 1.5
+			local_sailors_modifier = 2.0
 			ship_recruit_speed = -0.5
 			hostile_disembark_speed = 2
+			local_fort_maintenance_modifier = -1.0
+			local_development_cost = -0.2
+			local_ship_repair = 0.5
 		}
 		area_modifier = {
 		}
 		country_modifiers = {		
-			privateer_efficiency = 0.5
-			global_own_trade_power = 0.25
+
 		}
 		on_upgraded = {
 		}
