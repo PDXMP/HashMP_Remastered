@@ -1986,6 +1986,7 @@ machu_picchu = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+		
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -2014,6 +2015,8 @@ machu_picchu = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+			local_development_cost = -0.15
+			local_production_efficiency = 0.25
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -2022,17 +2025,12 @@ machu_picchu = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			idea_cost = -0.05
+			
 		}
 
 		#what effects happen when this tier is achieved
 		on_upgraded = {
-			owner = {
-				add_estate_loyalty = {
-					estate = estate_church
-					loyalty = 5
-				}
-			}
+			
 		}
 	}
 
@@ -2049,6 +2047,8 @@ machu_picchu = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+			local_development_cost = -0.3
+			local_production_efficiency = 0.5
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -2057,8 +2057,7 @@ machu_picchu = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			idea_cost = -0.1
-			reform_progress_growth = 0.1			
+						
 		}
 
 		#what effects happen when this tier is achieved
@@ -2083,23 +2082,18 @@ machu_picchu = {
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
+			local_development_cost = -0.35
+			local_production_efficiency = 0.5
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			idea_cost = -0.15
-			reform_progress_growth = 0.1
-			mercantilism_cost = -0.15
+			
 		}
 
 		#what effects happen when this tier is achieved
 		on_upgraded = {
-			owner = {
-				add_estate_loyalty = {
-					estate = estate_church
-					loyalty = 15
-				}
-			}
+			
 		}
 	}
 }
