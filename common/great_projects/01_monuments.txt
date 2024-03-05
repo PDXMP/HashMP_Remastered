@@ -4473,16 +4473,18 @@ alhambra = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+			local_development_cost = -0.1
+			fort_level = 1
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
+			local_manpower_modifier = 0.6
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			vassal_income = 0.1
-			reduced_liberty_desire = 5
+			
 		}
 
 		#what effects happen when this tier is achieved
@@ -4503,17 +4505,18 @@ alhambra = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+			local_development_cost = -0.2
+			fort_level = 2
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
+			local_manpower_modifier = 0.8
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			vassal_income = 0.1
-			reduced_liberty_desire = 5
-			diplomatic_reputation = 1
+
 		}
 
 		#what effects happen when this tier is achieved
@@ -4534,18 +4537,19 @@ alhambra = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+			local_development_cost = -0.3
+			fort_level = 2
+			local_garrison_size = 0.25
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
+			local_manpower_modifier = 1.25
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			administrative_efficiency = 0.05
-			vassal_income = 0.1
-			reduced_liberty_desire = 10
-			diplomatic_reputation = 1
+
 		}
 		
 		conditional_modifier = {
@@ -5023,6 +5027,8 @@ ait_benhaddou = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+			local_development_cost = -0.1
+			trade_goods_size_modifier = 0.1
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -5053,6 +5059,8 @@ ait_benhaddou = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+			local_development_cost = -0.2
+			trade_goods_size_modifier = 0.15
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -5062,8 +5070,7 @@ ait_benhaddou = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			caravan_power = 0.2
-			trade_efficiency = 0.05
+			
 		}
 
 		#what effects happen when this tier is achieved
@@ -5084,18 +5091,18 @@ ait_benhaddou = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+			local_development_cost = -0.35
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
 			local_defensiveness = 0.25
+			trade_goods_size_modifier = 0.2
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			caravan_power = 0.33
-			trade_efficiency = 0.10
-			global_trade_power = 0.05
+			
 		}
 
 		#what effects happen when this tier is achieved
@@ -7913,17 +7920,18 @@ belem_tower = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
-			province_trade_power_value = 5
+			local_sailors_modifier = 0.5
+			local_development_cost = -0.05
 		}
 		
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
-			local_manpower_modifier = 0.15
+			
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			global_trade_power = 0.05
+			
 		}
 
 		#what effects happen when this tier is achieved
@@ -7944,18 +7952,18 @@ belem_tower = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
-			province_trade_power_value = 10
+			local_sailors_modifier = 1.0
+			local_development_cost = -0.05
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
-			local_manpower_modifier = 0.25
+
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			global_trade_power = 0.1
-			global_sailors_modifier = 0.1
+
 		}
 
 		#what effects happen when this tier is achieved
@@ -7976,18 +7984,18 @@ belem_tower = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
-			province_trade_power_value = 15
+
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
-			local_manpower_modifier = 0.5
+			local_sailors_modifier = 1.0
+			local_development_cost = -0.05
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			global_trade_power = 0.15
-			global_sailors_modifier = 0.25
+
 		}
 
 		#what effects happen when this tier is achieved
@@ -8804,6 +8812,7 @@ el_escorial = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+			
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -8832,7 +8841,8 @@ el_escorial = {
 		}
 
 		#what modifiers are added to the province when we have this project here on this tier
-		province_modifiers = {			
+		province_modifiers = {	
+			local_development_cost = -0.25
 		}
 		
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -8841,9 +8851,7 @@ el_escorial = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			global_autonomy = -0.01	
-			global_tariffs = 0.05
-			treasure_fleet_income = 0.05			
+		
 		}
 
 		#what effects happen when this tier is achieved
@@ -8864,6 +8872,7 @@ el_escorial = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+			local_development_cost = -0.5
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -8896,6 +8905,7 @@ el_escorial = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+			local_development_cost = -1.0
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -8904,10 +8914,7 @@ el_escorial = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			global_autonomy = -0.05
 			governing_capacity_modifier = 0.1
-			global_tariffs = 0.2
-			treasure_fleet_income = 0.2
 		}
 
 		#what effects happen when this tier is achieved
@@ -16652,7 +16659,7 @@ palace_of_the_popes = {
 			local_governing_cost = -0.15
 		}
 		country_modifiers = {
-			church_privilege_slots = 1 
+
 		}
 		on_upgraded = {
 			if = {
@@ -16684,11 +16691,7 @@ palace_of_the_popes = {
 			local_governing_cost = -0.25
 		}
 		country_modifiers = {
-			church_privilege_slots = 1 
-			church_loyalty_modifier = 0.1
-			papal_influence = 1
-			church_power_modifier = 0.25
-			monthly_fervor_increase = 0.3
+
 		}
 		on_upgraded = {
 			if = {
@@ -16724,7 +16727,7 @@ palace_of_the_popes = {
 		}
 		country_modifiers = {
 			church_privilege_slots = 1 
-			church_loyalty_modifier = 0.15
+			church_loyalty_modifier = 0.05
 			papal_influence = 2
 			church_power_modifier = 0.33
 			monthly_fervor_increase = 0.5
@@ -16916,25 +16919,19 @@ aljaferia_palace = {
 			factor = 500
 		}
 		province_modifiers = {
+			local_development_cost = -0.05
+			trade_goods_size_modifier = 0.1
+			province_trade_power_modifier = 0.1
 			
 		}
 		area_modifier = {
 			
 		}
 		country_modifiers = {
-			harsh_treatment_cost = -0.1
-			global_missionary_strength = 0.01
+
 		}
 		on_upgraded = {
-			owner = {
-				if = { 
-					limit = { has_estate = estate_church }
-					add_estate_loyalty = {
-						estate = estate_church 
-						loyalty = 10 
-					}
-				}
-			}
+
 		}
 	}
 
@@ -16946,29 +16943,21 @@ aljaferia_palace = {
 			factor = 750
 		}
 		province_modifiers = {
-			
+			local_development_cost = -0.1
+			trade_goods_size_modifier = 0.15
+			province_trade_power_modifier = 0.15
 		}
 		area_modifier = {
 			
 		}
 		region_modifier = { 
-			local_unrest = -1 
+
 		}
 		country_modifiers = {
-			harsh_treatment_cost = -0.25
-			global_missionary_strength = 0.01
-			global_religious_conversion_resistance = 0.25
+
 		}
 		on_upgraded = {
-			owner = {
-				if = { 
-					limit = { has_estate = estate_church }
-					add_estate_loyalty = {
-						estate = estate_church 
-						loyalty = 10 
-					}
-				}
-			}
+
 		}
 	}
 
@@ -16982,33 +16971,19 @@ aljaferia_palace = {
 		province_modifiers = {
 		}
 		area_modifier = {
+			local_development_cost = -0.1
+			trade_goods_size_modifier = 0.15
+			province_trade_power_modifier = 0.15
 			
 		}
 		region_modifier = { 
-			local_unrest = -1 
+
 		}
 		country_modifiers = {
-			harsh_treatment_cost = -0.33
-			global_missionary_strength = 0.02
-			global_religious_conversion_resistance = 0.5
+
 		}
 		on_upgraded = {
-			owner = {
-				if = { 
-					limit = { has_estate = estate_church }
-					add_estate_loyalty = {
-						estate = estate_church 
-						loyalty = 10 
-					}
-				}
-			}
-			if = {
-				limit = { has_dlc = "Golden Century" }
-				custom_tooltip = empower_inquisitors_tt
-				hidden_effect = {
-					owner = { set_country_flag = empower_inquisitors_flag }
-				}
-			}
+		
 		}
 	}
 }
