@@ -10593,6 +10593,8 @@ buda_castle = {
 			factor = 250
 		}
 		province_modifiers = {
+			local_development_cost = -0.25
+			local_tax_modifier = 0.3
 		}
 		area_modifier = {
 		}
@@ -10611,12 +10613,12 @@ buda_castle = {
 			factor = 500
 		}
 		province_modifiers = {
+			local_development_cost = -0.5
+			local_tax_modifier = 0.5
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-			global_institution_spread = 0.2
-			embracement_cost = -0.05
 		}
 		on_upgraded = {
 		}
@@ -10630,13 +10632,13 @@ buda_castle = {
 			factor = 1000
 		}
 		province_modifiers = {
+			local_development_cost = -1.0
+			local_tax_modifier = 1.0
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-			global_institution_spread = 0.3
 			embracement_cost = -0.1
-			idea_cost = -0.05
 		}
 		on_upgraded = {
 		}
