@@ -15038,12 +15038,12 @@ tiwanaku = {
 			factor = 250
 		}
 		province_modifiers = {
+			local_development_cost = -0.15
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-			yearly_authority = 0.1
-			global_missionary_strength = 0.005
+			
 		}
 		on_upgraded = {
 		}
@@ -15057,13 +15057,12 @@ tiwanaku = {
 			factor = 500
 		}
 		province_modifiers = {
+			local_development_cost = -0.3
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-			yearly_authority = 0.2
-			global_missionary_strength = 0.01
-			religious_unity = 0.15
+
 		}
 		on_upgraded = {
 		}
@@ -15077,13 +15076,13 @@ tiwanaku = {
 			factor = 1000
 		}
 		province_modifiers = {
+			local_development_cost = -0.35
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-			yearly_authority = 0.3
-			global_missionary_strength = 0.02
-			religious_unity = 0.3
+			missionaries = 1 
+			global_missionary_strength = 0.01
 		}
 		on_upgraded = {
 		}
