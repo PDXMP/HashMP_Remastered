@@ -18071,14 +18071,14 @@ golestan_palace = {
 			factor = 250
 		}
 		province_modifiers = {
-			
+			local_development_cost = -0.1
 		}
 		area_modifier = {
 			
 		}
 		country_modifiers = {
-			monthly_persian_influence = 0.03
-			monthly_splendor = 1
+			#monthly_persian_influence = 0.03
+			#monthly_splendor = 1
 		}
 		on_upgraded = {
 		}
@@ -18095,15 +18095,15 @@ golestan_palace = {
 			
 		}
 		area_modifier = {
-			
+			local_development_cost = -0.1
 		}
 		region_modifier = { 
 			
 		}
 		country_modifiers = {
-			diplomatic_reputation = 1
-			monthly_persian_influence = 0.05
-			monthly_splendor = 1
+			#diplomatic_reputation = 1
+			#monthly_persian_influence = 0.05
+			#monthly_splendor = 1
 		}	
 		on_upgraded = {
 		}
@@ -18117,14 +18117,13 @@ golestan_palace = {
 			factor = 1000
 		}
 		province_modifiers = {
+			trade_goods_size = 0.5
 		}
 		area_modifier = {
-			
+			local_development_cost = -0.1
 		}
 		country_modifiers = {
-			diplomatic_reputation = 2
-			monthly_persian_influence = 0.1
-			monthly_splendor = 2
+			development_cost = -0.05
 		}
 		on_upgraded = {
 			
