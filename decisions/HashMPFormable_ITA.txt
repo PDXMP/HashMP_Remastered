@@ -23,8 +23,103 @@ country_decisions = {
 			adm_tech = 10
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
+			if = {
+				limit = {
+					is_or_was_tag = { tag = VEN }
+				}
+				if = {
+					limit = {
+						exists = NAP
+					}
+					NAP = {
+						NOT = { total_development = 50 }
+					}
+				}
+				if = {
+					limit = {
+						exists = TTS
+					}
+					TTS = {
+						NOT = { total_development = 50 }
+					}
+				}
+				if = {
+					limit = {
+						exists = SPI
+					}
+					SPI = {
+						NOT = { total_development = 50 }
+					}
+				}
+				if = {
+					limit = {
+						exists = SAV
+					}
+					SAV = {
+						NOT = { total_development = 50 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_or_was_tag = { tag = SAV }
+				}
+				if = {
+					limit = {
+						exists = NAP
+					}
+					NAP = {
+						NOT = { total_development = 50 }
+					}
+				}
+				if = {
+					limit = {
+						exists = TTS
+					}
+					TTS = {
+						NOT = { total_development = 50 }
+					}
+				}
+				if = {
+					limit = {
+						exists = VEN
+					}
+					VEN = {
+						NOT = { total_development = 50 }
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_or_was_tag = { tag = NAP }
+				}
+				if = {
+					limit = {
+						exists = SPI
+					}
+					SPI = {
+						NOT = { total_development = 50 }
+					}
+				}
+				if = {
+					limit = {
+						exists = SAV
+					}
+					SAV = {
+						NOT = { total_development = 50 }
+					}
+				}
+				if = {
+					limit = {
+						exists = VEN
+					}
+					VEN = {
+						NOT = { total_development = 50 }
+					}
+				}
+			}
 			num_of_owned_provinces_with = {
-				value = 35
+				value = 30
 				region = italy_region
 				is_core = ROOT
 			}
