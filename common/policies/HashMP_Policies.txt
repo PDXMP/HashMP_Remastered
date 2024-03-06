@@ -10,7 +10,7 @@ h_aristocracy_innovativeness = {
 		full_idea_group = innovativeness_ideas
 	}
 	
-	fire_damage_received = -0.15
+	fire_damage_received = -0.1
 
 	effect = {}
 	removed_effect = {}
@@ -1041,8 +1041,8 @@ h_defensive_innovativeness = {
 		full_idea_group = innovativeness_ideas
 	}
 	
-	fire_damage_received = -0.075
-	shock_damage_received = -0.075
+	fire_damage_received = -0.05
+	shock_damage_received = -0.05
 
 	effect = {}
 	removed_effect = {}
@@ -1063,7 +1063,7 @@ h_defensive_religious = {
 		full_idea_group = religious_ideas
 	}
 	
-	shock_damage_received = -0.15
+	shock_damage_received = -0.1
 
 	effect = {}
 	removed_effect = {}
@@ -1917,8 +1917,8 @@ h_trade_humanist = {
 		full_idea_group = humanist_ideas
 	}
 	
-	fire_damage_received = -0.075
-	shock_damage_received = -0.075
+	fire_damage_received = -0.05
+	shock_damage_received = -0.05
 
 	effect = {}
 	removed_effect = {}
@@ -2046,8 +2046,8 @@ h_exploration_administrative = {
 		full_idea_group = administrative_ideas
 	}
 	
-	fire_damage_received = -0.075
-	shock_damage_received = -0.075
+	fire_damage_received = -0.05
+	shock_damage_received = -0.05
 
 	effect = {}
 	removed_effect = {}
