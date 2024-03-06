@@ -13189,6 +13189,7 @@ maidan-e_naqsh-e_jahan = {
 			local_tax_modifier = 1.0
 		}
 		country_modifiers = {
+			technology_cost = -0.05
 			global_tax_modifier = 0.1
 		}
 		on_upgraded = {
