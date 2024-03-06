@@ -3254,7 +3254,8 @@ SAV_ideas = {
 	start = {
 		#diplomatic_upkeep = 1
 		land_morale = 0.1
-		improve_relation_modifier = 0.25
+		fort_maintenance_modifier = -0.1
+		#improve_relation_modifier = 0.25
 	}
 	
 	bonus = {
@@ -3285,7 +3286,6 @@ SAV_ideas = {
 	}
 	alpine_tolls = {
    		global_prov_trade_power_modifier = 0.10
-
 	}
 	savoyard_legitimacy = {
 		legitimacy = 1   
@@ -3397,7 +3397,7 @@ SPI_ideas = {
 		diplomatic_upkeep = 1
 	}
 	spi_defensive_prowess = {
-		defensiveness = 0.25
+		defensiveness = 0.2
 	}
 	the_shroud_of_turin = { #effect in SAV_ideas
 #		papal_influence = 1
