@@ -1192,7 +1192,7 @@ h_defensive_trade = {
 		full_idea_group = trade_ideas
 	}
 	
-	hostile_fleet_attrition = 1
+	embargo_efficiency = 0.33
 	global_prov_trade_power_modifier = 0.2
 
 	effect = {}
