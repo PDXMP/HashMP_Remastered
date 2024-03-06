@@ -18480,39 +18480,40 @@ city_of_sanaa = {
 		}
 		province_modifiers = {
 			province_trade_power_modifier = 0.1 
+			development_cost = -0.35
 		}
 		area_modifier = {
 			
 		}
 		country_modifiers = {
-			mercantilism_cost = -0.1
+			#mercantilism_cost = -0.1
 		}
 		on_upgraded = {
 		}
-		conditional_modifier = {
-			trigger = {
-				custom_trigger_tooltip = {
-					tooltip = YEM_upgrade_city_of_sanaa_flag_tt
-					owner = { has_country_flag = YEM_upgrade_city_of_sanaa_flag }
-				}
-			}
-			modifier = {
-				manpower_in_true_faith_provinces = 0.05
-				dip_tech_cost_modifier = -0.025
-			}
-		}
-		conditional_modifier = {
-			trigger = {
-				custom_trigger_tooltip = {
-					tooltip = YEM_upgrade_city_of_sanaa_non_ras_flag_tt
-					owner = { has_country_flag = YEM_upgrade_city_of_sanaa_non_ras_flag }
-				}
-			}
-			modifier = {
-				tolerance_own = 0
-				global_missionary_strength = 0.01
-			}
-		}
+		#conditional_modifier = {
+		#	trigger = {
+		#		custom_trigger_tooltip = {
+		#			tooltip = YEM_upgrade_city_of_sanaa_flag_tt
+		#			owner = { has_country_flag = YEM_upgrade_city_of_sanaa_flag }
+		#		}
+		#	}
+		#	modifier = {
+		#		#manpower_in_true_faith_provinces = 0.05
+		#		dip_tech_cost_modifier = -0.025
+		#	}
+		#}
+		#conditional_modifier = {
+		#	trigger = {
+		#		custom_trigger_tooltip = {
+		#			tooltip = YEM_upgrade_city_of_sanaa_non_ras_flag_tt
+		#			owner = { has_country_flag = YEM_upgrade_city_of_sanaa_non_ras_flag }
+		#		}
+		#	}
+		#	modifier = {
+		#		tolerance_own = 0
+		#		global_missionary_strength = 0.01
+		#	}
+		#}
 	}
 
 	tier_2 = {
@@ -18523,7 +18524,8 @@ city_of_sanaa = {
 			factor = 500
 		}
 		province_modifiers = {
-			province_trade_power_modifier = 0.15
+			province_trade_power_modifier = 0.25
+			development_cost = -0.35
 		}
 		area_modifier = {
 			
@@ -18532,7 +18534,7 @@ city_of_sanaa = {
 			
 		}
 		country_modifiers = {
-			mercantilism_cost = -0.2
+			#mercantilism_cost = -0.2
 		}	
 		on_upgraded = {
 		}
@@ -18573,7 +18575,8 @@ city_of_sanaa = {
 			
 		}
 		area_modifier = {
-			province_trade_power_modifier = 0.25
+			province_trade_power_modifier = 0.5
+			development_cost = -0.35
 		}
 		country_modifiers = {
 			mercantilism_cost = -0.33
