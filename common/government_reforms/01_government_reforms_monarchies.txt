@@ -565,6 +565,8 @@ chinese_warlord = {
 		}
 	}
 	trigger = {
+		#HashMP: disabled because of China rework
+		always = no
 		OR = {
 			primary_culture = bai
 			primary_culture = miao
