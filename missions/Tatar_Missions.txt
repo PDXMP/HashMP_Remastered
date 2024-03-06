@@ -25,64 +25,11 @@ tatar_missions_1 = {
 	unite_the_tatars = {
 		icon = mission_cossack_cavalry
 		required_missions = {  }
-		provinces_to_highlight = {
-			OR = {
-				province_id = 303
-				province_id = 466
-				province_id = 464
-				province_id = 1082
-				province_id = 465
-			}
-			NOT = {
-				AND = {
-					owned_by = ROOT
-					is_core = ROOT
-				}
-			}
-		}
 		trigger = {
-			if = {
-				limit = {
-					has_dlc = "The Cossacks"
-					has_reform = steppe_horde
-				}
-				horde_unity = 90
+			any_known_country = {
+				culture_group = tartar 
+				war_with = ROOT
 			}
-			else_if = {
-				limit = {
-					government = monarchy
-				}
-				legitimacy = 90
-			}
-			else_if = {
-				limit = {
-					has_dlc = "Common Sense"
-					government = theocracy
-				}
-				devotion = 90
-			}
-			else_if = {
-				limit = {
-					NOT = { has_dlc = "Common Sense" }
-					government = theocracy
-				}
-				prestige = 40
-			}
-			else_if = {
-				limit = {
-					government = republic
-				}
-				republican_tradition = 90
-			}
-			else= {
-				legitimacy = 90
-			}
-			num_of_cities = 25
-			owns_core_province = 303
-			owns_core_province = 466
-			owns_core_province = 464
-			owns_core_province = 1082
-			owns_core_province = 465
 		}
 		effect = {
 			caucasia_region = {
