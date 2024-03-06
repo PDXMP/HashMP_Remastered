@@ -1479,7 +1479,7 @@ VEN_ideas = {
 	}
 	
 	bonus = {
-		galley_power = 0.25
+		galley_power = 0.2 #0.25
 	}
 	
 	trigger = {
@@ -1490,16 +1490,16 @@ VEN_ideas = {
 	venetian_arsenal = {
 		naval_forcelimit_modifier = 0.33
 	}
-	printing_industry = {
-		diplomats = 1
+	state_inquisition = {
+		#global_spy_defence = 0.3
+		infantry_power = 0.15
 	}
 	stato_da_mar = {
 		trade_efficiency = 0.2
 	}
-	state_inquisition = {
-		#global_spy_defence = 0.3
-		#yearly_corruption = -0.05
-		infantry_power = 0.1
+	printing_industry = {
+		diplomats = 1
+		yearly_corruption = -0.05
 	}
 	conscription = {
 		global_sailors_modifier = 0.33
