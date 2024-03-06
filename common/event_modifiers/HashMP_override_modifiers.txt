@@ -304,7 +304,13 @@ hab_viennese_ballrooms = {
 	local_manpower_modifier = 0.25
 	local_production_efficiency = 0.25
 	local_defender_dice_roll_bonus = 1
+}
+
 malay_united_nusantara = { 
 	naval_attrition = -0.2
-	 sailor_maintenance_modifer = -0.05
+	sailor_maintenance_modifer = -0.05
+}
+
+mch_seven_grievances_declaration_modifier = {
+	siege_ability = 0.2
 }
