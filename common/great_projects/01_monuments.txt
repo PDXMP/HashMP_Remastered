@@ -6483,6 +6483,10 @@ kanbawzathadi_palace = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+			local_development_cost = -0.05
+			local_sailors_modifier = 0.5 
+			allowed_num_of_buildings = 1 
+			allowed_num_of_manufactories = 1 
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -6491,8 +6495,8 @@ kanbawzathadi_palace = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			diplomatic_reputation = 1
-			dip_advisor_cost = -0.1
+			#diplomatic_reputation = 1
+			#dip_advisor_cost = -0.1
 		}
 
 		#what effects happen when this tier is achieved
@@ -6513,6 +6517,10 @@ kanbawzathadi_palace = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+			local_development_cost = -0.05
+			local_sailors_modifier = 1.0
+			allowed_num_of_buildings = 1 
+			allowed_num_of_manufactories = 1 
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -6521,9 +6529,9 @@ kanbawzathadi_palace = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			diplomatic_reputation = 1
-			diplomatic_upkeep = 1
-			dip_advisor_cost = -0.2
+			#diplomatic_reputation = 1
+			#diplomatic_upkeep = 1
+			#dip_advisor_cost = -0.2
 		}
 
 		#what effects happen when this tier is achieved
@@ -6544,17 +6552,24 @@ kanbawzathadi_palace = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+			local_ship_repair = 0.5
+			ship_recruit_speed = 0.25
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
+			local_development_cost = -0.05
+			local_sailors_modifier = 1.0
+			allowed_num_of_buildings = 1 
+			allowed_num_of_manufactories = 1 
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			diplomatic_reputation = 1
-			diplomatic_upkeep = 2
-			advisor_cost = -0.2
+			#diplomatic_reputation = 1
+			#diplomatic_upkeep = 2
+			#advisor_cost = -0.2
+			naval_forcelimit = 10 
 		}
 
 		#what effects happen when this tier is achieved
