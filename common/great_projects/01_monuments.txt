@@ -12656,12 +12656,14 @@ kashi_vishwanath = {
 			factor = 250
 		}
 		province_modifiers = {
+			local_tax_modifier = 0.3
+			local_development_cost = -0.05
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-			core_creation = -0.05
-			brahmins_hindu_loyalty_modifier = 0.05
+			#core_creation = -0.05
+			#brahmins_hindu_loyalty_modifier = 0.05
 		}
 		on_upgraded = {
 		}
@@ -12675,13 +12677,15 @@ kashi_vishwanath = {
 			factor = 500
 		}
 		province_modifiers = {
+			local_tax_modifier = 0.5
+			local_development_cost = -0.05
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-			core_creation = -0.075
-			ae_impact = -0.05
-			brahmins_hindu_loyalty_modifier = 0.1
+			#core_creation = -0.075
+			#ae_impact = -0.05
+			#brahmins_hindu_loyalty_modifier = 0.1
 		}
 		on_upgraded = {			
 		}
@@ -12697,11 +12701,13 @@ kashi_vishwanath = {
 		province_modifiers = {
 		}
 		area_modifier = {
+			local_tax_modifier = 0.5
+			local_development_cost = -0.05
 		}
 		country_modifiers = {
 			core_creation = -0.1
-			ae_impact = -0.1
-			brahmins_hindu_loyalty_modifier = 0.15
+			#ae_impact = -0.1
+			#brahmins_hindu_loyalty_modifier = 0.15
 		}
 		on_upgraded = {			
 		}
