@@ -17756,14 +17756,15 @@ imperial_city_kyoto = {
 			factor = 250
 		}
 		province_modifiers = {
+			local_development_cost = -0.25
 			
 		}
 		area_modifier = {
 			
 		}
 		country_modifiers = {
-			reduced_liberty_desire = 5
-			legitimacy = 0.3
+			#reduced_liberty_desire = 5
+			#legitimacy = 0.3
 		}
 		on_upgraded = {
 		}
@@ -17777,7 +17778,7 @@ imperial_city_kyoto = {
 			factor = 500
 		}
 		province_modifiers = {
-			
+			local_development_cost = -0.5
 		}
 		area_modifier = {
 			
@@ -17786,8 +17787,8 @@ imperial_city_kyoto = {
 			
 		}
 		country_modifiers = {
-			all_estate_loyalty_equilibrium = 0.1
-			reduced_liberty_desire = 10 
+			#all_estate_loyalty_equilibrium = 0.1
+			#reduced_liberty_desire = 10 
 		}	
 		on_upgraded = {
 			center_of_trade = 1
@@ -17802,31 +17803,21 @@ imperial_city_kyoto = {
 			factor = 1000
 		}
 		province_modifiers = {
+			local_development_cost = -1.0
 		}
 		area_modifier = {
 			
 		}
 		country_modifiers = {
-			all_estate_loyalty_equilibrium = 0.1
-			reduced_liberty_desire = 10
-			max_absolutism = 10
+			legitimacy = 0.5
+			republican_tradition = 0.1
+			devotion = 0.5 
+			horde_unity = 0.5
+			#all_estate_loyalty_equilibrium = 0.1
+			#reduced_liberty_desire = 10
+			#max_absolutism = 10
 		}
-		on_upgraded = {
-			owner = { 
-				change_ruler_stat = {
-					type = adm
-					amount = 1
-				}
-				change_ruler_stat = {
-					type = dip
-					amount = 1
-				}
-				change_ruler_stat = {
-					type = mil
-					amount = 1
-				}
-			}
-		}
+
 	}
 }
 
