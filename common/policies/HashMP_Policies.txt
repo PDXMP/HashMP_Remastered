@@ -741,7 +741,8 @@ h_plutocracy_influence = {
 		full_idea_group = influence_ideas
 	}
 	
-	infantry_power = 0.1
+	yearly_army_professionalism = 0.002
+	army_tradition = 0.5
 
 	effect = {}
 	removed_effect = {}
