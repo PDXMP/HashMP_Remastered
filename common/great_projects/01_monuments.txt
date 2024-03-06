@@ -18444,14 +18444,15 @@ shah_rukn_e_alam_tomb = {
 			factor = 250
 		}
 		province_modifiers = {
-			
+			local_manpower_modifier = 0.5
+			local_center_of_trade_upgrade_cost = -0.33
 		}
 		area_modifier = {
 			
 		}
 		country_modifiers = {
-			tolerance_own = 1
-			relation_with_heretics = 10
+			#tolerance_own = 1
+			#relation_with_heretics = 10
 		}
 		on_upgraded = {
 		}
@@ -18465,7 +18466,8 @@ shah_rukn_e_alam_tomb = {
 			factor = 500
 		}
 		province_modifiers = {
-			
+			local_manpower_modifier = 1.0
+			local_center_of_trade_upgrade_cost = -0.33
 		}
 		area_modifier = {
 			
@@ -18491,11 +18493,12 @@ shah_rukn_e_alam_tomb = {
 		province_modifiers = {
 		}
 		area_modifier = {
-			
+			local_manpower_modifier = 1.0
+			local_center_of_trade_upgrade_cost = -0.33
 		}
 		country_modifiers = {
-			tolerance_own = 2
-			relation_with_heretics = 20
+			prestige = 0.25
+			tolerance_own = 1
 		}
 		on_upgraded = {
 			custom_tooltip = enable_baseline_invite_scholar_tt
