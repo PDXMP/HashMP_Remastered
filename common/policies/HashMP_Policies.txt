@@ -1512,8 +1512,8 @@ h_quality_influence = {
 		full_idea_group = influence_ideas
 	}
 	
-	advisor_cost = -0.075
-	advisor_pool = 1
+	development_cost = -0.05
+	dip_advisor_cost = -0.1
 
 	effect = {}
 	removed_effect = {}
