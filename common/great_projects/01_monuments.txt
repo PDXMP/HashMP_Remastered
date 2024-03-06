@@ -9150,7 +9150,8 @@ kaaba = {
 		}
 
 		#what modifiers are added to the province when we have this project here on this tier
-		province_modifiers = {			
+		province_modifiers = {
+			local_development_cost = -0.3
 		}
 		
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -9161,6 +9162,7 @@ kaaba = {
 		country_modifiers = {
 			prestige = 0.1
 			religious_unity = 0.1
+			global_tax_income = 6
 		}
 		conditional_modifier = {
 			tooltip_potential = {
@@ -9205,6 +9207,7 @@ kaaba = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+			local_development_cost = -0.35
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -9215,7 +9218,8 @@ kaaba = {
 		country_modifiers = {
 			prestige = 0.25
 			religious_unity = 0.15
-			warscore_cost_vs_other_religion = -0.05
+			#warscore_cost_vs_other_religion = -0.05
+			global_tax_income = 12
 		}
 
 		conditional_modifier = {
@@ -9261,6 +9265,7 @@ kaaba = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+			local_development_cost = -0.35
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -9271,7 +9276,9 @@ kaaba = {
 		country_modifiers = {
 			prestige = 0.5
 			religious_unity = 0.2
-			warscore_cost_vs_other_religion = -0.1
+			#warscore_cost_vs_other_religion = -0.1
+			global_tax_modifier = 0.1
+			global_tax_income = 24
 		}
 
 		conditional_modifier = {
