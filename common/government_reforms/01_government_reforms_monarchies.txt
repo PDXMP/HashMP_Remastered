@@ -1406,8 +1406,8 @@ caliphate_reform = {
 		global_missionary_strength = 0.02
 	}
 	custom_attributes = {
-		enables_divine_idea_group = yes
-		enables_aristocratic_idea_group = no
+		#enables_divine_idea_group = yes
+		#enables_aristocratic_idea_group = no
 	}
 	conditional = {
 		allow = { has_dlc = "Cradle of Civilization" }
@@ -1548,8 +1548,8 @@ persian_government_reform = {
 		innovativeness_gain = 0.25
 	}
 	custom_attributes = {
-		enables_divine_idea_group = yes
-		enables_aristocratic_idea_group = no
+		#enables_divine_idea_group = yes
+		#enables_aristocratic_idea_group = no
 	}
 	maintain_dynasty = yes
 	conditional = {
@@ -1597,8 +1597,8 @@ zoroastrian_persian_government_reform = {
 		monarch_admin_power = 2
 	}
 	custom_attributes = {
-		enables_divine_idea_group = yes
-		enables_aristocratic_idea_group = no
+		#enables_divine_idea_group = yes
+		#enables_aristocratic_idea_group = no
 	}
 	maintain_dynasty = yes
 	conditional = {
@@ -1777,8 +1777,8 @@ stadthalter_monarchy_reform = {
 	}
 
 	custom_attributes = {
-		enables_plutocratic_idea_group = yes
-		enables_aristocratic_idea_group = no
+		#enables_plutocratic_idea_group = yes
+		#enables_aristocratic_idea_group = no
 		has_dutch_election = yes
 	}
 	conditional = {
@@ -2747,8 +2747,8 @@ feudal_theocracy = {
 		}
 	}
 	custom_attributes = {
-		enables_divine_idea_group = yes
-		enables_aristocratic_idea_group = no
+		#enables_divine_idea_group = yes
+		#enables_aristocratic_idea_group = no
 	}
 }
 
@@ -3798,8 +3798,8 @@ livonian_trade_monarchy = {
 		burghers_influence_modifier = 0.05
 	}
 	custom_attributes = {
-		enables_plutocratic_idea_group = yes
-		enables_aristocratic_idea_group = no
+		#enables_plutocratic_idea_group = yes
+		#enables_aristocratic_idea_group = no
 	}
 	boost_income = yes
 	conditional = {
@@ -3876,8 +3876,8 @@ livonian_theocratic_monarchy = {
 		no_stability_loss_on_monarch_death = yes
 	}
 	custom_attributes = {
-		enables_aristocratic_idea_group = no
-		enables_divine_idea_group = yes
+		#enables_aristocratic_idea_group = no
+		#enables_divine_idea_group = yes
 	}
 }
 

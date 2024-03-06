@@ -6,8 +6,8 @@ republic_mechanic = {
 	duration = 4
 	has_term_election = yes
 	custom_attributes = {
-		enables_plutocratic_idea_group = yes
-		enables_aristocratic_idea_group = no
+		#enables_plutocratic_idea_group = yes
+		#enables_aristocratic_idea_group = no
 	}
 
 	modifiers = {
@@ -43,8 +43,8 @@ oligarchy_reform = {
 		global_unrest = -0.5
 	}
 	custom_attributes = {
-		enables_plutocratic_idea_group = yes
-		enables_aristocratic_idea_group = no
+		#enables_plutocratic_idea_group = yes
+		#enables_aristocratic_idea_group = no
 	}
 	ai = {
 		factor = 0.5 #generic
@@ -70,8 +70,8 @@ signoria_reform = {
 		max_absolutism = 10
 	}
 	custom_attributes = {
-		enables_plutocratic_idea_group = yes
-		enables_aristocratic_idea_group = no
+		#enables_plutocratic_idea_group = yes
+		#enables_aristocratic_idea_group = no
 		enables_nepotism = yes
 	}
 	ai = {
@@ -119,8 +119,8 @@ protectorate_parliament_reform = {
 	has_term_election = no
 	custom_attributes = {
 		locked_government_type = yes
-		enables_plutocratic_idea_group = yes
-		enables_aristocratic_idea_group = no
+		#enables_plutocratic_idea_group = yes
+		#enables_aristocratic_idea_group = no
 		cannot_become_dictatorship = yes
 	}
 }
@@ -164,8 +164,8 @@ parliamentary_republic_reform = {
 	}
 	duration = 5
 	custom_attributes = {
-		enables_plutocratic_idea_group = yes
-		enables_aristocratic_idea_group = no
+		#enables_plutocratic_idea_group = yes
+		#enables_aristocratic_idea_group = no
 		cannot_become_dictatorship = yes
 	}
 }
@@ -253,8 +253,8 @@ prussian_republic_reform = {
 	}
 	
 	custom_attributes = {
-		enables_plutocratic_idea_group = yes
-		enables_aristocratic_idea_group = no
+		#enables_plutocratic_idea_group = yes
+		#enables_aristocratic_idea_group = no
 		generals_become_rulers = yes
 	}
 	
@@ -320,8 +320,8 @@ merchants_reform = {
 	# 	trade_city_reform = trading_city
 	# }
 	custom_attributes = {
-		#enables_plutocratic_idea_group = yes
-		#enables_aristocratic_idea_group = no
+		##enables_plutocratic_idea_group = yes
+		##enables_aristocratic_idea_group = no
 		is_merchant_republic = yes
 		elections_increase_factions_influence = yes
 	}
@@ -405,8 +405,8 @@ venice_merchants_reform = {
 	# 	trade_city_reform = trading_city
 	# }
 	custom_attributes = {
-		enables_plutocratic_idea_group = yes
-		enables_aristocratic_idea_group = no
+		#enables_plutocratic_idea_group = yes
+		#enables_aristocratic_idea_group = no
 		lottery_election = yes
 		election_on_death = yes
 		#is_merchant_republic = yes
@@ -514,8 +514,8 @@ noble_elite_reform = {
 	duration = 8
 
 	custom_attributes = {
-		enables_plutocratic_idea_group = no
-		enables_aristocratic_idea_group = yes
+		#enables_plutocratic_idea_group = no
+		#enables_aristocratic_idea_group = yes
 	}
 	ai = {
 		factor = 0.5 #generic
@@ -542,8 +542,8 @@ presidential_despot_reform = {
 
 	custom_attributes = {
 		locked_government_type = yes
-		enables_plutocratic_idea_group = yes
-		enables_aristocratic_idea_group = no
+		#enables_plutocratic_idea_group = yes
+		#enables_aristocratic_idea_group = no
 	}
 	has_term_election = no
 }
@@ -567,8 +567,8 @@ military_dictatorship_reform = {
 	custom_attributes = {
 		generals_become_rulers = yes
 		locked_government_type = yes
-		enables_plutocratic_idea_group = yes
-		enables_aristocratic_idea_group = no
+		#enables_plutocratic_idea_group = yes
+		#enables_aristocratic_idea_group = no
 	}
 }
 
@@ -613,8 +613,8 @@ revolutionary_republic_reform = {
 
 	custom_attributes = {
 		cannot_ally_non_republics_or_non_rev = yes
-		enables_plutocratic_idea_group = yes
-		enables_aristocratic_idea_group = no
+		#enables_plutocratic_idea_group = yes
+		#enables_aristocratic_idea_group = no
 		locked_government_type = yes
 	}
 
@@ -716,8 +716,8 @@ junior_revolutionary_republic_reform = {
 
 	custom_attributes = {
 		cannot_ally_non_republics_or_non_rev = yes
-		enables_plutocratic_idea_group = yes
-		enables_aristocratic_idea_group = no
+		#enables_plutocratic_idea_group = yes
+		#enables_aristocratic_idea_group = no
 		locked_government_type = yes
 	}
 
@@ -817,8 +817,8 @@ peasants_republic = {
 		}
 	}
 	custom_attributes = {
-		enables_plutocratic_idea_group = yes
-		enables_aristocratic_idea_group = no
+		#enables_plutocratic_idea_group = yes
+		#enables_aristocratic_idea_group = no
 		disables_estate_nobles = yes
 		is_peasants_republic = yes
 	}
@@ -864,8 +864,8 @@ ikko_ikki_republic_reform = {
 		}
 	}
 	custom_attributes = {
-		enables_plutocratic_idea_group = yes
-		enables_aristocratic_idea_group = no
+		#enables_plutocratic_idea_group = yes
+		#enables_aristocratic_idea_group = no
 		disables_estate_nobles = yes
 		is_peasants_republic = yes
 	}
@@ -896,8 +896,8 @@ kongsi_federation = {
 		max_absolutism = -10
 	}
 	custom_attributes = {
-		enables_plutocratic_idea_group = yes
-		enables_aristocratic_idea_group = no
+		#enables_plutocratic_idea_group = yes
+		#enables_aristocratic_idea_group = no
 		allow_draft_transport_ships = yes
 		disables_estate_nobles = yes
 	}
@@ -930,8 +930,8 @@ free_city = {
 
 	custom_attributes = {
 		locked_government_type = yes
-		enables_plutocratic_idea_group = yes
-		enables_aristocratic_idea_group = no
+		#enables_plutocratic_idea_group = yes
+		#enables_aristocratic_idea_group = no
 	}
 	duration = 4
 }
@@ -959,8 +959,8 @@ trading_city = {
 
 	custom_attributes = {
 		locked_government_type = yes
-		enables_plutocratic_idea_group = yes
-		enables_aristocratic_idea_group = no
+		#enables_plutocratic_idea_group = yes
+		#enables_aristocratic_idea_group = no
 		elections_increase_factions_influence = yes
 	}
 
@@ -1010,8 +1010,8 @@ ambrosian_republic = {
 		max_absolutism = 10
 	}
 	custom_attributes = {
-		enables_plutocratic_idea_group = yes
-		enables_aristocratic_idea_group = no
+		#enables_plutocratic_idea_group = yes
+		#enables_aristocratic_idea_group = no
 	}
 	duration = 4
 }
@@ -1057,8 +1057,8 @@ veche_republic = {
 	fixed_rank = 1
 
 	custom_attributes = {
-		#enables_plutocratic_idea_group = yes
-		#enables_aristocratic_idea_group = no
+		##enables_plutocratic_idea_group = yes
+		##enables_aristocratic_idea_group = no
 		elections_increase_factions_influence = yes
 	}
 	# conditional = {
@@ -1156,8 +1156,8 @@ great_veche_republic = {
 	}
 
 	# custom_attributes = {
-	# 	enables_plutocratic_idea_group = yes
-	# 	enables_aristocratic_idea_group = no
+	# 	#enables_plutocratic_idea_group = yes
+	# 	#enables_aristocratic_idea_group = no
 	# }
 	# conditional = {
 	# 	allow = {
@@ -1218,23 +1218,23 @@ great_russian_republic_reform = {
 		max_absolutism = 50
 	}
 
-	custom_attributes = {
-		enables_plutocratic_idea_group = yes
-		enables_aristocratic_idea_group = no
-	}
-	conditional = {
-		allow = {
-			has_dlc = "Res Publica"
-		}
-		can_use_trade_post = yes
-	}
-	conditional = {
-		allow = {
-			has_dlc = "Mare Nostrum"
-		}
-		can_form_trade_league = yes
-		trade_city_reform = trading_city
-	}
+	# custom_attributes = {
+	# 	#enables_plutocratic_idea_group = yes
+	# 	#enables_aristocratic_idea_group = no
+	# }
+	# conditional = {
+	# 	allow = {
+	# 		has_dlc = "Res Publica"
+	# 	}
+	# 	can_use_trade_post = yes
+	# }
+	# conditional = {
+	# 	allow = {
+	# 		has_dlc = "Mare Nostrum"
+	# 	}
+	# 	can_form_trade_league = yes
+	# 	trade_city_reform = trading_city
+	# }
 
 	conditional = {
 		allow = { has_dlc = "Third Rome" }
@@ -1284,8 +1284,8 @@ american_republic = {
 	}
 
 	custom_attributes = {
-		enables_plutocratic_idea_group = yes
-		enables_aristocratic_idea_group = no
+		#enables_plutocratic_idea_group = yes
+		#enables_aristocratic_idea_group = no
 		disables_estate_nobles = yes
 	}
 	conditional = {
@@ -1335,8 +1335,8 @@ federal_republic = {
 	}
 
 	custom_attributes = {
-		enables_plutocratic_idea_group = yes
-		enables_aristocratic_idea_group = no
+		#enables_plutocratic_idea_group = yes
+		#enables_aristocratic_idea_group = no
 		disables_estate_nobles = yes
 	}
 	conditional = {
@@ -1380,8 +1380,8 @@ colonial_government = {
 
 	custom_attributes = {
 		locked_government_type = yes
-		enables_plutocratic_idea_group = yes
-		enables_aristocratic_idea_group = no
+		#enables_plutocratic_idea_group = yes
+		#enables_aristocratic_idea_group = no
 	}
 	effect = {
 		hidden_effect = {
@@ -1470,8 +1470,8 @@ crown_colony_government = {
 
 	custom_attributes = {
 		locked_government_type = yes
-		enables_plutocratic_idea_group = yes
-		enables_aristocratic_idea_group = no
+		#enables_plutocratic_idea_group = yes
+		#enables_aristocratic_idea_group = no
 	}
 	duration = 4
 }
@@ -1505,8 +1505,8 @@ private_enterprise_colony_government = {
 
 	custom_attributes = {
 		locked_government_type = yes
-		enables_plutocratic_idea_group = yes
-		enables_aristocratic_idea_group = no
+		#enables_plutocratic_idea_group = yes
+		#enables_aristocratic_idea_group = no
 	}
 	effect = {
 		hidden_effect = {
@@ -1564,8 +1564,8 @@ self_governing_colony_government = {
 
 	custom_attributes = {
 		locked_government_type = yes
-		enables_plutocratic_idea_group = yes
-		enables_aristocratic_idea_group = no
+		#enables_plutocratic_idea_group = yes
+		#enables_aristocratic_idea_group = no
 		#enables_estate_nobles = yes
 		#enables_estate_burghers = yes
 	}
@@ -1626,8 +1626,8 @@ trade_company_government = {
 
 	custom_attributes = {
 		locked_government_type = yes
-		enables_plutocratic_idea_group = yes
-		enables_aristocratic_idea_group = no
+		#enables_plutocratic_idea_group = yes
+		#enables_aristocratic_idea_group = no
 		enables_estate_burghers = yes
 		is_merchant_republic = yes
 		elections_increase_factions_influence = yes
@@ -1691,8 +1691,8 @@ english_parliamentary_republic_government = {
 	}
 	duration = 5
 	custom_attributes = {
-		enables_plutocratic_idea_group = yes
-		enables_aristocratic_idea_group = no
+		#enables_plutocratic_idea_group = yes
+		#enables_aristocratic_idea_group = no
 	}
 	
 	conditional = {
@@ -1746,8 +1746,8 @@ roman_republic_government = {
 	}
 
 	custom_attributes = {
-		enables_plutocratic_idea_group = yes
-		enables_aristocratic_idea_group = no
+		#enables_plutocratic_idea_group = yes
+		#enables_aristocratic_idea_group = no
 	}
 	conditional = {
 		allow = { has_dlc = "King of Kings" }
@@ -1783,8 +1783,8 @@ civic_republicanism_government = {
 	conditional = {
 		allow = { has_dlc = "Domination" }
 		custom_attributes = {
-			enables_plutocratic_idea_group = yes
-			enables_aristocratic_idea_group = no
+			#enables_plutocratic_idea_group = yes
+			#enables_aristocratic_idea_group = no
 			has_limited_terms = yes
 			has_candidate_bonus = yes
 		}
@@ -1793,8 +1793,8 @@ civic_republicanism_government = {
 	conditional = {
 		allow = { NOT = { has_dlc = "Domination" } }
 		custom_attributes = {
-			enables_plutocratic_idea_group = yes
-			enables_aristocratic_idea_group = no
+			#enables_plutocratic_idea_group = yes
+			#enables_aristocratic_idea_group = no
 		}
 	}
 	effect = {
@@ -1844,8 +1844,8 @@ calvinist_republic_government = {
 	}
 
 	custom_attributes = {
-		enables_plutocratic_idea_group = no
-		enables_divine_idea_group = yes
+		#enables_plutocratic_idea_group = no
+		#enables_divine_idea_group = yes
 	}
 	duration = 4
 }
@@ -1892,8 +1892,8 @@ dutch_republic = {
 	}
 
 	custom_attributes = {
-		enables_plutocratic_idea_group = yes
-		enables_aristocratic_idea_group = no
+		#enables_plutocratic_idea_group = yes
+		#enables_aristocratic_idea_group = no
 		has_dutch_election = yes
 	}
 	conditional = {
@@ -1966,8 +1966,8 @@ cossacks_reform = {
 	}
 
 	custom_attributes = {
-		enables_plutocratic_idea_group = yes
-		enables_aristocratic_idea_group = no
+		#enables_plutocratic_idea_group = yes
+		#enables_aristocratic_idea_group = no
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 60
