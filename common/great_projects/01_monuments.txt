@@ -8082,6 +8082,7 @@ sankin_kotai_palaces = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+			local_manpower_modifier = 0.25
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -8090,8 +8091,8 @@ sankin_kotai_palaces = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			war_taxes_cost_modifier = -0.5
-			prestige_from_land = 0.5
+			#war_taxes_cost_modifier = -0.5
+			#prestige_from_land = 0.5
 		}
 
 		#what effects happen when this tier is achieved
@@ -8112,6 +8113,7 @@ sankin_kotai_palaces = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+			local_manpower_modifier = 0.25
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -8120,9 +8122,10 @@ sankin_kotai_palaces = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			war_taxes_cost_modifier = -0.5
-			prestige_from_land = 1
-			general_cost = -0.1
+			#war_taxes_cost_modifier = -0.5
+			#prestige_from_land = 1
+			prestige_from_land = 0.25
+			#general_cost = -0.1
 		}
 
 		#what effects happen when this tier is achieved
@@ -8147,14 +8150,15 @@ sankin_kotai_palaces = {
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
+			local_manpower_modifier = 0.5
 			regiment_recruit_speed = -0.25
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			war_taxes_cost_modifier = -1
-			prestige_from_land = 1
-			general_cost = -0.1
+			#war_taxes_cost_modifier = -1
+			prestige_from_land = 0.5
+			#general_cost = -0.1
 		}
 
 		#what effects happen when this tier is achieved
@@ -17811,6 +17815,9 @@ imperial_city_kyoto = {
 		}
 		area_modifier = {
 			
+		}
+		region_modifier = { 
+			local_unrest = -2 
 		}
 		country_modifiers = {
 			legitimacy = 0.5
