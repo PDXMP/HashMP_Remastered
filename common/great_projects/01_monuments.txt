@@ -8935,6 +8935,7 @@ el_escorial = {
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
 			local_development_cost = -0.5
+			local_governing_cost = -0.5
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -8943,10 +8944,10 @@ el_escorial = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			global_autonomy = -0.025
-			governing_capacity_modifier = 0.05
-			global_tariffs = 0.1
-			treasure_fleet_income = 0.1
+			#global_autonomy = -0.025
+			#governing_capacity_modifier = 0.05
+			#global_tariffs = 0.1
+			#treasure_fleet_income = 0.1
 		}
 
 		#what effects happen when this tier is achieved
@@ -8968,6 +8969,8 @@ el_escorial = {
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
 			local_development_cost = -1.0
+			local_governing_cost = -1.0
+			local_governing_cost_increase = -20
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -8976,7 +8979,7 @@ el_escorial = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			governing_capacity_modifier = 0.1
+			#governing_capacity_modifier = 0.1
 		}
 
 		#what effects happen when this tier is achieved
