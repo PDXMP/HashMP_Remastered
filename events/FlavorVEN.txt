@@ -19,7 +19,7 @@ country_event = {
 	trigger ={
 		is_year = 1450
 		NOT = { is_year = 1550 }
-		tag = VEN
+		is_or_was_tag = { tag = VEN }
 		151 = {
 			owned_by = TUR
 		}
@@ -110,7 +110,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger ={
-		tag = VEN
+		is_or_was_tag = { tag = VEN }
 		NOT = { exists = BYZ }
 		NOT = { is_year = 1550 }
 		151 = {
@@ -148,7 +148,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger ={
-		tag = VEN
+		is_or_was_tag = { tag = VEN }
 		NOT = { is_year = 1500 }
 		145 = {
 			owned_by = TUR
@@ -223,7 +223,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger ={
-		tag = VEN
+		is_or_was_tag = { tag = VEN }
 		is_year = 1460
 		NOT = { is_year = 1550 }
 		num_of_loans = 1
@@ -258,7 +258,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger ={
-		tag = VEN
+		is_or_was_tag = { tag = VEN }
 		religion = catholic
 		is_at_war = no
 		NOT = { is_year = 1550 }
@@ -303,7 +303,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger ={
-		tag = VEN
+		is_or_was_tag = { tag = VEN }
 		is_year = 1475
 		NOT = { is_year = 1500 }
 	}	
@@ -329,7 +329,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger ={
-		tag = VEN
+		is_or_was_tag = { tag = VEN }
 		has_country_modifier = ven_venetian_first
 		exists = PAP
 		OR = {
@@ -388,7 +388,7 @@ country_event = {
 	picture = MERCHANTS_TALKING_eventPicture
 
 	trigger = {
-		tag = VEN
+		is_or_was_tag = { tag = VEN }
 		exists = MAM
 		exists = POR
 		4346 = { # Gulf of Aden
@@ -456,7 +456,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger ={
-		tag = VEN
+		is_or_was_tag = { tag = VEN }
 		owns = 112
 		government = republic
 		is_year = 1500
@@ -494,7 +494,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger ={
-		tag = VEN
+		is_or_was_tag = { tag = VEN }
 		has_country_modifier = ven_venetian_first
 		is_year = 1500
 		NOT = {
@@ -542,7 +542,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger ={
-		tag = VEN
+		is_or_was_tag = { tag = VEN }
 		NOT = { has_idea = quest_for_the_new_world }
 		exists = SPA
 		SPA = {
@@ -583,7 +583,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger ={
-		tag = VEN
+		is_or_was_tag = { tag = VEN }
 		is_year = 1500
 		NOT = { is_year = 1600 }
 		
@@ -624,7 +624,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger ={
-		tag = VEN
+		is_or_was_tag = { tag = VEN }
 		owns = 112
 		mil_tech = 9
 		NOT = { is_year = 1600 }
@@ -665,7 +665,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = VEN
+		is_or_was_tag = { tag = VEN }
 		is_year = 1500
 		NOT = { is_year = 1700 }
 	}
@@ -708,7 +708,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = VEN
+		is_or_was_tag = { tag = VEN }
 		is_year = 1585
 		NOT = { is_year = 1595 }
 	}
@@ -739,7 +739,7 @@ country_event = {
 	fire_only_once = yes
 
 	trigger = {
-		tag = VEN
+		is_or_was_tag = { tag = VEN }
 		is_year = 1605
 		NOT = { is_year = 1610 }
 	}
@@ -763,7 +763,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = VEN
+		is_or_was_tag = { tag = VEN }
 		is_year = 1610
 		NOT = { is_year = 1640 }
 	}
@@ -803,7 +803,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = VEN
+		is_or_was_tag = { tag = VEN }
 		is_year = 1460
 		NOT = { is_year = 1500 }
 		has_government_attribute = is_merchant_republic
@@ -846,7 +846,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = VEN
+		is_or_was_tag = { tag = VEN }
 		has_government_attribute = is_merchant_republic
 		has_country_modifier = ven_ten_restrained
 	}
@@ -892,7 +892,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = VEN
+		is_or_was_tag = { tag = VEN }
 		is_year = 1520
 		NOT = { is_year = 1560 }
 		has_government_attribute = is_merchant_republic
@@ -928,7 +928,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = VEN
+		is_or_was_tag = { tag = VEN }
 		151 = {
 			NOT = { owned_by = BYZ }
 			NOT = { owned_by = VEN }
@@ -967,7 +967,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = VEN
+		is_or_was_tag = { tag = VEN }
 		has_country_modifier = ven_barnabotti
 		is_year = 1650
 		NOT = { is_year = 1670 }
@@ -1005,7 +1005,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = VEN
+		is_or_was_tag = { tag = VEN }
 		is_year = 1600
 		NOT = { is_year = 1650 }
 		has_government_attribute = is_merchant_republic
@@ -1074,7 +1074,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = VEN
+		is_or_was_tag = { tag = VEN }
 		is_year = 1628
 		NOT = { is_year = 1635 }
 		owns = 112
@@ -1110,7 +1110,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = VEN
+		is_or_was_tag = { tag = VEN }
 		is_year = 1645
 		NOT = { is_year = 1720 }
 		has_country_flag = ven_great_plague
@@ -1146,7 +1146,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = VEN
+		is_or_was_tag = { tag = VEN }
 		is_year = 1498
 		NOT = { is_year = 1515 }
 	}
@@ -1172,7 +1172,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = VEN
+		is_or_was_tag = { tag = VEN }
 		151 = {
 			NOT = { owned_by = BYZ }
 			NOT = { owned_by = VEN }
@@ -1217,7 +1217,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = VEN
+		is_or_was_tag = { tag = VEN }
 		is_year = 1730
 		NOT = { is_year = 1770 }
 		owns = 112
@@ -1246,7 +1246,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = VEN
+		is_or_was_tag = { tag = VEN }
 		is_year = 1570
 		NOT = { is_year = 1590 }
 	}
@@ -1276,7 +1276,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = VEN
+		is_or_was_tag = { tag = VEN }
 		is_year = 1550
 		NOT = { is_year = 1580 }
 	}
@@ -1310,7 +1310,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = VEN
+		is_or_was_tag = { tag = VEN }
 		is_year = 1550
 		NOT = { is_year = 1610 }
 	}
@@ -1337,7 +1337,7 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		tag = VEN
+		is_or_was_tag = { tag = VEN }
 		not = { government = republic }
 		OR = {
 			has_country_modifier = ven_nobility_bought
