@@ -10184,6 +10184,42 @@ GLH_ideas = {
 	}
 }
 
+SHY_ideas = {
+	start = {
+		core_creation = -0.25
+		years_of_nationalism = -10
+	}
+	bonus = {
+		stability_cost_modifier = -0.1
+	}
+	trigger = {
+		tag = SHY
+	}
+	free = yes
+	
+	life_of_steppe_warrior = {
+		cavalry_power = 0.20
+	}
+	traditions_of_the_great_khan = {
+		land_attrition = -0.2
+	}
+	horse_supplies = {
+		manpower_recovery_speed = 0.20
+	}
+	steppe_leaders = {
+		leader_land_shock = 1
+	}
+	tradition_of_conquest = { 
+		land_maintenance_modifier = -0.05
+	}
+	shy_logistics_of_khan = {
+		global_manpower_modifier = 0.25
+	}
+	glory_of_conquest = {
+		ae_impact = -0.10
+	}
+}
+
 YUA_ideas = {
 	start = {
 		global_manpower_modifier = 0.25
