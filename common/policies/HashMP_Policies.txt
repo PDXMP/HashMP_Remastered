@@ -1214,7 +1214,7 @@ h_defensive_exploration = {
 		full_idea_group = exploration_ideas
 	}
 	
-	naval_morale = 0.1
+	naval_morale = 0.075
 
 	effect = {}
 	removed_effect = {}
