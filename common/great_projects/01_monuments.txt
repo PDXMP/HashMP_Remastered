@@ -11408,14 +11408,18 @@ ellora_caves = {
 			factor = 250
 		}
 		province_modifiers = {
+			local_manpower_modifier = 0.5
+			local_development_cost = -0.1
+			local_governing_cost = -0.25
+			local_state_maintenance_modifier = -0.25
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-			tolerance_own = 0.25
-			tolerance_heretic = 0.25
-			tolerance_heathen = 0.25
-			brahmins_hindu_loyalty_modifier = 0.05
+			#tolerance_own = 0.25
+			#tolerance_heretic = 0.25
+			#tolerance_heathen = 0.25
+			#brahmins_hindu_loyalty_modifier = 0.05
 		}
 		on_upgraded = {
 		}
@@ -11429,14 +11433,18 @@ ellora_caves = {
 			factor = 500
 		}
 		province_modifiers = {
+			local_manpower_modifier = 0.5
+			local_development_cost = -0.2
+			local_governing_cost = -0.5
+			local_state_maintenance_modifier = -0.5
 		}
 		area_modifier = {
 		}
 		country_modifiers = {
-			tolerance_own = 0.5
-			tolerance_heretic = 0.5
-			tolerance_heathen = 0.5
-			brahmins_hindu_loyalty_modifier = 0.1
+			#tolerance_own = 0.5
+			#tolerance_heretic = 0.5
+			#tolerance_heathen = 0.5
+			#brahmins_hindu_loyalty_modifier = 0.1
 		}
 		on_upgraded = {
 		}
@@ -11452,12 +11460,16 @@ ellora_caves = {
 		province_modifiers = {
 		}
 		area_modifier = {
+			local_manpower_modifier = 1.0
+			local_development_cost = -0.25
+			local_governing_cost = -0.5
+			local_state_maintenance_modifier = -0.75
 		}
 		country_modifiers = {
-			tolerance_own = 1
-			tolerance_heretic = 1
-			tolerance_heathen = 1
-			brahmins_hindu_loyalty_modifier = 0.15
+			#tolerance_own = 1
+			#tolerance_heretic = 1
+			#tolerance_heathen = 1
+			#brahmins_hindu_loyalty_modifier = 0.15
 		}
 		on_upgraded = {
 		}
