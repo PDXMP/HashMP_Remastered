@@ -2404,7 +2404,7 @@ himeji_castle = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			prestige = 0.5
+			#prestige = 0.5
 		}
 
 		#what effects happen when this tier is achieved
@@ -2434,9 +2434,9 @@ himeji_castle = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			prestige = 0.5		
-			spy_offence = 0.1
-			global_spy_defence = 0.2
+			#prestige = 0.5		
+			#spy_offence = 0.1
+			#global_spy_defence = 0.2
 		}
 
 		#what effects happen when this tier is achieved
@@ -2462,14 +2462,16 @@ himeji_castle = {
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
-			local_defensiveness = 0.5			
+			local_defensiveness = 0.5
+			local_development_cost = -0.05
+			local_defender_dice_roll_bonus = 1 
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			prestige = 0.5	
-			spy_offence = 0.15
-			global_spy_defence = 0.25
+			#prestige = 0.5	
+			#spy_offence = 0.15
+			#global_spy_defence = 0.25
 		}
 
 		#what effects happen when this tier is achieved
