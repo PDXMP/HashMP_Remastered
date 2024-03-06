@@ -98,7 +98,7 @@ country_event = {
 		OR = {
 			has_country_flag = naples_renaissance_flag
 			AND = {
-				NOT = { has_mission = emp_nap_renaissance_city }
+				NOT = { has_mission = h_nap_renaissance_city }
 				OR = {
 					is_or_was_tag = { tag = NAP }
 					tag = TTS
