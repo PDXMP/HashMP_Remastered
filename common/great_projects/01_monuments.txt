@@ -115,7 +115,7 @@ hagia_sophia = {
 		country_modifiers = {
 			tolerance_own = 0.25
 			tolerance_heretic = 0.25
-			church_loyalty_modifier = 0.05
+			#church_loyalty_modifier = 0.05
 		}
 
 		#what effects happen when this tier is achieved
@@ -149,7 +149,7 @@ hagia_sophia = {
 			monthly_piety_accelerator = 0.001
 			yearly_patriarch_authority = 0.002
 			papal_influence = 0.5
-			church_loyalty_modifier = 0.1
+			#church_loyalty_modifier = 0.1
 		}
 
 		#what effects happen when this tier is achieved
@@ -189,7 +189,7 @@ hagia_sophia = {
 			monthly_piety_accelerator = 0.002
 			yearly_patriarch_authority = 0.005
 			papal_influence = 1
-			church_loyalty_modifier = 0.15
+			church_loyalty_modifier = 0.05
 		}
 
 		#what effects happen when this tier is achieved
