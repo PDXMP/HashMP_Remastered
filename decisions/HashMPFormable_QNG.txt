@@ -5,72 +5,55 @@ country_decisions = {
 			tag = MCH
 			was_never_end_game_tag_trigger = yes
 			normal_or_historical_nations = yes
-			OR = {
-				ai = no
-				is_playing_custom_nation = no
-			}
-			OR = {
-				is_free_or_tributary_trigger = yes
-				ai = no
-			}
 			NOT = { exists = QNG }
 			NOT = { has_country_flag = manchu_dynasty_formed }
-
-			OR = {
-				ai = no
-				AND = {
-					ai = yes
-					num_of_cities = 5
-				}
-			}
 
 		}
 		provinces_to_highlight = {
 			OR = {
-				province_id = 704		# Liaoxi
-				province_id = 723		# Xilin Gol
-				province_id = 726		# Liaodong
-				province_id = 1816		# Beijing
+				area = weichang_area
+				area = datong_area
+				area = chengde_area
+				area = hebei_area
+				region = north_china_region
+				region = manchuria_region
 			}
-			NOT = { owned_by = ROOT }
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
 		}
 		allow = {
-			owns = 704		# Liaoxi
-			owns = 723		# Xilin Gol
-			owns = 726		# Liaodong
-			owns = 1816		# Beijing
-			1816 = {		# Beijing
-				is_state = yes
+			num_of_owned_provinces_with = {
+				value = 45
+				is_core = root
+				OR = {
+					region = manchuria_region
+				}
 			}
+			num_of_owned_provinces_with = {
+				value = 25
+				is_core = root
+				OR = {
+					region = north_china_region
+				}
+			}
+			weichang_area = { type = all is_core = ROOT owned_by = ROOT }
+			datong_area = { type = all is_core = ROOT owned_by = ROOT }
+			chengde_area = { type = all is_core = ROOT owned_by = ROOT }
+			hebei_area = { type = all is_core = ROOT owned_by = ROOT }
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
-			NOT = {
-				has_ruler_modifier = tribal_succession_crisis
-			}
-			if = {
-				limit = {
-					has_dlc = "Mandate of Heaven"
-					any_country = {
-						is_emperor_of_china = yes
-					}
-				}
-				is_emperor_of_china = yes
-			}
-			else_if = {
-				limit = {
-					has_dlc = "Common Sense"
-				}
-				government_rank = 3
-			}
-			else = {
-				total_development = 1000
-			}
 		}
 		effect = {
-			1816 = {
-				move_capital_effect = yes
-				change_culture = ROOT
-				add_core = QNG
+			if = {
+				limit = {
+					owns_core_province = 1816
+				}
+				1816 = {
+					move_capital_effect = yes
+					change_culture = ROOT
+				}
 			}
 			change_tag = QNG
 			on_change_tag_effect = yes
@@ -104,6 +87,7 @@ country_decisions = {
 					has_reform = steppe_horde
 				}
 				change_government = monarchy
+				add_government_reform = autocracy_reform
 				#set_legacy_government = despotic_monarchy
 			}
 			if = {
