@@ -1018,9 +1018,8 @@ h_offensive_court = {
 		full_idea_group = offensive_ideas
 		full_idea_group = court_ideas
 	}
-	
-	overextension_impact_modifier = -0.10
-	global_unrest = -1
+
+	advisor_cost = -0.1
 
 	effect = {}
 	removed_effect = {}
