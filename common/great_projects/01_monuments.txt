@@ -14759,12 +14759,13 @@ sun_temple_konarak = {
 			factor = 250
 		}
 		province_modifiers = {
+			local_production_efficiency = 0.3
+			trade_goods_size_modifier = 0.05
 		}
 		area_modifier = {
-			local_production_efficiency = 0.05
 		}
 		country_modifiers = {
-			religious_unity = 0.1			
+			#religious_unity = 0.1			
 		}
 		on_upgraded = {
 		}
@@ -14780,11 +14781,12 @@ sun_temple_konarak = {
 		province_modifiers = {
 		}
 		area_modifier = {
-			local_production_efficiency = 0.05
+			local_production_efficiency = 0.4
+			trade_goods_size_modifier = 0.05
 		}
 		country_modifiers = {
-			prestige_decay = -0.005
-			religious_unity = 0.15
+			#prestige_decay = -0.005
+			#religious_unity = 0.15
 		}
 		on_upgraded = {
 		}
@@ -14800,11 +14802,12 @@ sun_temple_konarak = {
 		province_modifiers = {
 		}
 		area_modifier = {
-			local_production_efficiency = 0.1
+			local_production_efficiency = 0.5
+			trade_goods_size_modifier = 0.1
 		}
 		country_modifiers = {
-			prestige_decay = -0.01
-			religious_unity = 0.25
+			#prestige_decay = -0.01
+			#religious_unity = 0.25
 		}
 		on_upgraded = {
 		}
