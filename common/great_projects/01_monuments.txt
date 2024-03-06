@@ -5153,6 +5153,9 @@ registan_square = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+			local_build_cost = -0.1
+			local_build_time = -0.1
+			local_development_cost = -0.05
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -5161,9 +5164,7 @@ registan_square = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			monthly_piety_accelerator = 0.001
-			stability_cost_modifier = -0.1
-			enforce_religion_cost = -0.05
+
 		}
 
 		#what effects happen when this tier is achieved
@@ -5184,6 +5185,10 @@ registan_square = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+			local_build_cost = -0.2
+			local_build_time = -0.2
+			local_development_cost = -0.1
+			local_defender_dice_roll_bonus = 1 
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -5192,9 +5197,10 @@ registan_square = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			monthly_piety_accelerator = 0.002
-			stability_cost_modifier = -0.15
-			enforce_religion_cost = -0.1
+			#monthly_piety_accelerator = 0.002
+			#stability_cost_modifier = -0.15
+			#enforce_religion_cost = -0.1
+			#build_cost = -0.05
 		}
 
 		#what effects happen when this tier is achieved
@@ -5219,13 +5225,19 @@ registan_square = {
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
+			local_build_cost = -0.25
+			local_build_time = -0.25
+			local_development_cost = -0.1
+			local_defender_dice_roll_bonus = 1 
+			local_defensiveness = 0.15
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			monthly_piety_accelerator = 0.003
-			stability_cost_modifier = -0.25
-			enforce_religion_cost = -0.15
+			#monthly_piety_accelerator = 0.003
+			#stability_cost_modifier = -0.25
+			#enforce_religion_cost = -0.15
+			#build_cost = -0.05
 		}
 
 		#what effects happen when this tier is achieved
@@ -18177,6 +18189,7 @@ itchan_kala = {
 			factor = 0
 		}
 		province_modifiers = {
+
 		}
 		area_modifier = {
 		}
@@ -18194,14 +18207,16 @@ itchan_kala = {
 			factor = 250
 		}
 		province_modifiers = {
-			
+			local_development_cost = -0.1
+			local_defensiveness = 0.05
+			local_production_efficiency = 0.2
 		}
 		area_modifier = {
 			
 		}
 		country_modifiers = {
-			placed_merchant_power_modifier = 1
-			center_of_trade_upgrade_cost = -0.1
+			#placed_merchant_power_modifier = 1
+			#center_of_trade_upgrade_cost = -0.1
 		}
 		on_upgraded = {
 		}
@@ -18215,7 +18230,10 @@ itchan_kala = {
 			factor = 500
 		}
 		province_modifiers = {
-			
+			local_development_cost = -0.1
+			local_defender_dice_roll_bonus = 1 
+			local_defensiveness = 0.15
+			local_production_efficiency = 0.4
 		}
 		area_modifier = {
 			
@@ -18224,9 +18242,9 @@ itchan_kala = {
 			
 		}
 		country_modifiers = {
-			placed_merchant_power_modifier = 1
-			center_of_trade_upgrade_cost = -0.2
-			reduced_trade_penalty_on_non_main_tradenode = 0.1
+			#placed_merchant_power_modifier = 1
+			#center_of_trade_upgrade_cost = -0.2
+			#reduced_trade_penalty_on_non_main_tradenode = 0.1
 		}	
 		on_upgraded = {
 		}
@@ -18242,12 +18260,15 @@ itchan_kala = {
 		province_modifiers = {
 		}
 		area_modifier = {
-			
+			local_development_cost = -0.1
+			local_defender_dice_roll_bonus = 1 
+			local_defensiveness = 0.15
+			local_production_efficiency = 0.4
 		}
 		country_modifiers = {
-			placed_merchant_power_modifier = 1
-			center_of_trade_upgrade_cost = -0.2
-			reduced_trade_penalty_on_non_main_tradenode = 0.25 
+			#placed_merchant_power_modifier = 1
+			#center_of_trade_upgrade_cost = -0.2
+			#reduced_trade_penalty_on_non_main_tradenode = 0.25 
 		}
 		on_upgraded = {
 			
