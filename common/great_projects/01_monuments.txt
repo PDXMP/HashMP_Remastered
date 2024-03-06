@@ -6704,8 +6704,8 @@ pyramid_of_cheops = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
-			build_time = -0.25
-			build_cost = -0.25
+			local_build_time = -0.25
+			local_build_cost = -0.25
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -6735,8 +6735,8 @@ pyramid_of_cheops = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
-			build_time = -0.5
-			build_cost = -0.5
+			local_build_time = -0.5
+			local_build_cost = -0.5
 			local_state_maintenance_modifier = -0.33
 		}
 
@@ -6767,8 +6767,8 @@ pyramid_of_cheops = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
-			build_time = -0.5
-			build_cost = -0.5
+			local_build_time = -0.5
+			local_build_cost = -0.5
 			local_state_maintenance_modifier = -0.33
 		}
 
