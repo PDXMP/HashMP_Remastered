@@ -4269,7 +4269,9 @@ taj_mahal = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
-			local_unrest = -1
+			local_build_cost = -0.2
+			local_build_time = -0.2
+			#local_unrest = -1
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -4278,8 +4280,8 @@ taj_mahal = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			monthly_piety_accelerator = 0.001
-			prestige_decay = -0.005
+			#monthly_piety_accelerator = 0.001
+			#prestige_decay = -0.005
 		}
 
 		#what effects happen when this tier is achieved
@@ -4300,7 +4302,9 @@ taj_mahal = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
-			local_unrest = -2
+			local_build_cost = -0.5
+			local_build_time = -0.5
+			#local_unrest = -2
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -4309,9 +4313,9 @@ taj_mahal = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {	
-			monthly_piety_accelerator = 0.002
-			prestige_decay = -0.005
-			monthly_splendor = 1
+			#monthly_piety_accelerator = 0.002
+			#prestige_decay = -0.005
+			#monthly_splendor = 1
 		}
 
 		#what effects happen when this tier is achieved
@@ -4336,15 +4340,20 @@ taj_mahal = {
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
-			local_unrest = -2
+			local_build_cost = -0.5
+			local_build_time = -0.5
+			#local_unrest = -2
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			monthly_piety_accelerator = 0.003
-			prestige_decay = -0.01
-			monthly_splendor = 2
-			power_projection_from_insults = 1
+			technology_cost = -0.05
+			idea_cost = -0.05
+			global_tax_income = 12
+			#monthly_piety_accelerator = 0.003
+			#prestige_decay = -0.01
+			#monthly_splendor = 2
+			#power_projection_from_insults = 1
 		}
 
 		#what effects happen when this tier is achieved
