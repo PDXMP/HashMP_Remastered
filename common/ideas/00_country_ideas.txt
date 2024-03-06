@@ -2938,11 +2938,13 @@ BOH_ideas = {
 ITA_ideas = {
 	start = {
 		global_trade_power = 0.20
-		improve_relation_modifier = 0.50
+		#improve_relation_modifier = 0.50
+		global_trade_goods_size_modifier = 0.1
 	}
 	
 	bonus = {
-		defensiveness = 0.20
+		#defensiveness = 0.20
+		morale_damage_received = -0.1
 	}
 	
 	trigger = {
@@ -2951,10 +2953,12 @@ ITA_ideas = {
 	free = yes
 	
 	no_a_geographical_construct = {
-		stability_cost_modifier = -0.10
+		#stability_cost_modifier = -0.10
+		development_cost = -0.1
 	}
 	tradition_of_the_legion = {
-		infantry_power = 0.15
+		infantry_power = 0.1 #0.15
+		discipline = 0.05
 	}
 	mare_nostrum = {
 		galley_cost = -0.15
@@ -2964,13 +2968,14 @@ ITA_ideas = {
 		global_manpower_modifier = 0.33
 	}
 	italian_tax_reform = {
-		global_tax_modifier = 0.15
+		global_tax_modifier = 0.2 #0.15
 	}
 	heir_to_the_empire = {
 		prestige = 1
 	}
 	path_to_citizenship = {
-		core_creation = -0.25
+		core_creation = -0.15 #-0.25
+		governing_capacity_modifier = 0.1
 	}
 }
 
