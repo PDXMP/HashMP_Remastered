@@ -11458,12 +11458,13 @@ ellora_caves = {
 			factor = 1000
 		}
 		province_modifiers = {
+			local_state_maintenance_modifier = -0.75
 		}
 		area_modifier = {
 			local_manpower_modifier = 1.0
 			local_development_cost = -0.25
 			local_governing_cost = -0.5
-			local_state_maintenance_modifier = -0.75
+			#local_state_maintenance_modifier = -0.75
 		}
 		country_modifiers = {
 			#tolerance_own = 1
