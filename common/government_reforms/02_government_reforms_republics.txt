@@ -1031,6 +1031,7 @@ veche_republic = {
 				have_had_reform = veche_republic
 			}
 		}
+		was_player = no
 	}
 	legacy_equivalent = veche_republic_legacy
 	nation_designer_trigger = {
