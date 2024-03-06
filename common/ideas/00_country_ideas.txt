@@ -3381,7 +3381,7 @@ COR_ideas = {
 SPI_ideas = {
 	start = {
 		idea_cost = -0.1
-		improve_relation_modifier = 0.25
+		land_morale = 0.1
 	}
 	
 	bonus = {
@@ -3395,16 +3395,18 @@ SPI_ideas = {
 	
 	spi_flexibility = {
 		diplomatic_upkeep = 1
+		improve_relation_modifier = 0.25
 	}
 	spi_defensive_prowess = {
-		defensiveness = 0.2
+		defensiveness = 0.2 #0.25
+		fort_maintenance_modifier = -0.1
 	}
 	the_shroud_of_turin = { #effect in SAV_ideas
 #		papal_influence = 1
 #		prestige = 0.5
 	}
 	spi_royal_sardinian_army = {
-		discipline = 0.05
+		discipline = 0.025 #0.05
 		global_manpower_modifier = 0.1
 	}
 	spi_centralized_state = {
@@ -3415,7 +3417,9 @@ SPI_ideas = {
 		global_trade_goods_size_modifier = 0.1
 	}
 	spi_risorgimento = {
-		ae_impact = -0.1
+		#ae_impact = -0.1
+		naval_forcelimit_modifier = 0.1
+		global_sailors_modifier = 0.25
 	}
 }
 
