@@ -312,8 +312,7 @@ h_theocracy_gov_economic = {
 		full_idea_group = economic_ideas
 	}
 	
-	advisor_cost = -0.075
-	advisor_pool = 1
+	land_maintenance_modifier = -0.1
 
 	effect = {}
 	removed_effect = {}
