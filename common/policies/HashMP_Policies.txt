@@ -656,8 +656,8 @@ h_plutocracy_infrastructure = {
 		full_idea_group = infrastructure_ideas
 	}
 	
-	development_cost_modifier = -0.05
-	build_time = -0.1
+	development_cost = -0.05
+	build_cost = -0.05
 
 	effect = {}
 	removed_effect = {}
