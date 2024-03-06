@@ -74,9 +74,9 @@ capital = 2108
 		type = general
 
 		fire = 3
-		shock = 5
+		shock = 4 #5
 		manuever = 4
-		siege = 2
+		siege = 1 #2
 		death_date = 1464.1.1
 	}
 }
