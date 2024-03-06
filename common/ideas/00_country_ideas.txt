@@ -3025,7 +3025,7 @@ MJZ_ideas = {
 
 MCH_ideas = {
 	start = {
-		ae_impact = -0.1
+		global_unrest = -1
 		core_creation = -0.15
 	}
 	
