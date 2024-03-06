@@ -2455,7 +2455,8 @@ h_court_economic = {
 		full_idea_group = economic_ideas
 	}
 	
-	same_culture_advisor_cost = -0.1
+	merchants = 1
+	global_trade_goods_size_modifier = 0.05
 
 	effect = {}
 	removed_effect = {}
