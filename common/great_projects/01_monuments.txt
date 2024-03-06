@@ -1466,6 +1466,7 @@ petra = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+			local_development_cost = -0.3
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -1496,6 +1497,7 @@ petra = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+			local_development_cost = -0.3
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -1504,8 +1506,8 @@ petra = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			diplomatic_reputation = 1
-			envoy_travel_time = -0.25
+			#diplomatic_reputation = 1
+			#envoy_travel_time = -0.25
 			fabricate_claims_cost = -0.1
 		}
 
@@ -1527,6 +1529,7 @@ petra = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
+			local_development_cost = -0.3
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -1535,10 +1538,10 @@ petra = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			diplomatic_reputation = 2
-			envoy_travel_time = -0.33
+			#diplomatic_reputation = 2
+			#envoy_travel_time = -0.33
 			diplomatic_upkeep = 1
-			fabricate_claims_cost = -0.2
+			fabricate_claims_cost = -0.25
 		}
 
 		#what effects happen when this tier is achieved
