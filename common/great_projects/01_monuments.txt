@@ -18538,30 +18538,30 @@ city_of_sanaa = {
 		}	
 		on_upgraded = {
 		}
-		conditional_modifier = {
-			trigger = {
-				custom_trigger_tooltip = {
-					tooltip = YEM_upgrade_city_of_sanaa_flag_tt
-					owner = { has_country_flag = YEM_upgrade_city_of_sanaa_flag }
-				}
-			}
-			modifier = {
-				manpower_in_true_faith_provinces = 0.15
-				dip_tech_cost_modifier = -0.05
-			}
-		}
-		conditional_modifier = {
-			trigger = {
-				custom_trigger_tooltip = {
-					tooltip = YEM_upgrade_city_of_sanaa_non_ras_flag_tt
-					owner = { has_country_flag = YEM_upgrade_city_of_sanaa_non_ras_flag }
-				}
-			}
-			modifier = {
-				tolerance_own = 1
-				global_missionary_strength = 0.02
-			}
-		}
+		#conditional_modifier = {
+		#	trigger = {
+		#		custom_trigger_tooltip = {
+		#			tooltip = YEM_upgrade_city_of_sanaa_flag_tt
+		#			owner = { has_country_flag = YEM_upgrade_city_of_sanaa_flag }
+		#		}
+		#	}
+		#	modifier = {
+		#		manpower_in_true_faith_provinces = 0.15
+		#		dip_tech_cost_modifier = -0.05
+		#	}
+		#}
+		#conditional_modifier = {
+		#	trigger = {
+		#		custom_trigger_tooltip = {
+		#			tooltip = YEM_upgrade_city_of_sanaa_non_ras_flag_tt
+		#			owner = { has_country_flag = YEM_upgrade_city_of_sanaa_non_ras_flag }
+		#		}
+		#	}
+		#	modifier = {
+		#		tolerance_own = 1
+		#		global_missionary_strength = 0.02
+		#	}
+		#}
 	}
 
 	tier_3 = {
@@ -18585,30 +18585,30 @@ city_of_sanaa = {
 		on_upgraded = {
 			center_of_trade = 1
 		}
-		conditional_modifier = {
-			trigger = {
-				custom_trigger_tooltip = {
-					tooltip = YEM_upgrade_city_of_sanaa_flag_tt
-					owner = { has_country_flag = YEM_upgrade_city_of_sanaa_flag }
-				}
-			}
-			modifier = {
-				manpower_in_true_faith_provinces = 0.25
-				dip_tech_cost_modifier = -0.1
-			}
-		}
-		conditional_modifier = {
-			trigger = {
-				custom_trigger_tooltip = {
-					tooltip = YEM_upgrade_city_of_sanaa_non_ras_flag_tt
-					owner = { has_country_flag = YEM_upgrade_city_of_sanaa_non_ras_flag }
-				}
-			}
-			modifier = {
-				tolerance_own = 2
-				global_missionary_strength = 0.03
-			}
-		}
+		#conditional_modifier = {
+		#	trigger = {
+		#		custom_trigger_tooltip = {
+		#			tooltip = YEM_upgrade_city_of_sanaa_flag_tt
+		#			owner = { has_country_flag = YEM_upgrade_city_of_sanaa_flag }
+		#		}
+		#	}
+		#	modifier = {
+		#		manpower_in_true_faith_provinces = 0.25
+		#		dip_tech_cost_modifier = -0.1
+		#	}
+		#}
+		#conditional_modifier = {
+		#	trigger = {
+		#		custom_trigger_tooltip = {
+		#			tooltip = YEM_upgrade_city_of_sanaa_non_ras_flag_tt
+		#			owner = { has_country_flag = YEM_upgrade_city_of_sanaa_non_ras_flag }
+		#		}
+		#	}
+		#	modifier = {
+		#		tolerance_own = 2
+		#		global_missionary_strength = 0.03
+		#	}
+		#}
 	}
 }
 
