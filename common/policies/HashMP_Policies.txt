@@ -2541,7 +2541,8 @@ h_court_infrastructure = {
 		full_idea_group = infrastructure_ideas
 	}
 	
-	adm_advisor_cost = -0.15
+	state_maintenance_modifier = -0.1
+	adm_advisor_cost = -0.1
 
 	effect = {}
 	removed_effect = {}
