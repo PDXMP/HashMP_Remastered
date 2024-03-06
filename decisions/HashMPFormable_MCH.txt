@@ -5,19 +5,8 @@ country_decisions = {
 			normal_or_historical_nations = yes
 			was_never_end_game_tag_trigger = yes
 			NOT = { has_country_flag = formed_manchu_flag }
-			OR = {
-				ai = no
-				is_playing_custom_nation = no
-			}
-			OR = {
-				is_free_or_tributary_trigger = yes
-				ai = no
-			}
 			NOT = { exists = MCH }
-			OR = {
-				primary_culture = manchu
-				primary_culture = manchu_new
-			}
+			tag = MJZ
 		}
 		provinces_to_highlight = {
 			OR = {
@@ -157,13 +146,13 @@ country_decisions = {
 			730 = {
 				move_capital_effect = yes
 			}
-			manchuria_region = {
-				limit = {
-					NOT = { is_core = ROOT }
-					is_city = yes
-				}
-				add_core = MCH
-			}
+			# manchuria_region = {
+			# 	limit = {
+			# 		NOT = { is_core = ROOT }
+			# 		is_city = yes
+			# 	}
+			# 	add_core = MCH
+			# }
 			set_country_flag = formed_manchu_flag
 			if = {
 				limit = { 
