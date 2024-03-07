@@ -13633,7 +13633,7 @@ nan_madoll = {
 		}
 		country_modifiers = {
 			global_colonial_growth = 15
-			navy_tradition = 0.5
+			#navy_tradition = 0.5
 		}
 		on_upgraded = {
 		}
@@ -13652,8 +13652,8 @@ nan_madoll = {
 		}
 		country_modifiers = {
 			global_colonial_growth = 25
-			navy_tradition = 1
-			colonist_placement_chance = 0.05
+			#navy_tradition = 1
+			#colonist_placement_chance = 0.05
 		}
 		on_upgraded = {
 		}
