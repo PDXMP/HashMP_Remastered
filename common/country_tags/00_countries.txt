@@ -528,7 +528,7 @@ UES = "countries/Uesugi.txt"
 YMN = "countries/Yamana.txt"
 RFR	= "countries/Nanbu.txt"
 ASK = "countries/Ashikaga.txt"
-KTB = "countries/Kitabatake.txt"
+#KTB = "countries/Kitabatake.txt"
 
 ANU = "countries/Ainu.txt"
 
@@ -543,7 +543,7 @@ KNO = "countries/Kono.txt"
 OGS = "countries/Ogasawara.txt"
 SHN = "countries/Shoni.txt"
 STK = "countries/Satake.txt"
-TKI = "countries/Toki.txt"
+#TKI = "countries/Toki.txt"
 UTN = "countries/Utsunomiya.txt"
 TTI = "countries/Tsutsui.txt"
 

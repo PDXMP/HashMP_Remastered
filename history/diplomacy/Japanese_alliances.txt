@@ -103,12 +103,12 @@ vassal = { #So
 	end_date = 1573.7.1
 }
 
-vassal = { #Kitabatake
-	first = ASK
-	second = KTB
-	start_date = 1444.11.11
-	end_date = 1569.10.3 #Annexed
-}
+#vassal = { #Kitabatake
+#	first = ASK
+#	second = KTB
+#	start_date = 1444.11.11
+#	end_date = 1569.10.3 #Annexed
+#}
 
 vassal = {
 	first = ASK
@@ -313,12 +313,12 @@ vassal = {
 	end_date = 1573.7.3
 }
 
-vassal = {
-	first = ASK
-	second = TKI
-	start_date = 1444.11.11
-	end_date = 1567.10.1 #Annexed
-}
+#vassal = {
+#	first = ASK
+#	second = TKI
+#	start_date = 1444.11.11
+#	end_date = 1567.10.1 #Annexed
+#}
 
 vassal = {
 	first = ASK
