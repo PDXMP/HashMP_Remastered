@@ -267,6 +267,7 @@ shogunate = {
 	}
 
 	modifiers = {
+		can_not_declare_war = yes 
 		diplomats = 1
 		envoy_travel_time = -0.25
 		max_absolutism = 5
