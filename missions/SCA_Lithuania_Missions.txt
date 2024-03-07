@@ -451,19 +451,7 @@ lit_dlc_3 = {
 					duration = -1
 				}
 			}
-			if = { 
-				limit = { 
-					has_dlc = "Rights of Man" 
-					NOT = { num_of_ruler_traits = { amount = 3 } }
-				}
-				add_ruler_personality = architectural_visionary_personality
-			}
-			else = { 
-				change_ruler_stat = {
-					type = adm
-					amount = 2
-				}
-			}
+
 		}
 	}
 	

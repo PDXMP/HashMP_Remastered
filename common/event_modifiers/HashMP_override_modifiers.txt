@@ -254,6 +254,7 @@ pol_poland_rise_modifier = {
 lit_stable_rule_modifier = {
 	stability_cost_modifier = -0.1
 	global_unrest = -2
+	build_cost = -0.05
 	#global_tax_modifier = 0.1
 	global_autonomy = -0.05
 	global_prosperity_growth = 1
