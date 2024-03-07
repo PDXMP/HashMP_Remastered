@@ -22,7 +22,7 @@ h_warlord_startmod = {
 }
 
 h_wu_armada = {
-	heavy_ship_power = 0.1
+	naval_forcelimit_modifier = 0.33
 }
 
 h_china_wonders = {
