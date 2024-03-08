@@ -535,7 +535,7 @@ ANU = "countries/Ainu.txt"
 #New Daimyos 1.20
 AKM = "countries/Akamatsu.txt"
 AKT = "countries/Ando.txt"
-CBA = "countries/Chiba.txt"
+#CBA = "countries/Chiba.txt"
 ISK = "countries/Isshiki.txt"
 #ITO = "countries/Ito.txt"
 #KKC = "countries/Kikuchi.txt"

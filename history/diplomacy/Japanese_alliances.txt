@@ -257,12 +257,12 @@ vassal = {
 	end_date = 1573.7.3
 }
 
-vassal = {
-	first = ASK
-	second = CBA
-	start_date = 1444.11.11
-	end_date = 1573.7.3
-}
+#vassal = {
+#	first = ASK
+#	second = CBA
+#	start_date = 1444.11.11
+#	end_date = 1573.7.3
+#}
 
 vassal = {
 	first = ASK
