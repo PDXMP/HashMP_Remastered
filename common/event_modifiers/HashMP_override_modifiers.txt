@@ -340,7 +340,7 @@ jap_eighteen_arts_modifier = {
 jap_naval_academy_of_japan_modifier = {
 	#ship_durability = 0.05 
 	naval_tradition_from_battle = 1 
-	number_of_cannons_modifier = 0.075
+	navy_tradition = 0.5
 }
 jap_new_world_exploration_modifier = {
 	range = 0.25 
