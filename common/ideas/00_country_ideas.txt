@@ -179,7 +179,7 @@ ENG_ideas = {
 GBR_ideas = {
 	start = {
 		fire_damage = 0.2
-		naval_forcelimit_modifier = 0.2
+		naval_forcelimit_modifier = 0.25
 	}
 
 	bonus = {
