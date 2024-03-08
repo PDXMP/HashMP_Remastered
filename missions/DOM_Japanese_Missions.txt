@@ -715,36 +715,22 @@ DOM_japanse_missions_2_b = {
 			
 			custom_tooltip = jap_dip_advisor_culture_conversion_cost_tt
 			
-			if = {
-				limit = { has_dlc = "Leviathan" }
-				custom_tooltip = jap_accept_korean_culture_lev_tt
-			}
-			else = {
-				custom_tooltip = jap_accept_korean_culture_nonlev_tt
-				tooltip = {
-					add_country_modifier = {
-						name = jap_korean_cooperation_modifier
-						duration = 9125 
-					}
-				}
-			}
+			#if = {
+			#	limit = { has_dlc = "Leviathan" }
+			#	custom_tooltip = jap_accept_korean_culture_lev_tt
+			#}
+			#else = {
+			#	custom_tooltip = jap_accept_korean_culture_nonlev_tt
+			#	tooltip = {
+			#		add_country_modifier = {
+			#			name = jap_korean_cooperation_modifier
+			#			duration = 9125 
+			#		}
+			#	}
+			#}
 			
 			hidden_effect = {
-				if = {
-					limit = {
-						accepted_culture = korean
-						has_dlc = "Leviathan" 
-					}
-					set_country_flag = enable_korean_palace_flag
-				}
-				else_if = {
-					limit = { accepted_culture = korean }
-					add_country_modifier = {
-						name = jap_korean_cooperation_modifier
-						duration = 9125 
-					}
-				}
-				else = { set_country_flag = jap_dip_advisor_culture_conversion_cost_flag }
+				 set_country_flag = jap_dip_advisor_culture_conversion_cost_flag 
 			}
 		}
 	}

@@ -130,3 +130,4 @@
  mnd_mlc_ming_desc:0 "The Ming dynasty, formerly one of our greatest supporters and allies, has completely collapsed, replaced with a horde of feuding warlords. We're on our own, and should prepare accordingly."
  jap_fate_mandate_title:0 "Masters of Manchuria" 
  jap_fate_mandate_desc:0 "China is weak following the collapse of the Ming Dynasty, and now is the time to strike. However, we must first conquer Manchuria to have a proper staging ground for our invasion." 
+ jap_dip_advisor_culture_conversion_cost_tt:0 "Every level of our Diplomatic advisors will grant us §G+3% Culture Conversion Cost§!"

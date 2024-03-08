@@ -358,3 +358,7 @@ jap_internal_monopolies_modifier = {
 	country_admin_power = 2 
 	global_tax_modifier = 0.25
 }
+jap_reformed_samurai_modifier = {
+	fire_damage = 0.1 
+	is_samurai_modifier = yes 
+}
