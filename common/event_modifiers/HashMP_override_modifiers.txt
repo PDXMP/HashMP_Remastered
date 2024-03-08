@@ -355,7 +355,7 @@ influx_of_foreign_knowledge_modifier = {
 }
 jap_internal_monopolies_modifier = {
 	#interest = -1 
-	country_admin_power = 2 
+	country_admin_power = 1
 	global_tax_modifier = 0.25
 }
 
