@@ -316,6 +316,9 @@ DOM_japanse_missions_1 = {
 			}
 		}
 		effect = {
+			add_adm_power = 150
+			add_mil_power = 150
+			add_dip_power = 150
 			country_event = { id = flavor_jap.62 }
 			custom_tooltip = jap_event_insight_62_tt
 		}
