@@ -2320,33 +2320,36 @@ DOM_japanse_missions_4_d = {
 		required_missions = { }
 		position = 5
 		trigger = {
-			heavy_ship_fraction = 0.1
-			OR = { 
-				navy_tradition = 50
-				num_of_heavy_ship = 10 
-			}
+			#heavy_ship_fraction = 0.1
+			#OR = { 
+			#	navy_tradition = 50
+			#	num_of_heavy_ship = 10 
+			#}
 			navy_size_percentage = 0.9
+			owns_or_non_sovereign_subject_of = 2154
+			owns_or_non_sovereign_subject_of = 2155
+			owns_or_non_sovereign_subject_of = 738
 		}
 		effect = {
 			add_country_modifier = {
 				name = jap_tekkosen_modifier
-				duration = 7300
+				duration = 3650
 			}
 			add_navy_tradition = 10 
-			if = {
-				limit = { full_idea_group = naval_ideas has_dlc = "Golden Century" }
-				random_owned_province = {
-					limit = { has_port = yes } 
-					create_flagship = {
-						name = "O-Atakebune" 
-						type = heavy_ship 
-					}
-				}
-			}
-			else_if = { 
-				limit = { has_dlc = "Golden Century" } 
-				custom_tooltip = jap_flagship_if_naval_ideas_tt
-			}
+			#if = {
+			#	limit = { full_idea_group = naval_ideas has_dlc = "Golden Century" }
+			#	random_owned_province = {
+			#		limit = { has_port = yes } 
+			#		create_flagship = {
+			#			name = "O-Atakebune" 
+			#			type = heavy_ship 
+			#		}
+			#	}
+			#}
+			#else_if = { 
+			#	limit = { has_dlc = "Golden Century" } 
+			#	custom_tooltip = jap_flagship_if_naval_ideas_tt
+			#}
 		}
 	}
 	
@@ -2358,36 +2361,44 @@ DOM_japanse_missions_4_d = {
 			
 		}
 		trigger = {
-			custom_trigger_tooltip = {
-				tooltip = japan_has_encountered_the_west_tooltip
-				has_global_flag = japan_has_encountered_the_west
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 25
+				region = moluccas_region
 			}
-			custom_trigger_tooltip = {
-				tooltip = jap_any_western_nation_stronger_navy_tt
-				NOT = {
-					any_country = {
-						NOT = { technology_group = western }
-						navy_size = ROOT 
-					}
-				}
-			}
-			OR = { 
-				full_idea_group = naval_ideas 
-				full_idea_group = maritime_ideas 
-			}
+		#	custom_trigger_tooltip = {
+		#		tooltip = japan_has_encountered_the_west_tooltip
+		#		has_global_flag = japan_has_encountered_the_west
+		#	}
+		#	custom_trigger_tooltip = {
+		#		tooltip = jap_any_western_nation_stronger_navy_tt
+		#		NOT = {
+		#			any_country = {
+		#				NOT = { technology_group = western }
+		#				navy_size = ROOT 
+		#			}
+		#		}
+		#	}
+		#	OR = { 
+		#		full_idea_group = naval_ideas 
+		#		full_idea_group = maritime_ideas 
+		#	}
 		}
 		effect = {
-			if = {
-				limit = { has_dlc = "Emperor" is_hegemon = no }
-				custom_tooltip = jap_gain_access_to_naval_hegemon_tt
-				set_country_flag = jap_halve_naval_hegemony_requirements
+			add_country_modifier = {
+				name = hashmp_jap_philippines_reward
+				duration = -1
 			}
-			else = {
-				add_country_modifier = {
-					name = jap_shogoki_modifier
-					duration = -1 
-				}
-			}
+			#if = {
+			#	limit = { has_dlc = "Emperor" is_hegemon = no }
+			#	custom_tooltip = jap_gain_access_to_naval_hegemon_tt
+			#	set_country_flag = jap_halve_naval_hegemony_requirements
+			#}
+			#else = {
+			#	add_country_modifier = {
+			#		name = jap_shogoki_modifier
+			#		duration = -1 
+			#	}
+			#}
 		}
 	}
 }

@@ -131,3 +131,7 @@
  jap_fate_mandate_title:0 "Masters of Manchuria" 
  jap_fate_mandate_desc:0 "China is weak following the collapse of the Ming Dynasty, and now is the time to strike. However, we must first conquer Manchuria to have a proper staging ground for our invasion." 
  jap_dip_advisor_culture_conversion_cost_tt:0 "Every level of our Diplomatic advisors will grant us §G+3% Culture Conversion Cost§!"
+ jap_deploy_atakebune_title:0 "Secure Taiwan" 
+ jap_deploy_atakebune_desc:0 "Taiwan, directly off the coast of China, is a key logistical hub for potential expansion into the Philippines and further beyond. No one worth talking about lives there - Why shouldn't we take it?"
+ jap_surpass_the_west_title:0 "Dominate the Moluccas" 
+ jap_surpass_the_west_desc:0 "The Moluccas are a hub of unthinkable wealth in spices, manpower, and other goods. We must stake our claim." 
