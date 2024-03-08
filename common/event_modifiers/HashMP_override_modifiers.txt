@@ -315,3 +315,8 @@ malay_united_nusantara = {
 mch_seven_grievances_declaration_modifier = {
 	siege_ability = 0.2
 }
+
+eng_the_redcoat = {	#Permanent
+	infantry_power = 0.1
+	fire_damage = 0.1
+}
