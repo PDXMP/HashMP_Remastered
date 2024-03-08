@@ -817,11 +817,11 @@ HSI = "countries/Hsipaw.txt"
 BPR = "countries/Prome.txt"
 
 #Siberian Tribes
-CHU = "countries/Chukchi.txt"
-HOD = "countries/Hodyntsy.txt"
-CHV = "countries/Chavchuveny.txt"
-KMC = "countries/Kamchadals.txt"
-BRT = "countries/Buryats.txt"
+#CHU = "countries/Chukchi.txt"
+#HOD = "countries/Hodyntsy.txt"
+#CHV = "countries/Chavchuveny.txt"
+#KMC = "countries/Kamchadals.txt"
+#BRT = "countries/Buryats.txt"
 
 #North American Additions
 #ARP = "countries/Arapaho.txt"
