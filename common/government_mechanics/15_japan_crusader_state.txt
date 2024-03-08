@@ -80,7 +80,7 @@ land_of_the_christian_sun_mechanic = {
 						add_base_tax = 1 
 						add_base_production = 1 
 						add_base_manpower = 1
-						owner = { add_army_tradition = 5 }
+						owner = { add_army_tradition = 2.5 }
 					}
 				}
 			}
