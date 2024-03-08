@@ -2353,7 +2353,7 @@ JAP_ideas = {
 	free = yes
 	
 	reformed_land_holding = {
-		global_manpower_modifier = 0.2
+		global_manpower_modifier = 0.15
 		allowed_samurai_fraction = 0.15
 		has_samurai = yes 
 	}
@@ -2365,7 +2365,7 @@ JAP_ideas = {
 		global_institution_spread = 0.1
 	}
 	jap_maritime_legacy = {
-		naval_forcelimit_modifier = 0.2
+		naval_maintenance_modifier = -0.1
 	}
 	jap_land_of_the_rising_sun = {
 		prestige = 1
@@ -13309,12 +13309,12 @@ KTB_ideas = {
 
 ODA_ideas = {
 	start = {
-		infantry_power = 0.1
+		#infantry_power = 0.1
 		land_morale = 0.1
 	}
 
 	bonus = {
-		leader_land_fire = 1
+		artillery_levels_available_vs_fort = 1
 	}
 	
 	trigger = {
@@ -13323,26 +13323,26 @@ ODA_ideas = {
 	free = yes		#will be added at load.
 	
 	oda_rakuichi_rakuza = {
-		global_trade_goods_size_modifier = 0.1
+		global_trade_goods_size_modifier = 0.05
 	}
 	oda_tenka_fubu = {
-		province_warscore_cost = -0.1
+		#province_warscore_cost = -0.1
 		core_creation = -0.1
 	}
 	oda_generals = {
 		leader_land_shock = 1
 	}
 	oda_azuchi_castle = {
-		leader_siege = 1
+		defensiveness = 0.25
 	}
 	oda_triple_firing = {
-		fire_damage = 0.1
+		fire_damage = 0.05
 	}
 	oda_patronization_of_the_west = {
 		technology_cost = -0.05
 	}
 	oda_kenchi = {
-		global_manpower_modifier = 0.2
+		global_manpower_modifier = 0.1
 	}
 }
 
