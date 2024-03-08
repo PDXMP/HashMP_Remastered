@@ -15105,7 +15105,8 @@ white_house = {
 			local_development_cost = -0.1
 		}
 		country_modifiers = {
-			global_manpower = 5  
+			republican_tradition = 0.2
+			#global_manpower = 5  
 			expand_infrastructure_cost_modifier = -0.15
 			#development_cost = -0.05
 		}
