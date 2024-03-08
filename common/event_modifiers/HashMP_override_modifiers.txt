@@ -315,3 +315,8 @@ malay_united_nusantara = {
 mch_seven_grievances_declaration_modifier = {
 	siege_ability = 0.2
 }
+
+jap_period_tranquility_modifier = { 
+	development_cost = -0.1
+	global_prosperity_growth = 0.5
+}

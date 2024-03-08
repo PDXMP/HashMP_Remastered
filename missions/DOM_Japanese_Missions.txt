@@ -543,7 +543,10 @@ DOM_japanse_missions_2_a = {
 		}
 		effect = {
 			country_event = { id = flavor_jap.63 }
-			
+			add_country_modifier = {
+				name = jap_period_tranquility_modifier
+				duration = 9125
+			}
 			custom_tooltip = jap_event_insight_63_tt
 		}
 	}

@@ -3546,10 +3546,10 @@ country_event = {
 	
 	option = {
 		name = flavor_jap.63.a 
-		add_country_modifier = {
-			name = jap_period_tranquility_modifier
-			duration = 9125
-		}
+		#add_country_modifier = {
+		#	name = jap_period_tranquility_modifier
+		#	duration = 9125
+		#}
 	}
 }
 
