@@ -346,3 +346,15 @@ jap_new_world_exploration_modifier = {
 	range = 0.25 
 	global_colonial_growth = 20
 }
+jap_overseas_ventures_modifier = {
+	global_trade_goods_size_modifier = 0.2 
+	trade_range_modifier = 0.33
+}
+influx_of_foreign_knowledge_modifier = {
+	all_power_cost = -0.04 
+}
+jap_internal_monopolies_modifier = {
+	#interest = -1 
+	country_admin_power = 2 
+	global_tax_modifier = 0.25
+}
