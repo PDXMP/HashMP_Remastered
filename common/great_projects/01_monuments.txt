@@ -588,7 +588,7 @@ tower_of_london = {
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
 			local_defensiveness = 0.5
-			local_development_cost = -1.0
+			local_development_cost = -0.75
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -1489,8 +1489,8 @@ petra = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			diplomatic_reputation = 1
-			envoy_travel_time = -0.20
+			#diplomatic_reputation = 1
+			#envoy_travel_time = -0.20
 		}
 
 		#what effects happen when this tier is achieved
@@ -1913,7 +1913,7 @@ kremlin = {
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
 			local_defensiveness = 0.33
-			local_development_cost = -1.0
+			local_development_cost = -0.75
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -2671,7 +2671,7 @@ moai = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
-			local_development_cost = -1.25
+			local_development_cost = -0.75
 			local_ship_repair = 0.5
 			local_build_time = -0.5
 			local_build_cost = -0.5
@@ -2679,6 +2679,7 @@ moai = {
 			local_tax_modifier = 1.0
 			local_manpower_modifier = 1.0
 			local_sailors_modifier = 1.0
+			naval_forcelimit = 5
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -4141,6 +4142,7 @@ mesa_verde = {
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
 			local_development_cost = -0.35
+			local_manpower_modifier = 0.35
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -4149,7 +4151,7 @@ mesa_verde = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {	
-			global_manpower = 2.5
+			#global_manpower = 2.5
 		}
 
 		#what effects happen when this tier is achieved
@@ -4176,12 +4178,12 @@ mesa_verde = {
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
 		area_modifier = {
 			local_development_cost = -0.35
-			local_manpower_modifier = 0.25
+			local_manpower_modifier = 0.75
 		}
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			global_manpower = 5
+			#global_manpower = 5
 		}
 
 		#what effects happen when this tier is achieved
@@ -4736,7 +4738,7 @@ the_grand_palace = {
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
 			local_tax_modifier = 1.0
-			local_development_cost = -1.0
+			local_development_cost = -0.75
 		}
 
 		#what modifiers are added to the provinces in the map area when we have this project here on this tier
@@ -5053,7 +5055,7 @@ ait_benhaddou = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			caravan_power = 0.1
+			
 		}
 
 		#what effects happen when this tier is achieved
@@ -6207,9 +6209,9 @@ murud_janjira = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			naval_forcelimit_modifier = 0.2
-			naval_maintenance_modifier = -0.15
-			navy_tradition = 0.5
+			#naval_forcelimit_modifier = 0.2
+			#naval_maintenance_modifier = -0.15
+			#navy_tradition = 0.5
 		}
 
 		#what effects happen when this tier is achieved
@@ -7324,7 +7326,7 @@ inukshuk = {
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
 			num_accepted_cultures = 2
-			same_culture_advisor_cost = -0.075
+			advisor_cost = -0.075
 			promote_culture_cost = -0.15
 		}
 
@@ -8789,7 +8791,7 @@ versailles = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
-			local_development_cost = -1.0
+			local_development_cost = -0.75
 			local_build_cost = -0.5
 			local_build_time = -0.5
 			local_tax_modifier = 0.5
@@ -8987,7 +8989,7 @@ el_escorial = {
 
 		#what modifiers are added to the province when we have this project here on this tier
 		province_modifiers = {
-			local_development_cost = -1.0
+			local_development_cost = -0.75
 			local_governing_cost = -1.0
 			local_governing_cost_increase = -20
 		}
@@ -9996,7 +9998,7 @@ imperial_city_hue = {
 
 		#what modifiers are added to the country when we have this project here on this tier
 		country_modifiers = {
-			state_maintenance_modifier = -0.3
+			state_maintenance_modifier = -0.2
 			#yearly_harmony = 0.5
 			#yearly_karma_decay = 0.15
 			#legitimacy = 1
@@ -10232,7 +10234,7 @@ bam_citadel = {
 			local_defensiveness = 0.1
 			garrison_size = 0.1
 			local_fort_maintenance_modifier = -0.15
-			local_assault_fort_ability = -0.05
+			local_assault_fort_ability = -0.075
 			#caravan_power = 0.4
 			#merchants = 1
 		}
@@ -10687,7 +10689,7 @@ buda_castle = {
 			factor = 1000
 		}
 		province_modifiers = {
-			local_development_cost = -1.0
+			local_development_cost = -0.75
 			local_tax_modifier = 1.0
 		}
 		area_modifier = {
@@ -11719,6 +11721,7 @@ etchimiadzin_cathedral = {
 		}
 		area_modifier = {
 			local_tax_modifier = 1.0
+			local_monthly_devastation = -0.1
 		}
 		country_modifiers = {
 			#tolerance_own = 2
@@ -11812,7 +11815,7 @@ fuerte_del_morro = {
 			local_defensiveness = 0.15
 		}
 		country_modifiers = {			
-			naval_forcelimit_modifier = 0.1
+			#naval_forcelimit_modifier = 0.1
 			overlord_naval_forcelimit_modifier = 0.05
 		}
 		on_upgraded = {
@@ -11836,7 +11839,7 @@ fuerte_del_morro = {
 			local_defensiveness = 0.25
 		}
 		country_modifiers = {			
-			naval_forcelimit_modifier = 0.15
+			#naval_forcelimit_modifier = 0.15
 			overlord_naval_forcelimit_modifier = 0.1
 		}
 		on_upgraded = {
@@ -12161,12 +12164,13 @@ gyeongbok_palace = {
 			factor = 500
 		}
 		province_modifiers = {
-			local_development_cost = -0.1
+			local_development_cost = -0.15
 		}
 		area_modifier = {
-			local_development_cost = -0.05
+			local_development_cost = -0.1
 		}
 		country_modifiers = {
+			advisor_cost = -0.05
 			#advisor_cost = -0.1
 			#monarch_admin_power = 1
 			#global_autonomy = -0.05
@@ -12183,13 +12187,13 @@ gyeongbok_palace = {
 			factor = 1000
 		}
 		province_modifiers = {
-			local_development_cost = -0.15
+			local_development_cost = -0.2
 		}
 		area_modifier = {
-			local_development_cost = -0.1
+			local_development_cost = -0.15
 		}
 		country_modifiers = {
-			advisor_cost = -0.075
+			advisor_cost = -0.1
 			#monarch_admin_power = 2
 			#global_autonomy = -0.1	
 		}
@@ -12299,7 +12303,7 @@ hampi = {
 		}
 		province_modifiers = {
 			trade_goods_size_modifier = 0.5
-			local_development_cost = -1.0
+			local_development_cost = -0.75
 		}
 		area_modifier = {
 			#local_monthly_devastation = -1
@@ -14530,7 +14534,7 @@ santa_maria_del_fiore = {
 		area_modifier = {
 		}
 		country_modifiers = {
-			advisor_cost = -0.075
+			advisor_cost = -0.1
 		}
 		on_upgraded = {
 		}
@@ -14750,7 +14754,7 @@ sultan_ahmed_mosque = {
 		}
 		province_modifiers = {
 			local_tax_modifier = 0.5
-			local_development_cost = -1.0
+			local_development_cost = -0.75
 			trade_goods_size = 2
 		}
 		area_modifier = {
@@ -15096,11 +15100,14 @@ white_house = {
 			local_governing_cost_increase = -15
 		}
 		area_modifier = {
+			local_manpower_modifier = 0.5
 			trade_goods_size_modifier = 0.15
 			local_development_cost = -0.1
 		}
 		country_modifiers = {
-			expand_infrastructure_cost_modifier = -0.1
+			global_manpower = 5  
+			expand_infrastructure_cost_modifier = -0.15
+			#development_cost = -0.05
 		}
 		on_upgraded = {
 		}
@@ -15394,7 +15401,7 @@ tortuga_island = {
 			factor = 500
 		}
 		province_modifiers = {
-			development_cost = -0.25
+			local_development_cost = -0.25
 			local_defensiveness = 0.25
 			local_sailors_modifier = 0.5
 		}
@@ -15417,10 +15424,10 @@ tortuga_island = {
 		}
 		province_modifiers = {
 			local_defensiveness = 0.5
-			development_cost = -0.1
+			local_development_cost = -0.1
 		}
 		area_modifier = {
-			development_cost = -0.15
+			local_development_cost = -0.15
 			local_sailors_modifier = 1.25
 			blockade_force_required = 1
 		}
@@ -15951,7 +15958,7 @@ falun_copper_mine = {
 			factor = 250
 		}
 		province_modifiers = {
-			trade_goods_size = 1.0
+			trade_goods_size = 2.0
 		}
 		area_modifier = {
 			local_build_cost = -0.05
@@ -15971,7 +15978,7 @@ falun_copper_mine = {
 			factor = 500
 		}
 		province_modifiers = {
-			trade_goods_size = 2.0
+			trade_goods_size = 3.0
 		}
 		area_modifier = {
 			local_build_cost = -0.1
@@ -15992,7 +15999,7 @@ falun_copper_mine = {
 			factor = 1000
 		}
 		province_modifiers = {
-			trade_goods_size = 4.0
+			trade_goods_size = 5.0
 		}
 		area_modifier = {
 			local_build_cost = -0.2
@@ -17974,7 +17981,7 @@ imperial_city_kyoto = {
 			factor = 1000
 		}
 		province_modifiers = {
-			local_development_cost = -1.0
+			local_development_cost = -0.75
 		}
 		area_modifier = {
 			
