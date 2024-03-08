@@ -171,18 +171,19 @@ ENG_ideas = {
 	}
 	british_bill_of_rights = {
 		#years_of_nationalism = -5
+		global_unrest = -1 # magna carta, parliament
 		num_of_parliament_issues = 1
 	}
 }
 
 GBR_ideas = {
 	start = {
-		fire_damage = 0.2
-		naval_forcelimit_modifier = 0.25
+		discipline = 0.05
+		navy_tradition = 1
 	}
 
 	bonus = {
-		navy_tradition = 1
+		blockade_efficiency = 0.5
 	}
 	
 	trigger = {
@@ -190,12 +191,17 @@ GBR_ideas = {
 	}
 	free = yes		#will be added at load.
 
-	gbr_acts_of_union = {
-		diplomatic_annexation_cost = -0.15
-		governing_capacity_modifier = 0.1
+	#gbr_acts_of_union = {
+		#diplomatic_annexation_cost = -0.15
+		#governing_capacity_modifier = 0.1
+	#}
+	britanna_rules_the_waves = {
+		global_ship_cost = -0.1
+		allowed_marine_fraction = 0.25 #Includes sailor modifier
 	}
 	city_upon_a_hill = {
 		colonists = 1
+		governing_capacity_modifier = 0.1
 	}
 	the_british_parliament = {
 		global_unrest = -1
@@ -208,15 +214,15 @@ GBR_ideas = {
 		technology_cost = -0.05
 	}
 	reform_of_comission_buying = {
-		discipline = 0.05
+		yearly_army_professionalism = 0.002
+		drill_gain_modifier = 0.5
+	}
+	h_sick_and_hurt_board = {
+		sailors_recovery_speed = 0.20
+		sailor_maintenance_modifer = -0.1
 	}
 	british_industrialization = {
 		global_trade_goods_size_modifier = 0.2
-	}
-	britanna_rules_the_waves = {
-		sailor_maintenance_modifer = -0.1
-		blockade_efficiency = 0.33
-		allowed_marine_fraction = 0.1
 	}
 }
 
