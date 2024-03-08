@@ -909,6 +909,7 @@ NED_ideas = {
 		republican_tradition = 0.1
 	}
 	army_sappers = {
+		defensiveness = 0.25
 		siege_ability = 0.15
 	}
 	platoon_fire = {
