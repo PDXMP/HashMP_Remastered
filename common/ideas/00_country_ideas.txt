@@ -141,7 +141,7 @@ ENG_ideas = {
 	}
 
 	bonus = {
-		artillery_power = 0.1
+		allowed_marine_fraction = 0.25
 	}
 	
 	trigger = {
@@ -150,7 +150,7 @@ ENG_ideas = {
 	free = yes		#will be added at load.
 	
 	royal_navy = {
-		navy_tradition = 0.25
+		navy_tradition = 0.5
 		global_ship_cost = -0.1
 	}
 	eltham_ordinance = {
@@ -164,7 +164,6 @@ ENG_ideas = {
 	}
 	eng_red_coats = {
 		fire_damage = 0.1
-		allowed_marine_fraction = 0.25
 	}
 	sick_and_hurt_board = {
 		sailors_recovery_speed = 0.10
