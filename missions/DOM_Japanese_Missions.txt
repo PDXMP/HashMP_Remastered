@@ -1473,9 +1473,9 @@ DOM_japanse_missions_3_a = {
 			tooltip = { swap_non_generic_missions = yes }
 			if = { 
 				limit = { has_dlc = "Mandate of Heaven" }
-				custom_tooltip = a_kirishitan_realm_tt
+				#custom_tooltip = a_kirishitan_realm_tt
 				tooltip = { 
-					override_country_name = KRJ
+					#override_country_name = KRJ
 					add_country_modifier = {
 						name = jap_protectors_east_catholicism
 						duration = 10950 
