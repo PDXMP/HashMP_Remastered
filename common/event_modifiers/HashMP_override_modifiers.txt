@@ -342,3 +342,7 @@ jap_naval_academy_of_japan_modifier = {
 	naval_tradition_from_battle = 1 
 	number_of_cannons_modifier = 0.075
 }
+jap_new_world_exploration_modifier = {
+	range = 0.25 
+	global_colonial_growth = 20
+}
