@@ -411,3 +411,7 @@ jap_shinto_warriors_modifier = {
 	land_morale = 0.1
 	religion = yes
 }
+jap_bolstered_spirits = {
+	#extra_manpower_at_religious_war = yes 
+	manpower_recovery_speed = 0.25
+}	
