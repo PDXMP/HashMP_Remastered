@@ -686,7 +686,7 @@ DOM_japanse_missions_2_b = {
 	jap_imjin_war = {
 		icon = jap_imjin_war
 		required_missions = {  }
-		position = 5
+		position = 3
 		provinces_to_highlight = {
 			region = korea_region 
 			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
@@ -707,8 +707,8 @@ DOM_japanse_missions_2_b = {
 		effect = {
 			add_army_tradition = 15
 			
-			custom_tooltip = jap_conquest_of_china_cb_tt
-			set_country_flag = access_conquest_of_china_cb_flag 
+			#custom_tooltip = jap_conquest_of_china_cb_tt
+			#set_country_flag = access_conquest_of_china_cb_flag 
 			
 			custom_tooltip = jap_dip_advisor_culture_conversion_cost_tt
 			
@@ -749,59 +749,25 @@ DOM_japanse_missions_2_b = {
 	jap_fate_mandate = {
 		icon = jap_fate_mandate
 		required_missions = { jap_imjin_war }
-		position = 6
+		position = 4
 		provinces_to_highlight = {
-			OR = {
-				province_id = 1816 
-				province_id = 1821 
-				province_id = 667
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT } 
+			
 		}
 		trigger = {
-			OR = { 
-				war_score_against = {
-					who = event_target:EmperorOfChina
-					value = 85 
-				}
-				AND = { 
-					1816 = { country_or_non_sovereign_subject_holds = ROOT } 
-					1821 = { country_or_non_sovereign_subject_holds = ROOT } 
-					667 = { country_or_non_sovereign_subject_holds = ROOT } 
-				}
-			}
-			grown_by_development = 650
-		}
-		effect = {
-			custom_tooltip = jap_war_against_mandate_holder_tt
-			tooltip = {
-				country_event = { id = flavor_jap.64 }
+		num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 25
+				region = manchuria_region
 			}
 			
-			custom_tooltip = pol_alternatively_tt
-			tooltip = {
-				add_country_modifier = {
-					name = jap_scramble_for_china_modifier
-					duration = 7300 
-				}
+		}
+		effect = {
+			custom_tooltip = jap_conquest_of_china_cb_tt
+			set_country_flag = access_conquest_of_china_cb_flag 
+			add_country_modifier = { 
+				name = jap_manchuria_buff 
+				duration = -1
 			}
-			hidden_effect = {
-				if = {	
-					limit = { 
-						war_score_against = {
-							who = event_target:EmperorOfChina
-							value = 85 
-						}
-					}
-					country_event = { id = flavor_jap.64 }
-				}
-				else = {
-					add_country_modifier = {
-						name = jap_scramble_for_china_modifier
-						duration = 7300 
-					}
-				}
-			}
+		
 		}
 	}
 	
