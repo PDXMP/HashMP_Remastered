@@ -10232,9 +10232,9 @@ bam_citadel = {
 		}
 		region_modifier = {
 			local_defensiveness = 0.1
-			garrison_size = 0.1
+			local_garrison_size = 0.1
 			local_fort_maintenance_modifier = -0.15
-			local_assault_fort_ability = -0.075
+			local_garrison_damage = 0.05
 			#caravan_power = 0.4
 			#merchants = 1
 		}
@@ -18099,7 +18099,7 @@ kazan_kremlin = {
 		area_modifier = {
 			local_development_cost = -0.2
 			local_manpower_modifier = 1.5
-			state_maintenance_modifier = -0.33
+			local_state_maintenance_modifier = -0.33
 		}
 		region_modifier = { 
 			
