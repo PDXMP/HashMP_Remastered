@@ -137,11 +137,11 @@ GER_ideas = {
 ENG_ideas = {
 	start = {
 		infantry_power = 0.10 # agincourt
-		global_unrest = -1 # magna carta, parliament
+		navy_tradition = 0.5
 	}
 
 	bonus = {
-		allowed_marine_fraction = 0.1
+		blockade_efficiency = 0.5
 	}
 	
 	trigger = {
@@ -150,8 +150,8 @@ ENG_ideas = {
 	free = yes		#will be added at load.
 	
 	royal_navy = {
-		navy_tradition = 0.5
 		global_ship_cost = -0.1
+		allowed_marine_fraction = 0.1 #Includes sailor modifier
 	}
 	eltham_ordinance = {
 		production_efficiency = 0.1
@@ -170,7 +170,7 @@ ENG_ideas = {
 		sailor_maintenance_modifer = -0.1
 	}
 	british_bill_of_rights = {
-		years_of_nationalism = -5
+		#years_of_nationalism = -5
 		num_of_parliament_issues = 1
 	}
 }
