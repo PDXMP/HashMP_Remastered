@@ -3229,13 +3229,13 @@ on_adm_development_effect = {
 			70 = {  } 
 		}
 	}
-	if = {
-		limit = { owner = { has_country_modifier = JAP_cadastral_surveys has_dlc = "Domination" } }
-		change_estate_land_share = {
-			estate = all 
-			share = -0.2
-		}
-	}
+	#if = {
+	#	limit = { owner = { has_country_modifier = JAP_cadastral_surveys has_dlc = "Domination" } }
+	#	change_estate_land_share = {
+	#		estate = all 
+	#		share = -0.2
+	#	}
+	#}
 	
 	if = {
 		limit = { owner = { has_country_modifier = jap_20_years_devving_tax_yields_twice_bonus_1_burgher_loyalt_modifier } }

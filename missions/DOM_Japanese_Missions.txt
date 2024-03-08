@@ -1402,7 +1402,7 @@ DOM_japanse_missions_3_a = {
 				name = JAP_cadastral_surveys
 				duration = 7300
 			}
-			custom_tooltip = jap_increase_base_tax_grants_more_crown_land_tt
+			#custom_tooltip = jap_increase_base_tax_grants_more_crown_land_tt
 		}
 	}
 	
