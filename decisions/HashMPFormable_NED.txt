@@ -80,8 +80,6 @@ country_decisions = {
 			on_change_tag_effect = yes
 			restore_country_name = yes
 			swap_non_generic_missions = yes
-			add_government_reform = stadthalter_monarchy_reform 
-			change_government_reform_progress = 50
 			low_countries_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -103,6 +101,10 @@ country_decisions = {
 			if = {
 				limit = { has_custom_ideas = no }
 				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+			country_event = {
+				id = flavor_hol.3502
+				days = 7
 			}
 		}
 		ai_will_do = {
