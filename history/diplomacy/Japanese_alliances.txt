@@ -285,12 +285,12 @@ vassal = {
 #	end_date = 1554.1.1 #Annexed
 #}
 
-vassal = {
-	first = ASK
-	second = KNO
-	start_date = 1444.11.11
-	end_date = 1573.7.3
-}
+#vassal = {
+#	first = ASK
+#	second = KNO
+#	start_date = 1444.11.11
+#	end_date = 1573.7.3
+#}
 
 #vassal = {
 #	first = ASK
