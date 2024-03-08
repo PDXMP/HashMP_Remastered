@@ -324,3 +324,8 @@ jap_period_tranquility_modifier = {
 jap_thundering_firepower_modifier = { 
 	artillery_power = 0.15
 }
+
+growing_economy = {
+	build_cost = -0.075
+	build_time = -0.25
+}
