@@ -251,5 +251,6 @@ h_admiral_of_the_empire = {
 }
 
 jap_manchuria_buff = { 
+	reinforce_speed = 0.2
 	discipline = 0.05
 }
