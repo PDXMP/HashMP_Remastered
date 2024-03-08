@@ -771,6 +771,58 @@ DOM_japanse_missions_2_b = {
 		}
 	}
 	
+		
+	jap_conquer_north_china = {
+		icon = jap_conquer_north_china
+		required_missions = { jap_fate_mandate }
+		position = 5
+		provinces_to_highlight = {
+			region = north_china_region 
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				region = north_china_region 
+				value = 25 
+			}
+			if = {
+				limit = { is_emperor_of_china = yes } 
+				1816 = { owned_by = ROOT } 
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = jap_commercialization_of_mineral_resources_modifier
+				duration = 7300 
+			}
+			
+			change_price = {
+				trade_goods = iron
+				key = chinese_iron_key
+				value = 0.25
+				duration = 7300
+			}
+			custom_tooltip = jap_every_owned_prov_with_iron_1_bp_tt
+			hidden_effect = {
+				every_owned_province = {
+					limit = { 
+						trade_goods = iron 
+						has_manufactory_trigger = yes 
+					}
+					add_base_production = 1 
+				}
+			}
+			
+			if = {
+				limit = { is_emperor_of_china = yes } 
+				add_mandate = 25 
+			}
+			else = { 
+				north_china_region = { limit = { country_or_non_sovereign_subject_holds = ROOT } add_local_autonomy = -10 } 
+			}
+		}
+	}
+	
 	jap_hegemon_of_asia = { 
 		icon = mission_chinese_general_riding
 		required_missions = { jap_conquer_south_china jap_conquer_north_china jap_fate_mandate }
@@ -1404,57 +1456,7 @@ DOM_japanse_missions_3_a = {
 			create_explorer = { tradition = 60 }
 		}
 	}
-	
-	jap_conquer_north_china = {
-		icon = jap_conquer_north_china
-		required_missions = {  }
-		position = 6
-		provinces_to_highlight = {
-			region = north_china_region 
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-		trigger = {
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				region = north_china_region 
-				value = 25 
-			}
-			if = {
-				limit = { is_emperor_of_china = yes } 
-				1816 = { owned_by = ROOT } 
-			}
-		}
-		effect = {
-			add_country_modifier = {
-				name = jap_commercialization_of_mineral_resources_modifier
-				duration = 7300 
-			}
-			
-			change_price = {
-				trade_goods = iron
-				key = chinese_iron_key
-				value = 0.25
-				duration = 7300
-			}
-			custom_tooltip = jap_every_owned_prov_with_iron_1_bp_tt
-			hidden_effect = {
-				every_owned_province = {
-					limit = { 
-						trade_goods = iron 
-						has_manufactory_trigger = yes 
-					}
-					add_base_production = 1 
-				}
-			}
-			
-			if = {
-				limit = { is_emperor_of_china = yes } 
-				add_mandate = 25 
-			}
-			else = { 
-				north_china_region = { limit = { country_or_non_sovereign_subject_holds = ROOT } add_local_autonomy = -10 } 
-			}
-		}
-	}
+
 	
 	jap_new_buddha = {
 		icon = mission_to_china
@@ -2358,7 +2360,7 @@ DOM_japanse_missions_4_d = {
 	
 	jap_surpass_the_west = {
 		icon = mission_raid_christian_trade
-		required_missions = { jap_deploy_atakebune jap_conquer_north_china }
+		required_missions = { jap_deploy_atakebune }
 		position = 7
 		provinces_to_highlight = {
 			
