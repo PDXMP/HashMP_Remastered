@@ -553,20 +553,7 @@ japanse_missions_the_empire = {
 		}
 		effect = {
 			add_prestige_or_monarch_power = { amount = 50 }
-			south_korea_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			eastern_korea_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
+			add_adm_power = 100
 		}
 	}
 	
@@ -657,6 +644,20 @@ japanse_missions_the_empire = {
 			}
 		}
 		effect = {
+			south_korea_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			eastern_korea_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
 			1015 = {
 				if = {
 					limit = {
