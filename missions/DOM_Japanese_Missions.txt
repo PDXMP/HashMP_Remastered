@@ -857,33 +857,33 @@ DOM_japanse_missions_2_b = {
 				duration = -1 
 			}
 			
-			if = {
-				limit = { 
-					is_emperor_of_china = yes 
-					has_dlc = "Mandate of Heaven" 
-				}
-				custom_tooltip = jap_enable_fabricating_trib_CB_tt
-				set_country_flag = jap_enable_fabricating_trib_CB_flag 
-				
-				add_country_modifier = {
-					name = jap_divine_aspirations_modifier
-					duration = -1 
-				}
-			}
-			else_if = {
-				limit = { 
-					is_emperor_of_china = no 
-					has_dlc = "Mandate of Heaven" 
-				}
-				custom_tooltip = jap_reward_if_EoC_tt
-				custom_tooltip = jap_enable_fabricating_trib_CB_tt
-				tooltip = {
-					add_country_modifier = {
-						name = jap_divine_aspirations_modifier
-						duration = -1 
-					}
-				}
-			}
+			#if = {
+			#	limit = { 
+			#		is_emperor_of_china = yes 
+			#		has_dlc = "Mandate of Heaven" 
+			#	}
+			#	custom_tooltip = jap_enable_fabricating_trib_CB_tt
+			#	set_country_flag = jap_enable_fabricating_trib_CB_flag 
+			#	
+			#	add_country_modifier = {
+			#		name = jap_divine_aspirations_modifier
+			#		duration = -1 
+			#	}
+			#}
+			#else_if = {
+			#	limit = { 
+			#		is_emperor_of_china = no 
+			#		has_dlc = "Mandate of Heaven" 
+			#	}
+			#	custom_tooltip = jap_reward_if_EoC_tt
+			#	custom_tooltip = jap_enable_fabricating_trib_CB_tt
+			#	tooltip = {
+			#		add_country_modifier = {
+			#			name = jap_divine_aspirations_modifier
+			#			duration = -1 
+			#		}
+			#	}
+			#}
 		}
 	}
 }
