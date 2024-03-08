@@ -707,7 +707,7 @@ DOM_japanse_missions_2_b = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				region = korea_region 
 				has_fort_building_trigger = yes 
-				value = 5 
+				value = 3 
 			}
 		}
 		effect = {
