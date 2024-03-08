@@ -6667,7 +6667,9 @@ absolute_shogunate_reform = {
 	maintain_dynasty = yes
 	modifiers = {
 		can_transfer_vassal_wargoal = yes
-		administrative_efficiency = 0.05
+		#administrative_efficiency = 0.05
+		infantry_power = 0.1
+		core_creation = -0.25
 		country_military_power = 1 
 		allowed_samurai_fraction = 0.1
 	}
