@@ -320,3 +320,7 @@ jap_period_tranquility_modifier = {
 	development_cost = -0.1
 	global_prosperity_growth = 0.5
 }
+
+jap_thundering_firepower_modifier = { 
+	artillery_power = 0.15
+}
