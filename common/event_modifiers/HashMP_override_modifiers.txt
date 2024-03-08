@@ -413,5 +413,5 @@ jap_shinto_warriors_modifier = {
 }
 jap_bolstered_spirits = {
 	#extra_manpower_at_religious_war = yes 
-	manpower_recovery_speed = 0.25
+	manpower_recovery_speed = 0.2
 }	

@@ -6668,7 +6668,7 @@ absolute_shogunate_reform = {
 	modifiers = {
 		can_transfer_vassal_wargoal = yes
 		administrative_efficiency = 0.05
-		monarch_military_power = 1
+		country_military_power = 1 
 		allowed_samurai_fraction = 0.1
 	}
 }
@@ -6720,6 +6720,8 @@ japanese_divine_empire = {
 	fixed_rank = 3
 	maintain_dynasty = yes
 	modifiers = {
+		yearly_absolutism = 0.5
+		max_absolutism = 40
 		all_estate_possible_privileges = 1
 		no_stability_loss_on_monarch_death = yes 
 		all_estate_loyalty_equilibrium = 0.1
