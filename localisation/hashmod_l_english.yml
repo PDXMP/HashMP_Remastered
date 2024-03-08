@@ -1026,3 +1026,5 @@ desc_h_court_infrastructure:0 "Prosperity? Medicine? Cultural advancements? No, 
  desc_h_fortified_oasis:0 "This province is dominated by a fortified oasis town."
  jap_manchuria_buff:0 "Conquerors of Manchuria" 
  hashmp_jap_philippines_reward:0 "Spice Island Dominance" 
+ jap_modernized_production:0 "Modernized Production" 
+ jap_modernized_production_desc:0 "The West has brought new ideas in the field of manufacturing. By adopting some of the less dangerous elements of these thoughts, we can augment our production methods."
