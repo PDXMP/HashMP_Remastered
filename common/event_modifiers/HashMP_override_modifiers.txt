@@ -377,3 +377,18 @@ jap_self_sufficient_market_modifier = {
 	#global_trade_goods_size_modifier = 0.1
 	development_cost = -0.075
 }
+jap_presence_global_markets = {
+	#transfer_trade_power_reasons = 200
+	global_ship_trade_power = 0.33
+	global_trade_power = 0.1
+}
+
+jap_mixed_commercial_policy_modifier = {
+	free_policy = 1
+	merchants = 1 
+}
+
+jap_enforced_mercantilism_modifier = {
+	global_own_trade_power = 0.2
+	trade_goods_size_modifier = 0.05
+}
