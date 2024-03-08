@@ -300,6 +300,7 @@ daimyo = {
 		capital_scope = { region = japan_region }
 	}
 	modifiers = {
+		ae_impact = -0.25
 		land_morale = 0.05
 		infantry_power = 0.05
 		amount_of_samurai = 4
