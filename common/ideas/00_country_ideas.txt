@@ -873,7 +873,7 @@ CAS_ideas = {
 NED_ideas = {
 	start = {
 		global_sailors_modifier = 0.50 #0.25
-		naval_forcelimit_modifier = 0.50
+		naval_forcelimit_modifier = 0.33
 	}
 	
 	bonus = {
