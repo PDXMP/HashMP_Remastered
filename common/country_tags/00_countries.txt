@@ -506,7 +506,7 @@ DAI	= "countries/DaiViet.txt"
 JAP	= "countries/Japan.txt"
 
 #Daimyos
-AMA = "countries/Amago.txt"
+#AMA = "countries/Amago.txt"
 ASA = "countries/Asakura.txt"
 CSK = "countries/Chosokabe.txt"
 DTE = "countries/Date.txt"
@@ -545,7 +545,7 @@ ISK = "countries/Isshiki.txt"
 #STK = "countries/Satake.txt"
 #TKI = "countries/Toki.txt"
 #UTN = "countries/Utsunomiya.txt"
-TTI = "countries/Tsutsui.txt"
+#TTI = "countries/Tsutsui.txt"
 
 KHA	= "countries/MongolKhanate.txt"
 KHM	= "countries/Khmer.txt"
