@@ -2339,7 +2339,7 @@ HUN_ideas = {
 
 JAP_ideas = {
 	start = {
-		#stability_cost_modifier = -0.1
+		war_exhaustion = -0.05
 		discipline = 0.05
 	}
 	
