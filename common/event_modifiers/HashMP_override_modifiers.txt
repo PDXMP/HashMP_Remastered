@@ -358,10 +358,12 @@ jap_internal_monopolies_modifier = {
 	country_admin_power = 2 
 	global_tax_modifier = 0.25
 }
+
 jap_reformed_samurai_modifier = {
 	fire_damage = 0.1 
 	is_samurai_modifier = yes 
 }
+
 jap_trade_west_modifier = {
 	#trade_efficiency = 0.1
 	country_diplomatic_power = 1
@@ -377,6 +379,7 @@ jap_self_sufficient_market_modifier = {
 	#global_trade_goods_size_modifier = 0.1
 	development_cost = -0.075
 }
+
 jap_presence_global_markets = {
 	#transfer_trade_power_reasons = 200
 	global_ship_trade_power = 0.33
@@ -392,8 +395,9 @@ jap_enforced_mercantilism_modifier = {
 	global_own_trade_power = 0.2
 	trade_goods_size_modifier = 0.05
 }
+
 jap_gokaido_modifier = {
-	trade_goods_size_modifier = 0.15
+	trade_goods_size_modifier = 0.2
 	province_trade_power_modifier = 0.25
 	local_development_cost = -0.05
 }
