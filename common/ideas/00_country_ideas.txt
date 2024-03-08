@@ -141,7 +141,7 @@ ENG_ideas = {
 	}
 
 	bonus = {
-		allowed_marine_fraction = 0.25
+		allowed_marine_fraction = 0.1
 	}
 	
 	trigger = {
