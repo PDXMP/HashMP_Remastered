@@ -9,7 +9,7 @@ unlock_cult = nyame_cult
 capital = 2237
 
 #Denyanke Kings
-1490.1.1 = {
+1444.1.1 = { #Teleported to 1444 from 1490 since Fulo exists in 1444 now
 	monarch = {
 		name = "Koli Tengella"
 		dynasty = "Denianke"
