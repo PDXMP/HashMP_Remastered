@@ -44,7 +44,6 @@ country_decisions = {
 						region = khorasan_region
 						region = persia_region
 						province_id = 295
-						province_id = 280
 					}
 					NOT = {
 						country_or_non_sovereign_subject_holds = ROOT
@@ -92,16 +91,15 @@ country_decisions = {
 			1816 = { owned_by = ROOT } # beijing		
 			1821 = { owned_by = ROOT }
 			667 = { owned_by = ROOT }
-			khorasan_region = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+			num_of_owned_provinces_with = {
+				region = persia_region
+				value = 30
 			}
-			persia_region = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+			num_of_owned_provinces_with = {
+				region = khorasan_region
+				value = 20
 			}
 			295 = { country_or_non_sovereign_subject_holds = ROOT }
-			280 = { country_or_non_sovereign_subject_holds = ROOT }
 			is_at_war = no
 			is_free_or_tributary_trigger = yes
 		}
@@ -245,9 +243,10 @@ country_decisions = {
 			NOT = { exists = ILK }
 			is_free_or_tributary_trigger = yes
 			is_at_war = no
-			persia_region = {
-				type = all
-				owned_by = ROOT
+			
+			num_of_owned_provinces_with = {
+				region = persia_region
+				value = 20
 			}
 		}
 		effect = {
