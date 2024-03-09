@@ -10146,11 +10146,11 @@ SLO_ideas = {
 
 GLH_ideas = {
 	start = {
-		global_manpower_modifier = 0.25
-		land_maintenance_modifier = -0.05
+		manpower_recovery_speed = 0.25
+		land_maintenance_modifier = -0.1
 	}
 	bonus = {
-		global_institution_spread = 0.1
+		shock_damage = 0.1
 	}
 	trigger = {
 		tag = GLH
@@ -10164,24 +10164,26 @@ GLH_ideas = {
 		meritocracy = 1
 		horde_unity = 1
 	}
-	glh_perso_mongol_administration = {
-		core_creation = -0.25
-	}
 	glh_tatar_traditions = {
 		cavalry_power = 0.20
 	}
 	glh_secure_the_trade_routes = {
-		global_prov_trade_power_modifier = 0.10
-	}
-	logistics_of_khan = { #Used by horde_ideas
-		manpower_recovery_speed = 0.2
+		global_prov_trade_power_modifier = 0.25
 	}
 	glh_populating_the_steppes = {
 		development_cost = -0.1
 	}
 	glh_religious_pragmatism = {
-		tolerance_heathen = 2
+		tolerance_heathen = 3
 	}
+	glh_perso_mongol_administration = {
+		build_cost = -0.1
+		global_institution_spread = 0.25
+	}
+	logistics_of_khan = { #Used by horde_ideas
+		fire_damage_received = -0.1
+	}
+
 }
 
 SHY_ideas = {
