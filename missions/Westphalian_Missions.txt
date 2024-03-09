@@ -381,7 +381,7 @@ westfalian_group_3 = {
 				is_strongest_trade_power = ROOT
 				trade_share = {
 					country = ROOT
-					share = 10
+					share = 25 #10
 				}
 			}
 		}
