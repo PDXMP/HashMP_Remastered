@@ -332,9 +332,9 @@ h_theocracy_gov_expansion = {
 		full_idea_group = theocracy_gov_ideas
 		full_idea_group = expansion_ideas
 	}
-	
-	special_unit_forcelimit = 0.2
-	special_unit_cost_modifier = -0.1
+
+	land_forcelimit_modifier = 0.2
+	land_maintenance_modifier = -0.05
 
 	effect = {}
 	removed_effect = {}
