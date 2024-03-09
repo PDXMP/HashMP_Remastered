@@ -553,7 +553,7 @@ tatar_missions_slot_2 = {
 			}
 			add_country_modifier = {
 				name = "fall_of_china"
-				duration = -1
+				duration = 7300
 			}
 			xinan_region = {
 				limit = {
