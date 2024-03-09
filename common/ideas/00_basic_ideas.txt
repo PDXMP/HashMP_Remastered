@@ -1549,7 +1549,7 @@ humanist_ideas = {
 		global_manpower_modifier = 0.1
 	}
 	indirect_rule = {
-		years_of_nationalism = -10
+		years_of_nationalism = -5
 	}
 	cultural_ties = {
 		num_accepted_cultures = 3
