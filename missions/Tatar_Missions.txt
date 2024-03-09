@@ -32,14 +32,33 @@ tatar_missions_1 = {
 			}
 		}
 		effect = {
-			caucasia_region = {
+			astrakhan_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
-			nogai_area = {
+			circassia_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}	
+			dagestan_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}			lower_yik_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}			nogai_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
@@ -53,13 +72,13 @@ tatar_missions_1 = {
 				}
 				add_permanent_claim = ROOT
 			}
-			syr_darya_area = {
+			bashkiria_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
-			}
+			}			
 			kyzylkum_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
@@ -74,18 +93,25 @@ tatar_missions_1 = {
 		required_missions = { unite_the_tatars }
 		position = 3
 		provinces_to_highlight = {
-			region = caucasia_region
+			area = astrakhan_area
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		trigger = {
-			caucasia_region = {
+			astrakhan_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
+			caucasia_region = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
 			tabriz_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
@@ -466,26 +492,13 @@ tatar_missions_slot_2 = {
 		required_missions = { mission_conquer_central_asia }
 		position = 2
 		provinces_to_highlight = {
-			region = mongolia_region
+			province_id = 4678
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
-			}
-			NOT = {
-				is_empty = yes
 			}
 		}
 		trigger = {
 			owns_core_province = 4678
-			custom_trigger_tooltip = {
-				tooltip = mongol_china_mission_tooltip
-				mongolia_region = {
-					type = all
-					OR = {
-						is_empty = yes
-						country_or_non_sovereign_subject_holds = ROOT
-					}
-				}
-			}
 		}
 		effect = {
 			if = {
@@ -540,7 +553,7 @@ tatar_missions_slot_2 = {
 			}
 			add_country_modifier = {
 				name = "fall_of_china"
-				duration = 7300
+				duration = -1
 			}
 			xinan_region = {
 				limit = {
@@ -705,14 +718,14 @@ tatar_missions_2 = {
 	subjugate_ryazan_horde = {
 		icon = mission_cossack_cavalry
 		provinces_to_highlight = {
-			province_id = 301
+			province_id = 1082
 			NOT = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		trigger = {
 			num_of_cities = 25
-			301 = {
+			1082 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
