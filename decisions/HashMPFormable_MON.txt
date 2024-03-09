@@ -222,8 +222,12 @@ country_decisions = {
 				culture_group = tartar
 				primary_culture = altaic_new 
 				culture_group = altaic
+				TAG = QAR
 			}
-			has_reform = steppe_horde
+			OR = {
+				has_reform = steppe_horde
+				TAG = QAR
+			}
 			NOT = { tag = TIM }
 			NOT = { tag = PER }
 			NOT = { tag = PAP }
