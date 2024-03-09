@@ -244,4 +244,45 @@ country_decisions = {
 		}
 		ai_importance = 400
 	}
+	
+	
+	turn_confuncian = {
+		major = yes
+		potential = {
+			NOT = { religion = confucianism }
+			normal_or_historical_nations = yes
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			OR = {
+				is_free_or_tributary_trigger = yes
+				ai = no
+			}
+			TAG = YUA 
+		}
+		provinces_to_highlight = {
+			region = north_china_region
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_at_war = no
+			stability = 2
+			north_china_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			
+
+		}
+		effect = {
+			change_religion = confucianism
+			add_harmonized_religion = sunni
+		}
+	}
+	
 }
