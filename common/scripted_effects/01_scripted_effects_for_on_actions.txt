@@ -3854,10 +3854,10 @@ on_heir_disinherited_or_death_effect = {
 		limit = { has_ruler_flag = heir_went_on_grand_tour }
 		clr_ruler_flag = heir_went_on_grand_tour
 	}
-	if = {
-		limit = { has_country_flag = albrecht_achilles_flag }
-		clr_country_flag = albrecht_achilles_flag #Death of original Albrecht Achilles
-	}
+	# if = {
+	# 	limit = { has_country_flag = albrecht_achilles_flag }
+	# 	clr_country_flag = albrecht_achilles_flag #Death of original Albrecht Achilles
+	# }
 	if = {
 		limit = { has_ruler_flag = sancaga_cikma }
 		clr_ruler_flag = sancaga_cikma
@@ -4206,18 +4206,18 @@ on_dependency_lost_effect = {
 }
 
 on_monarch_death_effect = {
-	if = {
-		limit = {
-			tag = ANS
-			BRA = {
-				has_country_flag = albrecht_achilles_flag
-			}
-		}
-		BRA = {
-			clr_country_flag = albrecht_achilles_flag #Just to be sure
-			kill_heir = {} #If Albrecht Achilles dies in Ansbach he will also be dead in Brandenburg, will appear as normal death of heir to BRA.
-		}
-	}
+	# if = {
+	# 	limit = {
+	# 		tag = ANS
+	# 		BRA = {
+	# 			has_country_flag = albrecht_achilles_flag
+	# 		}
+	# 	}
+	# 	BRA = {
+	# 		clr_country_flag = albrecht_achilles_flag #Just to be sure
+	# 		kill_heir = {} #If Albrecht Achilles dies in Ansbach he will also be dead in Brandenburg, will appear as normal death of heir to BRA.
+	# 	}
+	# }
 	if = {
 		limit = { has_country_modifier = sought_after_bachelor }
 		remove_country_modifier = sought_after_bachelor
