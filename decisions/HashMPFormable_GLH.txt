@@ -47,7 +47,6 @@ country_decisions = {
 						NOT = { is_core = ROOT }
 					}
 					OR = {
-						province_id = 284 #Crimea
 						province_id = 302 #Tambov
 						province_id = 464 #Astrakhan
 						province_id = 465 #Nogai
@@ -56,7 +55,6 @@ country_decisions = {
 						province_id = 1075 #Chimgi-Tura
 						province_id = 1082 #Kazan
 						province_id = 1778 #Qasim
-						province_id = 2411 #Mansur
 					}
 				}
 				AND = {
@@ -64,12 +62,9 @@ country_decisions = {
 						NOT = { country_or_non_sovereign_subject_holds = ROOT }
 					}
 					OR = {
-						province_id = 294
 						province_id = 295
 						province_id = 301
 						province_id = 307
-						province_id = 308
-						province_id = 1956
 					}
 				}
 			}
@@ -77,7 +72,6 @@ country_decisions = {
 		allow = {
 			NOT = { exists = GLH }
 			has_reform = steppe_horde
-			owns_core_province = 284 #Crimea
 			owns_core_province = 302 #Tambov
 			owns_core_province = 464 #Astrakhan
 			owns_core_province = 465 #Nogai
@@ -86,10 +80,7 @@ country_decisions = {
 			owns_core_province = 1075 #Chimgi-Tura
 			owns_core_province = 1082 #Kazan
 			owns_core_province = 1778 #Qasim
-			owns_core_province = 2411 #Mansur
-			294 = { #Tver
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+
 			295 = { #Moscow
 				country_or_non_sovereign_subject_holds = ROOT
 			}
@@ -97,12 +88,6 @@ country_decisions = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			307 = { #Vladimir
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			308 = { #Yaroslavl
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			1956 = { #Suzdal
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			num_of_cities = 30
