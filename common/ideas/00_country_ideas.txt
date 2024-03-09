@@ -15259,10 +15259,11 @@ CHR_ideas = {
 ILK_ideas = {
 	start = {
 		cavalry_power = 0.2
-		cavalry_cost = -0.15
+		cavalry_cost = -0.10
 	}
 	bonus = {
-		cavalry_flanking = 0.5
+		culture_conversion_cost = -0.25
+		culture_conversion_time = -0.33
 	}
 	trigger = {
 		tag = ILK
@@ -15276,23 +15277,26 @@ ILK_ideas = {
 		horde_unity = 1
 	}
 	ilk_favor_sufism = {
-		tolerance_heretic = 2
-	}
-	ilk_persian_language_at_court = {
-		num_accepted_cultures = 1
+		manpower_in_true_faith_provinces = 0.15
+		manpower_in_own_culture_provinces = 0.15
 	}
 	ilk_yam_networks = {
 		movement_speed = 0.15
 		envoy_travel_time = -0.25
 	}
+	ilk_persian_language_at_court = {
+		trade_steering = 0.15
+		global_missionary_strength = 0.03
+	}
 	ilk_mongol_peace = {
-		years_of_nationalism = -5
+		siege_ability = 0.15
+		artillery_levels_available_vs_fort  = 1
 	}
 	ilk_patronize_observatories = {
-		technology_cost = -0.05
+		fire_damage = 0.1
 	}
 	ilk_recruit_turkoman_gunners = {
-		fire_damage = 0.1
+		discipline = 0.05
 	}
 }
 
