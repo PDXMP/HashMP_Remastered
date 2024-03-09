@@ -320,3 +320,12 @@ eng_the_redcoat = {	#Permanent
 	infantry_power = 0.1
 	fire_damage = 0.1
 }
+
+empowered_junkers = {
+	monthly_militarized_society = 0.02
+	monthly_prussian_militarized_society_1 = 0.02
+	monthly_prussian_militarized_society_2 = 0.03
+	monthly_prussian_militarized_society_3 = 0.04
+	army_tradition_decay = -0.01
+	centralize_state_cost = -0.25
+}
