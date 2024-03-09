@@ -17,7 +17,7 @@ base_manpower = 1
 discovered_by = sub_saharan
 
 
-1490.1.1 = {
+1444.1.1 = {
 	owner = FUL 
 	controller = FUL 
 	add_core = FUL
