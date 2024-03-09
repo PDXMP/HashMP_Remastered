@@ -1566,7 +1566,8 @@ DAL_ideas = {
 
 PRU_ideas = {
 	start = {
-		army_tradition = 0.5
+		#army_tradition = 0.5
+		army_tradition_from_battle = 0.5
 		ae_impact = -0.10
 	}
 	
@@ -1587,20 +1588,20 @@ PRU_ideas = {
 		army_tradition_decay = -0.01
 	}
 	army_professionalism = {
-		land_morale = 0.20
+		land_morale = 0.15 #0.2
 	}	
 	noble_cadets = {
 		nobles_loyalty_modifier = 0.10
 	}
 	goose_step = {
-		infantry_power = 0.20
+		infantry_power = 0.15 #0.2
 	}
 	regimental_cantons = {
 		global_manpower_modifier = 0.25
 		global_regiment_recruit_speed = -0.10
 	}
 	religious_toleration = {
-		development_cost = -0.05
+		development_cost = -0.1 #-0.05
 		tolerance_heretic = 1
 	}
 }
