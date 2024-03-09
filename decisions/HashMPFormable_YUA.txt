@@ -42,9 +42,9 @@ country_decisions = {
 		provinces_to_highlight = {
 			OR = {
 				province_id = 723 #Xilin Gol
-				province_id = 1816 #Beijing
 				province_id = 4678 #Qaraqorum
-				province_id = 2136 #Xuanha
+				province_id = 700 #Xi'an
+
 				AND = {
 					culture = mongol
 					NOT = { country_or_non_sovereign_subject_holds = ROOT }
@@ -55,10 +55,6 @@ country_decisions = {
 				}
 				AND = {
 					culture = khalkha
-					NOT = { country_or_non_sovereign_subject_holds = ROOT }
-				}
-				AND = {
-					culture = chahar
 					NOT = { country_or_non_sovereign_subject_holds = ROOT }
 				}
 			}
@@ -77,11 +73,7 @@ country_decisions = {
 			stability = 2
 			owns_core_province = 723 	#Xilin Gol
 			owns_core_province = 4678 	#Qaraqorum
-			owns_core_province = 2136 	#Xuanha
-			owns_core_province = 1816 	#Beijing
-			1816 = {					#Beijing
-				is_state = yes
-			}
+			owns_core_province = 700 #Xi'an
 			custom_trigger_tooltip = {
 				tooltip = subject_all_mongols
 				NOT = {
@@ -102,12 +94,6 @@ country_decisions = {
 						NOT = { country_or_non_sovereign_subject_holds = ROOT }
 					}
 				}
-				NOT = {
-					any_province = {
-						culture = chahar
-						NOT = { country_or_non_sovereign_subject_holds = ROOT }
-					}
-				}
 			}
 			if = {
 				limit = {
@@ -122,19 +108,17 @@ country_decisions = {
 				limit = {
 					has_dlc = "Common Sense"
 				}
-				government_rank = 3
 			}
 			else = {
 				total_development = 1000
 			}
 		}
 		effect = {
-			1816 = {
+			set_government_rank = 3
+			700 = {
 				add_base_tax = 1
 				add_base_production = 1
 				add_base_manpower = 1
-				change_province_name = Khanbaliq
-				rename_capital = Khanbaliq
 				move_capital_effect = yes
 			}
 			723 = {
