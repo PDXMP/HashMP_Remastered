@@ -31,38 +31,39 @@ westfalian_group_1 = {
 		required_missions = { }
 		
 		provinces_to_highlight = {
-			OR = {
-				AND = {
-					area_for_scope_province = {
-						is_capital_of = ROOT
-					}
-					NOT = { owned_by = ROOT }
-				}
-				AND = {
-					is_capital_of = ROOT
-					NOT = {
-						OR = {
-							culture = hannoverian
-							culture = hessian
-						}
-					}
-				}
-			}
+			# OR = {
+			# 	AND = {
+			# 		area_for_scope_province = {
+			# 			is_capital_of = ROOT
+			# 		}
+			# 		NOT = { owned_by = ROOT }
+			# 	}
+			# 	AND = {
+			# 		is_capital_of = ROOT
+			# 		NOT = {
+			# 			OR = {
+			# 				culture = hannoverian
+			# 				culture = hessian
+			# 			}
+			# 		}
+			# 	}
+			# }
 		}
 		
 		trigger = {
-			capital_scope = {
-				OR = {
-					culture = hannoverian
-					culture = hessian
-				}
-			}
-			capital_scope = {
-				area_for_scope_province = {
-					type = all
-					owned_by = ROOT
-				}
-			}
+			# capital_scope = {
+			# 	OR = {
+			# 		culture = hannoverian
+			# 		culture = hessian
+			# 	}
+			# }
+			# capital_scope = {
+			# 	area_for_scope_province = {
+			# 		type = all
+			# 		owned_by = ROOT
+			# 	}
+			# }
+			army_size_percentage = 0.8
 		}
 		
 		effect = {
