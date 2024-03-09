@@ -249,6 +249,9 @@ westfalian_group_1 = {
 					add_permanent_claim = ROOT
 				}
 			}
+			add_prestige_or_monarch_power = {
+				amount = 25
+			}
 		}
 	}
 }
