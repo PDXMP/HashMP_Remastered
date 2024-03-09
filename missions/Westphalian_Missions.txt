@@ -21,6 +21,7 @@ westfalian_group_1 = {
 			tag = FRN
 			tag = AAC
 			tag = WES
+			tag = HAN
 		}
 		NOT = { map_setup = map_setup_random }
 	}
