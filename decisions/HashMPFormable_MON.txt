@@ -35,7 +35,6 @@ country_decisions = {
 						region = crimea_region
 						province_id = 1816
 						province_id = 1821
-						province_id = 667
 					}
 					NOT = { owned_by = ROOT }
 				}
@@ -90,7 +89,6 @@ country_decisions = {
 			}
 			1816 = { owned_by = ROOT } # beijing		
 			1821 = { owned_by = ROOT }
-			667 = { owned_by = ROOT }
 			num_of_owned_provinces_with = {
 				region = persia_region
 				value = 30
