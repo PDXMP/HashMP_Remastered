@@ -59,19 +59,19 @@ add_accepted_culture = occitain
 	add_queen_personality = embezzler_personality
 }
 
-1435.2.1 = {
-	heir = {
-		name = "Amedeo"
-		monarch_name = "Amedeo IX"
-		dynasty = "di Savoia"
-		birth_date = 1435.2.1
-		death_date = 1472.3.30
-		claim = 95
-		adm = 3
-		dip = 2
-		mil = 1 #0
-	}
-}
+# 1435.2.1 = {
+# 	heir = {
+# 		name = "Amedeo"
+# 		monarch_name = "Amedeo IX"
+# 		dynasty = "di Savoia"
+# 		birth_date = 1435.2.1
+# 		death_date = 1472.3.30
+# 		claim = 95
+# 		adm = 3
+# 		dip = 2
+# 		mil = 1 #0
+# 	}
+# }
 
 1465.1.30 = {
 	clear_scripted_personalities = yes
