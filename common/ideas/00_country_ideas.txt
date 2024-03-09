@@ -4314,7 +4314,7 @@ KON_ideas = {
 
 	bonus = {
 		#improve_relation_modifier = 0.3
-		heavy_ship_power = 0.1
+		global_prov_trade_power_modifier = 0.2 #0.1
 	}
 
 	trigger = {	
@@ -4343,7 +4343,8 @@ KON_ideas = {
 		envoy_travel_time = -0.25
 	}
 	triangle_trade = {
-		global_prov_trade_power_modifier = 0.2 #0.1
+		global_sailors_modifier = 0.33
+		naval_forcelimit_modifier = 0.33
 	}
 	foreign_demand_for_slaves = {
 		production_efficiency = 0.10
