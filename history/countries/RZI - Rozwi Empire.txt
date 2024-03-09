@@ -17,7 +17,7 @@ capital = 1185	# Butua
 		name = "Colambu"
 		dynasty = "Butuan"
 		adm = 3
-		dip = 2
+		dip = 3
 		mil = 3
 	}
 }
