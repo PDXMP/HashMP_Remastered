@@ -281,6 +281,7 @@ westfalian_group_2 = {
 			tag = FRN
 			tag = AAC
 			tag = WES
+			tag = HAN
 		}
 		NOT = { map_setup = map_setup_random }
 	}
@@ -291,7 +292,10 @@ westfalian_group_2 = {
 		position = 5
 		
 		trigger = {
-			tag = WES
+			OR = {
+				tag = WES
+				tag = HAN
+			}
 			num_of_cities = 25
 			# if = {
 			# 	limit = {
@@ -378,6 +382,7 @@ westfalian_group_3 = {
 			tag = FRN
 			tag = AAC
 			tag = WES
+			tag = HAN
 		}
 		NOT = { map_setup = map_setup_random }
 	}
