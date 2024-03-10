@@ -613,9 +613,6 @@ emp_burgundy_3 = {
 			93 = {
 				add_permanent_claim = ROOT
 			}
-			1878 = {
-				add_permanent_claim = ROOT
-			}
 			2974 = {
 				add_permanent_claim = ROOT
 			}
@@ -635,7 +632,6 @@ emp_burgundy_3 = {
 		provinces_to_highlight = {
 			OR = {
 				province_id = 93
-				province_id = 1878
 				province_id = 2974
 				province_id = 1742
 			}
@@ -644,9 +640,6 @@ emp_burgundy_3 = {
 		
 		trigger = {
 			93 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			1878 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			2974 = {
