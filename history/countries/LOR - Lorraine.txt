@@ -20,10 +20,12 @@ capital = 189	# Nancy
 
 # 1431.1.25: Personal Union under René of Anjou
 
-1453.2.28 = {
+#HashMP teleport reign since Lorraine is independent now
+#1453.2.28
+1444.2.28 = {
 	monarch = {
 		name = "Jean II"
-		dynasty = "de Valois"
+		dynasty = "de Valois-Anjou"
 		birth_date = 1424.8.2
 		adm = 1
 		dip = 4
