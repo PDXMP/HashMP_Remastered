@@ -1445,7 +1445,7 @@ emp_burgundy_5 = {
 		provinces_to_highlight = {
 			province_id = 1744
 			province_id = 90
-			province_id = 4384
+			province_id = 4383
 			NOT = { owned_by = root }
 		}
 		trigger = {
@@ -1458,7 +1458,7 @@ emp_burgundy_5 = {
 				owned_by = ROOT
 				is_core = ROOT
 			}
-			4384 = {
+			4383 = {
 				owned_by = ROOT
 				is_core = ROOT
 			}
