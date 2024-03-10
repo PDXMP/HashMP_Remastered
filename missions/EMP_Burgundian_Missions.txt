@@ -598,8 +598,13 @@ emp_burgundy_3 = {
 		}
 		
 		trigger = {
-			lorraine_area = {
-				type = all
+			# lorraine_area = {
+			# 	type = all
+			# 	owned_by = ROOT
+			# }
+			num_of_owned_provinces_with = {
+				value = 2
+				area = lorraine_area
 				owned_by = ROOT
 			}
 		}
