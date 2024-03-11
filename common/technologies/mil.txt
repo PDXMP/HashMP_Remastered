@@ -518,6 +518,8 @@ technology = {
 	enable = aboriginal_swarm_cav
 	enable = pacific_swarm_cav
 	enable = h_colonial_cavalry_18
+	enable = polish_winged_hussar	
+	enable = muscovite_cossack	
 	
 	combat_width = 2
 }
@@ -625,10 +627,6 @@ technology = {
 	combat_width = 2
 	
 	conscription_center = yes
-
-	
-	enable = polish_winged_hussar	
-	enable = muscovite_cossack	
 
 	enable = horse_artillery_unit
 	enable = coehorn_mortar
