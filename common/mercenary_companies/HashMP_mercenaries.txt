@@ -4,6 +4,7 @@ h_merc_inf_tech_2_half_a = {
     cost_modifier = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 2
         NOT = { mil_tech = 5 }
     }
@@ -24,6 +25,7 @@ h_merc_inf_tech_2_half_b = {
     cost_modifier = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 2
         NOT = { mil_tech = 5 }
     }
@@ -44,6 +46,7 @@ h_merc_inf_tech_2_full_a = {
     cost_modifier = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 2
         NOT = { mil_tech = 5 }
     }
@@ -64,6 +67,7 @@ h_merc_inf_tech_2_full_b = {
     cost_modifier = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 2
         NOT = { mil_tech = 5 }
     }
@@ -84,6 +88,7 @@ h_merc_inf_tech_5_half_a = {
     cost_modifier = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 5
         NOT = { mil_tech = 6 }
     }
@@ -104,6 +109,7 @@ h_merc_inf_tech_5_half_b = {
     cost_modifier = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 5
         NOT = { mil_tech = 6 }
     }
@@ -124,6 +130,7 @@ h_merc_inf_tech_5_full_a = {
     cost_modifier = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 5
         NOT = { mil_tech = 6 }
     }
@@ -144,6 +151,7 @@ h_merc_inf_tech_5_full_b = {
     cost_modifier = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 5
         NOT = { mil_tech = 6 }
     }
@@ -164,6 +172,7 @@ h_merc_inf_tech_6_half_a = {
     cost_modifier = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 6
         NOT = { mil_tech = 9 }
     }
@@ -184,6 +193,7 @@ h_merc_inf_tech_6_half_b = {
     cost_modifier = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 6
         NOT = { mil_tech = 9 }
     }
@@ -204,6 +214,7 @@ h_merc_inf_tech_6_full_a = {
     cost_modifier = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 6
         NOT = { mil_tech = 9 }
     }
@@ -224,6 +235,7 @@ h_merc_inf_tech_6_full_b = {
     cost_modifier = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 6
         NOT = { mil_tech = 9 }
     }
@@ -244,6 +256,7 @@ h_merc_inf_tech_9_half_a = {
     cost_modifier = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 9
         NOT = { mil_tech = 11 }
     }
@@ -264,6 +277,7 @@ h_merc_inf_tech_9_half_b = {
     cost_modifier = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 9
         NOT = { mil_tech = 11 }
     }
@@ -284,6 +298,7 @@ h_merc_inf_tech_9_full_a = {
     cost_modifier = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 9
         NOT = { mil_tech = 11 }
     }
@@ -304,6 +319,7 @@ h_merc_inf_tech_9_full_b = {
     cost_modifier = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 9
         NOT = { mil_tech = 11 }
     }
@@ -324,6 +340,7 @@ h_merc_inf_tech_11_half_a = {
     cost_modifier = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 11
         NOT = { mil_tech = 14 }
     }
@@ -344,6 +361,7 @@ h_merc_inf_tech_11_half_b = {
     cost_modifier = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 11
         NOT = { mil_tech = 14 }
     }
@@ -364,6 +382,7 @@ h_merc_inf_tech_11_full_a = {
     cost_modifier = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 11
         NOT = { mil_tech = 14 }
     }
@@ -384,6 +403,7 @@ h_merc_inf_tech_11_full_b = {
     cost_modifier = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 11
         NOT = { mil_tech = 14 }
     }
@@ -404,6 +424,7 @@ h_merc_inf_tech_14_half_a = {
     cost_modifier = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 14
         NOT = { mil_tech = 16 }
     }
@@ -424,6 +445,7 @@ h_merc_inf_tech_14_half_b = {
     cost_modifier = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 14
         NOT = { mil_tech = 16 }
     }
@@ -444,6 +466,7 @@ h_merc_inf_tech_14_full_a = {
     cost_modifier = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 14
         NOT = { mil_tech = 16 }
     }
@@ -464,6 +487,7 @@ h_merc_inf_tech_14_full_b = {
     cost_modifier = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 14
         NOT = { mil_tech = 16 }
     }
@@ -484,6 +508,7 @@ h_merc_inf_tech_16_half_a = {
     cost_modifier = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 16
         NOT = { mil_tech = 18 }
     }
@@ -504,6 +529,7 @@ h_merc_inf_tech_16_half_b = {
     cost_modifier = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 16
         NOT = { mil_tech = 18 }
     }
@@ -524,6 +550,7 @@ h_merc_inf_tech_16_full_a = {
     cost_modifier = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 16
         NOT = { mil_tech = 18 }
     }
@@ -544,6 +571,7 @@ h_merc_inf_tech_16_full_b = {
     cost_modifier = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 16
         NOT = { mil_tech = 18 }
     }
@@ -564,6 +592,7 @@ h_merc_inf_tech_18_half_a = {
     cost_modifier = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 18
         NOT = { mil_tech = 20 }
     }
@@ -584,6 +613,7 @@ h_merc_inf_tech_18_half_b = {
     cost_modifier = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 18
         NOT = { mil_tech = 20 }
     }
@@ -604,6 +634,7 @@ h_merc_inf_tech_18_full_a = {
     cost_modifier = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 18
         NOT = { mil_tech = 20 }
     }
@@ -624,6 +655,7 @@ h_merc_inf_tech_18_full_b = {
     cost_modifier = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 18
         NOT = { mil_tech = 20 }
     }
@@ -644,6 +676,7 @@ h_merc_inf_tech_20_half_a = {
     cost_modifier = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 20
         NOT = { mil_tech = 22 }
     }
@@ -664,6 +697,7 @@ h_merc_inf_tech_20_half_b = {
     cost_modifier = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 20
         NOT = { mil_tech = 22 }
     }
@@ -684,6 +718,7 @@ h_merc_inf_tech_20_full_a = {
     cost_modifier = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 20
         NOT = { mil_tech = 22 }
     }
@@ -704,6 +739,7 @@ h_merc_inf_tech_20_full_b = {
     cost_modifier = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 20
         NOT = { mil_tech = 22 }
     }
@@ -724,6 +760,7 @@ h_merc_inf_tech_22_half_a = {
     cost_modifier = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 22
         NOT = { mil_tech = 24 }
     }
@@ -744,6 +781,7 @@ h_merc_inf_tech_22_half_b = {
     cost_modifier = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 22
         NOT = { mil_tech = 24 }
     }
@@ -764,6 +802,7 @@ h_merc_inf_tech_22_full_a = {
     cost_modifier = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 22
         NOT = { mil_tech = 24 }
     }
@@ -784,6 +823,7 @@ h_merc_inf_tech_22_full_b = {
     cost_modifier = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 22
         NOT = { mil_tech = 24 }
     }
@@ -804,6 +844,7 @@ h_merc_inf_tech_24_half_a = {
     cost_modifier = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 24
         NOT = { mil_tech = 26 }
     }
@@ -824,6 +865,7 @@ h_merc_inf_tech_24_half_b = {
     cost_modifier = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 24
         NOT = { mil_tech = 26 }
     }
@@ -844,6 +886,7 @@ h_merc_inf_tech_24_full_a = {
     cost_modifier = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 24
         NOT = { mil_tech = 26 }
     }
@@ -864,6 +907,7 @@ h_merc_inf_tech_24_full_b = {
     cost_modifier = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 24
         NOT = { mil_tech = 26 }
     }
@@ -884,6 +928,7 @@ h_merc_inf_tech_26_half_a = {
     cost_modifier = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 26 
     }
 
@@ -903,6 +948,7 @@ h_merc_inf_tech_26_half_b = {
     cost_modifier = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 26 
     }
 
@@ -922,6 +968,7 @@ h_merc_inf_tech_26_full_a = {
     cost_modifier = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 26 
     }
 
@@ -941,6 +988,7 @@ h_merc_inf_tech_26_full_b = {
     cost_modifier = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 26 
     }
 
@@ -961,6 +1009,7 @@ h_merc_inf_tech_2_half_a = {
     cavalry_weight = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 2
         NOT = { mil_tech = 5 }
     }
@@ -982,6 +1031,7 @@ h_merc_cav_tech_2_half_b = {
     cavalry_weight = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 2
         NOT = { mil_tech = 5 }
     }
@@ -1003,6 +1053,7 @@ h_merc_cav_tech_2_full_a = {
     cavalry_weight = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 2
         NOT = { mil_tech = 5 }
     }
@@ -1024,6 +1075,7 @@ h_merc_cav_tech_2_full_b = {
     cavalry_weight = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 2
         NOT = { mil_tech = 5 }
     }
@@ -1045,6 +1097,7 @@ h_merc_cav_tech_5_half_a = {
     cavalry_weight = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 5
         NOT = { mil_tech = 6 }
     }
@@ -1066,6 +1119,7 @@ h_merc_cav_tech_5_half_b = {
     cavalry_weight = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 5
         NOT = { mil_tech = 6 }
     }
@@ -1087,6 +1141,7 @@ h_merc_cav_tech_5_full_a = {
     cavalry_weight = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 5
         NOT = { mil_tech = 6 }
     }
@@ -1108,6 +1163,7 @@ h_merc_cav_tech_5_full_b = {
     cavalry_weight = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 5
         NOT = { mil_tech = 6 }
     }
@@ -1129,6 +1185,7 @@ h_merc_cav_tech_6_half_a = {
     cavalry_weight = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 6
         NOT = { mil_tech = 9 }
     }
@@ -1150,6 +1207,7 @@ h_merc_cav_tech_6_half_b = {
     cavalry_weight = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 6
         NOT = { mil_tech = 9 }
     }
@@ -1171,6 +1229,7 @@ h_merc_cav_tech_6_full_a = {
     cavalry_weight = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 6
         NOT = { mil_tech = 9 }
     }
@@ -1192,6 +1251,7 @@ h_merc_cav_tech_6_full_b = {
     cavalry_weight = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 6
         NOT = { mil_tech = 9 }
     }
@@ -1213,6 +1273,7 @@ h_merc_cav_tech_9_half_a = {
     cavalry_weight = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 9
         NOT = { mil_tech = 11 }
     }
@@ -1234,6 +1295,7 @@ h_merc_cav_tech_9_half_b = {
     cavalry_weight = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 9
         NOT = { mil_tech = 11 }
     }
@@ -1255,6 +1317,7 @@ h_merc_cav_tech_9_full_a = {
     cavalry_weight = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 9
         NOT = { mil_tech = 11 }
     }
@@ -1276,6 +1339,7 @@ h_merc_cav_tech_9_full_b = {
     cavalry_weight = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 9
         NOT = { mil_tech = 11 }
     }
@@ -1297,6 +1361,7 @@ h_merc_cav_tech_11_half_a = {
     cavalry_weight = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 11
         NOT = { mil_tech = 14 }
     }
@@ -1318,6 +1383,7 @@ h_merc_cav_tech_11_half_b = {
     cavalry_weight = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 11
         NOT = { mil_tech = 14 }
     }
@@ -1339,6 +1405,7 @@ h_merc_cav_tech_11_full_a = {
     cavalry_weight = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 11
         NOT = { mil_tech = 14 }
     }
@@ -1360,6 +1427,7 @@ h_merc_cav_tech_11_full_b = {
     cavalry_weight = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 11
         NOT = { mil_tech = 14 }
     }
@@ -1381,6 +1449,7 @@ h_merc_cav_tech_14_half_a = {
     cavalry_weight = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 14
         NOT = { mil_tech = 16 }
     }
@@ -1402,6 +1471,7 @@ h_merc_cav_tech_14_half_b = {
     cavalry_weight = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 14
         NOT = { mil_tech = 16 }
     }
@@ -1423,6 +1493,7 @@ h_merc_cav_tech_14_full_a = {
     cavalry_weight = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 14
         NOT = { mil_tech = 16 }
     }
@@ -1444,6 +1515,7 @@ h_merc_cav_tech_14_full_b = {
     cavalry_weight = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 14
         NOT = { mil_tech = 16 }
     }
@@ -1465,6 +1537,7 @@ h_merc_cav_tech_16_half_a = {
     cavalry_weight = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 16
         NOT = { mil_tech = 18 }
     }
@@ -1486,6 +1559,7 @@ h_merc_cav_tech_16_half_b = {
     cavalry_weight = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 16
         NOT = { mil_tech = 18 }
     }
@@ -1507,6 +1581,7 @@ h_merc_cav_tech_16_full_a = {
     cavalry_weight = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 16
         NOT = { mil_tech = 18 }
     }
@@ -1528,6 +1603,7 @@ h_merc_cav_tech_16_full_b = {
     cavalry_weight = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 16
         NOT = { mil_tech = 18 }
     }
@@ -1549,6 +1625,7 @@ h_merc_cav_tech_18_half_a = {
     cavalry_weight = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 18
         NOT = { mil_tech = 20 }
     }
@@ -1570,6 +1647,7 @@ h_merc_cav_tech_18_half_b = {
     cavalry_weight = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 18
         NOT = { mil_tech = 20 }
     }
@@ -1591,6 +1669,7 @@ h_merc_cav_tech_18_full_a = {
     cavalry_weight = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 18
         NOT = { mil_tech = 20 }
     }
@@ -1612,6 +1691,7 @@ h_merc_cav_tech_18_full_b = {
     cavalry_weight = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 18
         NOT = { mil_tech = 20 }
     }
@@ -1633,6 +1713,7 @@ h_merc_cav_tech_20_half_a = {
     cavalry_weight = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 20
         NOT = { mil_tech = 22 }
     }
@@ -1654,6 +1735,7 @@ h_merc_cav_tech_20_half_b = {
     cavalry_weight = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 20
         NOT = { mil_tech = 22 }
     }
@@ -1675,6 +1757,7 @@ h_merc_cav_tech_20_full_a = {
     cavalry_weight = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 20
         NOT = { mil_tech = 22 }
     }
@@ -1696,6 +1779,7 @@ h_merc_cav_tech_20_full_b = {
     cavalry_weight = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 20
         NOT = { mil_tech = 22 }
     }
@@ -1717,6 +1801,7 @@ h_merc_cav_tech_22_half_a = {
     cavalry_weight = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 22
         NOT = { mil_tech = 24 }
     }
@@ -1738,6 +1823,7 @@ h_merc_cav_tech_22_half_b = {
     cavalry_weight = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 22
         NOT = { mil_tech = 24 }
     }
@@ -1759,6 +1845,7 @@ h_merc_cav_tech_22_full_a = {
     cavalry_weight = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 22
         NOT = { mil_tech = 24 }
     }
@@ -1780,6 +1867,7 @@ h_merc_cav_tech_22_full_b = {
     cavalry_weight = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 22
         NOT = { mil_tech = 24 }
     }
@@ -1801,6 +1889,7 @@ h_merc_cav_tech_24_half_a = {
     cavalry_weight = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 24
         NOT = { mil_tech = 26 }
     }
@@ -1822,6 +1911,7 @@ h_merc_cav_tech_24_half_b = {
     cavalry_weight = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 24
         NOT = { mil_tech = 26 }
     }
@@ -1843,6 +1933,7 @@ h_merc_cav_tech_24_full_a = {
     cavalry_weight = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 24
         NOT = { mil_tech = 26 }
     }
@@ -1864,6 +1955,7 @@ h_merc_cav_tech_24_full_b = {
     cavalry_weight = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 24
         NOT = { mil_tech = 26 }
     }
@@ -1885,6 +1977,7 @@ h_merc_cav_tech_26_half_a = {
     cavalry_weight = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 26 
     }
 
@@ -1905,6 +1998,7 @@ h_merc_cav_tech_26_half_b = {
     cavalry_weight = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 26 
     }
 
@@ -1925,6 +2019,7 @@ h_merc_cav_tech_26_full_a = {
     cavalry_weight = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 26 
     }
 
@@ -1945,6 +2040,7 @@ h_merc_cav_tech_26_full_b = {
     cavalry_weight = 1
 
     trigger = {
+        h_can_recruit_generic_mercenaries = yes
         mil_tech = 26 
     }
 
@@ -1957,13 +2053,12 @@ h_merc_cav_tech_26_full_b = {
     manpower_pool = 40
     no_additional_manpower_from_max_size = yes
 }
-
+   
 h_merc_colonial_militia = {
     regiments_per_development = 0.1
     max_size = 10
     trigger = {
         is_colonial_nation = yes
-        is_allowed_to_recruit_mercenaries = yes
     }
     cost_modifier = 0.5
     modifier = {
