@@ -124,7 +124,7 @@ technology = {
 	#Standardised Pikes
 	supply_limit 		= 	0.5
 	infantry_shock		= 	0.15
-	cavalry_shock		= 	0.2
+	cavalry_shock		= 	0.25
 
 	enable = western_men_at_arms	
 	enable = western_longbow	
@@ -170,7 +170,7 @@ technology = {
 	
 	#Arquebus
 	military_tactics 	= 	0.25
-	infantry_fire 		= 	0.1
+	infantry_fire 		= 	0.2
 	cavalry_shock		=	0.25
 	infantry_shock		= 	0.3
 	
@@ -223,8 +223,8 @@ technology = {
 
 	
 	#Pike and Shot
-	infantry_fire		= 	0.15
-	cavalry_shock		=	0.30
+	infantry_fire		= 	0.10
+	cavalry_shock		=	0.25
 
 	
 	regimental_camp = yes
@@ -274,7 +274,6 @@ technology = {
 	#Reiter
 	maneuver_value 		= 	0.25
 	cavalry_fire		= 	0.25
-	infantry_fire		=   0.2
 
 	enable = hungarian_hussar
 	enable = ottoman_spahi		
@@ -314,7 +313,7 @@ technology = {
 	}
 	
 	#Matchlock Musket
-	cavalry_fire		= 	0.3
+	cavalry_fire		= 	0.25
 	infantry_shock		= 	0.20
 	
 	weapons = yes
@@ -337,6 +336,7 @@ technology = {
 	supply_limit 		= 	0.5
 	military_tactics	=	0.25
 	cavalry_shock		=	0.2
+	infantry_fire		=   0.15
 
 	enable = tofongchis_musketeer		
 	enable = ottoman_sekban		
@@ -504,7 +504,7 @@ technology = {
 	#Carbine
 	maneuver_value 		= 	0.25
 	cavalry_fire		=	0.25
-	infantry_fire		=	0.2
+	infantry_fire		=	0.25
 		
 	enable = swedish_gallop	
 	enable = sikh_hit_and_run
@@ -540,6 +540,7 @@ technology = {
 	military_tactics 	= 	0.25
 	supply_limit		=	0.5
 	cavalry_shock		=	0.2
+	infantry_shock 		=	0.1
 
 	fort_17th = yes
 
@@ -605,7 +606,7 @@ technology = {
 	sprite_level = 3
 	military_tactics 	= 	0.25
 	cavalry_shock		=	0.2
-	infantry_shock 		=	0.25
+	infantry_shock 		=	0.15
 }
 
 technology = {
@@ -621,6 +622,7 @@ technology = {
 	}
 	
 	#Cartridge	(1620)?)
+	infantry_fire 		= 	0.2
 	cavalry_fire		=	0.25
 	artillery_shock 	=	0.1
 	artillery_fire		=	2.0
@@ -648,7 +650,6 @@ technology = {
 	#Light Cavalry
 	military_tactics 	= 	0.25
 	maneuver_value 		= 	0.5
-	infantry_fire 		= 	0.25
 
 	enable = swedish_arme_blanche	
 	enable = french_dragoon		
@@ -701,7 +702,7 @@ technology = {
 	fort_18th	= yes	
 	military_tactics 	= 	0.25
 	cavalry_shock		=	0.4
-	infantry_shock		=	0.2
+	infantry_shock		=	0.3
 
 	combat_width = 2
 }
