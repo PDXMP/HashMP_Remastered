@@ -70,6 +70,8 @@ technology = {
 	enable = aboriginal_boomerang
 	enable = aboriginal_warrior
 	enable = pacific_spearman
+	enable = h_colonial_infantry_1
+	enable = h_colonial_cavalry_1
 }
 
 technology = {
@@ -153,6 +155,8 @@ technology = {
 	enable = aboriginal_infantry
 	enable = aboriginal_reformed_boomerang
 	enable = pacific_reformed_spearman
+	enable = h_colonial_infantry_morale_5
+	enable = h_colonial_infantry_shock_5
 	
 	combat_width = 2
 }
@@ -188,6 +192,7 @@ technology = {
 	enable = high_american_horsemen
 	enable = aboriginal_horseman	
 	enable = pacific_horseman
+	enable = h_colonial_cavalry_6
 	
 	combat_width = 2
 }
@@ -247,6 +252,9 @@ technology = {
 	enable = asian_arquebusier	
 	enable = steppe_raiders
 	enable = ha_xiuhtecuhtli_soldier
+	enable = h_colonial_infantry_morale_9
+	enable = h_colonial_infantry_shock_9
+
 	military_tactics 	= 	0.25
 	cavalry_shock		=	0.25
 	combat_width = 1	
@@ -291,6 +299,7 @@ technology = {
 	enable = aboriginal_cavalry
 	enable = pacific_island_warriors
 	enable = pacific_cavalry
+	enable = h_colonial_cavalry_10
 }
 
 technology = {
@@ -343,6 +352,9 @@ technology = {
 	enable = ethiopian_mountain_warfare		
 	enable = steppe_footmen
 	enable = ha_xiuhtecuhtlian_infantry
+	enable = h_colonial_infantry_morale_12
+	enable = h_colonial_infantry_shock_12
+	enable = h_colonial_infantry_fire_12
 }
 
 technology = {
@@ -402,6 +414,7 @@ technology = {
 	enable = aboriginal_tasmanian_arquebusier
 	enable = pacific_hussar
 	enable = pacific_arquebusier
+	enable = h_colonial_cavalry_14
 	
 	combat_width = 2
 }
@@ -504,6 +517,7 @@ technology = {
 	enable = ha_xoloti
 	enable = aboriginal_swarm_cav
 	enable = pacific_swarm_cav
+	enable = h_colonial_cavalry_18
 	
 	combat_width = 2
 }
@@ -545,6 +559,9 @@ technology = {
 	enable = high_american_swarm
 	enable = aboriginal_riflemen
 	enable = pacific_riflemen
+	enable = h_colonial_infantry_morale_19
+	enable = h_colonial_infantry_shock_19
+	enable = h_colonial_infantry_fire_19
 }
 
 technology = {
@@ -661,6 +678,9 @@ technology = {
 	enable = high_american_dragoon
 	enable = aboriginal_dragoon
 	enable = pacific_dragoon
+	enable = h_colonial_cavalry_morale_23
+	enable = h_colonial_cavalry_shock_23
+	enable = h_colonial_cavalry_fire_23
 }
 
 technology = {
@@ -753,6 +773,9 @@ technology = {
 	enable = ha_reformed_influenced_infantry
 	enable = aboriginal_guerrillas
 	enable = pacific_guerrillas
+	enable = h_colonial_infantry_morale_26
+	enable = h_colonial_infantry_shock_26
+	enable = h_colonial_infantry_fire_26
 	
 	combat_width = 2
 }
@@ -812,6 +835,9 @@ technology = {
 	enable = french_impulse
 	enable = british_square
 	enable = steppe_uhlans
+	enable = h_colonial_cavalry_morale_28
+	enable = h_colonial_cavalry_shock_28
+	enable = h_colonial_cavalry_fire_28
 }
 
 technology = {
@@ -870,6 +896,9 @@ technology = {
 	enable = reformed_westernized_incan		
 	enable = reformed_steppe_rifles
 	enable = ha_reformed_xoloti
+	enable = h_colonial_infantry_morale_30
+	enable = h_colonial_infantry_shock_30
+	enable = h_colonial_infantry_fire_30
 }
 
 technology = {
