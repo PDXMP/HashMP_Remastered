@@ -42,5 +42,5 @@ NDefines.NMilitary.LIGHT_SHIP_COST = 20 							-- _MDEF_LIGHT_SHIP_COST = 10,
 NDefines.NMilitary.GALLEY_COST = 10								-- _MDEF_GALLEY_COST = 10,
 NDefines.NMilitary.TRANSPORT_COST = 5							-- _MDEF_TRANSPORT_COST = 10,
 NDefines.NMilitary.TRADITION_GAIN_NAVAL = 60						-- Tradition gain base value from naval combat.
-NDefines.NMilitary.CAVALRY_COST = 20
+NDefines.NMilitary.CAVALRY_COST = 22.5
 NDefines.NMilitary.CAV_SUPPRESSION = 0.5
