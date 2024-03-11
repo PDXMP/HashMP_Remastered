@@ -1022,3 +1022,4 @@ desc_h_court_infrastructure:0 "Prosperity? Medicine? Cultural advancements? No, 
  desc_h_fortified_oasis:0 "This province is dominated by a fortified oasis town."
  h_sick_and_hurt_board:0 "The Sick and Hurt Board"
  h_sick_and_hurt_board_desc:0 "Founded in 1707, its role was to ensure the welfare of ordinary enlisted seamen in the Navy. It brought a series of reforms that improved the health of sailors on duty."
+ t_ai_cn:0 "AI Colonial Nation"
