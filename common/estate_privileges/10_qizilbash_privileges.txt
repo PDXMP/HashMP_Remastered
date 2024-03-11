@@ -583,7 +583,7 @@ estate_qizilbash_regimental_discipline = {
 			estate_loyalty = { estate = estate_qizilbash loyalty = 60 }
 		}
 		modifier = {
-			discipline = 0.05
+			discipline = 0.03
 		}
 	}
 	influence_scaled_conditional_modifier = {
@@ -592,7 +592,7 @@ estate_qizilbash_regimental_discipline = {
 			NOT = { estate_loyalty = { estate = estate_qizilbash loyalty = 60 } }
 		}
 		modifier = {
-			discipline = 0.025
+			discipline = 0.015
 		}
 	}
 	influence_scaled_conditional_modifier = {
@@ -600,7 +600,7 @@ estate_qizilbash_regimental_discipline = {
 			NOT = { estate_loyalty = { estate = estate_qizilbash loyalty = 30 } }
 		}
 		modifier = {
-			discipline = -0.025
+			discipline = -0.015
 		}
 	}
 	modifier_by_land_ownership = {
