@@ -170,7 +170,6 @@ technology = {
 	
 	#Arquebus
 	military_tactics 	= 	0.25
-	infantry_shock		= 	0.30
 	infantry_fire 		= 	0.20
 	cavalry_shock		=	0.25
 	
@@ -223,7 +222,7 @@ technology = {
 
 	
 	#Pike and Shot
-	infantry_fire		= 	0.25
+	infantry_fire		= 	0.20
 	cavalry_shock		=	0.30
 
 	
@@ -257,6 +256,7 @@ technology = {
 
 	military_tactics 	= 	0.25
 	cavalry_shock		=	0.25
+	infantry_shock		= 	0.30
 	combat_width = 1	
 }
 
@@ -272,7 +272,6 @@ technology = {
 	#Reiter
 	maneuver_value 		= 	0.25
 	cavalry_fire		= 	0.25
-	infantry_fire       =   0.15
 
 	enable = hungarian_hussar
 	enable = ottoman_spahi		
@@ -312,8 +311,8 @@ technology = {
 	}
 	
 	#Matchlock Musket
-	infantry_fire		=   0.1
-	cavalry_fire		= 	0.25
+	infantry_fire		=   0.2
+	cavalry_fire		= 	0.3
 	
 	weapons = yes
 	
@@ -480,7 +479,7 @@ technology = {
 		global_trade = 0.15
 	}
 	
-	cavalry_shock		=	0.2
+	cavalry_shock		=	0.4
 	infantry_shock		=	0.25
 	supply_limit		= 	0.5	
 	
@@ -579,7 +578,7 @@ technology = {
 	
 	#Killing Grounds
 	
-	infantry_fire		= 	0.3
+	infantry_fire		= 	0.2
 	cavalry_shock		=	0.2
 		
 	enable = swivel_cannon
@@ -604,7 +603,7 @@ technology = {
 	sprite_level = 3
 	military_tactics 	= 	0.25
 	cavalry_shock		=	0.2
-	infantry_shock 		=	0.25
+	infantry_shock 		=	0.2
 }
 
 technology = {
@@ -699,7 +698,7 @@ technology = {
 	#Covered Way
 	fort_18th	= yes	
 	military_tactics 	= 	0.25
-	cavalry_shock		=	0.6
+	cavalry_shock		=	0.4
 	infantry_shock		=	0.25
 
 	combat_width = 2
@@ -813,7 +812,7 @@ technology = {
 	
 	#Cuirassier
 	maneuver_value 		= 	0.25
-	infantry_shock		=	0.25	
+	infantry_shock		=	0.2
 	cavalry_shock		=	0.2
 	
 	enable = african_cuirassier
