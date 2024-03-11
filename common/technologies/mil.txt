@@ -628,8 +628,6 @@ technology = {
 	}
 	
 	#Light Cavalry
-	
-	cavalry_shock		=	0.4
 	military_tactics 	= 	0.25
 	maneuver_value 		= 	0.5
 
@@ -678,7 +676,7 @@ technology = {
 	#Covered Way
 	fort_18th	= yes	
 	military_tactics 	= 	0.25
-	cavalry_shock		=	0.2
+	cavalry_shock		=	0.4
 
 	combat_width = 2
 }
@@ -884,7 +882,7 @@ technology = {
 	}
 	
 	#Rifle
-	cavalry_shock		=	0.4
+	cavalry_shock		=	0.6
 	infantry_fire		=	1.0
 	supply_limit		=	0.5
 }
