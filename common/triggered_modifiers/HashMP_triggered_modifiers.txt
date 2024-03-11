@@ -206,9 +206,6 @@ t_ai_cn = {
 	trigger = {
 		was_player = no
 	}
-	naval_forcelimit_modifier = -0.5
-	land_forcelimit_modifier = -0.5
-	global_sailors_modifier = -0.5
 	all_power_cost = -0.1
 	republican_tradition = 0.5
 	yearly_corruption = -0.2
