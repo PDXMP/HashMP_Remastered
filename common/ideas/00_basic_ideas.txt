@@ -1303,6 +1303,10 @@ quality_ideas = {
 quantity_ideas = {
 	category = MIL
 
+	trigger = {
+		is_colonial_nation = no
+	}
+
 	bonus = {
 		land_forcelimit_modifier  = 0.4
 	}
