@@ -315,3 +315,15 @@ malay_united_nusantara = {
 mch_seven_grievances_declaration_modifier = {
 	siege_ability = 0.2
 }
+per_persian_arquebusiers_modifier = {
+#	infantry_shock = 0.25 
+	movement_speed = 0.15
+}
+per_abbas_advisors = {
+	technology_cost = -0.10
+
+}
+per_persian_merchants_active = {
+	global_trade_goods_size_modifier = 0.1
+	global_own_trade_power = -0.2
+}

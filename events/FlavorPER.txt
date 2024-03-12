@@ -1080,7 +1080,7 @@ country_event = {
 			OR = {
 				has_country_flag = per_shia_missions
 				has_country_flag = per_sunni_missions
-				has_country_flag = per_zoroastrian_missions
+#				has_country_flag = per_zoroastrian_missions
 			}
 		}
 		select_current_missions = { key = PER }
@@ -1109,16 +1109,16 @@ country_event = {
 		ai_chance = { factor = 0 }
 	}
 	
-	option = {
-		name = flavor_per.18.d
-		trigger = { NOT = { has_country_flag = per_zoroastrian_missions } }
-		clr_country_flag = per_shia_missions
-		clr_country_flag = per_sunni_missions
-		set_country_flag = per_zoroastrian_missions
-		swap_non_generic_missions = yes
-		custom_tooltip = per_preview_zoroastrian_missions
-		ai_chance = { factor = 0 }
-	}
+#	option = {
+#		name = flavor_per.18.d
+#		trigger = { NOT = { has_country_flag = per_zoroastrian_missions } }
+#		clr_country_flag = per_shia_missions
+#		clr_country_flag = per_sunni_missions
+#		set_country_flag = per_zoroastrian_missions
+#		swap_non_generic_missions = yes
+#		custom_tooltip = per_preview_zoroastrian_missions
+#		ai_chance = { factor = 0 }
+#	}
 	
 	option = {
 		name = flavor_per.18.e
@@ -1175,20 +1175,20 @@ country_event = {
 		change_price = {
 			trade_goods = silk
 			key = PERSIA_SILK_MONOPOLIZATION
-			value = 1.5
-			duration = 14600
+			value = 0.5
+			duration = 7300
 		}
 		change_price = {
 			trade_goods = cloth
 			key = PERSIA_CLOTH_MONOPOLIZATION
-			value = 0.25
-			duration = 14600
+			value = 0.1
+			duration = 7300
 		}
 		change_price = {
 			trade_goods = dyes
 			key = PERSIA_DYES_MONOPOLIZATION
-			value = 0.25
-			duration = 14600
+			value = 0.1
+			duration = 7300
 		}
 		ai_chance = {
 			factor = 0
@@ -1198,7 +1198,7 @@ country_event = {
 	option = {	#Flood the Rug Market
 		name = flavor_per.19.b
 		add_years_of_owned_provinces_production_income = {
-			years = 5
+			years = 3
 			trigger = {
 				region = persia_region
 				OR = {
@@ -1213,19 +1213,19 @@ country_event = {
 			trade_goods = silk
 			key = PERSIA_SILK_FLOOD
 			value = -0.5
-			duration = 14600
+			duration = 7300
 		}
 		change_price = {
 			trade_goods = cloth
 			key = PERSIA_CLOTH_FLOOD
 			value = -0.15
-			duration = 14600
+			duration = 7300
 		}
 		change_price = {
 			trade_goods = dyes
 			key = PERSIA_DYES_FLOOD
 			value = -0.15
-			duration = 14600
+			duration = 7300
 		}
 		ai_chance = {
 			factor = 0
@@ -1235,7 +1235,7 @@ country_event = {
 	option = {	#Keep it moderate
 		name = flavor_per.19.c
 		add_years_of_owned_provinces_production_income = {
-			years = 2
+			years = 0.5
 			trigger = {
 				region = persia_region
 				OR = {
@@ -1250,20 +1250,20 @@ country_event = {
 		change_price = {
 			trade_goods = silk
 			key = PERSIA_SILK
-			value = 0.2
-			duration = 14600
+			value = 0.1
+			duration = 7300
 		}
 		change_price = {
 			trade_goods = cloth
 			key = PERSIA_CLOTH
-			value = 0.1
-			duration = 14600
+			value = 0.05
+			duration = 7300
 		}
 		change_price = {
 			trade_goods = dyes
 			key = PERSIA_DYES
-			value = 0.1
-			duration = 14600
+			value = 0.05
+			duration = 7300
 		}
 		ai_chance = {
 			factor = 1
@@ -1463,19 +1463,19 @@ country_event = {
 		change_price = {
 			trade_goods = silk
 			key = PERSIAN_SILK
-			value = 0.25
+			value = 0.15
 			duration = -1
 		}
 		change_price = {
 			trade_goods = dyes
 			key = PERSIAN_DYES
-			value = 0.5
+			value = 0.25
 			duration = -1
 		}
 		change_price = {
 			trade_goods = cloth
 			key = PERSIAN_CLOTH
-			value = 0.35
+			value = 0.15
 			duration = -1
 		}
 	}
