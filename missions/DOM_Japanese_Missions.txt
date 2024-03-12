@@ -756,7 +756,7 @@ DOM_japanse_missions_2_b = {
 			custom_tooltip = jap_conquest_of_china_cb_tt
 			set_country_flag = access_conquest_of_china_cb_flag 
 			add_country_modifier = { 
-				name = jap_manchuria_buff 
+				name = h_jap_manchuria_buff 
 				duration = -1
 			}
 		
@@ -2385,7 +2385,7 @@ DOM_japanse_missions_4_d = {
 		}
 		effect = {
 			add_country_modifier = {
-				name = hashmp_jap_philippines_reward
+				name = h_jap_philippines_reward
 				duration = -1
 			}
 			#if = {
