@@ -1300,13 +1300,7 @@ country_event = {
 			name = "dan_crown_lands_recovered"
 			duration = 5475
 		}
-		6 = {
-			spawn_rebels = {
-				size = 1
-				type = noble_rebels
-			}
-		}
-		26 = {
+		12 = {
 			spawn_rebels = {
 				size = 1
 				type = noble_rebels
