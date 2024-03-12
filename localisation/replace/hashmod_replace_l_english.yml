@@ -127,3 +127,4 @@
  mnd_mlc_champa_desc:0 "The state of Sunda, formerly a vassal of Majapahit just like us, is becoming a dominant power of the region. It is our destiny to unite these islands - Not theirs."
  mnd_mlc_ming_title:0 "Sever Chinese Ties"
  mnd_mlc_ming_desc:0 "The Ming dynasty, formerly one of our greatest supporters and allies, has completely collapsed, replaced with a horde of feuding warlords. We're on our own, and should prepare accordingly."
+ dan_the_sound_toll_ct:0 "The following is true for the provinces §Y[12.GetName]§!, §Y[4142.GetName]§! and §Y[1775.GetName]§!:\n Is owned by and core of §Y[Root.GetName]§!\n Has any kind of §YTrade Building§!\n Has any kind of §YCoastal Defense Building§!"
