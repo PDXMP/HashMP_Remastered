@@ -425,7 +425,7 @@ kok_persia_mission_branching_slot_1 = {
 			OR = {
 				has_country_flag = per_shia_missions
 				has_country_flag = per_sunni_missions
-				has_country_flag = per_zoroastrian_missions
+#				has_country_flag = per_zoroastrian_missions
 			}
 		}
 	}
@@ -2925,7 +2925,7 @@ kok_persia_mission_branching_slot_3 = {
 			OR = {
 				has_country_flag = per_shia_missions
 				has_country_flag = per_sunni_missions
-				has_country_flag = per_zoroastrian_missions
+#				has_country_flag = per_zoroastrian_missions
 			}
 		}
 	}
@@ -2975,7 +2975,7 @@ kok_persia_mission_branching_slot_4 = {
 			OR = {
 				has_country_flag = per_shia_missions
 				has_country_flag = per_sunni_missions
-				has_country_flag = per_zoroastrian_missions
+#				has_country_flag = per_zoroastrian_missions
 			}
 		}
 	}
@@ -3011,7 +3011,7 @@ kok_persia_mission_branching_slot_5 = {
 			OR = {
 				has_country_flag = per_shia_missions
 				has_country_flag = per_sunni_missions
-				has_country_flag = per_zoroastrian_missions
+#				has_country_flag = per_zoroastrian_missions
 			}
 		}
 	}
