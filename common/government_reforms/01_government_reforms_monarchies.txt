@@ -5862,7 +5862,7 @@ court_of_art_and_culture_reform = {
 		}
 	}
 	custom_attributes = {
-		can_enforce_primary_culture = yes
+#		can_enforce_primary_culture = yes
 	}
 	removed_effect = {
 		country_event = {
