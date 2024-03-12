@@ -335,3 +335,8 @@ westphalia_religious_supermacy_mod = {
 	development_cost = -0.05
 	build_cost = -0.05
 }
+
+fall_of_china = {
+	manpower_recovery_speed = 0.20
+	years_of_nationalism = -10
+}

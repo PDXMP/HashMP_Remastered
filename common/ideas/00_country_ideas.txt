@@ -10164,11 +10164,11 @@ SLO_ideas = {
 
 GLH_ideas = {
 	start = {
-		global_manpower_modifier = 0.25
-		land_maintenance_modifier = -0.05
+		manpower_recovery_speed = 0.25
+		land_maintenance_modifier = -0.1
 	}
 	bonus = {
-		global_institution_spread = 0.1
+		shock_damage = 0.1
 	}
 	trigger = {
 		tag = GLH
@@ -10182,23 +10182,61 @@ GLH_ideas = {
 		meritocracy = 1
 		horde_unity = 1
 	}
-	glh_perso_mongol_administration = {
-		core_creation = -0.25
-	}
 	glh_tatar_traditions = {
 		cavalry_power = 0.20
 	}
 	glh_secure_the_trade_routes = {
-		global_prov_trade_power_modifier = 0.10
-	}
-	logistics_of_khan = { #Used by horde_ideas
-		manpower_recovery_speed = 0.2
+		global_prov_trade_power_modifier = 0.25
 	}
 	glh_populating_the_steppes = {
 		development_cost = -0.1
 	}
 	glh_religious_pragmatism = {
-		tolerance_heathen = 2
+		tolerance_heathen = 3
+	}
+	glh_perso_mongol_administration = {
+		build_cost = -0.1
+		global_institution_spread = 0.25
+	}
+	logistics_of_khan = { #Used by horde_ideas
+		fire_damage_received = -0.1
+	}
+
+}
+
+SHY_ideas = {
+	start = {
+		core_creation = -0.25
+		years_of_nationalism = -10
+	}
+	bonus = {
+		stability_cost_modifier = -0.1
+	}
+	trigger = {
+		tag = SHY
+	}
+	free = yes
+	
+	life_of_steppe_warrior = {
+		cavalry_power = 0.20
+	}
+	traditions_of_the_great_khan = {
+		land_attrition = -0.2
+	}
+	horse_supplies = {
+		manpower_recovery_speed = 0.20
+	}
+	steppe_leaders = {
+		leader_land_shock = 1
+	}
+	tradition_of_conquest = { 
+		land_maintenance_modifier = -0.05
+	}
+	shy_logistics_of_khan = {
+		global_manpower_modifier = 0.25
+	}
+	glory_of_conquest = {
+		ae_impact = -0.10
 	}
 }
 
@@ -10208,7 +10246,7 @@ YUA_ideas = {
 		cavalry_power = 0.20
 	}
 	bonus = {
-		governing_capacity_modifier = 0.1
+		governing_capacity_modifier = 0.2
 	}
 	trigger = {
 		tag = YUA
@@ -10216,23 +10254,24 @@ YUA_ideas = {
 	free = yes
 	
 	yua_da_zai_qian_yuan = {
-		core_creation = -0.25
+		no_religion_penalty = yes
 	}
 	yua_a_savage_kingdom_holy_and_enchanted = {
-		land_morale = 0.1
+		land_morale = 0.15
 	}
 	yua_the_three_teachings_and_nine_schools_respected = {
 		technology_cost = -0.1
 	}
 	yua_keshik_and_weijun = {
-		shock_damage = 0.1
+		trade_steering = 0.20
+		merchants = 1
 	}
 	yua_a_thousand_miles_as_if_at_home = {
 		movement_speed = 0.15
 		envoy_travel_time = -0.1
 	}
 	yua_sino_mongol_administration = {
-		administrative_efficiency = 0.05
+		administrative_efficiency = 0.075
 	}
 	yua_pax_mongolica = {
 		global_trade_goods_size_modifier = 0.1
@@ -15240,10 +15279,11 @@ CHR_ideas = {
 ILK_ideas = {
 	start = {
 		cavalry_power = 0.2
-		cavalry_cost = -0.15
+		cavalry_cost = -0.10
 	}
 	bonus = {
-		cavalry_flanking = 0.5
+		culture_conversion_cost = -0.25
+		culture_conversion_time = -0.33
 	}
 	trigger = {
 		tag = ILK
@@ -15257,23 +15297,26 @@ ILK_ideas = {
 		horde_unity = 1
 	}
 	ilk_favor_sufism = {
-		tolerance_heretic = 2
-	}
-	ilk_persian_language_at_court = {
-		num_accepted_cultures = 1
+		manpower_in_true_faith_provinces = 0.15
+		manpower_in_own_culture_provinces = 0.15
 	}
 	ilk_yam_networks = {
 		movement_speed = 0.15
 		envoy_travel_time = -0.25
 	}
+	ilk_persian_language_at_court = {
+		trade_steering = 0.15
+		global_missionary_strength = 0.03
+	}
 	ilk_mongol_peace = {
-		years_of_nationalism = -5
+		siege_ability = 0.15
+		artillery_levels_available_vs_fort  = 1
 	}
 	ilk_patronize_observatories = {
-		technology_cost = -0.05
+		fire_damage = 0.1
 	}
 	ilk_recruit_turkoman_gunners = {
-		fire_damage = 0.1
+		discipline = 0.05
 	}
 }
 
