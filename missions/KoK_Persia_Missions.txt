@@ -317,98 +317,98 @@ kok_persia_mission_muslim_slot_1 = {
 		}
 	}
 }
-kok_persia_mission_zoroastrian_slot_1 = {
-	slot = 1
-	generic = no 
-	ai = yes
-	potential_on_load = {
-		has_dlc = "King of Kings"
-	}
-	potential = {
-		NOT = { map_setup = map_setup_random }
-		has_dlc = "King of Kings"
-		or = {
-			tag = PER
-			tag = ERS
-		}
-		has_country_flag = per_zoroastrian_missions
-	}
-	has_country_shield = yes
-	per_a_new_eranshahr = {
-		icon = per_a_new_eranshahr
-		required_missions = {
-			per_claim_constantinople
-			per_subjugate_egypt
-			per_our_religious_direction
-		}
-		position = 6
-		provinces_to_highlight = {
-			OR = {
-				AND = {
-					superregion = india_superregion
-					NOT = { root = { num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = { superregion = india_superregion value = 100 } } }
-				}
-				AND = {
-					superregion = near_east_superregion
-					NOT = { root = { num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = { superregion = near_east_superregion value = 125 } } }
-				}
-				AND = {
-					OR = {
-						superregion = eastern_europe_superregion
-						superregion = europe_superregion
-					}
-					NOT = { 
-						root = { 
-							num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = { 
-								OR = { 
-									superregion = eastern_europe_superregion 
-									superregion = europe_superregion 
-								} 
-								value = 50 
-							} 
-						} 
-					}
-				}
-				superregion = persia_superregion
-			}
-			NOT = { country_or_non_sovereign_subject_holds = root }
-		}
-		trigger = {
-			not_in_mission_preview_mode = { key = PER }
-			persia_superregion = {
-				country_or_non_sovereign_subject_holds = root
-				type = all
-			}
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				superregion = india_superregion
-				value = 100
-			}
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				superregion = near_east_superregion
-				value = 125
-			}
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				OR = {
-					superregion = eastern_europe_superregion 
-					superregion = europe_superregion 
-				}
-				value = 50
-			}
-		}
-		effect = {
-			country_event_with_effect_insight = {
-				id = flavor_per.47
-				effect = "
-					add_prestige_or_monarch_power = { amount = 100 }
-					add_permanent_power_projection = {
-						type = 25_permanent_power_projection
-						amount = 25
-					}
-				"
-			}
-		}
-	}
-}
+#kok_persia_mission_zoroastrian_slot_1 = {
+#	slot = 1
+#	generic = no 
+#	ai = yes
+#	potential_on_load = {
+#		has_dlc = "King of Kings"
+#	}
+#	potential = {
+#		NOT = { map_setup = map_setup_random }
+#		has_dlc = "King of Kings"
+#		or = {
+#			tag = PER
+#			tag = ERS
+#		}
+#		has_country_flag = per_zoroastrian_missions
+#	}
+#	has_country_shield = yes
+#	per_a_new_eranshahr = {
+#		icon = per_a_new_eranshahr
+#		required_missions = {
+#			per_claim_constantinople
+#			per_subjugate_egypt
+#			per_our_religious_direction
+#		}
+#		position = 6
+#		provinces_to_highlight = {
+#			OR = {
+#				AND = {
+#					superregion = india_superregion
+#					NOT = { root = { num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = { superregion = india_superregion value = 100 } } }
+#				}
+#				AND = {
+#					superregion = near_east_superregion
+#					NOT = { root = { num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = { superregion = near_east_superregion value = 125 } } }
+#				}
+#				AND = {
+#					OR = {
+#						superregion = eastern_europe_superregion
+#						superregion = europe_superregion
+#					}
+#					NOT = { 
+#						root = { 
+#							num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = { 
+#								OR = { 
+#									superregion = eastern_europe_superregion 
+#									superregion = europe_superregion 
+#								} 
+#								value = 50 
+#							} 
+#						} 
+#					}
+#				}
+#				superregion = persia_superregion
+#			}
+#			NOT = { country_or_non_sovereign_subject_holds = root }
+#		}
+#		trigger = {
+#			not_in_mission_preview_mode = { key = PER }
+#			persia_superregion = {
+#				country_or_non_sovereign_subject_holds = root
+#				type = all
+#			}
+#			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+#				superregion = india_superregion
+#				value = 100
+#			}
+#			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+#				superregion = near_east_superregion
+#				value = 125
+#			}
+#			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+#				OR = {
+#					superregion = eastern_europe_superregion 
+#					superregion = europe_superregion 
+#				}
+#				value = 50
+#			}
+#		}
+#		effect = {
+#			country_event_with_effect_insight = {
+#				id = flavor_per.47
+#				effect = "
+#					add_prestige_or_monarch_power = { amount = 100 }
+#					add_permanent_power_projection = {
+#						type = 25_permanent_power_projection
+#						amount = 25
+#					}
+#				"
+#			}
+#		}
+#	}
+#}
 kok_persia_mission_branching_slot_1 = {
 	slot = 1
 	generic = no
@@ -2503,410 +2503,410 @@ kok_persia_mission_muslim_slot_5 = {
 }
 
 # Zoroastrian
-kok_persia_mission_zoroastrian_slot_3 = {
-	slot = 3
-	generic = no 
-	ai = yes
-	potential_on_load = {
-		has_dlc = "King of Kings"
-	}
-	potential = {
-		NOT = { map_setup = map_setup_random }
-		has_dlc = "King of Kings"
-		or = {
-			tag = PER
-			tag = ERS
-		}
-		has_country_flag = per_zoroastrian_missions
-	}
-	has_country_shield = yes
-	per_reborn_in_fire = {
-		icon = per_reborn_in_fire
-		required_missions = { per_our_religious_direction }
-		position = 6
-		provinces_to_highlight = {
-		}
-		trigger = {
-			not_in_mission_preview_mode = { key = PER }
-			religion = zoroastrian
-			NOT = { num_of_rebel_armies = 1 }
-			NOT = { num_of_rebel_controlled_provinces = 1 }
-		}
-		effect = {
-			custom_tooltip = per_reborn_in_fire_bt
-			hidden_effect = {
-				if = {
-					limit = { NOT = { any_owned_province = { religion = zoroastrian is_reformation_center = yes } } }
-					capital_scope = {
-						if = {
-							limit = { NOT = { religion = zoroastrian } }
-							change_religion = zoroastrian
-						}
-						add_reform_center = zoroastrian
-					}
-				}
-			}
-			simple_dynamic_effect = {
-				first_custom_tooltip = per_reborn_in_fire_at
-				first_limit = "has_country_flag = zoroastrian_civil_war_aftermath"
-				first_effect = "
-					add_stability_or_adm_power_per_stab = { amount = 2 }
-					change_estate_land_share = { estate = all share = -10 }
-				"
-				second_limit = "NOT = { has_country_flag = zoroastrian_civil_war_aftermath }"
-				second_effect = "
-					add_stability_or_adm_power = yes
-					change_estate_land_share = { estate = all share = -5 }
-				"
-			}
-		}
-	}
-	per_build_the_fire_temples = {
-		icon = per_build_the_fire_temples
-		required_missions = { per_reborn_in_fire }
-		position = 7
-		provinces_to_highlight = {
-			NOT = { has_tax_building_trigger = yes }
-			owned_by = root
-		}
-		trigger = {
-			not_in_mission_preview_mode = { key = PER }
-			num_of_owned_provinces_with = {
-				has_tax_building_trigger = yes
-				value = 30
-			}
-		}
-		effect = {
-			random_owned_province = {
-				limit = {
-					has_tax_building_trigger = yes
-				}
-				add_base_tax = 1
-				type = random
-				amount = 10
-			}
-			change_asha_vahishta = {
-				value = 20
-			}
-			add_estate_loyalty = {
-				estate = estate_church
-				loyalty = 20
-			}
-		}
-	}
-	per_purify_the_holy_sites = {
-		icon = per_purify_the_holy_sites
-		required_missions = { 
-			per_build_the_fire_temples 
-			per_restore_the_avesta
-		}
-		position = 8
-		provinces_to_highlight = {
-			OR = {
-				province_id = 2212
-				province_id = 4430
-				province_id = 4336
-				province_id = 2221
-				province_id = 2207
-				province_id = 2235
-				province_id = 2236
-				province_id = 2218
-				province_id = 441
-				province_id = 2223
-			}
-			OR = {
-				NOT = { religion = root }
-				NOT = { owner = { religion = root } }
-			}
-		}
-		trigger = {
-			not_in_mission_preview_mode = { key = PER }
-			calc_true_if = {
-				all_province = {
-					OR = {
-						province_id = 2212
-						province_id = 4430
-						province_id = 4336
-						province_id = 2221
-						province_id = 2207
-						province_id = 2235
-						province_id = 2236
-						province_id = 2218
-						province_id = 441
-						province_id = 2223
-					}
-					owner = { religion = root }
-					religion = root
-				}
-				amount = 6
-			}
-		}
-		effect = {
-			change_asha_vahishta = {
-				value = 25
-			}
-			remove_asha_vahishta_loss_from_missionaries = yes
-		}
-	}
-	per_balance_the_three_flames = {
-		icon = per_balance_the_three_flames
-		required_missions = { per_purify_the_holy_sites }
-		position = 9
-		provinces_to_highlight = {
-		}
-		trigger = {
-			not_in_mission_preview_mode = { key = PER }
-			custom_trigger_tooltip = {
-				tooltip = per_balance_the_three_flames_tt
-				has_government_mechanic = the_three_royal_fires_mechanic
-			}
-			custom_trigger_tooltip = {
-				tooltip = per_balance_the_three_flames_at
-				check_variable = {
-					which = the_three_royal_fires_counter
-					value = 5
-				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = per_balance_the_three_flames_bt
-				check_variable = {
-					which = adur_farnbag_interaction_counter
-					value = 1
-				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = per_balance_the_three_flames_ct
-				check_variable = {
-					which = adur_burzhen_mihr_interaction_counter
-					value = 1
-				}
-			}
-			custom_trigger_tooltip = {
-				tooltip = per_balance_the_three_flames_dt
-				check_variable = {
-					which = adur_gushnasp_interaction_counter
-					value = 1
-				}
-			}
-		}
-		effect = {
-			upgrade_the_three_fire = yes
-			add_stability_or_adm_power = yes
-		}
-	}
-}
-kok_persia_mission_zoroastrian_slot_4 = {
-	slot = 4
-	generic = no 
-	ai = yes
-	potential_on_load = {
-		has_dlc = "King of Kings"
-	}
-	potential = {
-		NOT = { map_setup = map_setup_random }
-		has_dlc = "King of Kings"
-		or = {
-			tag = PER
-			tag = ERS
-		}
-		has_country_flag = per_zoroastrian_missions
-	}
-	has_country_shield = yes
-	per_restore_the_avesta = {
-		icon = per_restore_the_avesta
-		required_missions = { per_reborn_in_fire }
-		position = 7
-		provinces_to_highlight = {
-		}
-		trigger = {
-			not_in_mission_preview_mode = { key = PER }
-			if = {
-				limit = { has_estate = estate_church }
-				num_of_estate_agendas_completed = {
-					estate = estate_church
-					value = 3
-				}
-			}
-			else = {
-				NOT = { has_estate = estate_church }
-			}
-		}
-		effect = {
-			if = {
-				limit = { has_dlc = "Cradle of Civilization" }
-				enable_propogate_religion_immunity = yes
-				enable_propagate_religion_in_abrahamic_provinces = yes
-			}
-			else = {
-				hidden_effect = {
-					enable_propogate_religion_immunity = yes
-					enable_propagate_religion_in_abrahamic_provinces = yes
-				}
-			}
-			add_country_modifier = {
-				name = per_restored_avesta
-				duration = 9125
-			}
-			if = {
-				limit = { NOT = { is_core = 4430 } }
-				add_core = 4430
-			}
-		}
-	}
-	per_the_city_of_daman = {
-		icon = per_the_city_of_daman
-		required_missions = { per_restore_the_avesta }
-		position = 9
-		provinces_to_highlight = {
-			province_id = 4430
-			OR = {
-				has_owner_religion = no
-				owner = { NOT = { religion = root } }
-			}
-		}
-		trigger = {
-			not_in_mission_preview_mode = { key = PER }
-			4430 = {
-				religion = root
-				owner = {
-					religion = root
-				}
-			}
-		}
-		effect = {
-			remove_asha_vahishta_loss_from_force_conversion = yes
-			add_mil_power = 100
-		}
-	}
-}
-kok_persia_mission_zoroastrian_slot_5 = {
-	slot = 5
-	generic = no 
-	ai = yes
-	potential_on_load = {
-		has_dlc = "King of Kings"
-	}
-	potential = {
-		NOT = { map_setup = map_setup_random }
-		has_dlc = "King of Kings"
-		or = {
-			tag = PER
-			tag = ERS
-		}
-		has_country_flag = per_zoroastrian_missions
-	}
-	has_country_shield = yes
-	per_muslim_integration = {
-		icon = per_muslim_integration
-		required_missions = { per_our_religious_direction }
-		position = 6
-		provinces_to_highlight = {
-		}
-		trigger = {
-			not_in_mission_preview_mode = { key = PER }
-			religion_group = zoroastrian_group
-			OR = {
-				NOT = { any_owned_province = { religion_group = muslim } }
-				has_global_modifier_value = {
-					which = tolerance_heathen
-					value = 0
-				}
-			}
-			estate_loyalty = {
-				estate = estate_church
-				loyalty = 60
-			}
-		}
-		effect = {
-			unlock_estate_privilege = {
-				estate_privilege = estate_church_muslim_integration
-				modifier_tooltip = estate_church_muslim_integration_tooltip
-				effect_tooltip = "
-					custom_tooltip = estate_church_muslim_integration_gt
-					tooltip = {
-						add_province_modifier = {
-							name = estate_church_muslim_integration_mod
-							duration = -1
-							desc = UNTIL_REVOKED
-						}
-					}
-				"
-			}
-		}
-	}
-	per_zoroastrian_community = {
-		icon = per_zoroastrian_community
-		required_missions = {
-			per_muslim_integration
-			per_restore_the_avesta 
-		}
-		position = 8
-		provinces_to_highlight = {
-		}
-		trigger = {
-			not_in_mission_preview_mode = { key = PER }
-			religion_group = zoroastrian_group
-			is_defender_of_faith = yes
-			calc_true_if = {
-				desc = per_zoroastrian_community_tt
-				amount = 15
-				all_known_country = {
-					religion_group = root
-				}
-			}
-		}
-		effect = {
-			custom_tooltip = free_religious_diplomats_for_all_zoro_countries_tt
-			hidden_effect = {
-				set_global_flag = free_religious_diplomats_for_all_zoro_countries
-			}
-		}
-	}
-	per_an_asha_empire = {
-		icon = per_an_asha_empire
-		required_missions = {
-			per_balance_the_three_flames
-			per_the_city_of_daman
-			per_zoroastrian_community
-		}
-		position = 10
-		provinces_to_highlight = {
-			OR = {
-				AND = {
-					owned_by = root
-					NOT = { culture = root }
-				}
-				AND = {
-					has_discovered = root
-					is_capital = yes
-					owner = { NOT = { primary_culture = root } }
-				}
-			}
-		}
-		trigger = {
-			not_in_mission_preview_mode = { key = PER }
-			OR = {
-				num_of_converted_provinces = {
-					amount = 50
-				}
-				num_of_forced_converted_countries = {
-					amount = 15
-				}
-				AND = {
-					religious_unity = 1
-					total_development = 1000
-				}
-			}
-		}
-		effect = {
-			enable_three_royal_fires_mana_generation = yes
-			add_country_modifier = {
-				name = per_culture_of_art
-				duration = -1
-			}
-		}
-	}
-}
+#kok_persia_mission_zoroastrian_slot_3 = {
+#	slot = 3
+#	generic = no 
+#	ai = yes
+#	potential_on_load = {
+#		has_dlc = "King of Kings"
+#	}
+#	potential = {
+#		NOT = { map_setup = map_setup_random }
+#		has_dlc = "King of Kings"
+#		or = {
+#			tag = PER
+#			tag = ERS
+#		}
+#		has_country_flag = per_zoroastrian_missions
+#	}
+#	has_country_shield = yes
+#	per_reborn_in_fire = {
+#		icon = per_reborn_in_fire
+#		required_missions = { per_our_religious_direction }
+#		position = 6
+#		provinces_to_highlight = {
+#		}
+#		trigger = {
+#			not_in_mission_preview_mode = { key = PER }
+#			religion = zoroastrian
+#			NOT = { num_of_rebel_armies = 1 }
+#			NOT = { num_of_rebel_controlled_provinces = 1 }
+#		}
+#		effect = {
+#			custom_tooltip = per_reborn_in_fire_bt
+#			hidden_effect = {
+#				if = {
+#					limit = { NOT = { any_owned_province = { religion = zoroastrian is_reformation_center = yes } } }
+#					capital_scope = {
+#						if = {
+#							limit = { NOT = { religion = zoroastrian } }
+#							change_religion = zoroastrian
+#						}
+#						add_reform_center = zoroastrian
+#					}
+#				}
+#			}
+#			simple_dynamic_effect = {
+#				first_custom_tooltip = per_reborn_in_fire_at
+#				first_limit = "has_country_flag = zoroastrian_civil_war_aftermath"
+#				first_effect = "
+#					add_stability_or_adm_power_per_stab = { amount = 2 }
+#					change_estate_land_share = { estate = all share = -10 }
+#				"
+#				second_limit = "NOT = { has_country_flag = zoroastrian_civil_war_aftermath }"
+#				second_effect = "
+#					add_stability_or_adm_power = yes
+#					change_estate_land_share = { estate = all share = -5 }
+#				"
+#			}
+#		}
+#	}
+#	per_build_the_fire_temples = {
+#		icon = per_build_the_fire_temples
+#		required_missions = { per_reborn_in_fire }
+#		position = 7
+#		provinces_to_highlight = {
+#			NOT = { has_tax_building_trigger = yes }
+#			owned_by = root
+#		}
+#		trigger = {
+#			not_in_mission_preview_mode = { key = PER }
+#			num_of_owned_provinces_with = {
+#				has_tax_building_trigger = yes
+#				value = 30
+#			}
+#		}
+#		effect = {
+#			random_owned_province = {
+#				limit = {
+#					has_tax_building_trigger = yes
+#				}
+#				add_base_tax = 1
+#				type = random
+#				amount = 10
+#			}
+#			change_asha_vahishta = {
+#				value = 20
+#			}
+#			add_estate_loyalty = {
+#				estate = estate_church
+#				loyalty = 20
+#			}
+#		}
+#	}
+#	per_purify_the_holy_sites = {
+#		icon = per_purify_the_holy_sites
+#		required_missions = { 
+#			per_build_the_fire_temples 
+#			per_restore_the_avesta
+#		}
+#		position = 8
+#		provinces_to_highlight = {
+#			OR = {
+#				province_id = 2212
+#				province_id = 4430
+#				province_id = 4336
+#				province_id = 2221
+#				province_id = 2207
+#				province_id = 2235
+#				province_id = 2236
+#				province_id = 2218
+#				province_id = 441
+#				province_id = 2223
+#			}
+#			OR = {
+#				NOT = { religion = root }
+#				NOT = { owner = { religion = root } }
+#			}
+#		}
+#		trigger = {
+#			not_in_mission_preview_mode = { key = PER }
+#			calc_true_if = {
+#				all_province = {
+#					OR = {
+#						province_id = 2212
+#						province_id = 4430
+#						province_id = 4336
+#						province_id = 2221
+#						province_id = 2207
+#						province_id = 2235
+#						province_id = 2236
+#						province_id = 2218
+#						province_id = 441
+#						province_id = 2223
+#					}
+#					owner = { religion = root }
+#					religion = root
+#				}
+#				amount = 6
+#			}
+#		}
+#		effect = {
+#			change_asha_vahishta = {
+#				value = 25
+#			}
+#			remove_asha_vahishta_loss_from_missionaries = yes
+#		}
+#	}
+#	per_balance_the_three_flames = {
+#		icon = per_balance_the_three_flames
+#		required_missions = { per_purify_the_holy_sites }
+#		position = 9
+#		provinces_to_highlight = {
+#		}
+#		trigger = {
+#			not_in_mission_preview_mode = { key = PER }
+#			custom_trigger_tooltip = {
+#				tooltip = per_balance_the_three_flames_tt
+#				has_government_mechanic = the_three_royal_fires_mechanic
+#			}
+#			custom_trigger_tooltip = {
+#				tooltip = per_balance_the_three_flames_at
+#				check_variable = {
+#					which = the_three_royal_fires_counter
+#					value = 5
+#				}
+#			}
+#			custom_trigger_tooltip = {
+#				tooltip = per_balance_the_three_flames_bt
+#				check_variable = {
+#					which = adur_farnbag_interaction_counter
+#					value = 1
+#				}
+#			}
+#			custom_trigger_tooltip = {
+#				tooltip = per_balance_the_three_flames_ct
+#				check_variable = {
+#					which = adur_burzhen_mihr_interaction_counter
+#					value = 1
+#				}
+#			}
+#			custom_trigger_tooltip = {
+#				tooltip = per_balance_the_three_flames_dt
+#				check_variable = {
+#					which = adur_gushnasp_interaction_counter
+#					value = 1
+#				}
+#			}
+#		}
+#		effect = {
+#			upgrade_the_three_fire = yes
+#			add_stability_or_adm_power = yes
+#		}
+#	}
+#}
+#kok_persia_mission_zoroastrian_slot_4 = {
+#	slot = 4
+#	generic = no 
+#	ai = yes
+#	potential_on_load = {
+#		has_dlc = "King of Kings"
+#	}
+#	potential = {
+#		NOT = { map_setup = map_setup_random }
+#		has_dlc = "King of Kings"
+#		or = {
+#			tag = PER
+#			tag = ERS
+#		}
+#		has_country_flag = per_zoroastrian_missions
+#	}
+#	has_country_shield = yes
+#	per_restore_the_avesta = {
+#		icon = per_restore_the_avesta
+#		required_missions = { per_reborn_in_fire }
+#		position = 7
+#		provinces_to_highlight = {
+#		}
+#		trigger = {
+#			not_in_mission_preview_mode = { key = PER }
+#			if = {
+#				limit = { has_estate = estate_church }
+#				num_of_estate_agendas_completed = {
+#					estate = estate_church
+#					value = 3
+#				}
+#			}
+#			else = {
+#				NOT = { has_estate = estate_church }
+#			}
+#		}
+#		effect = {
+#			if = {
+#				limit = { has_dlc = "Cradle of Civilization" }
+#				enable_propogate_religion_immunity = yes
+#				enable_propagate_religion_in_abrahamic_provinces = yes
+#			}
+#			else = {
+#				hidden_effect = {
+#					enable_propogate_religion_immunity = yes
+#					enable_propagate_religion_in_abrahamic_provinces = yes
+#				}
+#			}
+#			add_country_modifier = {
+#				name = per_restored_avesta
+#				duration = 9125
+#			}
+#			if = {
+#				limit = { NOT = { is_core = 4430 } }
+#				add_core = 4430
+#			}
+#		}
+#	}
+#	per_the_city_of_daman = {
+#		icon = per_the_city_of_daman
+#		required_missions = { per_restore_the_avesta }
+#		position = 9
+#		provinces_to_highlight = {
+#			province_id = 4430
+#			OR = {
+#				has_owner_religion = no
+#				owner = { NOT = { religion = root } }
+#			}
+#		}
+#		trigger = {
+#			not_in_mission_preview_mode = { key = PER }
+#			4430 = {
+#				religion = root
+#				owner = {
+#					religion = root
+#				}
+#			}
+#		}
+#		effect = {
+#			remove_asha_vahishta_loss_from_force_conversion = yes
+#			add_mil_power = 100
+#		}
+#	}
+#}
+#kok_persia_mission_zoroastrian_slot_5 = {
+#	slot = 5
+#	generic = no 
+#	ai = yes
+#	potential_on_load = {
+#		has_dlc = "King of Kings"
+#	}
+#	potential = {
+#		NOT = { map_setup = map_setup_random }
+#		has_dlc = "King of Kings"
+#		or = {
+#			tag = PER
+#			tag = ERS
+#		}
+#		has_country_flag = per_zoroastrian_missions
+#	}
+#	has_country_shield = yes
+#	per_muslim_integration = {
+#		icon = per_muslim_integration
+#		required_missions = { per_our_religious_direction }
+#		position = 6
+#		provinces_to_highlight = {
+#		}
+#		trigger = {
+#			not_in_mission_preview_mode = { key = PER }
+#			religion_group = zoroastrian_group
+#			OR = {
+#				NOT = { any_owned_province = { religion_group = muslim } }
+#				has_global_modifier_value = {
+#					which = tolerance_heathen
+#					value = 0
+#				}
+#			}
+#			estate_loyalty = {
+#				estate = estate_church
+#				loyalty = 60
+#			}
+#		}
+#		effect = {
+#			unlock_estate_privilege = {
+#				estate_privilege = estate_church_muslim_integration
+#				modifier_tooltip = estate_church_muslim_integration_tooltip
+#				effect_tooltip = "
+#					custom_tooltip = estate_church_muslim_integration_gt
+#					tooltip = {
+#						add_province_modifier = {
+#							name = estate_church_muslim_integration_mod
+#							duration = -1
+#							desc = UNTIL_REVOKED
+#						}
+#					}
+#				"
+#			}
+#		}
+#	}
+#	per_zoroastrian_community = {
+#		icon = per_zoroastrian_community
+#		required_missions = {
+#			per_muslim_integration
+#			per_restore_the_avesta 
+#		}
+#		position = 8
+#		provinces_to_highlight = {
+#		}
+#		trigger = {
+#			not_in_mission_preview_mode = { key = PER }
+#			religion_group = zoroastrian_group
+#			is_defender_of_faith = yes
+#			calc_true_if = {
+#				desc = per_zoroastrian_community_tt
+#				amount = 15
+#				all_known_country = {
+#					religion_group = root
+#				}
+#			}
+#		}
+#		effect = {
+#			custom_tooltip = free_religious_diplomats_for_all_zoro_countries_tt
+#			hidden_effect = {
+#				set_global_flag = free_religious_diplomats_for_all_zoro_countries
+#			}
+#		}
+#	}
+#	per_an_asha_empire = {
+#		icon = per_an_asha_empire
+#		required_missions = {
+#			per_balance_the_three_flames
+#			per_the_city_of_daman
+#			per_zoroastrian_community
+#		}
+#		position = 10
+#		provinces_to_highlight = {
+#			OR = {
+#				AND = {
+#					owned_by = root
+#					NOT = { culture = root }
+#				}
+#				AND = {
+#					has_discovered = root
+#					is_capital = yes
+#					owner = { NOT = { primary_culture = root } }
+#				}
+#			}
+#		}
+#		trigger = {
+#			not_in_mission_preview_mode = { key = PER }
+#			OR = {
+#				num_of_converted_provinces = {
+#					amount = 50
+#				}
+#				num_of_forced_converted_countries = {
+#					amount = 15
+#				}
+#				AND = {
+#					religious_unity = 1
+#					total_development = 1000
+#				}
+#			}
+#		}
+#		effect = {
+#			enable_three_royal_fires_mana_generation = yes
+#			add_country_modifier = {
+#				name = per_culture_of_art
+#				duration = -1
+#			}
+#		}
+#	}
+#}
 
 # Dummy Branching
 kok_persia_mission_branching_slot_3 = {
@@ -3769,7 +3769,7 @@ kok_persia_culture_mission_slot_4 = {
 				OR = {
 					has_country_flag = per_shia_missions
 					has_country_flag = per_sunni_missions
-					has_country_flag = per_zoroastrian_missions
+#					has_country_flag = per_zoroastrian_missions
 				}
 				not_in_mission_preview_mode = { key = PER }
 			}

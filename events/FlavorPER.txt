@@ -1152,7 +1152,7 @@ country_event = {
 			on_trigger = has_country_flag
 			per_shia_missions = { country_event = { id = flavor_per.34 } }
 			per_sunni_missions = { country_event = { id = flavor_per.34 } }
-			per_zoroastrian_missions = { country_event = { id = flavor_per.35 } }
+#			per_zoroastrian_missions = { country_event = { id = flavor_per.35 } }
 		}
 		ai_chance = {
 			factor = 100
@@ -1860,37 +1860,37 @@ country_event = {
 	}
 }
 #Introduction - Zoroastrian
-country_event = {
-	id = flavor_per.35
-	title = flavor_per.35.t
-	desc = flavor_per.35.desc
-	picture = RELIGION_eventPicture
-	is_triggered_only = yes
-	option = {
-		name = flavor_per.35.a
-		if = {
-			limit = { NOT = { religion_group = zoroastrian_group } }
-			custom_tooltip = flavor_per.35.a.tt
-			add_country_modifier = {
-				name = zoroastrian_interests
-				duration = -1
-			}
-			add_estate_influence_modifier = {
-				estate = estate_church
-				desc = ZOROASTRIAN_FOCUS_INFLUENCE
-				influence = -20
-				duration = 9125
-			}
-		}
-		else = {
-			change_estate_land_share = {
-				estate = estate_church
-				share = -5
-			}
-		}
-		ai_chance = { factor = 1 }
-	}
-}
+#country_event = {
+#	id = flavor_per.35
+#	title = flavor_per.35.t
+#	desc = flavor_per.35.desc
+#	picture = RELIGION_eventPicture
+#	is_triggered_only = yes
+#	option = {
+#		name = flavor_per.35.a
+#		if = {
+#			limit = { NOT = { religion_group = zoroastrian_group } }
+#			custom_tooltip = flavor_per.35.a.tt
+#			add_country_modifier = {
+#				name = zoroastrian_interests
+#				duration = -1
+#			}
+#			add_estate_influence_modifier = {
+#				estate = estate_church
+#				desc = ZOROASTRIAN_FOCUS_INFLUENCE
+#				influence = -20
+#				duration = 9125
+#			}
+#		}
+#		else = {
+#			change_estate_land_share = {
+#				estate = estate_church
+#				share = -5
+#			}
+#		}
+#		ai_chance = { factor = 1 }
+#	}
+#}
 #The Aristocratic Split
 country_event = {
 	id = flavor_per.36
