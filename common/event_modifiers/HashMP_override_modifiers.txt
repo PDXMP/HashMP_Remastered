@@ -315,3 +315,128 @@ malay_united_nusantara = {
 mch_seven_grievances_declaration_modifier = {
 	siege_ability = 0.2
 }
+
+eng_the_redcoat = {	#Permanent
+	infantry_power = 0.1
+	fire_damage = 0.1
+}
+
+empowered_junkers = {
+	monthly_militarized_society = 0.02
+	monthly_prussian_militarized_society_1 = 0.02
+	monthly_prussian_militarized_society_2 = 0.03
+	monthly_prussian_militarized_society_3 = 0.04
+	army_tradition_decay = -0.01
+	centralize_state_cost = -0.25
+}
+
+westphalia_religious_supermacy_mod = {
+	land_morale = 0.05
+	development_cost = -0.05
+	build_cost = -0.05
+}
+
+fall_of_china = {
+	manpower_recovery_speed = 0.20
+	years_of_nationalism = -10
+}
+
+jap_period_tranquility_modifier = { 
+	development_cost = -0.1
+	global_prosperity_growth = 0.5
+}
+
+jap_thundering_firepower_modifier = { 
+	artillery_power = 0.15
+}
+
+growing_economy = {
+	build_cost = -0.075
+	build_time = -0.25
+}
+
+jap_eighteen_arts_modifier = {
+	#military_tactics = 0.1
+	shock_damage_received = -0.05
+	land_attrition = -0.25
+	army_tradition_from_battle = 0.75 
+}
+
+jap_naval_academy_of_japan_modifier = {
+	#ship_durability = 0.05 
+	naval_tradition_from_battle = 1 
+	navy_tradition = 0.5
+}
+jap_new_world_exploration_modifier = {
+	range = 0.25 
+	global_colonial_growth = 20
+}
+jap_overseas_ventures_modifier = {
+	global_trade_goods_size_modifier = 0.2 
+	trade_range_modifier = 0.33
+}
+influx_of_foreign_knowledge_modifier = {
+	all_power_cost = -0.04 
+}
+jap_internal_monopolies_modifier = {
+	#interest = -1 
+	country_admin_power = 1
+	global_tax_modifier = 0.25
+}
+
+jap_reformed_samurai_modifier = {
+	fire_damage = 0.1 
+	is_samurai_modifier = yes 
+}
+
+jap_trade_west_modifier = {
+	#trade_efficiency = 0.1
+	country_diplomatic_power = 1
+}
+
+jap_improved_engineering_expertise_modifier = {
+	build_cost = -0.075
+	build_time = -0.2
+	#production_efficiency = 0.15
+}
+
+jap_self_sufficient_market_modifier = {
+	#global_trade_goods_size_modifier = 0.1
+	development_cost = -0.075
+}
+
+jap_presence_global_markets = {
+	#transfer_trade_power_reasons = 200
+	global_ship_trade_power = 0.33
+	global_trade_power = 0.1
+}
+
+jap_mixed_commercial_policy_modifier = {
+	free_policy = 1
+	merchants = 1 
+}
+
+jap_enforced_mercantilism_modifier = {
+	global_own_trade_power = 0.2
+	trade_goods_size_modifier = 0.05
+}
+
+jap_gokaido_modifier = {
+	trade_goods_size_modifier = 0.2
+	province_trade_power_modifier = 0.25
+	local_development_cost = -0.05
+}
+jap_tekkosen_modifier = {
+	ship_durability = 0.05
+}
+jap_shinto_warriors_modifier = {
+	manpower_in_true_faith_provinces = 0.15
+	#enforce_religion_cost = -0.5
+	missionaries = 1 
+	land_morale = 0.1
+	religion = yes
+}
+jap_bolstered_spirits = {
+	#extra_manpower_at_religious_war = yes 
+	manpower_recovery_speed = 0.5
+}	

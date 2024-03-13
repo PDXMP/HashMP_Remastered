@@ -246,6 +246,13 @@ will_demand_annexation = {
 
 can_join_hre = {
 	condition = {
+		potential = {
+		}
+		allow = {
+			always = no
+		}
+	}
+	condition = {
 		tooltip = "PERMANENTLY_LEFT_HRE"
 		potential = {
 		}

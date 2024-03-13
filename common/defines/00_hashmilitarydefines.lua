@@ -10,7 +10,7 @@ NDefines.NMilitary.SUPERIORITY_WARGOAL_WARSCORE_THRESHOLD	= 20	-- Needed battle 
 NDefines.NMilitary.WARSCORE_MAX_FROM_BATTLES = 50					-- maximum amount to get from a battles .
 NDefines.NMilitary.SUPPLY_DEPOT_MIL_COST = 10
 NDefines.NMilitary.CAWA_STARTING_STRENGTH = 0.1
-NDefines.NMilitary.BACK_LINE_MORALE_DAMAGE_TAKEN_MODIFIER = 0.0
+NDefines.NMilitary.BACK_LINE_MORALE_DAMAGE_TAKEN_MODIFIER = -0.101
 NDefines.NMilitary.MERCENARY_COMPANY_BUILDING_TIME = 1
 NDefines.NMilitary.LOOT_DEVASTATION_IMPACT = 5
 NDefines.NMilitary.LOOTED_DAYS = 365 -- 1 Year
@@ -42,3 +42,5 @@ NDefines.NMilitary.LIGHT_SHIP_COST = 20 							-- _MDEF_LIGHT_SHIP_COST = 10,
 NDefines.NMilitary.GALLEY_COST = 10								-- _MDEF_GALLEY_COST = 10,
 NDefines.NMilitary.TRANSPORT_COST = 5							-- _MDEF_TRANSPORT_COST = 10,
 NDefines.NMilitary.TRADITION_GAIN_NAVAL = 60						-- Tradition gain base value from naval combat.
+NDefines.NMilitary.CAVALRY_COST = 22.5
+NDefines.NMilitary.CAV_SUPPRESSION = 0.5

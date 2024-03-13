@@ -917,7 +917,7 @@ statesman = {
 			}
 		}
 		modifier = {
-			culture_conversion_cost = -0.05
+			culture_conversion_cost = -0.03
 		}
 	}
 	
@@ -1003,7 +1003,7 @@ naval_reformer = {
 			}
 		}
 		modifier = {
-			culture_conversion_cost = -0.05
+			culture_conversion_cost = -0.03
 		}
 	}
 	
@@ -1098,7 +1098,7 @@ trader = {
 			}
 		}
 		modifier = {
-			culture_conversion_cost = -0.05
+			culture_conversion_cost = -0.03
 		}
 	}
 	
@@ -1189,7 +1189,7 @@ spymaster = {
 			}
 		}
 		modifier = {
-			culture_conversion_cost = -0.05
+			culture_conversion_cost = -0.03
 		}
 	}
 	
@@ -1266,7 +1266,7 @@ colonial_governor = {
 			}
 		}
 		modifier = {
-			culture_conversion_cost = -0.05
+			culture_conversion_cost = -0.03
 		}
 	}
 	
@@ -1351,7 +1351,7 @@ diplomat = {
 			}
 		}
 		modifier = {
-			culture_conversion_cost = -0.05
+			culture_conversion_cost = -0.03
 		}
 	}
 	
@@ -1428,7 +1428,7 @@ navigator = {
 			}
 		}
 		modifier = {
-			culture_conversion_cost = -0.05
+			culture_conversion_cost = -0.03
 		}
 	}
 	

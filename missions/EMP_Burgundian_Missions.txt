@@ -598,17 +598,19 @@ emp_burgundy_3 = {
 		}
 		
 		trigger = {
-			lorraine_area = {
-				type = all
+			# lorraine_area = {
+			# 	type = all
+			# 	owned_by = ROOT
+			# }
+			num_of_owned_provinces_with = {
+				value = 2
+				area = lorraine_area
 				owned_by = ROOT
 			}
 		}
 		
 		effect = {
 			93 = {
-				add_permanent_claim = ROOT
-			}
-			1878 = {
 				add_permanent_claim = ROOT
 			}
 			2974 = {
@@ -630,7 +632,6 @@ emp_burgundy_3 = {
 		provinces_to_highlight = {
 			OR = {
 				province_id = 93
-				province_id = 1878
 				province_id = 2974
 				province_id = 1742
 			}
@@ -639,9 +640,6 @@ emp_burgundy_3 = {
 		
 		trigger = {
 			93 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			1878 = {
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 			2974 = {
@@ -1445,9 +1443,11 @@ emp_burgundy_5 = {
 		icon = join_the_empire
 		required_missions = { emp_bur_secure_succession }
 		provinces_to_highlight = {
-			province_id = 1744
-			province_id = 90
-			province_id = 4384
+			OR = {
+				province_id = 1744
+				province_id = 90
+				province_id = 4383
+			}
 			NOT = { owned_by = root }
 		}
 		trigger = {
@@ -1460,7 +1460,7 @@ emp_burgundy_5 = {
 				owned_by = ROOT
 				is_core = ROOT
 			}
-			4384 = {
+			4383 = {
 				owned_by = ROOT
 				is_core = ROOT
 			}

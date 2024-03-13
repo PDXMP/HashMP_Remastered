@@ -267,6 +267,7 @@ shogunate = {
 	}
 
 	modifiers = {
+		can_not_declare_war = yes 
 		diplomats = 1
 		envoy_travel_time = -0.25
 		max_absolutism = 5
@@ -299,8 +300,9 @@ daimyo = {
 		capital_scope = { region = japan_region }
 	}
 	modifiers = {
-		land_morale = 0.1
-		infantry_power = 0.1
+		ae_impact = -0.25
+		land_morale = 0.05
+		infantry_power = 0.05
 		amount_of_samurai = 4
 	}
 	custom_attributes = {
@@ -447,8 +449,8 @@ indep_daimyo = {
 	maintain_dynasty = yes
 
 	modifiers = {
-		land_morale = 0.1
-		infantry_power = 0.1
+		land_morale = 0.05
+		infantry_power = 0.05
 		amount_of_samurai = 5
 	}
 	custom_attributes = {
@@ -1765,7 +1767,6 @@ stadthalter_monarchy_reform = {
 
 	modifiers = {
 		#heavy_ship_power = 0.1
-		global_sailors_modifier = 0.5
 		navy_tradition = 1
 		trade_efficiency = 0.1
 		reduced_liberty_desire_on_other_continent = 10
@@ -6667,8 +6668,10 @@ absolute_shogunate_reform = {
 	maintain_dynasty = yes
 	modifiers = {
 		can_transfer_vassal_wargoal = yes
-		administrative_efficiency = 0.05
-		monarch_military_power = 1
+		#administrative_efficiency = 0.05
+		infantry_power = 0.1
+		core_creation = -0.25
+		country_military_power = 1 
 		allowed_samurai_fraction = 0.1
 	}
 }
@@ -6720,6 +6723,8 @@ japanese_divine_empire = {
 	fixed_rank = 3
 	maintain_dynasty = yes
 	modifiers = {
+		yearly_absolutism = 0.5
+		max_absolutism = 40
 		all_estate_possible_privileges = 1
 		no_stability_loss_on_monarch_death = yes 
 		all_estate_loyalty_equilibrium = 0.1
