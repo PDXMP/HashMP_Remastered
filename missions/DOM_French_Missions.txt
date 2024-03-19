@@ -1367,7 +1367,7 @@ french_missions_2 = {
 	fra_chateux_loire_valley = { 
 		icon = develop_the_po_valley
 		required_missions = { }
-		position = 1 
+		position =` 1 
 		provinces_to_highlight = { 
 			OR = {
 				province_id = 178 
@@ -1431,7 +1431,31 @@ french_missions_2 = {
 			169 = { num_of_times_improved = 4 } 
 		}
 		effect = { 
-			country_event = { id = flavor_fra.104 }
+			country_event_with_effect_insight = {
+				id = flavor_fra.104 
+				effect = "define_advisor = { 
+					type = theologian
+					name = Jehan Lagadeuc
+					culture = breton
+					skill = 2
+					cost_multiplier = 0.5
+				}
+				if = { 
+					limit = { is_lacking_institutions = yes } 
+					add_country_modifier = { 
+						name = fra_first_trilingual_dictionary_modifier
+						duration = 9125
+					}
+				}
+				else_if = { 
+					change_innovativeness = 3 
+				}
+				else = { 
+					add_adm_power = 50 
+					add_dip_power = 50 
+					add_mil_power = 50 
+				}"
+			}
 		}
 	}
 }	
