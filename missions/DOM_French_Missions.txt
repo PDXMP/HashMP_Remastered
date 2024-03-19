@@ -27,7 +27,22 @@ french_missions_1 = {
 		effect = {
 			if = { 
 				limit = { has_dlc = "Emperor" }
-				country_event = { id = flavor_fra.100 } 
+				country_event_with_effect_insight = { 
+					id = flavor_fra.100
+					effect = "
+					change_estate_land_share = {
+						estate = all
+						share = -5
+					}
+					add_mil_power = 50
+					normandy_area = {
+						limit = {
+							owned_by = ROOT
+							is_core = NRM
+						}
+						remove_core = NRM
+					}"
+			} 
 			}
 			else = { 
 				add_mil_power = 50 
