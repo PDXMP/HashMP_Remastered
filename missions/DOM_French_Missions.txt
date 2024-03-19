@@ -3752,7 +3752,20 @@ french_missions_4_normal_continuation = {
 		effect = { 
 
 			tooltip = { 
-				country_event = { id = flavor_fra.118 } 
+				country_event_with_effect_insight = { 
+					id = flavor_fra.118 
+					effect = "name = flavor_fra.118.a 
+		
+					define_advisor = {
+						type = artist
+						cost_multiplier = 0.5
+						skill = 3 
+					}
+					if = {
+						change_innovativeness = 2 
+					}
+					else = { add_dip_power = 25 }"
+				} 
 				if = { 
 					limit = { has_dlc = "Leviathan" }
 					104 = { 
