@@ -1395,9 +1395,23 @@ french_missions_2 = {
 				}
 			}
 		}
-		effect = { 
-			country_event = { id = flavor_fra.103 }
+		effect = {
+		country_event_with_option_insight = { 
+			id = flavor_fra.103
+			option_1 = "
+			if = { 
+				limit = { has_estate = estate_nobles } 
+				add_country_modifier = { 
+					name = fra_loire_royal_residences_modifier
+					duration = 7300
+				}
+			}
+			else = { add_prestige = 10 } 
+			loire_area = { add_base_manpower = 1 }"
+			option_2 = "add_years_of_income = 0.2 
+			add_adm_power = 50 "
 		}
+	} 
 	}
 	
 	fra_armorican_peninsula = { 
