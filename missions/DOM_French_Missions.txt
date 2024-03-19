@@ -1547,7 +1547,13 @@ french_missions_2_kill_hre_path = {
 			}
 		}
 		effect = {
-			country_event = { id = flavor_fra.200 }
+			country_event_with_effect_insight = { 
+				id = flavor_fra.200
+				effect = "add_country_modifier = {
+					name = fra_french_supremacy2_modifier
+					duration = 9125 
+				}"
+			}
 		}
 	}
 	
