@@ -1430,18 +1430,14 @@ gbr_ave_hundred_years_mission = {
 			}
 		}		
 		effect = {
-			country_event_with_option_insight = {
+			country_event_with_effect_insight = {
 				id = flavor_gbr.1
-				option_1 = "
+				effect = "
 				add_country_modifier = {
 					name = gbr_isolation_policy
 					duration = 9125
 				}
 				add_stability = 1 
-				ai_chance = {
-					factor = 1
-				}
-				custom_tooltip = flavor_gbr.1.a.tt
 			"
 			}
 		}
