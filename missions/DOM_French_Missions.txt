@@ -4494,7 +4494,44 @@ french_missions_5_italian = {
 			}
 		}
 		effect = { 
-			country_event = { id = flavor_fra.109 } 
+			country_event_with_option_insight = { 
+				id = flavor_fra.109
+				option_1 = "
+				add_country_modifier = { 
+					name = fra_cutthroat_diplomacy_modifier
+					duration = 7300
+				}
+				
+				if = { 
+					limit = { 
+						MLO = { 
+							is_lesser_in_union = yes 
+							is_subject_of = ROOT 
+							NOT = { is_year = 1500 }
+						}
+					}
+					define_advisor = {
+						type = natural_scientist
+						name = Leonardo da Vinci
+						culture = tuscan
+						cost_multiplier = 0.25
+						skill = 3
+					}
+					capital_scope = { 
+						add_province_modifier = { 
+							name = fra_attracted_leonardo_da_vinci_modifier
+							duration = 7300
+						}
+					}
+				}
+				custom_tooltip = fra_every_country_weare_not_allied_with_in_italy_spy_upon_them_tt"
+
+				option_2 = "add_mil_power = 100 
+				add_country_modifier = { 
+					name = fra_expansion_in_italy_modifier
+					duration = 9125
+				}"
+			 } 
 		}
 	}
 }
