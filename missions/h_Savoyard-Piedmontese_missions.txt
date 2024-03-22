@@ -436,7 +436,28 @@ emp_sav_missions_conquest_north = {
 			has_regency = no
 		}
 		effect = {
-			country_event = { id = new_flavour_sav.2 }
+			country_event_with_effect_insight = {
+				id = new_flavour_sav.2
+				effect = "if = {
+					limit = {
+						OR = {
+							religion = catholic
+							religion = protestant
+							religion = reformed
+						}
+					}
+					add_country_modifier = {
+						name = sav_holy_order_of_maurice_and_lazarus
+						duration = -1
+					}
+				}
+				else = {
+					add_country_modifier = {
+						name = sav_holy_order_of_maurice_and_lazarus_fallback
+						duration = -1
+					}
+				}"
+			}
 			if = {
 				limit = {
 					321 = {
