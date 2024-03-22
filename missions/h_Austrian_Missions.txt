@@ -1638,7 +1638,18 @@ h_hab_4 = {
 					government = monarchy
 					is_revolutionary = no 
 				}
-				country_event = { id = flavor_hab.20 }
+				country_event_with_option_insight = {
+					id = flavor_hab.20
+					option_1 = "add_government_reform = austrian_dual_monarchy
+					ai_chance = {
+						factor = 1
+					}"
+
+					option_2 = "add_country_modifier = {
+						name = hab_tolerant_society
+						duration = -1
+					}"
+				}
 			}
 			else = {
 				add_country_modifier = {
