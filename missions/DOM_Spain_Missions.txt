@@ -674,7 +674,13 @@ dom_cas_missions_1_c = {
 		}
 		effect = {
 			set_country_flag = sevilla_trade_center_flag 
-			country_event = { id = flavor_spa.3153 }
+			country_event_with_effect_insight = { 
+				id = flavor_spa.3153
+				effect = "224 = {
+					add_province_modifier = {
+						name = port_to_the_new_world
+						duration = -1"
+			}
 			224 = {
 				upgrade_building = { trade = yes }
 			}
