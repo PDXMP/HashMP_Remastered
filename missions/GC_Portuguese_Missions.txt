@@ -1276,7 +1276,19 @@ gc_por_4 = {
 					tag = POR
 					religion = catholic
 				}
-				country_event = { id = more_flavor_por.5 }
+				country_event_with_effect_insight = { 
+					id = more_flavor_por.5
+					effect = "add_prestige = 5
+					add_papal_influence = 10
+					random_list = {
+						70 = { }
+						30 = {
+							596 = {
+								change_religion = catholic
+							}
+						}
+					}"
+				}
 			}
 			596 = {
 				add_province_modifier = {
