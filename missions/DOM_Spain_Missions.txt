@@ -2928,7 +2928,17 @@ dom_cas_missions_4 = {
 			}
 		}
 		effect = {
-			country_event = { id = flavor_spa.22 }
+			country_event_with_effect_insight = { 
+				id = flavor_spa.22 
+				effect = "add_country_modifier = {
+					name = spa_spanish_dollar_modifier
+					duration = 7300
+				}
+				
+				change_ruler_stat = {
+					type = adm
+					amount = 1
+				}"
 		}
 	}
 	
