@@ -73,7 +73,31 @@ dom_cas_missions_1 = {
 
 		effect = {
 			set_country_flag = fate_of_granada_mission_flag 
-			country_event = { id = flavor_spa.8 }
+			country_event_with_option_insight = { 
+				id = flavor_spa.8
+				option_1 = "add_papal_influence = 25
+				add_stability = -1
+				every_owned_province = {
+					limit = {
+						is_core = GRA
+					}
+					change_religion = catholic
+					remove_core = GRA
+				}"
+				option_2 = "if = {
+					limit = { NOT = { stability = 3 } }
+					add_stability_or_adm_power = yes
+				}
+				add_papal_influence = -25
+				if = {
+					limit = { stability = 3 }
+					every_owned_province = {
+						limit = {
+							is_core = GRA
+						}
+						add_unrest = -2
+					}"
+			}
 			126 = {
 				add_permanent_claim = ROOT
 			}
@@ -3480,7 +3504,7 @@ dom_cas_missions_4_c = {
 				fire = 4
 				manuever = 5
 				siege = 1
-				name = "Hernán Cortés"
+				name = "Hernï¿½n Cortï¿½s"
 			}
 			490 = {
 				add_base_production = 3
