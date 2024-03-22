@@ -1040,7 +1040,14 @@ gc_por_3 = {
 		}
 		effect = {
 			set_country_flag = por_india_mission_flag
-			country_event = { id = flavor_por.4 }
+			country_event_with_effect_insight = {
+				id = flavor_por.4
+				effect = "add_mercantilism = 10
+				add_country_modifier = {
+					name = portuguese_india_trade_co
+					duration = -1
+				}"
+			}
 		}
 	}
 	
