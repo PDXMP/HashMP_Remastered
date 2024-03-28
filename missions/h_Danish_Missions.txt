@@ -1010,8 +1010,33 @@ h_dan_3 = {
 			stability = 1
 		}
 		effect = {
-			country_event = {
+			country_event_with_option_insight = {
 				id = HashMPDenmark.1
+				option_1 = "add_prestige = 10
+				add_treasury = 100
+		
+				add_casus_belli = {
+					target = NOR
+					type = cb_restore_personal_union
+				}
+		
+				skaneland_area = {
+					add_core = ROOT
+				}
+		
+				subarctic_islands_area = {
+					add_permanent_claim = ROOT
+				}"
+
+				option_2 = "add_prestige = -5
+				add_stability_or_adm_power = yes
+				add_manpower = 3
+				add_sailors = 500
+		
+				subarctic_islands_area = {
+					add_permanent_claim = ROOT
+				}"
+
 			}
 		}
 	}
@@ -1037,8 +1062,9 @@ h_dan_3 = {
 				limit = {
 					NOT = { is_year = 1460 }	#Eric died in 1459
 				}
-				country_event = {
+				country_event_with_effect_insight = {
 					id = flavor_dan.101
+					effect = "add_stability_or_adm_power = yes"
 				}
 			}
 			else = {
@@ -1156,8 +1182,18 @@ h_dan_3 = {
 			}
 		}
 		effect = {
-			country_event = {
+			country_event_with_effect_insight = {
 				id = flavor_dan.105
+				effect = "if = {
+					limit = { NOT = { government_rank = 3 } }
+					set_government_rank = 3
+				}
+				add_country_modifier = {
+					name = dan_great_empire_of_scandinavia
+					duration = -1
+				}
+				add_legitimacy = 100
+				add_prestige = 100"
 			}
 		}
 	}
@@ -1619,8 +1655,11 @@ h_dan_4 = {
 			}
 		}
 		effect = {
-			country_event = {
+			country_event_with_effect_insight = {
 				id = flavor_nor.37
+				effect = "add_country_modifier = {
+					name = nor_prospecting_the_skands
+					duration = 29200"
 			}
 		}
 	}
@@ -1657,8 +1696,14 @@ h_dan_4 = {
 			}
 		}
 		effect = {
-			country_event = {
+			country_event_with_option_insight = {
 				id = flavor_nor.48
+				option_1 = "add_manpower = 15
+				add_treasury = 150
+				add_country_modifier = {
+					name = nor_iron_for_soldiers
+					duration = 10950
+				}"
 			}
 		}
 	}
@@ -1711,8 +1756,28 @@ h_dan_4 = {
 			}
 		}
 		effect = {
-			country_event = {
+			country_event_with_option_insight = {
 				id = flavor_dan.107
+				option_1 = "define_advisor = {
+					type = master_of_mint
+					discount = yes
+					skill = 3
+				}"
+				option_2 = "define_advisor = {
+					type = trader
+					discount = yes
+					skill = 3
+				}"
+				option_3 = "define_advisor = {
+					type = navigator
+					discount = yes
+					skill = 3
+				}"
+				option_4 = "define_advisor = {
+					type = grand_captain
+					discount = yes
+					skill = 3
+				}"
 			}
 			custom_tooltip = dan_trade_post_in_india_ct
 			hidden_effect = {
@@ -2101,8 +2166,43 @@ h_dan_5 = {
 			change_reform_progress_effect = {
 				value = 25
 			}
-			country_event = {
+			country_event_with_option_insight = {
 				id = flavor_dan.6
+				option_1 = "add_years_of_income = 1
+				add_country_modifier = {
+					name = dan_crown_lands_recovered
+					duration = 5475
+				}
+				12 = {
+					spawn_rebels = {
+						size = 1
+						type = noble_rebels
+					}
+				}
+				if = {
+					limit = {
+						has_estate = estate_nobles
+					}
+					add_estate_loyalty = {
+						estate = estate_nobles
+						loyalty = -10
+					}
+					take_estate_land_share_small = { estate = estate_nobles }"
+
+				option_2 = "add_country_modifier = {
+					name = dan_crown_lands_lost
+					duration = 5475
+				}
+				add_stability_or_adm_power = yes
+				if = {
+					limit = {
+						has_estate = estate_nobles
+					}
+					add_estate_loyalty = {
+						estate = estate_nobles
+						loyalty = 10
+					}
+					give_estate_land_share_small = { estate = estate_nobles }"
 			}
 		}
 	}
@@ -2201,8 +2301,14 @@ h_dan_5 = {
 			}
 		}
 		effect = {
-			country_event = {
+			country_event_with_effect_insight = {
 				id = flavor_dan.104
+				effect = "change_innovativeness = 2
+				change_government_reform_progress = 50
+				add_adm_power = 50
+				add_dip_power = 50
+				add_mil_power = 50
+				12 = { add_building = university }"
 			}
 		}
 	}
